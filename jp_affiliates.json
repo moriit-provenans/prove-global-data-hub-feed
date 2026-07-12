@@ -1,11 +1,12 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-12T17:09:10+09:00",
+  "last_updated": "2026-07-12T17:23:37+09:00",
   "source": {
-    "label": "経産省 海外事業活動基本調査（e-Stat・Excel）",
+    "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
-    "disclaimer_ja": "経産省『海外事業活動基本調査』（政府統計コード 00550120）は e-Stat 上 Excel/ファイル公開が主で、getStatsList(statsCode=00550120) は 0 件。C1 本番値は Excel 取込コレクター（半自動）で充填予定。"
+    "license": "政府統計の総合窓口（e-Stat）利用規約に準拠",
+    "disclaimer_ja": "経産省『海外事業活動基本調査』（政府統計コード 00550120）は e-Stat 上 Excel/ファイル公開が主で、getStatsList(statsCode=00550120) は 0 件。本データは e-Stat 掲載の「（参考）国・地域別現地法人企業数（詳細版）」Excel を半自動コレクターで取込・正規化（第54回・2023年度実績）。"
   },
   "meta": {
     "countries": [
@@ -106,122 +107,352 @@
       }
     ],
     "year_coverage": {
-      "from": null,
-      "to": null
+      "from": 2023,
+      "to": 2023
     },
     "metric_ids": [
       "japan.overseas_affiliates.count",
       "japan.overseas_affiliates.sales_jpy"
     ],
-    "stats_data_ids": [],
-    "ingest_mode": "excel_file",
-    "blocker_ja": "経産省『海外事業活動基本調査』（政府統計コード 00550120）は e-Stat 上 Excel/ファイル公開が主で、getStatsList(statsCode=00550120) は 0 件。C1 本番値は Excel 取込コレクター（半自動）で充填予定。"
+    "stats_data_ids": [
+      "file=jp_affiliates_2024_detail.xlsx"
+    ],
+    "ingest_mode": "excel_file_semi_auto",
+    "note_ja": "count（企業数）は本番値。sales_jpy（現地法人売上高・国別）は本表に非収録のため null（別表からの取込は今後検討）。"
   },
   "modules": {
     "C1_affiliates": {
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-12T17:09:10+09:00",
+      "last_updated": "2026-07-12T17:23:37+09:00",
       "source": {
-        "label": "METI 海外事業活動基本調査",
+        "label": "METI 海外事業活動基本調査（第54回・2023年度実績）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
       },
       "series": [
         {
           "iso2": "VN",
           "name_ja": "ベトナム",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 1264.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "TH",
           "name_ja": "タイ",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 2305.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "CN",
           "name_ja": "中国",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 5673.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "IN",
           "name_ja": "インド",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 612.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "ID",
           "name_ja": "インドネシア",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 1098.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "PH",
           "name_ja": "フィリピン",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 590.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "MY",
           "name_ja": "マレーシア",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 765.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "SG",
           "name_ja": "シンガポール",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 1050.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "KR",
           "name_ja": "韓国",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 726.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "HK",
           "name_ja": "香港",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 1049.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "AE",
           "name_ja": "UAE",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 91.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "SA",
           "name_ja": "サウジアラビア",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 38.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "TR",
           "name_ja": "トルコ",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 52.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "GB",
           "name_ja": "英国",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 533.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "DE",
           "name_ja": "ドイツ",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 538.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "FR",
           "name_ja": "フランス",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 249.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "US",
           "name_ja": "米国",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 2794.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "CA",
           "name_ja": "カナダ",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 212.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         },
         {
           "iso2": "BR",
           "name_ja": "ブラジル",
-          "observations": []
+          "observations": [
+            {
+              "year": 2023,
+              "count": 278.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
         }
       ]
     }

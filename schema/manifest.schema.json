@@ -98,6 +98,10 @@
           "type": "array",
           "items": { "type": "string" },
           "description": "内包モジュール ID（例: A1, A2, A3）"
+        },
+        "note_ja": {
+          "type": "string",
+          "description": "補足・制約事項（データ範囲・ブロッカー等・任意）"
         }
       }
     }
