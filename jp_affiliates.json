@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-12T16:29:11+09:00",
+  "last_updated": "2026-07-12T17:03:51+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -122,7 +122,7 @@
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-12T16:29:11+09:00",
+      "last_updated": "2026-07-12T17:03:51+09:00",
       "source": {
         "label": "METI 海外事業活動基本調査",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
