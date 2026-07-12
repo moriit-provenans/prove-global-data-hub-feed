@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T07:50:09+09:00",
+  "last_updated": "2026-07-13T07:59:01+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -8274,6 +8274,79 @@
         "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
       },
       "feed": "timeseries/macro_quarterly.json"
+    },
+    {
+      "indicator_id": "industry.auto.production.units",
+      "wb_code": null,
+      "name_ja": "自動車生産台数（OICA）",
+      "name_en": "Motor vehicle production (OICA)",
+      "unit": "vehicles",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "国別の自動車生産台数。モビリティ市場規模の現物指標。Wikipedia経由時はveritas⚠️。",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN",
+        "WL"
+      ],
+      "period_range": {
+        "from": "2020",
+        "to": "2025"
+      },
+      "source": {
+        "label": "OICA (via Wikipedia when direct Excel unavailable)",
+        "url": "https://oica.net/production-statistics/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.semicon.billings.usd",
+      "wb_code": null,
+      "name_ja": "半導体売上（WSTS・地域別）",
+      "name_en": "Semiconductor billings (WSTS, regional)",
+      "unit": "USD",
+      "category": "産業実物",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "WSTS Historical Billings Report。Americas/Europe/Japan/Asia Pacific/Worldwide。国別ではない。",
+      "available_iso2": [
+        "JP",
+        "WL",
+        "XA",
+        "XE",
+        "XP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-05"
+      },
+      "source": {
+        "label": "WSTS Historical Billings Report",
+        "url": "https://www.wsts.org/67/Historical-Billings-Report"
+      },
+      "feed": "timeseries/industry_physical.json"
     }
   ],
   "countries": [

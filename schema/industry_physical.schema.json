@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/industry_physical.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/industry_physical.json",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "industry_physical" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "required": ["indicator_id", "geo", "period", "value", "frequency"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "geo": { "type": "string" },
+          "geo_type": { "type": "string", "enum": ["iso2", "region"] },
+          "region_code": { "type": "string" },
+          "period": { "type": "string" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "frequency": { "type": "string", "enum": ["annual", "monthly"] },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}
