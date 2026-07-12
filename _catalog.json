@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T18:57:32+09:00",
+  "last_updated": "2026-07-12T19:08:36+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。四半期（macro_quarterly）は v0.2 で IMF IFS 等を検討。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。",
   "indicators": [
