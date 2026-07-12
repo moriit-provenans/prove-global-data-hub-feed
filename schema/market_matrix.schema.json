@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/market_matrix.schema.json",
+  "title": "PROVE Global Data Hub — market_matrix.json v1（草案・Phase 2）",
+  "description": "業種×国の市場規模・CAGRマトリクス（B1）と成長17分野ホットマップ（B2）の公開フィード草案。本番データ充填は Phase 2。",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "source", "meta", "modules"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "market_matrix" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["countries", "industries"],
+      "properties": {
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["iso2", "name_ja"],
+            "properties": {
+              "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "name_ja": { "type": "string" },
+              "name_en": { "type": "string" }
+            }
+          }
+        },
+        "industries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["industry_id", "name_ja"],
+            "properties": {
+              "industry_id": {
+                "type": "string",
+                "description": "market-grid スラッグ（例: housing-equipment, automotive）"
+              },
+              "name_ja": { "type": "string" },
+              "name_en": { "type": "string" }
+            }
+          }
+        },
+        "growth17_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["field_id", "name_ja"],
+            "properties": {
+              "field_id": { "type": "string" },
+              "name_ja": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "modules": {
+      "type": "object",
+      "required": ["B1_market_size"],
+      "properties": {
+        "B1_market_size": {
+          "type": "object",
+          "required": ["module_id", "title_ja", "last_updated", "cells"],
+          "properties": {
+            "module_id": { "type": "string", "const": "B1" },
+            "title_ja": { "type": "string" },
+            "title_en": { "type": "string" },
+            "last_updated": { "type": "string", "format": "date-time" },
+            "source": {
+              "type": "object",
+              "properties": {
+                "label": { "type": "string" }
+              }
+            },
+            "cells": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["iso2", "industry_id"],
+                "properties": {
+                  "iso2": { "type": "string" },
+                  "industry_id": { "type": "string" },
+                  "market_size_usd": { "type": ["number", "null"] },
+                  "market_size_year": { "type": ["integer", "null"] },
+                  "cagr_pct": { "type": ["number", "null"] },
+                  "cagr_period": { "type": ["string", "null"], "description": "例: 2024-2029" },
+                  "veritas": {
+                    "type": "string",
+                    "enum": ["✅", "⚠️", "🔴"]
+                  },
+                  "cell_path": {
+                    "type": "string",
+                    "description": "DataLake market-grid 相対パス（深掘りリンク用）"
+                  },
+                  "metric_ids": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "B2_growth17_heatmap": {
+          "type": "object",
+          "required": ["module_id", "title_ja", "cells"],
+          "properties": {
+            "module_id": { "type": "string", "const": "B2" },
+            "title_ja": { "type": "string" },
+            "title_en": { "type": "string" },
+            "last_updated": { "type": "string", "format": "date-time" },
+            "cells": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["iso2", "field_id", "heat"],
+                "properties": {
+                  "iso2": { "type": "string" },
+                  "field_id": { "type": "string" },
+                  "heat": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3,
+                    "description": "0=無 / 1=薄 / 2=中 / 3=濃（政策・投資シグナル）"
+                  },
+                  "note_ja": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

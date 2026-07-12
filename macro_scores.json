@@ -1,0 +1,2090 @@
+{
+  "schema_version": "1.0.0",
+  "feed_id": "macro_scores",
+  "last_updated": "2026-07-12T15:39:44+09:00",
+  "source": {
+    "label": "World Bank",
+    "url": "https://data.worldbank.org/",
+    "license": "CC BY 4.0",
+    "disclaimer_ja": "本ページの数値は公開統計の二次加工です。投資・経営判断は自己責任でお願いします。"
+  },
+  "meta": {
+    "countries": [
+      {
+        "iso2": "VN",
+        "name_ja": "ベトナム",
+        "name_en": "Vietnam",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "TH",
+        "name_ja": "タイ",
+        "name_en": "Thailand",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "CN",
+        "name_ja": "中国",
+        "name_en": "China",
+        "region": "east_asia"
+      },
+      {
+        "iso2": "IN",
+        "name_ja": "インド",
+        "name_en": "India",
+        "region": "south_asia"
+      },
+      {
+        "iso2": "ID",
+        "name_ja": "インドネシア",
+        "name_en": "Indonesia",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "PH",
+        "name_ja": "フィリピン",
+        "name_en": "Philippines",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "MY",
+        "name_ja": "マレーシア",
+        "name_en": "Malaysia",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "SG",
+        "name_ja": "シンガポール",
+        "name_en": "Singapore",
+        "region": "southeast_asia"
+      },
+      {
+        "iso2": "KR",
+        "name_ja": "韓国",
+        "name_en": "Korea",
+        "region": "east_asia"
+      },
+      {
+        "iso2": "HK",
+        "name_ja": "香港",
+        "name_en": "Hong Kong SAR",
+        "region": "east_asia"
+      },
+      {
+        "iso2": "AE",
+        "name_ja": "UAE",
+        "name_en": "United Arab Emirates",
+        "region": "middle_east"
+      },
+      {
+        "iso2": "SA",
+        "name_ja": "サウジアラビア",
+        "name_en": "Saudi Arabia",
+        "region": "middle_east"
+      },
+      {
+        "iso2": "TR",
+        "name_ja": "トルコ",
+        "name_en": "Turkiye",
+        "region": "middle_east"
+      },
+      {
+        "iso2": "GB",
+        "name_ja": "英国",
+        "name_en": "United Kingdom",
+        "region": "europe"
+      },
+      {
+        "iso2": "DE",
+        "name_ja": "ドイツ",
+        "name_en": "Germany",
+        "region": "europe"
+      },
+      {
+        "iso2": "FR",
+        "name_ja": "フランス",
+        "name_en": "France",
+        "region": "europe"
+      },
+      {
+        "iso2": "US",
+        "name_ja": "米国",
+        "name_en": "United States",
+        "region": "north_america"
+      },
+      {
+        "iso2": "CA",
+        "name_ja": "カナダ",
+        "name_en": "Canada",
+        "region": "north_america"
+      },
+      {
+        "iso2": "BR",
+        "name_ja": "ブラジル",
+        "name_en": "Brazil",
+        "region": "latin_america"
+      },
+      {
+        "iso2": "JP",
+        "name_ja": "日本",
+        "name_en": "Japan",
+        "region": "east_asia"
+      }
+    ],
+    "year_coverage": {
+      "from": 2020,
+      "to": 2024
+    },
+    "score_method_ja": "名目GDP・実質成長率・人口・都市化率・一人当たりGNI・対内FDIを各国間で正規化し、単純平均で 0–100 の合成スコアとする（Phase 1）。ウェイト調整は Phase 2 で検討。",
+    "metric_ids": [
+      "macro.gdp.current_usd",
+      "macro.gdp.growth_pct",
+      "macro.population.total",
+      "macro.urban_population.pct",
+      "macro.gni_per_capita.current_usd",
+      "macro.fdi_inflow.current_usd",
+      "macro.fx_rate.lcu_per_usd",
+      "macro.inflation.cpi_pct"
+    ]
+  },
+  "modules": {
+    "A1_attractiveness": {
+      "module_id": "A1",
+      "title_ja": "国別 海外進出魅力度スコア",
+      "title_en": "Country attractiveness score",
+      "last_updated": "2026-07-12T15:39:44+09:00",
+      "source": {
+        "label": "World Bank（Atlas 合成）",
+        "url": "https://data.worldbank.org/"
+      },
+      "as_of_year": 2024,
+      "ranking": [
+        {
+          "rank": 1,
+          "iso2": "US",
+          "score": 72.6,
+          "components": {
+            "gdp_size": 100.0,
+            "gdp_growth": 43.3,
+            "population": 23.1,
+            "urbanization": 69.2,
+            "gni_per_capita": 100.0,
+            "fdi_inflow": 100.0
+          }
+        },
+        {
+          "rank": 2,
+          "iso2": "SG",
+          "score": 52.8,
+          "components": {
+            "gdp_size": 0.6,
+            "gdp_growth": 76.9,
+            "population": 0.0,
+            "urbanization": 100.0,
+            "gni_per_capita": 91.2,
+            "fdi_inflow": 47.8
+          }
+        },
+        {
+          "rank": 3,
+          "iso2": "CN",
+          "score": 51.9,
+          "components": {
+            "gdp_size": 63.4,
+            "gdp_growth": 71.8,
+            "population": 97.1,
+            "urbanization": 47.2,
+            "gni_per_capita": 13.8,
+            "fdi_inflow": 17.9
+          }
+        },
+        {
+          "rank": 4,
+          "iso2": "HK",
+          "score": 42.4,
+          "components": {
+            "gdp_size": 0.0,
+            "gdp_growth": 41.1,
+            "population": 0.1,
+            "urbanization": 100.0,
+            "gni_per_capita": 68.3,
+            "fdi_inflow": 44.8
+          }
+        },
+        {
+          "rank": 5,
+          "iso2": "IN",
+          "score": 37.4,
+          "components": {
+            "gdp_size": 11.6,
+            "gdp_growth": 100.0,
+            "population": 100.0,
+            "urbanization": 0.0,
+            "gni_per_capita": 0.0,
+            "fdi_inflow": 12.9
+          }
+        },
+        {
+          "rank": 6,
+          "iso2": "AE",
+          "score": 36.3,
+          "components": {
+            "gdp_size": 0.5,
+            "gdp_growth": 59.1,
+            "population": 0.3,
+            "urbanization": 78.1,
+            "gni_per_capita": 61.0,
+            "fdi_inflow": 18.9
+          }
+        },
+        {
+          "rank": 7,
+          "iso2": "CA",
+          "score": 34.0,
+          "components": {
+            "gdp_size": 6.4,
+            "gdp_growth": 33.5,
+            "population": 2.4,
+            "urbanization": 73.2,
+            "gni_per_capita": 64.2,
+            "fdi_inflow": 24.5
+          }
+        },
+        {
+          "rank": 8,
+          "iso2": "BR",
+          "score": 31.8,
+          "components": {
+            "gdp_size": 6.2,
+            "gdp_growth": 51.5,
+            "population": 14.3,
+            "urbanization": 81.3,
+            "gni_per_capita": 9.2,
+            "fdi_inflow": 28.1
+          }
+        },
+        {
+          "rank": 9,
+          "iso2": "DE",
+          "score": 30.4,
+          "components": {
+            "gdp_size": 14.8,
+            "gdp_growth": 0.0,
+            "population": 5.4,
+            "urbanization": 72.2,
+            "gni_per_capita": 65.4,
+            "fdi_inflow": 24.4
+          }
+        },
+        {
+          "rank": 10,
+          "iso2": "FR",
+          "score": 29.5,
+          "components": {
+            "gdp_size": 9.5,
+            "gdp_growth": 22.2,
+            "population": 4.3,
+            "urbanization": 67.2,
+            "gni_per_capita": 53.0,
+            "fdi_inflow": 21.0
+          }
+        },
+        {
+          "rank": 11,
+          "iso2": "SA",
+          "score": 29.2,
+          "components": {
+            "gdp_size": 2.9,
+            "gdp_growth": 41.4,
+            "population": 2.0,
+            "urbanization": 75.9,
+            "gni_per_capita": 41.6,
+            "fdi_inflow": 11.1
+          }
+        },
+        {
+          "rank": 12,
+          "iso2": "GB",
+          "score": 28.2,
+          "components": {
+            "gdp_size": 11.4,
+            "gdp_growth": 20.8,
+            "population": 4.4,
+            "urbanization": 74.1,
+            "gni_per_capita": 58.2,
+            "fdi_inflow": 0.0
+          }
+        },
+        {
+          "rank": 13,
+          "iso2": "JP",
+          "score": 27.7,
+          "components": {
+            "gdp_size": 13.1,
+            "gdp_growth": 3.4,
+            "population": 8.2,
+            "urbanization": 87.9,
+            "gni_per_capita": 43.1,
+            "fdi_inflow": 10.3
+          }
+        },
+        {
+          "rank": 14,
+          "iso2": "TR",
+          "score": 27.3,
+          "components": {
+            "gdp_size": 3.3,
+            "gdp_growth": 50.3,
+            "population": 5.5,
+            "urbanization": 83.5,
+            "gni_per_capita": 13.5,
+            "fdi_inflow": 8.0
+          }
+        },
+        {
+          "rank": 15,
+          "iso2": "KR",
+          "score": 27.2,
+          "components": {
+            "gdp_size": 5.1,
+            "gdp_growth": 32.9,
+            "population": 3.2,
+            "urbanization": 70.9,
+            "gni_per_capita": 42.6,
+            "fdi_inflow": 8.3
+          }
+        },
+        {
+          "rank": 16,
+          "iso2": "MY",
+          "score": 26.8,
+          "components": {
+            "gdp_size": 0.0,
+            "gdp_growth": 73.7,
+            "population": 2.0,
+            "urbanization": 64.3,
+            "gni_per_capita": 11.3,
+            "fdi_inflow": 9.2
+          }
+        },
+        {
+          "rank": 17,
+          "iso2": "ID",
+          "score": 24.4,
+          "components": {
+            "gdp_size": 3.4,
+            "gdp_growth": 72.8,
+            "population": 19.2,
+            "urbanization": 36.2,
+            "gni_per_capita": 2.9,
+            "fdi_inflow": 12.0
+          }
+        },
+        {
+          "rank": 18,
+          "iso2": "PH",
+          "score": 21.7,
+          "components": {
+            "gdp_size": 0.2,
+            "gdp_growth": 81.8,
+            "population": 7.6,
+            "urbanization": 31.1,
+            "gni_per_capita": 2.4,
+            "fdi_inflow": 7.2
+          }
+        },
+        {
+          "rank": 19,
+          "iso2": "VN",
+          "score": 20.7,
+          "components": {
+            "gdp_size": 0.2,
+            "gdp_growth": 99.2,
+            "population": 6.6,
+            "urbanization": 4.8,
+            "gni_per_capita": 2.4,
+            "fdi_inflow": 10.7
+          }
+        },
+        {
+          "rank": 20,
+          "iso2": "TH",
+          "score": 17.6,
+          "components": {
+            "gdp_size": 0.4,
+            "gdp_growth": 45.4,
+            "population": 4.5,
+            "urbanization": 41.0,
+            "gni_per_capita": 5.7,
+            "fdi_inflow": 8.8
+          }
+        }
+      ]
+    },
+    "A2_fx": {
+      "module_id": "A2",
+      "title_ja": "為替トレンド（現地通貨 / USD・年平均）",
+      "title_en": "FX trends (LCU per USD, annual average)",
+      "last_updated": "2026-07-12T15:39:44+09:00",
+      "source": {
+        "label": "World Bank PA.NUS.FCRF",
+        "url": "https://data.worldbank.org/indicator/PA.NUS.FCRF"
+      },
+      "series": [
+        {
+          "iso2": "VN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 23208.368333,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 23159.782593,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 23271.2125,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 23787.319167,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 24164.885833,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "VND"
+        },
+        {
+          "iso2": "TH",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 31.293673,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 31.977093,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 35.06135,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 34.802189,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 35.293538,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "THB"
+        },
+        {
+          "iso2": "CN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 6.900767,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 6.448975,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 6.737158,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 7.083998,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 7.197491,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "CNY"
+        },
+        {
+          "iso2": "IN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 74.099567,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 73.918013,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 78.604491,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 82.599276,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 83.669282,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "INR"
+        },
+        {
+          "iso2": "ID",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 14582.203468,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 14308.143901,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 14849.853936,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 15236.884662,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 15855.448287,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "IDR"
+        },
+        {
+          "iso2": "PH",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 49.624096,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 49.254598,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 54.477786,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 55.630363,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 57.290655,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "PHP"
+        },
+        {
+          "iso2": "MY",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 4.203482,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 4.143298,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 4.401076,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 4.560623,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 4.576428,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "MYR"
+        },
+        {
+          "iso2": "SG",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1.379742,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 1.343483,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 1.378667,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 1.342767,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 1.336233,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "SGD"
+        },
+        {
+          "iso2": "KR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1180.265833,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 1143.951667,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 1291.446667,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 1305.6625,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 1363.375,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "KRW"
+        },
+        {
+          "iso2": "HK",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 7.75725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 7.77325,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 7.831417,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 7.829583,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 7.803833,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "HKD"
+        },
+        {
+          "iso2": "AE",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 3.6725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 3.6725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 3.6725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 3.6725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 3.6725,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "AED"
+        },
+        {
+          "iso2": "SA",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 3.75,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 3.75,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 3.75,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 3.75,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 3.75,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "SAR"
+        },
+        {
+          "iso2": "TR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 7.008605,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 8.850408,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 16.54886,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 23.738566,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 32.805861,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "TRY"
+        },
+        {
+          "iso2": "GB",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.78,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 0.727065,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 0.811302,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 0.804539,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 0.782415,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "GBP"
+        },
+        {
+          "iso2": "DE",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.875506,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 0.845494,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 0.949624,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 0.92484,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 0.92389,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "EUR"
+        },
+        {
+          "iso2": "FR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.875506,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 0.845494,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 0.949624,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 0.92484,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 0.92389,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "EUR"
+        },
+        {
+          "iso2": "US",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1.0,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 1.0,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 1.0,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 1.0,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 1.0,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "USD"
+        },
+        {
+          "iso2": "CA",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1.341153,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 1.253877,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 1.301555,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 1.349909,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 1.36936,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "CAD"
+        },
+        {
+          "iso2": "BR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 5.155179,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 5.394401,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 5.16397,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 4.99438,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 5.388935,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "BRL"
+        },
+        {
+          "iso2": "JP",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 106.774582,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2021,
+              "value": 109.754324,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2022,
+              "value": 131.49814,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2023,
+              "value": 140.4911,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            },
+            {
+              "year": 2024,
+              "value": 151.366291,
+              "unit": "LCU/USD",
+              "metric_id": "macro.fx_rate.lcu_per_usd",
+              "source_ref": "PA.NUS.FCRF"
+            }
+          ],
+          "quote": "LCU_PER_USD",
+          "currency_code": "JPY"
+        }
+      ],
+      "note_ja": "年平均レート（現地通貨/USD）。対JPY・日次は Phase 2 で追加予定。"
+    },
+    "A3_inflation": {
+      "module_id": "A3",
+      "title_ja": "インフレ・物価トレンド（CPI 上昇率）",
+      "title_en": "Inflation (CPI %)",
+      "last_updated": "2026-07-12T15:39:44+09:00",
+      "source": {
+        "label": "World Bank FP.CPI.TOTL.ZG",
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG"
+      },
+      "series": [
+        {
+          "iso2": "VN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 3.220934,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 1.834716,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 3.156507,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 3.252893,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 3.621093,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "TH",
+          "observations": [
+            {
+              "year": 2020,
+              "value": -0.846088,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 1.231045,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 6.0759,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 1.22909,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 0.398333,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "CN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 2.419422,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 0.981015,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 1.973576,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 0.234837,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 0.218129,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "IN",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 6.623437,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 5.131407,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 6.699034,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 5.649143,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 4.953036,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "ID",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1.919835,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 1.560079,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 4.209465,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 3.669387,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.181513,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "PH",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 2.393162,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 3.92718,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 5.821158,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 5.978025,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 3.212605,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "MY",
+          "observations": [
+            {
+              "year": 2020,
+              "value": -1.138702,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 2.477102,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 3.378699,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 2.488866,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 1.8341,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "SG",
+          "observations": [
+            {
+              "year": 2020,
+              "value": -0.172112,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 2.316103,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 6.130954,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 4.833724,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.389511,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "KR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.537288,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 2.498333,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 5.089514,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 3.597456,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.321743,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "HK",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.250962,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 1.568758,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 1.881367,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 2.096605,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 1.729721,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "AE",
+          "observations": [
+            {
+              "year": 2020,
+              "value": -2.079403,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 0.179935,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 5.291226,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 1.626708,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 1.663365,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "SA",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 3.37235,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 3.06329,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 2.474074,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 2.327085,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 1.687921,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "TR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 12.278957,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 19.596493,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 72.308836,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 53.859409,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 58.506451,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "GB",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.989487,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 2.518371,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 7.922049,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 6.793967,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 3.271573,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "DE",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.144878,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 3.066667,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 6.872574,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 5.946437,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.256498,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "FR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.476499,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 1.642331,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 5.222367,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 4.878357,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 1.999049,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "US",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 1.233584,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 4.697859,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 8.0028,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 4.116338,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.949525,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "CA",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 0.717,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 3.395193,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 6.802801,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 3.879002,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.381584,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "BR",
+          "observations": [
+            {
+              "year": 2020,
+              "value": 3.211768,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": 8.30166,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 9.280106,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 4.593563,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 4.367464,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        },
+        {
+          "iso2": "JP",
+          "observations": [
+            {
+              "year": 2020,
+              "value": -0.024996,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2021,
+              "value": -0.233353,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2022,
+              "value": 2.497703,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2023,
+              "value": 3.268134,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            },
+            {
+              "year": 2024,
+              "value": 2.738537,
+              "unit": "%",
+              "metric_id": "macro.inflation.cpi_pct",
+              "source_ref": "FP.CPI.TOTL.ZG"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

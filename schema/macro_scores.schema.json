@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/macro_scores.schema.json",
+  "title": "PROVE Global Data Hub — macro_scores.json v1",
+  "description": "Phase 1 マクロ3モジュール（A1 進出魅力度 / A2 為替 / A3 インフレ）の公開フィード。",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "feed_id",
+    "last_updated",
+    "source",
+    "meta",
+    "modules"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "macro_scores" },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "鮮度バッジ用。フィード全体の最終更新"
+    },
+    "source": {
+      "type": "object",
+      "required": ["label"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "license": { "type": "string" },
+        "disclaimer_ja": {
+          "type": "string",
+          "description": "ページフッタ用の短い免責"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["countries", "year_coverage"],
+      "additionalProperties": false,
+      "properties": {
+        "countries": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/countryMeta" },
+          "description": "本フィードに登場する国のマスタ（ISO 3166-1 alpha-2）"
+        },
+        "year_coverage": {
+          "type": "object",
+          "required": ["from", "to"],
+          "additionalProperties": false,
+          "properties": {
+            "from": { "type": "integer", "minimum": 2000 },
+            "to": { "type": "integer", "minimum": 2000 }
+          }
+        },
+        "score_method_ja": {
+          "type": "string",
+          "description": "A1 合成スコアの計算方針（UI の「このスコアとは」用）"
+        },
+        "metric_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "DataLake σ層 metrics.yaml の metric_id 一覧"
+        }
+      }
+    },
+    "modules": {
+      "type": "object",
+      "required": ["A1_attractiveness", "A2_fx", "A3_inflation"],
+      "additionalProperties": false,
+      "properties": {
+        "A1_attractiveness": { "$ref": "#/$defs/moduleA1" },
+        "A2_fx": { "$ref": "#/$defs/moduleA2" },
+        "A3_inflation": { "$ref": "#/$defs/moduleA3" }
+      }
+    }
+  },
+  "$defs": {
+    "countryMeta": {
+      "type": "object",
+      "required": ["iso2", "name_ja", "name_en"],
+      "additionalProperties": false,
+      "properties": {
+        "iso2": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2（例: VN, US, JP）"
+        },
+        "name_ja": { "type": "string" },
+        "name_en": { "type": "string" },
+        "region": {
+          "type": "string",
+          "enum": [
+            "east_asia",
+            "southeast_asia",
+            "south_asia",
+            "north_america",
+            "europe",
+            "oceania",
+            "middle_east",
+            "latin_america",
+            "africa",
+            "other"
+          ]
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": ["year", "value"],
+      "additionalProperties": false,
+      "properties": {
+        "year": { "type": "integer" },
+        "value": { "type": ["number", "null"] },
+        "unit": { "type": "string" },
+        "metric_id": {
+          "type": "string",
+          "description": "σ層 metrics.yaml の ID"
+        },
+        "source_ref": {
+          "type": "string",
+          "description": "World Bank indicator コード等"
+        }
+      }
+    },
+    "moduleA1": {
+      "type": "object",
+      "required": ["module_id", "title_ja", "last_updated", "source", "ranking"],
+      "additionalProperties": false,
+      "properties": {
+        "module_id": { "type": "string", "const": "A1" },
+        "title_ja": { "type": "string" },
+        "title_en": { "type": "string" },
+        "last_updated": { "type": "string", "format": "date-time" },
+        "source": {
+          "type": "object",
+          "required": ["label"],
+          "properties": {
+            "label": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        },
+        "as_of_year": {
+          "type": "integer",
+          "description": "ランキング算出に使った最新年"
+        },
+        "ranking": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rank", "iso2", "score"],
+            "additionalProperties": false,
+            "properties": {
+              "rank": { "type": "integer", "minimum": 1 },
+              "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100,
+                "description": "0-100 の合成スコア"
+              },
+              "components": {
+                "type": "object",
+                "description": "レーダーチャート用の正規化成分（0-100）",
+                "additionalProperties": false,
+                "properties": {
+                  "gdp_size": { "type": "number" },
+                  "gdp_growth": { "type": "number" },
+                  "population": { "type": "number" },
+                  "urbanization": { "type": "number" },
+                  "gni_per_capita": { "type": "number" },
+                  "fdi_inflow": { "type": "number" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "moduleA2": {
+      "type": "object",
+      "required": ["module_id", "title_ja", "last_updated", "source", "series"],
+      "additionalProperties": false,
+      "properties": {
+        "module_id": { "type": "string", "const": "A2" },
+        "title_ja": { "type": "string" },
+        "title_en": { "type": "string" },
+        "last_updated": { "type": "string", "format": "date-time" },
+        "source": {
+          "type": "object",
+          "required": ["label"],
+          "properties": {
+            "label": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        },
+        "note_ja": {
+          "type": "string",
+          "description": "年平均レートである旨など"
+        },
+        "series": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["iso2", "quote", "observations"],
+            "additionalProperties": false,
+            "properties": {
+              "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "quote": {
+                "type": "string",
+                "enum": ["LCU_PER_USD", "LCU_PER_JPY"],
+                "description": "Phase1 は LCU_PER_USD（年平均）。対JPY は Phase2"
+              },
+              "currency_code": {
+                "type": "string",
+                "description": "ISO 4217（例: VND, THB）"
+              },
+              "observations": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/observation" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "moduleA3": {
+      "type": "object",
+      "required": ["module_id", "title_ja", "last_updated", "source", "series"],
+      "additionalProperties": false,
+      "properties": {
+        "module_id": { "type": "string", "const": "A3" },
+        "title_ja": { "type": "string" },
+        "title_en": { "type": "string" },
+        "last_updated": { "type": "string", "format": "date-time" },
+        "source": {
+          "type": "object",
+          "required": ["label"],
+          "properties": {
+            "label": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        },
+        "series": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["iso2", "observations"],
+            "additionalProperties": false,
+            "properties": {
+              "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "observations": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/observation" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# PROVE Global Data Hub Phase 1 — 対象20ヶ国（確定）
+# World Bank コレクター GEOS と同一。台湾は WB 非収録のため除外。
+# iso3 = World Bank / σ層 geo コード、iso2 = 公開フィード用
+
+countries:
+  - { iso2: VN, iso3: VNM, name_ja: ベトナム, name_en: Vietnam, region: southeast_asia, currency: VND }
+  - { iso2: TH, iso3: THA, name_ja: タイ, name_en: Thailand, region: southeast_asia, currency: THB }
+  - { iso2: CN, iso3: CHN, name_ja: 中国, name_en: China, region: east_asia, currency: CNY }
+  - { iso2: IN, iso3: IND, name_ja: インド, name_en: India, region: south_asia, currency: INR }
+  - { iso2: ID, iso3: IDN, name_ja: インドネシア, name_en: Indonesia, region: southeast_asia, currency: IDR }
+  - { iso2: PH, iso3: PHL, name_ja: フィリピン, name_en: Philippines, region: southeast_asia, currency: PHP }
+  - { iso2: MY, iso3: MYS, name_ja: マレーシア, name_en: Malaysia, region: southeast_asia, currency: MYR }
+  - { iso2: SG, iso3: SGP, name_ja: シンガポール, name_en: Singapore, region: southeast_asia, currency: SGD }
+  - { iso2: KR, iso3: KOR, name_ja: 韓国, name_en: Korea, Rep., region: east_asia, currency: KRW }
+  - { iso2: HK, iso3: HKG, name_ja: 香港, name_en: Hong Kong SAR, China, region: east_asia, currency: HKD }
+  - { iso2: AE, iso3: ARE, name_ja: UAE, name_en: United Arab Emirates, region: middle_east, currency: AED }
+  - { iso2: SA, iso3: SAU, name_ja: サウジアラビア, name_en: Saudi Arabia, region: middle_east, currency: SAR }
+  - { iso2: TR, iso3: TUR, name_ja: トルコ, name_en: Turkiye, region: middle_east, currency: TRY }
+  - { iso2: GB, iso3: GBR, name_ja: 英国, name_en: United Kingdom, region: europe, currency: GBP }
+  - { iso2: DE, iso3: DEU, name_ja: ドイツ, name_en: Germany, region: europe, currency: EUR }
+  - { iso2: FR, iso3: FRA, name_ja: フランス, name_en: France, region: europe, currency: EUR }
+  - { iso2: US, iso3: USA, name_ja: 米国, name_en: United States, region: north_america, currency: USD }
+  - { iso2: CA, iso3: CAN, name_ja: カナダ, name_en: Canada, region: north_america, currency: CAD }
+  - { iso2: BR, iso3: BRA, name_ja: ブラジル, name_en: Brazil, region: latin_america, currency: BRL }
+  - { iso2: JP, iso3: JPN, name_ja: 日本, name_en: Japan, region: east_asia, currency: JPY }
+
+notes:
+  - "コレクター Atlas/tools/collectors/collect_worldbank.py の GEOS と同期必須"
+  - "台湾（TW/TWN）は Phase 2 で IMF 補完を検討"
+  - "確定日: 2026-07-12（Smith Phase 0 合意）"

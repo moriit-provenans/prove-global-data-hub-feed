@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/manifest.schema.json",
+  "title": "PROVE Global Data Hub — _manifest.json v1",
+  "description": "各公開フィードの鮮度・出典・配信状態の目次。Smith はこれだけ読めば全フィードの最終更新を把握できる。",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "feeds"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "マニフェスト自身のスキーマ版"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "このマニフェストを生成した時刻（ISO 8601・タイムゾーン付き推奨）"
+    },
+    "hub_name": {
+      "type": "string",
+      "description": "表示名",
+      "default": "PROVE Global Data Hub"
+    },
+    "feeds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/feedEntry" }
+    }
+  },
+  "$defs": {
+    "feedEntry": {
+      "type": "object",
+      "required": [
+        "feed_id",
+        "filename",
+        "status",
+        "last_updated",
+        "source",
+        "schema_version"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "feed_id": {
+          "type": "string",
+          "description": "フィード識別子（例: macro_scores）",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "filename": {
+          "type": "string",
+          "description": "同ディレクトリ内のファイル名",
+          "pattern": "^[a-z0-9_]+\\.json$"
+        },
+        "title_ja": { "type": "string" },
+        "title_en": { "type": "string" },
+        "phase": {
+          "type": "string",
+          "enum": ["1", "2", "3"],
+          "description": "公開ロードマップの Phase"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "sample", "deprecated", "planned"],
+          "description": "active=本番配信 / sample=スキーマ検証用ダミー / planned=未公開"
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "フィード本体の最終更新（鮮度バッジ用）"
+        },
+        "source": {
+          "type": "object",
+          "required": ["label"],
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "UI 表示用（例: World Bank）"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "出典ページ URL（任意）"
+            },
+            "license": { "type": "string" }
+          }
+        },
+        "schema_version": {
+          "type": "string",
+          "description": "当該フィード JSON の schema_version"
+        },
+        "update_cadence": {
+          "type": "string",
+          "enum": ["daily", "weekly", "monthly", "quarterly", "annual", "on_change"],
+          "description": "更新サイクル（表示リフレッシュ方針）"
+        },
+        "modules": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "内包モジュール ID（例: A1, A2, A3）"
+        }
+      }
+    }
+  }
+}

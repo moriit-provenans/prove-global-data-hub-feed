@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-12T15:39:44+09:00",
+  "hub_name": "PROVE Global Data Hub",
+  "feeds": [
+    {
+      "feed_id": "macro_scores",
+      "filename": "macro_scores.json",
+      "title_ja": "マクロ経済スコア（進出魅力度・為替・インフレ）",
+      "title_en": "Macro scores (attractiveness, FX, inflation)",
+      "phase": "1",
+      "status": "active",
+      "last_updated": "2026-07-12T15:39:44+09:00",
+      "source": {
+        "label": "World Bank",
+        "url": "https://data.worldbank.org/",
+        "license": "CC BY 4.0"
+      },
+      "schema_version": "1.0.0",
+      "update_cadence": "monthly",
+      "modules": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "feed_id": "market_matrix",
+      "filename": "market_matrix.json",
+      "title_ja": "業種×国 市場マトリクス",
+      "title_en": "Industry × country market matrix",
+      "phase": "2",
+      "status": "planned",
+      "last_updated": "2026-07-12T15:39:44+09:00",
+      "source": {
+        "label": "Atlas DataLake market-grid"
+      },
+      "schema_version": "1.0.0",
+      "update_cadence": "quarterly",
+      "modules": [
+        "B1",
+        "B2"
+      ]
+    }
+  ]
+}
