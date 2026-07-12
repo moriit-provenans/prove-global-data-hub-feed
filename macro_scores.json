@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "macro_scores",
-  "last_updated": "2026-07-12T18:54:52+09:00",
+  "last_updated": "2026-07-12T18:57:31+09:00",
   "source": {
     "label": "World Bank",
     "url": "https://data.worldbank.org/",
@@ -129,6 +129,12 @@
         "name_ja": "日本",
         "name_en": "Japan",
         "region": "east_asia"
+      },
+      {
+        "iso2": "TW",
+        "name_ja": "台湾",
+        "name_en": "Taiwan",
+        "region": "east_asia"
       }
     ],
     "year_coverage": {
@@ -152,7 +158,7 @@
       "module_id": "A1",
       "title_ja": "国別 海外進出魅力度スコア",
       "title_en": "Country attractiveness score",
-      "last_updated": "2026-07-12T18:54:52+09:00",
+      "last_updated": "2026-07-12T18:57:31+09:00",
       "source": {
         "label": "World Bank（Atlas 合成）",
         "url": "https://data.worldbank.org/"
@@ -425,7 +431,7 @@
       "module_id": "A2",
       "title_ja": "為替トレンド（現地通貨 / USD・年平均）",
       "title_en": "FX trends (LCU per USD, annual average)",
-      "last_updated": "2026-07-12T18:54:52+09:00",
+      "last_updated": "2026-07-12T18:57:31+09:00",
       "source": {
         "label": "World Bank PA.NUS.FCRF",
         "url": "https://data.worldbank.org/indicator/PA.NUS.FCRF"
@@ -1278,7 +1284,7 @@
       "module_id": "A3",
       "title_ja": "インフレ・物価トレンド（CPI 上昇率）",
       "title_en": "Inflation (CPI %)",
-      "last_updated": "2026-07-12T18:54:52+09:00",
+      "last_updated": "2026-07-12T18:57:31+09:00",
       "source": {
         "label": "World Bank FP.CPI.TOTL.ZG",
         "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG"

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "trade_flows",
-  "last_updated": "2026-07-12T18:54:52+09:00",
+  "last_updated": "2026-07-12T18:57:31+09:00",
   "source": {
     "label": "UN Comtrade",
     "url": "https://comtradeplus.un.org/",
@@ -109,6 +109,11 @@
         "iso2": "BR",
         "name_ja": "ブラジル",
         "name_en": "Brazil"
+      },
+      {
+        "iso2": "TW",
+        "name_ja": "台湾",
+        "name_en": "Taiwan"
       }
     ],
     "hs_codes": [
@@ -143,7 +148,7 @@
       "module_id": "E3",
       "title_ja": "日本の品目別・相手国別 貿易フロー",
       "title_en": "Japan trade flows by HS and partner",
-      "last_updated": "2026-07-12T18:54:52+09:00",
+      "last_updated": "2026-07-12T18:57:31+09:00",
       "source": {
         "label": "UN Comtrade API",
         "url": "https://comtradedeveloper.un.org/"

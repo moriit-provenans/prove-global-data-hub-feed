@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-12T18:54:52+09:00",
+  "last_updated": "2026-07-12T18:57:31+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -104,6 +104,11 @@
         "iso2": "BR",
         "name_ja": "ブラジル",
         "name_en": "Brazil"
+      },
+      {
+        "iso2": "TW",
+        "name_ja": "台湾",
+        "name_en": "Taiwan"
       }
     ],
     "year_coverage": {
@@ -125,7 +130,7 @@
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-12T18:54:52+09:00",
+      "last_updated": "2026-07-12T18:57:31+09:00",
       "source": {
         "label": "METI 海外事業活動基本調査（第54回・2023年度実績）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
@@ -444,6 +449,23 @@
             {
               "year": 2023,
               "count": 278.0,
+              "sales_jpy": null,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.overseas_affiliates.count"
+              ],
+              "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            }
+          ]
+        },
+        {
+          "iso2": "TW",
+          "name_ja": "台湾",
+          "observations": [
+            {
+              "year": 2023,
+              "count": 911.0,
               "sales_jpy": null,
               "unit_count": "companies",
               "metric_ids": [

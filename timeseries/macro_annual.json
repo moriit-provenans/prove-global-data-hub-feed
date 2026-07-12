@@ -1,13 +1,13 @@
 {
   "schema_version": "2.0.0",
   "feed_id": "macro_annual",
-  "last_updated": "2026-07-12T18:54:52+09:00",
+  "last_updated": "2026-07-12T18:57:32+09:00",
   "frequency": "annual",
   "source": {
-    "label": "World Bank",
+    "label": "World Bank + IMF WEO (Taiwan)",
     "url": "https://data.worldbank.org/",
-    "license": "CC BY 4.0",
-    "disclaimer_ja": "公開統計の二次加工です。投資・経営判断は自己責任でお願いします。"
+    "license": "CC BY 4.0 / IMF terms",
+    "disclaimer_ja": "公開統計の二次加工です。台湾（TW）はWorld Bank非収録のためIMF WEOで補完。投資・経営判断は自己責任でお願いします。"
   },
   "meta": {
     "indicator_ids": [
@@ -44,14 +44,15 @@
       "SG",
       "TH",
       "TR",
+      "TW",
       "US",
       "VN"
     ],
     "year_range": {
       "from": 2000,
-      "to": 2025
+      "to": 2026
     },
-    "row_count": 6686
+    "row_count": 6746
   },
   "observations": [
     {
@@ -22475,6 +22476,114 @@
     },
     {
       "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 534515000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 543081000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 591687000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 610690000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 613512000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 676861000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 776965000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 765624000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 757387000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 801495000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 920050000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "iso2": "TW",
+      "year": 2026,
+      "value": 976719000000.0,
+      "unit": "USD",
+      "source_ref": "NGDPD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.current_usd",
       "iso2": "US",
       "year": 2000,
       "value": 10250952000000.0,
@@ -27146,6 +27255,114 @@
     },
     {
       "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 1.5,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 2.2,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 3.7,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 2.9,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 3.1,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 3.4,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 6.7,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 2.7,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 1.1,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 5.3,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 8.7,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "iso2": "TW",
+      "year": 2026,
+      "value": 5.2,
+      "unit": "%",
+      "source_ref": "NGDP_RPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
       "iso2": "US",
       "year": 2000,
       "value": 4.07758575997799,
@@ -31813,6 +32030,114 @@
       "value": 18599.4420922378,
       "unit": "USD",
       "source_ref": "NY.GDP.PCAP.CD",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 22752.991,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 23070.733,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 25102.094,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 25888.836,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 25992.849,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 28727.743,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 33238.717,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 32909.322,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 32338.714,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 34251.621,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 39488.575,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "iso2": "TW",
+      "year": 2026,
+      "value": 42102.703,
+      "unit": "USD",
+      "source_ref": "NGDPDPC",
       "veritas": "✅"
     },
     {
@@ -45731,6 +46056,114 @@
     },
     {
       "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2015,
+      "value": -0.3,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 1.4,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 0.6,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 1.4,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 0.6,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2020,
+      "value": -0.2,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 2.0,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 2.9,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 2.5,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 2.2,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 1.7,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "iso2": "TW",
+      "year": 2026,
+      "value": 1.5,
+      "unit": "%",
+      "source_ref": "PCPIPCH",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
       "iso2": "US",
       "year": 2000,
       "value": 3.37685727149929,
@@ -50398,6 +50831,114 @@
       "value": 85878556.0,
       "unit": "persons",
       "source_ref": "SP.POP.TOTL",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 23492000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 23540000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 23571000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 23589000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 23603000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 23561000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 23375000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 23265000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 23420000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 23400000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 23299000.0,
+      "unit": "persons",
+      "source_ref": "LP",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "iso2": "TW",
+      "year": 2026,
+      "value": 23198000.0,
+      "unit": "persons",
+      "source_ref": "LP",
       "veritas": "✅"
     },
     {
