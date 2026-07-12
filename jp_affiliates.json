@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "feed_id": "jp_affiliates",
+  "last_updated": "2026-07-12T16:29:11+09:00",
+  "source": {
+    "label": "経産省 海外事業活動基本調査（e-Stat・Excel）",
+    "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
+    "disclaimer_ja": "経産省『海外事業活動基本調査』（政府統計コード 00550120）は e-Stat 上 Excel/ファイル公開が主で、getStatsList(statsCode=00550120) は 0 件。C1 本番値は Excel 取込コレクター（半自動）で充填予定。"
+  },
+  "meta": {
+    "countries": [
+      {
+        "iso2": "VN",
+        "name_ja": "ベトナム",
+        "name_en": "Vietnam"
+      },
+      {
+        "iso2": "TH",
+        "name_ja": "タイ",
+        "name_en": "Thailand"
+      },
+      {
+        "iso2": "CN",
+        "name_ja": "中国",
+        "name_en": "China"
+      },
+      {
+        "iso2": "IN",
+        "name_ja": "インド",
+        "name_en": "India"
+      },
+      {
+        "iso2": "ID",
+        "name_ja": "インドネシア",
+        "name_en": "Indonesia"
+      },
+      {
+        "iso2": "PH",
+        "name_ja": "フィリピン",
+        "name_en": "Philippines"
+      },
+      {
+        "iso2": "MY",
+        "name_ja": "マレーシア",
+        "name_en": "Malaysia"
+      },
+      {
+        "iso2": "SG",
+        "name_ja": "シンガポール",
+        "name_en": "Singapore"
+      },
+      {
+        "iso2": "KR",
+        "name_ja": "韓国",
+        "name_en": "Korea"
+      },
+      {
+        "iso2": "HK",
+        "name_ja": "香港",
+        "name_en": "Hong Kong SAR"
+      },
+      {
+        "iso2": "AE",
+        "name_ja": "UAE",
+        "name_en": "United Arab Emirates"
+      },
+      {
+        "iso2": "SA",
+        "name_ja": "サウジアラビア",
+        "name_en": "Saudi Arabia"
+      },
+      {
+        "iso2": "TR",
+        "name_ja": "トルコ",
+        "name_en": "Turkiye"
+      },
+      {
+        "iso2": "GB",
+        "name_ja": "英国",
+        "name_en": "United Kingdom"
+      },
+      {
+        "iso2": "DE",
+        "name_ja": "ドイツ",
+        "name_en": "Germany"
+      },
+      {
+        "iso2": "FR",
+        "name_ja": "フランス",
+        "name_en": "France"
+      },
+      {
+        "iso2": "US",
+        "name_ja": "米国",
+        "name_en": "United States"
+      },
+      {
+        "iso2": "CA",
+        "name_ja": "カナダ",
+        "name_en": "Canada"
+      },
+      {
+        "iso2": "BR",
+        "name_ja": "ブラジル",
+        "name_en": "Brazil"
+      }
+    ],
+    "year_coverage": {
+      "from": null,
+      "to": null
+    },
+    "metric_ids": [
+      "japan.overseas_affiliates.count",
+      "japan.overseas_affiliates.sales_jpy"
+    ],
+    "stats_data_ids": [],
+    "ingest_mode": "excel_file",
+    "blocker_ja": "経産省『海外事業活動基本調査』（政府統計コード 00550120）は e-Stat 上 Excel/ファイル公開が主で、getStatsList(statsCode=00550120) は 0 件。C1 本番値は Excel 取込コレクター（半自動）で充填予定。"
+  },
+  "modules": {
+    "C1_affiliates": {
+      "module_id": "C1",
+      "title_ja": "日系海外現地法人（国別）",
+      "title_en": "Japanese overseas affiliates by country",
+      "last_updated": "2026-07-12T16:29:11+09:00",
+      "source": {
+        "label": "METI 海外事業活動基本調査",
+        "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
+      },
+      "series": [
+        {
+          "iso2": "VN",
+          "name_ja": "ベトナム",
+          "observations": []
+        },
+        {
+          "iso2": "TH",
+          "name_ja": "タイ",
+          "observations": []
+        },
+        {
+          "iso2": "CN",
+          "name_ja": "中国",
+          "observations": []
+        },
+        {
+          "iso2": "IN",
+          "name_ja": "インド",
+          "observations": []
+        },
+        {
+          "iso2": "ID",
+          "name_ja": "インドネシア",
+          "observations": []
+        },
+        {
+          "iso2": "PH",
+          "name_ja": "フィリピン",
+          "observations": []
+        },
+        {
+          "iso2": "MY",
+          "name_ja": "マレーシア",
+          "observations": []
+        },
+        {
+          "iso2": "SG",
+          "name_ja": "シンガポール",
+          "observations": []
+        },
+        {
+          "iso2": "KR",
+          "name_ja": "韓国",
+          "observations": []
+        },
+        {
+          "iso2": "HK",
+          "name_ja": "香港",
+          "observations": []
+        },
+        {
+          "iso2": "AE",
+          "name_ja": "UAE",
+          "observations": []
+        },
+        {
+          "iso2": "SA",
+          "name_ja": "サウジアラビア",
+          "observations": []
+        },
+        {
+          "iso2": "TR",
+          "name_ja": "トルコ",
+          "observations": []
+        },
+        {
+          "iso2": "GB",
+          "name_ja": "英国",
+          "observations": []
+        },
+        {
+          "iso2": "DE",
+          "name_ja": "ドイツ",
+          "observations": []
+        },
+        {
+          "iso2": "FR",
+          "name_ja": "フランス",
+          "observations": []
+        },
+        {
+          "iso2": "US",
+          "name_ja": "米国",
+          "observations": []
+        },
+        {
+          "iso2": "CA",
+          "name_ja": "カナダ",
+          "observations": []
+        },
+        {
+          "iso2": "BR",
+          "name_ja": "ブラジル",
+          "observations": []
+        }
+      ]
+    }
+  }
+}

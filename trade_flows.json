@@ -1,0 +1,1937 @@
+{
+  "schema_version": "1.0.0",
+  "feed_id": "trade_flows",
+  "last_updated": "2026-07-12T16:29:11+09:00",
+  "source": {
+    "label": "UN Comtrade",
+    "url": "https://comtradeplus.un.org/",
+    "license": "UN data usage policy",
+    "disclaimer_ja": "本ページの数値は公開統計の二次加工です。投資・経営判断は自己責任でお願いします。"
+  },
+  "meta": {
+    "reporter": {
+      "iso2": "JP",
+      "iso3": "JPN",
+      "name_ja": "日本"
+    },
+    "partners": [
+      {
+        "iso2": "VN",
+        "name_ja": "ベトナム",
+        "name_en": "Vietnam"
+      },
+      {
+        "iso2": "TH",
+        "name_ja": "タイ",
+        "name_en": "Thailand"
+      },
+      {
+        "iso2": "CN",
+        "name_ja": "中国",
+        "name_en": "China"
+      },
+      {
+        "iso2": "IN",
+        "name_ja": "インド",
+        "name_en": "India"
+      },
+      {
+        "iso2": "ID",
+        "name_ja": "インドネシア",
+        "name_en": "Indonesia"
+      },
+      {
+        "iso2": "PH",
+        "name_ja": "フィリピン",
+        "name_en": "Philippines"
+      },
+      {
+        "iso2": "MY",
+        "name_ja": "マレーシア",
+        "name_en": "Malaysia"
+      },
+      {
+        "iso2": "SG",
+        "name_ja": "シンガポール",
+        "name_en": "Singapore"
+      },
+      {
+        "iso2": "KR",
+        "name_ja": "韓国",
+        "name_en": "Korea"
+      },
+      {
+        "iso2": "HK",
+        "name_ja": "香港",
+        "name_en": "Hong Kong SAR"
+      },
+      {
+        "iso2": "AE",
+        "name_ja": "UAE",
+        "name_en": "United Arab Emirates"
+      },
+      {
+        "iso2": "SA",
+        "name_ja": "サウジアラビア",
+        "name_en": "Saudi Arabia"
+      },
+      {
+        "iso2": "TR",
+        "name_ja": "トルコ",
+        "name_en": "Turkiye"
+      },
+      {
+        "iso2": "GB",
+        "name_ja": "英国",
+        "name_en": "United Kingdom"
+      },
+      {
+        "iso2": "DE",
+        "name_ja": "ドイツ",
+        "name_en": "Germany"
+      },
+      {
+        "iso2": "FR",
+        "name_ja": "フランス",
+        "name_en": "France"
+      },
+      {
+        "iso2": "US",
+        "name_ja": "米国",
+        "name_en": "United States"
+      },
+      {
+        "iso2": "CA",
+        "name_ja": "カナダ",
+        "name_en": "Canada"
+      },
+      {
+        "iso2": "BR",
+        "name_ja": "ブラジル",
+        "name_en": "Brazil"
+      }
+    ],
+    "hs_codes": [
+      {
+        "hs": "22",
+        "name_ja": "飲料・アルコール・酢",
+        "name_en": "Beverages"
+      },
+      {
+        "hs": "33",
+        "name_ja": "精油・香料・化粧品",
+        "name_en": "Essential oils / cosmetics"
+      },
+      {
+        "hs": "84",
+        "name_ja": "機械類",
+        "name_en": "Machinery"
+      }
+    ],
+    "year_coverage": {
+      "from": 2022,
+      "to": 2024
+    },
+    "metric_ids": [
+      "trade.export.value_usd",
+      "trade.import.value_usd"
+    ],
+    "row_count": 162
+  },
+  "modules": {
+    "E3_trade_flows": {
+      "module_id": "E3",
+      "title_ja": "日本の品目別・相手国別 貿易フロー",
+      "title_en": "Japan trade flows by HS and partner",
+      "last_updated": "2026-07-12T16:29:11+09:00",
+      "source": {
+        "label": "UN Comtrade API",
+        "url": "https://comtradedeveloper.un.org/"
+      },
+      "flows": [
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 16117968.79,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 14075985.61,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1365941502.08,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1397981.7,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1766504.0,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 998729250.38,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 23627717.3,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 26625250.07,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1194210311.78,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 397503393.78,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 2881354488.84,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 30942009967.02,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 7389237.3,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 50918452.03,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 3609698990.13,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 20954789.86,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 16288518.72,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 2180545683.92,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 135151738.99,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 789644575.04,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1559400489.33,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 3565305.04,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 33565347.96,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 3335007366.61,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 4929567.63,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 12211016.34,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 2371250982.14,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 47710787.02,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 618600595.96,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 9775986580.36,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 15503146.43,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 40927489.82,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 2212358771.42,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 6135432.55,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 14689446.73,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 1561166042.75,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 271669.23,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 804338.34,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 597708803.19,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 71951220.18,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 701750673.72,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 3238331782.49,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 14327008.16,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 98632478.64,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 5777721151.4,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 680283.36,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 3883165.04,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 878723945.56,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 267582892.07,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 204425096.3,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 34363785173.44,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 63372095.37,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 101043486.03,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2022,
+          "value_usd": 2497071334.76,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 17411195.74,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 14486309.38,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1487369508.37,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1479657.78,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2092991.26,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 925656214.21,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 17738319.27,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 21775772.99,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1006732348.05,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 335473293.41,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2233648213.76,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 29441135422.54,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 6436577.88,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 47403187.44,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 3386082640.09,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 18466122.5,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 9982506.39,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2224918461.37,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 118449388.46,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 618743051.29,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1267901522.72,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2895703.06,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 28016110.92,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 3259432108.6,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 5591173.04,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 11895856.6,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2891492377.92,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 108439378.57,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 289259724.37,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 8081225011.56,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 11396935.92,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 39234950.36,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1782516502.46,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 4926647.76,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 15082937.2,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1440990740.45,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 254599.45,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 1148199.46,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 655693560.77,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 62662512.82,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 499374324.57,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2240582146.39,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 13086791.81,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 97544039.66,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 5145366681.19,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 368990.9,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 3184197.85,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 973198762.63,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 234169005.87,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 179086629.53,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 33470437019.1,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 47007141.48,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 76091454.01,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2023,
+          "value_usd": 2092181907.58,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 12666510.97,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 19830013.96,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "AE",
+          "partner_name_ja": "UAE",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1673062812.86,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1400113.43,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 3496088.44,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "BR",
+          "partner_name_ja": "ブラジル",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1024510177.14,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 21548877.31,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 18809958.69,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CA",
+          "partner_name_ja": "カナダ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 971682529.38,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 256401814.37,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1660927800.62,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "CN",
+          "partner_name_ja": "中国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 30508212228.06,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 7264839.94,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 48038411.57,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "DE",
+          "partner_name_ja": "ドイツ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2760041990.7,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 15782428.94,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 13288670.56,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "GB",
+          "partner_name_ja": "英国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2137743585.88,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 125554201.95,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 444554794.91,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "HK",
+          "partner_name_ja": "香港",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1220123642.21,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2928095.46,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 35105110.71,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "ID",
+          "partner_name_ja": "インドネシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2843757985.16,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 4710513.25,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 9333840.66,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "IN",
+          "partner_name_ja": "インド",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2821303648.76,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 121721757.28,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 210837777.75,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "KR",
+          "partner_name_ja": "韓国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 8343258588.14,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 10045835.3,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 44690704.89,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "MY",
+          "partner_name_ja": "マレーシア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2065627339.23,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 6084167.69,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 20857990.41,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "PH",
+          "partner_name_ja": "フィリピン",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1373933755.65,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 484671.93,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 1527076.95,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SA",
+          "partner_name_ja": "サウジアラビア",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 588153824.91,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 58669046.76,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 375182923.85,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "SG",
+          "partner_name_ja": "シンガポール",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2546887270.67,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 13060931.63,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 112836847.43,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TH",
+          "partner_name_ja": "タイ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 4382217884.92,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 446512.84,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2455057.57,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "TR",
+          "partner_name_ja": "トルコ",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 849813288.82,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 243786893.48,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 192443552.26,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "US",
+          "partner_name_ja": "米国",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 31972300742.6,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "22",
+          "hs_name_ja": "飲料・アルコール・酢",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 39105598.06,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "33",
+          "hs_name_ja": "精油・香料・化粧品",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 75433781.48,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        },
+        {
+          "partner_iso2": "VN",
+          "partner_name_ja": "ベトナム",
+          "hs": "84",
+          "hs_name_ja": "機械類",
+          "flow": "X",
+          "year": 2024,
+          "value_usd": 2159991601.6,
+          "metric_id": "trade.export.value_usd",
+          "veritas": "✅"
+        }
+      ]
+    }
+  }
+}

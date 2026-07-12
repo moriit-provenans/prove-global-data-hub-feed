@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-12T15:39:44+09:00",
+  "generated_at": "2026-07-12T16:29:11+09:00",
   "hub_name": "PROVE Global Data Hub",
   "feeds": [
     {
@@ -25,13 +25,50 @@
       ]
     },
     {
+      "feed_id": "trade_flows",
+      "filename": "trade_flows.json",
+      "title_ja": "日本の品目別・相手国別 貿易フロー",
+      "title_en": "Japan trade flows by HS and partner",
+      "phase": "2",
+      "status": "active",
+      "last_updated": "2026-07-12T16:29:11+09:00",
+      "source": {
+        "label": "UN Comtrade",
+        "url": "https://comtradeplus.un.org/"
+      },
+      "schema_version": "1.0.0",
+      "update_cadence": "monthly",
+      "modules": [
+        "E3"
+      ]
+    },
+    {
+      "feed_id": "jp_affiliates",
+      "filename": "jp_affiliates.json",
+      "title_ja": "日系海外現地法人（国別）",
+      "title_en": "Japanese overseas affiliates by country",
+      "phase": "2",
+      "status": "planned",
+      "last_updated": "2026-07-12T16:29:11+09:00",
+      "source": {
+        "label": "経産省 海外事業活動基本調査（Excel・API DB表なし）",
+        "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120"
+      },
+      "schema_version": "1.0.0",
+      "update_cadence": "annual",
+      "modules": [
+        "C1"
+      ],
+      "note_ja": "e-Stat getStatsList(statsCode=00550120)=0件。Excel半自動取込で本番化予定。"
+    },
+    {
       "feed_id": "market_matrix",
       "filename": "market_matrix.json",
       "title_ja": "業種×国 市場マトリクス",
       "title_en": "Industry × country market matrix",
       "phase": "2",
       "status": "planned",
-      "last_updated": "2026-07-12T15:39:44+09:00",
+      "last_updated": "2026-07-12T16:29:11+09:00",
       "source": {
         "label": "Atlas DataLake market-grid"
       },
@@ -40,7 +77,8 @@
       "modules": [
         "B1",
         "B2"
-      ]
+      ],
+      "note_ja": "セル充填は Sonnet フェーズ（事実品質ゲート）。"
     }
   ]
 }

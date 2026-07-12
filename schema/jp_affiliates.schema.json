@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/jp_affiliates.schema.json",
+  "title": "PROVE Global Data Hub — jp_affiliates.json v1（Phase 2 / C1）",
+  "description": "日系海外現地法人の国別・法人数／売上（経産省 海外事業活動基本調査 via e-Stat）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "source", "meta", "modules"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "jp_affiliates" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "countries": { "type": "array" },
+        "year_coverage": {
+          "type": "object",
+          "properties": {
+            "from": { "type": "integer" },
+            "to": { "type": "integer" }
+          }
+        },
+        "metric_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "stats_data_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "e-Stat statsDataId 一覧"
+        }
+      }
+    },
+    "modules": {
+      "type": "object",
+      "required": ["C1_affiliates"],
+      "properties": {
+        "C1_affiliates": {
+          "type": "object",
+          "required": ["module_id", "title_ja", "last_updated", "series"],
+          "properties": {
+            "module_id": { "type": "string", "const": "C1" },
+            "title_ja": { "type": "string" },
+            "title_en": { "type": "string" },
+            "last_updated": { "type": "string", "format": "date-time" },
+            "source": { "type": "object" },
+            "series": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["iso2", "observations"],
+                "properties": {
+                  "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+                  "name_ja": { "type": "string" },
+                  "observations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["year"],
+                      "properties": {
+                        "year": { "type": "integer" },
+                        "count": { "type": ["number", "null"] },
+                        "sales_jpy": { "type": ["number", "null"] },
+                        "unit_count": { "type": "string" },
+                        "unit_sales": { "type": "string" },
+                        "metric_ids": {
+                          "type": "array",
+                          "items": { "type": "string" }
+                        },
+                        "source_ref": { "type": "string" },
+                        "veritas": {
+                          "type": "string",
+                          "enum": ["✅", "⚠️", "🔴"]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

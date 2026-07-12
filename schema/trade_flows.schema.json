@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/trade_flows.schema.json",
+  "title": "PROVE Global Data Hub — trade_flows.json v1（Phase 2 / E3）",
+  "description": "日本⇄相手国の品目別貿易フロー（UN Comtrade HS）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "source", "meta", "modules"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "trade_flows" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "reporter": {
+          "type": "object",
+          "properties": {
+            "iso2": { "type": "string" },
+            "iso3": { "type": "string" },
+            "name_ja": { "type": "string" }
+          }
+        },
+        "partners": { "type": "array" },
+        "hs_codes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["hs", "name_ja"],
+            "properties": {
+              "hs": { "type": "string" },
+              "name_ja": { "type": "string" },
+              "name_en": { "type": "string" }
+            }
+          }
+        },
+        "year_coverage": {
+          "type": "object",
+          "properties": {
+            "from": { "type": "integer" },
+            "to": { "type": "integer" }
+          }
+        },
+        "metric_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "modules": {
+      "type": "object",
+      "required": ["E3_trade_flows"],
+      "properties": {
+        "E3_trade_flows": {
+          "type": "object",
+          "required": ["module_id", "title_ja", "last_updated", "flows"],
+          "properties": {
+            "module_id": { "type": "string", "const": "E3" },
+            "title_ja": { "type": "string" },
+            "title_en": { "type": "string" },
+            "last_updated": { "type": "string", "format": "date-time" },
+            "source": { "type": "object" },
+            "flows": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["partner_iso2", "hs", "flow", "year", "value_usd"],
+                "properties": {
+                  "partner_iso2": { "type": "string" },
+                  "partner_name_ja": { "type": "string" },
+                  "hs": { "type": "string" },
+                  "hs_name_ja": { "type": "string" },
+                  "flow": { "type": "string", "enum": ["X", "M"] },
+                  "year": { "type": "integer" },
+                  "value_usd": { "type": "number" },
+                  "metric_id": { "type": "string" },
+                  "veritas": {
+                    "type": "string",
+                    "enum": ["✅", "⚠️", "🔴"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
