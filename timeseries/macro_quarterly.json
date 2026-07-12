@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "feed_id": "macro_quarterly",
+  "last_updated": "2026-07-12T22:10:36+09:00",
+  "frequency": "quarterly",
+  "source": {
+    "label": "IMF QNEA (National Economic Accounts, Quarterly)",
+    "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
+    "license": "IMF Data Terms",
+    "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+  },
+  "meta": {
+    "indicator_ids": [
+      "macro_q.gdp_nominal.usd",
+      "macro_q.gdp_real.qoq_pct",
+      "macro_q.gdp_real.yoy_pct",
+      "macro_q.manufacturing_gva_real.yoy_pct"
+    ],
+    "iso2_list": [],
+    "period_range": {
+      "from": null,
+      "to": null
+    },
+    "row_count": 0
+  },
+  "observations": []
+}

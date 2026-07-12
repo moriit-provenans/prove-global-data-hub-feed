@@ -1,13 +1,13 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T20:08:02+09:00",
+  "last_updated": "2026-07-12T22:10:36+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。 tariff_hs6_annual v0.1（WITS/TRAINS・キー不要・品目別関税）を追加。",
+  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
       "wb_code": "NY.GDP.MKTP.CD",
-      "name_ja": "名目GDP",
+      "name_ja": "名目GDP総額",
       "name_en": "GDP (current US$)",
       "unit": "USD",
       "category": "経済規模",
@@ -17,6 +17,7 @@
       "higher_is_better": true,
       "description_ja": "市場規模の目安。進出先の経済規模比較の第一指標。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -63,6 +64,7 @@
       "higher_is_better": true,
       "description_ja": "成長モメンタム。短期の市場拡大スピードの比較に使う。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -99,7 +101,7 @@
     {
       "indicator_id": "macro.gdp_per_capita.current_usd",
       "wb_code": "NY.GDP.PCAP.CD",
-      "name_ja": "一人当たりGDP",
+      "name_ja": "名目一人当たりGDP",
       "name_en": "GDP per capita (current US$)",
       "unit": "USD",
       "category": "豊かさ",
@@ -109,6 +111,7 @@
       "higher_is_better": true,
       "description_ja": "購買力・価格帯設計の目安。B2C/プレミアム可否の判断材料。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -155,6 +158,7 @@
       "higher_is_better": true,
       "description_ja": "潜在顧客ベース。市場規模＝人口×所得の片翼。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -201,6 +205,7 @@
       "higher_is_better": true,
       "description_ja": "都市集中度。拠点配置・チャネル設計の示唆。",
       "phase": "1",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -236,8 +241,8 @@
     {
       "indicator_id": "macro.fdi_inflow.current_usd",
       "wb_code": "BX.KLT.DINV.CD.WD",
-      "name_ja": "FDI流入",
-      "name_en": "Foreign direct investment, net inflows (BoP, current US$)",
+      "name_ja": "FDI流入（名目USD）",
+      "name_en": "FDI net inflows (BoP, current US$)",
       "unit": "USD",
       "category": "投資",
       "frequencies": [
@@ -246,6 +251,7 @@
       "higher_is_better": true,
       "description_ja": "外資誘致力。競合参入の活況度・政策魅力の代理指標。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -281,7 +287,7 @@
     {
       "indicator_id": "macro.inflation.cpi_pct",
       "wb_code": "FP.CPI.TOTL.ZG",
-      "name_ja": "インフレ率（CPI）",
+      "name_ja": "インフレ率（ヘッドラインCPI）",
       "name_en": "Inflation, consumer prices (annual %)",
       "unit": "%",
       "category": "物価",
@@ -289,8 +295,9 @@
         "annual"
       ],
       "higher_is_better": false,
-      "description_ja": "価格改定・契約通貨設計・コスト予測の基礎。",
+      "description_ja": "価格改定・契約通貨設計・コスト予測の基礎。ヘッドライン（総合）CPI。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -337,6 +344,7 @@
       "higher_is_better": null,
       "description_ja": "送金・価格転嫁・損益計算の前提。値の高低自体は良し悪しではない。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -372,7 +380,7 @@
     {
       "indicator_id": "macro.exports.current_usd",
       "wb_code": "NE.EXP.GNFS.CD",
-      "name_ja": "財・サービス輸出",
+      "name_ja": "財・サービス輸出（名目USD）",
       "name_en": "Exports of goods and services (current US$)",
       "unit": "USD",
       "category": "外需",
@@ -382,6 +390,7 @@
       "higher_is_better": true,
       "description_ja": "外需依存度・輸出ハブ適性の判断材料。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -417,7 +426,7 @@
     {
       "indicator_id": "macro.current_account.current_usd",
       "wb_code": "BN.CAB.XOKA.CD",
-      "name_ja": "経常収支",
+      "name_ja": "経常収支（名目USD）",
       "name_en": "Current account balance (BoP, current US$)",
       "unit": "USD",
       "category": "対外",
@@ -427,6 +436,7 @@
       "higher_is_better": true,
       "description_ja": "対外収支の健全性。通貨・政策リスクの補助線。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -462,7 +472,7 @@
     {
       "indicator_id": "macro.imports.current_usd",
       "wb_code": "NE.IMP.GNFS.CD",
-      "name_ja": "財・サービス輸入",
+      "name_ja": "財・サービス輸入（名目USD）",
       "name_en": "Imports of goods and services (current US$)",
       "unit": "USD",
       "category": "外需",
@@ -472,6 +482,7 @@
       "higher_is_better": null,
       "description_ja": "輸入市場規模。日本からの輸出機会の大きさを測る。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -517,6 +528,7 @@
       "higher_is_better": false,
       "description_ja": "労働市場の緩み。採用難易度・賃金圧力の補助指標。",
       "phase": "1",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -552,7 +564,7 @@
     {
       "indicator_id": "macro.gni_per_capita.current_usd",
       "wb_code": "NY.GNP.PCAP.CD",
-      "name_ja": "一人当たりGNI",
+      "name_ja": "名目一人当たりGNI",
       "name_en": "GNI per capita (current US$)",
       "unit": "USD",
       "category": "豊かさ",
@@ -562,6 +574,7 @@
       "higher_is_better": true,
       "description_ja": "国民所得ベースの豊かさ。GDP per capita の補完。",
       "phase": "1",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -595,6 +608,144 @@
       }
     },
     {
+      "indicator_id": "macro.labor_force.total",
+      "wb_code": "SL.TLF.TOTL.IN",
+      "name_ja": "労働力人口",
+      "name_en": "Labor force, total",
+      "unit": "persons",
+      "category": "労働",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働供給の規模。採用計画・賃金圧力の基礎。",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SL.TLF.TOTL.IN",
+        "url": "https://data.worldbank.org/indicator/SL.TLF.TOTL.IN"
+      }
+    },
+    {
+      "indicator_id": "macro.exports.pct_gdp",
+      "wb_code": "NE.EXP.GNFS.ZS",
+      "name_ja": "輸出（対GDP％）",
+      "name_en": "Exports of goods and services (% of GDP)",
+      "unit": "%",
+      "category": "外需",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "外需依存度。輸出比率が高い国は外需ショックに敏感。",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NE.EXP.GNFS.ZS",
+        "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.merch_trade.pct_gdp",
+      "wb_code": "TG.VAL.TOTL.GD.ZS",
+      "name_ja": "商品貿易（対GDP％）",
+      "name_en": "Merchandise trade (% of GDP)",
+      "unit": "%",
+      "category": "貿易",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "財貿易の対GDP比率。貿易開放度の補助線。",
+      "phase": "1",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TG.VAL.TOTL.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/TG.VAL.TOTL.GD.ZS"
+      }
+    },
+    {
       "indicator_id": "gov.wgi.control_corruption.est",
       "wb_code": "GOV_WGI_CC.EST",
       "name_ja": "腐敗抑制（WGI）",
@@ -607,6 +758,7 @@
       "higher_is_better": true,
       "description_ja": "腐敗リスク。取引先与信・コンプライアンス設計の基礎。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -652,6 +804,7 @@
       "higher_is_better": true,
       "description_ja": "行政の執行力。許認可・インフラ整備スピードの代理指標。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -697,6 +850,7 @@
       "higher_is_better": true,
       "description_ja": "契約執行・財産権保護の信頼性。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -742,6 +896,7 @@
       "higher_is_better": true,
       "description_ja": "民間活動を促す規制環境の質。進出コストの補助線。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -787,6 +942,7 @@
       "higher_is_better": true,
       "description_ja": "政治・治安リスク。拠点・在庫配置の判断材料。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -832,6 +988,7 @@
       "higher_is_better": true,
       "description_ja": "表現・結社の自由度。レピュテーション／ESG観点の補完。",
       "phase": "1b",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -877,6 +1034,7 @@
       "higher_is_better": true,
       "description_ja": "電力基盤。製造・コールドチェーン・IT運用の前提条件。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -922,6 +1080,7 @@
       "higher_is_better": true,
       "description_ja": "デジタル到達度。EC・マーケ・リモート支援の可否判断。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -967,6 +1126,7 @@
       "higher_is_better": false,
       "description_ja": "財政リスク。カバレッジが薄い国あり（欠損は正常）。",
       "phase": "1b",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -1005,6 +1165,7 @@
       "higher_is_better": true,
       "description_ja": "国内貯蓄余力。投資ファイナンス・金利環境の補助指標。",
       "phase": "1b",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -1041,7 +1202,7 @@
       "indicator_id": "macro.industry_va.pct_gdp",
       "wb_code": "NV.IND.TOTL.ZS",
       "name_ja": "産業付加価値比率（対GDP）",
-      "name_en": "Industry (including construction), value added (% of GDP)",
+      "name_en": "Industry value added (% of GDP)",
       "unit": "%",
       "category": "産業構造",
       "frequencies": [
@@ -1050,6 +1211,7 @@
       "higher_is_better": null,
       "description_ja": "産業（建設含む）のGDP構成比。BtoB市場の厚みの第一近似。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -1086,7 +1248,7 @@
       "indicator_id": "macro.manufacturing_va.pct_gdp",
       "wb_code": "NV.IND.MANF.ZS",
       "name_ja": "製造業付加価値比率（対GDP）",
-      "name_en": "Manufacturing, value added (% of GDP)",
+      "name_en": "Manufacturing value added (% of GDP)",
       "unit": "%",
       "category": "産業構造",
       "frequencies": [
@@ -1095,6 +1257,7 @@
       "higher_is_better": null,
       "description_ja": "製造業の厚み。UNIDO業種別GVAへの橋渡し指標。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -1131,15 +1294,16 @@
       "indicator_id": "macro.agriculture_va.pct_gdp",
       "wb_code": "NV.AGR.TOTL.ZS",
       "name_ja": "農林水産業付加価値比率（対GDP）",
-      "name_en": "Agriculture, forestry, and fishing, value added (% of GDP)",
+      "name_en": "Agriculture value added (% of GDP)",
       "unit": "%",
       "category": "産業構造",
       "frequencies": [
         "annual"
       ],
       "higher_is_better": null,
-      "description_ja": "SNA式全産業分解（農業/産業/サービス）の一角。industry_gva_annualの合成に使用。",
+      "description_ja": "SNA式全産業分解の一角。industry_gva_annualの合成に使用。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -1176,7 +1340,7 @@
       "indicator_id": "macro.services_va.pct_gdp",
       "wb_code": "NV.SRV.TOTL.ZS",
       "name_ja": "サービス業付加価値比率（対GDP）",
-      "name_en": "Services, value added (% of GDP)",
+      "name_en": "Services value added (% of GDP)",
       "unit": "%",
       "category": "産業構造",
       "frequencies": [
@@ -1185,6 +1349,7 @@
       "higher_is_better": null,
       "description_ja": "SNA式全産業分解の一角。industry_gva_annualの合成に使用。",
       "phase": "1b",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -1228,8 +1393,9 @@
         "annual"
       ],
       "higher_is_better": false,
-      "description_ja": "国レベルの関税障壁の第一近似（WITS/TRAINS由来のWB集計）。品目別詳細は tariff_hs6_annual を参照。",
+      "description_ja": "国レベルの関税障壁の第一近似。品目別は tariff_hs6_annual を参照。",
       "phase": "2c",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -1273,8 +1439,9 @@
         "annual"
       ],
       "higher_is_better": false,
-      "description_ja": "実際の貿易構成を反映した関税負担の実感値。単純平均との差が大きい国は特定品目に高関税が偏在。",
+      "description_ja": "実際の貿易構成を反映した関税負担の実感値。",
       "phase": "2c",
+      "priority": "should",
       "available_iso2": [
         "AE",
         "BR",
@@ -1308,6 +1475,4098 @@
       }
     },
     {
+      "indicator_id": "macro.gdp.constant_usd",
+      "wb_code": "NY.GDP.MKTP.KD",
+      "name_ja": "実質GDP総額（定数USD）",
+      "name_en": "GDP (constant 2015 US$)",
+      "unit": "USD",
+      "category": "経済規模",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "物価調整済みの経済規模。名目GDPとの差で物価・為替効果を分離。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.MKTP.KD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.constant_usd",
+      "wb_code": "NY.GDP.PCAP.KD",
+      "name_ja": "実質一人当たりGDP",
+      "name_en": "GDP per capita (constant 2015 US$)",
+      "unit": "USD",
+      "category": "豊かさ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "物価調整済みの一人当たり所得。時系列比較に適する。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.PCAP.KD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.KD"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp.ppp_usd",
+      "wb_code": "NY.GDP.MKTP.PP.CD",
+      "name_ja": "GDP総額（PPP）",
+      "name_en": "GDP, PPP (current international $)",
+      "unit": "USD_PPP",
+      "category": "経済規模",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "購買力平価換算の経済規模。生活水準・国内市場の実感比較に使う。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.MKTP.PP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.ppp_usd",
+      "wb_code": "NY.GDP.PCAP.PP.CD",
+      "name_ja": "一人当たりGDP（PPP）",
+      "name_en": "GDP per capita, PPP (current international $)",
+      "unit": "USD_PPP",
+      "category": "豊かさ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "購買力平価の一人当たり所得。価格帯・現地コスト感の比較に有用。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.PCAP.PP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.ppp_constant",
+      "wb_code": "NY.GDP.PCAP.PP.KD",
+      "name_ja": "一人当たりGDP（PPP・実質）",
+      "name_en": "GDP per capita, PPP (constant 2021 international $)",
+      "unit": "USD_PPP",
+      "category": "豊かさ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "PPPかつ物価調整済み。長期の実質購買力比較。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.PCAP.PP.KD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD"
+      }
+    },
+    {
+      "indicator_id": "macro.private_consumption.current_usd",
+      "wb_code": "NE.CON.PRVT.CD",
+      "name_ja": "民間最終消費支出（名目USD）",
+      "name_en": "Households and NPISHs final consumption expenditure (current US$)",
+      "unit": "USD",
+      "category": "需要",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "家計需要の規模。B2C市場の第一近似。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NE.CON.PRVT.CD",
+        "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.gni.current_usd",
+      "wb_code": "NY.GNP.MKTP.CD",
+      "name_ja": "GNI総額（名目USD）",
+      "name_en": "GNI (current US$)",
+      "unit": "USD",
+      "category": "経済規模",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国民総所得。GDPとの差は海外所得純受取。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GNP.MKTP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GNP.MKTP.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.cpi.index",
+      "wb_code": "FP.CPI.TOTL",
+      "name_ja": "CPI指数（総合・水準）",
+      "name_en": "Consumer price index (2010 = 100)",
+      "unit": "index",
+      "category": "物価",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "CPI水準指数。インフレ率（％変化）の補完。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FP.CPI.TOTL",
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp_deflator.growth_pct",
+      "wb_code": "NY.GDP.DEFL.KD.ZG",
+      "name_ja": "GDPデフレータ上昇率",
+      "name_en": "Inflation, GDP deflator (annual %)",
+      "unit": "%",
+      "category": "物価",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "経済全体の物価上昇。CPIと並ぶ二本柱。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.DEFL.KD.ZG",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.DEFL.KD.ZG"
+      }
+    },
+    {
+      "indicator_id": "macro.real_interest.pct",
+      "wb_code": "FR.INR.RINR",
+      "name_ja": "実質金利",
+      "name_en": "Real interest rate (%)",
+      "unit": "%",
+      "category": "金融",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "インフレ調整後の金利。投資・借入コストの実感値。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FR.INR.RINR",
+        "url": "https://data.worldbank.org/indicator/FR.INR.RINR"
+      }
+    },
+    {
+      "indicator_id": "macro.lending_rate.pct",
+      "wb_code": "FR.INR.LEND",
+      "name_ja": "貸出金利",
+      "name_en": "Lending interest rate (%)",
+      "unit": "%",
+      "category": "金融",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "企業・家計の借入コストの目安。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FR.INR.LEND",
+        "url": "https://data.worldbank.org/indicator/FR.INR.LEND"
+      }
+    },
+    {
+      "indicator_id": "macro.broad_money.growth_pct",
+      "wb_code": "FM.LBL.BMNY.ZG",
+      "name_ja": "広義マネー成長率",
+      "name_en": "Broad money growth (annual %)",
+      "unit": "%",
+      "category": "金融",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "流動性拡大のスピード。インフレ・資産価格の補助線。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FM.LBL.BMNY.ZG",
+        "url": "https://data.worldbank.org/indicator/FM.LBL.BMNY.ZG"
+      }
+    },
+    {
+      "indicator_id": "macro.reer.index",
+      "wb_code": "PX.REX.REER",
+      "name_ja": "実質実効為替レート",
+      "name_en": "Real effective exchange rate index",
+      "unit": "index",
+      "category": "為替",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "物価調整済みの通貨の実力。輸出競争力の代理指標。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "US"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "PX.REX.REER",
+        "url": "https://data.worldbank.org/indicator/PX.REX.REER"
+      }
+    },
+    {
+      "indicator_id": "macro.reserves.current_usd",
+      "wb_code": "FI.RES.TOTL.CD",
+      "name_ja": "外貨準備高",
+      "name_en": "Total reserves (includes gold, current US$)",
+      "unit": "USD",
+      "category": "対外",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "外貨流動性バッファ。通貨危機耐性の目安。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FI.RES.TOTL.CD",
+        "url": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.current_account.pct_gdp",
+      "wb_code": "BN.CAB.XOKA.GD.ZS",
+      "name_ja": "経常収支（対GDP％）",
+      "name_en": "Current account balance (% of GDP)",
+      "unit": "%",
+      "category": "対外",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "対外収支の対GDP比。持続可能性の判断材料。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BN.CAB.XOKA.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.trade_openness.pct_gdp",
+      "wb_code": "NE.TRD.GNFS.ZS",
+      "name_ja": "貿易開放度（対GDP）",
+      "name_en": "Trade (% of GDP)",
+      "unit": "%",
+      "category": "貿易",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "輸出入合計の対GDP。開かれた経済かの第一近似。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NE.TRD.GNFS.ZS",
+        "url": "https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.fdi_inflow.pct_gdp",
+      "wb_code": "BX.KLT.DINV.WD.GD.ZS",
+      "name_ja": "FDI流入（対GDP％）",
+      "name_en": "FDI net inflows (% of GDP)",
+      "unit": "%",
+      "category": "投資",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "経済規模対比の外資誘致力。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BX.KLT.DINV.WD.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.external_debt.pct_gni",
+      "wb_code": "DT.DOD.DECT.GN.ZS",
+      "name_ja": "対外債務（対GNI％）",
+      "name_en": "External debt stocks (% of GNI)",
+      "unit": "%",
+      "category": "対外",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "対外債務負担。新興国リスク評価の定番。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "BR",
+        "CN",
+        "ID",
+        "IN",
+        "PH",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "DT.DOD.DECT.GN.ZS",
+        "url": "https://data.worldbank.org/indicator/DT.DOD.DECT.GN.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.services_exports.current_usd",
+      "wb_code": "BX.GSR.NFSV.CD",
+      "name_ja": "サービス輸出（名目USD）",
+      "name_en": "Service exports (BoP, current US$)",
+      "unit": "USD",
+      "category": "外需",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "サービス輸出規模。デジタル・観光・専門サービスの外需。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BX.GSR.NFSV.CD",
+        "url": "https://data.worldbank.org/indicator/BX.GSR.NFSV.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.population.growth_pct",
+      "wb_code": "SP.POP.GROW",
+      "name_ja": "人口増加率",
+      "name_en": "Population growth (annual %)",
+      "unit": "%",
+      "category": "市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "人口動態。長期の市場拡大／縮小の基礎。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.POP.GROW",
+        "url": "https://data.worldbank.org/indicator/SP.POP.GROW"
+      }
+    },
+    {
+      "indicator_id": "macro.population.working_age_pct",
+      "wb_code": "SP.POP.1564.TO.ZS",
+      "name_ja": "生産年齢人口比率",
+      "name_en": "Population ages 15-64 (% of total)",
+      "unit": "%",
+      "category": "市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "働き手の厚み。労働供給・内需の構造。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.POP.1564.TO.ZS",
+        "url": "https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.population.elderly_pct",
+      "wb_code": "SP.POP.65UP.TO.ZS",
+      "name_ja": "65歳以上人口比率",
+      "name_en": "Population ages 65 and above (% of total)",
+      "unit": "%",
+      "category": "市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "高齢化度。ヘルスケア・介護市場の示唆。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.POP.65UP.TO.ZS",
+        "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.labor_participation.pct",
+      "wb_code": "SL.TLF.CACT.ZS",
+      "name_ja": "労働参加率",
+      "name_en": "Labor force participation rate (% of total population ages 15+)",
+      "unit": "%",
+      "category": "労働",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "就業意欲・労働市場参加の度合い。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SL.TLF.CACT.ZS",
+        "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.tax_revenue.pct_gdp",
+      "wb_code": "GC.TAX.TOTL.GD.ZS",
+      "name_ja": "税収（対GDP）",
+      "name_en": "Tax revenue (% of GDP)",
+      "unit": "%",
+      "category": "財政",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "税負担・財政余力の目安。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "GC.TAX.TOTL.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.fiscal_balance.pct_gdp",
+      "wb_code": "GC.BAL.CASH.GD.ZS",
+      "name_ja": "財政収支（対GDP）",
+      "name_en": "Cash surplus/deficit (% of GDP)",
+      "unit": "%",
+      "category": "財政",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "財政黒字／赤字。欠損多い場合はスキップ報告。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [],
+      "year_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "GC.BAL.CASH.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.BAL.CASH.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "food.production_index",
+      "wb_code": "AG.PRD.FOOD.XD",
+      "name_ja": "食料生産指数",
+      "name_en": "Food production index (2014-2016 = 100)",
+      "unit": "index",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "日本のカロリーベース食料自給率とは定義が異なる。国際比較は本指標群＋穀物輸入依存度で行う。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "AG.PRD.FOOD.XD",
+        "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD"
+      }
+    },
+    {
+      "indicator_id": "food.cereal_yield",
+      "wb_code": "AG.YLD.CREL.KG",
+      "name_ja": "穀物収量（kg/ha）",
+      "name_en": "Cereal yield (kg per hectare)",
+      "unit": "kg/ha",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "農業生産性。食料安全保障の供給側指標。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "AG.YLD.CREL.KG",
+        "url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG"
+      }
+    },
+    {
+      "indicator_id": "food.imports_pct_merch",
+      "wb_code": "TM.VAL.FOOD.ZS.UN",
+      "name_ja": "食料輸入比率（商品輸入％）",
+      "name_en": "Food imports (% of merchandise imports)",
+      "unit": "%",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "輸入バスケットに占める食料。依存の第一近似。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TM.VAL.FOOD.ZS.UN",
+        "url": "https://data.worldbank.org/indicator/TM.VAL.FOOD.ZS.UN"
+      }
+    },
+    {
+      "indicator_id": "food.exports_pct_merch",
+      "wb_code": "TX.VAL.FOOD.ZS.UN",
+      "name_ja": "食料輸出比率（商品輸出％）",
+      "name_en": "Food exports (% of merchandise exports)",
+      "unit": "%",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "輸出バスケットに占める食料。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TX.VAL.FOOD.ZS.UN",
+        "url": "https://data.worldbank.org/indicator/TX.VAL.FOOD.ZS.UN"
+      }
+    },
+    {
+      "indicator_id": "food.ag_land_pct",
+      "wb_code": "AG.LND.AGRI.ZS",
+      "name_ja": "農地比率",
+      "name_en": "Agricultural land (% of land area)",
+      "unit": "%",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "農地の国土比率。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "AG.LND.AGRI.ZS",
+        "url": "https://data.worldbank.org/indicator/AG.LND.AGRI.ZS"
+      }
+    },
+    {
+      "indicator_id": "food.arable_land_pc",
+      "wb_code": "AG.LND.ARBL.HA.PC",
+      "name_ja": "一人当たり耕地面積",
+      "name_en": "Arable land (hectares per person)",
+      "unit": "ha/person",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "人口対比の耕地。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "AG.LND.ARBL.HA.PC",
+        "url": "https://data.worldbank.org/indicator/AG.LND.ARBL.HA.PC"
+      }
+    },
+    {
+      "indicator_id": "food.undernourishment_pct",
+      "wb_code": "SN.ITK.DEFC.ZS",
+      "name_ja": "栄養不足人口比率",
+      "name_en": "Prevalence of undernourishment (% of population)",
+      "unit": "%",
+      "category": "食料",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "食料アクセスの結果指標。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2001,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SN.ITK.DEFC.ZS",
+        "url": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.imports_net_pct_use",
+      "wb_code": "EG.IMP.CONS.ZS",
+      "name_ja": "エネルギー純輸入依存度（％）",
+      "name_en": "Energy imports, net (% of energy use)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "純輸入依存度。負値＝純輸出。自給率（代理）の原データ。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.IMP.CONS.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.use_per_capita",
+      "wb_code": "EG.USE.PCAP.KG.OE",
+      "name_ja": "一人当たりエネルギー使用量",
+      "name_en": "Energy use (kg of oil equivalent per capita)",
+      "unit": "kgOE/person",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "エネルギー需要強度の一人当たり指標。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.USE.PCAP.KG.OE",
+        "url": "https://data.worldbank.org/indicator/EG.USE.PCAP.KG.OE"
+      }
+    },
+    {
+      "indicator_id": "energy.intensity",
+      "wb_code": "EG.EGY.PRIM.PP.KD",
+      "name_ja": "エネルギー原単位",
+      "name_en": "Energy intensity level of primary energy",
+      "unit": "MJ/$2017PPP",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "産出あたりエネルギー使用。効率性。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.EGY.PRIM.PP.KD",
+        "url": "https://data.worldbank.org/indicator/EG.EGY.PRIM.PP.KD"
+      }
+    },
+    {
+      "indicator_id": "energy.renewable_pct_final",
+      "wb_code": "EG.FEC.RNEW.ZS",
+      "name_ja": "再エネ比率（最終消費）",
+      "name_en": "Renewable energy consumption (% of total final energy consumption)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "最終消費に占める再エネ。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.FEC.RNEW.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.renewable_elec_pct",
+      "wb_code": "EG.ELC.RNEW.ZS",
+      "name_ja": "再エネ電力比率",
+      "name_en": "Renewable electricity output (% of total electricity output)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "発電に占める再エネ。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.RNEW.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_consumption_pc",
+      "wb_code": "EG.USE.ELEC.KH.PC",
+      "name_ja": "一人当たり電力消費",
+      "name_en": "Electric power consumption (kWh per capita)",
+      "unit": "kWh/person",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "電力需要の規模感。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.USE.ELEC.KH.PC",
+        "url": "https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC"
+      }
+    },
+    {
+      "indicator_id": "energy.power_losses_pct",
+      "wb_code": "EG.ELC.LOSS.ZS",
+      "name_ja": "送配電ロス率",
+      "name_en": "Electric power transmission and distribution losses (% of output)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "送配電効率。インフラ品質の補助線。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.LOSS.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.co2_pc",
+      "wb_code": "EN.ATM.CO2E.PC",
+      "name_ja": "一人当たりCO2排出",
+      "name_en": "CO2 emissions (metric tons per capita)",
+      "unit": "t/person",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "気候・ESG観点の排出強度。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [],
+      "year_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EN.ATM.CO2E.PC",
+        "url": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC"
+      }
+    },
+    {
+      "indicator_id": "energy.fossil_fuel_pct",
+      "wb_code": "EG.USE.COMM.FO.ZS",
+      "name_ja": "化石燃料依存度",
+      "name_en": "Fossil fuel energy consumption (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "エネルギーミックスの化石依存。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.USE.COMM.FO.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.USE.COMM.FO.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.clean_cooking_pct",
+      "wb_code": "EG.CFT.ACCS.ZS",
+      "name_ja": "クリーン調理燃料アクセス",
+      "name_en": "Access to clean fuels and technologies for cooking (% of population)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "調理エネルギーの近代化度。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.CFT.ACCS.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.CFT.ACCS.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.safely_managed_drinking_pct",
+      "wb_code": "SH.H2O.SMDW.ZS",
+      "name_ja": "安全に管理された飲料水（％）",
+      "name_en": "People using safely managed drinking water services (% of population)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "SDG飲料水。進出拠点の生活インフラ品質。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.H2O.SMDW.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.basic_drinking_pct",
+      "wb_code": "SH.H2O.BASW.ZS",
+      "name_ja": "基本的な飲料水（％）",
+      "name_en": "People using at least basic drinking water services (% of population)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "基本飲料水アクセス。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.H2O.BASW.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.safely_managed_sanitation_pct",
+      "wb_code": "SH.STA.SMSS.ZS",
+      "name_ja": "安全に管理された衛生設備（％）",
+      "name_en": "People using safely managed sanitation services (% of population)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "SDG衛生。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.STA.SMSS.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.STA.SMSS.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.basic_sanitation_pct",
+      "wb_code": "SH.STA.BASS.ZS",
+      "name_ja": "基本的な衛生設備（％）",
+      "name_en": "People using at least basic sanitation services (% of population)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "基本衛生アクセス。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.STA.BASS.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.freshwater_pc",
+      "wb_code": "ER.H2O.INTR.PC",
+      "name_ja": "一人当たり再生可能な淡水資源",
+      "name_en": "Renewable internal freshwater resources per capita (cubic meters)",
+      "unit": "m3/person",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "水資源の賦存量。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ER.H2O.INTR.PC",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.INTR.PC"
+      }
+    },
+    {
+      "indicator_id": "water.withdrawal_pct_resources",
+      "wb_code": "ER.H2O.FWTL.ZS",
+      "name_ja": "淡水取水率（資源比）",
+      "name_en": "Annual freshwater withdrawals, total (% of internal resources)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "水ストレスの代理。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ER.H2O.FWTL.ZS",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.FWTL.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.industrial_withdrawal_pct",
+      "wb_code": "ER.H2O.FWIN.ZS",
+      "name_ja": "産業用水取水比率",
+      "name_en": "Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "取水に占める産業。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ER.H2O.FWIN.ZS",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.FWIN.ZS"
+      }
+    },
+    {
+      "indicator_id": "water.agricultural_withdrawal_pct",
+      "wb_code": "ER.H2O.FWAG.ZS",
+      "name_ja": "農業用水取水比率",
+      "name_en": "Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",
+      "unit": "%",
+      "category": "水・衛生",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "取水に占める農業。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ER.H2O.FWAG.ZS",
+        "url": "https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS"
+      }
+    },
+    {
+      "indicator_id": "infra.lpi.overall",
+      "wb_code": "LP.LPI.OVRL.XQ",
+      "name_ja": "物流パフォーマンス指数（LPI）",
+      "name_en": "Logistics performance index: Overall (1=low to 5=high)",
+      "unit": "score",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "物流の総合品質。進出コスト・リードタイムの示唆。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2007,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "LP.LPI.OVRL.XQ",
+        "url": "https://data.worldbank.org/indicator/LP.LPI.OVRL.XQ"
+      }
+    },
+    {
+      "indicator_id": "infra.container_port_teu",
+      "wb_code": "IS.SHP.GOOD.TU",
+      "name_ja": "コンテナ港湾取扱量（TEU）",
+      "name_en": "Container port traffic (TEU: 20 foot equivalent units)",
+      "unit": "TEU",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "港湾ハブ規模。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2010,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IS.SHP.GOOD.TU",
+        "url": "https://data.worldbank.org/indicator/IS.SHP.GOOD.TU"
+      }
+    },
+    {
+      "indicator_id": "infra.air_freight",
+      "wb_code": "IS.AIR.GOOD.MT.K",
+      "name_ja": "航空貨物",
+      "name_en": "Air transport, freight (million ton-km)",
+      "unit": "million ton-km",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "航空貨物キャパ。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [],
+      "year_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IS.AIR.GOOD.MT.K",
+        "url": "https://data.worldbank.org/indicator/IS.AIR.GOOD.MT.K"
+      }
+    },
+    {
+      "indicator_id": "infra.rail_lines_km",
+      "wb_code": "IS.RRS.TOTL.KM",
+      "name_ja": "鉄道路線延長",
+      "name_en": "Rail lines (total route-km)",
+      "unit": "km",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "鉄道ネットワーク規模。",
+      "phase": "4a",
+      "priority": "could",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IS.RRS.TOTL.KM",
+        "url": "https://data.worldbank.org/indicator/IS.RRS.TOTL.KM"
+      }
+    },
+    {
+      "indicator_id": "infra.road_density",
+      "wb_code": "IS.ROD.DNST.K2",
+      "name_ja": "道路密度",
+      "name_en": "Road density (km of road per 100 sq. km of land area)",
+      "unit": "km/100km2",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "道路密度。欠損多い場合は報告。",
+      "phase": "4a",
+      "priority": "could",
+      "available_iso2": [],
+      "year_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IS.ROD.DNST.K2",
+        "url": "https://data.worldbank.org/indicator/IS.ROD.DNST.K2"
+      }
+    },
+    {
+      "indicator_id": "infra.mobile_per100",
+      "wb_code": "IT.CEL.SETS.P2",
+      "name_ja": "モバイル契約（100人）",
+      "name_en": "Mobile cellular subscriptions (per 100 people)",
+      "unit": "per_100",
+      "category": "デジタル",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "モバイル普及。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IT.CEL.SETS.P2",
+        "url": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2"
+      }
+    },
+    {
+      "indicator_id": "infra.fixed_broadband_per100",
+      "wb_code": "IT.NET.BBND.P2",
+      "name_ja": "固定ブロードバンド（100人）",
+      "name_en": "Fixed broadband subscriptions (per 100 people)",
+      "unit": "per_100",
+      "category": "デジタル",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "固定回線普及。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IT.NET.BBND.P2",
+        "url": "https://data.worldbank.org/indicator/IT.NET.BBND.P2"
+      }
+    },
+    {
+      "indicator_id": "infra.secure_internet_servers",
+      "wb_code": "IT.NET.SECR.P6",
+      "name_ja": "セキュアサーバ",
+      "name_en": "Secure Internet servers (per 1 million people)",
+      "unit": "per_1M",
+      "category": "デジタル",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "デジタル信頼性の代理。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2010,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IT.NET.SECR.P6",
+        "url": "https://data.worldbank.org/indicator/IT.NET.SECR.P6"
+      }
+    },
+    {
+      "indicator_id": "human.literacy_adult_pct",
+      "wb_code": "SE.ADT.LITR.ZS",
+      "name_ja": "成人識字率",
+      "name_en": "Literacy rate, adult total (% of people ages 15 and above)",
+      "unit": "%",
+      "category": "人的資本",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "成人識字。人材基盤。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CN",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SE.ADT.LITR.ZS",
+        "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS"
+      }
+    },
+    {
+      "indicator_id": "human.tertiary_enrollment",
+      "wb_code": "SE.TER.ENRR",
+      "name_ja": "高等教育就学率",
+      "name_en": "School enrollment, tertiary (% gross)",
+      "unit": "%",
+      "category": "人的資本",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "高等教育の厚み。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SE.TER.ENRR",
+        "url": "https://data.worldbank.org/indicator/SE.TER.ENRR"
+      }
+    },
+    {
+      "indicator_id": "human.education_spend_pct_gdp",
+      "wb_code": "SE.XPD.TOTL.GD.ZS",
+      "name_ja": "教育支出対GDP",
+      "name_en": "Government expenditure on education, total (% of GDP)",
+      "unit": "%",
+      "category": "人的資本",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "教育への公的投資。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SE.XPD.TOTL.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "human.life_expectancy",
+      "wb_code": "SP.DYN.LE00.IN",
+      "name_ja": "平均余命",
+      "name_en": "Life expectancy at birth, total (years)",
+      "unit": "years",
+      "category": "人的資本",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "保健・生活水準の結果指標。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.DYN.LE00.IN",
+        "url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN"
+      }
+    },
+    {
+      "indicator_id": "human.health_spend_pct_gdp",
+      "wb_code": "SH.XPD.CHEX.GD.ZS",
+      "name_ja": "医療費対GDP",
+      "name_en": "Current health expenditure (% of GDP)",
+      "unit": "%",
+      "category": "人的資本",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "医療市場の対GDP規模。",
+      "phase": "4a",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.XPD.CHEX.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_entry.overall_score",
+      "wb_code": "IC.BRE.BE.OS",
+      "name_ja": "B-READY: 事業設立（総合スコア）",
+      "name_en": "B-READY: business_entry overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業設立の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BE.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_entry.pillar1",
+      "wb_code": "IC.BRE.BE.P1",
+      "name_ja": "B-READY: 事業設立 ピラー1（規制の質）",
+      "name_en": "B-READY: business_entry pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業設立の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BE.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_entry.pillar2",
+      "wb_code": "IC.BRE.BE.P2",
+      "name_ja": "B-READY: 事業設立 ピラー2（公共サービス）",
+      "name_en": "B-READY: business_entry pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業設立の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BE.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_entry.pillar3",
+      "wb_code": "IC.BRE.BE.P3",
+      "name_ja": "B-READY: 事業設立 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: business_entry pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業設立の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BE.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_location.overall_score",
+      "wb_code": "IC.BRE.BL.OS",
+      "name_ja": "B-READY: 事業所設置（総合スコア）",
+      "name_en": "B-READY: business_location overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業所設置の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BL.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_location.pillar1",
+      "wb_code": "IC.BRE.BL.P1",
+      "name_ja": "B-READY: 事業所設置 ピラー1（規制の質）",
+      "name_en": "B-READY: business_location pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業所設置の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BL.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_location.pillar2",
+      "wb_code": "IC.BRE.BL.P2",
+      "name_ja": "B-READY: 事業所設置 ピラー2（公共サービス）",
+      "name_en": "B-READY: business_location pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業所設置の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BL.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_location.pillar3",
+      "wb_code": "IC.BRE.BL.P3",
+      "name_ja": "B-READY: 事業所設置 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: business_location pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業所設置の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BL.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.utility_services.overall_score",
+      "wb_code": "IC.BRE.US.OS",
+      "name_ja": "B-READY: 公共インフラサービス（総合スコア）",
+      "name_en": "B-READY: utility_services overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "公共インフラサービスの総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.US.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.utility_services.pillar1",
+      "wb_code": "IC.BRE.US.P1",
+      "name_ja": "B-READY: 公共インフラサービス ピラー1（規制の質）",
+      "name_en": "B-READY: utility_services pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "公共インフラサービスの規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.US.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.utility_services.pillar2",
+      "wb_code": "IC.BRE.US.P2",
+      "name_ja": "B-READY: 公共インフラサービス ピラー2（公共サービス）",
+      "name_en": "B-READY: utility_services pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "公共インフラサービスの公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.US.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.utility_services.pillar3",
+      "wb_code": "IC.BRE.US.P3",
+      "name_ja": "B-READY: 公共インフラサービス ピラー3（実務上の効率性）",
+      "name_en": "B-READY: utility_services pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "公共インフラサービスの実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.US.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.labor.overall_score",
+      "wb_code": "IC.BRE.LB.OS",
+      "name_ja": "B-READY: 労働（総合スコア）",
+      "name_en": "B-READY: labor overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.LB.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.labor.pillar1",
+      "wb_code": "IC.BRE.LB.P1",
+      "name_ja": "B-READY: 労働 ピラー1（規制の質）",
+      "name_en": "B-READY: labor pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.LB.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.labor.pillar2",
+      "wb_code": "IC.BRE.LB.P2",
+      "name_ja": "B-READY: 労働 ピラー2（公共サービス）",
+      "name_en": "B-READY: labor pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.LB.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.labor.pillar3",
+      "wb_code": "IC.BRE.LB.P3",
+      "name_ja": "B-READY: 労働 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: labor pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.LB.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.financial_services.overall_score",
+      "wb_code": "IC.BRE.FS.OS",
+      "name_ja": "B-READY: 金融サービス（総合スコア）",
+      "name_en": "B-READY: financial_services overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "金融サービスの総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.FS.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.financial_services.pillar1",
+      "wb_code": "IC.BRE.FS.P1",
+      "name_ja": "B-READY: 金融サービス ピラー1（規制の質）",
+      "name_en": "B-READY: financial_services pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "金融サービスの規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.FS.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.financial_services.pillar2",
+      "wb_code": "IC.BRE.FS.P2",
+      "name_ja": "B-READY: 金融サービス ピラー2（公共サービス）",
+      "name_en": "B-READY: financial_services pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "金融サービスの公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.FS.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.financial_services.pillar3",
+      "wb_code": "IC.BRE.FS.P3",
+      "name_ja": "B-READY: 金融サービス ピラー3（実務上の効率性）",
+      "name_en": "B-READY: financial_services pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "金融サービスの実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.FS.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.international_trade.overall_score",
+      "wb_code": "IC.BRE.IT.OS",
+      "name_ja": "B-READY: 国際貿易（総合スコア）",
+      "name_en": "B-READY: international_trade overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国際貿易の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.IT.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.international_trade.pillar1",
+      "wb_code": "IC.BRE.IT.P1",
+      "name_ja": "B-READY: 国際貿易 ピラー1（規制の質）",
+      "name_en": "B-READY: international_trade pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国際貿易の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.IT.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.international_trade.pillar2",
+      "wb_code": "IC.BRE.IT.P2",
+      "name_ja": "B-READY: 国際貿易 ピラー2（公共サービス）",
+      "name_en": "B-READY: international_trade pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国際貿易の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.IT.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.international_trade.pillar3",
+      "wb_code": "IC.BRE.IT.P3",
+      "name_ja": "B-READY: 国際貿易 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: international_trade pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国際貿易の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.IT.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.dispute_resolution.overall_score",
+      "wb_code": "IC.BRE.DR.OS",
+      "name_ja": "B-READY: 紛争解決（総合スコア）",
+      "name_en": "B-READY: dispute_resolution overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "紛争解決の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.DR.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.dispute_resolution.pillar1",
+      "wb_code": "IC.BRE.DR.P1",
+      "name_ja": "B-READY: 紛争解決 ピラー1（規制の質）",
+      "name_en": "B-READY: dispute_resolution pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "紛争解決の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.DR.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.dispute_resolution.pillar2",
+      "wb_code": "IC.BRE.DR.P2",
+      "name_ja": "B-READY: 紛争解決 ピラー2（公共サービス）",
+      "name_en": "B-READY: dispute_resolution pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "紛争解決の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.DR.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.dispute_resolution.pillar3",
+      "wb_code": "IC.BRE.DR.P3",
+      "name_ja": "B-READY: 紛争解決 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: dispute_resolution pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "紛争解決の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.DR.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.market_competition.overall_score",
+      "wb_code": "IC.BRE.MC.OS",
+      "name_ja": "B-READY: 市場競争（総合スコア）",
+      "name_en": "B-READY: market_competition overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "市場競争の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.MC.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.market_competition.pillar1",
+      "wb_code": "IC.BRE.MC.P1",
+      "name_ja": "B-READY: 市場競争 ピラー1（規制の質）",
+      "name_en": "B-READY: market_competition pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "市場競争の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.MC.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.market_competition.pillar2",
+      "wb_code": "IC.BRE.MC.P2",
+      "name_ja": "B-READY: 市場競争 ピラー2（公共サービス）",
+      "name_en": "B-READY: market_competition pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "市場競争の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.MC.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.market_competition.pillar3",
+      "wb_code": "IC.BRE.MC.P3",
+      "name_ja": "B-READY: 市場競争 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: market_competition pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "市場競争の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.MC.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.taxation.overall_score",
+      "wb_code": "IC.BRE.TX.OS",
+      "name_ja": "B-READY: 税務（総合スコア）",
+      "name_en": "B-READY: taxation overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "税務の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.TX.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.taxation.pillar1",
+      "wb_code": "IC.BRE.TX.P1",
+      "name_ja": "B-READY: 税務 ピラー1（規制の質）",
+      "name_en": "B-READY: taxation pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "税務の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.TX.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.taxation.pillar2",
+      "wb_code": "IC.BRE.TX.P2",
+      "name_ja": "B-READY: 税務 ピラー2（公共サービス）",
+      "name_en": "B-READY: taxation pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "税務の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.TX.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.taxation.pillar3",
+      "wb_code": "IC.BRE.TX.P3",
+      "name_ja": "B-READY: 税務 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: taxation pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "税務の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.TX.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_insolvency.overall_score",
+      "wb_code": "IC.BRE.BI.OS",
+      "name_ja": "B-READY: 事業破綻処理（総合スコア）",
+      "name_en": "B-READY: business_insolvency overall",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業破綻処理の総合スコア（0-100）。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BI.OS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_insolvency.pillar1",
+      "wb_code": "IC.BRE.BI.P1",
+      "name_ja": "B-READY: 事業破綻処理 ピラー1（規制の質）",
+      "name_en": "B-READY: business_insolvency pillar 1",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業破綻処理の規制の質スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BI.P1",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_insolvency.pillar2",
+      "wb_code": "IC.BRE.BI.P2",
+      "name_ja": "B-READY: 事業破綻処理 ピラー2（公共サービス）",
+      "name_en": "B-READY: business_insolvency pillar 2",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業破綻処理の公共サービススコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BI.P2",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.business_insolvency.pillar3",
+      "wb_code": "IC.BRE.BI.P3",
+      "name_ja": "B-READY: 事業破綻処理 ピラー3（実務上の効率性）",
+      "name_en": "B-READY: business_insolvency pillar 3",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "事業破綻処理の実務上の効率性スコア。",
+      "phase": "3a",
+      "priority": "should",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.BI.P3",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.pillar1_regulatory_framework.score",
+      "wb_code": "IC.BRE.P1.RF",
+      "name_ja": "B-READY: ピラー1：規制の枠組み（経済全体）",
+      "name_en": "B-READY: pillar1_regulatory_framework",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "経済全体のピラー1：規制の枠組み。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.P1.RF",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.pillar2_public_services.score",
+      "wb_code": "IC.BRE.P2.PS",
+      "name_ja": "B-READY: ピラー2：公共サービス（経済全体）",
+      "name_en": "B-READY: pillar2_public_services",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "経済全体のピラー2：公共サービス。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.P2.PS",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
+      "indicator_id": "biz.bready.pillar3_operational_efficiency.score",
+      "wb_code": "IC.BRE.P3.OE",
+      "name_ja": "B-READY: ピラー3：実務上の効率性（経済全体）",
+      "name_en": "B-READY: pillar3_operational_efficiency",
+      "unit": "score_0_100",
+      "category": "ビジネス環境",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "経済全体のピラー3：実務上の効率性。",
+      "phase": "3a",
+      "priority": "must",
+      "available_iso2": [
+        "HK",
+        "ID",
+        "PH",
+        "SG",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank B-READY (via WDI)",
+        "code": "IC.BRE.P3.OE",
+        "url": "https://www.worldbank.org/en/businessready/data"
+      }
+    },
+    {
       "indicator_id": "gov.ti.cpi.score",
       "wb_code": null,
       "name_ja": "腐敗認識指数（TI CPI）",
@@ -1320,6 +5579,7 @@
       "higher_is_better": true,
       "description_ja": "公共部門の腐敗認識（0=高腐敗〜100=清潔）。WGI腐敗抑制の補完。",
       "phase": "1c",
+      "priority": "must",
       "available_iso2": [
         "AE",
         "BR",
@@ -1351,6 +5611,53 @@
         "label": "Transparency International CPI (via OWID)",
         "code": "CPI",
         "url": "https://www.transparency.org/en/cpi"
+      }
+    },
+    {
+      "indicator_id": "energy.self_sufficiency_proxy_pct",
+      "wb_code": null,
+      "name_ja": "エネルギー自給率（代理）",
+      "name_en": "Energy self-sufficiency proxy (%)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "純輸入依存度（EG.IMP.CONS.ZS）から算出する代理指標。輸入≧0なら 100−純輸入依存、純輸出国は100。公式の一次エネルギー自給率とは定義が異なる。",
+      "phase": "4a",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Derived (Atlas)",
+        "code": "energy.imports_net_pct_use",
+        "url": null,
+        "formula": "import>=0 → 100-import; import<0 → 100 (net exporter)"
       }
     },
     {
@@ -1667,6 +5974,110 @@
         "to": 2023
       },
       "note_ja": "品目別詳細は timeseries/tariff_hs6_annual.json を参照（本indicator_idの国レベル集計とは別系統）。"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "wb_code": null,
+      "name_ja": "実質GDP成長率（四半期・前年同期比）",
+      "name_en": "Real GDP growth, quarterly (YoY %)",
+      "unit": "%",
+      "category": "マクロ（四半期）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "higher_is_better": true,
+      "description_ja": "景気の勢いを最速で捉える指標。四半期発表で年次GDPより数か月早く動向を確認できる。",
+      "phase": "2b",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
+        "license": "IMF Data Terms",
+        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+      },
+      "feed": "timeseries/macro_quarterly.json"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.qoq_pct",
+      "wb_code": null,
+      "name_ja": "実質GDP成長率（四半期・前期比・季節調整済）",
+      "name_en": "Real GDP growth, quarterly (QoQ %, SA)",
+      "unit": "%",
+      "category": "マクロ（四半期）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "higher_is_better": true,
+      "description_ja": "直近四半期の変化速度（季節調整済）。YoYより短期の転換点検知に有用。",
+      "phase": "2b",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
+        "license": "IMF Data Terms",
+        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+      },
+      "feed": "timeseries/macro_quarterly.json"
+    },
+    {
+      "indicator_id": "macro_q.gdp_nominal.usd",
+      "wb_code": null,
+      "name_ja": "名目GDP（四半期・USD）",
+      "name_en": "Nominal GDP, quarterly (USD)",
+      "unit": "USD",
+      "category": "マクロ（四半期）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "higher_is_better": true,
+      "description_ja": "四半期ベースの経済規模（USD）。年次macro.gdp.current_usdの四半期内訳。",
+      "phase": "2b",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
+        "license": "IMF Data Terms",
+        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+      },
+      "feed": "timeseries/macro_quarterly.json"
+    },
+    {
+      "indicator_id": "macro_q.manufacturing_gva_real.yoy_pct",
+      "wb_code": null,
+      "name_ja": "製造業GVA成長率（四半期・前年同期比・実質）",
+      "name_en": "Manufacturing GVA growth, quarterly (YoY %, real)",
+      "unit": "%",
+      "category": "マクロ（四半期）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "higher_is_better": null,
+      "description_ja": "鉱工業生産指数の代替（QNEAに鉱工業生産指数が無いため）。製造業の実勢を四半期で捉える。",
+      "phase": "2b",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
+        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
+        "license": "IMF Data Terms",
+        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+      },
+      "feed": "timeseries/macro_quarterly.json"
     }
   ],
   "countries": [

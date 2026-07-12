@@ -23,8 +23,10 @@ countries:
   - { iso2: CA, iso3: CAN, name_ja: カナダ, name_en: Canada, region: north_america, currency: CAD }
   - { iso2: BR, iso3: BRA, name_ja: ブラジル, name_en: Brazil, region: latin_america, currency: BRL }
   - { iso2: JP, iso3: JPN, name_ja: 日本, name_en: Japan, region: east_asia, currency: JPY }
+  # 台湾は World Bank 非収録。macro_annual は IMF WEO で補完（REQ-SMITH-20260712-002）
+  - { iso2: TW, iso3: TWN, name_ja: 台湾, name_en: Taiwan, region: east_asia, currency: TWD, source_note: imf_weo }
 
 notes:
-  - "コレクター Atlas/tools/collectors/collect_worldbank.py の GEOS と同期必須"
-  - "台湾（TW/TWN）は Phase 2 で IMF 補完を検討"
-  - "確定日: 2026-07-12（Smith Phase 0 合意）"
+  - "コレクター Atlas/tools/collectors/collect_worldbank.py の GEOS と同期必須（TW除く）"
+  - "台湾（TW/TWN）は World Bank 非収録 → IMF WEO（imf_weo.csv）で macro_annual にマージ"
+  - "確定日: 2026-07-12（Smith Phase 0 合意）／TW追加: 2026-07-12 REQ-002追伸"
