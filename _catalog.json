@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T19:11:24+09:00",
+  "last_updated": "2026-07-12T19:46:49+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。",
+  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -1128,6 +1128,96 @@
       }
     },
     {
+      "indicator_id": "macro.agriculture_va.pct_gdp",
+      "wb_code": "NV.AGR.TOTL.ZS",
+      "name_ja": "農林水産業付加価値比率（対GDP）",
+      "name_en": "Agriculture, forestry, and fishing, value added (% of GDP)",
+      "unit": "%",
+      "category": "産業構造",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "SNA式全産業分解（農業/産業/サービス）の一角。industry_gva_annualの合成に使用。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NV.AGR.TOTL.ZS",
+        "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.services_va.pct_gdp",
+      "wb_code": "NV.SRV.TOTL.ZS",
+      "name_ja": "サービス業付加価値比率（対GDP）",
+      "name_en": "Services, value added (% of GDP)",
+      "unit": "%",
+      "category": "産業構造",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "SNA式全産業分解の一角。industry_gva_annualの合成に使用。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NV.SRV.TOTL.ZS",
+        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS"
+      }
+    },
+    {
       "indicator_id": "gov.ti.cpi.score",
       "wb_code": null,
       "name_ja": "腐敗認識指数（TI CPI）",
@@ -1175,15 +1265,16 @@
     },
     {
       "indicator_id": "industry.unido.value_added.usd",
-      "name_ja": "製造業付加価値（UNIDO・ISIC2桁）",
-      "name_en": "Manufacturing value added (UNIDO INDSTAT, ISIC 2-digit)",
+      "name_ja": "製造業付加価値（UNIDO・ISIC2桁・実測）",
+      "name_en": "Manufacturing value added (UNIDO INDSTAT, ISIC 2-digit, reported)",
       "unit": "USD",
       "category": "産業",
+      "granularity": "isic2_manufacturing",
       "frequencies": [
         "annual"
       ],
       "higher_is_better": true,
-      "description_ja": "業種別市場規模のコア。ISIC Rev.4 2桁×国×年。",
+      "description_ja": "業種別市場規模のコア。ISIC Rev.4 2桁×国×年。国によりUSD換算不可（現地通貨）行あり＝veritas⚠️。",
       "phase": "2a",
       "source": {
         "label": "UNIDO INDSTAT Rev.4",
@@ -1219,10 +1310,11 @@
     },
     {
       "indicator_id": "industry.unido.employees",
-      "name_ja": "製造業雇用者数（UNIDO・ISIC2桁）",
-      "name_en": "Manufacturing employees (UNIDO INDSTAT, ISIC 2-digit)",
+      "name_ja": "製造業雇用者数（UNIDO・ISIC2桁・実測）",
+      "name_en": "Manufacturing employees (UNIDO INDSTAT, ISIC 2-digit, reported)",
       "unit": "persons",
       "category": "産業",
+      "granularity": "isic2_manufacturing",
       "frequencies": [
         "annual"
       ],
@@ -1259,6 +1351,186 @@
       "year_range": {
         "from": 2010,
         "to": 2024
+      }
+    },
+    {
+      "indicator_id": "industry.sna.agriculture_va.usd",
+      "name_ja": "農林水産業付加価値（合成・SNA式）",
+      "name_en": "Agriculture, forestry & fishing value added (synthetic, SNA-style)",
+      "unit": "USD",
+      "category": "産業",
+      "granularity": "sna_sector_synthetic",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "WB対GDP%×WB名目GDPの合成推計。全21か国・欠損なし。一次統計ではないためveritas⚠️固定。",
+      "phase": "2b",
+      "source": {
+        "label": "PROVE Global Data Hub 合成（World Bank由来）",
+        "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      }
+    },
+    {
+      "indicator_id": "industry.sna.industry_va.usd",
+      "name_ja": "産業（建設含む）付加価値（合成・SNA式）",
+      "name_en": "Industry incl. construction value added (synthetic, SNA-style)",
+      "unit": "USD",
+      "category": "産業",
+      "granularity": "sna_sector_synthetic",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "UNIDO製造業とは粒度が異なる広義区分（建設・鉱業含む）。産業全体感の把握用。",
+      "phase": "2b",
+      "source": {
+        "label": "PROVE Global Data Hub 合成（World Bank由来）",
+        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      }
+    },
+    {
+      "indicator_id": "industry.sna.manufacturing_va.usd",
+      "name_ja": "製造業付加価値（合成・SNA式）",
+      "name_en": "Manufacturing value added (synthetic, SNA-style)",
+      "unit": "USD",
+      "category": "産業",
+      "granularity": "sna_sector_synthetic",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "UNIDO実測が欠損する国・年のフォールバック推計として使用。UNIDO値と併記し差分を可視化。",
+      "phase": "2b",
+      "source": {
+        "label": "PROVE Global Data Hub 合成（World Bank由来）",
+        "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      }
+    },
+    {
+      "indicator_id": "industry.sna.services_va.usd",
+      "name_ja": "サービス業付加価値（合成・SNA式）",
+      "name_en": "Services value added (synthetic, SNA-style)",
+      "unit": "USD",
+      "category": "産業",
+      "granularity": "sna_sector_synthetic",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "非製造業（サービス）需要規模の第一近似。BtoBサービス業進出の市場規模目安。",
+      "phase": "2b",
+      "source": {
+        "label": "PROVE Global Data Hub 合成（World Bank由来）",
+        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
       }
     }
   ],

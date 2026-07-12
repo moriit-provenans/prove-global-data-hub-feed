@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/industry_gva_annual.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/industry_gva_annual.json v0.2",
+  "description": "UNIDO INDSTAT実測（isic2_manufacturing）＋ World Bank由来SNA式合成（sna_sector_synthetic）のロング形式。切替ポイント①（REQ-SMITH-20260712-002）。",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "feed_version", "last_updated", "frequency", "observations"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "2.0.0" },
+    "feed_id": { "type": "string", "const": "industry_gva_annual" },
+    "feed_version": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "frequency": { "type": "string", "const": "annual" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "indicator_ids": { "type": "array", "items": { "type": "string" } },
+        "iso2_list": { "type": "array", "items": { "type": "string" } },
+        "year_range": {
+          "type": "object",
+          "properties": {
+            "from": { "type": ["integer", "null"] },
+            "to": { "type": ["integer", "null"] }
+          }
+        },
+        "row_count": { "type": "integer" },
+        "granularity_row_counts": {
+          "type": "object",
+          "properties": {
+            "isic2_manufacturing": { "type": "integer" },
+            "sna_sector_synthetic": { "type": "integer" }
+          }
+        },
+        "missing_countries_unido_value_added": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "UNIDO実測（value_added.usd）が1件も無いPhase1国のiso2リスト（品質ゲート）"
+        },
+        "isic_hs_correspondence": {
+          "type": "object",
+          "description": "ISIC2桁↔HS2桁の構造対応表への参照。公開Repo同梱 isic_hs_correspondence.yaml。"
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "year", "granularity", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "year": { "type": "integer" },
+          "granularity": {
+            "type": "string",
+            "enum": ["isic2_manufacturing", "sna_sector_synthetic"],
+            "description": "isic2_manufacturing=UNIDO実測（ISIC2桁）。sna_sector_synthetic=WB %GDP×GDP_USDのAtlas合成推計。"
+          },
+          "isic4_2digit": {
+            "type": "string",
+            "description": "granularity=isic2_manufacturing の場合のみ値あり（ISIC Rev.4 2桁コード）"
+          },
+          "value": { "type": ["number", "null"] },
+          "unit": { "type": "string" },
+          "source_ref": { "type": "string" },
+          "veritas": {
+            "type": "string",
+            "enum": ["✅", "⚠️", "🔴"],
+            "description": "sna_sector_synthetic は常に⚠️（一次統計ではない合成値）。isic2_manufacturing はUSD換算不可（現地通貨のみ）の場合⚠️。"
+          }
+        }
+      }
+    }
+  }
+}

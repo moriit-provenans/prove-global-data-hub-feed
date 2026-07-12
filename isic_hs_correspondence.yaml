@@ -1,0 +1,101 @@
+# ISIC Rev.4 (2桁・製造業10–33) ↔ HS2012/2017 章（2桁）対応表
+#
+# 目的: industry_gva_annual（UNIDO生産側）と trade_flows（Comtrade需給側）を
+#       将来つなぐための構造対応。国連統計局の公式対応表
+#       （Correspondence between ISIC Rev.4 and HS 2012/2017）を
+#       2桁粒度に集約した簡略版。
+#
+# 使い方（v0.3以降）:
+#   - industry.unido.value_added.usd（生産）と
+#     Comtrade輸入（需要代理・trade_flows.json）を isic4_2digit ↔ hs2_chapters
+#     で紐付け、「生産×輸入＝実質市場規模」の合成に使う。
+#   - 1つのISIC2桁が複数HS章に対応するケースが大半（1:N）。
+#     厳密な貿易統計の再現ではなく、業種ナビゲーション用の構造対応と位置付ける。
+#
+# 出典（参考）: UN Statistics Division 公式対応表を人手で2桁に集約（2026-07-12）
+#   https://unstats.un.org/unsd/classifications/Econ/isic
+
+version: "0.1"
+granularity: "isic2_digit ↔ hs2_digit（構造対応・非厳密）"
+last_updated: "2026-07-12"
+
+mapping:
+  - isic2: "10"
+    isic_name_en: "Food products"
+    hs2_chapters: ["02", "03", "04", "07", "08", "09", "10", "11", "16", "17", "19", "20", "21", "23"]
+  - isic2: "11"
+    isic_name_en: "Beverages"
+    hs2_chapters: ["22"]
+  - isic2: "12"
+    isic_name_en: "Tobacco products"
+    hs2_chapters: ["24"]
+  - isic2: "13"
+    isic_name_en: "Textiles"
+    hs2_chapters: ["50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+  - isic2: "14"
+    isic_name_en: "Wearing apparel"
+    hs2_chapters: ["61", "62"]
+  - isic2: "15"
+    isic_name_en: "Leather and related products"
+    hs2_chapters: ["41", "42", "43", "64"]
+  - isic2: "16"
+    isic_name_en: "Wood and products of wood"
+    hs2_chapters: ["44", "45", "46"]
+  - isic2: "17"
+    isic_name_en: "Paper and paper products"
+    hs2_chapters: ["47", "48"]
+  - isic2: "18"
+    isic_name_en: "Printing and reproduction"
+    hs2_chapters: ["49"]
+  - isic2: "19"
+    isic_name_en: "Coke and refined petroleum"
+    hs2_chapters: ["27"]
+  - isic2: "20"
+    isic_name_en: "Chemicals and chemical products"
+    hs2_chapters: ["28", "29", "31", "32", "34", "35", "36", "38"]
+  - isic2: "21"
+    isic_name_en: "Pharmaceuticals"
+    hs2_chapters: ["30"]
+  - isic2: "22"
+    isic_name_en: "Rubber and plastics products"
+    hs2_chapters: ["39", "40"]
+  - isic2: "23"
+    isic_name_en: "Other non-metallic mineral products"
+    hs2_chapters: ["25", "68", "69", "70"]
+  - isic2: "24"
+    isic_name_en: "Basic metals"
+    hs2_chapters: ["72", "73", "74", "75", "76", "78", "79", "80", "81"]
+  - isic2: "25"
+    isic_name_en: "Fabricated metal products"
+    hs2_chapters: ["73", "82", "83"]
+  - isic2: "26"
+    isic_name_en: "Computer, electronic and optical products"
+    hs2_chapters: ["84", "85", "90", "91"]
+    note_ja: "HS84/85はISIC26(電子機器)とISIC28(汎用機械)に跨るため二重寄与あり。合成時は要重複補正。"
+  - isic2: "27"
+    isic_name_en: "Electrical equipment"
+    hs2_chapters: ["85"]
+  - isic2: "28"
+    isic_name_en: "Machinery and equipment n.e.c."
+    hs2_chapters: ["84"]
+  - isic2: "29"
+    isic_name_en: "Motor vehicles, trailers"
+    hs2_chapters: ["87"]
+  - isic2: "30"
+    isic_name_en: "Other transport equipment"
+    hs2_chapters: ["86", "88", "89"]
+  - isic2: "31"
+    isic_name_en: "Furniture"
+    hs2_chapters: ["94"]
+  - isic2: "32"
+    isic_name_en: "Other manufacturing"
+    hs2_chapters: ["71", "92", "95", "96"]
+  - isic2: "33"
+    isic_name_en: "Repair and installation of machinery"
+    hs2_chapters: []
+    note_ja: "サービス業。HS対応なし（財の輸出入コードは付与不可）。"
+
+usage_notes_ja:
+  - "現行 Comtrade コレクター（collect_comtrade.py）は HS22/33/84 のみ収集。ISIC11(飲料)/ISIC26/28(HS84電子・機械)と直結可能。"
+  - "v0.3でComtrade収集HS章を本表の主要ISIC2桁に合わせて拡張すると、生産×輸入の合成範囲が広がる。"
+  - "1:N対応が大半のため、業種別「市場参入ナビゲーション」用途に限定し、厳密な貿易統計再現には使わない。"
