@@ -1,0 +1,735 @@
+{
+  "schema_version": "2.0.0",
+  "last_updated": "2026-07-12T18:30:44+09:00",
+  "hub_name": "PROVE Global Data Hub",
+  "notes_ja": "REQ-SMITH-20260712-002 v0.1。World Bank年次のみ。四半期（macro_quarterly）は v0.2 で IMF IFS 等を検討。既存 macro_scores.json 等は当面残置。",
+  "indicators": [
+    {
+      "indicator_id": "macro.gdp.current_usd",
+      "wb_code": "NY.GDP.MKTP.CD",
+      "name_ja": "名目GDP",
+      "name_en": "GDP (current US$)",
+      "unit": "USD",
+      "category": "経済規模",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "市場規模の目安。進出先の経済規模比較の第一指標。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.MKTP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp.growth_pct",
+      "wb_code": "NY.GDP.MKTP.KD.ZG",
+      "name_ja": "実質GDP成長率",
+      "name_en": "GDP growth (annual %)",
+      "unit": "%",
+      "category": "成長",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "成長モメンタム。短期の市場拡大スピードの比較に使う。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.MKTP.KD.ZG",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+      }
+    },
+    {
+      "indicator_id": "macro.gdp_per_capita.current_usd",
+      "wb_code": "NY.GDP.PCAP.CD",
+      "name_ja": "一人当たりGDP",
+      "name_en": "GDP per capita (current US$)",
+      "unit": "USD",
+      "category": "豊かさ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "購買力・価格帯設計の目安。B2C/プレミアム可否の判断材料。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GDP.PCAP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.population.total",
+      "wb_code": "SP.POP.TOTL",
+      "name_ja": "人口",
+      "name_en": "Population, total",
+      "unit": "persons",
+      "category": "市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "潜在顧客ベース。市場規模＝人口×所得の片翼。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.POP.TOTL",
+        "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+      }
+    },
+    {
+      "indicator_id": "macro.urban_population.pct",
+      "wb_code": "SP.URB.TOTL.IN.ZS",
+      "name_ja": "都市人口比率",
+      "name_en": "Urban population (% of total)",
+      "unit": "%",
+      "category": "都市化",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "都市集中度。拠点配置・チャネル設計の示唆。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.URB.TOTL.IN.ZS",
+        "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.fdi_inflow.current_usd",
+      "wb_code": "BX.KLT.DINV.CD.WD",
+      "name_ja": "FDI流入",
+      "name_en": "Foreign direct investment, net inflows (BoP, current US$)",
+      "unit": "USD",
+      "category": "投資",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "外資誘致力。競合参入の活況度・政策魅力の代理指標。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BX.KLT.DINV.CD.WD",
+        "url": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD"
+      }
+    },
+    {
+      "indicator_id": "macro.inflation.cpi_pct",
+      "wb_code": "FP.CPI.TOTL.ZG",
+      "name_ja": "インフレ率（CPI）",
+      "name_en": "Inflation, consumer prices (annual %)",
+      "unit": "%",
+      "category": "物価",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "価格改定・契約通貨設計・コスト予測の基礎。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FP.CPI.TOTL.ZG",
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG"
+      }
+    },
+    {
+      "indicator_id": "macro.fx_rate.lcu_per_usd",
+      "wb_code": "PA.NUS.FCRF",
+      "name_ja": "対USD為替レート",
+      "name_en": "Official exchange rate (LCU per US$)",
+      "unit": "LCU/USD",
+      "category": "為替",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "送金・価格転嫁・損益計算の前提。値の高低自体は良し悪しではない。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "PA.NUS.FCRF",
+        "url": "https://data.worldbank.org/indicator/PA.NUS.FCRF"
+      }
+    },
+    {
+      "indicator_id": "macro.exports.current_usd",
+      "wb_code": "NE.EXP.GNFS.CD",
+      "name_ja": "財・サービス輸出",
+      "name_en": "Exports of goods and services (current US$)",
+      "unit": "USD",
+      "category": "外需",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "外需依存度・輸出ハブ適性の判断材料。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NE.EXP.GNFS.CD",
+        "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.current_account.current_usd",
+      "wb_code": "BN.CAB.XOKA.CD",
+      "name_ja": "経常収支",
+      "name_en": "Current account balance (BoP, current US$)",
+      "unit": "USD",
+      "category": "対外",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "対外収支の健全性。通貨・政策リスクの補助線。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BN.CAB.XOKA.CD",
+        "url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.imports.current_usd",
+      "wb_code": "NE.IMP.GNFS.CD",
+      "name_ja": "財・サービス輸入",
+      "name_en": "Imports of goods and services (current US$)",
+      "unit": "USD",
+      "category": "外需",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "輸入市場規模。日本からの輸出機会の大きさを測る。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NE.IMP.GNFS.CD",
+        "url": "https://data.worldbank.org/indicator/NE.IMP.GNFS.CD"
+      }
+    },
+    {
+      "indicator_id": "macro.unemployment.pct",
+      "wb_code": "SL.UEM.TOTL.ZS",
+      "name_ja": "失業率",
+      "name_en": "Unemployment, total (% of total labor force)",
+      "unit": "%",
+      "category": "労働",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "労働市場の緩み。採用難易度・賃金圧力の補助指標。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SL.UEM.TOTL.ZS",
+        "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.gni_per_capita.current_usd",
+      "wb_code": "NY.GNP.PCAP.CD",
+      "name_ja": "一人当たりGNI",
+      "name_en": "GNI per capita (current US$)",
+      "unit": "USD",
+      "category": "豊かさ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国民所得ベースの豊かさ。GDP per capita の補完。",
+      "phase": "1",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GNP.PCAP.CD",
+        "url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD"
+      }
+    }
+  ],
+  "countries": [
+    {
+      "iso2": "VN",
+      "iso3": "VNM",
+      "name_ja": "ベトナム",
+      "name_en": "Vietnam",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "TH",
+      "iso3": "THA",
+      "name_ja": "タイ",
+      "name_en": "Thailand",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "CN",
+      "iso3": "CHN",
+      "name_ja": "中国",
+      "name_en": "China",
+      "region": "east_asia"
+    },
+    {
+      "iso2": "IN",
+      "iso3": "IND",
+      "name_ja": "インド",
+      "name_en": "India",
+      "region": "south_asia"
+    },
+    {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "name_ja": "インドネシア",
+      "name_en": "Indonesia",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "PH",
+      "iso3": "PHL",
+      "name_ja": "フィリピン",
+      "name_en": "Philippines",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "MY",
+      "iso3": "MYS",
+      "name_ja": "マレーシア",
+      "name_en": "Malaysia",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "SG",
+      "iso3": "SGP",
+      "name_ja": "シンガポール",
+      "name_en": "Singapore",
+      "region": "southeast_asia"
+    },
+    {
+      "iso2": "KR",
+      "iso3": "KOR",
+      "name_ja": "韓国",
+      "name_en": "Korea",
+      "region": "east_asia"
+    },
+    {
+      "iso2": "HK",
+      "iso3": "HKG",
+      "name_ja": "香港",
+      "name_en": "Hong Kong SAR",
+      "region": "east_asia"
+    },
+    {
+      "iso2": "AE",
+      "iso3": "ARE",
+      "name_ja": "UAE",
+      "name_en": "United Arab Emirates",
+      "region": "middle_east"
+    },
+    {
+      "iso2": "SA",
+      "iso3": "SAU",
+      "name_ja": "サウジアラビア",
+      "name_en": "Saudi Arabia",
+      "region": "middle_east"
+    },
+    {
+      "iso2": "TR",
+      "iso3": "TUR",
+      "name_ja": "トルコ",
+      "name_en": "Turkiye",
+      "region": "middle_east"
+    },
+    {
+      "iso2": "GB",
+      "iso3": "GBR",
+      "name_ja": "英国",
+      "name_en": "United Kingdom",
+      "region": "europe"
+    },
+    {
+      "iso2": "DE",
+      "iso3": "DEU",
+      "name_ja": "ドイツ",
+      "name_en": "Germany",
+      "region": "europe"
+    },
+    {
+      "iso2": "FR",
+      "iso3": "FRA",
+      "name_ja": "フランス",
+      "name_en": "France",
+      "region": "europe"
+    },
+    {
+      "iso2": "US",
+      "iso3": "USA",
+      "name_ja": "米国",
+      "name_en": "United States",
+      "region": "north_america"
+    },
+    {
+      "iso2": "CA",
+      "iso3": "CAN",
+      "name_ja": "カナダ",
+      "name_en": "Canada",
+      "region": "north_america"
+    },
+    {
+      "iso2": "BR",
+      "iso3": "BRA",
+      "name_ja": "ブラジル",
+      "name_en": "Brazil",
+      "region": "latin_america"
+    },
+    {
+      "iso2": "JP",
+      "iso3": "JPN",
+      "name_ja": "日本",
+      "name_en": "Japan",
+      "region": "east_asia"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/catalog.schema.json",
+  "title": "PROVE Global Data Hub — _catalog.json v2（時系列ストア指標マスタ）",
+  "description": "UIセレクタ自動生成用。REQ-SMITH-20260712-002",
+  "type": "object",
+  "required": ["schema_version", "last_updated", "indicators", "countries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "2.0.0" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "hub_name": { "type": "string" },
+    "notes_ja": { "type": "string" },
+    "indicators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "name_ja", "name_en", "unit", "category", "frequencies", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "wb_code": { "type": ["string", "null"] },
+          "name_ja": { "type": "string" },
+          "name_en": { "type": "string" },
+          "unit": { "type": "string" },
+          "category": { "type": "string" },
+          "frequencies": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["annual", "quarterly"] }
+          },
+          "available_iso2": { "type": "array", "items": { "type": "string" } },
+          "year_range": {
+            "type": "object",
+            "properties": {
+              "from": { "type": ["integer", "null"] },
+              "to": { "type": ["integer", "null"] }
+            }
+          },
+          "source": {
+            "type": "object",
+            "required": ["label"],
+            "properties": {
+              "label": { "type": "string" },
+              "code": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          },
+          "higher_is_better": { "type": ["boolean", "null"] },
+          "description_ja": { "type": "string" },
+          "phase": { "type": "string", "enum": ["1", "2", "3"] }
+        }
+      }
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["iso2", "name_ja"],
+        "properties": {
+          "iso2": { "type": "string" },
+          "iso3": { "type": "string" },
+          "name_ja": { "type": "string" },
+          "name_en": { "type": "string" },
+          "region": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "market_matrix",
-  "last_updated": "2026-07-12T17:23:37+09:00",
+  "last_updated": "2026-07-12T18:30:44+09:00",
   "source": {
     "label": "Atlas DataLake market-grid（事実品質ゲート適用）",
     "disclaimer_ja": "本ページの数値は Atlas DataLake の業種別調査ノートからの二次加工です。投資・経営判断は自己責任でお願いします。"
@@ -59,7 +59,7 @@
       "module_id": "B1",
       "title_ja": "業種×国 市場規模マトリクス",
       "title_en": "Industry x country market size matrix",
-      "last_updated": "2026-07-12T17:23:37+09:00",
+      "last_updated": "2026-07-12T18:30:44+09:00",
       "source": {
         "label": "Atlas DataLake market-grid"
       },
