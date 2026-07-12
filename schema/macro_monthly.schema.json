@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/macro_monthly.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/macro_monthly.json",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "frequency", "observations"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "macro_monthly" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "frequency": { "type": "string", "const": "monthly" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}

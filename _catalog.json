@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T22:10:36+09:00",
+  "last_updated": "2026-07-13T07:50:09+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
+  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -4234,6 +4234,1413 @@
       }
     },
     {
+      "indicator_id": "fin.private_credit.pct_gdp",
+      "wb_code": "FS.AST.PRVT.GD.ZS",
+      "name_ja": "民間部門向け国内信用（対GDP）",
+      "name_en": "Domestic credit to private sector (% of GDP)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "民間信用の厚み。金融深化・融資環境の第一指標。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FS.AST.PRVT.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.stock_market_cap.usd",
+      "wb_code": "CM.MKT.LCAP.CD",
+      "name_ja": "株式時価総額（USD）",
+      "name_en": "Market capitalization of listed domestic companies (current US$)",
+      "unit": "USD",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "株式市場の規模。資本調達・退出の流動性。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "CM.MKT.LCAP.CD",
+        "url": "https://data.worldbank.org/indicator/CM.MKT.LCAP.CD"
+      }
+    },
+    {
+      "indicator_id": "fin.stock_market_cap.pct_gdp",
+      "wb_code": "CM.MKT.LCAP.GD.ZS",
+      "name_ja": "株式時価総額（対GDP）",
+      "name_en": "Market capitalization of listed domestic companies (% of GDP)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "経済規模対比の資本市場の厚み。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "CM.MKT.LCAP.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/CM.MKT.LCAP.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.stocks_traded.pct_gdp",
+      "wb_code": "CM.MKT.TRAD.GD.ZS",
+      "name_ja": "株式売買代金（対GDP）",
+      "name_en": "Stocks traded, total value (% of GDP)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "株式市場の取引活況度。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "CM.MKT.TRAD.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/CM.MKT.TRAD.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.bank_npl.pct",
+      "wb_code": "FB.AST.NPER.ZS",
+      "name_ja": "銀行不良債権比率",
+      "name_en": "Bank nonperforming loans to total gross loans (%)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "銀行システムの健全性。金融危機リスクの代理。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2005,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FB.AST.NPER.ZS",
+        "url": "https://data.worldbank.org/indicator/FB.AST.NPER.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.bank_capital.pct",
+      "wb_code": "FB.BNK.CAPA.ZS",
+      "name_ja": "銀行自己資本比率",
+      "name_en": "Bank capital to assets ratio (%)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "銀行の資本バッファ。レバレッジリスクの補助線。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2005,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FB.BNK.CAPA.ZS",
+        "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.account_ownership.pct",
+      "wb_code": "FX.OWN.TOTL.ZS",
+      "name_ja": "金融口座保有率（Findex）",
+      "name_en": "Account ownership at a financial institution (% of population ages 15+)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "金融包摂。3年毎更新・年欠損多め。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2011,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "FX.OWN.TOTL.ZS",
+        "url": "https://data.worldbank.org/indicator/FX.OWN.TOTL.ZS"
+      }
+    },
+    {
+      "indicator_id": "fin.remittances.pct_gdp",
+      "wb_code": "BX.TRF.PWKR.DT.GD.ZS",
+      "name_ja": "送金流入（対GDP）",
+      "name_en": "Personal remittances, received (% of GDP)",
+      "unit": "%",
+      "category": "金融市場",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "労働移民からの送金。消費・FX需給の補助。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BX.TRF.PWKR.DT.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "geo.military_expenditure.pct_gdp",
+      "wb_code": "MS.MIL.XPND.GD.ZS",
+      "name_ja": "軍事費（対GDP）",
+      "name_en": "Military expenditure (% of GDP)",
+      "unit": "%",
+      "category": "地政学",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "SIPRI原典。地政学リスク・安全保障支出の代理。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "MS.MIL.XPND.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "geo.military_expenditure.usd",
+      "wb_code": "MS.MIL.XPND.CD",
+      "name_ja": "軍事費（USD）",
+      "name_en": "Military expenditure (current USD)",
+      "unit": "USD",
+      "category": "地政学",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "軍事費の絶対規模。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "MS.MIL.XPND.CD",
+        "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.CD"
+      }
+    },
+    {
+      "indicator_id": "society.gini",
+      "wb_code": "SI.POV.GINI",
+      "name_ja": "ジニ係数",
+      "name_en": "Gini index",
+      "unit": "index",
+      "category": "社会・所得",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "所得不平等。消費者セグメント・社会安定性の補助。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SI.POV.GINI",
+        "url": "https://data.worldbank.org/indicator/SI.POV.GINI"
+      }
+    },
+    {
+      "indicator_id": "society.income_top10_pct",
+      "wb_code": "SI.DST.10TH.10",
+      "name_ja": "上位10%所得シェア",
+      "name_en": "Income share held by highest 10%",
+      "unit": "%",
+      "category": "社会・所得",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "富裕層集中度。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SI.DST.10TH.10",
+        "url": "https://data.worldbank.org/indicator/SI.DST.10TH.10"
+      }
+    },
+    {
+      "indicator_id": "society.income_bottom20_pct",
+      "wb_code": "SI.DST.FRST.20",
+      "name_ja": "下位20%所得シェア",
+      "name_en": "Income share held by lowest 20%",
+      "unit": "%",
+      "category": "社会・所得",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "低所得層の所得シェア。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SI.DST.FRST.20",
+        "url": "https://data.worldbank.org/indicator/SI.DST.FRST.20"
+      }
+    },
+    {
+      "indicator_id": "society.poverty_365.pct",
+      "wb_code": "SI.POV.LMIC",
+      "name_ja": "貧困率（$3.65/日）",
+      "name_en": "Poverty headcount ratio at $3.65 a day (2017 PPP) (% of population)",
+      "unit": "%",
+      "category": "社会・所得",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "低所得市場規模・社会政策リスク。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SI.POV.LMIC",
+        "url": "https://data.worldbank.org/indicator/SI.POV.LMIC"
+      }
+    },
+    {
+      "indicator_id": "macro.urban_growth.pct",
+      "wb_code": "SP.URB.GROW",
+      "name_ja": "都市人口増加率",
+      "name_en": "Urban population growth (annual %)",
+      "unit": "%",
+      "category": "社会・所得",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "都市化スピード。インフラ・消費拡大の示唆。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.URB.GROW",
+        "url": "https://data.worldbank.org/indicator/SP.URB.GROW"
+      }
+    },
+    {
+      "indicator_id": "tech.rd_expenditure.pct_gdp",
+      "wb_code": "GB.XPD.RSDV.GD.ZS",
+      "name_ja": "研究開発費（対GDP）",
+      "name_en": "Research and development expenditure (% of GDP)",
+      "unit": "%",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "イノベーション投資強度。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "GB.XPD.RSDV.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "tech.researchers.per_million",
+      "wb_code": "SP.POP.SCIE.RD.P6",
+      "name_ja": "研究者数（100万人あたり）",
+      "name_en": "Researchers in R&D (per million people)",
+      "unit": "per_1M",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "研究人材の厚み。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SP.POP.SCIE.RD.P6",
+        "url": "https://data.worldbank.org/indicator/SP.POP.SCIE.RD.P6"
+      }
+    },
+    {
+      "indicator_id": "tech.patents_residents",
+      "wb_code": "IP.PAT.RESD",
+      "name_ja": "特許出願（居住者）",
+      "name_en": "Patent applications, residents",
+      "unit": "count",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国内イノベーション出力。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IP.PAT.RESD",
+        "url": "https://data.worldbank.org/indicator/IP.PAT.RESD"
+      }
+    },
+    {
+      "indicator_id": "tech.patents_nonresidents",
+      "wb_code": "IP.PAT.NRES",
+      "name_ja": "特許出願（非居住者）",
+      "name_en": "Patent applications, nonresidents",
+      "unit": "count",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "外国からの技術参入・FDIの代理。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IP.PAT.NRES",
+        "url": "https://data.worldbank.org/indicator/IP.PAT.NRES"
+      }
+    },
+    {
+      "indicator_id": "tech.hightech_exports.pct",
+      "wb_code": "TX.VAL.TECH.MF.ZS",
+      "name_ja": "ハイテク輸出比率",
+      "name_en": "High-technology exports (% of manufactured exports)",
+      "unit": "%",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "製造業輸出のハイテク度。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2007,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TX.VAL.TECH.MF.ZS",
+        "url": "https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS"
+      }
+    },
+    {
+      "indicator_id": "tech.ict_service_exports.pct",
+      "wb_code": "BX.GSR.CCIS.ZS",
+      "name_ja": "ICTサービス輸出比率",
+      "name_en": "ICT service exports (% of service exports)",
+      "unit": "%",
+      "category": "技術",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "デジタルサービス輸出の厚み。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "BX.GSR.CCIS.ZS",
+        "url": "https://data.worldbank.org/indicator/BX.GSR.CCIS.ZS"
+      }
+    },
+    {
+      "indicator_id": "industry.tourism_arrivals",
+      "wb_code": "ST.INT.ARVL",
+      "name_ja": "国際観光客数",
+      "name_en": "International tourism, number of arrivals",
+      "unit": "count",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "観光需要の規模。COVID期の欠損に注意。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2020
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ST.INT.ARVL",
+        "url": "https://data.worldbank.org/indicator/ST.INT.ARVL"
+      }
+    },
+    {
+      "indicator_id": "industry.tourism_receipts.usd",
+      "wb_code": "ST.INT.RCPT.CD",
+      "name_ja": "国際観光収入（USD）",
+      "name_en": "International tourism, receipts (current US$)",
+      "unit": "USD",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "観光収入の絶対規模。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2020
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "ST.INT.RCPT.CD",
+        "url": "https://data.worldbank.org/indicator/ST.INT.RCPT.CD"
+      }
+    },
+    {
+      "indicator_id": "infra.lsci",
+      "wb_code": "IS.SHP.GCNW.XQ",
+      "name_ja": "定期船接続性指数（LSCI）",
+      "name_en": "Liner shipping connectivity index (maximum value in 2004 = 100)",
+      "unit": "index",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "海上物流ハブ性。貿易・サプライチェーンの接続性。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2006,
+        "to": 2021
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IS.SHP.GCNW.XQ",
+        "url": "https://data.worldbank.org/indicator/IS.SHP.GCNW.XQ"
+      }
+    },
+    {
+      "indicator_id": "biz.new_business_density",
+      "wb_code": "IC.BUS.NDNS.ZS",
+      "name_ja": "新規事業登録密度",
+      "name_en": "New business density (new registrations per 1,000 people ages 15-64)",
+      "unit": "per_1000",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "起業・事業再編の活況度。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2006,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IC.BUS.NDNS.ZS",
+        "url": "https://data.worldbank.org/indicator/IC.BUS.NDNS.ZS"
+      }
+    },
+    {
+      "indicator_id": "human.hospital_beds.per1000",
+      "wb_code": "SH.MED.BEDS.ZS",
+      "name_ja": "病床数（千人あたり）",
+      "name_en": "Hospital beds (per 1,000 people)",
+      "unit": "per_1000",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "医療インフラ供給。ヘルスケア市場のキャパ。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "SH.MED.BEDS.ZS",
+        "url": "https://data.worldbank.org/indicator/SH.MED.BEDS.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_coal.pct",
+      "wb_code": "EG.ELC.COAL.ZS",
+      "name_ja": "石炭火力比率",
+      "name_en": "Electricity production from coal sources (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "発電ミックス：石炭。GX・脱炭素の起点。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.COAL.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.COAL.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_gas.pct",
+      "wb_code": "EG.ELC.NGAS.ZS",
+      "name_ja": "ガス火力比率",
+      "name_en": "Electricity production from natural gas sources (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "発電ミックス：天然ガス。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.NGAS.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.NGAS.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_hydro.pct",
+      "wb_code": "EG.ELC.HYRO.ZS",
+      "name_ja": "水力比率",
+      "name_en": "Electricity production from hydro sources (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "発電ミックス：水力。",
+      "phase": "5c",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.HYRO.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.HYRO.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_nuclear.pct",
+      "wb_code": "EG.ELC.NUCL.ZS",
+      "name_ja": "原子力比率",
+      "name_en": "Electricity production from nuclear sources (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "発電ミックス：原子力。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.NUCL.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.NUCL.ZS"
+      }
+    },
+    {
+      "indicator_id": "energy.elec_oil.pct",
+      "wb_code": "EG.ELC.PETR.ZS",
+      "name_ja": "石油火力比率",
+      "name_en": "Electricity production from oil sources (% of total)",
+      "unit": "%",
+      "category": "エネルギー",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "発電ミックス：石油。",
+      "phase": "5c",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.PETR.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.PETR.ZS"
+      }
+    },
+    {
       "indicator_id": "biz.bready.business_entry.overall_score",
       "wb_code": "IC.BRE.BE.OS",
       "name_ja": "B-READY: 事業設立（総合スコア）",
@@ -5661,319 +7068,1108 @@
       }
     },
     {
-      "indicator_id": "industry.unido.value_added.usd",
-      "name_ja": "製造業付加価値（UNIDO・ISIC2桁・実測）",
-      "name_en": "Manufacturing value added (UNIDO INDSTAT, ISIC 2-digit, reported)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "isic2_manufacturing",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "業種別市場規模のコア。ISIC Rev.4 2桁×国×年。国によりUSD換算不可（現地通貨）行あり＝veritas⚠️。",
-      "phase": "2a",
-      "source": {
-        "label": "UNIDO INDSTAT Rev.4",
-        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2010,
-        "to": 2024
-      }
-    },
-    {
-      "indicator_id": "industry.unido.employees",
-      "name_ja": "製造業雇用者数（UNIDO・ISIC2桁・実測）",
-      "name_en": "Manufacturing employees (UNIDO INDSTAT, ISIC 2-digit, reported)",
-      "unit": "persons",
-      "category": "産業",
-      "granularity": "isic2_manufacturing",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "業種別雇用規模。市場ポテンシャルと労働需給の補助。",
-      "phase": "2a",
-      "source": {
-        "label": "UNIDO INDSTAT Rev.4",
-        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2010,
-        "to": 2024
-      }
-    },
-    {
-      "indicator_id": "industry.sna.agriculture_va.usd",
-      "name_ja": "農林水産業付加価値（合成・SNA式）",
-      "name_en": "Agriculture, forestry & fishing value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "WB対GDP%×WB名目GDPの合成推計。全21か国・欠損なし。一次統計ではないためveritas⚠️固定。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.industry_va.usd",
-      "name_ja": "産業（建設含む）付加価値（合成・SNA式）",
-      "name_en": "Industry incl. construction value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "UNIDO製造業とは粒度が異なる広義区分（建設・鉱業含む）。産業全体感の把握用。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.manufacturing_va.usd",
-      "name_ja": "製造業付加価値（合成・SNA式）",
-      "name_en": "Manufacturing value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "UNIDO実測が欠損する国・年のフォールバック推計として使用。UNIDO値と併記し差分を可視化。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.services_va.usd",
-      "name_ja": "サービス業付加価値（合成・SNA式）",
-      "name_en": "Services value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "非製造業（サービス）需要規模の第一近似。BtoBサービス業進出の市場規模目安。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "trade.tariff.mfn_simple_avg.pct",
-      "wb_code": null,
-      "name_ja": "MFN関税率（HS6品目別・単純平均）",
-      "name_en": "MFN tariff rate by HS6 product (simple average)",
+      "indicator_id": "macro_m.policy_rate.pct",
+      "name_ja": "政策金利（中央銀行・月末）",
+      "name_en": "Central bank policy rate (end of period, %)",
       "unit": "%",
-      "category": "貿易",
+      "category": "金融市場",
+      "description_ja": "BIS WS_CBPOL。景気・金融政策の方向感。ユーロ圏はEA（XM）系列。",
+      "wb_code": null,
       "frequencies": [
-        "annual"
+        "monthly"
       ],
-      "higher_is_better": false,
-      "description_ja": "UNCTAD TRAINS由来のMFN/World基準関税（品目別）。市場参入時の関税負担を業種の代表HS6品目で確認する用途。DEU/FRA/GBRはEU共通対外関税の代理値（veritas⚠️）。",
-      "phase": "2c",
-      "source": {
-        "label": "UNCTAD TRAINS (via WITS SDMX API)",
-        "url": "https://wits.worldbank.org/witsapiintro.aspx"
-      },
+      "higher_is_better": null,
+      "phase": "5d",
       "available_iso2": [
-        "AE",
+        "CA",
+        "CH",
+        "EA",
+        "GB",
+        "ID",
+        "JP",
+        "KR",
+        "PH",
+        "TH",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.cli.index",
+      "name_ja": "景気先行指数（CLI）",
+      "name_en": "OECD Composite Leading Indicator",
+      "unit": "index",
+      "category": "景気",
+      "description_ja": "OECD CLI。景気転換の早期シグナル。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
         "BR",
         "CA",
         "CN",
         "DE",
         "FR",
         "GB",
-        "HK",
         "ID",
         "IN",
         "JP",
         "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
         "TR",
-        "US",
-        "VN"
+        "US"
       ],
-      "year_range": {
-        "from": 2018,
-        "to": 2023
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
       },
-      "note_ja": "品目別詳細は timeseries/tariff_hs6_annual.json を参照（本indicator_idの国レベル集計とは別系統）。"
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.retail_sales.index",
+      "name_ja": "小売売上高指数",
+      "name_en": "Retail sales volume index",
+      "unit": "index",
+      "category": "景気",
+      "description_ja": "国内消費の勢い。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "TR",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-05"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.consumer_confidence.index",
+      "name_ja": "消費者信頼感指数",
+      "name_en": "Consumer confidence index",
+      "unit": "index",
+      "category": "景気",
+      "description_ja": "家計の期待・心理。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
+        "BR",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "TR",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.business_confidence.index",
+      "name_ja": "業況判断指数",
+      "name_en": "Business confidence index",
+      "unit": "index",
+      "category": "景気",
+      "description_ja": "企業の見通し。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "TR",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.industrial_production.index",
+      "name_ja": "鉱工業生産指数",
+      "name_en": "Industrial production index",
+      "unit": "index",
+      "category": "景気",
+      "description_ja": "OECD INDSERV PRVM（BTE）。製造業の実物モメンタム。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "DE",
+        "FR",
+        "GB",
+        "IN",
+        "JP",
+        "KR",
+        "TR",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-05"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "macro_m.gov_bond_10y.pct",
+      "name_ja": "長期国債利回り（10年）",
+      "name_en": "Long-term government bond yield (10Y, %)",
+      "unit": "%",
+      "category": "金融市場",
+      "description_ja": "OECD FINMARK IRLT。金融条件・リスクプレミアム。",
+      "wb_code": null,
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "US"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "BIS WS_CBPOL + OECD STES (SDMX)",
+        "url": "https://data.oecd.org/ + https://data.bis.org/topics/CBPOL",
+        "license": "OECD Terms / BIS Terms of use",
+        "disclaimer_ja": "OECD非加盟国は欠損のまま。BISユーロ圏は iso2=EA。"
+      },
+      "feed": "timeseries/macro_monthly.json"
+    },
+    {
+      "indicator_id": "cmdty.crude_oil_avg.usd",
+      "wb_code": null,
+      "name_ja": "原油（平均）",
+      "name_en": "Crude oil, average",
+      "unit": "USD/bbl",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Crude oil, average。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.crude_brent.usd",
+      "wb_code": null,
+      "name_ja": "ブレント原油",
+      "name_en": "Crude oil, Brent",
+      "unit": "USD/bbl",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Crude oil, Brent。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.crude_dubai.usd",
+      "wb_code": null,
+      "name_ja": "ドバイ原油",
+      "name_en": "Crude oil, Dubai",
+      "unit": "USD/bbl",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Crude oil, Dubai。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.crude_wti.usd",
+      "wb_code": null,
+      "name_ja": "WTI原油",
+      "name_en": "Crude oil, WTI",
+      "unit": "USD/bbl",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Crude oil, WTI。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.natgas_us.usd",
+      "wb_code": null,
+      "name_ja": "米国天然ガス",
+      "name_en": "Natural gas, US",
+      "unit": "USD/mmbtu",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Natural gas, US。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.natgas_eu.usd",
+      "wb_code": null,
+      "name_ja": "欧州天然ガス",
+      "name_en": "Natural gas, Europe",
+      "unit": "USD/mmbtu",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Natural gas, Europe。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.lng_japan.usd",
+      "wb_code": null,
+      "name_ja": "LNG（日本）",
+      "name_en": "LNG, Japan",
+      "unit": "USD/mmbtu",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。LNG, Japan。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.coal_aus.usd",
+      "wb_code": null,
+      "name_ja": "豪州石炭",
+      "name_en": "Coal, Australian",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Coal, Australian。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.coal_sa.usd",
+      "wb_code": null,
+      "name_ja": "南アフリカ石炭",
+      "name_en": "Coal, South African",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Coal, South African。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.copper.usd",
+      "wb_code": null,
+      "name_ja": "銅",
+      "name_en": "Copper",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Copper。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.aluminum.usd",
+      "wb_code": null,
+      "name_ja": "アルミ",
+      "name_en": "Aluminum",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Aluminum。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.iron_ore.usd",
+      "wb_code": null,
+      "name_ja": "鉄鉱石",
+      "name_en": "Iron ore",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Iron ore。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.nickel.usd",
+      "wb_code": null,
+      "name_ja": "ニッケル",
+      "name_en": "Nickel",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Nickel。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.gold.usd",
+      "wb_code": null,
+      "name_ja": "金",
+      "name_en": "Gold",
+      "unit": "USD/troy oz",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Gold。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.wheat_us.usd",
+      "wb_code": null,
+      "name_ja": "小麦（US）",
+      "name_en": "Wheat, US",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Wheat, US。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.rice_thai.usd",
+      "wb_code": null,
+      "name_ja": "タイ米5%",
+      "name_en": "Rice, Thai 5%",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Rice, Thai 5%。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.maize.usd",
+      "wb_code": null,
+      "name_ja": "トウモロコシ",
+      "name_en": "Maize",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Maize。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.soybeans.usd",
+      "wb_code": null,
+      "name_ja": "大豆",
+      "name_en": "Soybeans",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Soybeans。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.palm_oil.usd",
+      "wb_code": null,
+      "name_ja": "パーム油",
+      "name_en": "Palm oil",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Palm oil。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.sugar.usd",
+      "wb_code": null,
+      "name_ja": "砂糖",
+      "name_en": "Sugar, world",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Sugar, world。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fertilizer_dap.usd",
+      "wb_code": null,
+      "name_ja": "肥料（DAP）",
+      "name_en": "DAP fertilizer",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。DAP fertilizer。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fertilizer_urea.usd",
+      "wb_code": null,
+      "name_ja": "肥料（尿素）",
+      "name_en": "Urea fertilizer",
+      "unit": "USD/t",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。Urea fertilizer。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_food_index",
+      "wb_code": null,
+      "name_ja": "FAO食料価格指数",
+      "name_en": "FAO Food Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Food Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_meat_index",
+      "wb_code": null,
+      "name_ja": "FAO肉類指数",
+      "name_en": "FAO Meat Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Meat Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_dairy_index",
+      "wb_code": null,
+      "name_ja": "FAO乳製品指数",
+      "name_en": "FAO Dairy Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Dairy Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_cereals_index",
+      "wb_code": null,
+      "name_ja": "FAO穀物指数",
+      "name_en": "FAO Cereals Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Cereals Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_oils_index",
+      "wb_code": null,
+      "name_ja": "FAO油脂指数",
+      "name_en": "FAO Oils Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Oils Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "cmdty.fao_sugar_index",
+      "wb_code": null,
+      "name_ja": "FAO砂糖指数",
+      "name_en": "FAO Sugar Price Index",
+      "unit": "index",
+      "category": "コモディティ",
+      "frequencies": [
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "世界価格（月次）。FAO Sugar Price Index。",
+      "available_iso2": [],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-06"
+      },
+      "source": {
+        "label": "World Bank Pink Sheet + FAO Food Price Index",
+        "url": "https://www.worldbank.org/en/research/commodity-markets + https://www.fao.org/worldfoodsituation/foodpricesindex/",
+        "license": "World Bank / FAO terms",
+        "disclaimer_ja": "世界価格（国別分解なし）。Pink Sheet はページから最新xlsx URLを自動解決。"
+      },
+      "feed": "timeseries/commodity_monthly.json",
+      "scope": "global"
+    },
+    {
+      "indicator_id": "pop_proj.pop.total",
+      "name_ja": "総人口（予測・中位）",
+      "name_en": "Total population (medium variant forecast)",
+      "unit": "persons",
+      "wb_code": null,
+      "category": "人口予測",
+      "frequencies": [
+        "annual_forecast"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "UN WPP 2024 中位_variant。総人口（予測・中位）。2030/2040/2050。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "UN World Population Prospects 2024 (medium variant)",
+        "url": "https://population.un.org/wpp/",
+        "license": "UN WPP Terms of use",
+        "disclaimer_ja": "予測値（is_forecast=true）。UN bulk CSV/API は要手動DLまたは認証。"
+      },
+      "feed": "timeseries/population_projections.json",
+      "is_forecast": true
+    },
+    {
+      "indicator_id": "pop_proj.pop.median_age",
+      "name_ja": "中位年齢（予測・中位）",
+      "name_en": "Median age (medium variant forecast)",
+      "unit": "years",
+      "wb_code": null,
+      "category": "人口予測",
+      "frequencies": [
+        "annual_forecast"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "UN WPP 2024 中位_variant。中位年齢（予測・中位）。2030/2040/2050。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "UN World Population Prospects 2024 (medium variant)",
+        "url": "https://population.un.org/wpp/",
+        "license": "UN WPP Terms of use",
+        "disclaimer_ja": "予測値（is_forecast=true）。UN bulk CSV/API は要手動DLまたは認証。"
+      },
+      "feed": "timeseries/population_projections.json",
+      "is_forecast": true
+    },
+    {
+      "indicator_id": "pop_proj.pop.working_age_pct",
+      "name_ja": "生産年齢人口比率（予測・中位）",
+      "name_en": "Working-age population share (medium variant forecast)",
+      "unit": "%",
+      "wb_code": null,
+      "category": "人口予測",
+      "frequencies": [
+        "annual_forecast"
+      ],
+      "higher_is_better": null,
+      "phase": "5d",
+      "description_ja": "UN WPP 2024 中位_variant。生産年齢人口比率（予測・中位）。2030/2040/2050。",
+      "available_iso2": [],
+      "period_range": {
+        "from": null,
+        "to": null
+      },
+      "source": {
+        "label": "UN World Population Prospects 2024 (medium variant)",
+        "url": "https://population.un.org/wpp/",
+        "license": "UN WPP Terms of use",
+        "disclaimer_ja": "予測値（is_forecast=true）。UN bulk CSV/API は要手動DLまたは認証。"
+      },
+      "feed": "timeseries/population_projections.json",
+      "is_forecast": true
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",

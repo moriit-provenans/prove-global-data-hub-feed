@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/commodity_monthly.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/commodity_monthly.json",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "frequency", "observations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "commodity_monthly" },
+    "scope": { "type": "string", "const": "global" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "required": ["series_id", "period", "value"],
+        "properties": {
+          "series_id": { "type": "string" },
+          "period": { "type": "string" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 version: '1.0'
 last_updated: '2026-07-12'
-notes_ja: REQ-SMITH-20260712-004。本YAMLが収集・公開の単一の正。collect_worldbank.py / export_timeseries_v2.py はここを読む。第二白名单の再導入禁止。
+notes_ja: REQ-SMITH-20260712-004 + REQ-005 P1-C。本YAMLが収集・公開の単一の正。collect_worldbank.py / export_timeseries_v2.py はここを読む。第二白名单の再導入禁止。
 indicators:
 - indicator_id: macro.gdp.current_usd
   wb_code: NY.GDP.MKTP.CD
@@ -1235,6 +1235,409 @@ indicators:
   phase: 4a
   description_ja: 医療市場の対GDP規模。
   higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.private_credit.pct_gdp
+  wb_code: FS.AST.PRVT.GD.ZS
+  source: worldbank
+  name_ja: 民間部門向け国内信用（対GDP）
+  name_en: Domestic credit to private sector (% of GDP)
+  unit: '%'
+  category: 金融市場
+  priority: must
+  phase: 5c
+  description_ja: 民間信用の厚み。金融深化・融資環境の第一指標。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.stock_market_cap.usd
+  wb_code: CM.MKT.LCAP.CD
+  source: worldbank
+  name_ja: 株式時価総額（USD）
+  name_en: Market capitalization of listed domestic companies (current US$)
+  unit: USD
+  category: 金融市場
+  priority: must
+  phase: 5c
+  description_ja: 株式市場の規模。資本調達・退出の流動性。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.stock_market_cap.pct_gdp
+  wb_code: CM.MKT.LCAP.GD.ZS
+  source: worldbank
+  name_ja: 株式時価総額（対GDP）
+  name_en: Market capitalization of listed domestic companies (% of GDP)
+  unit: '%'
+  category: 金融市場
+  priority: must
+  phase: 5c
+  description_ja: 経済規模対比の資本市場の厚み。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.stocks_traded.pct_gdp
+  wb_code: CM.MKT.TRAD.GD.ZS
+  source: worldbank
+  name_ja: 株式売買代金（対GDP）
+  name_en: Stocks traded, total value (% of GDP)
+  unit: '%'
+  category: 金融市場
+  priority: should
+  phase: 5c
+  description_ja: 株式市場の取引活況度。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.bank_npl.pct
+  wb_code: FB.AST.NPER.ZS
+  source: worldbank
+  name_ja: 銀行不良債権比率
+  name_en: Bank nonperforming loans to total gross loans (%)
+  unit: '%'
+  category: 金融市場
+  priority: must
+  phase: 5c
+  description_ja: 銀行システムの健全性。金融危機リスクの代理。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: fin.bank_capital.pct
+  wb_code: FB.BNK.CAPA.ZS
+  source: worldbank
+  name_ja: 銀行自己資本比率
+  name_en: Bank capital to assets ratio (%)
+  unit: '%'
+  category: 金融市場
+  priority: must
+  phase: 5c
+  description_ja: 銀行の資本バッファ。レバレッジリスクの補助線。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.account_ownership.pct
+  wb_code: FX.OWN.TOTL.ZS
+  source: worldbank
+  name_ja: 金融口座保有率（Findex）
+  name_en: Account ownership at a financial institution (% of population ages 15+)
+  unit: '%'
+  category: 金融市場
+  priority: should
+  phase: 5c
+  description_ja: 金融包摂。3年毎更新・年欠損多め。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.remittances.pct_gdp
+  wb_code: BX.TRF.PWKR.DT.GD.ZS
+  source: worldbank
+  name_ja: 送金流入（対GDP）
+  name_en: Personal remittances, received (% of GDP)
+  unit: '%'
+  category: 金融市場
+  priority: should
+  phase: 5c
+  description_ja: 労働移民からの送金。消費・FX需給の補助。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: geo.military_expenditure.pct_gdp
+  wb_code: MS.MIL.XPND.GD.ZS
+  source: worldbank
+  name_ja: 軍事費（対GDP）
+  name_en: Military expenditure (% of GDP)
+  unit: '%'
+  category: 地政学
+  priority: must
+  phase: 5c
+  description_ja: SIPRI原典。地政学リスク・安全保障支出の代理。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: geo.military_expenditure.usd
+  wb_code: MS.MIL.XPND.CD
+  source: worldbank
+  name_ja: 軍事費（USD）
+  name_en: Military expenditure (current USD)
+  unit: USD
+  category: 地政学
+  priority: should
+  phase: 5c
+  description_ja: 軍事費の絶対規模。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: society.gini
+  wb_code: SI.POV.GINI
+  source: worldbank
+  name_ja: ジニ係数
+  name_en: Gini index
+  unit: index
+  category: 社会・所得
+  priority: must
+  phase: 5c
+  description_ja: 所得不平等。消費者セグメント・社会安定性の補助。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: society.income_top10_pct
+  wb_code: SI.DST.10TH.10
+  source: worldbank
+  name_ja: 上位10%所得シェア
+  name_en: Income share held by highest 10%
+  unit: '%'
+  category: 社会・所得
+  priority: should
+  phase: 5c
+  description_ja: 富裕層集中度。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: society.income_bottom20_pct
+  wb_code: SI.DST.FRST.20
+  source: worldbank
+  name_ja: 下位20%所得シェア
+  name_en: Income share held by lowest 20%
+  unit: '%'
+  category: 社会・所得
+  priority: should
+  phase: 5c
+  description_ja: 低所得層の所得シェア。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: society.poverty_365.pct
+  wb_code: SI.POV.LMIC
+  source: worldbank
+  name_ja: 貧困率（$3.65/日）
+  name_en: Poverty headcount ratio at $3.65 a day (2017 PPP) (% of population)
+  unit: '%'
+  category: 社会・所得
+  priority: must
+  phase: 5c
+  description_ja: 低所得市場規模・社会政策リスク。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: macro.urban_growth.pct
+  wb_code: SP.URB.GROW
+  source: worldbank
+  name_ja: 都市人口増加率
+  name_en: Urban population growth (annual %)
+  unit: '%'
+  category: 社会・所得
+  priority: should
+  phase: 5c
+  description_ja: 都市化スピード。インフラ・消費拡大の示唆。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.rd_expenditure.pct_gdp
+  wb_code: GB.XPD.RSDV.GD.ZS
+  source: worldbank
+  name_ja: 研究開発費（対GDP）
+  name_en: Research and development expenditure (% of GDP)
+  unit: '%'
+  category: 技術
+  priority: must
+  phase: 5c
+  description_ja: イノベーション投資強度。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.researchers.per_million
+  wb_code: SP.POP.SCIE.RD.P6
+  source: worldbank
+  name_ja: 研究者数（100万人あたり）
+  name_en: Researchers in R&D (per million people)
+  unit: per_1M
+  category: 技術
+  priority: should
+  phase: 5c
+  description_ja: 研究人材の厚み。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.patents_residents
+  wb_code: IP.PAT.RESD
+  source: worldbank
+  name_ja: 特許出願（居住者）
+  name_en: Patent applications, residents
+  unit: count
+  category: 技術
+  priority: should
+  phase: 5c
+  description_ja: 国内イノベーション出力。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.patents_nonresidents
+  wb_code: IP.PAT.NRES
+  source: worldbank
+  name_ja: 特許出願（非居住者）
+  name_en: Patent applications, nonresidents
+  unit: count
+  category: 技術
+  priority: should
+  phase: 5c
+  description_ja: 外国からの技術参入・FDIの代理。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.hightech_exports.pct
+  wb_code: TX.VAL.TECH.MF.ZS
+  source: worldbank
+  name_ja: ハイテク輸出比率
+  name_en: High-technology exports (% of manufactured exports)
+  unit: '%'
+  category: 技術
+  priority: must
+  phase: 5c
+  description_ja: 製造業輸出のハイテク度。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: tech.ict_service_exports.pct
+  wb_code: BX.GSR.CCIS.ZS
+  source: worldbank
+  name_ja: ICTサービス輸出比率
+  name_en: ICT service exports (% of service exports)
+  unit: '%'
+  category: 技術
+  priority: should
+  phase: 5c
+  description_ja: デジタルサービス輸出の厚み。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: industry.tourism_arrivals
+  wb_code: ST.INT.ARVL
+  source: worldbank
+  name_ja: 国際観光客数
+  name_en: International tourism, number of arrivals
+  unit: count
+  category: 産業実物
+  priority: must
+  phase: 5c
+  description_ja: 観光需要の規模。COVID期の欠損に注意。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: industry.tourism_receipts.usd
+  wb_code: ST.INT.RCPT.CD
+  source: worldbank
+  name_ja: 国際観光収入（USD）
+  name_en: International tourism, receipts (current US$)
+  unit: USD
+  category: 産業実物
+  priority: must
+  phase: 5c
+  description_ja: 観光収入の絶対規模。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: infra.lsci
+  wb_code: IS.SHP.GCNW.XQ
+  source: worldbank
+  name_ja: 定期船接続性指数（LSCI）
+  name_en: Liner shipping connectivity index (maximum value in 2004 = 100)
+  unit: index
+  category: 産業実物
+  priority: must
+  phase: 5c
+  description_ja: 海上物流ハブ性。貿易・サプライチェーンの接続性。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: biz.new_business_density
+  wb_code: IC.BUS.NDNS.ZS
+  source: worldbank
+  name_ja: 新規事業登録密度
+  name_en: New business density (new registrations per 1,000 people ages 15-64)
+  unit: per_1000
+  category: 産業実物
+  priority: should
+  phase: 5c
+  description_ja: 起業・事業再編の活況度。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: human.hospital_beds.per1000
+  wb_code: SH.MED.BEDS.ZS
+  source: worldbank
+  name_ja: 病床数（千人あたり）
+  name_en: Hospital beds (per 1,000 people)
+  unit: per_1000
+  category: 産業実物
+  priority: should
+  phase: 5c
+  description_ja: 医療インフラ供給。ヘルスケア市場のキャパ。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: energy.elec_coal.pct
+  wb_code: EG.ELC.COAL.ZS
+  source: worldbank
+  name_ja: 石炭火力比率
+  name_en: Electricity production from coal sources (% of total)
+  unit: '%'
+  category: エネルギー
+  priority: must
+  phase: 5c
+  description_ja: 発電ミックス：石炭。GX・脱炭素の起点。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: energy.elec_gas.pct
+  wb_code: EG.ELC.NGAS.ZS
+  source: worldbank
+  name_ja: ガス火力比率
+  name_en: Electricity production from natural gas sources (% of total)
+  unit: '%'
+  category: エネルギー
+  priority: must
+  phase: 5c
+  description_ja: 発電ミックス：天然ガス。
+  higher_is_better: null
+  frequencies:
+  - annual
+- indicator_id: energy.elec_hydro.pct
+  wb_code: EG.ELC.HYRO.ZS
+  source: worldbank
+  name_ja: 水力比率
+  name_en: Electricity production from hydro sources (% of total)
+  unit: '%'
+  category: エネルギー
+  priority: must
+  phase: 5c
+  description_ja: 発電ミックス：水力。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: energy.elec_nuclear.pct
+  wb_code: EG.ELC.NUCL.ZS
+  source: worldbank
+  name_ja: 原子力比率
+  name_en: Electricity production from nuclear sources (% of total)
+  unit: '%'
+  category: エネルギー
+  priority: should
+  phase: 5c
+  description_ja: 発電ミックス：原子力。
+  higher_is_better: null
+  frequencies:
+  - annual
+- indicator_id: energy.elec_oil.pct
+  wb_code: EG.ELC.PETR.ZS
+  source: worldbank
+  name_ja: 石油火力比率
+  name_en: Electricity production from oil sources (% of total)
+  unit: '%'
+  category: エネルギー
+  priority: should
+  phase: 5c
+  description_ja: 発電ミックス：石油。
+  higher_is_better: false
   frequencies:
   - annual
 - indicator_id: biz.bready.business_entry.overall_score

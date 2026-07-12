@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/population_projections.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/population_projections.json",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "population_projections" },
+    "frequency": { "type": "string", "const": "annual_forecast" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "required": ["indicator_id", "iso2", "year", "value", "is_forecast"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string" },
+          "year": { "type": "integer" },
+          "value": { "type": "number" },
+          "is_forecast": { "type": "boolean", "const": true }
+        }
+      }
+    }
+  }
+}
