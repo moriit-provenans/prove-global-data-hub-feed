@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/macro_quarterly.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/macro_quarterly.json v0.2（骨格）",
+  "description": "REQ-002 v0.2。優先指標: 実質GDP成長・インフレ・為替・輸出入。本命ソース IMF IFS（Sonnetで系列マッピング確定）。",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "frequency", "observations"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "2.0.0" },
+    "feed_id": { "type": "string", "const": "macro_quarterly" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "frequency": { "type": "string", "const": "quarterly" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "indicator_ids": { "type": "array", "items": { "type": "string" } },
+        "iso2_list": { "type": "array", "items": { "type": "string" } },
+        "period_range": {
+          "type": "object",
+          "properties": {
+            "from": { "type": ["string", "null"], "description": "YYYY-Qn" },
+            "to": { "type": ["string", "null"] }
+          }
+        },
+        "row_count": { "type": "integer" }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-Q[1-4]$" },
+          "value": { "type": ["number", "null"] },
+          "unit": { "type": "string" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string", "enum": ["✅", "⚠️", "🔴"] }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T19:09:32+09:00",
+  "last_updated": "2026-07-12T19:11:24+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。四半期（macro_quarterly）は v0.2 で IMF IFS 等を検討。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。",
+  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -592,6 +592,673 @@
         "label": "World Bank",
         "code": "NY.GNP.PCAP.CD",
         "url": "https://data.worldbank.org/indicator/NY.GNP.PCAP.CD"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.control_corruption.est",
+      "wb_code": "GOV_WGI_CC.EST",
+      "name_ja": "腐敗抑制（WGI）",
+      "name_en": "Control of Corruption: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "腐敗リスク。取引先与信・コンプライアンス設計の基礎。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_CC.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_CC.EST"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.government_effectiveness.est",
+      "wb_code": "GOV_WGI_GE.EST",
+      "name_ja": "政府の有効性（WGI）",
+      "name_en": "Government Effectiveness: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "行政の執行力。許認可・インフラ整備スピードの代理指標。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_GE.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_GE.EST"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.rule_of_law.est",
+      "wb_code": "GOV_WGI_RL.EST",
+      "name_ja": "法の支配（WGI）",
+      "name_en": "Rule of Law: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "契約執行・財産権保護の信頼性。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_RL.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_RL.EST"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.regulatory_quality.est",
+      "wb_code": "GOV_WGI_RQ.EST",
+      "name_ja": "規制の質（WGI）",
+      "name_en": "Regulatory Quality: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "民間活動を促す規制環境の質。進出コストの補助線。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_RQ.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_RQ.EST"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.political_stability.est",
+      "wb_code": "GOV_WGI_PV.EST",
+      "name_ja": "政治的安定（WGI）",
+      "name_en": "Political Stability and Absence of Violence: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "政治・治安リスク。拠点・在庫配置の判断材料。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_PV.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_PV.EST"
+      }
+    },
+    {
+      "indicator_id": "gov.wgi.voice_accountability.est",
+      "wb_code": "GOV_WGI_VA.EST",
+      "name_ja": "発言と説明責任（WGI）",
+      "name_en": "Voice and Accountability: Estimate",
+      "unit": "score",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "表現・結社の自由度。レピュテーション／ESG観点の補完。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank WGI",
+        "code": "GOV_WGI_VA.EST",
+        "url": "https://data.worldbank.org/indicator/GOV_WGI_VA.EST"
+      }
+    },
+    {
+      "indicator_id": "infra.electricity_access.pct",
+      "wb_code": "EG.ELC.ACCS.ZS",
+      "name_ja": "電力アクセス率",
+      "name_en": "Access to electricity (% of population)",
+      "unit": "%",
+      "category": "インフラ",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "電力基盤。製造・コールドチェーン・IT運用の前提条件。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "EG.ELC.ACCS.ZS",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS"
+      }
+    },
+    {
+      "indicator_id": "infra.internet_users.pct",
+      "wb_code": "IT.NET.USER.ZS",
+      "name_ja": "インターネット利用者比率",
+      "name_en": "Individuals using the Internet (% of population)",
+      "unit": "%",
+      "category": "デジタル",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "デジタル到達度。EC・マーケ・リモート支援の可否判断。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "IT.NET.USER.ZS",
+        "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.gov_debt.pct_gdp",
+      "wb_code": "GC.DOD.TOTL.GD.ZS",
+      "name_ja": "中央政府債務（対GDP）",
+      "name_en": "Central government debt, total (% of GDP)",
+      "unit": "%",
+      "category": "財政",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "財政リスク。カバレッジが薄い国あり（欠損は正常）。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "GB",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "TR",
+        "US"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "GC.DOD.TOTL.GD.ZS",
+        "url": "https://data.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.gross_savings.pct_gdp",
+      "wb_code": "NY.GNS.ICTR.ZS",
+      "name_ja": "総貯蓄率（対GDP）",
+      "name_en": "Gross savings (% of GDP)",
+      "unit": "%",
+      "category": "財政",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "国内貯蓄余力。投資ファイナンス・金利環境の補助指標。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NY.GNS.ICTR.ZS",
+        "url": "https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.industry_va.pct_gdp",
+      "wb_code": "NV.IND.TOTL.ZS",
+      "name_ja": "産業付加価値比率（対GDP）",
+      "name_en": "Industry (including construction), value added (% of GDP)",
+      "unit": "%",
+      "category": "産業構造",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "産業（建設含む）のGDP構成比。BtoB市場の厚みの第一近似。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NV.IND.TOTL.ZS",
+        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.manufacturing_va.pct_gdp",
+      "wb_code": "NV.IND.MANF.ZS",
+      "name_ja": "製造業付加価値比率（対GDP）",
+      "name_en": "Manufacturing, value added (% of GDP)",
+      "unit": "%",
+      "category": "産業構造",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": null,
+      "description_ja": "製造業の厚み。UNIDO業種別GVAへの橋渡し指標。",
+      "phase": "1b",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "NV.IND.MANF.ZS",
+        "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS"
+      }
+    },
+    {
+      "indicator_id": "gov.ti.cpi.score",
+      "wb_code": null,
+      "name_ja": "腐敗認識指数（TI CPI）",
+      "name_en": "Corruption Perceptions Index",
+      "unit": "score_0_100",
+      "category": "ガバナンス",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "公共部門の腐敗認識（0=高腐敗〜100=清潔）。WGI腐敗抑制の補完。",
+      "phase": "1c",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2012,
+        "to": 2024
+      },
+      "source": {
+        "label": "Transparency International CPI (via OWID)",
+        "code": "CPI",
+        "url": "https://www.transparency.org/en/cpi"
+      }
+    },
+    {
+      "indicator_id": "industry.unido.value_added.usd",
+      "name_ja": "製造業付加価値（UNIDO・ISIC2桁）",
+      "name_en": "Manufacturing value added (UNIDO INDSTAT, ISIC 2-digit)",
+      "unit": "USD",
+      "category": "産業",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "業種別市場規模のコア。ISIC Rev.4 2桁×国×年。",
+      "phase": "2a",
+      "source": {
+        "label": "UNIDO INDSTAT Rev.4",
+        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2010,
+        "to": 2024
+      }
+    },
+    {
+      "indicator_id": "industry.unido.employees",
+      "name_ja": "製造業雇用者数（UNIDO・ISIC2桁）",
+      "name_en": "Manufacturing employees (UNIDO INDSTAT, ISIC 2-digit)",
+      "unit": "persons",
+      "category": "産業",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "description_ja": "業種別雇用規模。市場ポテンシャルと労働需給の補助。",
+      "phase": "2a",
+      "source": {
+        "label": "UNIDO INDSTAT Rev.4",
+        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
+      },
+      "wb_code": null,
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2010,
+        "to": 2024
       }
     }
   ],
