@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T07:59:01+09:00",
+  "last_updated": "2026-07-13T08:13:53+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -8287,7 +8287,7 @@
       ],
       "higher_is_better": true,
       "phase": "5e",
-      "description_ja": "国別の自動車生産台数。モビリティ市場規模の現物指標。Wikipedia経由時はveritas⚠️。",
+      "description_ja": "国別自動車生産台数。Wikipedia経由時はveritas⚠️。",
       "available_iso2": [
         "BR",
         "CA",
@@ -8313,7 +8313,7 @@
         "to": "2025"
       },
       "source": {
-        "label": "OICA (via Wikipedia when direct Excel unavailable)",
+        "label": "OICA",
         "url": "https://oica.net/production-statistics/"
       },
       "feed": "timeseries/industry_physical.json"
@@ -8330,7 +8330,7 @@
       ],
       "higher_is_better": true,
       "phase": "5e",
-      "description_ja": "WSTS Historical Billings Report。Americas/Europe/Japan/Asia Pacific/Worldwide。国別ではない。",
+      "description_ja": "WSTS Historical Billings Report（地域粒度）。",
       "available_iso2": [
         "JP",
         "WL",
@@ -8343,8 +8343,590 @@
         "to": "2026-05"
       },
       "source": {
-        "label": "WSTS Historical Billings Report",
+        "label": "WSTS",
         "url": "https://www.wsts.org/67/Historical-Billings-Report"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.steel.crude_production.mt",
+      "wb_code": null,
+      "name_ja": "粗鋼生産（worldsteel）",
+      "name_en": "Crude steel production (worldsteel)",
+      "unit": "Mt",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "国別粗鋼生産（百万トン）。Wikipedia経由時はveritas⚠️。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN",
+        "WL"
+      ],
+      "period_range": {
+        "from": "2015",
+        "to": "2025"
+      },
+      "source": {
+        "label": "worldsteel",
+        "url": "https://worldsteel.org/data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.ev.sales.units",
+      "wb_code": null,
+      "name_ja": "EV販売台数（IEA）",
+      "name_en": "Electric car sales (IEA)",
+      "unit": "vehicles",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "電気自動車（BEV+PHEV）販売。OWID経由時はveritas⚠️。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2010",
+        "to": "2025"
+      },
+      "source": {
+        "label": "IEA Global EV Outlook (via OWID)",
+        "url": "https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.ev.stock.units",
+      "wb_code": null,
+      "name_ja": "EV保有台数（IEA）",
+      "name_en": "Electric car stock (IEA)",
+      "unit": "vehicles",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "電気自動車保有ストック。OWID経由時はveritas⚠️。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2010",
+        "to": "2025"
+      },
+      "source": {
+        "label": "IEA Global EV Outlook (via OWID)",
+        "url": "https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.coal.pct",
+      "wb_code": null,
+      "name_ja": "石炭火力比率（Ember）",
+      "name_en": "Electricity from coal (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：石炭。WB EG.ELC.COAL.ZS の鮮度補完。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.gas.pct",
+      "wb_code": null,
+      "name_ja": "ガス火力比率（Ember）",
+      "name_en": "Electricity from gas (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：天然ガス。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.hydro.pct",
+      "wb_code": null,
+      "name_ja": "水力比率（Ember）",
+      "name_en": "Electricity from hydro (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：水力。",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.nuclear.pct",
+      "wb_code": null,
+      "name_ja": "原子力比率（Ember）",
+      "name_en": "Electricity from nuclear (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：原子力。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "IN",
+        "JP",
+        "KR",
+        "PH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.solar.pct",
+      "wb_code": null,
+      "name_ja": "太陽光比率（Ember）",
+      "name_en": "Electricity from solar (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：太陽光。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.wind.pct",
+      "wb_code": null,
+      "name_ja": "風力比率（Ember）",
+      "name_en": "Electricity from wind (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：風力。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.other_fossil.pct",
+      "wb_code": null,
+      "name_ja": "その他化石火力比率（Ember）",
+      "name_en": "Electricity from other fossil (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：その他化石（石油等）。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.bioenergy.pct",
+      "wb_code": null,
+      "name_ja": "バイオエネルギー比率（Ember）",
+      "name_en": "Electricity from bioenergy (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：バイオエネルギー。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.renewables.pct",
+      "wb_code": null,
+      "name_ja": "再エネ発電比率（Ember）",
+      "name_en": "Electricity from renewables (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：再エネ合計。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
+      },
+      "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "industry.power.fossil.pct",
+      "wb_code": null,
+      "name_ja": "化石火力比率（Ember）",
+      "name_en": "Electricity from fossil fuels (Ember, %)",
+      "unit": "%",
+      "category": "産業実物",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "5e",
+      "description_ja": "発電構成：化石合計。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": "2000",
+        "to": "2025"
+      },
+      "source": {
+        "label": "Ember Yearly Electricity Data",
+        "url": "https://ember-energy.org/data/yearly-electricity-data/"
       },
       "feed": "timeseries/industry_physical.json"
     }
