@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/tariff_hs6_annual.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/tariff_hs6_annual.json v0.1",
+  "description": "UNCTAD TRAINS（WITS SDMX API・キー不要）由来のHS6品目別MFN関税。切替ポイント②（REQ-SMITH-20260712-002）。",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "feed_version", "last_updated", "frequency", "indicator", "observations"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "2.0.0" },
+    "feed_id": { "type": "string", "const": "tariff_hs6_annual" },
+    "feed_version": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "frequency": { "type": "string", "const": "annual" },
+    "indicator": { "type": "object" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "license": { "type": "string" },
+        "disclaimer_ja": { "type": "string" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "iso2_list": { "type": "array", "items": { "type": "string" } },
+        "hs6_list": { "type": "array", "items": { "type": "string" } },
+        "year_range": {
+          "type": "object",
+          "properties": {
+            "from": { "type": ["integer", "null"] },
+            "to": { "type": ["integer", "null"] }
+          }
+        },
+        "row_count": { "type": "integer" },
+        "missing_countries_wits": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "WITS/TRAINSにデータが無いPhase1国のiso2（品質ゲート・現状TWのみ）"
+        },
+        "eu_proxy_countries": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "EU共通対外関税を代理値として使用している国（DE/FR/GB）"
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["iso2", "year", "hs6", "value", "veritas"],
+        "additionalProperties": false,
+        "properties": {
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "year": { "type": "integer" },
+          "hs6": { "type": "string", "pattern": "^[0-9]{6}$" },
+          "isic2": { "type": "string" },
+          "product_name_ja": { "type": "string" },
+          "value": { "type": "number", "description": "MFN関税率・単純平均（%）" },
+          "unit": { "type": "string", "const": "%" },
+          "min_rate": { "type": ["number", "null"] },
+          "max_rate": { "type": ["number", "null"] },
+          "total_lines": { "type": ["integer", "null"] },
+          "nomencode": { "type": "string", "description": "HS改正版（H0=1988/92 ... H6=2022）" },
+          "is_eu_proxy": { "type": "boolean" },
+          "veritas": {
+            "type": "string",
+            "enum": ["✅", "⚠️", "🔴"],
+            "description": "is_eu_proxy=true の行は常に⚠️"
+          }
+        }
+      }
+    }
+  }
+}

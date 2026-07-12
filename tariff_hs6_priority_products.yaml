@@ -1,0 +1,35 @@
+# 関税収集の優先HS6品目リスト（v0.1・編集可能な種リスト）
+#
+# 全HS6品目（約5,000）×21か国を毎回取得するとAPI負荷・データ量が過大なため、
+# 主要製造業セクターを代表する品目をキュレーションして先行収集する。
+# Smith側で実際のクライアント業種が固まったら、このYAMLに品目を追加するだけで
+# コード変更なしに収集対象を拡張できる。
+#
+# isic2 は isic_hs_correspondence.yaml のISIC2桁と対応（参考情報）。
+
+version: "0.1"
+last_updated: "2026-07-12"
+
+products:
+  - { hs6: "847150", isic2: "26", name_ja: "自動データ処理機械（PC等）", name_en: "Automatic data processing machines" }
+  - { hs6: "851712", isic2: "26", name_ja: "スマートフォン", name_en: "Smartphones" }
+  - { hs6: "850440", isic2: "27", name_ja: "静止型変流器（電源装置）", name_en: "Static converters" }
+  - { hs6: "848180", isic2: "28", name_ja: "コック・バルブ類", name_en: "Taps, cocks, valves" }
+  - { hs6: "847990", isic2: "28", name_ja: "機械類の部分品", name_en: "Parts of machines n.e.s." }
+  - { hs6: "870899", isic2: "29", name_ja: "自動車部品（その他）", name_en: "Motor vehicle parts n.e.s." }
+  - { hs6: "870323", isic2: "29", name_ja: "乗用車（1500-3000cc）", name_en: "Passenger cars 1500-3000cc" }
+  - { hs6: "300490", isic2: "21", name_ja: "医薬品（その他）", name_en: "Medicaments n.e.s." }
+  - { hs6: "390210", isic2: "20", name_ja: "ポリプロピレン", name_en: "Polypropylene" }
+  - { hs6: "720852", isic2: "24", name_ja: "熱間圧延鋼板", name_en: "Flat-rolled steel products" }
+  - { hs6: "610910", isic2: "14", name_ja: "Tシャツ（綿製）", name_en: "T-shirts, cotton" }
+  - { hs6: "620342", isic2: "14", name_ja: "男性用ズボン（綿製）", name_en: "Men's trousers, cotton" }
+  - { hs6: "640399", isic2: "15", name_ja: "履物（その他）", name_en: "Footwear n.e.s." }
+  - { hs6: "940360", isic2: "31", name_ja: "木製家具", name_en: "Wooden furniture" }
+  - { hs6: "190590", isic2: "10", name_ja: "パン・ビスケット等", name_en: "Bread, biscuits, etc." }
+  - { hs6: "220830", isic2: "11", name_ja: "ウイスキー", name_en: "Whiskies" }
+  - { hs6: "480256", isic2: "17", name_ja: "紙・板紙", name_en: "Paper and paperboard" }
+  - { hs6: "291736", isic2: "20", name_ja: "テレフタル酸", name_en: "Terephthalic acid" }
+
+notes_ja:
+  - "HS6コードはHS2012ベース。TRAINS応答のNOMENCODEで実際の年次リビジョンを確認可能（v0.2でリビジョン差の吸収を検討）。"
+  - "追加/変更は本ファイルの products リストを編集するだけでよい（コード変更不要）。"

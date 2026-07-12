@@ -1,0 +1,40 @@
+# WITS/UNCTAD TRAINS レポーターコード対応（Phase1 21か国）
+#
+# 出典: https://wits.worldbank.org/API/V1/wits/datasource/trn/country/ALL （2026-07-12取得・キー不要）
+# wits_code = TRAINSデータ取得APIの reporter パラメータに渡す数値コード
+#
+# 品質ゲート:
+#   - DEU/FRA/GBR は個別レポーターとしてTRAINSに存在しない
+#     （EU加盟国はMFN関税をEU共通対外関税として一体運用のため）。
+#     → EU（wits_code=918）の関税を代理値として使用し、is_eu_proxy: true を明示。
+#   - TWN は World Bank同様 WITS/TRAINS 非収録。関税データは欠損のまま（v0.1では補完なし）。
+
+version: "0.1"
+last_updated: "2026-07-12"
+
+reporters:
+  - { iso3: VNM, iso2: VN, wits_code: "704", is_eu_proxy: false }
+  - { iso3: THA, iso2: TH, wits_code: "764", is_eu_proxy: false }
+  - { iso3: CHN, iso2: CN, wits_code: "156", is_eu_proxy: false }
+  - { iso3: IND, iso2: IN, wits_code: "356", is_eu_proxy: false }
+  - { iso3: IDN, iso2: ID, wits_code: "360", is_eu_proxy: false }
+  - { iso3: PHL, iso2: PH, wits_code: "608", is_eu_proxy: false }
+  - { iso3: MYS, iso2: MY, wits_code: "458", is_eu_proxy: false }
+  - { iso3: SGP, iso2: SG, wits_code: "702", is_eu_proxy: false }
+  - { iso3: KOR, iso2: KR, wits_code: "410", is_eu_proxy: false }
+  - { iso3: HKG, iso2: HK, wits_code: "344", is_eu_proxy: false }
+  - { iso3: ARE, iso2: AE, wits_code: "784", is_eu_proxy: false }
+  - { iso3: SAU, iso2: SA, wits_code: "682", is_eu_proxy: false }
+  - { iso3: TUR, iso2: TR, wits_code: "792", is_eu_proxy: false }
+  - { iso3: GBR, iso2: GB, wits_code: "918", is_eu_proxy: true, note_ja: "TRAINSにUK単独レポーター無し。EU関税を代理値として使用（Brexit以降の実際のUK関税とは異なる可能性）。" }
+  - { iso3: DEU, iso2: DE, wits_code: "918", is_eu_proxy: true, note_ja: "EU共通対外関税を使用（ドイツ単独レポーターはTRAINSに存在しない）。" }
+  - { iso3: FRA, iso2: FR, wits_code: "918", is_eu_proxy: true, note_ja: "EU共通対外関税を使用（フランス単独レポーターはTRAINSに存在しない）。" }
+  - { iso3: USA, iso2: US, wits_code: "840", is_eu_proxy: false }
+  - { iso3: CAN, iso2: CA, wits_code: "124", is_eu_proxy: false }
+  - { iso3: BRA, iso2: BR, wits_code: "076", is_eu_proxy: false }
+  - { iso3: JPN, iso2: JP, wits_code: "392", is_eu_proxy: false }
+  # TWN: WITS/TRAINS非収録のため対応コード無し（macro_annualと同じ欠損パターン）
+
+notes_ja:
+  - "partner=000（World）はMFN/erga omnes関税（特定国との特恵協定を除いた基準関税）。市場参入時の最悪ケース想定に使う。"
+  - "918=EUNは複数レポーターへ代理適用されるため、1回のSDMXリクエストで重複取得しないよう export側で重複排除する。"

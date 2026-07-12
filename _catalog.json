@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-12T19:46:49+09:00",
+  "last_updated": "2026-07-12T20:08:02+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
+  "notes_ja": "REQ-SMITH-20260712-002 v0.1+TW+WB1b+CPI。World Bank年次（20か国）＋台湾はIMF WEO補完（5指標）。phase1b: WGI6軸・電力・ネット・政府債務・貯蓄・産業/製造VA。phase1c: TI CPI。industry_gva_annual（UNIDO）は別フィード。四半期（macro_quarterly）は v0.2 で IMF IFS（Sonnetで系列確定）。既存 macro_scores.json 等は当面残置。公開Repo既定ブランチは master（Raw URLは /master/ を使用）。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。 tariff_hs6_annual v0.1（WITS/TRAINS・キー不要・品目別関税）を追加。",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -1218,6 +1218,96 @@
       }
     },
     {
+      "indicator_id": "macro.tariff_mfn_simple_avg.pct",
+      "wb_code": "TM.TAX.MRCH.SM.AR.ZS",
+      "name_ja": "MFN関税率（全品目・単純平均）",
+      "name_en": "Tariff rate, applied, simple mean, all products (%)",
+      "unit": "%",
+      "category": "貿易",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "国レベルの関税障壁の第一近似（WITS/TRAINS由来のWB集計）。品目別詳細は tariff_hs6_annual を参照。",
+      "phase": "2c",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TM.TAX.MRCH.SM.AR.ZS",
+        "url": "https://data.worldbank.org/indicator/TM.TAX.MRCH.SM.AR.ZS"
+      }
+    },
+    {
+      "indicator_id": "macro.tariff_mfn_weighted_avg.pct",
+      "wb_code": "TM.TAX.MRCH.WM.AR.ZS",
+      "name_ja": "MFN関税率（全品目・貿易量加重平均）",
+      "name_en": "Tariff rate, applied, weighted mean, all products (%)",
+      "unit": "%",
+      "category": "貿易",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "実際の貿易構成を反映した関税負担の実感値。単純平均との差が大きい国は特定品目に高関税が偏在。",
+      "phase": "2c",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2000,
+        "to": 2022
+      },
+      "source": {
+        "label": "World Bank",
+        "code": "TM.TAX.MRCH.WM.AR.ZS",
+        "url": "https://data.worldbank.org/indicator/TM.TAX.MRCH.WM.AR.ZS"
+      }
+    },
+    {
       "indicator_id": "gov.ti.cpi.score",
       "wb_code": null,
       "name_ja": "腐敗認識指数（TI CPI）",
@@ -1532,6 +1622,51 @@
         "from": 2000,
         "to": 2025
       }
+    },
+    {
+      "indicator_id": "trade.tariff.mfn_simple_avg.pct",
+      "wb_code": null,
+      "name_ja": "MFN関税率（HS6品目別・単純平均）",
+      "name_en": "MFN tariff rate by HS6 product (simple average)",
+      "unit": "%",
+      "category": "貿易",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "description_ja": "UNCTAD TRAINS由来のMFN/World基準関税（品目別）。市場参入時の関税負担を業種の代表HS6品目で確認する用途。DEU/FRA/GBRはEU共通対外関税の代理値（veritas⚠️）。",
+      "phase": "2c",
+      "source": {
+        "label": "UNCTAD TRAINS (via WITS SDMX API)",
+        "url": "https://wits.worldbank.org/witsapiintro.aspx"
+      },
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2018,
+        "to": 2023
+      },
+      "note_ja": "品目別詳細は timeseries/tariff_hs6_annual.json を参照（本indicator_idの国レベル集計とは別系統）。"
     }
   ],
   "countries": [
