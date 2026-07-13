@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-12T20:08:01+09:00",
+  "last_updated": "2026-07-13T19:15:49+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -113,26 +113,27 @@
     ],
     "year_coverage": {
       "from": 2023,
-      "to": 2023
+      "to": 2024
     },
     "metric_ids": [
       "japan.overseas_affiliates.count",
-      "japan.overseas_affiliates.sales_jpy"
+      "japan.overseas_affiliates.sales_jpy",
+      "japan.affiliates_profit_margin.pct"
     ],
     "stats_data_ids": [
       "file=jp_affiliates_2024_detail.xlsx"
     ],
     "ingest_mode": "excel_file_semi_auto",
-    "note_ja": "count（企業数）は本番値。sales_jpy（現地法人売上高・国別）は本表に非収録のため null（別表からの取込は今後検討）。"
+    "note_ja": "count（企業数）は参考表。profit_margin_pct は ②－１３売上高 / ②－１７経常利益 から算出（第55回・2024年度実績）。経常利益表は国粒度が粗く US/CN/HK 等の共通国のみ収録。"
   },
   "modules": {
     "C1_affiliates": {
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-12T20:08:01+09:00",
+      "last_updated": "2026-07-13T19:15:49+09:00",
       "source": {
-        "label": "METI 海外事業活動基本調査（第54回・2023年度実績）",
+        "label": "METI 海外事業活動基本調査（第54–55回）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
       },
       "series": [
@@ -183,6 +184,18 @@
                 "japan.overseas_affiliates.count"
               ],
               "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            },
+            {
+              "year": 2024,
+              "count": null,
+              "sales_jpy": null,
+              "profit_margin_pct": 4.5118,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.affiliates_profit_margin.pct"
+              ],
+              "source_ref": "e-Stat:statInfId=000040458706",
               "veritas": "✅"
             }
           ]
@@ -303,6 +316,18 @@
               ],
               "source_ref": "file=jp_affiliates_2024_detail.xlsx",
               "veritas": "✅"
+            },
+            {
+              "year": 2024,
+              "count": null,
+              "sales_jpy": null,
+              "profit_margin_pct": 4.7037,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.affiliates_profit_margin.pct"
+              ],
+              "source_ref": "e-Stat:statInfId=000040458706",
+              "veritas": "✅"
             }
           ]
         },
@@ -421,6 +446,18 @@
                 "japan.overseas_affiliates.count"
               ],
               "source_ref": "file=jp_affiliates_2024_detail.xlsx",
+              "veritas": "✅"
+            },
+            {
+              "year": 2024,
+              "count": null,
+              "sales_jpy": null,
+              "profit_margin_pct": 3.3255,
+              "unit_count": "companies",
+              "metric_ids": [
+                "japan.affiliates_profit_margin.pct"
+              ],
+              "source_ref": "e-Stat:statInfId=000040458706",
               "veritas": "✅"
             }
           ]

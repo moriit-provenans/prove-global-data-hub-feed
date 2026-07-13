@@ -716,13 +716,13 @@ sources:
     frequency: annual
     grain_axes: [time, industry, firm_size]
     how_to_fetch:
-      - "1. e-Stat で売上高・経常利益の国・地域別 Excel URL を取得"
-      - "2. collect_meti_affiliates_margin.py --url …（列マッピング未確定＝stub）"
+      - "1. e-Stat fileKind=0&statInfId=000040458706（第55回・売上/経常利益ワークブック）"
+      - "2. collect_meti_affiliates_margin.py（デフォルト ID 配線済）"
       - "3. 利益率=経常利益/売上×100 → japan.affiliates_profit_margin.pct"
     layer: annual
-    status: stub
+    status: implemented_partial
     collector: tools/collectors/collect_meti_affiliates_margin.py
-    notes_ja: 法人数は既存 estat 経路。利益率は骨格のみ。
+    notes_ja: "2026-07-13: US/CN/HK の利益率✅。経常利益表は国粒度が粗く ASEAN 各国は非収録。"
 
   - id: jetro_survey
     name: JETRO Survey on Japanese-Affiliated Companies Abroad
