@@ -1,15 +1,16 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T09:13:28+09:00",
+  "last_updated": "2026-07-13T16:02:12+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
     "url": "https://github.com/moriit-provenans/prove-global-data-hub-feed",
-    "disclaimer_ja": "GPI/TaxはWikipedia経由⚠️。STRIはSTRI_XLSX_PATH必須。INFORM/EDGARは✅。"
+    "disclaimer_ja": "GPI/TaxはWikipedia経由⚠️。FDIRRIはOECD SDMX✅。INFORM/EDGARは✅。"
   },
   "meta": {
     "indicator_ids": [
+      "biz.fdi_restrictiveness.index",
       "env.co2_pc",
       "env.co2_total.mt",
       "risk.gpi.score",
@@ -44,9 +45,657 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 1289
+    "row_count": 1361
   },
   "observations": [
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 0.13770625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 0.110116667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 0.060116667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 0.060116667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 0.136584375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 0.136584375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 0.136584375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 0.150084375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 0.1578,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 0.2346625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 0.231816667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 0.231816667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 0.008791,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 0.008791,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 0.008791,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 0.008791,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 0.022990625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 0.022360625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 0.022360625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 0.022360625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 0.00586,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 0.0001,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 0.0001,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 0.0001,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 0.475722396,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 0.282185938,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 0.282185938,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 0.282185938,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 0.233514583,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 0.221597917,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 0.221597917,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 0.218785417,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 0.0483625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 0.0483625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 0.0483625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 0.0483625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "KR",
+      "year": 2018,
+      "value": 0.104815,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 0.104815,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "KR",
+      "year": 2022,
+      "value": 0.104815,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 0.104815,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 0.317121771,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 0.316805104,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 0.321855104,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 0.321855104,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 0.443991667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 0.442679167,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 0.380366667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 0.380366667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SA",
+      "year": 2018,
+      "value": 0.569683333,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 0.330977083,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SA",
+      "year": 2022,
+      "value": 0.330977083,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 0.330977083,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SG",
+      "year": 2018,
+      "value": 0.06516875,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 0.06516875,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 0.06516875,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 0.06516875,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 0.239741667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 0.239741667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 0.239741667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 0.239741667,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 0.11185375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 0.11185375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 0.11185375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 0.11185375,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "US",
+      "year": 2018,
+      "value": 0.0509625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "US",
+      "year": 2021,
+      "value": 0.0509625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "US",
+      "year": 2022,
+      "value": 0.0509625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "US",
+      "year": 2023,
+      "value": 0.0509625,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 0.223174167,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 0.219974167,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 0.219974167,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 0.219880417,
+      "unit": "index_0_1",
+      "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
+      "veritas": "✅"
+    },
     {
       "indicator_id": "env.co2_pc",
       "iso2": "AE",
