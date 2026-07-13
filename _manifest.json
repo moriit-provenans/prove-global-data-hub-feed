@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-13T19:15:49+09:00",
+  "generated_at": "2026-07-13T20:51:29+09:00",
   "hub_name": "PROVE Global Data Hub",
   "feeds": [
     {
@@ -31,7 +31,7 @@
       "title_en": "Japan trade flows by HS and partner",
       "phase": "2",
       "status": "active",
-      "last_updated": "2026-07-13T19:15:49+09:00",
+      "last_updated": "2026-07-13T20:51:29+09:00",
       "source": {
         "label": "UN Comtrade",
         "url": "https://comtradeplus.un.org/"
@@ -49,7 +49,7 @@
       "title_en": "Japanese overseas affiliates by country",
       "phase": "2",
       "status": "active",
-      "last_updated": "2026-07-13T19:15:49+09:00",
+      "last_updated": "2026-07-13T20:51:29+09:00",
       "source": {
         "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
         "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120"
@@ -68,7 +68,7 @@
       "title_en": "Industry × country market matrix",
       "phase": "2",
       "status": "active",
-      "last_updated": "2026-07-13T19:15:49+09:00",
+      "last_updated": "2026-07-13T20:51:29+09:00",
       "source": {
         "label": "Atlas DataLake market-grid（事実品質ゲート適用）"
       },

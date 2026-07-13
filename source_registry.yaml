@@ -539,16 +539,34 @@ sources:
   - id: iai_aluminium
     name: International Aluminium Institute
     url: https://international-aluminium.org/statistics/primary-aluminium-production/
-    api: none
+    api: https://alvis.international-aluminium.org/api
     free_paid: free
     frequency: monthly
     grain_axes: [time, industry, spatial]
     how_to_fetch:
-      - "1. ALVIS に安定 REST 無し → 手動 CSV"
-      - "2. IAI_ALUMINIUM_CSV_PATH で取込"
-      - "3. collect_iai_aluminium.py"
+      - "1. ALVIS /publications は X-Auth-Token で到達（ページ埋め込みトークン）"
+      - "2. データ系列 API パスは未特定 → 当面 IAI_ALUMINIUM_CSV_PATH"
+      - "3. 国別年次は USGS MCS で代替（collect_usgs_aluminium.py）"
     layer: annual
-    status: stub_manual_csv
+    status: deferred_proxy_active
+    collector: tools/collectors/collect_iai_aluminium.py
+    notes_ja: "2026-07-13: USGS MCS 年次を industry_physical に自動投入。IAI 月次は手動CSV。"
+
+  - id: usgs_aluminium_mcs
+    name: USGS Mineral Commodity Summaries — Aluminum
+    url: https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-aluminum.pdf
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. MCS aluminum PDF を年次 DL"
+      - "2. World Smelter Production 表をパース"
+      - "3. collect_usgs_aluminium.py"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_usgs_aluminium.py
+    feed: timeseries/industry_physical.json
     collector: tools/collectors/collect_iai_aluminium.py
 
   - id: unctad_maritime

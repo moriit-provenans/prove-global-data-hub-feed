@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-13T19:15:49+09:00",
+  "last_updated": "2026-07-13T20:51:29+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -124,14 +124,23 @@
       "file=jp_affiliates_2024_detail.xlsx"
     ],
     "ingest_mode": "excel_file_semi_auto",
-    "note_ja": "count（企業数）は参考表。profit_margin_pct は ②－１３売上高 / ②－１７経常利益 から算出（第55回・2024年度実績）。経常利益表は国粒度が粗く US/CN/HK 等の共通国のみ収録。"
+    "note_ja": "count（企業数）は参考表。profit_margin_pct は ②－１３売上高 / ②－１７経常利益 から算出（第55回・2024年度実績）。経常利益表は国粒度が粗く US/CN/HK ＋ ASEAN10 アグリゲート（iso2なし・meta.regional）を収録。",
+    "regional_aggregates": [
+      {
+        "region_id": "ASEAN10",
+        "year": 2024,
+        "profit_margin_pct": 5.2731,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      }
+    ]
   },
   "modules": {
     "C1_affiliates": {
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-13T19:15:49+09:00",
+      "last_updated": "2026-07-13T20:51:29+09:00",
       "source": {
         "label": "METI 海外事業活動基本調査（第54–55回）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
