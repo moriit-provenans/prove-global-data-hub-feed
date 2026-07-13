@@ -567,7 +567,6 @@ sources:
     status: implemented
     collector: tools/collectors/collect_usgs_aluminium.py
     feed: timeseries/industry_physical.json
-    collector: tools/collectors/collect_iai_aluminium.py
 
   - id: unctad_maritime
     name: UNCTADstat maritime
