@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/events_active.schema.json",
+  "title": "PROVE Global Data Hub — events_active.json v1（REQ-008 P1-P disruptions）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "events"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "events_active" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "name", "active"],
+        "properties": {
+          "event_id": {},
+          "event_type": { "type": ["string", "null"] },
+          "name": { "type": "string" },
+          "alert_level": { "type": ["string", "null"] },
+          "country": { "type": ["string", "null"] },
+          "from_date": { "type": ["string", "null"] },
+          "to_date": { "type": ["string", "null"] },
+          "active": { "type": "boolean" },
+          "severity": { "type": "string" },
+          "lat": { "type": ["number", "null"] },
+          "lon": { "type": ["number", "null"] },
+          "affected_ports": { "type": "string" },
+          "n_affected_ports": { "type": ["integer", "null"] },
+          "page_id": { "type": ["string", "null"] },
+          "description": { "type": "string" },
+          "source": { "type": "string" },
+          "source_ref": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,15 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "industry_physical",
-  "last_updated": "2026-07-13T08:13:53+09:00",
+  "last_updated": "2026-07-13T11:33:10+09:00",
   "source": {
-    "label": "OICA + WSTS + worldsteel + Ember + IEA GEVO",
+    "label": "OICA + WSTS + worldsteel + Ember + IEA GEVO + IAI",
     "url": "https://oica.net/ + https://www.wsts.org/ + https://worldsteel.org/ + https://ember-energy.org/ + https://www.iea.org/",
-    "disclaimer_ja": "OICA/worldsteel/IEAは当面二次ソース経由（⚠️）。WSTS・Emberは公式無料（✅）。"
+    "disclaimer_ja": "OICA/worldsteel/IEAは当面二次ソース経由（⚠️）。WSTS・Emberは公式無料（✅）。IAIは手動CSV時のみ。"
   },
   "meta": {
     "indicator_ids": [
+      "industry.aluminium.primary_production.kt",
       "industry.auto.production.units",
       "industry.ev.sales.units",
       "industry.ev.stock.units",

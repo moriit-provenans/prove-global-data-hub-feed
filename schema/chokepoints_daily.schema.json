@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/chokepoints_daily.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/chokepoints_daily.json v1（REQ-008 P1-P）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations_daily", "observations_monthly"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "chokepoints_daily" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "observations_daily": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "period", "value", "frequency"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "geo": { "type": "string" },
+          "geo_type": { "type": "string" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "frequency": { "type": "string", "const": "daily" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    },
+    "observations_monthly": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "period", "value", "frequency"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "geo": { "type": "string" },
+          "geo_type": { "type": "string" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "frequency": { "type": "string", "const": "monthly" },
+          "n_days": { "type": "integer" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}

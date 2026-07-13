@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/agri_psd_monthly.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/agri_psd_monthly.json v1（REQ-009 P1）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "agri_psd_monthly" },
+    "frequency": { "type": "string", "const": "annual" },
+    "update_cadence": { "type": "string" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value", "is_forecast"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "is_forecast": { "type": "boolean" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}

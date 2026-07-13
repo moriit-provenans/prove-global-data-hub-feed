@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/events_calendar.schema.json",
+  "title": "PROVE Global Data Hub — events_calendar.json v1（REQ-008 P1-S）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "events"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "events_calendar" },
+    "last_updated": { "type": "string" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "events": { "type": "array" }
+  }
+}

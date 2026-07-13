@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "japan_relations",
-  "last_updated": "2026-07-13T09:13:35+09:00",
+  "last_updated": "2026-07-13T11:11:10+09:00",
   "frequency": "annual",
   "source": {
-    "label": "MOFA + MOF + JETRO + JNTO",
+    "label": "MOFA + MOF + JETRO + JNTO + JBIC(curated)",
     "url": "https://www.mofa.go.jp/",
-    "disclaimer_ja": "在留邦人・日系拠点はe-Stat API（更新年次は表による）。貿易は章別合算。訪日はJNTO_XLSX_PATH未設定時⚠️。経産省 affiliates と MOFA companies は定義が異なる。"
+    "disclaimer_ja": "在留邦人・日系拠点はe-Stat API（更新年次は表による）。貿易は章別合算。訪日はJNTO_XLSX_PATH未設定時⚠️。経産省 affiliates と MOFA companies は定義が異なる。JBIC有望国得票率はPDFキュレートサンプル（⚠️・機械パース未了）。"
   },
   "meta": {
     "indicator_ids": [
@@ -14,6 +14,7 @@
       "japan.exports_to.jpy",
       "japan.fdi_outward_stock.usd",
       "japan.imports_from.jpy",
+      "japan.jbic_promising_votes.pct",
       "japan.residents.count",
       "japan.visitors_to_japan.count"
     ],
@@ -43,7 +44,7 @@
       "from": 2000,
       "to": 2026
     },
-    "row_count": 1008
+    "row_count": 1032
   },
   "observations": [
     {
@@ -7164,6 +7165,222 @@
       "unit": "JPY_1000",
       "source_ref": "statsDataId=0004002161",
       "veritas": "✅"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 47.0,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 37.1,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 28.4,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 17.4,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2024 (36th) press / spot (6th)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 19.4,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 21.0,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 24.6,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 38.0,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 40.3,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 48.6,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 58.7,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2024 (36th) / JOI spot summary",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 6.6,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 8.9,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 22.3,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 23.2,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 21.5,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "US",
+      "year": 2021,
+      "value": 32.8,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "US",
+      "year": 2022,
+      "value": 32.2,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "US",
+      "year": 2023,
+      "value": 27.1,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "US",
+      "year": 2024,
+      "value": 26.2,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2024 (36th) / JOI spot summary",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 30.4,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 report (prior-year col)",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 28.9,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2022 (34th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 30.1,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2023 (35th) ranking table",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "japan.jbic_promising_votes.pct",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 31.3,
+      "unit": "%",
+      "source_ref": "JBIC FDI survey FY2024 (36th) / JOI spot summary",
+      "veritas": "⚠️"
     },
     {
       "indicator_id": "japan.residents.count",

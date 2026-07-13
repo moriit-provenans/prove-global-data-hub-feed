@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/market_daily.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/market_daily.json v1（REQ-008 P1-R）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations_daily", "policy_rate_snapshot"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "market_daily" },
+    "last_updated": { "type": "string" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "observations_daily": { "type": "array" },
+    "policy_rate_snapshot": { "type": "array" }
+  }
+}

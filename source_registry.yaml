@@ -1,0 +1,1290 @@
+# PROVE Global Data Hub — source registry（REQ-007 P1-O 本体／REQ-008–010 合流）
+# 目的: 「次に何か聞かれたら台帳で即答できる」状態。コレクター化しない層も含む。
+# スキーマ: id / name / url / free_paid / api / frequency / grain_axes /
+#           how_to_fetch(3行) / layer(always|annual|ondemand) + status/collector/feed
+
+updated: 2026-07-13
+owner: Atlas
+req_refs:
+  - REQ-SMITH-20260713-007  # P1-O
+  - REQ-SMITH-20260713-008
+  - REQ-SMITH-20260713-009
+  - REQ-SMITH-20260713-010
+entry_count: 84
+entry_count_target: "40-90"
+notes_ja: >
+  grain_axes は細分化5軸（time / spatial / industry / income / firm_size）の該当のみ列挙。
+  layer=always は常設コレクター／フィード、annual は年1バッチ、ondemand は台帳＋手順のみ。
+  2026-07-13: REQ-007 P1-O 初版完成（REQ-008–010 合流・83件）。
+  2026-07-13: REQ-008 P1-R/S — market_daily / events_calendar / GPR stub 追加（84件）。
+
+sources:
+  # ─── Aggregators / meta ───────────────────────────────────────────
+  - id: dbnomics
+    name: DBnomics
+    url: https://db.nomics.world/
+    api: https://api.db.nomics.world/v22/
+    free_paid: free
+    frequency: varies_by_provider
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. GET api.db.nomics.world/v22/series?provider_code=OECD&dataset_code=MEI&…"
+      - "2. 系列コードは /providers /datasets で探索。ページングは offset/limit"
+      - "3. OECD MEI・BIS・Eurostat は個別APIよりここ経由を優先（REQ-007 P1-J 判定済）"
+    layer: always
+    status: verified_architecture
+    feed: macro_monthly / macro_quarterly (via provider)
+    notes_ja: 93機関統一API。個別コレクター削減の本命。
+
+  - id: fred
+    name: FRED (Federal Reserve Bank of St. Louis)
+    url: https://fred.stlouisfed.org/
+    api: https://api.stlouisfed.org/fred/
+    free_paid: free
+    frequency: daily_to_monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. FRED API key 無料登録 → ~/.atlas_secrets/.env に FRED_API_KEY="
+      - "2. collect_market_daily.py が FX・Brent/WTI/Gold/Copper を取得"
+      - "3. キー未設定時は FX を Frankfurter(ECB) にフォールバック、コモディティは空系列"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_market_daily.py
+    feed: timeseries/market_daily.json
+    notes_ja: REQ-008 P1-R。2026-07-13 実装（キー無しでも骨格＋FX）。
+
+  - id: owid_energy
+    name: Our World in Data — energy-data
+    url: https://github.com/owid/energy-data
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. GitHub raw CSV owid-energy-data.csv を DL"
+      - "2. collect_owid_energy_ssr.py で生産÷消費→燃料別SSR"
+      - "3. export_energy_ssr_annual.py で公開フィード化"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_owid_energy_ssr.py
+    feed: timeseries/energy_ssr_annual.json
+    notes_ja: UNSD Energy の暫定代理（P1-L）。veritas⚠️。
+
+  - id: unsd_energy
+    name: UNSD Energy Balances (UNdata SDMX)
+    url: https://data.un.org/
+    api: https://data.un.org/ws/rest/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. SDMX DF_UNDATA_ENERGY で一次エネルギー生産/供給を取得"
+      - "2. SSR=生産÷供給を燃料別（石油/ガス/石炭/電力）に算出"
+      - "3. OWID 代理を置換する本命。フル TES マッピングは次イテレーション"
+    layer: annual
+    status: deferred_proxy_active
+    feed: timeseries/energy_ssr_annual.json
+    notes_ja: API到達確認済・本格マッピング未了。
+
+  - id: worldbank_wdi
+    name: World Bank World Development Indicators
+    url: https://databank.worldbank.org/source/world-development-indicators
+    api: https://api.worldbank.org/v2/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. api.worldbank.org/v2/country/{iso}/indicator/{code}?format=json&per_page=20000"
+      - "2. collect_worldbank.py が indicator_master 駆動で一括"
+      - "3. Taiwan は WDI 非収録 → IMF WEO 補完"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_worldbank.py
+    feed: timeseries/macro_annual.json
+
+  - id: worldbank_gfdd
+    name: World Bank Global Financial Development
+    url: https://www.worldbank.org/en/publication/gfdr/data/global-financial-development-database
+    api: https://api.worldbank.org/v2/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. DataBank GFDD 指標コードを確認（アクセス/深化/効率/安定）"
+      - "2. WDI と同じ v2 API で国×年取得"
+      - "3. finance 系フィード拡張時に追加"
+    layer: ondemand
+    status: registry_only
+
+  - id: worldbank_enterprise_surveys
+    name: World Bank Enterprise Surveys
+    url: https://www.enterprisesurveys.org/
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [industry, firm_size, spatial]
+    how_to_fetch:
+      - "1. 国別データポータルから Excel/CSV を DL"
+      - "2. 業種×企業規模の生産性・障害指標を抽出"
+      - "3. 案件来訪時のみ正規化（全面フィード化しない）"
+    layer: ondemand
+    status: registry_only
+
+  - id: worldbank_pip
+    name: World Bank Poverty and Inequality Platform
+    url: https://pip.worldbank.org/
+    api: https://api.worldbank.org/pip/v1/
+    free_paid: free
+    frequency: annual
+    grain_axes: [income, time]
+    how_to_fetch:
+      - "1. PIP API でパーセンタイル所得を取得"
+      - "2. Phase1 国のボリュームゾーン価格帯設計に利用"
+      - "3. 所得層軸の見本候補（P1-N income_tier の代替経路）"
+    layer: ondemand
+    status: registry_only
+
+  - id: worldbank_gcd
+    name: World Bank Global Consumption Database
+    url: https://datatopics.worldbank.org/consumption/
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [income]
+    how_to_fetch:
+      - "1. ポータルから所得4層×消費カテゴリ表を DL"
+      - "2. ASEAN5 から正規化（granularity_samples income_tier）"
+      - "3. 現状 documented_only"
+    layer: ondemand
+    status: documented_in_granularity_samples
+
+  - id: worldbank_wbl
+    name: World Bank Women, Business and the Law
+    url: https://wbl.worldbank.org/
+    api: https://api.worldbank.org/v2/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. WBL 指標コードを DataBank/API で取得"
+      - "2. 女性就労・起業の法的制約35指標"
+      - "3. country_profile 拡張候補"
+    layer: annual
+    status: registry_only
+
+  - id: worldbank_bready
+    name: World Bank B-READY
+    url: https://www.worldbank.org/en/businessready
+    api: https://api.worldbank.org/v2/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. IC.BRE.* 指標を v2 API で取得（collect_bready.py）"
+      - "2. Doing Business 後継のビジネス環境"
+      - "3. indices_annual / country_profile へ合流"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_bready.py
+
+  - id: worldbank_ppi
+    name: World Bank PPI Database
+    url: https://ppi.worldbank.org/en/ppidata
+    api: none
+    free_paid: free
+    frequency: semi_annual
+    grain_axes: [time, industry, spatial]
+    how_to_fetch:
+      - "1. PPI サイトから案件レベル Excel を DL"
+      - "2. 国×年×セクターに集計"
+      - "3. collect_wb_ppi.py は現状スタブ"
+    layer: annual
+    status: stub
+    collector: tools/collectors/collect_wb_ppi.py
+    feed: infra_annual (planned)
+
+  - id: worldbank_cppi
+    name: Container Port Performance Index (WB / S&P)
+    url: https://www.worldbank.org/en/topic/transport/publication/container-port-performance-index
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [spatial]
+    how_to_fetch:
+      - "1. 年次レポート付属ランキング表を取得"
+      - "2. 港湾効率スコアを国/港で正規化"
+      - "3. PPI スタブと同一コレクター枠"
+    layer: annual
+    status: stub
+    collector: tools/collectors/collect_wb_ppi.py
+
+  - id: worldbank_pink_sheet
+    name: World Bank Pink Sheet (commodity prices)
+    url: https://www.worldbank.org/en/research/commodity-markets
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. Pink Sheet Excel/CSV を月次 DL"
+      - "2. collect_wb_pink_sheet.py で正規化"
+      - "3. commodity_monthly.json へ"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_wb_pink_sheet.py
+    feed: timeseries/commodity_monthly.json
+
+  # ─── Food / agri / energy specialty ───────────────────────────────
+  - id: faostat_fbs
+    name: FAOSTAT Food Balance Sheets
+    url: https://www.fao.org/faostat/en/#data/FBS
+    api: https://fenixservices.fao.org/faostat/api/v1/en/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. FAOSTAT API domain=FBS で生産/輸入/輸出を取得"
+      - "2. collect_faostat_fbs.py で SSR/IDR 算出"
+      - "3. food_ssr_annual.json 公開（REQ-007 P1-K）"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_faostat_fbs.py
+    feed: timeseries/food_ssr_annual.json
+
+  - id: fao_food_price
+    name: FAO Food Price Index
+    url: https://www.fao.org/worldfoodsituation/foodpricesindex/en/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. FAO CSV/Excel を DL"
+      - "2. collect_fao_food_price.py"
+      - "3. commodity_monthly に合流"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_fao_food_price.py
+
+  - id: usda_psd
+    name: USDA FAS PSD Online
+    url: https://apps.fas.usda.gov/psdonline/
+    api: https://apps.fas.usda.gov/OpenData/api/psd/
+    free_paid: free
+    frequency: monthly_update_annual_my
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. opendataweb で無料 API キー取得 → USDA_FAS_API_KEY"
+      - "2. collect_usda_psd.py で穀物・油糧・畜産需給"
+      - "3. is_forecast フラグ付きで agri_psd_monthly.json"
+    layer: always
+    status: implemented_key_gated
+    collector: tools/collectors/collect_usda_psd.py
+    feed: timeseries/agri_psd_monthly.json
+
+  - id: jodi_oil
+    name: JODI-Oil World Database
+    url: https://www.jodidata.org/oil/database/data-downloads.aspx
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. annual-csv/primary または world_primary_csv.zip を DL"
+      - "2. collect_jodi.py で生産/需要/在庫/輸出入を正規化"
+      - "3. energy_monthly.json へ"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_jodi.py
+    feed: timeseries/energy_monthly.json
+
+  - id: jodi_gas
+    name: JODI-Gas World Database
+    url: https://www.jodidata.org/gas/database/data-downloads.aspx
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. jodi_gas_csv.zip を DL（鮮度要確認）"
+      - "2. collect_jodi.py 同一経路"
+      - "3. 公式 zip Last-Modified が古い場合は⚠️"
+    layer: always
+    status: implemented_stale
+    collector: tools/collectors/collect_jodi.py
+    feed: timeseries/energy_monthly.json
+
+  - id: ember_monthly
+    name: Ember Monthly Electricity Data
+    url: https://ember-energy.org/data/monthly-electricity-data/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. monthly_full_release_long_format.csv を DL"
+      - "2. collect_ember_monthly.py"
+      - "3. power_monthly.json（年次 Ember は industry_physical）"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_ember_monthly.py
+    feed: timeseries/power_monthly.json
+
+  - id: ember_annual
+    name: Ember Yearly Electricity Data
+    url: https://ember-energy.org/data/yearly-electricity-data/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 年次 long CSV を DL"
+      - "2. collect_ember_electricity.py"
+      - "3. industry_physical.json へ"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_ember_electricity.py
+    feed: timeseries/industry_physical.json
+
+  - id: iea_ev
+    name: IEA Global EV Outlook (via OWID)
+    url: https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. OWID/IEA EV 系列 CSV を取得"
+      - "2. collect_iea_ev.py"
+      - "3. industry_physical 拡張"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_iea_ev.py
+    feed: timeseries/industry_physical.json
+
+  - id: agsi
+    name: AGSI+ (GIE European gas storage)
+    url: https://agsi.gie.eu/
+    api: https://agsi.gie.eu/api
+    free_paid: free
+    frequency: daily
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. https://agsi.gie.eu で無料 API キー登録 → ~/.atlas_secrets/.env に AGSI_API_KEY="
+      - "2. collect_market_daily.py が x-key ヘッダで /api を叩く"
+      - "3. market.agsi.eu_fill_pct → market_daily.json（エネルギー危機 E7）"
+    layer: always
+    status: implemented_needs_key
+    collector: tools/collectors/collect_market_daily.py
+    feed: timeseries/market_daily.json
+    notes_ja: REQ-008 P1-R。キー未設定時は空系列＋stub note。欧州限定。
+
+  # ─── Trade / industry / complexity ────────────────────────────────
+  - id: un_comtrade
+    name: UN Comtrade
+    url: https://comtradeplus.un.org/
+    api: https://comtradeapi.un.org/
+    free_paid: free
+    frequency: monthly_annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. Comtrade API キー（無料枠）で HS6 貿易を取得"
+      - "2. collect_comtrade.py"
+      - "3. trade_flows.json"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_comtrade.py
+    feed: trade_flows.json
+
+  - id: wits_trains
+    name: WITS / UNCTAD TRAINS (tariffs)
+    url: https://wits.worldbank.org/
+    api: http://wits.worldbank.org/API/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. WITS API で reporter×partner×HS 関税"
+      - "2. collect_wits_trains.py + priority products YAML"
+      - "3. tariff_hs6_annual.json"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_wits_trains.py
+    feed: timeseries/tariff_hs6_annual.json
+
+  - id: unido_indstat
+    name: UNIDO INDSTAT
+    url: https://stat.unido.org/
+    api: none
+    free_paid: free_partial
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. INDSTAT2 公開表 / API 契約表から製造付加価値を取得"
+      - "2. collect_unido_indstat.py"
+      - "3. industry_gva_annual.json（INDSTAT4 は P1-N 見本枠）"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_unido_indstat.py
+    feed: timeseries/industry_gva_annual.json
+
+  - id: oec_eci
+    name: Observatory of Economic Complexity (ECI)
+    url: https://oec.world/
+    api: https://api.oec.world/tesseract/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. tesseract data.jsonrecords?cube=complexity_eci_a_hs12_hs6"
+      - "2. export_granularity_samples.py が Phase1 国を抽出"
+      - "3. granularity_samples complexity 軸（live）"
+    layer: ondemand
+    status: implemented_sample
+    feed: timeseries/granularity_samples.json
+
+  - id: oecd_tiva
+    name: OECD TiVA (Trade in Value Added)
+    url: https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm
+    api: https://sdmx.oecd.org/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. OECD SDMX で TiVA 指標を検索"
+      - "2. または DBnomics OECD/TIVA 経由"
+      - "3. 案件時のみ国×業種の付加価値貿易を抽出"
+    layer: ondemand
+    status: registry_only
+
+  - id: oecd_mei
+    name: OECD Main Economic Indicators
+    url: https://www.oecd.org/sdd/oecdmaineconomicindicatorsmei.htm
+    api: https://sdmx.oecd.org/
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. 推奨: DBnomics OECD/MEI（REQ-007 P1-J）"
+      - "2. 代替: collect_oecd_mei.py 直叩き"
+      - "3. CLI/鉱工業/小売/CCI/BCI → macro_monthly"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_oecd_mei.py
+    feed: timeseries/macro_monthly.json
+
+  - id: oecd_crc
+    name: OECD Country Risk Classification
+    url: https://www.oecd.org/trade/topics/export-credits/arrangement-and-sector-understandings/financing-terms-and-conditions/country-risk-classification.htm
+    api: none
+    free_paid: free
+    frequency: semi_annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. OECD 公表 PDF/表から国カテゴリー（0-7）を転記"
+      - "2. Phase1 国を country_profile / indices に格納"
+      - "3. NEXI カテゴリーと併記（REQ-010）"
+    layer: annual
+    status: planned
+    notes_ja: 輸出信用アレンジメントのリスク分類。
+
+  - id: worldsteel
+    name: worldsteel production statistics
+    url: https://worldsteel.org/steel-topics/statistics/
+    api: none
+    free_paid: free_partial
+    frequency: monthly_press_annual_full
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 月次プレスの上位国表を取得（全量月次は有料）"
+      - "2. collect_worldsteel_production.py"
+      - "3. industry_physical へ"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_worldsteel_production.py
+
+  - id: oica
+    name: OICA motor vehicle production
+    url: https://www.oica.net/production-statistics/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. OICA 年次生産統計表を DL"
+      - "2. collect_oica_production.py"
+      - "3. industry_physical"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_oica_production.py
+
+  - id: wsts
+    name: WSTS semiconductor billings
+    url: https://www.wsts.org/
+    api: none
+    free_paid: free_headline
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 月次ヘッドライン（地域別売上）を取得"
+      - "2. collect_wsts_billings.py"
+      - "3. 詳細は会員有料→ヘッドラインのみ"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_wsts_billings.py
+
+  - id: iai_aluminium
+    name: International Aluminium Institute
+    url: https://international-aluminium.org/statistics/primary-aluminium-production/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time, industry, spatial]
+    how_to_fetch:
+      - "1. ALVIS に安定 REST 無し → 手動 CSV"
+      - "2. IAI_ALUMINIUM_CSV_PATH で取込"
+      - "3. collect_iai_aluminium.py"
+    layer: annual
+    status: stub_manual_csv
+    collector: tools/collectors/collect_iai_aluminium.py
+
+  - id: unctad_maritime
+    name: UNCTADstat maritime
+    url: https://unctadstat.unctad.org/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. UNCTADstat で船腹量・寄港・LSCI を DL"
+      - "2. LSCI は WB IS.SHP.GCNW.XQ 既存"
+      - "3. collect_unctad_maritime.py は no-op スタブ"
+    layer: annual
+    status: stub
+    collector: tools/collectors/collect_unctad_maritime.py
+
+  # ─── Macro / finance / rates ──────────────────────────────────────
+  - id: imf_weo
+    name: IMF World Economic Outlook
+    url: https://www.imf.org/en/Publications/WEO
+    api: https://www.imf.org/external/datamapper/api/
+    free_paid: free
+    frequency: semi_annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. collect_imf.py / DataMapper API"
+      - "2. 台湾補完・成長率・物価のマクロ骨格"
+      - "3. macro_annual / macro_scores"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_imf.py
+
+  - id: imf_ifs
+    name: IMF International Financial Statistics
+    url: https://data.imf.org/
+    api: https://api.imf.org/
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. IMF_API_KEY で SDMX IFS"
+      - "2. collect_imf_ifs.py"
+      - "3. 為替・準備・金利系"
+    layer: always
+    status: implemented_key_gated
+    collector: tools/collectors/collect_imf_ifs.py
+
+  - id: imf_fas
+    name: IMF Financial Access Survey
+    url: https://data.imf.org/
+    api: https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.STA/FAS/5.0.0/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. IMF_API_KEY（QNEA と同一）"
+      - "2. collect_imf_fas.py"
+      - "3. finance_access_annual.json"
+    layer: always
+    status: implemented_key_gated
+    collector: tools/collectors/collect_imf_fas.py
+    feed: timeseries/finance_access_annual.json
+
+  - id: imf_areaer
+    name: IMF AREAER (Exchange Arrangements and Restrictions)
+    url: https://www.elibrary-areaer.imf.org/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. AREAER Online で法域×規制カテゴリを照会"
+      - "2. まず送金・資本取引の主要12カテゴリをフラグ化"
+      - "3. country_profile に還流可否レイヤー（REQ-010）"
+    layer: annual
+    status: planned
+    notes_ja: 「稼いだ金を戻せるか」の本命ソース。
+
+  - id: imf_portwatch
+    name: IMF PortWatch
+    url: https://portwatch.imf.org/
+    api: https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/
+    free_paid: free
+    frequency: daily
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. ArcGIS FeatureServer Daily_Chokepoints_Data を query（キー不要）"
+      - "2. collect_portwatch.py → chokepoints_daily + disruptions"
+      - "3. events_active.json にアクティブ混乱イベント"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_portwatch.py
+    feed: timeseries/chokepoints_daily.json
+
+  - id: bis_policy_rates
+    name: BIS policy rates
+    url: https://data.bis.org/topics/CBPOL
+    api: https://stats.bis.org/api/v2/
+    free_paid: free
+    frequency: daily
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. BIS SDMX または DBnomics BIS"
+      - "2. collect_bis_policy_rates.py"
+      - "3. Phase1 21か国の政策金利"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_bis_policy_rates.py
+
+  - id: bis_property
+    name: BIS residential property prices
+    url: https://data.bis.org/topics/RPP
+    api: https://stats.bis.org/api/v2/
+    free_paid: free
+    frequency: quarterly
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. BIS RPP データセットを SDMX 取得"
+      - "2. 60か国四半期指数を正規化"
+      - "3. 不動産価格レイヤー（オンデマンド可）"
+    layer: ondemand
+    status: registry_only
+
+  - id: ti_cpi
+    name: Transparency International CPI
+    url: https://www.transparency.org/en/cpi
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. TI 公開 CSV/Excel を DL"
+      - "2. collect_ti_cpi.py"
+      - "3. indices_annual / macro_scores"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_ti_cpi.py
+
+  # ─── Japan relations / rates ──────────────────────────────────────
+  - id: jbic_fdi_survey
+    name: JBIC Overseas Direct Investment Survey
+    url: https://www.jbic.go.jp/ja/information/research.html
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 各回 PDF/Excel の有望国ランキング表を開く"
+      - "2. collect_jbic_promising.py の CURATED_VOTES を更新（機械パース未了）"
+      - "3. japan_relations に japan.jbic_promising_votes.pct"
+    layer: annual
+    status: curated_sample
+    collector: tools/collectors/collect_jbic_promising.py
+    feed: timeseries/japan_relations.json
+    notes_ja: veritas⚠️・PDF機械取得未了。
+
+  - id: meti_kaigai_jigyo
+    name: METI Survey on Overseas Business Activities
+    url: https://www.e-stat.go.jp/stat-search/files?toukei=00550120
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry, firm_size]
+    how_to_fetch:
+      - "1. e-Stat で売上高・経常利益の国・地域別 Excel URL を取得"
+      - "2. collect_meti_affiliates_margin.py --url …（列マッピング未確定＝stub）"
+      - "3. 利益率=経常利益/売上×100 → japan.affiliates_profit_margin.pct"
+    layer: annual
+    status: stub
+    collector: tools/collectors/collect_meti_affiliates_margin.py
+    notes_ja: 法人数は既存 estat 経路。利益率は骨格のみ。
+
+  - id: jetro_survey
+    name: JETRO Survey on Japanese-Affiliated Companies Abroad
+    url: https://www.jetro.go.jp/world/reports.html
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 国別実態調査レポート PDF/Excel を DL"
+      - "2. 営業黒字企業比率・賃金実額を転記"
+      - "3. japan_relations 拡張候補"
+    layer: annual
+    status: registry_only
+
+  - id: mofa_kaigai_zairyu
+    name: MOFA overseas Japanese / companies stats
+    url: https://www.mofa.go.jp/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. e-Stat / 外務省表から在留邦人・日系拠点"
+      - "2. collect_japan_relations.py / collect_estat*"
+      - "3. japan_relations.json"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_japan_relations.py
+    feed: timeseries/japan_relations.json
+
+  - id: mof_trade
+    name: MOF Japan trade statistics
+    url: https://www.customs.go.jp/toukei/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 財務省貿易統計 CSV を章別に取得"
+      - "2. japan_relations の対日貿易系列へ合算"
+      - "3. 既存コレクター経路"
+    layer: always
+    status: implemented
+
+  - id: mof_jgb
+    name: MOF JGB interest rates
+    url: https://www.mof.go.jp/jgbs/reference/interest_rate/
+    api: none
+    free_paid: free
+    frequency: daily
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. jgbcm_all.csv / jgbcm.csv を DL（和暦→西暦）"
+      - "2. collect_japan_rates.py"
+      - "3. japan_rates.json"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_japan_rates.py
+    feed: timeseries/japan_rates.json
+
+  - id: boj_rates
+    name: Bank of Japan rates (prime / TONA / lending)
+    url: https://www.boj.or.jp/statistics/
+    api: https://www.stat-search.boj.or.jp/
+    free_paid: free
+    frequency: daily_to_monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. プライムは HTML、TONA/貸出は時系列 API"
+      - "2. collect_japan_rates.py に統合"
+      - "3. japan_rates.json"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_japan_rates.py
+
+  - id: nexi_country_category
+    name: NEXI country category / underwriting policy
+    url: https://www.nexi.go.jp/
+    api: none
+    free_paid: free
+    frequency: semi_annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. NEXI 国カテゴリー（A〜H）公表表を取得"
+      - "2. OECD CRC と並記して country_profile へ"
+      - "3. 日本語説明可能な独自面（REQ-010）"
+    layer: annual
+    status: planned
+
+  - id: jnto
+    name: JNTO visitor arrivals
+    url: https://www.jnto.go.jp/statistics/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. JNTO_XLSX_PATH または公式表を設定"
+      - "2. japan_relations 訪日系列"
+      - "3. 未設定時は⚠️"
+    layer: always
+    status: implemented_path_gated
+
+  - id: estat
+    name: e-Stat (Japan official statistics API)
+    url: https://www.e-stat.go.jp/
+    api: https://api.e-stat.go.jp/
+    free_paid: free
+    frequency: varies
+    grain_axes: [time, industry, spatial]
+    how_to_fetch:
+      - "1. APPLICATION_ID で API / Excel 直 DL"
+      - "2. collect_estat.py / collect_estat_excel.py"
+      - "3. 日系拠点・人口等の国内一次ソース"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_estat.py
+
+  # ─── Labor / governance / spatial / digital ───────────────────────
+  - id: ilostat
+    name: ILOSTAT
+    url: https://ilostat.ilo.org/
+    api: https://www.ilo.org/sdmxws/rest/
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, income, industry]
+    how_to_fetch:
+      - "1. SDMX / bulk で EAR_* 職種別賃金を検索"
+      - "2. granularity_samples wage 軸（現状 stub）"
+      - "3. スト・社会保険料率も同ポータル"
+    layer: ondemand
+    status: stub_in_granularity_samples
+    feed: timeseries/granularity_samples.json
+
+  - id: ilo_eplex
+    name: ILO EPLex (employment protection)
+    url: https://eplex.ilo.org/
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. EPLex 国別解雇規制ページを参照"
+      - "2. 予告・退職金・手続きを構造化"
+      - "3. country_profile 法制レイヤー"
+    layer: ondemand
+    status: registry_only
+
+  - id: vdem
+    name: V-Dem Dataset
+    url: https://www.v-dem.net/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. V-Dem CSV 一式を DL"
+      - "2. 必要指標のみ国×年抽出"
+      - "3. WGI 上位互換の細分化統治指標"
+    layer: annual
+    status: registry_only
+
+  - id: global_data_lab
+    name: Global Data Lab (subnational HDI)
+    url: https://globaldatalab.org/
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [spatial, income]
+    how_to_fetch:
+      - "1. 州・省別所得/HDI 表を DL"
+      - "2. VN/ID/IN から見本化"
+      - "3. granularity_samples spatial（documented_only）"
+    layer: ondemand
+    status: documented_in_granularity_samples
+
+  - id: un_wpp
+    name: UN World Population Prospects
+    url: https://population.un.org/wpp/
+    api: none
+    free_paid: free
+    frequency: every_2_years
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. WPP CSV を DL"
+      - "2. collect_un_wpp.py"
+      - "3. population_projections.json"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_un_wpp.py
+    feed: timeseries/population_projections.json
+
+  - id: statcounter
+    name: StatCounter GlobalStats
+    url: https://gs.statcounter.com/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. /download/search-country|browser-country|os-country CSV"
+      - "2. collect_statcounter.py"
+      - "3. digital_share_monthly.json（REQ-010）"
+    layer: always
+    status: implemented
+    collector: tools/collectors/collect_statcounter.py
+    feed: timeseries/digital_share_monthly.json
+
+  - id: itu
+    name: ITU ICT statistics / price baskets
+    url: https://www.itu.int/en/ITU-D/Statistics/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. ITU DataHub から接続・料金指標を DL"
+      - "2. ICT Price Baskets は実額比較用"
+      - "3. country_profile / digital レイヤー"
+    layer: annual
+    status: registry_only
+
+  - id: ookla_open
+    name: Ookla Open Data (speedtests)
+    url: https://www.ookla.com/ookla-for-good/open-data
+    api: none
+    free_paid: free
+    frequency: quarterly
+    grain_axes: [spatial, time]
+    how_to_fetch:
+      - "1. AWS 公開タイル/集計を取得"
+      - "2. 国平均速度に集約"
+      - "3. REQ-009 P3・コレクター化しない"
+    layer: ondemand
+    status: registry_only
+
+  - id: clinicaltrials
+    name: ClinicalTrials.gov
+    url: https://clinicaltrials.gov/
+    api: https://clinicaltrials.gov/api/v2/
+    free_paid: free
+    frequency: continuous
+    grain_axes: [time, spatial, industry]
+    how_to_fetch:
+      - "1. API v2 で国×フェーズの治験件数を集計"
+      - "2. ヘルスケア案件時のみ"
+      - "3. REQ-009 P3"
+    layer: ondemand
+    status: registry_only
+
+  - id: openalex
+    name: OpenAlex
+    url: https://openalex.org/
+    api: https://api.openalex.org/
+    free_paid: free
+    frequency: continuous
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. works 集計で国×分野の論文数"
+      - "2. R&D 拠点選定の代理"
+      - "3. REQ-009 P3"
+    layer: ondemand
+    status: registry_only
+
+  # ─── Risk / events / environment ─────────────────────────────────
+  - id: acled
+    name: ACLED conflict events
+    url: https://acleddata.com/
+    api: https://api.acleddata.com/
+    free_paid: free_research
+    frequency: continuous
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. 研究利用登録で API キー"
+      - "2. イベントレベル→国×月集計"
+      - "3. 紛争リスク案件時のみ"
+    layer: ondemand
+    status: registry_only
+
+  - id: thinkhazard
+    name: ThinkHazard! (GFDRR)
+    url: https://thinkhazard.org/
+    api: https://thinkhazard.org/en/report/
+    free_paid: free
+    frequency: irregular
+    grain_axes: [spatial]
+    how_to_fetch:
+      - "1. 国/州コードでハザード種別リスクを取得"
+      - "2. 地震/洪水/サイクロン等8種"
+      - "3. country_profile 立地リスク"
+    layer: ondemand
+    status: registry_only
+
+  - id: wri_aqueduct
+    name: WRI Aqueduct water risk
+    url: https://www.wri.org/aqueduct
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [spatial]
+    how_to_fetch:
+      - "1. Aqueduct ツール/データから流域水ストレス"
+      - "2. 工場立地案件時に国/州スコア化"
+      - "3. オンデマンド"
+    layer: ondemand
+    status: registry_only
+
+  - id: ifes_electionguide
+    name: IFES ElectionGuide
+    url: https://www.electionguide.org/
+    api: none
+    free_paid: free
+    frequency: continuous
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. Phase1は curated/events_calendar_phase1.yaml を人手更新（best-effort）"
+      - "2. export_events_calendar.py → events_calendar.json"
+      - "3. 次イテレーションで IFES スクレイプ本実装"
+    layer: always
+    status: implemented_curated
+    collector: tools/export_events_calendar.py
+    feed: events_calendar.json
+    notes_ja: REQ-008 P1-S。中銀会合日程も同YAMLに同梱。
+
+  - id: epu
+    name: Economic Policy Uncertainty Index
+    url: https://www.policyuncertainty.com/
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. 国別 EPU CSV を policyuncertainty.com から DL"
+      - "2. indices_monthly.json へ合流（未実装）"
+      - "3. 政策リスクイベント類型 E8 用"
+    layer: annual
+    status: stub_pending_csv
+    notes_ja: >
+      REQ-008 P1-S。OWID/ローカルCSV未検出のため indices_monthly 未作成。
+      CSV入手後に collect → indices_monthly.json を新設する。
+
+  - id: gpr_caldara
+    name: Geopolitical Risk Index (Caldara-Iacoviello)
+    url: https://www.matteoiacoviello.com/gpr.htm
+    api: none
+    free_paid: free
+    frequency: monthly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. 著者サイトの GPR 月次 CSV/Excel を DL"
+      - "2. indices_monthly.json へ合流（未実装）"
+      - "3. E1 地政学イベント類型用"
+    layer: annual
+    status: stub_pending_csv
+    notes_ja: >
+      REQ-008 P1-S。OWID/既知CSV未検出のため indices_monthly 未作成。
+      EPU と同バッチで実装予定。
+
+  - id: inform_risk
+    name: INFORM Risk Index
+    url: https://drmkc.jrc.ec.europa.eu/inform-index
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. HDX/公式 trends CSV"
+      - "2. collect_annual_indices.py"
+      - "3. indices_annual.json"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_annual_indices.py
+    feed: timeseries/indices_annual.json
+
+  - id: penn_world_table
+    name: Penn World Table
+    url: https://www.rug.nl/ggdc/productivity/pwt/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. PWT Excel/Stata を DL"
+      - "2. TFP・資本・人的資本を抽出"
+      - "3. 生産性比較の深掘り用"
+    layer: ondemand
+    status: registry_only
+
+  - id: wid
+    name: World Inequality Database
+    url: https://wid.world/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [income, time]
+    how_to_fetch:
+      - "1. wid.world からトップ1%/10%シェアを DL"
+      - "2. 富裕層市場規模推定"
+      - "3. 所得層軸の補完"
+    layer: ondemand
+    status: registry_only
+
+  - id: wto_eping
+    name: WTO ePing (TBT/SPS)
+    url: https://eping.wto.org/
+    api: none
+    free_paid: free
+    frequency: continuous
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. Phase1 国の新規 TBT/SPS 通報を週次取得"
+      - "2. 規制カレンダー素材"
+      - "3. japan_relations / events 合流可"
+    layer: ondemand
+    status: registry_only
+
+  - id: eurostat
+    name: Eurostat
+    url: https://ec.europa.eu/eurostat
+    api: https://ec.europa.eu/eurostat/api/dissemination/
+    free_paid: free
+    frequency: monthly_to_annual
+    grain_axes: [time, spatial, industry]
+    how_to_fetch:
+      - "1. 推奨: DBnomics Eurostat 経由"
+      - "2. 欧州月次・地域別の一次ソース"
+      - "3. Phase1 の DE/FR 補完"
+    layer: always
+    status: via_dbnomics_preferred
+
+  - id: unctadstat
+    name: UNCTADstat (general)
+    url: https://unctadstat.unctad.org/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. FDI・貿易・EC 指数などを表選択 DL"
+      - "2. B2C EC 指数は digital readiness 代理"
+      - "3. 海事は unctad_maritime エントリ参照"
+    layer: ondemand
+    status: registry_only
+
+  - id: irena
+    name: IRENA renewable capacity statistics
+    url: https://www.irena.org/Data
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 技術別再エネ容量 Excel を DL"
+      - "2. indices_annual / industry_physical 拡張"
+      - "3. REQ-009 P2 バッチ"
+    layer: annual
+    status: planned
+
+  - id: sipri
+    name: SIPRI arms transfers
+    url: https://www.sipri.org/databases/armstransfers
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. TIV 表を DL"
+      - "2. 国別武器移転を正規化"
+      - "3. REQ-009 P2"
+    layer: annual
+    status: planned
+
+  - id: wipo
+    name: WIPO IP statistics
+    url: https://www.wipo.int/ipstats/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 特許・商標の国別/技術分野別を DL"
+      - "2. 技術35分野別は深掘り用"
+      - "3. REQ-009 P2"
+    layer: annual
+    status: planned
+
+  - id: unwto
+    name: UNWTO tourism statistics
+    url: https://www.unwto.org/tourism-statistics
+    api: none
+    free_paid: free_partial
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. 到着・収入の公開表（詳細は会員）"
+      - "2. 国籍別×目的別は可能な範囲で"
+      - "3. REQ-009 P2"
+    layer: annual
+    status: planned
+
+  - id: gsma_mci
+    name: GSMA Mobile Connectivity Index
+    url: https://www.mobileconnectivityindex.com/
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. MCI 公開データを DL"
+      - "2. モバイル接続性の細分化スコア"
+      - "3. digital / country_profile"
+    layer: ondemand
+    status: registry_only
+
+  - id: google_trends
+    name: Google Trends
+    url: https://trends.google.com/
+    api: none
+    free_paid: free
+    frequency: daily_to_monthly
+    grain_axes: [time, spatial]
+    how_to_fetch:
+      - "1. pytrends 等で国別キーワード興味度"
+      - "2. 「日本食」「日本製」等の対日需要温度"
+      - "3. オルタナ・オンデマンド（利用規約遵守）"
+    layer: ondemand
+    status: registry_only
+
+  - id: wageindicator
+    name: WageIndicator
+    url: https://wageindicator.org/
+    api: none
+    free_paid: free
+    frequency: irregular
+    grain_axes: [income, spatial, industry]
+    how_to_fetch:
+      - "1. 最低賃金・生活賃金の国/地域表を参照"
+      - "2. ILOSTAT 賃金見本の補完"
+      - "3. 案件時のみ"
+    layer: ondemand
+    status: registry_only
+
+  - id: globalpetrolprices
+    name: GlobalPetrolPrices
+    url: https://www.globalpetrolprices.com/
+    api: none
+    free_paid: partial
+    frequency: weekly
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. 産業用/家庭用電気・燃料の公開ページ"
+      - "2. 部分無料の実額を転記"
+      - "3. コスト比較案件時"
+    layer: ondemand
+    status: registry_only
+
+  - id: icsg
+    name: ICSG copper statistics
+    url: https://icsg.org/
+    api: none
+    free_paid: free_partial
+    frequency: monthly
+    grain_axes: [time, industry]
+    how_to_fetch:
+      - "1. 公開プレス/統計摘要を取得"
+      - "2. 銅需給の業界専門ソース"
+      - "3. REQ-009 P3・台帳のみ"
+    layer: ondemand
+    status: registry_only

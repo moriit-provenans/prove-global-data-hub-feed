@@ -1,6 +1,7 @@
 version: '1.0'
-last_updated: '2026-07-12'
-notes_ja: REQ-SMITH-20260712-004 + REQ-005 P1-C。本YAMLが収集・公開の単一の正。collect_worldbank.py / export_timeseries_v2.py はここを読む。第二白名单の再導入禁止。
+last_updated: '2026-07-13'
+notes_ja: REQ-SMITH-20260712-004 + REQ-005 P1-C + REQ-006 P1-F。本YAMLが収集・公開の単一の正。collect_worldbank.py / export_timeseries_v2.py
+  はここを読む。第二白名单の再導入禁止。
 indicators:
 - indicator_id: macro.gdp.current_usd
   wb_code: NY.GDP.MKTP.CD
@@ -834,6 +835,84 @@ indicators:
   higher_is_better: false
   frequencies:
   - annual
+- indicator_id: food.ssr.cereals_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 穀物自給率（FBS簡易）
+  name_en: Cereal self-sufficiency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: must
+  phase: 7k
+  description_ja: "FAOSTAT FBS: SSR=生産/(生産+輸入-輸出)*100（在庫除外）。Item 2905 Cereals - Excluding Beer。日本カロリーベース自給率とは定義が異なる。"
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: food.ssr.meat_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 肉自給率（FBS簡易）
+  name_en: Meat self-sufficiency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: must
+  phase: 7k
+  description_ja: "FAOSTAT FBS: SSR=生産/(生産+輸入-輸出)*100。Item 2943 Meat。"
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: food.ssr.fish_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 魚介自給率（FBS簡易）
+  name_en: Fish/seafood self-sufficiency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: must
+  phase: 7k
+  description_ja: "FAOSTAT FBS: SSR=生産/(生産+輸入-輸出)*100。Item 2960 Fish, Seafood。"
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: food.idr.cereals_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 穀物輸入依存度（FBS簡易）
+  name_en: Cereal import dependency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: must
+  phase: 7k
+  description_ja: "FAOSTAT FBS: IDR=輸入/(生産+輸入-輸出)*100。Item 2905。"
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: food.idr.meat_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 肉輸入依存度（FBS簡易）
+  name_en: Meat import dependency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: should
+  phase: 7k
+  description_ja: "FAOSTAT FBS: IDR=輸入/(生産+輸入-輸出)*100。Item 2943。"
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: food.idr.fish_pct
+  wb_code: null
+  source: faostat_fbs
+  name_ja: 魚介輸入依存度（FBS簡易）
+  name_en: Fish/seafood import dependency ratio (FBS)
+  unit: '%'
+  category: 食料自給
+  priority: should
+  phase: 7k
+  description_ja: "FAOSTAT FBS: IDR=輸入/(生産+輸入-輸出)*100。Item 2960。"
+  higher_is_better: false
+  frequencies:
+  - annual
 - indicator_id: energy.imports_net_pct_use
   wb_code: EG.IMP.CONS.ZS
   source: worldbank
@@ -1640,6 +1719,162 @@ indicators:
   higher_is_better: false
   frequencies:
   - annual
+- indicator_id: env.pm25
+  wb_code: EN.ATM.PM25.MC.M3
+  source: worldbank
+  name_ja: PM2.5年平均濃度
+  name_en: PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)
+  unit: ug/m3
+  category: 環境
+  priority: must
+  phase: 6f
+  description_ja: 人口加重の年平均PM2.5暴露。大気質・ESG・立地リスクの第一指標。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: society.homicide.per100k
+  wb_code: VC.IHR.PSRC.P5
+  source: worldbank
+  name_ja: 殺人率（10万人あたり）
+  name_en: Intentional homicides (per 100,000 people)
+  unit: per_100k
+  category: 社会・所得
+  priority: must
+  phase: 6f
+  description_ja: 治安リスクの定番。拠点・駐在員安全の補助線。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: human.uhc_coverage.index
+  wb_code: SH.UHC.SRVS.CV.XD
+  source: worldbank
+  name_ja: UHCサービスカバレッジ指数
+  name_en: UHC service coverage index
+  unit: index
+  category: 人的資本
+  priority: must
+  phase: 6f
+  description_ja: ユニバーサル・ヘルス・カバレッジの総合指数。医療アクセスの代理。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: society.female_labor_participation.pct
+  wb_code: SL.TLF.CACT.FE.ZS
+  source: worldbank
+  name_ja: 女性労働参加率
+  name_en: Labor force participation rate, female (% of female population ages 15+)
+  unit: '%'
+  category: 社会・所得
+  priority: must
+  phase: 6f
+  description_ja: 女性の労働市場参加。人材プール・ジェンダー多様性の示唆。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: macro.ppp_conversion.rf
+  wb_code: PA.NUS.PPPC.RF
+  source: worldbank
+  name_ja: PPP変換係数
+  name_en: Price level ratio of PPP conversion factor (GDP) to market exchange rate
+  unit: ratio
+  category: 為替
+  priority: must
+  phase: 6f
+  description_ja: PPP換算係数の対市場為替比率（物価水準比）。実質購買力比較の補助。
+  higher_is_better: null
+  frequencies:
+  - annual
+- indicator_id: energy.gasoline_price.usd
+  wb_code: EP.PMP.SGAS.CD
+  source: worldbank
+  name_ja: ガソリン小売価格
+  name_en: Pump price for gasoline (US$ per liter)
+  unit: USD/liter
+  category: エネルギー
+  priority: must
+  phase: 6f
+  description_ja: ガソリン小売（USD/L）。物流・モビリティコストの実感値。更新頻度低め。
+  higher_is_better: null
+  frequencies:
+  - annual
+- indicator_id: energy.diesel_price.usd
+  wb_code: EP.PMP.DESL.CD
+  source: worldbank
+  name_ja: 軽油小売価格
+  name_en: Pump price for diesel fuel (US$ per liter)
+  unit: USD/liter
+  category: エネルギー
+  priority: must
+  phase: 6f
+  description_ja: 軽油小売（USD/L）。貨物・産業用燃料コストの目安。
+  higher_is_better: null
+  frequencies:
+  - annual
+- indicator_id: env.forest_area.pct
+  wb_code: AG.LND.FRST.ZS
+  source: worldbank
+  name_ja: 森林面積比率
+  name_en: Forest area (% of land area)
+  unit: '%'
+  category: 環境
+  priority: must
+  phase: 6f
+  description_ja: 国土に占める森林。ESG・原料・気候リスクの補助。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: fin.listed_companies
+  wb_code: CM.MKT.LDOM.NO
+  source: worldbank
+  name_ja: 国内上場企業数
+  name_en: Listed domestic companies, total
+  unit: count
+  category: 金融市場
+  priority: must
+  phase: 6f
+  description_ja: 国内上場企業数。資本市場の厚み・退出機会の補完。
+  higher_is_better: true
+  frequencies:
+  - annual
+- indicator_id: infra.power_outage_firms.pct
+  wb_code: IC.FRM.OUTG.ZS
+  source: worldbank
+  name_ja: 停電経験企業比率（Enterprise Surveys）
+  name_en: Value lost due to electrical outages (% of sales for affected firms)
+  unit: '%'
+  category: インフラ
+  priority: should
+  phase: 6f
+  description_ja: Enterprise Surveys。停電による売上損失比率。更新は不定期・欠損多め。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: infra.power_outages.per_month
+  wb_code: IC.ELC.OUTG
+  source: worldbank
+  name_ja: 月間停電回数
+  name_en: Power outages in firms in a typical month (number)
+  unit: count
+  category: インフラ
+  priority: should
+  phase: 6f
+  description_ja: Enterprise Surveys。典型月の停電回数。0件なら収集スキップ報告。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: society.suicide.per100k
+  wb_code: SH.STA.SUIC.P5
+  source: worldbank
+  name_ja: 自殺死亡率（10万人あたり）
+  name_en: Suicide mortality rate (per 100,000 population)
+  unit: per_100k
+  category: 社会・所得
+  priority: should
+  phase: 6f
+  description_ja: 社会・メンタルヘルスの結果指標。カバレッジは国により粗。
+  higher_is_better: false
+  frequencies:
+  - annual
 - indicator_id: biz.bready.business_entry.overall_score
   wb_code: IC.BRE.BE.OS
   source: worldbank
@@ -2223,8 +2458,127 @@ indicators:
   category: エネルギー
   priority: must
   phase: 4a
-  description_ja: 純輸入依存度（EG.IMP.CONS.ZS）から算出する代理指標。輸入≧0なら 100−純輸入依存、純輸出国は100。公式の一次エネルギー自給率とは定義が異なる。
+  description_ja: 純輸入依存度（EG.IMP.CONS.ZS）から算出する代理指標。輸入≧0なら 100−純輸入依存、純輸出国は100。公式の一次エネルギー自給率とは定義が異なる。energy.ssr.*（OWID）を正とする。
   higher_is_better: true
   frequencies:
   - annual
   veritas_default: ⚠️
+- indicator_id: energy.ssr.total_pct
+  wb_code: null
+  source: owid_energy
+  name_ja: 一次エネルギー自給率（OWID近似）
+  name_en: Primary energy self-sufficiency (OWID proxy)
+  unit: '%'
+  category: エネルギー自給
+  priority: must
+  phase: 7l
+  description_ja: OWID energy-data。(石油+ガス+石炭生産＋再エネ＋原子力)÷一次エネルギー消費×100。UNSD Energy Balances の暫定代替。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/energy_ssr_annual.json
+- indicator_id: energy.ssr.oil_pct
+  wb_code: null
+  source: owid_energy
+  name_ja: 石油自給率（OWID）
+  name_en: Oil self-sufficiency (OWID)
+  unit: '%'
+  category: エネルギー自給
+  priority: should
+  phase: 7l
+  description_ja: oil_production / oil_consumption × 100（生産欠測は0）。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/energy_ssr_annual.json
+- indicator_id: energy.ssr.gas_pct
+  wb_code: null
+  source: owid_energy
+  name_ja: 天然ガス自給率（OWID）
+  name_en: Gas self-sufficiency (OWID)
+  unit: '%'
+  category: エネルギー自給
+  priority: should
+  phase: 7l
+  description_ja: gas_production / gas_consumption × 100。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/energy_ssr_annual.json
+- indicator_id: energy.ssr.coal_pct
+  wb_code: null
+  source: owid_energy
+  name_ja: 石炭自給率（OWID）
+  name_en: Coal self-sufficiency (OWID)
+  unit: '%'
+  category: エネルギー自給
+  priority: should
+  phase: 7l
+  description_ja: coal_production / coal_consumption × 100。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/energy_ssr_annual.json
+- indicator_id: energy.ssr.elec_pct
+  wb_code: null
+  source: owid_energy
+  name_ja: 電力自給率（OWID）
+  name_en: Electricity self-sufficiency (OWID)
+  unit: '%'
+  category: エネルギー自給
+  priority: should
+  phase: 7l
+  description_ja: electricity_generation / electricity_demand × 100。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/energy_ssr_annual.json
+- indicator_id: japan.jbic_promising_votes.pct
+  wb_code: null
+  source: jbic_fdi_survey_curated
+  name_ja: JBIC有望国得票率（中期・全産業）
+  name_en: JBIC promising destination vote share (%)
+  unit: '%'
+  category: 日系関係
+  priority: should
+  phase: 7m
+  description_ja: JBIC海外直接投資アンケートの有望国得票率。キュレート多年度サンプル（PDF機械取得未了）→⚠️。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+  feed: timeseries/japan_relations.json
+- indicator_id: japan.affiliates_profit_margin.pct
+  wb_code: null
+  source: meti_estat_excel_stub
+  name_ja: 日系現地法人利益率（経常利益÷売上）
+  name_en: Japanese affiliates profit margin (%)
+  unit: '%'
+  category: 日系関係
+  priority: should
+  phase: 7m
+  description_ja: 経産省海外事業活動基本調査の詳細Excelから算出予定。collect_meti_affiliates_margin.py は骨格のみ（実データ未取込）。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ⚠️
+- indicator_id: complexity.eci.hs6
+  wb_code: null
+  source: oec
+  name_ja: 輸出複雑性指数（ECI・HS6）
+  name_en: Economic Complexity Index (HS6)
+  unit: index
+  category: 細分化見本
+  priority: could
+  phase: 7n
+  description_ja: OEC ECI（HS6 REV2012）。granularity_samples の complexity 軸見本。
+  higher_is_better: true
+  frequencies:
+  - annual
+  veritas_default: ✅
+  feed: timeseries/granularity_samples.json

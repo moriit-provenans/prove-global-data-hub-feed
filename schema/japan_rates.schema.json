@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/japan_rates.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/japan_rates.json v1（REQ-008 P1-Q）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "observations_daily", "observations_monthly"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "japan_rates" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "source": { "type": "object" },
+    "meta": { "type": "object" },
+    "observations_daily": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value", "frequency"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "const": "JP" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "frequency": { "type": "string", "const": "daily" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    },
+    "observations_monthly": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value", "frequency"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "const": "JP" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "frequency": { "type": "string", "const": "monthly" },
+          "n_days": { "type": "integer" },
+          "source_ref": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}

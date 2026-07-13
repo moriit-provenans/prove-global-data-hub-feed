@@ -1,0 +1,2350 @@
+{
+  "schema_version": "0.2.0",
+  "feed_id": "country_profile",
+  "last_updated": "2026-07-13T11:23:35+09:00",
+  "source": {
+    "label": "P1-I static + IMF AREAER (curated) + OECD CRC + NEXI Category",
+    "url": "https://www.elibrary-areaer.imf.org/",
+    "disclaimer_ja": "P1-I attributes（fatf/epa等）⚠️静的。AREAER規制フラグ⚠️ curated。OECD CRC / NEXI ✅公式表（semi-annual manual refresh）。iia_japan_bit / social_security_employer_rate_pct は stub null。"
+  },
+  "meta": {
+    "iso2_list": [
+      "AE",
+      "BR",
+      "CA",
+      "CN",
+      "DE",
+      "FR",
+      "GB",
+      "HK",
+      "ID",
+      "IN",
+      "JP",
+      "KR",
+      "MY",
+      "PH",
+      "SA",
+      "SG",
+      "TH",
+      "TR",
+      "TW",
+      "US",
+      "VN"
+    ],
+    "country_count": 21,
+    "p1i_attr_obs_count": 168,
+    "regulation_categories": [
+      "current_account_restrictions",
+      "dividend_repatriation",
+      "capital_fdi",
+      "capital_real_estate",
+      "capital_securities",
+      "multiple_exchange_rates",
+      "export_proceeds_surrender",
+      "capital_outward",
+      "money_market_instruments",
+      "liquidating_proceeds",
+      "guarantees_financial_backup",
+      "personal_capital_movements"
+    ],
+    "regulation_year_range": {
+      "from": 2025,
+      "to": 2025
+    },
+    "oecd_crc_as_of": "2026-06-26",
+    "nexi_category_as_of": "2026-07-06",
+    "stubs": [
+      "iia_japan_bit",
+      "social_security_employer_rate_pct"
+    ],
+    "update_cadence": {
+      "p1i_attributes": "annual manual",
+      "areaer": "annual manual (upgrade to scrape later)",
+      "oecd_crc": "semi-annual manual refresh",
+      "nexi_category": "semi-annual manual refresh"
+    }
+  },
+  "countries": [
+    {
+      "iso2": "VN",
+      "iso3": "VNM",
+      "name_ja": "ベトナム",
+      "name_en": "Vietnam",
+      "region": "southeast_asia",
+      "currency": "VND",
+      "attributes": {
+        "fatf_status": {
+          "value": "grey",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2009
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -2,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Vietnamese / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "frontier",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "Article VIII。配当送金は書類・外貨枠の実務制約あり。FDI/不動産/証券は届出・許可制。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": true,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": true,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": true,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 3,
+        "previous": 4,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "upgraded Jun 2026 meeting"
+      },
+      "nexi_category": {
+        "value": "D",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": "Asia/ME D帯（2026.7.6表・Viet Nam）"
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "TH",
+      "iso3": "THA",
+      "name_ja": "タイ",
+      "name_en": "Thailand",
+      "region": "southeast_asia",
+      "currency": "THB",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2007
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -2,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Thai / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "経常は比較的自由。対外投資・不動産・一部証券に規制。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 3,
+        "previous": 3,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "D",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "CN",
+      "iso3": "CHN",
+      "name_ja": "中国",
+      "name_en": "China",
+      "region": "east_asia",
+      "currency": "CNY",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2022
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": false,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Mandarin / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "資本勘定は厳格。経常は形式的に自由でも実務上の外貨管理あり。複数レートは公式には単一。",
+        "flags": {
+          "current_account_restrictions": true,
+          "dividend_repatriation": true,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": true,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": true,
+          "guarantees_financial_backup": true,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "IN",
+      "iso3": "IND",
+      "name_ja": "インド",
+      "name_en": "India",
+      "region": "south_asia",
+      "currency": "INR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2011
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": false,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -3.5,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English / Hindi",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "FEMA下の資本規制。配当送金は条件付で可能。対外投資・不動産に制限。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": true,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": true,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": true,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 3,
+        "previous": 3,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "D",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "name_ja": "インドネシア",
+      "name_en": "Indonesia",
+      "region": "southeast_asia",
+      "currency": "IDR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2008
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -2,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Indonesian / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "経常自由化済み。外貨持高・対外借入・不動産に規制。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 3,
+        "previous": 3,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "D",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "PH",
+      "iso3": "PHL",
+      "name_ja": "フィリピン",
+      "name_en": "Philippines",
+      "region": "southeast_asia",
+      "currency": "PHP",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2008
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 2,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English / Filipino",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "BSP登録要件あり。配当送金は可能だが手続あり。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": true,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": true,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 3,
+        "previous": 3,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "D",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "MY",
+      "iso3": "MYS",
+      "name_ja": "マレーシア",
+      "name_en": "Malaysia",
+      "region": "southeast_asia",
+      "currency": "MYR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2006
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English / Malay",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "FEA規則。対外投資・リンギット取引に制約。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "SG",
+      "iso3": "SGP",
+      "name_ja": "シンガポール",
+      "name_en": "Singapore",
+      "region": "southeast_asia",
+      "currency": "SGD",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2002
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "極めて開放的。不動産・一部MAS規制のみ。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": true,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": 0,
+        "previous": 0,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "KR",
+      "iso3": "KOR",
+      "name_ja": "韓国",
+      "name_en": "Korea",
+      "region": "east_asia",
+      "currency": "KRW",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2022
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": 0,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Korean / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "資本勘定は概ね自由。報告義務・一部不動産制限。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": true,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "B",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "HK",
+      "iso3": "HKG",
+      "name_ja": "香港",
+      "name_en": "Hong Kong SAR",
+      "region": "east_asia",
+      "currency": "HKD",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English / Cantonese",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "通貨ボード・資本自由。本土とのリンクで実務注意はあるがAREAER上は開放。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "AE",
+      "iso3": "ARE",
+      "name_ja": "UAE",
+      "name_en": "United Arab Emirates",
+      "region": "middle_east",
+      "currency": "AED",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -5,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Arabic / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "経常・資本とも比較的自由。フリーゾーン実務差あり。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": true,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "SA",
+      "iso3": "SAU",
+      "name_ja": "サウジアラビア",
+      "name_en": "Saudi Arabia",
+      "region": "middle_east",
+      "currency": "SAR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": false,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -6,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Arabic / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "Vision2030で自由化進行。FDI・証券は条件付開放。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "TR",
+      "iso3": "TUR",
+      "name_ja": "トルコ",
+      "name_en": "Turkiye",
+      "region": "middle_east",
+      "currency": "TRY",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 2,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -6,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Turkish / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "2020年代の外貨規制・輸出代金・対外借入制約が強い。",
+        "flags": {
+          "current_account_restrictions": true,
+          "dividend_repatriation": true,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": true,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": true,
+          "guarantees_financial_backup": true,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 5,
+        "previous": 5,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "F",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": "Europe F帯（Turkey）"
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "GB",
+      "iso3": "GBR",
+      "name_ja": "英国",
+      "name_en": "United Kingdom",
+      "region": "europe",
+      "currency": "GBP",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2021
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -9,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "開放。制裁・AML以外の資本規制なし。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "DE",
+      "iso3": "DEU",
+      "name_ja": "ドイツ",
+      "name_en": "Germany",
+      "region": "europe",
+      "currency": "EUR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2019
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -8,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "German / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "EU自由移動。FDIスクリーニングは安全保障目的のみ。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "FR",
+      "iso3": "FRA",
+      "name_ja": "フランス",
+      "name_en": "France",
+      "region": "europe",
+      "currency": "EUR",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2019
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -8,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "French / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "EU自由移動。FDIスクリーニングは安全保障目的のみ。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "US",
+      "iso3": "USA",
+      "name_ja": "米国",
+      "name_en": "United States",
+      "region": "north_america",
+      "currency": "USD",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -14,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "資本自由。CFIUS等は投資審査（AREAER資本規制とは別枠）。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "CA",
+      "iso3": "CAN",
+      "name_ja": "カナダ",
+      "name_en": "Canada",
+      "region": "north_america",
+      "currency": "CAD",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": true,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13",
+          "year": 2018
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -14,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "English / French",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "開放。ICA審査は安全保障・文化産業。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "BR",
+      "iso3": "BRA",
+      "name_ja": "ブラジル",
+      "name_en": "Brazil",
+      "region": "latin_america",
+      "currency": "BRL",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -12,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Portuguese / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "経常自由。対外資本・為替市場に登録・報告義務。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 4,
+        "previous": 4,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": null
+      },
+      "nexi_category": {
+        "value": "E",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "JP",
+      "iso3": "JPN",
+      "name_ja": "日本",
+      "name_en": "Japan",
+      "region": "east_asia",
+      "currency": "JPY",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": false,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": 0,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Japanese / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "developed",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "原則自由。外為法の事後報告・対内FDI事前届出（指定業種）。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": false,
+          "capital_real_estate": false,
+          "capital_securities": false,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": false,
+          "money_market_instruments": false,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": false
+        }
+      },
+      "oecd_crc": {
+        "value": null,
+        "previous": null,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "unclassified_high_income_oecd"
+      },
+      "nexi_category": {
+        "value": "A",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    },
+    {
+      "iso2": "TW",
+      "iso3": "TWN",
+      "name_ja": "台湾",
+      "name_en": "Taiwan",
+      "region": "east_asia",
+      "currency": "TWD",
+      "attributes": {
+        "fatf_status": {
+          "value": "normal",
+          "source_ref": "FATF Jurisdictions under Increased Monitoring / Call for Action (as of 2026-06-19)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_epa": {
+          "value": false,
+          "source_ref": "MOFA/METI/JETRO EPA・FTA発効一覧（二国間+RCEP/CPTPP/日EU/日英）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_tax_treaty": {
+          "value": true,
+          "source_ref": "MOF 我が国の租税条約等の一覧 https://www.mof.go.jp/tax_policy/summary/international/tax_convention/",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "japan_visa_free": {
+          "value": true,
+          "source_ref": "MOFA 査証免除措置（短期滞在）／各国入国要件ベストエフォート",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "mofa_risk_level": {
+          "value": 1,
+          "source_ref": "MOFA 海外安全ホームページ 危険情報（国代表値・非ライブ）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "timezone_offset_jst": {
+          "value": -1,
+          "source_ref": "IANA / 標準時オフセット（JST=UTC+9基準、DST非反映）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "language_business": {
+          "value": "Mandarin / English",
+          "source_ref": "静的キュレーション（ビジネス通用言語）",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        },
+        "msci_classification": {
+          "value": "emerging",
+          "source_ref": "MSCI Market Classification (Developed / Emerging / Frontier)",
+          "veritas": "⚠️",
+          "retrieved_at": "2026-07-13"
+        }
+      },
+      "regulation": {
+        "year": 2025,
+        "source_ref": "IMF AREAER Online (curated static) | https://www.elibrary-areaer.imf.org/",
+        "veritas": "⚠️",
+        "note": "対中資本規制・対外投資審査あり。経常は概ね自由。",
+        "flags": {
+          "current_account_restrictions": false,
+          "dividend_repatriation": false,
+          "capital_fdi": true,
+          "capital_real_estate": true,
+          "capital_securities": true,
+          "multiple_exchange_rates": false,
+          "export_proceeds_surrender": false,
+          "capital_outward": true,
+          "money_market_instruments": true,
+          "liquidating_proceeds": false,
+          "guarantees_financial_backup": false,
+          "personal_capital_movements": true
+        }
+      },
+      "oecd_crc": {
+        "value": 2,
+        "previous": 2,
+        "as_of": "2026-06-26",
+        "veritas": "✅",
+        "source_ref": "OECD Country Risk Classification (Participants to the Arrangement) | https://www.oecd.org/en/topics/sub-issues/country-risk-classification.html",
+        "note": "Chinese Taipei in OECD table"
+      },
+      "nexi_category": {
+        "value": "C",
+        "as_of": "2026-07-06",
+        "veritas": "✅",
+        "source_ref": "NEXI Country/Region Category | https://www.nexi.go.jp/cover/en/categorytable",
+        "note": null
+      },
+      "iia_japan_bit": {
+        "value": null,
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "UNCTAD IIA Navigator — 対日BIT/EPA投資章の有無を年1手動更新（REQ-010 P1-W）",
+        "source_ref": "https://investmentpolicy.unctad.org/international-investment-agreements"
+      },
+      "social_security_employer_rate_pct": {
+        "value": null,
+        "unit": "%",
+        "veritas": "⚠️",
+        "status": "stub",
+        "upgrade_path": "SSA Social Security Programs Throughout the World + PwC Tax Summaries 突合（REQ-010 P1-X）",
+        "source_ref": "https://www.ssa.gov/policy/docs/progdesc/ssptw/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://provej.jp/data/schema/finance_access_annual.schema.json",
+  "title": "PROVE Global Data Hub — timeseries/finance_access_annual.json v1（REQ-009 P1）",
+  "type": "object",
+  "required": ["schema_version", "feed_id", "last_updated", "frequency", "observations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "feed_id": { "type": "string", "const": "finance_access_annual" },
+    "frequency": { "type": "string", "const": "annual" },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "iso2", "period", "value"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "period": { "type": "string", "pattern": "^[0-9]{4}$" },
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "veritas": { "type": "string" }
+        }
+      }
+    }
+  }
+}

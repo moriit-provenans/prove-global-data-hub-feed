@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "feed_id": "events_active",
+  "last_updated": "2026-07-13T10:30:20+09:00",
+  "source": {
+    "label": "IMF PortWatch disruptions",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/portwatch_disruptions_database/FeatureServer/0/query"
+  },
+  "meta": {
+    "active_count": 2,
+    "total_in_source": 128,
+    "note_ja": "todate未設定または今日以降のイベントをアクティブとみなす。"
+  },
+  "events": [
+    {
+      "event_id": 10000004,
+      "event_type": "OT",
+      "name": "HORMUZ-26",
+      "alert_level": "RED",
+      "country": null,
+      "from_date": "2026-03-01",
+      "to_date": null,
+      "active": true,
+      "severity": "",
+      "lat": 26.29685,
+      "lon": 56.85985,
+      "affected_ports": "chokepoint6",
+      "n_affected_ports": 1,
+      "page_id": "cc317ba850e34c4dadbead6f7b336fb1",
+      "description": "Trade Disruptions in the Strait of Hormuz from: 01 Mar 2026  to: - .",
+      "source": "imf_portwatch_disruptions",
+      "source_ref": "PortWatch:disruption:10000004"
+    },
+    {
+      "event_id": 1000000,
+      "event_type": "OT",
+      "name": "RED SEA TENSIONS",
+      "alert_level": "RED",
+      "country": null,
+      "from_date": "2023-12-16",
+      "to_date": null,
+      "active": true,
+      "severity": "",
+      "lat": 20.31573,
+      "lon": 38.73504,
+      "affected_ports": "chokepoint4; chokepoint1; chokepoint7",
+      "n_affected_ports": 3,
+      "page_id": "573013af3b6545deaeb50ed1cbaf9444",
+      "description": "Trade disruptions in the Red Sea (near Bab el-Mandeb Strait) due to attacks on commercial ships",
+      "source": "imf_portwatch_disruptions",
+      "source_ref": "PortWatch:disruption:1000000"
+    }
+  ]
+}
