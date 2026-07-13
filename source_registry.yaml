@@ -1051,14 +1051,15 @@ sources:
     frequency: monthly
     grain_axes: [time]
     how_to_fetch:
-      - "1. 国別 EPU CSV を policyuncertainty.com から DL"
-      - "2. indices_monthly.json へ合流（未実装）"
-      - "3. 政策リスクイベント類型 E8 用"
+      - "1. GET https://www.policyuncertainty.com/media/All_Country_Data.xlsx"
+      - "2. collect_epu_gpr.py → epu_gpr_monthly.csv"
+      - "3. export_indices_monthly.py → indices_monthly.json"
     layer: annual
-    status: stub_pending_csv
+    status: implemented
+    collector: tools/collectors/collect_epu_gpr.py
+    feed: timeseries/indices_monthly.json
     notes_ja: >
-      REQ-008 P1-S。OWID/ローカルCSV未検出のため indices_monthly 未作成。
-      CSV入手後に collect → indices_monthly.json を新設する。
+      REQ-008 P1-S / Bトラック B1（2026-07-13）。公開Excel直取得✅。
 
   - id: gpr_caldara
     name: Geopolitical Risk Index (Caldara-Iacoviello)
@@ -1068,14 +1069,15 @@ sources:
     frequency: monthly
     grain_axes: [time]
     how_to_fetch:
-      - "1. 著者サイトの GPR 月次 CSV/Excel を DL"
-      - "2. indices_monthly.json へ合流（未実装）"
-      - "3. E1 地政学イベント類型用"
+      - "1. GET https://www.matteoiacoviello.com/gpr_files/gpr_web_latest.xlsx"
+      - "2. collect_epu_gpr.py（GPR + GPR_COUNTRIES シート）"
+      - "3. export_indices_monthly.py → indices_monthly.json"
     layer: annual
-    status: stub_pending_csv
+    status: implemented
+    collector: tools/collectors/collect_epu_gpr.py
+    feed: timeseries/indices_monthly.json
     notes_ja: >
-      REQ-008 P1-S。OWID/既知CSV未検出のため indices_monthly 未作成。
-      EPU と同バッチで実装予定。
+      REQ-008 P1-S / Bトラック B1（2026-07-13）。公開Excel直取得✅。EPUと同バッチ。
 
   - id: inform_risk
     name: INFORM Risk Index
