@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T15:20:34+09:00",
+  "last_updated": "2026-07-13T15:42:16+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。energy_ssr_annual（OWID燃料別自給率・REQ-007 P1-L）を追加。 agri_psd_monthly（USDA PSD・REQ-009）を追加。",
   "indicators": [
@@ -14284,6 +14284,357 @@
         "url": "https://fred.stlouisfed.org/"
       },
       "feed": "timeseries/market_daily.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.1y",
+      "wb_code": null,
+      "name_ja": "国債金利 1年",
+      "name_en": "JGB yield 1Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.2y",
+      "wb_code": null,
+      "name_ja": "国債金利 2年",
+      "name_en": "JGB yield 2Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.3y",
+      "wb_code": null,
+      "name_ja": "国債金利 3年",
+      "name_en": "JGB yield 3Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.5y",
+      "wb_code": null,
+      "name_ja": "国債金利 5年",
+      "name_en": "JGB yield 5Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.7y",
+      "wb_code": null,
+      "name_ja": "国債金利 7年",
+      "name_en": "JGB yield 7Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.10y",
+      "wb_code": null,
+      "name_ja": "国債金利 10年",
+      "name_en": "JGB yield 10Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.15y",
+      "wb_code": null,
+      "name_ja": "国債金利 15年",
+      "name_en": "JGB yield 15Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.20y",
+      "wb_code": null,
+      "name_ja": "国債金利 20年",
+      "name_en": "JGB yield 20Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.25y",
+      "wb_code": null,
+      "name_ja": "国債金利 25年",
+      "name_en": "JGB yield 25Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2004-03",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.30y",
+      "wb_code": null,
+      "name_ja": "国債金利 30年",
+      "name_en": "JGB yield 30Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2000-01",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.jgb_yield.40y",
+      "wb_code": null,
+      "name_ja": "国債金利 40年",
+      "name_en": "JGB yield 40Y",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2007-11",
+        "to": "2026-07-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.prime_rate.short",
+      "wb_code": null,
+      "name_ja": "短期プライムレート",
+      "name_en": "Short-term prime rate",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2001-02",
+        "to": "2026-06-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
+    },
+    {
+      "indicator_id": "jp.prime_rate.long",
+      "wb_code": null,
+      "name_ja": "長期プライムレート",
+      "name_en": "Long-term prime rate",
+      "unit": "%",
+      "category": "日本金利",
+      "frequencies": [
+        "daily",
+        "monthly"
+      ],
+      "higher_is_better": null,
+      "phase": "8q",
+      "description_ja": "財務省国債金利情報（和暦→西暦変換済）。公開は直近90日日次＋月次平均。プライムはBoJスクレイプまたはBOJ_PRIME_CSV_PATH。",
+      "available_iso2": [
+        "JP"
+      ],
+      "period_range": {
+        "from": "2001-02",
+        "to": "2026-06-10"
+      },
+      "source": {
+        "label": "MOF JGB yields (+ BoJ prime if available)",
+        "url": "https://www.mof.go.jp/jgbs/reference/interest_rate/"
+      },
+      "feed": "timeseries/japan_rates.json"
     }
   ],
   "countries": [
