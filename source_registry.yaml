@@ -195,28 +195,31 @@ sources:
     frequency: semi_annual
     grain_axes: [time, industry, spatial]
     how_to_fetch:
-      - "1. PPI サイトから案件レベル Excel を DL"
-      - "2. 国×年×セクターに集計"
-      - "3. collect_wb_ppi.py は現状スタブ"
+      - "1. STATA フルスナップショット 2024-PPI-Full-DTA.dta を DL"
+      - "2. 国×金融クローズ年に投資額・案件数を集計"
+      - "3. collect_wb_ppi.py → infra_maritime_annual.json"
     layer: annual
-    status: stub
+    status: implemented
     collector: tools/collectors/collect_wb_ppi.py
-    feed: infra_annual (planned)
+    feed: timeseries/infra_maritime_annual.json
+    notes_ja: "2026-07-13 B3実装。高所得国（SG/JP/US等）はPPI対象外。"
 
   - id: worldbank_cppi
     name: Container Port Performance Index (WB / S&P)
-    url: https://www.worldbank.org/en/topic/transport/publication/container-port-performance-index
+    url: https://www.worldbank.org/en/topic/transport/publication/cppi
     api: none
     free_paid: free
     frequency: annual
     grain_axes: [spatial]
     how_to_fetch:
-      - "1. 年次レポート付属ランキング表を取得"
-      - "2. 港湾効率スコアを国/港で正規化"
-      - "3. PPI スタブと同一コレクター枠"
+      - "1. CPPI 年次レポート PDF のランキング表を取得"
+      - "2. 港→国マッピング後、国別ベスト順位を算出"
+      - "3. collect_wb_ppi.py 同一バッチ"
     layer: annual
-    status: stub
+    status: implemented
     collector: tools/collectors/collect_wb_ppi.py
+    feed: timeseries/infra_maritime_annual.json
+    notes_ja: "2026-07-13 B3実装。CPPI 2023 PDFから抽出。"
 
   - id: worldbank_pink_sheet
     name: World Bank Pink Sheet (commodity prices)
@@ -556,12 +559,14 @@ sources:
     frequency: annual
     grain_axes: [time, spatial]
     how_to_fetch:
-      - "1. UNCTADstat で船腹量・寄港・LSCI を DL"
-      - "2. LSCI は WB IS.SHP.GCNW.XQ 既存"
-      - "3. collect_unctad_maritime.py は no-op スタブ"
+      - "1. UNCTADstat bulk US.PortCalls（7z→CSV）を DL"
+      - "2. All ships の寄港メディアン日数を Phase1 国で正規化"
+      - "3. LSCI は WB IS.SHP.GCNW.XQ 既存（macro_annual）"
     layer: annual
-    status: stub
+    status: implemented
     collector: tools/collectors/collect_unctad_maritime.py
+    feed: timeseries/infra_maritime_annual.json
+    notes_ja: "2026-07-13 寄港時間実装。船腹量は未配線。"
 
   # ─── Macro / finance / rates ──────────────────────────────────────
   - id: imf_weo
@@ -846,12 +851,13 @@ sources:
     frequency: annual
     grain_axes: [time, income, industry]
     how_to_fetch:
-      - "1. SDMX / bulk で EAR_* 職種別賃金を検索"
-      - "2. granularity_samples wage 軸（現状 stub）"
-      - "3. スト・社会保険料率も同ポータル"
+      - "1. ILOSTAT 職種別絶対賃金 API は 2026-07 不通"
+      - "2. 代替: WDI SL.EMP.WORK.ZS を granularity_samples wage 軸に掲載"
+      - "3. 職種別 EAR_* は SDMX 復旧後に置換"
     layer: ondemand
-    status: stub_in_granularity_samples
+    status: implemented_proxy
     feed: timeseries/granularity_samples.json
+    notes_ja: "wage 軸は雇用者比率プロキシ（✅）。職種別絶対賃金は未。"
 
   - id: ilo_eplex
     name: ILO EPLex (employment protection)

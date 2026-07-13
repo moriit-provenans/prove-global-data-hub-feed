@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T17:51:54+09:00",
+  "last_updated": "2026-07-13T19:06:29+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -8211,6 +8211,96 @@
       "feed": "timeseries/indices_annual.json"
     },
     {
+      "indicator_id": "biz.economic_freedom.score",
+      "wb_code": null,
+      "name_ja": "経済自由度指数",
+      "name_en": "Index of Economic Freedom",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "公式403のため indexdotnet.azurewebsites.net の年次Excel（2015–2023）を使用。2024+はミラー未着。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2015,
+        "to": 2023
+      },
+      "source": {
+        "label": "Heritage Index of Economic Freedom (indexdotnet mirror)",
+        "url": "https://www.heritage.org/index/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "wb_code": null,
+      "name_ja": "サイバーセキュリティ指数（GCI Tier）",
+      "name_en": "Global Cybersecurity Index (tier)",
+      "unit": "tier_1_5",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "GCI 2024は順位でなくTier（1=Role-modelling … 5=Building）。公式PDF Annexから抽出。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "ITU Global Cybersecurity Index 2024 (tier)",
+        "url": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
       "indicator_id": "human.ef_epi.score",
       "wb_code": null,
       "name_ja": "EF英語能力指数",
@@ -8372,6 +8462,62 @@
         "url": "https://publicadministration.un.org/egovkb/"
       },
       "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "name_ja": "PPPインフラ民間投資（PPI・百万USD）",
+      "name_en": "PPI private infrastructure investment (USD mn)",
+      "unit": "USD_mn",
+      "feed": "timeseries/infra_maritime_annual.json",
+      "row_count": 213,
+      "year_from": 2000,
+      "year_to": 2024,
+      "source": {
+        "label": "World Bank PPI",
+        "url": "https://ppi.worldbank.org/en/ppidata"
+      }
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "name_ja": "PPPインフラ案件数（PPI）",
+      "name_en": "PPI project count",
+      "unit": "projects",
+      "feed": "timeseries/infra_maritime_annual.json",
+      "row_count": 213,
+      "year_from": 2000,
+      "year_to": 2024,
+      "source": {
+        "label": "World Bank PPI",
+        "url": "https://ppi.worldbank.org/en/ppidata"
+      }
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "name_ja": "コンテナ港湾効率ベスト順位（CPPI）",
+      "name_en": "Best container port rank (CPPI)",
+      "unit": "rank",
+      "feed": "timeseries/infra_maritime_annual.json",
+      "row_count": 20,
+      "year_from": 2023,
+      "year_to": 2023,
+      "source": {
+        "label": "World Bank CPPI 2023",
+        "url": "https://www.worldbank.org/en/topic/transport/publication/cppi"
+      }
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "name_ja": "寄港メディアン時間（日）",
+      "name_en": "Median time in port (days)",
+      "unit": "days",
+      "feed": "timeseries/infra_maritime_annual.json",
+      "row_count": 68,
+      "year_from": 2018,
+      "year_to": 2023,
+      "source": {
+        "label": "UNCTADstat Port Calls",
+        "url": "https://unctadstat.unctad.org/"
+      }
     }
   ],
   "countries": [

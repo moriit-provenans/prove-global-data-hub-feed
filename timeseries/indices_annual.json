@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T17:51:54+09:00",
+  "last_updated": "2026-07-13T19:06:29+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
@@ -10,6 +10,7 @@
   },
   "meta": {
     "indicator_ids": [
+      "biz.economic_freedom.score",
       "biz.fdi_restrictiveness.index",
       "env.carbon_price.usd",
       "env.carbon_pricing.active",
@@ -17,6 +18,7 @@
       "env.co2_total.mt",
       "env.epi.score",
       "gov.egdi.score",
+      "gov.gci.tier",
       "human.ef_epi.score",
       "risk.gpi.score",
       "risk.inform.score",
@@ -52,9 +54,1683 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 2966
+    "row_count": 3171
   },
   "observations": [
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2015,
+      "value": 72.3885193246777,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2016,
+      "value": 72.55,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2017,
+      "value": 76.89449711065517,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2018,
+      "value": 77.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2019,
+      "value": 77.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2020,
+      "value": 76.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2021,
+      "value": 76.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2022,
+      "value": 70.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "AE",
+      "year": 2023,
+      "value": 70.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 56.607279028600296,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 56.54,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 52.853197658169755,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 51.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 51.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 53.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 53.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 53.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 53.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2015,
+      "value": 79.05909245730176,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2016,
+      "value": 77.97,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2017,
+      "value": 78.50749920566189,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 77.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2019,
+      "value": 77.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2020,
+      "value": 78.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 77.86666666666666,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 76.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 73.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 52.740986358413124,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 51.96,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 57.40349330913048,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 57.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 58.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 59.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 58.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 48.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 48.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2015,
+      "value": 73.77555082512883,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2016,
+      "value": 74.37,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2017,
+      "value": 73.804488129036,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 74.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2019,
+      "value": 73.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2020,
+      "value": 73.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 72.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 76.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 73.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2015,
+      "value": 62.51504939951667,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2016,
+      "value": 62.32,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2017,
+      "value": 63.30015128524672,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 63.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2019,
+      "value": 63.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2020,
+      "value": 66.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 65.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 65.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 63.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2015,
+      "value": 75.83993851835137,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2016,
+      "value": 76.41,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2017,
+      "value": 76.43171376417799,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 78.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2019,
+      "value": 78.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2020,
+      "value": 79.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 78.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 72.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 69.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2015,
+      "value": 89.55488434343451,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2016,
+      "value": 88.55,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2017,
+      "value": 89.8198831256044,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2018,
+      "value": 90.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2019,
+      "value": 90.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "HK",
+      "year": 2020,
+      "value": 89.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 58.12830179878627,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 59.44,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 61.939132935531404,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 64.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 65.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2020,
+      "value": 67.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 66.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 64.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 63.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 54.568970297993154,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 56.24,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 52.63869885480684,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 54.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 55.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 56.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 56.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 53.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 52.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2015,
+      "value": 73.33442620759155,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2016,
+      "value": 73.09,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2017,
+      "value": 69.57872495976434,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 72.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2019,
+      "value": 72.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2020,
+      "value": 73.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 74.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 69.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 69.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2015,
+      "value": 71.53908606635466,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2016,
+      "value": 71.74,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2017,
+      "value": 74.25929307081834,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2018,
+      "value": 73.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2019,
+      "value": 72.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2020,
+      "value": 74.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 74.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2022,
+      "value": 74.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 73.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 70.84021832033349,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 71.51,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 73.77889296056183,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 74.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 74.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2020,
+      "value": 74.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 74.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 68.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 67.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 62.1997874786894,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 63.08,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 65.6056846130863,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 65.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 63.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 64.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 64.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 61.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 59.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2015,
+      "value": 62.08982942123399,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2016,
+      "value": 62.09,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2017,
+      "value": 64.44271685584101,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2018,
+      "value": 59.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2019,
+      "value": 60.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2020,
+      "value": 62.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 66.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2022,
+      "value": 55.5,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 58.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2015,
+      "value": 89.35154358055641,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2016,
+      "value": 87.78,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2017,
+      "value": 88.58000702158638,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2018,
+      "value": 88.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2019,
+      "value": 89.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2020,
+      "value": 89.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 89.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 84.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 83.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 62.42649943906737,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 63.86,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 66.2202853715532,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 67.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 68.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 69.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 69.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 63.2,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 60.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 63.18629430548668,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 62.07,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 65.23095999485169,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 65.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 64.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 64.4,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 64.0,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 56.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 56.9,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 75.06771456216504,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 74.74,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 76.50676029803249,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 76.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 77.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 77.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 78.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 80.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 80.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2015,
+      "value": 76.18207475944084,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2016,
+      "value": 75.44,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2017,
+      "value": 75.13672603387667,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2018,
+      "value": 75.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2019,
+      "value": 76.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2020,
+      "value": 76.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2021,
+      "value": 74.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2022,
+      "value": 72.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "US",
+      "year": 2023,
+      "value": 70.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2015,
+      "value": 51.69464151516274,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2015_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 53.99,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2016_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 52.43755104523467,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2017_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 53.1,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2018_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 55.3,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2019_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 58.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2020_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 61.7,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2021_data.xls",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 60.6,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2022_data.xlsx",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 61.8,
+      "unit": "score_0_100",
+      "source_ref": "indexdotnet:index2023_data.xlsx",
+      "veritas": "⚠️"
+    },
     {
       "indicator_id": "biz.fdi_restrictiveness.index",
       "iso2": "BR",
@@ -12671,6 +14347,177 @@
       "value": 0.67869997,
       "unit": "index_0_1",
       "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "AE",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "CA",
+      "year": 2024,
+      "value": 2.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 2.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "DE",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "FR",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "GB",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "JP",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "KR",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 2.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "SA",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "SG",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "US",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 1.0,
+      "unit": "tier_1_5",
+      "source_ref": "ITU:GCI2024:Annex_Tier",
       "veritas": "✅"
     },
     {

@@ -1,0 +1,4686 @@
+{
+  "schema_version": "0.1.0",
+  "feed_id": "infra_maritime_annual",
+  "last_updated": "2026-07-13T19:06:29+09:00",
+  "frequency": "annual",
+  "purpose_ja": "Bトラック: WB PPI/CPPI + UNCTAD 寄港時間。LSCIは macro_annual の infra.lsci。",
+  "indicators": [
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "name_ja": "PPPインフラ民間投資（PPI・百万USD）",
+      "name_en": "PPI private infrastructure investment (USD mn)",
+      "unit": "USD_mn",
+      "description_ja": "World Bank PPI Database。低中所得国の案件投資額合計（金融クローズ年）。",
+      "source": {
+        "label": "World Bank PPI",
+        "url": "https://ppi.worldbank.org/en/ppidata"
+      }
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "name_ja": "PPPインフラ案件数（PPI）",
+      "name_en": "PPI project count",
+      "unit": "projects",
+      "description_ja": "World Bank PPI Database。金融クローズ年ごとの案件数。",
+      "source": {
+        "label": "World Bank PPI",
+        "url": "https://ppi.worldbank.org/en/ppidata"
+      }
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "name_ja": "コンテナ港湾効率ベスト順位（CPPI）",
+      "name_en": "Best container port rank (CPPI)",
+      "unit": "rank",
+      "description_ja": "World Bank CPPI。国内港湾のうち最良（数値が小さい）順位。低いほど良い。",
+      "source": {
+        "label": "World Bank CPPI 2023",
+        "url": "https://www.worldbank.org/en/topic/transport/publication/cppi"
+      }
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "name_ja": "寄港メディアン時間（日）",
+      "name_en": "Median time in port (days)",
+      "unit": "days",
+      "description_ja": "UNCTADstat Port Calls。全船種アグリゲートのメディアン寄港日数。",
+      "source": {
+        "label": "UNCTADstat Port Calls",
+        "url": "https://unctadstat.unctad.org/"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "AE",
+      "year": 2023,
+      "value": 29.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 42.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 348.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 1.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 72.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 354.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 69.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "HK",
+      "year": 2023,
+      "value": 15.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 23.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 27.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 9.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 20.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 5.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 133.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 30.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 17.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 45.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 33.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "US",
+      "year": 2023,
+      "value": 53.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.cppi.best_port_rank",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 7.0,
+      "unit": "rank",
+      "source_ref": "WB:CPPI2023:Table_E1",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2000,
+      "value": 13044.81,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2001,
+      "value": 7579.14,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2002,
+      "value": 4048.36,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2003,
+      "value": 6565.99,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2004,
+      "value": 1198.77,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2005,
+      "value": 3141.61,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2006,
+      "value": 5036.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 6932.87,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2008,
+      "value": 14625.73,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 27477.81,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2010,
+      "value": 6511.52,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 19051.26,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2012,
+      "value": 49778.77,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 20180.02,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 40691.35,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 6545.19,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 16582.12,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 6396.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 6052.63,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 18814.22,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 8235.32,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 8556.21,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 18038.64,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 11449.52,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 11516.32,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2000,
+      "value": 9000.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2001,
+      "value": 4817.17,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2002,
+      "value": 5597.28,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2003,
+      "value": 8515.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2004,
+      "value": 2535.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2005,
+      "value": 8848.589,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2006,
+      "value": 8396.241,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 8602.405,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2008,
+      "value": 2627.064,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 6171.57,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2010,
+      "value": 596.67,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 4503.28,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2012,
+      "value": 6033.44,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 9679.87,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 8135.63,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 7428.83,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 10743.891,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 19604.93,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 30661.12,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 26584.08,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 6423.05,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 10485.01,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 31974.93,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 40383.25,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 40500.95,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2001,
+      "value": 36.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2002,
+      "value": 192.8,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2003,
+      "value": 1061.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2004,
+      "value": 197.3,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2005,
+      "value": 32.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2006,
+      "value": 817.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 518.6,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2008,
+      "value": 235.2,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 60.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2010,
+      "value": 2300.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 161.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2012,
+      "value": 4578.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 2076.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 1690.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 210.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 8734.8,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 15381.99,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 6643.15,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 372.38,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 6887.29,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 210.04,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 1762.28,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 346.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2000,
+      "value": 2003.18,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2001,
+      "value": 2619.79,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2002,
+      "value": 2323.32,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2003,
+      "value": 1400.51,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2004,
+      "value": 6659.92,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2005,
+      "value": 2508.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2006,
+      "value": 19943.17,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 19557.42,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2008,
+      "value": 17815.94,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 29010.32,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2010,
+      "value": 45721.77,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 36109.26,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2012,
+      "value": 31382.23,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 6138.39,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 4754.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 4176.05,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 4379.23,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 4900.21,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 8484.56,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 7368.28,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 5354.02,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 7633.09,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 10865.54,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 8042.04,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 5120.42,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2000,
+      "value": 5044.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2001,
+      "value": 2264.6,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2002,
+      "value": 28.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2003,
+      "value": 5741.9,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2004,
+      "value": 4073.11,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2005,
+      "value": 2567.95,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2006,
+      "value": 915.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 272.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2008,
+      "value": 425.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2010,
+      "value": 34.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 24.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2012,
+      "value": 193.9,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 1292.76,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 125.23,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 2696.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 22.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 1913.3,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 387.35,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 95.03,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 1331.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 47.66,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 130.79,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 6837.72,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2000,
+      "value": 1646.9,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2001,
+      "value": 1438.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2002,
+      "value": 30.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2003,
+      "value": 317.3,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2004,
+      "value": 128.11,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2005,
+      "value": 3.4,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2006,
+      "value": 2834.6,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 1291.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2008,
+      "value": 1749.69,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2009,
+      "value": 4705.09,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2010,
+      "value": 1822.25,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 666.46,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2012,
+      "value": 1027.73,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 1250.96,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 1343.15,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 5921.29,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 5439.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 1753.55,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 48.58,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 1817.82,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 59.61,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 2289.52,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 2879.27,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 7574.35,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 5386.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2000,
+      "value": 1156.6,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2001,
+      "value": 1245.4,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2003,
+      "value": 1381.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2004,
+      "value": 439.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2005,
+      "value": 1747.6,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2006,
+      "value": 216.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2008,
+      "value": 1374.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2010,
+      "value": 1055.361,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 1699.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2012,
+      "value": 2109.11,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2013,
+      "value": 616.19,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 4345.03,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 1742.005,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 535.15,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 4823.57,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 1999.02,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 1653.34,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 254.8,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 794.51,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 90.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 1862.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2000,
+      "value": 3575.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2001,
+      "value": 850.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2002,
+      "value": 360.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2004,
+      "value": 423.15,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2005,
+      "value": 9433.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2006,
+      "value": 1642.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 2639.9,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2008,
+      "value": 7281.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 4559.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2010,
+      "value": 5529.73,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 7663.17,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2012,
+      "value": 4271.75,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 23722.1,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 15215.85,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 38643.27,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 3615.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 1801.38,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 8019.41,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 1037.35,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 408.97,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 1134.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 532.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 433.82,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 3654.27,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2001,
+      "value": 241.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2002,
+      "value": 1780.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2003,
+      "value": 659.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2005,
+      "value": 365.2,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2006,
+      "value": 133.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 454.36,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2008,
+      "value": 535.3,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 806.3,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2010,
+      "value": 1098.05,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 2771.77,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2012,
+      "value": 334.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 275.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 1790.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 293.4,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 2479.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 3645.7,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 4364.67,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 2686.91,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 3627.4,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 4136.66,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 94.5,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.investment_usd_mn",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 1664.0,
+      "unit": "USD_mn",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2000,
+      "value": 107.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2001,
+      "value": 59.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2002,
+      "value": 55.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2003,
+      "value": 38.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2004,
+      "value": 25.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2005,
+      "value": 40.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2006,
+      "value": 36.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 29.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2008,
+      "value": 51.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 60.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2010,
+      "value": 40.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 58.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2012,
+      "value": 66.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 66.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 60.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 60.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 61.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 21.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 42.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 34.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 42.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 32.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 55.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 53.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 64.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2000,
+      "value": 28.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2001,
+      "value": 52.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2002,
+      "value": 78.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2003,
+      "value": 83.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2004,
+      "value": 65.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2005,
+      "value": 87.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2006,
+      "value": 84.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 103.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2008,
+      "value": 63.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 48.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2010,
+      "value": 20.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 87.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2012,
+      "value": 77.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 89.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 74.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 84.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 105.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 110.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 116.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 143.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 69.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 57.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 49.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 37.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 67.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2001,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2002,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2003,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2004,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2005,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2006,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2008,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2010,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2012,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 12.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 11.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2000,
+      "value": 11.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2001,
+      "value": 18.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2002,
+      "value": 35.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2003,
+      "value": 31.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2004,
+      "value": 23.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2005,
+      "value": 24.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2006,
+      "value": 78.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 64.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2008,
+      "value": 48.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 54.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2010,
+      "value": 111.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 130.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2012,
+      "value": 131.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 54.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 44.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 40.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 34.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 48.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 58.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 32.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 20.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 25.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 28.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 28.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 25.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2000,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2001,
+      "value": 10.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2002,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2003,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2004,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2005,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2006,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2008,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2010,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2012,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2000,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2001,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2002,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2003,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2004,
+      "value": 10.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2005,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2006,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2008,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2009,
+      "value": 16.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2010,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2012,
+      "value": 10.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 17.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 11.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2000,
+      "value": 15.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2001,
+      "value": 6.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2003,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2004,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2005,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2006,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2008,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2010,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 9.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2012,
+      "value": 22.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2013,
+      "value": 12.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 6.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 14.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2000,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2001,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2002,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2004,
+      "value": 14.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2005,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2006,
+      "value": 6.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2008,
+      "value": 17.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 19.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2010,
+      "value": 23.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 40.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2012,
+      "value": 22.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 24.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 17.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 10.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 18.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 9.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 11.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 9.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 10.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2001,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2002,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2003,
+      "value": 5.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2005,
+      "value": 9.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2006,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2008,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 7.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2010,
+      "value": 20.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2012,
+      "value": 14.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 1.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 3.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 11.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 15.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 13.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 8.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 2.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "infra.ppi.project_count",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 4.0,
+      "unit": "projects",
+      "source_ref": "WB:PPI:2024-Full-DTA",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 0.65,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2019,
+      "value": 0.7576,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2020,
+      "value": 0.7743,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 0.7396,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 0.6465,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 0.5708,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 1.02,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 1.0378,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 1.0764,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 1.15,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 1.1326,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 1.0528,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 0.56,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2019,
+      "value": 0.4896,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2020,
+      "value": 0.8076,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 0.8389,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 0.7396,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 0.6444,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 1.11,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2019,
+      "value": 1.1153,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2020,
+      "value": 1.1479,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 1.1632,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 1.1958,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 1.1444,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 1.09,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2019,
+      "value": 1.0785,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2020,
+      "value": 1.1063,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 1.1632,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 1.1799,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 1.1097,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 1.34,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 1.2813,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2020,
+      "value": 1.2222,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 1.2896,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 1.2639,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 1.2625,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 0.41,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2019,
+      "value": 0.4083,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2020,
+      "value": 0.3972,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 0.416,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 0.4201,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 0.4111,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2018,
+      "value": 0.79,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2019,
+      "value": 0.7931,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2020,
+      "value": 0.8562,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 0.8938,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2022,
+      "value": 0.8681,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 0.85,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 1.04,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 0.9812,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 0.9868,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 0.975,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 0.9785,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 0.809,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 0.7569,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 0.7312,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 1.19,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 1.1778,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 1.1917,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 1.2139,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 1.2576,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 1.2625,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2018,
+      "value": 1.41,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2019,
+      "value": 1.4326,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2020,
+      "value": 1.4528,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2021,
+      "value": 1.5743,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2022,
+      "value": 1.6715,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "maritime.port_time_median.days",
+      "iso2": "US",
+      "year": 2023,
+      "value": 1.5431,
+      "unit": "days",
+      "source_ref": "UNCTADstat:US.PortCalls:All ships",
+      "veritas": "✅"
+    }
+  ],
+  "summary": {
+    "observation_count": 514,
+    "indicator_count": 4,
+    "iso2_count": 20
+  }
+}
