@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "market_daily",
-  "last_updated": "2026-07-13T15:12:32+09:00",
+  "last_updated": "2026-07-13T15:20:34+09:00",
   "source": {
     "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
     "url": "https://fred.stlouisfed.org/",
@@ -9,6 +9,7 @@
   },
   "meta": {
     "indicator_ids": [
+      "market.agsi.eu_fill_pct",
       "market.commodity.brent_usd",
       "market.commodity.copper_usd",
       "market.commodity.gold_usd",
@@ -31,14 +32,13 @@
     "rolling_days": 90,
     "daily_period_range": {
       "from": "2026-04-15",
-      "to": "2026-07-06"
+      "to": "2026-07-11"
     },
-    "daily_row_count": 722,
+    "daily_row_count": 810,
     "policy_snapshot_count": 11,
-    "raw_csv_row_count": 737,
+    "raw_csv_row_count": 825,
     "collector_notes": [
-      "retrieved_at=2026-07-13T15:12:32+09:00",
-      "AGSI_API_KEY unset → gas storage empty (register at https://agsi.gie.eu)",
+      "retrieved_at=2026-07-13T15:20:34+09:00",
       "commodities=fred"
     ],
     "series_stubs": [
@@ -51,15 +51,890 @@
         "indicator_id": "market.commodity.palm_oil_usd",
         "status": "empty",
         "note_ja": "FRED非収録。Pink Sheet月次は commodity_monthly を参照。"
-      },
-      {
-        "indicator_id": "market.agsi.eu_fill_pct",
-        "status": "empty",
-        "note_ja": "AGSI_API_KEY 未設定。https://agsi.gie.eu で無料登録 → ~/.atlas_secrets/.env"
       }
     ]
   },
   "observations_daily": [
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-15",
+      "value": 29.59,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-15",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-16",
+      "value": 29.76,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-16",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-17",
+      "value": 29.98,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-17",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-18",
+      "value": 30.26,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-18",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-19",
+      "value": 30.5,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-19",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-20",
+      "value": 30.66,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-20",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-21",
+      "value": 30.74,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-21",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-22",
+      "value": 30.86,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-22",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-23",
+      "value": 30.95,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-23",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-24",
+      "value": 31.25,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-24",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-25",
+      "value": 31.53,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-25",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-26",
+      "value": 31.8,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-26",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-27",
+      "value": 32.03,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-27",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-28",
+      "value": 32.28,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-28",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-29",
+      "value": 32.54,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-29",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-04-30",
+      "value": 32.79,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-04-30",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-01",
+      "value": 33.12,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-01",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-02",
+      "value": 33.48,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-02",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-03",
+      "value": 33.82,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-03",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-04",
+      "value": 34.09,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-04",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-05",
+      "value": 34.28,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-05",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-06",
+      "value": 34.42,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-06",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-07",
+      "value": 34.54,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-07",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-08",
+      "value": 34.78,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-08",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-09",
+      "value": 35.1,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-09",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-10",
+      "value": 35.38,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-10",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-11",
+      "value": 35.6,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-11",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-12",
+      "value": 35.75,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-12",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-13",
+      "value": 35.87,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-13",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-14",
+      "value": 36.02,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-14",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-15",
+      "value": 36.18,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-15",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-16",
+      "value": 36.38,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-16",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-17",
+      "value": 36.59,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-17",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-18",
+      "value": 36.76,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-18",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-19",
+      "value": 36.9,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-19",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-20",
+      "value": 37.02,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-20",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-21",
+      "value": 37.22,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-21",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-22",
+      "value": 37.51,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-22",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-23",
+      "value": 37.88,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-23",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-24",
+      "value": 38.26,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-24",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-25",
+      "value": 38.56,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-25",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-26",
+      "value": 38.87,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-26",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-27",
+      "value": 39.17,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-27",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-28",
+      "value": 39.46,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-28",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-29",
+      "value": 39.79,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-29",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-30",
+      "value": 40.14,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-30",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-05-31",
+      "value": 40.53,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-05-31",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-01",
+      "value": 40.81,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-01",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-02",
+      "value": 41.07,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-02",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-03",
+      "value": 41.29,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-03",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-04",
+      "value": 41.57,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-04",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-05",
+      "value": 41.84,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-05",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-06",
+      "value": 42.18,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-06",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-07",
+      "value": 42.53,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-07",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-08",
+      "value": 42.84,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-08",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-09",
+      "value": 43.14,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-09",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-10",
+      "value": 43.4,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-10",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-11",
+      "value": 43.64,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-11",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-12",
+      "value": 43.97,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-12",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-13",
+      "value": 44.4,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-13",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-14",
+      "value": 44.76,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-14",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-15",
+      "value": 45.07,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-15",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-16",
+      "value": 45.34,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-16",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-17",
+      "value": 45.6,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-17",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-18",
+      "value": 45.86,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-18",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-19",
+      "value": 46.15,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-19",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-20",
+      "value": 46.46,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-20",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-21",
+      "value": 46.76,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-21",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-22",
+      "value": 47.01,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-22",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-23",
+      "value": 47.24,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-23",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-24",
+      "value": 47.46,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-24",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-25",
+      "value": 47.73,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-25",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-26",
+      "value": 48.02,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-26",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-27",
+      "value": 48.35,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-27",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-28",
+      "value": 48.67,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-28",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-29",
+      "value": 48.9,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-29",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-06-30",
+      "value": 49.12,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-06-30",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-01",
+      "value": 49.28,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-01",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-02",
+      "value": 49.52,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-02",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-03",
+      "value": 49.78,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-03",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-04",
+      "value": 50.11,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-04",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-05",
+      "value": 50.41,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-05",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-06",
+      "value": 50.67,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-06",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-07",
+      "value": 50.93,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-07",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-08",
+      "value": 51.1,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-08",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-09",
+      "value": 51.3,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-09",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-10",
+      "value": 51.51,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-10",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
+    {
+      "indicator_id": "market.agsi.eu_fill_pct",
+      "geo": "EMU",
+      "period": "2026-07-11",
+      "value": 51.84,
+      "unit": "%",
+      "source_ref": "AGSI:EU:2026-07-11",
+      "veritas": "✅",
+      "frequency": "daily"
+    },
     {
       "indicator_id": "market.commodity.brent_usd",
       "geo": "WL",
