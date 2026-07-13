@@ -642,12 +642,47 @@ sources:
     frequency: annual
     grain_axes: [time]
     how_to_fetch:
-      - "1. AREAER Online で法域×規制カテゴリを照会"
-      - "2. まず送金・資本取引の主要12カテゴリをフラグ化"
-      - "3. country_profile に還流可否レイヤー（REQ-010）"
+      - "1. 12資本規制フラグは curated static（SPA/CFで一次スクレイプ不可）"
+      - "2. 代替一次化: Chinn-Ito KAOPEN（AREAER由来・自動）→ biz.capital_openness.kaopen"
+      - "3. 補完: IRR coarse 為替レジーム（自動）→ fx.exchange_regime.irr_coarse"
+      - "4. country_profile.regulation に flags + kaopen + irr を併記"
     layer: annual
-    status: planned
-    notes_ja: 「稼いだ金を戻せるか」の本命ソース。
+    status: curated_with_proxy
+    collector: tools/collectors/collect_annual_indices.py
+    feed: country_profile.json
+    notes_ja: "2026-07-13: KAOPEN/IRR で一次化可能な軸を自動化。12フラグ本体は curated 継続。"
+
+  - id: chinn_ito_kaopen
+    name: Chinn-Ito KAOPEN capital openness
+    url: https://web.pdx.edu/~ito/Chinn-Ito_website.htm
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. https://web.pdx.edu/~ito/kaopen_2023.xls を DL"
+      - "2. collect_annual_indices.py handler=kaopen_chinn_ito"
+      - "3. ka_open（0–1）を indices_annual / country_profile へ"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_annual_indices.py
+    feed: timeseries/indices_annual.json
+
+  - id: irr_exchange_regime
+    name: Ilzetzki-Reinhart-Rogoff exchange regime classification
+    url: https://www.ilzetzki.com/irr-data
+    api: none
+    free_paid: free
+    frequency: annual
+    grain_axes: [time]
+    how_to_fetch:
+      - "1. ERA Classification Monthly Excel を DL"
+      - "2. Coarse シートの年末値を Phase1 国へマップ"
+      - "3. fx.exchange_regime.irr_coarse"
+    layer: annual
+    status: implemented
+    collector: tools/collectors/collect_annual_indices.py
+    feed: timeseries/indices_annual.json
 
   - id: imf_portwatch
     name: IMF PortWatch
@@ -741,7 +776,7 @@ sources:
     layer: annual
     status: implemented_partial
     collector: tools/collectors/collect_meti_affiliates_margin.py
-    notes_ja: "2026-07-13: US/CN/HK の利益率✅。経常利益表は国粒度が粗く ASEAN 各国は非収録。"
+    notes_ja: "2026-07-13: US/CN/HK ＋ 地域アグリゲート12本（ASEAN10等）。ASEAN各国列は経常利益表に無し。"
 
   - id: jetro_survey
     name: JETRO Survey on Japanese-Affiliated Companies Abroad

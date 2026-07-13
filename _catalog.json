@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T20:51:29+09:00",
+  "last_updated": "2026-07-13T21:22:56+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -7810,660 +7810,6 @@
       "feed": "timeseries/indices_monthly.json"
     },
     {
-      "indicator_id": "risk.gpi.score",
-      "wb_code": null,
-      "name_ja": "世界平和度指数（GPI）",
-      "name_en": "Global Peace Index",
-      "unit": "score_1_5",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": false,
-      "phase": "6h",
-      "description_ja": "Vision of Humanity公式CSV優先（GPI_YYYY_YYYY.csv）。GPI_XLSX_PATH / Wikipediaはフォールバック。",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2023,
-        "to": 2025
-      },
-      "source": {
-        "label": "IEP Global Peace Index (via Wikipedia)",
-        "url": "https://www.economicsandpeace.org/global-peace-index/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "risk.inform.score",
-      "wb_code": null,
-      "name_ja": "INFORM Risk Index",
-      "name_en": "INFORM Risk Index",
-      "unit": "score_0_10",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": false,
-      "phase": "6h",
-      "description_ja": "CC BY 4.0 相当・HDX inform_risk_index_trends.csv",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2016,
-        "to": 2025
-      },
-      "source": {
-        "label": "EU JRC INFORM Risk (via HDX)",
-        "url": "https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Results-and-data"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "tax.corporate_rate.pct",
-      "wb_code": null,
-      "name_ja": "法定実効法人税率",
-      "name_en": "Corporate tax rate",
-      "unit": "%",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "Tax Foundation GitHub final_data_long.csv（corp）。VATはWikipedia⚠️。TAX_FOUNDATION_XLSX_PATHはフォールバック。",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2000,
-        "to": 2023
-      },
-      "source": {
-        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
-        "url": "https://taxfoundation.org/research/all/global/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "tax.vat_rate.pct",
-      "wb_code": null,
-      "name_ja": "VAT/GST税率",
-      "name_en": "VAT rate",
-      "unit": "%",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "同上",
-      "available_iso2": [
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2024,
-        "to": 2024
-      },
-      "source": {
-        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
-        "url": "https://taxfoundation.org/research/all/global/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "biz.fdi_restrictiveness.index",
-      "wb_code": null,
-      "name_ja": "OECD FDI規制制限指数",
-      "name_en": "OECD FDI STRI",
-      "unit": "index_0_1",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": false,
-      "phase": "6h",
-      "description_ja": "Public SDMX DF_FDIRRI_SCORES (._T._T.RR.IX). STRI_XLSX_PATH はフォールバックのみ",
-      "available_iso2": [
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2018,
-        "to": 2023
-      },
-      "source": {
-        "label": "OECD FDI Regulatory Restrictiveness Index",
-        "url": "https://www.oecd.org/en/data/indicators/fdi-restrictiveness.html"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "env.co2_pc",
-      "wb_code": null,
-      "name_ja": "CO2排出原単位（EDGAR）",
-      "name_en": "CO2 per capita (EDGAR)",
-      "unit": "t_per_capita",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "CC BY",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2000,
-        "to": 2024
-      },
-      "source": {
-        "label": "EDGAR via Our World in Data",
-        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "env.co2_total.mt",
-      "wb_code": null,
-      "name_ja": "CO2総排出（EDGAR）",
-      "name_en": "CO2 total emissions (EDGAR)",
-      "unit": "Mt",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "CC BY",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2000,
-        "to": 2024
-      },
-      "source": {
-        "label": "EDGAR via Our World in Data",
-        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "risk.ndgain.score",
-      "wb_code": null,
-      "name_ja": "ND-GAIN気候適応指数",
-      "name_en": "ND-GAIN Country Index",
-      "unit": "score_0_100",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "Creative Commons — resources zip gain.csv",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2000,
-        "to": 2023
-      },
-      "source": {
-        "label": "Notre Dame Global Adaptation Initiative (ND-GAIN)",
-        "url": "https://gain.nd.edu/our-work/country-index/download-data/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "env.epi.score",
-      "wb_code": null,
-      "name_ja": "環境パフォーマンス指数（EPI）",
-      "name_en": "Environmental Performance Index",
-      "unit": "score_0_100",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "epi2024results.csv EPI.new",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2014,
-        "to": 2024
-      },
-      "source": {
-        "label": "Yale Environmental Performance Index",
-        "url": "https://epi.yale.edu/epi-downloads"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "biz.economic_freedom.score",
-      "wb_code": null,
-      "name_ja": "経済自由度指数",
-      "name_en": "Index of Economic Freedom",
-      "unit": "score_0_100",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "公式403のため indexdotnet.azurewebsites.net の年次Excel（2015–2023）を使用。2024+はミラー未着。",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2015,
-        "to": 2023
-      },
-      "source": {
-        "label": "Heritage Index of Economic Freedom (indexdotnet mirror)",
-        "url": "https://www.heritage.org/index/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "gov.gci.tier",
-      "wb_code": null,
-      "name_ja": "サイバーセキュリティ指数（GCI Tier）",
-      "name_en": "Global Cybersecurity Index (tier)",
-      "unit": "tier_1_5",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "GCI 2024は順位でなくTier（1=Role-modelling … 5=Building）。公式PDF Annexから抽出。",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2024,
-        "to": 2024
-      },
-      "source": {
-        "label": "ITU Global Cybersecurity Index 2024 (tier)",
-        "url": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "human.ef_epi.score",
-      "wb_code": null,
-      "name_ja": "EF英語能力指数",
-      "name_en": "EF English Proficiency Index",
-      "unit": "score",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "Wikipedia表フォールバック",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CN",
-        "DE",
-        "FR",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "TH",
-        "TR",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2024,
-        "to": 2024
-      },
-      "source": {
-        "label": "EF English Proficiency Index (via Wikipedia)",
-        "url": "https://www.ef.com/wwen/epi/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "society.gender_gap.index",
-      "wb_code": null,
-      "name_ja": "ジェンダーギャップ指数",
-      "name_en": "Global Gender Gap Index",
-      "unit": "index_0_1",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "公式Excel 504のためWikipedia履歴表",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2006,
-        "to": 2025
-      },
-      "source": {
-        "label": "WEF Global Gender Gap (via Wikipedia)",
-        "url": "https://www.weforum.org/publications/global-gender-gap-report-2025/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "env.carbon_price.usd",
-      "wb_code": null,
-      "name_ja": "炭素価格（代表値USD/t）",
-      "name_en": "Carbon price (USD/tCO2 approx)",
-      "unit": "USD_per_tCO2",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "Dashboard API 403のため Phase1 静的YAML。activeフラグも同梱",
-      "available_iso2": [
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "JP",
-        "KR",
-        "SG",
-        "TW"
-      ],
-      "period_range": {
-        "from": 2025,
-        "to": 2025
-      },
-      "source": {
-        "label": "World Bank Carbon Pricing (curated static)",
-        "url": "https://carbonpricingdashboard.worldbank.org/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
-      "indicator_id": "gov.egdi.score",
-      "wb_code": null,
-      "name_ja": "電子政府発展指数（EGDI）",
-      "name_en": "E-Government Development Index",
-      "unit": "index_0_1",
-      "category": "年次指数",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "phase": "6h",
-      "description_ja": "QoG qog_std_ts（UN DESA原典）。UNサイト直DL不通時の代替",
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "period_range": {
-        "from": 2002,
-        "to": 2021
-      },
-      "source": {
-        "label": "UN EGDI via QoG Standard Time-Series",
-        "url": "https://publicadministration.un.org/egovkb/"
-      },
-      "feed": "timeseries/indices_annual.json"
-    },
-    {
       "indicator_id": "infra.ppi.investment_usd_mn",
       "name_ja": "PPPインフラ民間投資（PPI・百万USD）",
       "name_en": "PPI private infrastructure investment (USD mn)",
@@ -8707,11 +8053,21 @@
         "NO",
         "RU",
         "US",
-        "WL"
+        "WL",
+        "XA",
+        "XE",
+        "XEE",
+        "XEW",
+        "XF",
+        "XG",
+        "XO",
+        "XP",
+        "XS",
+        "XU"
       ],
       "period_range": {
-        "from": "2023",
-        "to": "2024"
+        "from": "2015-01",
+        "to": "2026-05"
       },
       "source": {
         "label": "USGS MCS / International Aluminium Institute",
@@ -9212,6 +8568,1782 @@
         "url": "https://ember-energy.org/data/yearly-electricity-data/"
       },
       "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "wb_code": null,
+      "name_ja": "世界平和度指数（GPI）",
+      "name_en": "Global Peace Index",
+      "unit": "score_1_5",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "Vision of Humanity公式CSV優先（GPI_YYYY_YYYY.csv）。GPI_XLSX_PATH / Wikipediaはフォールバック。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2023,
+        "to": 2025
+      },
+      "source": {
+        "label": "IEP Global Peace Index (via Wikipedia)",
+        "url": "https://www.economicsandpeace.org/global-peace-index/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "risk.inform.score",
+      "wb_code": null,
+      "name_ja": "INFORM Risk Index",
+      "name_en": "INFORM Risk Index",
+      "unit": "score_0_10",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "CC BY 4.0 相当・HDX inform_risk_index_trends.csv",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2016,
+        "to": 2025
+      },
+      "source": {
+        "label": "EU JRC INFORM Risk (via HDX)",
+        "url": "https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Results-and-data"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "wb_code": null,
+      "name_ja": "法定実効法人税率",
+      "name_en": "Corporate tax rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Tax Foundation GitHub final_data_long.csv（corp）。VATはWikipedia⚠️。TAX_FOUNDATION_XLSX_PATHはフォールバック。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.vat_rate.pct",
+      "wb_code": null,
+      "name_ja": "VAT/GST税率",
+      "name_en": "VAT rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "同上",
+      "available_iso2": [
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "wb_code": null,
+      "name_ja": "OECD FDI規制制限指数",
+      "name_en": "OECD FDI STRI",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "Public SDMX DF_FDIRRI_SCORES (._T._T.RR.IX). STRI_XLSX_PATH はフォールバックのみ",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2018,
+        "to": 2023
+      },
+      "source": {
+        "label": "OECD FDI Regulatory Restrictiveness Index",
+        "url": "https://www.oecd.org/en/data/indicators/fdi-restrictiveness.html"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_pc",
+      "wb_code": null,
+      "name_ja": "CO2排出原単位（EDGAR）",
+      "name_en": "CO2 per capita (EDGAR)",
+      "unit": "t_per_capita",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_total.mt",
+      "wb_code": null,
+      "name_ja": "CO2総排出（EDGAR）",
+      "name_en": "CO2 total emissions (EDGAR)",
+      "unit": "Mt",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "wb_code": null,
+      "name_ja": "ND-GAIN気候適応指数",
+      "name_en": "ND-GAIN Country Index",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Creative Commons — resources zip gain.csv",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Notre Dame Global Adaptation Initiative (ND-GAIN)",
+        "url": "https://gain.nd.edu/our-work/country-index/download-data/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "wb_code": null,
+      "name_ja": "環境パフォーマンス指数（EPI）",
+      "name_en": "Environmental Performance Index",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "epi2024results.csv EPI.new",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2014,
+        "to": 2024
+      },
+      "source": {
+        "label": "Yale Environmental Performance Index",
+        "url": "https://epi.yale.edu/epi-downloads"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "biz.economic_freedom.score",
+      "wb_code": null,
+      "name_ja": "経済自由度指数",
+      "name_en": "Index of Economic Freedom",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "公式403のため indexdotnet Excel（2015–2023）＋不足年はWikipedia表⚠️",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2015,
+        "to": 2023
+      },
+      "source": {
+        "label": "Heritage Index of Economic Freedom (indexdotnet mirror)",
+        "url": "https://www.heritage.org/index/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "biz.capital_openness.kaopen",
+      "wb_code": null,
+      "name_ja": "資本取引開放度（KAOPEN）",
+      "name_en": "Chinn-Ito capital openness (KAOPEN)",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "IMF AREAER の資本規制ダミーを指数化。ka_open（0–1正規化）。2023まで。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Chinn-Ito KAOPEN (AREAER-based)",
+        "url": "https://web.pdx.edu/~ito/Chinn-Ito_website.htm"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "fx.exchange_regime.irr_coarse",
+      "wb_code": null,
+      "name_ja": "事実上の為替レジーム（IRR粗分類）",
+      "name_en": "IRR coarse de facto exchange regime",
+      "unit": "code_1_6",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "月次 Coarse 分類の年末値。AREAER資本規制フラグとは別（為替レジーム）。〜2019。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2019
+      },
+      "source": {
+        "label": "Ilzetzki-Reinhart-Rogoff coarse exchange regime",
+        "url": "https://www.ilzetzki.com/irr-data"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "gov.gci.tier",
+      "wb_code": null,
+      "name_ja": "サイバーセキュリティ指数（GCI Tier）",
+      "name_en": "Global Cybersecurity Index (tier)",
+      "unit": "tier_1_5",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "GCI 2024は順位でなくTier（1=Role-modelling … 5=Building）。公式PDF Annexから抽出。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "ITU Global Cybersecurity Index 2024 (tier)",
+        "url": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "wb_code": null,
+      "name_ja": "EF英語能力指数",
+      "name_en": "EF English Proficiency Index",
+      "unit": "score",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Wikipedia表フォールバック",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CN",
+        "DE",
+        "FR",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "EF English Proficiency Index (via Wikipedia)",
+        "url": "https://www.ef.com/wwen/epi/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "wb_code": null,
+      "name_ja": "ジェンダーギャップ指数",
+      "name_en": "Global Gender Gap Index",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "公式Excel 504のためWikipedia履歴表",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2006,
+        "to": 2025
+      },
+      "source": {
+        "label": "WEF Global Gender Gap (via Wikipedia)",
+        "url": "https://www.weforum.org/publications/global-gender-gap-report-2025/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "wb_code": null,
+      "name_ja": "炭素価格（代表値USD/t）",
+      "name_en": "Carbon price (USD/tCO2 approx)",
+      "unit": "USD_per_tCO2",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Dashboard API 403のため Phase1 静的YAML。activeフラグも同梱",
+      "available_iso2": [
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "JP",
+        "KR",
+        "SG",
+        "TW"
+      ],
+      "period_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank Carbon Pricing (curated static)",
+        "url": "https://carbonpricingdashboard.worldbank.org/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "wb_code": null,
+      "name_ja": "電子政府発展指数（EGDI）",
+      "name_en": "E-Government Development Index",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "QoG qog_std_ts（UN DESA原典）。UNサイト直DL不通時の代替",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2002,
+        "to": 2021
+      },
+      "source": {
+        "label": "UN EGDI via QoG Standard Time-Series",
+        "url": "https://publicadministration.un.org/egovkb/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "profile.fatf_status",
+      "name_ja": "FATFステータス",
+      "name_en": "FATF status",
+      "unit": "enum",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.japan_epa",
+      "name_ja": "対日EPA有無",
+      "name_en": "Japan EPA flag",
+      "unit": "boolean",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.japan_tax_treaty",
+      "name_ja": "対日租税条約",
+      "name_en": "Japan tax treaty",
+      "unit": "boolean",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.japan_visa_free",
+      "name_ja": "日本人査証免除",
+      "name_en": "Japan visa-free",
+      "unit": "boolean",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.mofa_risk_level",
+      "name_ja": "外務省危険情報",
+      "name_en": "MOFA risk level",
+      "unit": "1-4",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.timezone_offset_jst",
+      "name_ja": "時差（対JST）",
+      "name_en": "Timezone offset vs JST",
+      "unit": "hours",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.language_business",
+      "name_ja": "ビジネス通用言語",
+      "name_en": "Business language",
+      "unit": "text",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.msci_classification",
+      "name_ja": "MSCI市場分類",
+      "name_en": "MSCI classification",
+      "unit": "enum",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile attributes（P1-I）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile_static",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.current_account_restrictions",
+      "name_ja": "AREAER規制フラグ:current_account_restrictions",
+      "name_en": "AREAER regulation flag:current_account_restrictions",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.dividend_repatriation",
+      "name_ja": "AREAER規制フラグ:dividend_repatriation",
+      "name_en": "AREAER regulation flag:dividend_repatriation",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.capital_fdi",
+      "name_ja": "AREAER規制フラグ:capital_fdi",
+      "name_en": "AREAER regulation flag:capital_fdi",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.capital_real_estate",
+      "name_ja": "AREAER規制フラグ:capital_real_estate",
+      "name_en": "AREAER regulation flag:capital_real_estate",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.capital_securities",
+      "name_ja": "AREAER規制フラグ:capital_securities",
+      "name_en": "AREAER regulation flag:capital_securities",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.multiple_exchange_rates",
+      "name_ja": "AREAER規制フラグ:multiple_exchange_rates",
+      "name_en": "AREAER regulation flag:multiple_exchange_rates",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.export_proceeds_surrender",
+      "name_ja": "AREAER規制フラグ:export_proceeds_surrender",
+      "name_en": "AREAER regulation flag:export_proceeds_surrender",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.capital_outward",
+      "name_ja": "AREAER規制フラグ:capital_outward",
+      "name_en": "AREAER regulation flag:capital_outward",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.money_market_instruments",
+      "name_ja": "AREAER規制フラグ:money_market_instruments",
+      "name_en": "AREAER regulation flag:money_market_instruments",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.liquidating_proceeds",
+      "name_ja": "AREAER規制フラグ:liquidating_proceeds",
+      "name_en": "AREAER regulation flag:liquidating_proceeds",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.guarantees_financial_backup",
+      "name_ja": "AREAER規制フラグ:guarantees_financial_backup",
+      "name_en": "AREAER regulation flag:guarantees_financial_backup",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.regulation.personal_capital_movements",
+      "name_ja": "AREAER規制フラグ:personal_capital_movements",
+      "name_en": "AREAER regulation flag:personal_capital_movements",
+      "unit": "boolean",
+      "category": "規制・送金",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "IMF AREAER由来の国別規制フラグ（curated static ⚠️）",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "year_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "IMF AREAER Online (curated)",
+        "url": "https://www.elibrary-areaer.imf.org/"
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.oecd_crc",
+      "name_ja": "OECDカントリーリスク分類",
+      "name_en": "OECD country risk classification",
+      "unit": "0-7",
+      "category": "国プロファイル",
+      "frequencies": [
+        "semi_annual"
+      ],
+      "description_ja": "country_profile.json 属性",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.nexi_category",
+      "name_ja": "NEXI国カテゴリー",
+      "name_en": "NEXI country/region category",
+      "unit": "A-H",
+      "category": "国プロファイル",
+      "frequencies": [
+        "semi_annual"
+      ],
+      "description_ja": "country_profile.json 属性",
+      "phase": "1",
+      "priority": "must",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.iia_japan_bit",
+      "name_ja": "対日BIT/IIA有無（stub）",
+      "name_en": "Japan BIT/IIA flag (stub)",
+      "unit": "boolean",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile.json 属性",
+      "phase": "1",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile",
+        "url": ""
+      },
+      "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "profile.social_security_employer_rate_pct",
+      "name_ja": "社会保険雇用主負担率（stub）",
+      "name_en": "Social security employer rate (stub)",
+      "unit": "%",
+      "category": "国プロファイル",
+      "frequencies": [
+        "annual"
+      ],
+      "description_ja": "country_profile.json 属性",
+      "phase": "1",
+      "priority": "should",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source": {
+        "label": "country_profile",
+        "url": ""
+      },
+      "feed_id": "country_profile"
     }
   ],
   "countries": [

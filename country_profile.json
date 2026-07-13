@@ -1,11 +1,11 @@
 {
   "schema_version": "0.2.0",
   "feed_id": "country_profile",
-  "last_updated": "2026-07-13T11:23:35+09:00",
+  "last_updated": "2026-07-13T21:22:56+09:00",
   "source": {
     "label": "P1-I static + IMF AREAER (curated) + OECD CRC + NEXI Category",
     "url": "https://www.elibrary-areaer.imf.org/",
-    "disclaimer_ja": "P1-I attributes（fatf/epa等）⚠️静的。AREAER規制フラグ⚠️ curated。OECD CRC / NEXI ✅公式表（semi-annual manual refresh）。iia_japan_bit / social_security_employer_rate_pct は stub null。"
+    "disclaimer_ja": "P1-I attributes（fatf/epa等）⚠️静的。AREAER規制フラグ⚠️ curated。資本開放度 KAOPEN ✅（Chinn-Ito／AREAER由来）。為替レジーム IRR coarse ✅（〜2019年末）。OECD CRC / NEXI ✅公式表（semi-annual manual refresh）。iia_japan_bit / social_security_employer_rate_pct は stub null。"
   },
   "meta": {
     "iso2_list": [
@@ -59,7 +59,7 @@
     ],
     "update_cadence": {
       "p1i_attributes": "annual manual",
-      "areaer": "annual manual (upgrade to scrape later)",
+      "areaer": "annual curated flags + auto KAOPEN/IRR companions",
       "oecd_crc": "semi-annual manual refresh",
       "nexi_category": "semi-annual manual refresh"
     }
@@ -141,6 +141,22 @@
           "liquidating_proceeds": true,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.4181329607963562,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 2.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -250,6 +266,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.4181329607963562,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 3.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -359,6 +391,22 @@
           "liquidating_proceeds": true,
           "guarantees_financial_backup": true,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.1624319851398468,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -468,6 +516,22 @@
           "liquidating_proceeds": true,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.1624319851398468,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 3.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -577,6 +641,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.4181329607963562,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 2.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -686,6 +766,22 @@
           "liquidating_proceeds": true,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.44600480794906616,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 2.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -795,6 +891,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.4181329607963562,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 3.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -904,6 +1016,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1013,6 +1141,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 3.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1121,6 +1265,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1229,6 +1389,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1337,6 +1513,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.701705813407898,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1445,6 +1637,22 @@
           "liquidating_proceeds": true,
           "guarantees_financial_backup": true,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.1624319851398468,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 5.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1554,6 +1762,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 4.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1663,6 +1887,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1772,6 +2012,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 1.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1880,6 +2136,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 4.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -1989,6 +2261,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 4.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -2097,6 +2385,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": true
+        },
+        "capital_openness_kaopen": {
+          "value": 0.1624319851398468,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 3.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
@@ -2205,6 +2509,22 @@
           "liquidating_proceeds": false,
           "guarantees_financial_backup": false,
           "personal_capital_movements": false
+        },
+        "capital_openness_kaopen": {
+          "value": 1.0,
+          "year": 2023,
+          "unit": "index_0_1",
+          "veritas": "✅",
+          "source_ref": "Chinn-Ito:kaopen_2023.xls:ka_open",
+          "note": "Chinn-Ito KAOPEN（AREAER由来・資本取引開放度）。flags は curated 補完。"
+        },
+        "exchange_regime_irr_coarse": {
+          "value": 4.0,
+          "year": 2019,
+          "unit": "code_1_6",
+          "veritas": "✅",
+          "source_ref": "IRR:ERA_Classification_Monthly:Coarse:year_end",
+          "note": "IRR coarse de facto regime（1 peg … 6 dual/missing）。資本規制フラグとは別軸。"
         }
       },
       "oecd_crc": {
