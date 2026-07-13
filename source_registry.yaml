@@ -539,18 +539,20 @@ sources:
   - id: iai_aluminium
     name: International Aluminium Institute
     url: https://international-aluminium.org/statistics/primary-aluminium-production/
-    api: https://alvis.international-aluminium.org/api
+    api: https://alvis.international-aluminium.org/api/publication/?publication=primary-aluminium-production
     free_paid: free
     frequency: monthly
     grain_axes: [time, industry, spatial]
     how_to_fetch:
-      - "1. ALVIS /publications は X-Auth-Token で到達（ページ埋め込みトークン）"
-      - "2. データ系列 API パスは未特定 → 当面 IAI_ALUMINIUM_CSV_PATH"
-      - "3. 国別年次は USGS MCS で代替（collect_usgs_aluminium.py）"
-    layer: annual
-    status: deferred_proxy_active
+      - "1. 統計ページ HTML から window.ALVIS_API_TOKEN を取得"
+      - "2. GET /api/publication/?publication=primary-aluminium-production（Header: X-AUTH-TOKEN）"
+      - "3. charts.data[] の period.from + columns を地域 geo にマップ"
+      - "4. collect_iai_aluminium.py（手動CSVフォールバック可）"
+    layer: always
+    status: implemented
     collector: tools/collectors/collect_iai_aluminium.py
-    notes_ja: "2026-07-13: USGS MCS 年次を industry_physical に自動投入。IAI 月次は手動CSV。"
+    feed: timeseries/industry_physical.json
+    notes_ja: "2026-07-13: ALVIS 月次地域自動取得成功（2015-01〜）。USGS MCS 年次国別は並行維持。"
 
   - id: usgs_aluminium_mcs
     name: USGS Mineral Commodity Summaries — Aluminum

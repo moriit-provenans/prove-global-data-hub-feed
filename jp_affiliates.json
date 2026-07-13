@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-07-13T20:51:29+09:00",
+  "last_updated": "2026-07-13T21:07:24+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -124,10 +124,99 @@
       "file=jp_affiliates_2024_detail.xlsx"
     ],
     "ingest_mode": "excel_file_semi_auto",
-    "note_ja": "count（企業数）は参考表。profit_margin_pct は ②－１３売上高 / ②－１７経常利益 から算出（第55回・2024年度実績）。経常利益表は国粒度が粗く US/CN/HK ＋ ASEAN10 アグリゲート（iso2なし・meta.regional）を収録。",
+    "note_ja": "count（企業数）は参考表。profit_margin_pct は ②－１３売上高 / ②－１７経常利益 から算出（第55回・2024年度実績）。経常利益表は国粒度が粗く US/CN/HK ＋ 地域アグリゲート（ASEAN10・北米・中南米・アジア・EU 等）を meta.regional_aggregates に収録。ASEAN各国列は経常利益表に無し。",
     "regional_aggregates": [
       {
+        "region_id": "World",
+        "geo": "WL",
+        "year": 2024,
+        "profit_margin_pct": 4.7439,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "NorthAmerica",
+        "geo": "XA",
+        "year": 2024,
+        "profit_margin_pct": 3.2807,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "ChinaInclHK",
+        "geo": "XCN",
+        "year": 2024,
+        "profit_margin_pct": 4.5118,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "Europe",
+        "geo": "XE",
+        "year": 2024,
+        "profit_margin_pct": 4.4483,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "EU",
+        "geo": "XEU",
+        "year": 2024,
+        "profit_margin_pct": 4.1691,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "Africa",
+        "geo": "XF",
+        "year": 2024,
+        "profit_margin_pct": 2.4348,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "MiddleEast",
+        "geo": "XME",
+        "year": 2024,
+        "profit_margin_pct": 8.9875,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "Oceania",
+        "geo": "XO",
+        "year": 2024,
+        "profit_margin_pct": 13.4948,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "OtherAsia",
+        "geo": "XOA",
+        "year": 2024,
+        "profit_margin_pct": 7.9095,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "Asia",
+        "geo": "XP",
+        "year": 2024,
+        "profit_margin_pct": 5.4289,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
+        "region_id": "LatinAmerica",
+        "geo": "XS",
+        "year": 2024,
+        "profit_margin_pct": 5.3829,
+        "source_ref": "e-Stat:statInfId=000040458706",
+        "veritas": "✅"
+      },
+      {
         "region_id": "ASEAN10",
+        "geo": "XSE",
         "year": 2024,
         "profit_margin_pct": 5.2731,
         "source_ref": "e-Stat:statInfId=000040458706",
@@ -140,7 +229,7 @@
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-07-13T20:51:29+09:00",
+      "last_updated": "2026-07-13T21:07:24+09:00",
       "source": {
         "label": "METI 海外事業活動基本調査（第54–55回）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
@@ -199,7 +288,7 @@
               "year": 2024,
               "count": null,
               "sales_jpy": null,
-              "profit_margin_pct": 4.5118,
+              "profit_margin_pct": 4.4861,
               "unit_count": "companies",
               "metric_ids": [
                 "japan.affiliates_profit_margin.pct"
