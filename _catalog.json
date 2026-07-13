@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T11:42:11+09:00",
+  "last_updated": "2026-07-13T15:12:32+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。energy_ssr_annual（OWID燃料別自給率・REQ-007 P1-L）を追加。 agri_psd_monthly（USDA PSD・REQ-009）を追加。",
   "indicators": [
@@ -13607,7 +13607,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13628,10 +13628,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "EM"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-04-15",
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13652,12 +13654,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "EM"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13678,10 +13678,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "GB"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-04-15",
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13702,12 +13704,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "GB"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13733,7 +13733,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13759,7 +13759,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13785,7 +13785,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13811,7 +13811,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13837,7 +13837,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13863,7 +13863,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13889,7 +13889,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13915,7 +13915,7 @@
       ],
       "period_range": {
         "from": "2026-04-15",
-        "to": "2026-07-10"
+        "to": "2026-07-02"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13936,12 +13936,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "ID"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13962,12 +13960,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "PH"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -13988,12 +13984,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "TU"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14014,12 +14008,10 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": [
-        "HK"
-      ],
+      "available_iso2": null,
       "period_range": {
-        "from": "2026-04-15",
-        "to": "2026-07-10"
+        "from": null,
+        "to": null
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14040,10 +14032,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-04-15",
+        "to": "2026-07-06"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14064,10 +14058,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-04-15",
+        "to": "2026-07-06"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14088,10 +14084,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-05-01",
+        "to": "2026-05-01"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14112,10 +14110,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-05-01",
+        "to": "2026-05-01"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14160,10 +14160,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-05-01",
+        "to": "2026-05-01"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
@@ -14208,10 +14210,12 @@
       "higher_is_better": null,
       "phase": "8r",
       "description_ja": "日次は直近90日ローリング。FRED_API_KEY未設定時は為替をFrankfurter、コモディティは空系列。AGSIはAGSI_API_KEY必須。政策金利はBIS月次最終値スナップショット。",
-      "available_iso2": null,
+      "available_iso2": [
+        "WL"
+      ],
       "period_range": {
-        "from": null,
-        "to": null
+        "from": "2026-05-01",
+        "to": "2026-05-01"
       },
       "source": {
         "label": "FRED / Frankfurter(ECB) / AGSI / BIS CBPOL snapshot",
