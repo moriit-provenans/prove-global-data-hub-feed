@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T16:14:24+09:00",
+  "last_updated": "2026-07-13T16:39:17+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -7808,6 +7808,448 @@
         "disclaimer_ja": "公開Excel直取得✅。国カバレッジはソース提供範囲に依存（Phase1外は除外）。"
       },
       "feed": "timeseries/indices_monthly.json"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "wb_code": null,
+      "name_ja": "世界平和度指数（GPI）",
+      "name_en": "Global Peace Index",
+      "unit": "score_1_5",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "Vision of Humanity公式CSV優先（GPI_YYYY_YYYY.csv）。GPI_XLSX_PATH / Wikipediaはフォールバック。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2023,
+        "to": 2025
+      },
+      "source": {
+        "label": "IEP Global Peace Index (via Wikipedia)",
+        "url": "https://www.economicsandpeace.org/global-peace-index/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "risk.inform.score",
+      "wb_code": null,
+      "name_ja": "INFORM Risk Index",
+      "name_en": "INFORM Risk Index",
+      "unit": "score_0_10",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "CC BY 4.0 相当・HDX inform_risk_index_trends.csv",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2016,
+        "to": 2025
+      },
+      "source": {
+        "label": "EU JRC INFORM Risk (via HDX)",
+        "url": "https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Results-and-data"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "wb_code": null,
+      "name_ja": "法定実効法人税率",
+      "name_en": "Corporate tax rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Tax Foundation GitHub final_data_long.csv（corp）。VATはWikipedia⚠️。TAX_FOUNDATION_XLSX_PATHはフォールバック。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.vat_rate.pct",
+      "wb_code": null,
+      "name_ja": "VAT/GST税率",
+      "name_en": "VAT rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "同上",
+      "available_iso2": [
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "biz.fdi_restrictiveness.index",
+      "wb_code": null,
+      "name_ja": "OECD FDI規制制限指数",
+      "name_en": "OECD FDI STRI",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "Public SDMX DF_FDIRRI_SCORES (._T._T.RR.IX). STRI_XLSX_PATH はフォールバックのみ",
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2018,
+        "to": 2023
+      },
+      "source": {
+        "label": "OECD FDI Regulatory Restrictiveness Index",
+        "url": "https://www.oecd.org/en/data/indicators/fdi-restrictiveness.html"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_pc",
+      "wb_code": null,
+      "name_ja": "CO2排出原単位（EDGAR）",
+      "name_en": "CO2 per capita (EDGAR)",
+      "unit": "t_per_capita",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_total.mt",
+      "wb_code": null,
+      "name_ja": "CO2総排出（EDGAR）",
+      "name_en": "CO2 total emissions (EDGAR)",
+      "unit": "Mt",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "wb_code": null,
+      "name_ja": "ND-GAIN気候適応指数",
+      "name_en": "ND-GAIN Country Index",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Creative Commons — resources zip gain.csv",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2023
+      },
+      "source": {
+        "label": "Notre Dame Global Adaptation Initiative (ND-GAIN)",
+        "url": "https://gain.nd.edu/our-work/country-index/download-data/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "wb_code": null,
+      "name_ja": "環境パフォーマンス指数（EPI）",
+      "name_en": "Environmental Performance Index",
+      "unit": "score_0_100",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "epi2024results.csv EPI.new",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2014,
+        "to": 2024
+      },
+      "source": {
+        "label": "Yale Environmental Performance Index",
+        "url": "https://epi.yale.edu/epi-downloads"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "wb_code": null,
+      "name_ja": "EF英語能力指数",
+      "name_en": "EF English Proficiency Index",
+      "unit": "score",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Wikipedia表フォールバック",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CN",
+        "DE",
+        "FR",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "EF English Proficiency Index (via Wikipedia)",
+        "url": "https://www.ef.com/wwen/epi/"
+      },
+      "feed": "timeseries/indices_annual.json"
     }
   ],
   "countries": [

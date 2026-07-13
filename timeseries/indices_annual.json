@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T16:06:46+09:00",
+  "last_updated": "2026-07-13T16:39:16+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
@@ -13,8 +13,11 @@
       "biz.fdi_restrictiveness.index",
       "env.co2_pc",
       "env.co2_total.mt",
+      "env.epi.score",
+      "human.ef_epi.score",
       "risk.gpi.score",
       "risk.inform.score",
+      "risk.ndgain.score",
       "tax.corporate_rate.pct",
       "tax.vat_rate.pct"
     ],
@@ -45,7 +48,7 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 1873
+    "row_count": 2385
   },
   "observations": [
     {
@@ -10147,6 +10150,510 @@
       "veritas": "✅"
     },
     {
+      "indicator_id": "env.epi.score",
+      "iso2": "AE",
+      "year": 2014,
+      "value": 42.5,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "AE",
+      "year": 2024,
+      "value": 51.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 46.3,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 53.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "CA",
+      "year": 2014,
+      "value": 57.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "CA",
+      "year": 2024,
+      "value": 61.1,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 29.8,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 35.4,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "DE",
+      "year": 2014,
+      "value": 70.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "DE",
+      "year": 2024,
+      "value": 74.5,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "FR",
+      "year": 2014,
+      "value": 65.4,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "FR",
+      "year": 2024,
+      "value": 67.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "GB",
+      "year": 2014,
+      "value": 71.3,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "GB",
+      "year": 2024,
+      "value": 72.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 27.8,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 33.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 23.4,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 27.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "JP",
+      "year": 2014,
+      "value": 57.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "JP",
+      "year": 2024,
+      "value": 61.4,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "KR",
+      "year": 2014,
+      "value": 45.7,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "KR",
+      "year": 2024,
+      "value": 50.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 33.7,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 41.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 31.7,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 32.1,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "SA",
+      "year": 2014,
+      "value": 33.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "SA",
+      "year": 2024,
+      "value": 42.5,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "SG",
+      "year": 2014,
+      "value": 46.5,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "SG",
+      "year": 2024,
+      "value": 53.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 41.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 45.7,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 35.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 37.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TW",
+      "year": 2014,
+      "value": 50.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "TW",
+      "year": 2024,
+      "value": 50.1,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "US",
+      "year": 2014,
+      "value": 57.0,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "US",
+      "year": 2024,
+      "value": 57.2,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 28.3,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.old",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.epi.score",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 24.6,
+      "unit": "score_0_100",
+      "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "AE",
+      "year": 2024,
+      "value": 487.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 482.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 464.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "DE",
+      "year": 2024,
+      "value": 615.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "FR",
+      "year": 2024,
+      "value": 539.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "HK",
+      "year": 2024,
+      "value": 538.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 471.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 484.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "JP",
+      "year": 2024,
+      "value": 446.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "KR",
+      "year": 2024,
+      "value": 522.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 581.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 569.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "SA",
+      "year": 2024,
+      "value": 404.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 402.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 488.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "human.ef_epi.score",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 500.0,
+      "unit": "score",
+      "source_ref": "Wikipedia:EF_English_Proficiency_Index",
+      "veritas": "⚠️"
+    },
+    {
       "indicator_id": "risk.gpi.score",
       "iso2": "AE",
       "year": 2023,
@@ -12214,6 +12721,4110 @@
       "value": 4.0,
       "unit": "score_0_10",
       "source_ref": "inform_risk_index_trends.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2000,
+      "value": 50.3542124662255,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2001,
+      "value": 51.218124865475,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2002,
+      "value": 52.0226634944608,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2003,
+      "value": 51.3673627307431,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2004,
+      "value": 51.4773753585476,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2005,
+      "value": 52.0230565149151,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2006,
+      "value": 53.9655142330643,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2007,
+      "value": 54.3378460745941,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2008,
+      "value": 54.3841745705953,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2009,
+      "value": 54.1075340691301,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2010,
+      "value": 55.4239884369478,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2011,
+      "value": 56.1172889373543,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2012,
+      "value": 56.5630582810016,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2013,
+      "value": 57.8543767855028,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2014,
+      "value": 59.0840647505125,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2015,
+      "value": 59.1459776827186,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2016,
+      "value": 58.4618998130524,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2017,
+      "value": 58.8020271235743,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2018,
+      "value": 58.8812715388961,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2019,
+      "value": 59.0707300071654,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2020,
+      "value": 59.8013824026776,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2021,
+      "value": 60.0413700230258,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2022,
+      "value": 60.2155804166224,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "AE",
+      "year": 2023,
+      "value": 60.2123677346681,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2000,
+      "value": 48.1544027886973,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2001,
+      "value": 48.4405694954911,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2002,
+      "value": 48.8263374481221,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2003,
+      "value": 48.8186428905412,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2004,
+      "value": 48.6565383433523,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2005,
+      "value": 49.1934915201869,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2006,
+      "value": 50.8075635444697,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 51.021839134273,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2008,
+      "value": 51.486276072071,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 52.3214851474296,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2010,
+      "value": 53.1772198134835,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 53.3194170758108,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2012,
+      "value": 53.2525007761641,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 53.2643886766343,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 49.0347196932434,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 48.7908505220059,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 49.0402334126452,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 48.7896296674684,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 48.7204887907916,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 48.9180375865999,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 49.1665523498819,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 49.0448121073994,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 49.112238006406,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 49.0973157823589,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2000,
+      "value": 65.8782746564706,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2001,
+      "value": 65.9072522824372,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2002,
+      "value": 65.940097568925,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2003,
+      "value": 65.8624931091694,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2004,
+      "value": 66.6257285923393,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2005,
+      "value": 67.2944128499404,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2006,
+      "value": 69.547227601209,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2007,
+      "value": 69.5882019780157,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2008,
+      "value": 69.8200220369366,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2009,
+      "value": 69.9043618745788,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2010,
+      "value": 68.9754153188515,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2011,
+      "value": 69.3642120688285,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2012,
+      "value": 69.3110695372744,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2013,
+      "value": 69.4359828257148,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2014,
+      "value": 70.0781293772088,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2015,
+      "value": 69.681334689472,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2016,
+      "value": 69.1379253665704,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2017,
+      "value": 68.9071740115099,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 68.384977803395,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2019,
+      "value": 68.2950754715445,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2020,
+      "value": 67.9763954004694,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 68.2679522874779,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 68.2413014832997,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 68.1819038515583,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2000,
+      "value": 48.2468903227901,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2001,
+      "value": 48.0738537180565,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2002,
+      "value": 47.9884822789073,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2003,
+      "value": 47.7345277404255,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2004,
+      "value": 48.0477500858542,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2005,
+      "value": 49.5264324845836,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2006,
+      "value": 53.5907656895384,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 54.4530592340027,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2008,
+      "value": 55.566143900662,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 56.3433748112747,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2010,
+      "value": 58.3006741853803,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 58.6675445771483,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2012,
+      "value": 58.9346851938732,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 59.3733454359665,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 52.2048492053616,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 52.8817706280889,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 52.9850340842262,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 53.551256773883,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 53.8626399129298,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 57.2026332822253,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 58.0747631390748,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 58.4105873862714,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 58.5848145842541,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 58.7069609482147,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2000,
+      "value": 66.1323353174776,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2001,
+      "value": 66.1100998943114,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2002,
+      "value": 66.2828112476213,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2003,
+      "value": 66.0222504876906,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2004,
+      "value": 66.1480074028243,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2005,
+      "value": 66.5492801214163,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2006,
+      "value": 68.7047316091624,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2007,
+      "value": 69.1583993297703,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2008,
+      "value": 68.922483506826,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2009,
+      "value": 68.6109123716657,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2010,
+      "value": 69.624310063748,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2011,
+      "value": 69.4907682574275,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2012,
+      "value": 69.5960662758709,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2013,
+      "value": 70.026737134079,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2014,
+      "value": 71.0190779086648,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2015,
+      "value": 70.4538733501957,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2016,
+      "value": 69.6988409598884,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2017,
+      "value": 69.5363646114817,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 69.5503223061246,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2019,
+      "value": 69.3665318052961,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2020,
+      "value": 69.191094650314,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 69.4024883583755,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 69.2062070571132,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 69.0061203618549,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2000,
+      "value": 63.9126226738349,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2001,
+      "value": 64.0320259122005,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2002,
+      "value": 63.9455316956489,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2003,
+      "value": 63.9481744843931,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2004,
+      "value": 64.2966410756742,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2005,
+      "value": 64.4273124978643,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2006,
+      "value": 65.374464268374,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2007,
+      "value": 66.3333353042492,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2008,
+      "value": 66.5492973254495,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2009,
+      "value": 66.7287008086267,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2010,
+      "value": 67.5489414573295,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2011,
+      "value": 67.4030541232008,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2012,
+      "value": 67.3977529926558,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2013,
+      "value": 67.2357065029541,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2014,
+      "value": 67.7757631000553,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2015,
+      "value": 67.7142117356694,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2016,
+      "value": 67.1295692757212,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2017,
+      "value": 67.3864346143506,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 67.2858366157627,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2019,
+      "value": 67.9177487610767,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2020,
+      "value": 67.073828260535,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 67.4632819767628,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 67.2890895690176,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 67.2432556076688,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2000,
+      "value": 67.6828521580165,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2001,
+      "value": 67.6019219880197,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2002,
+      "value": 67.7646690134109,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2003,
+      "value": 67.6056177356791,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2004,
+      "value": 67.4785525777115,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2005,
+      "value": 67.1811592841492,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2006,
+      "value": 69.2948256492326,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2007,
+      "value": 69.3355295445603,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2008,
+      "value": 69.1120145733656,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2009,
+      "value": 68.5843422617029,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2010,
+      "value": 69.7958234969842,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2011,
+      "value": 69.5136344208003,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2012,
+      "value": 69.5788522955405,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2013,
+      "value": 69.8879022569112,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2014,
+      "value": 71.2368476540702,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2015,
+      "value": 71.6555564196367,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2016,
+      "value": 70.8948764084828,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2017,
+      "value": 70.5880823021759,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 70.1482728901942,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2019,
+      "value": 70.3040757487934,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2020,
+      "value": 69.9072929608738,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 69.7589969823529,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 69.9696811345333,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 69.6633498227979,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2000,
+      "value": 42.4229728424957,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2001,
+      "value": 42.2602126287862,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2002,
+      "value": 42.1042712271402,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2003,
+      "value": 41.7017175861509,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2004,
+      "value": 41.8587741433693,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2005,
+      "value": 43.2881516024036,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2006,
+      "value": 47.2620621407781,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 47.8843950039531,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2008,
+      "value": 48.4175686614093,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 48.4787264104904,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2010,
+      "value": 49.6894330049949,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 49.9269400281105,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2012,
+      "value": 50.4624890722801,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 50.893595198911,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 43.8693749945212,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 43.8505937179336,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 44.1149312252008,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 45.2555852767247,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 45.8977782209325,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 47.1187197656166,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2020,
+      "value": 47.6142724339758,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 48.0498214739602,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 48.2008161671347,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 48.3823456887259,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2000,
+      "value": 40.9872522916584,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2001,
+      "value": 40.7277313760449,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2002,
+      "value": 40.4307901099791,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2003,
+      "value": 40.6269634213933,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2004,
+      "value": 40.8805510313061,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2005,
+      "value": 42.5175599873992,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2006,
+      "value": 46.1443545742248,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 46.1964150770832,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2008,
+      "value": 46.4749052376297,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 46.4460144361214,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2010,
+      "value": 47.8422345326162,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 48.010160973734,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2012,
+      "value": 48.1654122000862,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 48.5406663856617,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 38.6091397077874,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 38.6009074345646,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 40.5477723469146,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 41.796222884676,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 42.5856619382778,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 43.4888110931742,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 44.7075035749945,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 45.0839589056214,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 45.4990561609236,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 45.4558519863007,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2000,
+      "value": 61.1317817939055,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2001,
+      "value": 61.0001656637668,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2002,
+      "value": 60.8153442049981,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2003,
+      "value": 61.5393743154978,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2004,
+      "value": 61.9502874759825,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2005,
+      "value": 63.2009951556633,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2006,
+      "value": 67.0424645832142,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2007,
+      "value": 66.9358069423216,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2008,
+      "value": 66.9777612009474,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2009,
+      "value": 67.2284496713026,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2010,
+      "value": 68.5862504892383,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2011,
+      "value": 68.5816617318904,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2012,
+      "value": 68.7703689892108,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2013,
+      "value": 69.1548689098733,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2014,
+      "value": 66.8187250727032,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2015,
+      "value": 66.3771383074841,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2016,
+      "value": 65.6092317225444,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2017,
+      "value": 65.9581714503722,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 65.7800848456646,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2019,
+      "value": 65.6988390239223,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2020,
+      "value": 65.6012895140049,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 65.7400291334116,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 65.9243904054794,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 65.8050728143673,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2000,
+      "value": 60.1832381733865,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2001,
+      "value": 60.8665051691736,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2002,
+      "value": 61.3293576120717,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2003,
+      "value": 61.4967139794123,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2004,
+      "value": 61.9215111718228,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2005,
+      "value": 62.5864333656604,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2006,
+      "value": 63.883728687726,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2007,
+      "value": 64.9562874852951,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2008,
+      "value": 64.7976754269415,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2009,
+      "value": 65.1050038034682,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2010,
+      "value": 66.6319883677986,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2011,
+      "value": 66.8617363305667,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2012,
+      "value": 66.8966570473717,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2013,
+      "value": 67.5311375272864,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2014,
+      "value": 68.3112672603025,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2015,
+      "value": 68.0015955959362,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2016,
+      "value": 67.2353681588232,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2017,
+      "value": 67.4494196430384,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2018,
+      "value": 67.7132025533264,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2019,
+      "value": 67.6949996492533,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2020,
+      "value": 67.8038210786063,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 68.0500225831193,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2022,
+      "value": 68.2795356419813,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 68.5056828854251,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2000,
+      "value": 49.8650960244556,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2001,
+      "value": 50.372925662043,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2002,
+      "value": 50.917217170879,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2003,
+      "value": 51.3828060038633,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2004,
+      "value": 51.529630272228,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2005,
+      "value": 51.1071409425623,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2006,
+      "value": 51.5823703834001,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 51.2555575500153,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2008,
+      "value": 51.1701477591542,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2009,
+      "value": 51.8950688333363,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2010,
+      "value": 53.306478667122,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 53.3697450447613,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2012,
+      "value": 54.8539214160723,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 55.6932704678297,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 57.2507087342416,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 57.2964272619768,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 55.87946051635,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 55.2838024325926,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 55.6549390259005,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 56.4271340517279,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2020,
+      "value": 56.6910312204738,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 56.6959423239134,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 56.8166348940824,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 56.9345275458025,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2000,
+      "value": 40.4977822366853,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2001,
+      "value": 40.6852689591115,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2002,
+      "value": 41.1147363863271,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2003,
+      "value": 40.5407413910053,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2004,
+      "value": 40.3034101664776,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2005,
+      "value": 40.8799561698915,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2006,
+      "value": 40.2681906621357,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 40.4688218786958,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2008,
+      "value": 40.1994067545604,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2009,
+      "value": 40.2951639274064,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2010,
+      "value": 40.6294432625336,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 41.386403233507,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2012,
+      "value": 42.1108877989472,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 42.6418174086224,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 43.5957417775867,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 43.2836231739355,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 42.7160911920624,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 42.9299843104246,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 42.7743221861139,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 43.3815410780659,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 44.1123723724187,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 44.3631005150008,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 45.0874436841896,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 45.6051740422682,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2000,
+      "value": 43.4495159379931,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2001,
+      "value": 43.7709238745564,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2002,
+      "value": 44.1059985481587,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2003,
+      "value": 44.3460261187133,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2004,
+      "value": 43.8129212555867,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2005,
+      "value": 45.2991568027687,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2006,
+      "value": 46.4099049676226,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2007,
+      "value": 47.0898011164076,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2008,
+      "value": 48.8234059933329,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2009,
+      "value": 49.0969971700941,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2010,
+      "value": 50.259731002931,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2011,
+      "value": 49.622560429661,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2012,
+      "value": 50.3753796425593,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2013,
+      "value": 51.5052465164945,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2014,
+      "value": 52.6597823732482,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2015,
+      "value": 52.8086558197234,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2016,
+      "value": 54.1156343730832,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2017,
+      "value": 54.0424713729958,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2018,
+      "value": 54.3377596431262,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2019,
+      "value": 55.9150204024871,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2020,
+      "value": 57.7993293093837,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 57.1070884326765,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2022,
+      "value": 57.674672228281,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 58.2281367154928,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2000,
+      "value": 61.2790824605194,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2001,
+      "value": 61.2453530078978,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2002,
+      "value": 61.8648522255241,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2003,
+      "value": 61.8612795410903,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2004,
+      "value": 62.4779049117288,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2005,
+      "value": 62.4829552760438,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2006,
+      "value": 65.349417941601,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2007,
+      "value": 66.1845090293822,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2008,
+      "value": 66.6429874207899,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2009,
+      "value": 65.9320647425626,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2010,
+      "value": 67.4487296871679,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2011,
+      "value": 68.1187884438731,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2012,
+      "value": 68.5742801722084,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2013,
+      "value": 69.362907621728,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2014,
+      "value": 70.6208347437915,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2015,
+      "value": 70.7527212954634,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2016,
+      "value": 69.7502033248633,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2017,
+      "value": 70.0668329680165,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2018,
+      "value": 70.2374114980836,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2019,
+      "value": 70.2496927896603,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2020,
+      "value": 70.4681515652896,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 70.7356690234368,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 70.6426458721925,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 70.5715560176398,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2000,
+      "value": 48.2895124214406,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2001,
+      "value": 48.3883777124458,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2002,
+      "value": 48.4329351627091,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2003,
+      "value": 48.2886752225784,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2004,
+      "value": 47.796216251814,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2005,
+      "value": 48.2130547117589,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2006,
+      "value": 47.8396923971596,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2007,
+      "value": 47.8263533708539,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2008,
+      "value": 48.0365541522099,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2009,
+      "value": 48.7260598137102,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2010,
+      "value": 49.1426704812032,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 49.2144390352314,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2012,
+      "value": 49.4838057520833,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2013,
+      "value": 49.9137370336408,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 50.827421949434,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 50.6577150290404,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 50.3029298569133,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 50.4220370496839,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 50.8770413663602,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 51.4348655188255,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 52.1017985329451,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 52.2753279589428,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 52.4896366470517,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 52.7003738303207,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2000,
+      "value": 47.1874549156865,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2001,
+      "value": 47.1569270991177,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2002,
+      "value": 47.1390363672329,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2003,
+      "value": 47.7993875379348,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2004,
+      "value": 48.0379455360478,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2005,
+      "value": 49.3479761409819,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2006,
+      "value": 49.5357440550921,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 50.1742797018206,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2008,
+      "value": 50.8140029100324,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 50.9757552317781,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2010,
+      "value": 51.531457301699,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 51.8148525698156,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2012,
+      "value": 52.2227423273416,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 52.9093712073302,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 53.7551033170127,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 53.6850729953663,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 52.7917108175785,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 53.5415297437192,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 53.6833085525568,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 54.5015292243998,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 55.0642014923147,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 55.3160102350826,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 55.3057512644463,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 55.2981786793522,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2000,
+      "value": 65.5984873519544,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2001,
+      "value": 65.4711096524146,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2002,
+      "value": 65.4301722561776,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2003,
+      "value": 65.2537608379102,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2004,
+      "value": 65.1128706104717,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2005,
+      "value": 66.2130381250304,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2006,
+      "value": 69.9786182504791,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2007,
+      "value": 70.0500415511983,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2008,
+      "value": 70.5351873220721,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2009,
+      "value": 70.1817279366948,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2010,
+      "value": 71.5108811066537,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2011,
+      "value": 71.6435391553846,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2012,
+      "value": 71.9168246509346,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2013,
+      "value": 71.9198067170161,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2014,
+      "value": 68.6823126424923,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2015,
+      "value": 68.5879798176069,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2016,
+      "value": 67.9723037999352,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2017,
+      "value": 68.1110272776041,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2018,
+      "value": 67.8088322943394,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2019,
+      "value": 67.0721879928559,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2020,
+      "value": 66.6957616287533,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2021,
+      "value": 66.9151274072797,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2022,
+      "value": 66.7935944477448,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "US",
+      "year": 2023,
+      "value": 66.7646656881949,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2000,
+      "value": 42.0290800258518,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2001,
+      "value": 41.8797349263283,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2002,
+      "value": 41.718340070811,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2003,
+      "value": 41.7928693082128,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2004,
+      "value": 41.8822770771939,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2005,
+      "value": 43.0738304199291,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2006,
+      "value": 43.5633548775038,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 43.9275588997588,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2008,
+      "value": 44.0229830332887,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 44.2191818860601,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2010,
+      "value": 43.5387203067989,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 43.9924702870647,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2012,
+      "value": 44.132905231687,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 44.759254507901,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 45.4290729940276,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2015,
+      "value": 45.5176089197602,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 46.3869930337888,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 46.4641591675579,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 46.8881243825898,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 47.1114981678751,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 47.3015535414943,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 47.8672172910458,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 48.0819742680024,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.ndgain.score",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 48.0753386042774,
+      "unit": "score_0_100",
+      "source_ref": "ND-GAIN:gain.csv",
       "veritas": "✅"
     },
     {
