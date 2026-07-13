@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T16:02:12+09:00",
+  "last_updated": "2026-07-13T16:06:46+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。energy_ssr_annual（OWID燃料別自給率・REQ-007 P1-L）を追加。 agri_psd_monthly（USDA PSD・REQ-009）を追加。",
   "indicators": [
@@ -14648,7 +14648,7 @@
       ],
       "higher_is_better": false,
       "phase": "6h",
-      "description_ja": "IEP公式Excel直リンク不安定のためWikipedia最新年スコア。GPI_XLSX_PATHで✅化可。",
+      "description_ja": "Vision of Humanity公式CSV優先（GPI_YYYY_YYYY.csv）。GPI_XLSX_PATH / Wikipediaはフォールバック。",
       "available_iso2": [
         "AE",
         "BR",
@@ -14668,11 +14668,12 @@
         "TH",
         "TR",
         "TW",
+        "US",
         "VN"
       ],
       "period_range": {
-        "from": 2000,
-        "to": 2000
+        "from": 2023,
+        "to": 2025
       },
       "source": {
         "label": "IEP Global Peace Index (via Wikipedia)",
@@ -14736,25 +14737,33 @@
       ],
       "higher_is_better": true,
       "phase": "6h",
-      "description_ja": "Tax Foundation CSV直取得不可のためWikipedia。TAX_FOUNDATION_XLSX_PATHで✅化可。",
+      "description_ja": "Tax Foundation GitHub final_data_long.csv（corp）。VATはWikipedia⚠️。TAX_FOUNDATION_XLSX_PATHはフォールバック。",
       "available_iso2": [
         "AE",
         "BR",
+        "CA",
         "CN",
         "DE",
         "FR",
+        "GB",
         "HK",
         "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
         "PH",
         "SA",
+        "SG",
         "TH",
         "TR",
+        "TW",
         "US",
         "VN"
       ],
       "period_range": {
-        "from": 2024,
-        "to": 2024
+        "from": 2000,
+        "to": 2023
       },
       "source": {
         "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",

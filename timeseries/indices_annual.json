@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T16:02:12+09:00",
+  "last_updated": "2026-07-13T16:06:46+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
     "url": "https://github.com/moriit-provenans/prove-global-data-hub-feed",
-    "disclaimer_ja": "GPI/TaxはWikipedia経由⚠️。FDIRRIはOECD SDMX✅。INFORM/EDGARは✅。"
+    "disclaimer_ja": "法人税率はTax Foundation✅。VAT/GPIはVoHまたはWikipedia（VATは⚠️）。FDIRRI/INFORM/EDGARは✅。"
   },
   "meta": {
     "indicator_ids": [
@@ -45,7 +45,7 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 1361
+    "row_count": 1873
   },
   "observations": [
     {
@@ -10149,173 +10149,362 @@
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "AE",
-      "year": 2000,
-      "value": 1.927,
+      "year": 2023,
+      "value": 1.978505098,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "AE",
+      "year": 2025,
+      "value": 1.812,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "BR",
-      "year": 2000,
-      "value": 2.333,
+      "year": 2023,
+      "value": 2.462466339,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "BR",
+      "year": 2025,
+      "value": 2.472,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "CA",
-      "year": 2000,
-      "value": 1.525,
+      "year": 2023,
+      "value": 1.34967994,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "CA",
+      "year": 2025,
+      "value": 1.491,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "CN",
-      "year": 2000,
-      "value": 2.231,
+      "year": 2023,
+      "value": 2.009208747,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "CN",
+      "year": 2025,
+      "value": 2.093,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "DE",
-      "year": 2000,
-      "value": 1.657,
+      "year": 2023,
+      "value": 1.456101574,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "DE",
+      "year": 2025,
+      "value": 1.533,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "FR",
-      "year": 2000,
-      "value": 2.083,
+      "year": 2023,
+      "value": 1.938745306,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "FR",
+      "year": 2025,
+      "value": 1.967,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "GB",
-      "year": 2000,
-      "value": 1.73,
+      "year": 2023,
+      "value": 1.693020374,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "GB",
+      "year": 2025,
+      "value": 1.634,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "ID",
-      "year": 2000,
-      "value": 1.918,
+      "year": 2023,
+      "value": 1.829126315,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "ID",
+      "year": 2025,
+      "value": 1.786,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "IN",
-      "year": 2000,
-      "value": 2.409,
+      "year": 2023,
+      "value": 2.313819309,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "IN",
+      "year": 2025,
+      "value": 2.229,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "JP",
-      "year": 2000,
-      "value": 1.489,
+      "year": 2023,
+      "value": 1.336436707,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "JP",
+      "year": 2025,
+      "value": 1.44,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "KR",
-      "year": 2000,
-      "value": 1.839,
+      "year": 2023,
+      "value": 1.763069623,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "KR",
+      "year": 2025,
+      "value": 1.736,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "MY",
-      "year": 2000,
-      "value": 1.513,
+      "year": 2023,
+      "value": 1.512960653,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "MY",
+      "year": 2025,
+      "value": 1.469,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "PH",
-      "year": 2000,
-      "value": 2.092,
+      "year": 2023,
+      "value": 2.228980408,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "PH",
+      "year": 2025,
+      "value": 2.148,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "SA",
-      "year": 2000,
-      "value": 2.067,
+      "year": 2023,
+      "value": 2.260307043,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "SA",
+      "year": 2025,
+      "value": 2.035,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "SG",
-      "year": 2000,
-      "value": 1.435,
+      "year": 2023,
+      "value": 1.33216788,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "SG",
+      "year": 2025,
+      "value": 1.357,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "TH",
-      "year": 2000,
-      "value": 2.089,
+      "year": 2023,
+      "value": 2.060720721,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "TH",
+      "year": 2025,
+      "value": 2.017,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "TR",
-      "year": 2000,
-      "value": 2.605,
+      "year": 2023,
+      "value": 2.800349589,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "TR",
+      "year": 2025,
+      "value": 2.852,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "TW",
-      "year": 2000,
-      "value": 1.751,
+      "year": 2023,
+      "value": 1.649304605,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 1.73,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "US",
+      "year": 2023,
+      "value": 2.44830633,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "US",
+      "year": 2025,
+      "value": 2.443,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.gpi.score",
       "iso2": "VN",
-      "year": 2000,
-      "value": 1.738,
+      "year": 2023,
+      "value": 1.745043477,
       "unit": "score_1_5",
-      "source_ref": "Wikipedia:Global_Peace_Index",
-      "veritas": "⚠️"
+      "source_ref": "VoH:GPI_2023.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "iso2": "VN",
+      "year": 2025,
+      "value": 1.721,
+      "unit": "score_1_5",
+      "source_ref": "VoH:GPI_2025.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "risk.inform.score",
@@ -12030,119 +12219,4538 @@
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "AE",
-      "year": 2024,
+      "year": 2000,
       "value": 0.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2001,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2002,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2003,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2004,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2005,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2006,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2007,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2008,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2009,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2010,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2011,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2012,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2013,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2014,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2015,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2016,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2017,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2018,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2019,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2020,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2021,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2022,
+      "value": 0.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "AE",
+      "year": 2023,
+      "value": 9.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "BR",
-      "year": 2024,
-      "value": 40.0,
+      "year": 2000,
+      "value": 37.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2001,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2002,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2003,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2004,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2005,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2006,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2008,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2010,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2012,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 34.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2000,
+      "value": 42.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2001,
+      "value": 40.48,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2002,
+      "value": 38.02,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2003,
+      "value": 35.87,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2004,
+      "value": 34.38,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2005,
+      "value": 34.18,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2006,
+      "value": 33.93,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2007,
+      "value": 33.95,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2008,
+      "value": 31.4,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2009,
+      "value": 30.9,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2010,
+      "value": 29.4,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2011,
+      "value": 27.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2012,
+      "value": 26.1,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2013,
+      "value": 26.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2014,
+      "value": 26.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2015,
+      "value": 26.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2016,
+      "value": 26.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2017,
+      "value": 26.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 26.8,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2019,
+      "value": 26.62,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2020,
+      "value": 26.47,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 26.15,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 26.21,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 26.21,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "CN",
-      "year": 2024,
+      "year": 2000,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2001,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2002,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2003,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2004,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2005,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2006,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2008,
       "value": 25.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2010,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2012,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "DE",
-      "year": 2024,
-      "value": 30.0,
+      "year": 2000,
+      "value": 52.03,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2001,
+      "value": 38.9,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2002,
+      "value": 38.9,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2003,
+      "value": 40.215768,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2004,
+      "value": 38.900415,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2005,
+      "value": 38.900415,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2006,
+      "value": 38.900415,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2007,
+      "value": 38.900415,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2008,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2009,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2010,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2011,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2012,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2013,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2014,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2015,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2016,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2017,
+      "value": 30.175,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 29.825,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2019,
+      "value": 29.897059,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2020,
+      "value": 29.897059,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 29.937781,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 29.83,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 29.941,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "FR",
-      "year": 2024,
+      "year": 2000,
+      "value": 37.76,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2001,
+      "value": 36.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2002,
+      "value": 35.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2003,
+      "value": 35.42979,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2004,
+      "value": 35.42979,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2005,
+      "value": 34.95,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2006,
+      "value": 34.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2007,
+      "value": 34.42989,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2008,
+      "value": 34.42989,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2009,
+      "value": 34.42989,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2010,
+      "value": 34.42989,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2011,
+      "value": 36.09639,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2012,
+      "value": 36.09639,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2013,
+      "value": 37.9962,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2014,
+      "value": 37.9962,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2015,
+      "value": 37.9962,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2016,
+      "value": 34.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2017,
+      "value": 34.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 34.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2019,
+      "value": 34.43,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2020,
+      "value": 32.02,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 28.4075,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 25.825,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 25.825,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2000,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2001,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2002,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2003,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2004,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2005,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2006,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2007,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2008,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2009,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2010,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2011,
+      "value": 26.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2012,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2013,
+      "value": 23.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2014,
+      "value": 21.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2015,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2016,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2017,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2019,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2020,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 19.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "GB",
+      "year": 2023,
       "value": 25.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "HK",
-      "year": 2024,
+      "year": 2000,
+      "value": 16.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2001,
+      "value": 16.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2002,
+      "value": 16.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2003,
+      "value": 16.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2004,
+      "value": 17.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2005,
+      "value": 17.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2006,
+      "value": 17.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2007,
+      "value": 17.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2008,
       "value": 16.5,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2009,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2010,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2011,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2012,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2013,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2014,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2015,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2016,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2017,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2018,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2019,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2020,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2021,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2022,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "HK",
+      "year": 2023,
+      "value": 16.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "ID",
-      "year": 2024,
+      "year": 2000,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2001,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2002,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2003,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2004,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2005,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2006,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2008,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2010,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2012,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2020,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2021,
       "value": 22.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2000,
+      "value": 38.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2001,
+      "value": 39.55,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2002,
+      "value": 35.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2003,
+      "value": 36.75,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2004,
+      "value": 35.875,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2005,
+      "value": 36.5935,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2006,
+      "value": 33.66,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2008,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2010,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 32.44,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2012,
+      "value": 32.45,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 33.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 34.61,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 34.61,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 34.61,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 35.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2000,
+      "value": 40.87,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2001,
+      "value": 40.87,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2002,
+      "value": 40.87,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2003,
+      "value": 40.87,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2004,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2005,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2006,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2007,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2008,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2009,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2010,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2011,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2012,
+      "value": 39.54,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2013,
+      "value": 36.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2014,
+      "value": 36.99,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2015,
+      "value": 32.11,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2016,
+      "value": 29.97,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2017,
+      "value": 29.97,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2019,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2020,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 29.74,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2000,
+      "value": 30.8,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2001,
+      "value": 30.8,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2002,
+      "value": 29.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2003,
+      "value": 29.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2004,
+      "value": 29.7,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2005,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2006,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2007,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2008,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2009,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2010,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2011,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2012,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2013,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2014,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2015,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2016,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2017,
+      "value": 24.2,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2018,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2019,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2020,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2022,
+      "value": 27.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "KR",
+      "year": 2023,
+      "value": 26.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2000,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2001,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2002,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2003,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2004,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2005,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2006,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 27.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2008,
+      "value": 26.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2009,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2010,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2012,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2020,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 24.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "PH",
-      "year": 2024,
+      "year": 2000,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2001,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2002,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2003,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2004,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2005,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2006,
+      "value": 35.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 35.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2008,
+      "value": 35.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2009,
       "value": 30.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2010,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2012,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "SA",
-      "year": 2024,
-      "value": 2.5,
+      "year": 2000,
+      "value": 45.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2001,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2002,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2003,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2004,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2005,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2006,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2007,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2008,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2009,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2010,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2011,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2012,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2013,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2014,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2015,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2016,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2017,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2018,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2019,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2020,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2022,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2000,
+      "value": 26.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2001,
+      "value": 25.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2002,
+      "value": 24.5,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2003,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2004,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2005,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2006,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2007,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2008,
+      "value": 18.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2009,
+      "value": 18.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2010,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2011,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2012,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2013,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2014,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2015,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2016,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2017,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2018,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2019,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2020,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "TH",
-      "year": 2024,
+      "year": 2000,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2001,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2002,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2003,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2004,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2005,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2006,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2007,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2008,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2009,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2010,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2012,
+      "value": 23.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2013,
       "value": 20.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "TR",
-      "year": 2024,
+      "year": 2000,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2001,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2002,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2003,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2004,
+      "value": 33.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2005,
+      "value": 30.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2006,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2008,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2010,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2012,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 23.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TR",
+      "year": 2023,
       "value": 25.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2000,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2001,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2002,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2003,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2004,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2005,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2006,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2007,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2008,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2009,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2010,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2011,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2012,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2013,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2014,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2015,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2016,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2017,
+      "value": 17.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2018,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2019,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2020,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2021,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2022,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "TW",
+      "year": 2023,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "US",
-      "year": 2024,
-      "value": 21.0,
+      "year": 2000,
+      "value": 39.34,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2001,
+      "value": 39.27,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2002,
+      "value": 39.3,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2003,
+      "value": 39.3225,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2004,
+      "value": 39.316,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2005,
+      "value": 39.29,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2006,
+      "value": 39.303,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2007,
+      "value": 39.2705,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2008,
+      "value": 39.251,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2009,
+      "value": 39.16,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2010,
+      "value": 39.2055,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2011,
+      "value": 39.1925,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2012,
+      "value": 39.134,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2013,
+      "value": 39.0495,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2014,
+      "value": 39.0755,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2015,
+      "value": 38.9975,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2016,
+      "value": 38.923934,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2017,
+      "value": 38.906474,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2018,
+      "value": 25.83858,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2019,
+      "value": 25.886141,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2020,
+      "value": 25.766571,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2021,
+      "value": 25.754568,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2022,
+      "value": 25.808,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "US",
+      "year": 2023,
+      "value": 25.768,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",
       "iso2": "VN",
-      "year": 2024,
+      "year": 2000,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2001,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2002,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2003,
+      "value": 32.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2004,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2005,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2006,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2008,
+      "value": 28.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2010,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2012,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 25.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2015,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 22.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2017,
       "value": 20.0,
       "unit": "%",
-      "source_ref": "Wikipedia:List_of_countries_by_tax_rates",
-      "veritas": "⚠️"
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 20.0,
+      "unit": "%",
+      "source_ref": "TaxFoundation:final_data_long.csv",
+      "veritas": "✅"
     },
     {
       "indicator_id": "tax.vat_rate.pct",
