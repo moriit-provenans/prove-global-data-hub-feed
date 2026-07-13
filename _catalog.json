@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T08:13:53+09:00",
+  "last_updated": "2026-07-13T09:13:35+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -8929,6 +8929,531 @@
         "url": "https://ember-energy.org/data/yearly-electricity-data/"
       },
       "feed": "timeseries/industry_physical.json"
+    },
+    {
+      "indicator_id": "risk.gpi.score",
+      "wb_code": null,
+      "name_ja": "世界平和度指数（GPI）",
+      "name_en": "Global Peace Index",
+      "unit": "score_1_5",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "IEP公式Excel直リンク不安定のためWikipedia最新年スコア。GPI_XLSX_PATHで✅化可。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2000
+      },
+      "source": {
+        "label": "IEP Global Peace Index (via Wikipedia)",
+        "url": "https://www.economicsandpeace.org/global-peace-index/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "risk.inform.score",
+      "wb_code": null,
+      "name_ja": "INFORM Risk Index",
+      "name_en": "INFORM Risk Index",
+      "unit": "score_0_10",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": false,
+      "phase": "6h",
+      "description_ja": "CC BY 4.0 相当・HDX inform_risk_index_trends.csv",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2016,
+        "to": 2025
+      },
+      "source": {
+        "label": "EU JRC INFORM Risk (via HDX)",
+        "url": "https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Results-and-data"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.corporate_rate.pct",
+      "wb_code": null,
+      "name_ja": "法定実効法人税率",
+      "name_en": "Corporate tax rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Tax Foundation CSV直取得不可のためWikipedia。TAX_FOUNDATION_XLSX_PATHで✅化可。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CN",
+        "DE",
+        "FR",
+        "HK",
+        "ID",
+        "PH",
+        "SA",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "tax.vat_rate.pct",
+      "wb_code": null,
+      "name_ja": "VAT/GST税率",
+      "name_en": "VAT rate",
+      "unit": "%",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "同上",
+      "available_iso2": [
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2024,
+        "to": 2024
+      },
+      "source": {
+        "label": "Tax rates (via Wikipedia; Tax Foundation upgrade path)",
+        "url": "https://taxfoundation.org/research/all/global/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_pc",
+      "wb_code": null,
+      "name_ja": "CO2排出原単位（EDGAR）",
+      "name_en": "CO2 per capita (EDGAR)",
+      "unit": "t_per_capita",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.co2_total.mt",
+      "wb_code": null,
+      "name_ja": "CO2総排出（EDGAR）",
+      "name_en": "CO2 total emissions (EDGAR)",
+      "unit": "Mt",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "CC BY",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2024
+      },
+      "source": {
+        "label": "EDGAR via Our World in Data",
+        "url": "https://ourworldindata.org/co2-and-greenhouse-gas-emissions"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "japan.residents.count",
+      "wb_code": null,
+      "name_ja": "海外在留邦人数（外務省）",
+      "name_en": "Overseas Japanese residents (MOFA)",
+      "unit": "persons",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "外務省 海外在留邦人数調査。経産省 affiliates とは別定義。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2014,
+        "to": 2016
+      },
+      "source": {
+        "label": "外務省/e-Stat",
+        "url": "https://www.e-stat.go.jp/"
+      },
+      "feed": "timeseries/japan_relations.json"
+    },
+    {
+      "indicator_id": "japan.companies.count",
+      "wb_code": null,
+      "name_ja": "海外進出日系企業拠点数（外務省）",
+      "name_en": "Overseas Japanese-affiliated bases (MOFA)",
+      "unit": "companies",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "外務省 海外進出日系企業拠点数調査。japan.overseas_affiliates.count（経産省）と併存。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2009,
+        "to": 2016
+      },
+      "source": {
+        "label": "外務省/e-Stat",
+        "url": "https://www.e-stat.go.jp/"
+      },
+      "feed": "timeseries/japan_relations.json"
+    },
+    {
+      "indicator_id": "japan.exports_to.jpy",
+      "wb_code": null,
+      "name_ja": "日本からの輸出（財務省・年次）",
+      "name_en": "Japan exports to country (MOF, annual JPY)",
+      "unit": "JPY_1000",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "財務省貿易統計・税関別品目国別表の全国・全品目合計（千円）。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2023,
+        "to": 2026
+      },
+      "source": {
+        "label": "財務省/e-Stat",
+        "url": "https://www.e-stat.go.jp/"
+      },
+      "feed": "timeseries/japan_relations.json"
+    },
+    {
+      "indicator_id": "japan.imports_from.jpy",
+      "wb_code": null,
+      "name_ja": "日本からの輸入（財務省・年次）",
+      "name_en": "Japan imports from country (MOF, annual JPY)",
+      "unit": "JPY_1000",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "財務省貿易統計・税関別品目国別表の全国・全品目合計（千円）。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2023,
+        "to": 2026
+      },
+      "source": {
+        "label": "財務省/e-Stat",
+        "url": "https://www.e-stat.go.jp/"
+      },
+      "feed": "timeseries/japan_relations.json"
+    },
+    {
+      "indicator_id": "japan.fdi_outward_stock.usd",
+      "wb_code": null,
+      "name_ja": "対外直接投資残高（JETRO・国別）",
+      "name_en": "Outward FDI stock by country (JETRO)",
+      "unit": "USD_million",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "JETRO直接投資統計（日銀原典）・国別残高。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2000,
+        "to": 2025
+      },
+      "source": {
+        "label": "JETRO",
+        "url": "https://www.jetro.go.jp/world/japan/stats/fdi.html"
+      },
+      "feed": "timeseries/japan_relations.json"
+    },
+    {
+      "indicator_id": "japan.visitors_to_japan.count",
+      "wb_code": null,
+      "name_ja": "訪日外客数（国籍別・年次）",
+      "name_en": "Visitors to Japan by nationality (annual)",
+      "unit": "visitors",
+      "category": "日本関係",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6g",
+      "description_ja": "JNTO訪日外客。公式Excel未設定時はWikipedia経由（⚠️）。",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2019,
+        "to": 2026
+      },
+      "source": {
+        "label": "JNTO",
+        "url": "https://www.jnto.go.jp/"
+      },
+      "feed": "timeseries/japan_relations.json"
     }
   ],
   "countries": [
