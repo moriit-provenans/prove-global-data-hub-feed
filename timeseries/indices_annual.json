@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T16:39:16+09:00",
+  "last_updated": "2026-07-13T17:48:10+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
@@ -11,6 +11,8 @@
   "meta": {
     "indicator_ids": [
       "biz.fdi_restrictiveness.index",
+      "env.carbon_price.usd",
+      "env.carbon_pricing.active",
       "env.co2_pc",
       "env.co2_total.mt",
       "env.epi.score",
@@ -18,6 +20,7 @@
       "risk.gpi.score",
       "risk.inform.score",
       "risk.ndgain.score",
+      "society.gender_gap.index",
       "tax.corporate_rate.pct",
       "tax.vat_rate.pct"
     ],
@@ -48,7 +51,7 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 2385
+    "row_count": 2757
   },
   "observations": [
     {
@@ -698,6 +701,285 @@
       "unit": "index_0_1",
       "source_ref": "OECD.SDMX:DF_FDIRRI_SCORES:_T:_T",
       "veritas": "✅"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "CA",
+      "year": 2025,
+      "value": 58.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "CN",
+      "year": 2025,
+      "value": 10.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "DE",
+      "year": 2025,
+      "value": 70.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "FR",
+      "year": 2025,
+      "value": 70.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "GB",
+      "year": 2025,
+      "value": 45.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "ID",
+      "year": 2025,
+      "value": 2.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "JP",
+      "year": 2025,
+      "value": 2.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "KR",
+      "year": 2025,
+      "value": 8.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "SG",
+      "year": 2025,
+      "value": 19.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 10.0,
+      "unit": "USD_per_tCO2",
+      "source_ref": "carbon_pricing_phase1:fee",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "AE",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "BR",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "CA",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "CN",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "DE",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "FR",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "GB",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "HK",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "ID",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "IN",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "JP",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "KR",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:ETS",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "MY",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "PH",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "SA",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "SG",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:tax",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "TH",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "TR",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "TW",
+      "year": 2025,
+      "value": 1.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:fee",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "US",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "env.carbon_pricing.active",
+      "iso2": "VN",
+      "year": 2025,
+      "value": 0.0,
+      "unit": "0_1",
+      "source_ref": "carbon_pricing_phase1:none",
+      "veritas": "⚠️"
     },
     {
       "indicator_id": "env.co2_pc",
@@ -16826,6 +17108,3075 @@
       "unit": "score_0_100",
       "source_ref": "ND-GAIN:gain.csv",
       "veritas": "✅"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2006,
+      "value": 0.5919,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2007,
+      "value": 0.6184,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2008,
+      "value": 0.622,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2009,
+      "value": 0.6198,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2010,
+      "value": 0.6397,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2011,
+      "value": 0.6454,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2012,
+      "value": 0.6392,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2013,
+      "value": 0.6372,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2014,
+      "value": 0.6436,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2015,
+      "value": 0.646,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2016,
+      "value": 0.639,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2017,
+      "value": 0.649,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2018,
+      "value": 0.642,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2020,
+      "value": 0.655,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2021,
+      "value": 0.716,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2022,
+      "value": 0.716,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2023,
+      "value": 0.712,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2024,
+      "value": 0.713,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "AE",
+      "year": 2025,
+      "value": 0.724,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2006,
+      "value": 0.6543,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 0.6637,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2008,
+      "value": 0.6737,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 0.6695,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2010,
+      "value": 0.6655,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 0.6679,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2012,
+      "value": 0.6909,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 0.6949,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2014,
+      "value": 0.6941,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 0.686,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2016,
+      "value": 0.687,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 0.684,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2018,
+      "value": 0.681,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2020,
+      "value": 0.691,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 0.695,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2022,
+      "value": 0.696,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2023,
+      "value": 0.726,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2024,
+      "value": 0.716,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "BR",
+      "year": 2025,
+      "value": 0.72,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2006,
+      "value": 0.7165,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2007,
+      "value": 0.7198,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2008,
+      "value": 0.7136,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2009,
+      "value": 0.7196,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2010,
+      "value": 0.7372,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2011,
+      "value": 0.7407,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2012,
+      "value": 0.7381,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2013,
+      "value": 0.7425,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2014,
+      "value": 0.7464,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2015,
+      "value": 0.74,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2016,
+      "value": 0.731,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2017,
+      "value": 0.769,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2018,
+      "value": 0.771,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2020,
+      "value": 0.772,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 0.772,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2022,
+      "value": 0.772,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2023,
+      "value": 0.77,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2024,
+      "value": 0.761,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CA",
+      "year": 2025,
+      "value": 0.767,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2006,
+      "value": 0.6561,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 0.6643,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2008,
+      "value": 0.6878,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 0.6907,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2010,
+      "value": 0.6881,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 0.6866,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2012,
+      "value": 0.6853,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 0.6908,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2014,
+      "value": 0.683,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 0.682,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2016,
+      "value": 0.676,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 0.674,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2018,
+      "value": 0.673,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2020,
+      "value": 0.676,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 0.682,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2022,
+      "value": 0.682,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2023,
+      "value": 0.678,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2024,
+      "value": 0.684,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "CN",
+      "year": 2025,
+      "value": 0.686,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2006,
+      "value": 0.7524,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2007,
+      "value": 0.7618,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2008,
+      "value": 0.7394,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2009,
+      "value": 0.7449,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2010,
+      "value": 0.753,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2011,
+      "value": 0.759,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2012,
+      "value": 0.7629,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2013,
+      "value": 0.7583,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2014,
+      "value": 0.778,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2015,
+      "value": 0.779,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2016,
+      "value": 0.766,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2017,
+      "value": 0.778,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2018,
+      "value": 0.776,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2020,
+      "value": 0.787,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 0.796,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2022,
+      "value": 0.801,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2023,
+      "value": 0.815,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2024,
+      "value": 0.81,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "DE",
+      "year": 2025,
+      "value": 0.803,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2006,
+      "value": 0.652,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2007,
+      "value": 0.6824,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2008,
+      "value": 0.7341,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2009,
+      "value": 0.7331,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2010,
+      "value": 0.7025,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2011,
+      "value": 0.7018,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2012,
+      "value": 0.6984,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2013,
+      "value": 0.7089,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2014,
+      "value": 0.7588,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2015,
+      "value": 0.761,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2016,
+      "value": 0.755,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2017,
+      "value": 0.778,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2018,
+      "value": 0.779,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2020,
+      "value": 0.781,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 0.784,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2022,
+      "value": 0.791,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2023,
+      "value": 0.756,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2024,
+      "value": 0.781,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "FR",
+      "year": 2025,
+      "value": 0.765,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2006,
+      "value": 0.7365,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2007,
+      "value": 0.7441,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2008,
+      "value": 0.7366,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2009,
+      "value": 0.7402,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2010,
+      "value": 0.746,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2011,
+      "value": 0.7462,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2012,
+      "value": 0.7433,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2013,
+      "value": 0.744,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2014,
+      "value": 0.7383,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2015,
+      "value": 0.758,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2016,
+      "value": 0.752,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2017,
+      "value": 0.77,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2018,
+      "value": 0.744,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2020,
+      "value": 0.767,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 0.775,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2022,
+      "value": 0.78,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2023,
+      "value": 0.792,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2024,
+      "value": 0.789,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "GB",
+      "year": 2025,
+      "value": 0.838,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2006,
+      "value": 0.6541,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 0.655,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2008,
+      "value": 0.6473,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 0.658,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2010,
+      "value": 0.6615,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 0.6594,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2012,
+      "value": 0.6591,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 0.6613,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2014,
+      "value": 0.6725,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 0.681,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2016,
+      "value": 0.682,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 0.691,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2018,
+      "value": 0.691,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2020,
+      "value": 0.7,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 0.688,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2022,
+      "value": 0.697,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2023,
+      "value": 0.697,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2024,
+      "value": 0.686,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "ID",
+      "year": 2025,
+      "value": 0.692,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2006,
+      "value": 0.6011,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 0.5936,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2008,
+      "value": 0.606,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 0.6151,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2010,
+      "value": 0.6155,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 0.619,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2012,
+      "value": 0.6442,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 0.6551,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2014,
+      "value": 0.6455,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 0.664,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2016,
+      "value": 0.683,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 0.669,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2018,
+      "value": 0.665,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2020,
+      "value": 0.668,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 0.625,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2022,
+      "value": 0.629,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2023,
+      "value": 0.643,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2024,
+      "value": 0.641,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "IN",
+      "year": 2025,
+      "value": 0.644,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2006,
+      "value": 0.6447,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2007,
+      "value": 0.6455,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2008,
+      "value": 0.6434,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2009,
+      "value": 0.6447,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2010,
+      "value": 0.6524,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2011,
+      "value": 0.6514,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2012,
+      "value": 0.653,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2013,
+      "value": 0.6498,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2014,
+      "value": 0.6584,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2015,
+      "value": 0.67,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2016,
+      "value": 0.66,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2017,
+      "value": 0.657,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2018,
+      "value": 0.662,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2020,
+      "value": 0.652,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 0.656,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2022,
+      "value": 0.65,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2023,
+      "value": 0.779,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2024,
+      "value": 0.758,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "JP",
+      "year": 2025,
+      "value": 0.666,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2006,
+      "value": 0.6509,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 0.6444,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2008,
+      "value": 0.6442,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2009,
+      "value": 0.6467,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2010,
+      "value": 0.6479,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 0.6525,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2012,
+      "value": 0.6539,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 0.6518,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2014,
+      "value": 0.652,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 0.655,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2016,
+      "value": 0.666,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 0.67,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2018,
+      "value": 0.676,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2020,
+      "value": 0.677,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 0.676,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2022,
+      "value": 0.681,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2023,
+      "value": 0.682,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2024,
+      "value": 0.668,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "MY",
+      "year": 2025,
+      "value": 0.681,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2006,
+      "value": 0.7516,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 0.7629,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2008,
+      "value": 0.7568,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2009,
+      "value": 0.7579,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2010,
+      "value": 0.7654,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 0.7685,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2012,
+      "value": 0.7757,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 0.7832,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2014,
+      "value": 0.7814,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 0.79,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2016,
+      "value": 0.786,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 0.79,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2018,
+      "value": 0.799,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2020,
+      "value": 0.781,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 0.784,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2022,
+      "value": 0.783,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2023,
+      "value": 0.791,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2024,
+      "value": 0.779,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "PH",
+      "year": 2025,
+      "value": 0.781,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2006,
+      "value": 0.5242,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2007,
+      "value": 0.5647,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2008,
+      "value": 0.5537,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2009,
+      "value": 0.5651,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2010,
+      "value": 0.5713,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2011,
+      "value": 0.5753,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2012,
+      "value": 0.5731,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2013,
+      "value": 0.5879,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2014,
+      "value": 0.6059,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2015,
+      "value": 0.605,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2016,
+      "value": 0.583,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2017,
+      "value": 0.584,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2018,
+      "value": 0.59,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2020,
+      "value": 0.599,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 0.603,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2022,
+      "value": 0.636,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2023,
+      "value": 0.637,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2024,
+      "value": 0.647,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SA",
+      "year": 2025,
+      "value": 0.643,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2006,
+      "value": 0.655,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2007,
+      "value": 0.6609,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2008,
+      "value": 0.6625,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2009,
+      "value": 0.6664,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2010,
+      "value": 0.6914,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2011,
+      "value": 0.6914,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2012,
+      "value": 0.6989,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2013,
+      "value": 0.7,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2014,
+      "value": 0.7046,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2015,
+      "value": 0.711,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2016,
+      "value": 0.712,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2017,
+      "value": 0.702,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2018,
+      "value": 0.707,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2020,
+      "value": 0.724,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 0.727,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2022,
+      "value": 0.734,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2023,
+      "value": 0.739,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2024,
+      "value": 0.744,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "SG",
+      "year": 2025,
+      "value": 0.748,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2006,
+      "value": 0.6831,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2007,
+      "value": 0.6815,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2008,
+      "value": 0.6917,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2009,
+      "value": 0.6907,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2010,
+      "value": 0.691,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 0.6892,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2012,
+      "value": 0.6893,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2013,
+      "value": 0.6928,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2014,
+      "value": 0.7027,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 0.706,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2016,
+      "value": 0.699,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 0.694,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2018,
+      "value": 0.702,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2020,
+      "value": 0.708,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 0.71,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2022,
+      "value": 0.709,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2023,
+      "value": 0.711,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2024,
+      "value": 0.72,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TH",
+      "year": 2025,
+      "value": 0.728,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2006,
+      "value": 0.585,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 0.5768,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2008,
+      "value": 0.5853,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 0.5828,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2010,
+      "value": 0.5876,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 0.5954,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2012,
+      "value": 0.6015,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 0.6081,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2014,
+      "value": 0.6183,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 0.624,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2016,
+      "value": 0.623,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 0.625,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2018,
+      "value": 0.628,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2020,
+      "value": 0.635,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 0.638,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2022,
+      "value": 0.639,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2023,
+      "value": 0.638,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2024,
+      "value": 0.645,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "TR",
+      "year": 2025,
+      "value": 0.633,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2006,
+      "value": 0.7042,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2006",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2007,
+      "value": 0.7002,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2008,
+      "value": 0.7179,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2009,
+      "value": 0.7173,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2010,
+      "value": 0.7411,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2011,
+      "value": 0.7412,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2012,
+      "value": 0.7373,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2013,
+      "value": 0.7392,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2014,
+      "value": 0.7463,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2015,
+      "value": 0.74,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2016,
+      "value": 0.722,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2017,
+      "value": 0.718,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2018,
+      "value": 0.72,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2020,
+      "value": 0.724,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2021,
+      "value": 0.763,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2022,
+      "value": 0.769,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2023,
+      "value": 0.748,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2024,
+      "value": 0.747,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "US",
+      "year": 2025,
+      "value": 0.756,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 0.6889,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2007",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2008,
+      "value": 0.6778,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2008",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 0.6802,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2009",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2010,
+      "value": 0.6776,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2010",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 0.6732,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2011",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2012,
+      "value": 0.6867,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2012",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 0.6863,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2013",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2014,
+      "value": 0.6915,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2014",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2015,
+      "value": 0.687,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2015",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2016,
+      "value": 0.7,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2016",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 0.698,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2017",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2018,
+      "value": 0.698,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2018",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2020,
+      "value": 0.7,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2020",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 0.701,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2021",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2022,
+      "value": 0.705,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2022",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2023,
+      "value": 0.711,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2023",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2024,
+      "value": 0.715,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2024",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "iso2": "VN",
+      "year": 2025,
+      "value": 0.713,
+      "unit": "index_0_1",
+      "source_ref": "Wikipedia:GGGR:2025",
+      "veritas": "⚠️"
     },
     {
       "indicator_id": "tax.corporate_rate.pct",

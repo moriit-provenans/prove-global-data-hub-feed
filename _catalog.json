@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T16:39:17+09:00",
+  "last_updated": "2026-07-13T17:48:10+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
   "indicators": [
@@ -8248,6 +8248,84 @@
       "source": {
         "label": "EF English Proficiency Index (via Wikipedia)",
         "url": "https://www.ef.com/wwen/epi/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "society.gender_gap.index",
+      "wb_code": null,
+      "name_ja": "ジェンダーギャップ指数",
+      "name_en": "Global Gender Gap Index",
+      "unit": "index_0_1",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "公式Excel 504のためWikipedia履歴表",
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ],
+      "period_range": {
+        "from": 2006,
+        "to": 2025
+      },
+      "source": {
+        "label": "WEF Global Gender Gap (via Wikipedia)",
+        "url": "https://www.weforum.org/publications/global-gender-gap-report-2025/"
+      },
+      "feed": "timeseries/indices_annual.json"
+    },
+    {
+      "indicator_id": "env.carbon_price.usd",
+      "wb_code": null,
+      "name_ja": "炭素価格（代表値USD/t）",
+      "name_en": "Carbon price (USD/tCO2 approx)",
+      "unit": "USD_per_tCO2",
+      "category": "年次指数",
+      "frequencies": [
+        "annual"
+      ],
+      "higher_is_better": true,
+      "phase": "6h",
+      "description_ja": "Dashboard API 403のため Phase1 静的YAML。activeフラグも同梱",
+      "available_iso2": [
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "JP",
+        "KR",
+        "SG",
+        "TW"
+      ],
+      "period_range": {
+        "from": 2025,
+        "to": 2025
+      },
+      "source": {
+        "label": "World Bank Carbon Pricing (curated static)",
+        "url": "https://carbonpricingdashboard.worldbank.org/"
       },
       "feed": "timeseries/indices_annual.json"
     }
