@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "indices_annual",
-  "last_updated": "2026-07-13T17:48:10+09:00",
+  "last_updated": "2026-07-13T17:51:54+09:00",
   "frequency": "annual",
   "source": {
     "label": "GPI + INFORM + Tax + OECD STRI + EDGAR (OWID)",
@@ -16,6 +16,7 @@
       "env.co2_pc",
       "env.co2_total.mt",
       "env.epi.score",
+      "gov.egdi.score",
       "human.ef_epi.score",
       "risk.gpi.score",
       "risk.inform.score",
@@ -51,7 +52,7 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 2757
+    "row_count": 2966
   },
   "observations": [
     {
@@ -10789,6 +10790,1887 @@
       "value": 24.6,
       "unit": "score_0_100",
       "source_ref": "Yale:epi2024results.csv:EPI.new",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2002,
+      "value": 0.5345,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2003,
+      "value": 0.47356001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2004,
+      "value": 0.57182002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2007,
+      "value": 0.63010001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2009,
+      "value": 0.53494,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2011,
+      "value": 0.73442,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2013,
+      "value": 0.71358001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2015,
+      "value": 0.75152999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2017,
+      "value": 0.82950002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2019,
+      "value": 0.85549998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "AE",
+      "year": 2021,
+      "value": 0.90100002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2002,
+      "value": 0.52673,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2003,
+      "value": 0.56746,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2004,
+      "value": 0.59811002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2007,
+      "value": 0.5679,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2009,
+      "value": 0.50058001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2011,
+      "value": 0.61672997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2013,
+      "value": 0.60082,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2015,
+      "value": 0.63769001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2017,
+      "value": 0.73269999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2019,
+      "value": 0.76770002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "BR",
+      "year": 2021,
+      "value": 0.79100001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2002,
+      "value": 0.80644,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2003,
+      "value": 0.83687001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2004,
+      "value": 0.84250998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2007,
+      "value": 0.81720001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2009,
+      "value": 0.84478998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2011,
+      "value": 0.84298998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2013,
+      "value": 0.84176999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2015,
+      "value": 0.82846999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2017,
+      "value": 0.8258,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2019,
+      "value": 0.84200001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CA",
+      "year": 2021,
+      "value": 0.85110003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2002,
+      "value": 0.41595,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2003,
+      "value": 0.43557,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2004,
+      "value": 0.50778002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2007,
+      "value": 0.50169998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2009,
+      "value": 0.46998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2011,
+      "value": 0.5359,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2013,
+      "value": 0.54500997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2015,
+      "value": 0.60712999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2017,
+      "value": 0.68110001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2019,
+      "value": 0.79479998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "CN",
+      "year": 2021,
+      "value": 0.81190002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2002,
+      "value": 0.76164001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2003,
+      "value": 0.78732997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2004,
+      "value": 0.80497003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2007,
+      "value": 0.71359998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2009,
+      "value": 0.73084998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2011,
+      "value": 0.80787998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2013,
+      "value": 0.78640002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2015,
+      "value": 0.82099003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2017,
+      "value": 0.87650001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2019,
+      "value": 0.8524,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "DE",
+      "year": 2021,
+      "value": 0.87699997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2002,
+      "value": 0.68961,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2003,
+      "value": 0.66865999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2004,
+      "value": 0.69251001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2007,
+      "value": 0.80379999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2009,
+      "value": 0.75103003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2011,
+      "value": 0.86348999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2013,
+      "value": 0.89384001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2015,
+      "value": 0.84559,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2017,
+      "value": 0.87900001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2019,
+      "value": 0.87180001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "FR",
+      "year": 2021,
+      "value": 0.88319999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2002,
+      "value": 0.81402999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2003,
+      "value": 0.88520998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2004,
+      "value": 0.87773001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2007,
+      "value": 0.78719997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2009,
+      "value": 0.81466001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2011,
+      "value": 0.89603001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2013,
+      "value": 0.86948001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2015,
+      "value": 0.91927999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2017,
+      "value": 0.89990002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2019,
+      "value": 0.93580002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "GB",
+      "year": 2021,
+      "value": 0.9138,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2002,
+      "value": 0.42243001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2003,
+      "value": 0.39089999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2004,
+      "value": 0.38185999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2007,
+      "value": 0.41069999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2009,
+      "value": 0.40264001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2011,
+      "value": 0.49485999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2013,
+      "value": 0.44874001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2015,
+      "value": 0.44784001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2017,
+      "value": 0.52579999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2019,
+      "value": 0.66119999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "ID",
+      "year": 2021,
+      "value": 0.71600002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2002,
+      "value": 0.37309,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2003,
+      "value": 0.38789001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2004,
+      "value": 0.40013,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2007,
+      "value": 0.38139999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2009,
+      "value": 0.35673001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2011,
+      "value": 0.38286999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2013,
+      "value": 0.38343,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2015,
+      "value": 0.46375,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2017,
+      "value": 0.56690001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2019,
+      "value": 0.59640002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "IN",
+      "year": 2021,
+      "value": 0.58829999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2002,
+      "value": 0.69344002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2003,
+      "value": 0.72599,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2004,
+      "value": 0.78013003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2007,
+      "value": 0.77029997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2009,
+      "value": 0.71517003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2011,
+      "value": 0.80186999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2013,
+      "value": 0.88744003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2015,
+      "value": 0.84397,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2017,
+      "value": 0.87830001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2019,
+      "value": 0.89889997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "JP",
+      "year": 2021,
+      "value": 0.90020001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2002,
+      "value": 0.74413002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2003,
+      "value": 0.85745001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2004,
+      "value": 0.87273002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2007,
+      "value": 0.83170003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2009,
+      "value": 0.87853998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2011,
+      "value": 0.92831999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2013,
+      "value": 0.94622999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2015,
+      "value": 0.89148998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2017,
+      "value": 0.90100002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2019,
+      "value": 0.95599997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "KR",
+      "year": 2021,
+      "value": 0.95289999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2002,
+      "value": 0.52398998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2003,
+      "value": 0.54088998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2004,
+      "value": 0.57056999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2007,
+      "value": 0.6063,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2009,
+      "value": 0.61014003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2011,
+      "value": 0.67031002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2013,
+      "value": 0.61151999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2015,
+      "value": 0.61748999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2017,
+      "value": 0.71740001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2019,
+      "value": 0.78920001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "MY",
+      "year": 2021,
+      "value": 0.77399999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2002,
+      "value": 0.57363999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2003,
+      "value": 0.52595001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2004,
+      "value": 0.57211,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2007,
+      "value": 0.50010002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2009,
+      "value": 0.46373001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2011,
+      "value": 0.51302999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2013,
+      "value": 0.47681001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2015,
+      "value": 0.57655001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2017,
+      "value": 0.6512,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2019,
+      "value": 0.68919998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "PH",
+      "year": 2021,
+      "value": 0.6523,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2002,
+      "value": 0.33756,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2003,
+      "value": 0.38582,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2004,
+      "value": 0.41049001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2007,
+      "value": 0.49349999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2009,
+      "value": 0.51424003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2011,
+      "value": 0.66580999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2013,
+      "value": 0.69001001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2015,
+      "value": 0.68224001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2017,
+      "value": 0.7119,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2019,
+      "value": 0.79909998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SA",
+      "year": 2021,
+      "value": 0.85390002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2002,
+      "value": 0.74633002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2003,
+      "value": 0.83403999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2004,
+      "value": 0.85030001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2007,
+      "value": 0.70090002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2009,
+      "value": 0.74760002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2011,
+      "value": 0.84741998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2013,
+      "value": 0.90762001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2015,
+      "value": 0.88279998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2017,
+      "value": 0.88120002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2019,
+      "value": 0.91500002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "SG",
+      "year": 2021,
+      "value": 0.91329998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2002,
+      "value": 0.4456,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2003,
+      "value": 0.50955999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2004,
+      "value": 0.55175,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2007,
+      "value": 0.50309998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2009,
+      "value": 0.46529001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2011,
+      "value": 0.50927001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2013,
+      "value": 0.46307999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2015,
+      "value": 0.55221999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2017,
+      "value": 0.65429997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2019,
+      "value": 0.75650001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TH",
+      "year": 2021,
+      "value": 0.76599997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2002,
+      "value": 0.50550997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2003,
+      "value": 0.48919001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2004,
+      "value": 0.49595001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2007,
+      "value": 0.48339999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2009,
+      "value": 0.47799999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2011,
+      "value": 0.52811998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2013,
+      "value": 0.54427999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2015,
+      "value": 0.58995003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2017,
+      "value": 0.7112,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2019,
+      "value": 0.77179998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "TR",
+      "year": 2021,
+      "value": 0.79830003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2002,
+      "value": 0.92706001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2003,
+      "value": 0.91321999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2004,
+      "value": 0.90618998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2007,
+      "value": 0.86440003,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2009,
+      "value": 0.85102999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2011,
+      "value": 0.86873001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2013,
+      "value": 0.87483001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2015,
+      "value": 0.84201002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2017,
+      "value": 0.87690002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2019,
+      "value": 0.92970002,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "US",
+      "year": 2021,
+      "value": 0.91509998,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2002,
+      "value": 0.35725999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2003,
+      "value": 0.33776999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2004,
+      "value": 0.36398,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2007,
+      "value": 0.4558,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2009,
+      "value": 0.44543999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2011,
+      "value": 0.52169001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2013,
+      "value": 0.47045001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2015,
+      "value": 0.51425999,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2017,
+      "value": 0.59310001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2019,
+      "value": 0.66670001,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "gov.egdi.score",
+      "iso2": "VN",
+      "year": 2021,
+      "value": 0.67869997,
+      "unit": "index_0_1",
+      "source_ref": "QoG:qog_std_ts:egov_egov",
       "veritas": "✅"
     },
     {
