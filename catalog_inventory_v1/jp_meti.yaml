@@ -1,6 +1,6 @@
 agency_id: jp_meti
 iso2: JP
-updated_at: '2026-07-21T04:09:00+09:00'
+updated_at: '2026-07-21T04:15:44+09:00'
 source_note_ja: 経産省統計トップ＋鉱工業指数・商業動態を実URL登録（2026-07-21検証）。
 L0:
   portal_url: https://www.meti.go.jp/
@@ -46,11 +46,14 @@ L2_datasets:
   theme_id: enecho_stats
 L3_series: []
 L4_notes: ''
-L5_country_unique: []
+L5_country_unique:
+- title: 鉱工業指数（IIP）
+  url: https://www.meti.go.jp/statistics/tyo/iip/index.html
+  why_unique_ja: 業種別IIPの粒度は国際比較カタログより細かい日本固有工業系列
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial

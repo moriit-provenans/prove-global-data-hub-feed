@@ -1,6 +1,5 @@
-agency_id: jp_env
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 環境省 GHG・廃棄物（エネルギー主系統は jp_enecho）。
 L0:
   portal_url: https://www.env.go.jp/
   verified: true
@@ -21,8 +20,15 @@ L2_datasets:
   update_freq: annual
   license: MOE terms
   theme_id: ghg
+- dataset_id: env_waste
+  title: 廃棄物・リサイクル統計入口
+  url: https://www.env.go.jp/recycle/waste/
+  api_id: null
+  update_freq: annual
+  license: MOE terms
+  theme_id: waste
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -31,3 +37,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_env
+updated_at: '2026-07-21T04:15:44+09:00'

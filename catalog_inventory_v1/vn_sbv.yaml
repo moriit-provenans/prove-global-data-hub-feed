@@ -1,0 +1,39 @@
+iso2: VN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.sbv.gov.vn/
+  verified: true
+L1_themes:
+- theme_id: sbv
+  name_ja: State Bank of Viet Nam
+  name_en: SBV
+  url: https://www.sbv.gov.vn/
+L2_datasets:
+- dataset_id: vn_sbv
+  title: SBV portal
+  url: https://www.sbv.gov.vn/
+  api_id: null
+  update_freq: n/a
+  license: SBV terms
+  theme_id: sbv
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: SBV portal
+  url: https://www.sbv.gov.vn/
+  why_unique_ja: ベトナム中央銀行
+- title: SBV home
+  url: https://www.sbv.gov.vn/
+  why_unique_ja: 金融統計入口
+- title: State Bank of Viet Nam
+  url: https://www.sbv.gov.vn/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: vn_sbv
+updated_at: '2026-07-21T04:15:44+09:00'

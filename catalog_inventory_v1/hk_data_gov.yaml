@@ -1,0 +1,39 @@
+iso2: HK
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://data.gov.hk/
+  verified: true
+L1_themes:
+- theme_id: od
+  name_ja: data.gov.hk
+  name_en: data.gov.hk
+  url: https://data.gov.hk/
+L2_datasets:
+- dataset_id: hk_od
+  title: data.gov.hk
+  url: https://data.gov.hk/
+  api_id: null
+  update_freq: continuous
+  license: varies
+  theme_id: od
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: data.gov.hk
+  url: https://data.gov.hk/
+  why_unique_ja: 香港ODポータル
+- title: HK open data
+  url: https://data.gov.hk/
+  why_unique_ja: 横断カタログ
+- title: data.gov.hk catalog
+  url: https://data.gov.hk/
+  why_unique_ja: 地域固有OD
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: hk_data_gov
+updated_at: '2026-07-21T04:15:44+09:00'

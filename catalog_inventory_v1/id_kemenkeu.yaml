@@ -1,0 +1,39 @@
+iso2: ID
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.kemenkeu.go.id/
+  verified: true
+L1_themes:
+- theme_id: kemenkeu
+  name_ja: Ministry of Finance Indonesia
+  name_en: Kemenkeu
+  url: https://www.kemenkeu.go.id/
+L2_datasets:
+- dataset_id: id_kemenkeu
+  title: Kemenkeu portal
+  url: https://www.kemenkeu.go.id/
+  api_id: null
+  update_freq: n/a
+  license: Kemenkeu terms
+  theme_id: kemenkeu
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Kemenkeu
+  url: https://www.kemenkeu.go.id/
+  why_unique_ja: インドネシア財務省
+- title: Kemenkeu portal
+  url: https://www.kemenkeu.go.id/
+  why_unique_ja: 財政入口
+- title: Ministry of Finance Indonesia
+  url: https://www.kemenkeu.go.id/
+  why_unique_ja: 国固有MOF
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: id_kemenkeu
+updated_at: '2026-07-21T04:15:44+09:00'

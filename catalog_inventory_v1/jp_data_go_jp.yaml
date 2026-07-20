@@ -1,6 +1,5 @@
-agency_id: jp_data_go_jp
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 政府オープンデータカタログ data.go.jp（CKAN）。
 L0:
   portal_url: https://www.data.go.jp/
   verified: true
@@ -15,10 +14,10 @@ L2_datasets:
   url: https://www.data.go.jp/data/dataset
   api_id: ckan
   update_freq: continuous
-  license: varies
+  license: varies by dataset
   theme_id: catalog
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -27,3 +26,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_data_go_jp
+updated_at: '2026-07-21T04:15:44+09:00'

@@ -1,0 +1,39 @@
+iso2: KR
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.bok.or.kr/
+  verified: true
+L1_themes:
+- theme_id: bok
+  name_ja: Bank of Korea
+  name_en: BOK
+  url: https://www.bok.or.kr/
+L2_datasets:
+- dataset_id: kr_bok
+  title: BOK portal
+  url: https://www.bok.or.kr/
+  api_id: null
+  update_freq: n/a
+  license: BOK terms
+  theme_id: bok
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Bank of Korea
+  url: https://www.bok.or.kr/
+  why_unique_ja: 韓国銀行
+- title: BOK portal
+  url: https://www.bok.or.kr/
+  why_unique_ja: 金融統計入口
+- title: BOK home
+  url: https://www.bok.or.kr/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: kr_bok
+updated_at: '2026-07-21T04:15:44+09:00'

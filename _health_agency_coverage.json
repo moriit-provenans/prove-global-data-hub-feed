@@ -1,2401 +1,925 @@
 {
-  "generated_at": "2026-07-21T04:11:22+09:00",
+  "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "wave": "Wave0+research_patch",
-  "total_cells": 294,
-  "l0_done": 294,
-  "l0_rate_pct": 100.0,
-  "countries": [
-    "JP",
-    "US",
-    "SG",
-    "MY",
-    "TH",
-    "PH",
-    "VN",
-    "ID",
-    "IN",
-    "CN",
-    "KR",
-    "TW",
-    "HK",
-    "AE",
-    "SA",
-    "TR",
-    "GB",
-    "DE",
-    "FR",
-    "CA",
-    "BR"
-  ],
-  "agency_classes": [
-    "nso",
-    "central_bank",
-    "finance_ministry",
-    "financial_regulator",
-    "economy_industry_trade",
-    "labour",
-    "education_science",
-    "land_construction_transport",
-    "health_welfare",
-    "agriculture_food",
-    "energy_environment",
-    "tourism_investment_promotion",
-    "customs_tax",
-    "open_data_portal"
-  ],
-  "cells": [
-    {
-      "iso2": "JP",
-      "agency_class": "nso",
-      "agency_id": "jp_estat",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "central_bank",
-      "agency_id": "jp_boj",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "finance_ministry",
-      "agency_id": "jp_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "financial_regulator",
-      "agency_id": "jp_fsa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "jp_meti",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "labour",
-      "agency_id": "jp_mhlw_labour",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "education_science",
-      "agency_id": "jp_mext",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "land_construction_transport",
-      "agency_id": "jp_mlit",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "health_welfare",
-      "agency_id": "jp_mhlw_health",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "agriculture_food",
-      "agency_id": "jp_maff",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "energy_environment",
-      "agency_id": "jp_enecho",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "jp_jta",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "customs_tax",
-      "agency_id": "jp_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "JP",
-      "agency_class": "open_data_portal",
-      "agency_id": "jp_data_go_jp",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "nso",
-      "agency_id": "us_census",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "central_bank",
-      "agency_id": "us_fed",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "finance_ministry",
-      "agency_id": "us_treasury",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "financial_regulator",
-      "agency_id": "us_sec",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "us_commerce",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "labour",
-      "agency_id": "us_bls",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "education_science",
-      "agency_id": "us_ed",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "land_construction_transport",
-      "agency_id": "us_dot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "health_welfare",
-      "agency_id": "us_cdc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "agriculture_food",
-      "agency_id": "us_usda",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "energy_environment",
-      "agency_id": "us_eia",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "us_selectusa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "customs_tax",
-      "agency_id": "us_cbp",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "US",
-      "agency_class": "open_data_portal",
-      "agency_id": "us_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "nso",
-      "agency_id": "sg_singstat",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "central_bank",
-      "agency_id": "sg_mas",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "finance_ministry",
-      "agency_id": "sg_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "financial_regulator",
-      "agency_id": "sg_mas_reg",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "sg_mti",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "labour",
-      "agency_id": "sg_mom",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "education_science",
-      "agency_id": "sg_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "land_construction_transport",
-      "agency_id": "sg_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "health_welfare",
-      "agency_id": "sg_moh",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "agriculture_food",
-      "agency_id": "sg_sfa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "energy_environment",
-      "agency_id": "sg_ema",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "sg_stb_edb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "customs_tax",
-      "agency_id": "sg_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SG",
-      "agency_class": "open_data_portal",
-      "agency_id": "sg_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "nso",
-      "agency_id": "my_dosm",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "central_bank",
-      "agency_id": "my_bnm",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "finance_ministry",
-      "agency_id": "my_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "financial_regulator",
-      "agency_id": "my_sc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "my_miti",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "labour",
-      "agency_id": "my_mohr",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "education_science",
-      "agency_id": "my_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "land_construction_transport",
-      "agency_id": "my_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "health_welfare",
-      "agency_id": "my_moh",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "agriculture_food",
-      "agency_id": "my_mafi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "energy_environment",
-      "agency_id": "my_nrecc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "my_mota_mida",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "customs_tax",
-      "agency_id": "my_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "MY",
-      "agency_class": "open_data_portal",
-      "agency_id": "my_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "nso",
-      "agency_id": "th_nso",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "central_bank",
-      "agency_id": "th_bot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "finance_ministry",
-      "agency_id": "th_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "financial_regulator",
-      "agency_id": "th_sec",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "th_moc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "labour",
-      "agency_id": "th_mol",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "education_science",
-      "agency_id": "th_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "land_construction_transport",
-      "agency_id": "th_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "health_welfare",
-      "agency_id": "th_moph",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "agriculture_food",
-      "agency_id": "th_moac",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "energy_environment",
-      "agency_id": "th_mnre",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "th_mots_boi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "customs_tax",
-      "agency_id": "th_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TH",
-      "agency_class": "open_data_portal",
-      "agency_id": "th_data_go",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "nso",
-      "agency_id": "ph_psa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "central_bank",
-      "agency_id": "ph_bsp",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "finance_ministry",
-      "agency_id": "ph_dof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "financial_regulator",
-      "agency_id": "ph_sec",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "ph_dti",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "labour",
-      "agency_id": "ph_dole",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "education_science",
-      "agency_id": "ph_deped",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "land_construction_transport",
-      "agency_id": "ph_dotr",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "health_welfare",
-      "agency_id": "ph_doh",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "agriculture_food",
-      "agency_id": "ph_da",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "energy_environment",
-      "agency_id": "ph_doe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "ph_dot_boa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "customs_tax",
-      "agency_id": "ph_boc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "PH",
-      "agency_class": "open_data_portal",
-      "agency_id": "ph_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "nso",
-      "agency_id": "vn_gso",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "central_bank",
-      "agency_id": "vn_sbv",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "finance_ministry",
-      "agency_id": "vn_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "financial_regulator",
-      "agency_id": "vn_ssc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "vn_moit",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "labour",
-      "agency_id": "vn_molisa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "education_science",
-      "agency_id": "vn_moet",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "land_construction_transport",
-      "agency_id": "vn_mt",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "health_welfare",
-      "agency_id": "vn_moh",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "agriculture_food",
-      "agency_id": "vn_mard",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "energy_environment",
-      "agency_id": "vn_monre",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "vn_vietnam_tourism_mpi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "customs_tax",
-      "agency_id": "vn_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "VN",
-      "agency_class": "open_data_portal",
-      "agency_id": "vn_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "nso",
-      "agency_id": "id_bps",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "central_bank",
-      "agency_id": "id_bi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "finance_ministry",
-      "agency_id": "id_kemenkeu",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "financial_regulator",
-      "agency_id": "id_ojk",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "id_kemenperin",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "labour",
-      "agency_id": "id_kemnaker",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "education_science",
-      "agency_id": "id_kemdikbud",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "land_construction_transport",
-      "agency_id": "id_kemenhub",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "health_welfare",
-      "agency_id": "id_kemkes",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "agriculture_food",
-      "agency_id": "id_kementan",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "energy_environment",
-      "agency_id": "id_esdm",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "id_kemenparekraf_bkpm",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "customs_tax",
-      "agency_id": "id_beacukai",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "ID",
-      "agency_class": "open_data_portal",
-      "agency_id": "id_satudata",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "nso",
-      "agency_id": "in_mospi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "central_bank",
-      "agency_id": "in_rbi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "finance_ministry",
-      "agency_id": "in_dea",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "financial_regulator",
-      "agency_id": "in_sebi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "in_dpiit",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "labour",
-      "agency_id": "in_labour",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "education_science",
-      "agency_id": "in_education",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "land_construction_transport",
-      "agency_id": "in_morth",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "health_welfare",
-      "agency_id": "in_mohfw",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "agriculture_food",
-      "agency_id": "in_agriculture",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "energy_environment",
-      "agency_id": "in_mnre",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "in_tourism_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "customs_tax",
-      "agency_id": "in_cbic",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "IN",
-      "agency_class": "open_data_portal",
-      "agency_id": "in_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "nso",
-      "agency_id": "cn_nbs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "central_bank",
-      "agency_id": "cn_pbc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "finance_ministry",
-      "agency_id": "cn_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "financial_regulator",
-      "agency_id": "cn_csrc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "cn_mofcom",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "labour",
-      "agency_id": "cn_mohrss",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "education_science",
-      "agency_id": "cn_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "land_construction_transport",
-      "agency_id": "cn_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "health_welfare",
-      "agency_id": "cn_nhc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "agriculture_food",
-      "agency_id": "cn_mara",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "energy_environment",
-      "agency_id": "cn_neea",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "cn_cta_mofcom",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "customs_tax",
-      "agency_id": "cn_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CN",
-      "agency_class": "open_data_portal",
-      "agency_id": "cn_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "nso",
-      "agency_id": "kr_kostat",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "central_bank",
-      "agency_id": "kr_bok",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "finance_ministry",
-      "agency_id": "kr_mosf",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "financial_regulator",
-      "agency_id": "kr_fss",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "kr_motie",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "labour",
-      "agency_id": "kr_moel",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "education_science",
-      "agency_id": "kr_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "land_construction_transport",
-      "agency_id": "kr_molit",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "health_welfare",
-      "agency_id": "kr_mohw",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "agriculture_food",
-      "agency_id": "kr_mafra",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "energy_environment",
-      "agency_id": "kr_motie_env",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "kr_mcst_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "customs_tax",
-      "agency_id": "kr_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "KR",
-      "agency_class": "open_data_portal",
-      "agency_id": "kr_data_go",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "nso",
-      "agency_id": "tw_dgbas",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "central_bank",
-      "agency_id": "tw_cbc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "finance_ministry",
-      "agency_id": "tw_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "financial_regulator",
-      "agency_id": "tw_fsc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "tw_moea",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "labour",
-      "agency_id": "tw_mol",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "education_science",
-      "agency_id": "tw_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "land_construction_transport",
-      "agency_id": "tw_motc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "health_welfare",
-      "agency_id": "tw_mohw",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "agriculture_food",
-      "agency_id": "tw_moa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "energy_environment",
-      "agency_id": "tw_moenv",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "tw_tourism_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "customs_tax",
-      "agency_id": "tw_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TW",
-      "agency_class": "open_data_portal",
-      "agency_id": "tw_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "nso",
-      "agency_id": "hk_censtatd",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "central_bank",
-      "agency_id": "hk_hkma",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "finance_ministry",
-      "agency_id": "hk_fstb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "financial_regulator",
-      "agency_id": "hk_sfc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "hk_cedb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "labour",
-      "agency_id": "hk_labour",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "education_science",
-      "agency_id": "hk_edb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "land_construction_transport",
-      "agency_id": "hk_thb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "health_welfare",
-      "agency_id": "hk_hhb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "agriculture_food",
-      "agency_id": "hk_afcd",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "energy_environment",
-      "agency_id": "hk_enb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "hk_tourism_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "customs_tax",
-      "agency_id": "hk_customs",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "HK",
-      "agency_class": "open_data_portal",
-      "agency_id": "hk_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "nso",
-      "agency_id": "ae_fcsc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "central_bank",
-      "agency_id": "ae_cbuae",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "finance_ministry",
-      "agency_id": "ae_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "financial_regulator",
-      "agency_id": "ae_sca",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "ae_moei",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "labour",
-      "agency_id": "ae_mohre",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "education_science",
-      "agency_id": "ae_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "land_construction_transport",
-      "agency_id": "ae_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "health_welfare",
-      "agency_id": "ae_mohap",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "agriculture_food",
-      "agency_id": "ae_moccae",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "energy_environment",
-      "agency_id": "ae_moei_energy",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "ae_dct_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "customs_tax",
-      "agency_id": "ae_fca",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "AE",
-      "agency_class": "open_data_portal",
-      "agency_id": "ae_bayanat",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "nso",
-      "agency_id": "sa_gastat",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "central_bank",
-      "agency_id": "sa_sama",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "finance_ministry",
-      "agency_id": "sa_mof",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "financial_regulator",
-      "agency_id": "sa_cma",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "sa_mci",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "labour",
-      "agency_id": "sa_hrsd",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "education_science",
-      "agency_id": "sa_moe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "land_construction_transport",
-      "agency_id": "sa_mot",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "health_welfare",
-      "agency_id": "sa_moh",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "agriculture_food",
-      "agency_id": "sa_mewa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "energy_environment",
-      "agency_id": "sa_energy",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "sa_mt_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "customs_tax",
-      "agency_id": "sa_zatca",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "SA",
-      "agency_class": "open_data_portal",
-      "agency_id": "sa_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "nso",
-      "agency_id": "tr_tuik",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "central_bank",
-      "agency_id": "tr_tcmb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "finance_ministry",
-      "agency_id": "tr_hmb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "financial_regulator",
-      "agency_id": "tr_spk",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "tr_ticaret",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "labour",
-      "agency_id": "tr_csgb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "education_science",
-      "agency_id": "tr_meb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "land_construction_transport",
-      "agency_id": "tr_uab",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "health_welfare",
-      "agency_id": "tr_saglik",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "agriculture_food",
-      "agency_id": "tr_tarim",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "energy_environment",
-      "agency_id": "tr_enerji",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "tr_kultur_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "customs_tax",
-      "agency_id": "tr_gumruk",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "TR",
-      "agency_class": "open_data_portal",
-      "agency_id": "tr_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "nso",
-      "agency_id": "gb_ons",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "central_bank",
-      "agency_id": "gb_boe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "finance_ministry",
-      "agency_id": "gb_hmt",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "financial_regulator",
-      "agency_id": "gb_fca",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "gb_beis_dbt",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "labour",
-      "agency_id": "gb_dwp",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "education_science",
-      "agency_id": "gb_dfe",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "land_construction_transport",
-      "agency_id": "gb_dft",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "health_welfare",
-      "agency_id": "gb_dhsc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "agriculture_food",
-      "agency_id": "gb_defra",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "energy_environment",
-      "agency_id": "gb_desnz",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "gb_dcms_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "customs_tax",
-      "agency_id": "gb_hmrc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "GB",
-      "agency_class": "open_data_portal",
-      "agency_id": "gb_data_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "nso",
-      "agency_id": "de_destatis",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "central_bank",
-      "agency_id": "de_buba",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "finance_ministry",
-      "agency_id": "de_bmf",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "financial_regulator",
-      "agency_id": "de_bafin",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "de_bmwk",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "labour",
-      "agency_id": "de_bmas",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "education_science",
-      "agency_id": "de_bmbf",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "land_construction_transport",
-      "agency_id": "de_bmdv",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "health_welfare",
-      "agency_id": "de_bmg",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "agriculture_food",
-      "agency_id": "de_bmel",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "energy_environment",
-      "agency_id": "de_bmuv",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "de_bmw_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "customs_tax",
-      "agency_id": "de_zoll",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "DE",
-      "agency_class": "open_data_portal",
-      "agency_id": "de_govdata",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "nso",
-      "agency_id": "fr_insee",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "central_bank",
-      "agency_id": "fr_bdf",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "finance_ministry",
-      "agency_id": "fr_dgfip",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "financial_regulator",
-      "agency_id": "fr_amf",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "fr_dge",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "labour",
-      "agency_id": "fr_travail",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "education_science",
-      "agency_id": "fr_education",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "land_construction_transport",
-      "agency_id": "fr_ecologie",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "health_welfare",
-      "agency_id": "fr_sante",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "agriculture_food",
-      "agency_id": "fr_agriculture",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "energy_environment",
-      "agency_id": "fr_energie",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "fr_diplomatie_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "customs_tax",
-      "agency_id": "fr_douane",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "FR",
-      "agency_class": "open_data_portal",
-      "agency_id": "fr_data_gouv",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "nso",
-      "agency_id": "ca_statcan",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "central_bank",
-      "agency_id": "ca_boc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "finance_ministry",
-      "agency_id": "ca_fin",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "financial_regulator",
-      "agency_id": "ca_osfi",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "ca_isd",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "labour",
-      "agency_id": "ca_esdc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "education_science",
-      "agency_id": "ca_education",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "land_construction_transport",
-      "agency_id": "ca_tc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "health_welfare",
-      "agency_id": "ca_hc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "agriculture_food",
-      "agency_id": "ca_aafc",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "energy_environment",
-      "agency_id": "ca_nrcan",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "ca_destination_invest",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "customs_tax",
-      "agency_id": "ca_cbsa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "CA",
-      "agency_class": "open_data_portal",
-      "agency_id": "ca_open_data",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "nso",
-      "agency_id": "br_ibge",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "central_bank",
-      "agency_id": "br_bcb",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "finance_ministry",
-      "agency_id": "br_fazenda",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "financial_regulator",
-      "agency_id": "br_cvm",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "economy_industry_trade",
-      "agency_id": "br_mdic",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "labour",
-      "agency_id": "br_mte",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "education_science",
-      "agency_id": "br_mec",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "land_construction_transport",
-      "agency_id": "br_infra",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "health_welfare",
-      "agency_id": "br_saude",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "agriculture_food",
-      "agency_id": "br_mapa",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "energy_environment",
-      "agency_id": "br_mme",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "tourism_investment_promotion",
-      "agency_id": "br_turismo_apex",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "customs_tax",
-      "agency_id": "br_receita",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
-    },
-    {
-      "iso2": "BR",
-      "agency_class": "open_data_portal",
-      "agency_id": "br_dados_gov",
-      "L0": "done",
-      "has_portal": true,
-      "missing_reason": null
+  "updated_at": "2026-07-21T04:16:30+09:00",
+  "wave": "Wave1",
+  "note_ja": "Wave1開始時点の到達率。inventory coverage を registry.layer_status に同期して再計算。",
+  "totals": {
+    "countries": 21,
+    "agencies": 297,
+    "countries_with_all_14_classes": 21,
+    "L0_done_agencies": 294,
+    "L0_blocked_agencies": 3,
+    "L1_done_agencies": 55,
+    "L2_partial_or_done_agencies": 55,
+    "L5_partial_or_done_agencies": 49,
+    "inventory_files_count": 68,
+    "P0_agencies": 185,
+    "P0_L1_done": 55,
+    "P0_L2_partial_or_done": 55,
+    "P0_L1_rate": 0.297,
+    "P0_L2_rate": 0.297,
+    "inventories_sample": [
+      "cn_data_gov.yaml",
+      "cn_mof.yaml",
+      "cn_nbs.yaml",
+      "cn_pbc.yaml",
+      "hk_censtatd.yaml",
+      "hk_data_gov.yaml",
+      "hk_fstb.yaml",
+      "hk_hkma.yaml",
+      "id_bi.yaml",
+      "id_bps.yaml",
+      "id_kemenkeu.yaml",
+      "id_satudata.yaml",
+      "in_data_gov.yaml",
+      "in_dea.yaml",
+      "in_mospi.yaml",
+      "in_rbi.yaml",
+      "jp_boj.yaml",
+      "jp_cao_esri.yaml",
+      "jp_customs.yaml",
+      "jp_data_go_jp.yaml",
+      "jp_enecho.yaml",
+      "jp_env.yaml",
+      "jp_estat.yaml",
+      "jp_fsa.yaml",
+      "jp_jetro.yaml",
+      "jp_jta.yaml",
+      "jp_maff.yaml",
+      "jp_meti.yaml",
+      "jp_mext.yaml",
+      "jp_mhlw.yaml",
+      "jp_mhlw_health.yaml",
+      "jp_mhlw_labour.yaml",
+      "jp_mlit.yaml",
+      "jp_mof.yaml",
+      "kr_bok.yaml",
+      "kr_data_go.yaml",
+      "kr_kostat.yaml",
+      "kr_mosf.yaml",
+      "my_bnm.yaml",
+      "my_data_gov.yaml"
+    ]
+  },
+  "by_country": {
+    "JP": {
+      "agency_count": 15,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 15,
+      "L0_blocked": 0,
+      "L1_done": 15,
+      "L2_partial_or_done": 15,
+      "L3_partial_or_done": 1,
+      "L4_partial_or_done": 2,
+      "L5_partial_or_done": 9,
+      "rates": {
+        "L0": 1.0,
+        "L1": 1.0,
+        "L2": 1.0,
+        "L3": 0.067,
+        "L4": 0.133,
+        "L5": 0.6,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/jp_boj.yaml",
+        "catalog_inventory_v1/jp_cao_esri.yaml",
+        "catalog_inventory_v1/jp_customs.yaml",
+        "catalog_inventory_v1/jp_data_go_jp.yaml",
+        "catalog_inventory_v1/jp_enecho.yaml",
+        "catalog_inventory_v1/jp_env.yaml",
+        "catalog_inventory_v1/jp_estat.yaml",
+        "catalog_inventory_v1/jp_fsa.yaml",
+        "catalog_inventory_v1/jp_jetro.yaml",
+        "catalog_inventory_v1/jp_jta.yaml",
+        "catalog_inventory_v1/jp_maff.yaml",
+        "catalog_inventory_v1/jp_meti.yaml",
+        "catalog_inventory_v1/jp_mext.yaml",
+        "catalog_inventory_v1/jp_mhlw.yaml",
+        "catalog_inventory_v1/jp_mhlw_health.yaml",
+        "catalog_inventory_v1/jp_mhlw_labour.yaml",
+        "catalog_inventory_v1/jp_mlit.yaml",
+        "catalog_inventory_v1/jp_mof.yaml"
+      ]
+    },
+    "US": {
+      "agency_count": 15,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 15,
+      "L0_blocked": 0,
+      "L1_done": 5,
+      "L2_partial_or_done": 5,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 2,
+      "L5_partial_or_done": 5,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.333,
+        "L2": 0.333,
+        "L3": 0.0,
+        "L4": 0.133,
+        "L5": 0.333,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/us_bls.yaml",
+        "catalog_inventory_v1/us_census.yaml",
+        "catalog_inventory_v1/us_census_bls.yaml",
+        "catalog_inventory_v1/us_data_gov.yaml",
+        "catalog_inventory_v1/us_fed.yaml",
+        "catalog_inventory_v1/us_treasury.yaml"
+      ]
+    },
+    "SG": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 1,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.071,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/sg_data_gov.yaml",
+        "catalog_inventory_v1/sg_mas.yaml",
+        "catalog_inventory_v1/sg_mof.yaml",
+        "catalog_inventory_v1/sg_singstat.yaml"
+      ]
+    },
+    "MY": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/my_bnm.yaml",
+        "catalog_inventory_v1/my_data_gov.yaml",
+        "catalog_inventory_v1/my_dosm.yaml",
+        "catalog_inventory_v1/my_mof.yaml"
+      ]
+    },
+    "TH": {
+      "agency_count": 15,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 15,
+      "L0_blocked": 0,
+      "L1_done": 2,
+      "L2_partial_or_done": 2,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 2,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.133,
+        "L2": 0.133,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.133,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/th_bot.yaml",
+        "catalog_inventory_v1/th_data_go.yaml",
+        "catalog_inventory_v1/th_mof.yaml",
+        "catalog_inventory_v1/th_nso.yaml"
+      ]
+    },
+    "PH": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 2,
+      "L2_partial_or_done": 2,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 2,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.143,
+        "L2": 0.143,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.143,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/ph_bsp.yaml",
+        "catalog_inventory_v1/ph_data_gov.yaml",
+        "catalog_inventory_v1/ph_dof.yaml",
+        "catalog_inventory_v1/ph_psa.yaml"
+      ]
+    },
+    "VN": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 13,
+      "L0_blocked": 1,
+      "L1_done": 2,
+      "L2_partial_or_done": 2,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 2,
+      "rates": {
+        "L0": 0.929,
+        "L1": 0.143,
+        "L2": 0.143,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.143,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/vn_data_gov.yaml",
+        "catalog_inventory_v1/vn_gso.yaml",
+        "catalog_inventory_v1/vn_mof.yaml",
+        "catalog_inventory_v1/vn_sbv.yaml"
+      ]
+    },
+    "ID": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 13,
+      "L0_blocked": 1,
+      "L1_done": 2,
+      "L2_partial_or_done": 2,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 2,
+      "rates": {
+        "L0": 0.929,
+        "L1": 0.143,
+        "L2": 0.143,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.143,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/id_bi.yaml",
+        "catalog_inventory_v1/id_bps.yaml",
+        "catalog_inventory_v1/id_kemenkeu.yaml",
+        "catalog_inventory_v1/id_satudata.yaml"
+      ]
+    },
+    "IN": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/in_data_gov.yaml",
+        "catalog_inventory_v1/in_dea.yaml",
+        "catalog_inventory_v1/in_mospi.yaml",
+        "catalog_inventory_v1/in_rbi.yaml"
+      ]
+    },
+    "CN": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 13,
+      "L0_blocked": 1,
+      "L1_done": 3,
+      "L2_partial_or_done": 3,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 3,
+      "rates": {
+        "L0": 0.929,
+        "L1": 0.214,
+        "L2": 0.214,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.214,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/cn_data_gov.yaml",
+        "catalog_inventory_v1/cn_mof.yaml",
+        "catalog_inventory_v1/cn_nbs.yaml",
+        "catalog_inventory_v1/cn_pbc.yaml"
+      ]
+    },
+    "KR": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/kr_bok.yaml",
+        "catalog_inventory_v1/kr_data_go.yaml",
+        "catalog_inventory_v1/kr_kostat.yaml",
+        "catalog_inventory_v1/kr_mosf.yaml"
+      ]
+    },
+    "TW": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/tw_cbc.yaml",
+        "catalog_inventory_v1/tw_data_gov.yaml",
+        "catalog_inventory_v1/tw_dgbas.yaml",
+        "catalog_inventory_v1/tw_mof.yaml"
+      ]
+    },
+    "HK": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 4,
+      "L2_partial_or_done": 4,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 4,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.286,
+        "L2": 0.286,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.286,
+        "class_coverage": 1.0
+      },
+      "inventory_files": [
+        "catalog_inventory_v1/hk_censtatd.yaml",
+        "catalog_inventory_v1/hk_data_gov.yaml",
+        "catalog_inventory_v1/hk_fstb.yaml",
+        "catalog_inventory_v1/hk_hkma.yaml"
+      ]
+    },
+    "AE": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "SA": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "TR": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "GB": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "DE": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "FR": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "CA": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
+    },
+    "BR": {
+      "agency_count": 14,
+      "classes_present": [
+        "nso",
+        "central_bank",
+        "finance_ministry",
+        "financial_regulator",
+        "economy_industry_trade",
+        "labour",
+        "education_science",
+        "land_construction_transport",
+        "health_welfare",
+        "agriculture_food",
+        "energy_environment",
+        "tourism_investment_promotion",
+        "customs_tax",
+        "open_data_portal"
+      ],
+      "classes_missing": [],
+      "L0_done": 14,
+      "L0_blocked": 0,
+      "L1_done": 0,
+      "L2_partial_or_done": 0,
+      "L3_partial_or_done": 0,
+      "L4_partial_or_done": 0,
+      "L5_partial_or_done": 0,
+      "rates": {
+        "L0": 1.0,
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0,
+        "L5": 0.0,
+        "class_coverage": 1.0
+      },
+      "inventory_files": []
     }
-  ]
+  }
 }

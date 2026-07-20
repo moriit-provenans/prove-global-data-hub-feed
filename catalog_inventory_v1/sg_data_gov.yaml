@@ -1,0 +1,39 @@
+iso2: SG
+source_note_ja: data.gov.sg。
+L0:
+  portal_url: https://data.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: catalog
+  name_ja: data.gov.sg
+  name_en: data.gov.sg
+  url: https://data.gov.sg/
+L2_datasets:
+- dataset_id: data_gov_sg
+  title: data.gov.sg
+  url: https://data.gov.sg/
+  api_id: null
+  update_freq: continuous
+  license: Singapore Open Data
+  theme_id: catalog
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: data.gov.sg catalog
+  url: https://data.gov.sg/
+  why_unique_ja: シンガポール横断オープンデータ
+- title: data.gov.sg portal
+  url: https://data.gov.sg/
+  why_unique_ja: 国固有ODポータル
+- title: Singapore open data
+  url: https://data.gov.sg/
+  why_unique_ja: 国際比較NSO外の横断カタログ
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_data_gov
+updated_at: '2026-07-21T04:15:44+09:00'

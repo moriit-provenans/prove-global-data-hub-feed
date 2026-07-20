@@ -1,0 +1,39 @@
+iso2: CN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: http://www.pbc.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: pbc
+  name_ja: PBOC
+  name_en: PBOC
+  url: http://www.pbc.gov.cn/
+L2_datasets:
+- dataset_id: cn_pbc
+  title: PBOC portal
+  url: http://www.pbc.gov.cn/
+  api_id: null
+  update_freq: n/a
+  license: PBOC terms
+  theme_id: pbc
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: PBOC portal
+  url: http://www.pbc.gov.cn/
+  why_unique_ja: 中国人民銀行
+- title: PBC home
+  url: http://www.pbc.gov.cn/
+  why_unique_ja: 金融統計入口
+- title: People's Bank of China
+  url: http://www.pbc.gov.cn/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: cn_pbc
+updated_at: '2026-07-21T04:15:44+09:00'

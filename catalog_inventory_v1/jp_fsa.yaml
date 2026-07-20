@@ -1,33 +1,48 @@
-agency_id: jp_fsa
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 金融庁ステータス統計＋EDINET（2026-07-21検証）。
 L0:
   portal_url: https://www.fsa.go.jp/
   verified: true
 L1_themes:
-- theme_id: banking
-  name_ja: 銀行監督統計
-  name_en: Banking statistics
+- theme_id: status
+  name_ja: 監督・検査ステータス統計
+  name_en: Supervisory status stats
   url: https://www.fsa.go.jp/status/
-- theme_id: disclosure
-  name_ja: 開示・EDINET
+- theme_id: edinet
+  name_ja: EDINET
   name_en: EDINET
   url: https://disclosure2.edinet-fsa.go.jp/
+- theme_id: licensed_en
+  name_ja: Licensed entities (EN)
+  name_en: Licensed entities
+  url: https://www.fsa.go.jp/en/regulated/licensed/
 L2_datasets:
+- dataset_id: fsa_status
+  title: 金融庁ステータス統計
+  url: https://www.fsa.go.jp/status/
+  api_id: null
+  update_freq: varies
+  license: FSA terms
+  theme_id: status
 - dataset_id: edinet
   title: EDINET
   url: https://disclosure2.edinet-fsa.go.jp/
   api_id: edinet-api
   update_freq: daily
   license: FSA terms
-  theme_id: disclosure
+  theme_id: edinet
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: EDINET 有価証券報告書XBRL開示
+  url: https://disclosure2.edinet-fsa.go.jp/
+  why_unique_ja: 企業開示XBRLは国際比較カタログに無い日本固有の金融監督データ基盤
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
+agency_id: jp_fsa
+updated_at: '2026-07-21T04:15:44+09:00'

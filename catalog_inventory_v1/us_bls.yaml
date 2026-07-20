@@ -1,0 +1,33 @@
+iso2: US
+source_note_ja: BLS CPIポータルはクローラ403のため労働統計トップをL0/L1に使用（notes）。CPI深URLは人間ブラウザで要再確認。
+L0:
+  portal_url: https://www.bls.gov/
+  verified: true
+L1_themes:
+- theme_id: bls_home
+  name_ja: BLS Home
+  name_en: BLS
+  url: https://www.bls.gov/
+L2_datasets:
+- dataset_id: bls_home
+  title: BLS portal
+  url: https://www.bls.gov/
+  api_id: null
+  update_freq: n/a
+  license: BLS terms
+  theme_id: bls_home
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: BLS official portal
+  url: https://www.bls.gov/
+  why_unique_ja: 米労働統計局の一次配信（CPI等の深URLは403でblocked候補）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_bls
+updated_at: '2026-07-21T04:15:44+09:00'

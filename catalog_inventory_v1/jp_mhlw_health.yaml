@@ -1,17 +1,38 @@
-agency_id: jp_mhlw_health
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 厚労省保健・人口動態（2026-07-21検証）。
 L0:
   portal_url: https://www.mhlw.go.jp/
   verified: true
 L1_themes:
-- theme_id: health
-  name_ja: 保健統計
-  name_en: Health stats
-  url: https://www.mhlw.go.jp/toukei/
-L2_datasets: []
+- theme_id: vital
+  name_ja: 人口動態統計
+  name_en: Vital statistics
+  url: https://www.mhlw.go.jp/toukei/list/81-1.html
+- theme_id: patient
+  name_ja: 患者調査
+  name_en: Patient survey
+  url: https://www.mhlw.go.jp/toukei/list/114-1.html
+- theme_id: toukei_index
+  name_ja: 厚労省統計一覧
+  name_en: MHLW statistics index
+  url: https://www.mhlw.go.jp/toukei/index.html
+L2_datasets:
+- dataset_id: mhlw_vital
+  title: 人口動態統計
+  url: https://www.mhlw.go.jp/toukei/list/81-1.html
+  api_id: null
+  update_freq: monthly/annual
+  license: MHLW terms
+  theme_id: vital
+- dataset_id: mhlw_patient
+  title: 患者調査
+  url: https://www.mhlw.go.jp/toukei/list/114-1.html
+  api_id: null
+  update_freq: triennial
+  license: MHLW terms
+  theme_id: patient
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -20,3 +41,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_mhlw_health
+updated_at: '2026-07-21T04:15:44+09:00'

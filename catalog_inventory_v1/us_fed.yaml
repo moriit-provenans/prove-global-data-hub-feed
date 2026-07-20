@@ -1,0 +1,39 @@
+iso2: US
+source_note_ja: Federal Reserve Board data hub（FREDは本セッションでタイムアウトのため未登録・blocked候補）。
+L0:
+  portal_url: https://www.federalreserve.gov/
+  verified: true
+L1_themes:
+- theme_id: fed_data
+  name_ja: Fed Data
+  name_en: Board data
+  url: https://www.federalreserve.gov/data.htm
+L2_datasets:
+- dataset_id: fed_data
+  title: Federal Reserve Data
+  url: https://www.federalreserve.gov/data.htm
+  api_id: null
+  update_freq: varies
+  license: FRB terms
+  theme_id: fed_data
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Federal Reserve Data hub
+  url: https://www.federalreserve.gov/data.htm
+  why_unique_ja: FRB一次データハブ
+- title: Federal Reserve Board portal
+  url: https://www.federalreserve.gov/
+  why_unique_ja: 米中央銀行ポータル
+- title: FRB data.htm
+  url: https://www.federalreserve.gov/data.htm
+  why_unique_ja: 国際比較コア外のFRB配信入口
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: partial
+agency_id: us_fed
+updated_at: '2026-07-21T04:15:44+09:00'

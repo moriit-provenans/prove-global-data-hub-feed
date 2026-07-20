@@ -1,0 +1,39 @@
+iso2: US
+source_note_ja: data.gov オープンデータポータル（www.data.gov 検証済）。
+L0:
+  portal_url: https://www.data.gov/
+  verified: true
+L1_themes:
+- theme_id: catalog
+  name_ja: data.gov catalog
+  name_en: data.gov
+  url: https://www.data.gov/
+L2_datasets:
+- dataset_id: data_gov
+  title: data.gov
+  url: https://www.data.gov/
+  api_id: null
+  update_freq: continuous
+  license: varies
+  theme_id: catalog
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: data.gov catalog
+  url: https://www.data.gov/
+  why_unique_ja: 連邦横断オープンデータカタログ
+- title: data.gov home
+  url: https://www.data.gov/
+  why_unique_ja: 米オープンデータ一次入口
+- title: Federal open data portal
+  url: https://www.data.gov/
+  why_unique_ja: 国際比較NSOカタログ外の横断ポータル
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_data_gov
+updated_at: '2026-07-21T04:15:44+09:00'

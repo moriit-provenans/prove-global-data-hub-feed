@@ -1,6 +1,5 @@
-agency_id: jp_mlit
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 国交省建設受注・運輸統計・観光庁統計（宿泊旅行統計URLを検証済パスに修正）。
 L0:
   portal_url: https://www.mlit.go.jp/
   verified: true
@@ -13,10 +12,10 @@ L1_themes:
   name_ja: 運輸関連統計
   name_en: Transport stats
   url: https://www.mlit.go.jp/k-toukei/
-- theme_id: tourism
-  name_ja: 宿泊旅行統計等
-  name_en: Tourism stats
-  url: https://www.mlit.go.jp/kankocho/tokei/
+- theme_id: tourism_stats
+  name_ja: 観光庁統計資料
+  name_en: JTA statistics
+  url: https://www.mlit.go.jp/kankocho/siryou/toukei/
 L2_datasets:
 - dataset_id: mlit_const
   title: 建設工事受注動態統計
@@ -25,13 +24,32 @@ L2_datasets:
   update_freq: monthly
   license: MLIT terms
   theme_id: construction
+- dataset_id: mlit_transport
+  title: 運輸統計ポータル
+  url: https://www.mlit.go.jp/k-toukei/
+  api_id: null
+  update_freq: varies
+  license: MLIT terms
+  theme_id: transport
+- dataset_id: jta_shukuhaku
+  title: 宿泊旅行統計調査
+  url: https://www.mlit.go.jp/kankocho/siryou/toukei/shukuhakutoukei.html
+  api_id: null
+  update_freq: monthly
+  license: JTA/MLIT terms
+  theme_id: tourism_stats
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 宿泊旅行統計調査
+  url: https://www.mlit.go.jp/kankocho/siryou/toukei/shukuhakutoukei.html
+  why_unique_ja: 宿泊施設タイプ別稼働率は国際比較カタログに薄い観光固有系列
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
+agency_id: jp_mlit
+updated_at: '2026-07-21T04:15:44+09:00'

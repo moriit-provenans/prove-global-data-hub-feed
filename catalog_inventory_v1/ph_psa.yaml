@@ -1,44 +1,23 @@
-agency_id: ph_psa
 iso2: PH
-updated_at: '2026-07-21T04:09:34+09:00'
+source_note_ja: PSAポータルはクローラ403。registry portal_url維持・L1 blocked。
 L0:
   portal_url: https://psa.gov.ph/
-  verified: true
-L1_themes:
-- theme_id: national_accounts
-  name_ja: 国民経済計算
-  name_en: National Accounts
-  url: https://openstat.psa.gov.ph/
-- theme_id: cpi
-  name_ja: CPI
-  name_en: CPI
-  url: https://openstat.psa.gov.ph/
-- theme_id: lfs
-  name_ja: 労働力調査
-  name_en: LFS
-  url: https://openstat.psa.gov.ph/
-- theme_id: trade
-  name_ja: 貿易
-  name_en: Trade
-  url: https://openstat.psa.gov.ph/
-L2_datasets:
-- dataset_id: ph_gdp_q
-  title: Quarterly GDP OpenSTAT
-  url: https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/NA/QT/23QNAP/PRD/0992B5BQPQ2.px
-  api_id: 0992B5BQPQ2
-  update_freq: quarterly
-  license: PSA
-  theme_id: national_accounts
+  verified: false
+  blocked_reason: crawler_403
+L1_themes: []
+L2_datasets: []
 L3_series: []
-L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
-L5_country_unique:
-- title: OpenSTAT PX-Web API
-  url: https://openstat.psa.gov.ph/
-  why_unique_ja: HTMLが403でもAPI到達可能な国固有経路
+L4_notes: 人間ブラウザでL1再検証が必要
+L5_country_unique: []
 coverage:
   L0: done
-  L1: done
-  L2: partial
+  L1: blocked
+  L2: blocked
   L3: pending
-  L4: partial
-  L5: partial
+  L4: pending
+  L5: pending
+blocked:
+  L1: crawler_403
+  L2: awaiting_L1
+agency_id: ph_psa
+updated_at: '2026-07-21T04:15:44+09:00'

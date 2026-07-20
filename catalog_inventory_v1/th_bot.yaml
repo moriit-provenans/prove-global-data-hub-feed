@@ -1,0 +1,39 @@
+iso2: TH
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.bot.or.th/
+  verified: true
+L1_themes:
+- theme_id: bot
+  name_ja: Bank of Thailand
+  name_en: BOT
+  url: https://www.bot.or.th/
+L2_datasets:
+- dataset_id: th_bot
+  title: BOT portal
+  url: https://www.bot.or.th/
+  api_id: null
+  update_freq: n/a
+  license: BOT terms
+  theme_id: bot
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Bank of Thailand
+  url: https://www.bot.or.th/
+  why_unique_ja: タイ中央銀行
+- title: BOT portal
+  url: https://www.bot.or.th/
+  why_unique_ja: 金融統計入口
+- title: BOT home
+  url: https://www.bot.or.th/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: th_bot
+updated_at: '2026-07-21T04:15:44+09:00'

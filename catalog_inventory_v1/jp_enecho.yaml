@@ -1,17 +1,23 @@
-agency_id: jp_enecho
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 資源エネルギー庁統計ポータル（2026-07-21検証）。環境省は jp_env。
 L0:
-  portal_url: https://www.enecho.meti.go.jp/
+  portal_url: https://www.enecho.meti.go.jp/statistics/
   verified: true
 L1_themes:
-- theme_id: energy
+- theme_id: enecho_stats
   name_ja: エネルギー統計
-  name_en: Energy stats
+  name_en: ANRE statistics
   url: https://www.enecho.meti.go.jp/statistics/
-L2_datasets: []
+L2_datasets:
+- dataset_id: enecho_portal
+  title: エネルギー統計ポータル
+  url: https://www.enecho.meti.go.jp/statistics/
+  api_id: null
+  update_freq: varies
+  license: ANRE/METI terms
+  theme_id: enecho_stats
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -20,3 +26,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_enecho
+updated_at: '2026-07-21T04:15:44+09:00'

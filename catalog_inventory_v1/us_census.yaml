@@ -1,0 +1,61 @@
+iso2: US
+source_note_ja: U.S. Census Bureau portal + programs (Wave1 NSO)。BLS/BEAは別agency。
+L0:
+  portal_url: https://www.census.gov/
+  verified: true
+L1_themes:
+- theme_id: acs
+  name_ja: American Community Survey
+  name_en: ACS
+  url: https://www.census.gov/programs-surveys/acs
+- theme_id: economic
+  name_ja: Economic Indicators
+  name_en: Economic indicators
+  url: https://www.census.gov/economic-indicators/
+- theme_id: api
+  name_ja: Census Data API
+  name_en: Census API
+  url: https://api.census.gov/data.html
+L2_datasets:
+- dataset_id: census_acs
+  title: ACS program page
+  url: https://www.census.gov/programs-surveys/acs
+  api_id: null
+  update_freq: annual
+  license: Census terms
+  theme_id: acs
+- dataset_id: census_econ
+  title: Economic Indicators
+  url: https://www.census.gov/economic-indicators/
+  api_id: null
+  update_freq: varies
+  license: Census terms
+  theme_id: economic
+- dataset_id: census_api
+  title: Census Data API docs
+  url: https://api.census.gov/data.html
+  api_id: census-api
+  update_freq: n/a
+  license: Census terms
+  theme_id: api
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: ACS detailed tables
+  url: https://www.census.gov/programs-surveys/acs
+  why_unique_ja: 州・郡粒度の社会経済表は国際比較コアに薄い
+- title: Census Economic Indicators hub
+  url: https://www.census.gov/economic-indicators/
+  why_unique_ja: 米センサス固有の短期経済指標ハブ
+- title: Census Data API catalog
+  url: https://api.census.gov/data.html
+  why_unique_ja: APIエンドポイント一覧は米センサス固有の配信層
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: partial
+agency_id: us_census
+updated_at: '2026-07-21T04:15:44+09:00'

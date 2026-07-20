@@ -1,0 +1,48 @@
+iso2: JP
+source_note_ja: 厚労省労働系統計ページ（毎月勤労・賃金構造）。agency_id=jp_mhlw_labour。
+L0:
+  portal_url: https://www.mhlw.go.jp/
+  verified: true
+L1_themes:
+- theme_id: toukei_index
+  name_ja: 厚労省統計一覧
+  name_en: MHLW statistics index
+  url: https://www.mhlw.go.jp/toukei/index.html
+- theme_id: monthly_labour
+  name_ja: 毎月勤労統計
+  name_en: Monthly Labour Survey
+  url: https://www.mhlw.go.jp/toukei/list/30-1.html
+- theme_id: wage_structure
+  name_ja: 賃金構造基本統計
+  name_en: Wage structure
+  url: https://www.mhlw.go.jp/toukei/list/chinginkouzou.html
+L2_datasets:
+- dataset_id: mhlw_mls
+  title: 毎月勤労統計調査
+  url: https://www.mhlw.go.jp/toukei/list/30-1.html
+  api_id: null
+  update_freq: monthly
+  license: MHLW terms
+  theme_id: monthly_labour
+- dataset_id: mhlw_wage
+  title: 賃金構造基本統計調査
+  url: https://www.mhlw.go.jp/toukei/list/chinginkouzou.html
+  api_id: null
+  update_freq: annual
+  license: MHLW terms
+  theme_id: wage_structure
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 毎月勤労統計（事業所規模別）
+  url: https://www.mhlw.go.jp/toukei/list/30-1.html
+  why_unique_ja: 事業所規模別の現金給与・労働時間は国際比較コアに薄い日本固有の労働系列
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: jp_mhlw_labour
+updated_at: '2026-07-21T04:15:44+09:00'

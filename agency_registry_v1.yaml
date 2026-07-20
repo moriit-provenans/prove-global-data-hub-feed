@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:09:00+09:00'
-wave: Wave0
+updated_at: '2026-07-21T04:16:30+09:00'
+wave: Wave1
 policy:
   layers:
   - L0
@@ -61,9 +61,9 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: partial
+    L3: pending
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.e-stat.go.jp/
   open_data_url: https://www.e-stat.go.jp/
   api_docs_url: https://www.e-stat.go.jp/api/
@@ -78,7 +78,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.esri.cao.go.jp/
   open_data_url: https://www.esri.cao.go.jp/jp/sna/menu.html
   notes: 国民経済計算（SNA）主管。e-Stat経由でも配信。
@@ -93,7 +93,7 @@ agencies:
     L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.boj.or.jp/
   open_data_url: https://www.stat-search.boj.or.jp/
 - agency_id: jp_mof
@@ -103,11 +103,11 @@ agencies:
   name_en: Ministry of Finance
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.go.jp/
   notes: 予算・決算・財政統計。貿易統計は関税局と分担。
 - agency_id: jp_fsa
@@ -117,11 +117,11 @@ agencies:
   name_en: Financial Services Agency
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.fsa.go.jp/
 - agency_id: jp_meti
   iso2: JP
@@ -134,7 +134,7 @@ agencies:
     L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.meti.go.jp/
   open_data_url: https://www.meti.go.jp/statistics/index.html
 - agency_id: jp_mhlw_labour
@@ -144,11 +144,11 @@ agencies:
   name_en: MHLW Labour Statistics
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mhlw.go.jp/
   open_data_url: https://www.mhlw.go.jp/toukei/index.html
   notes: agency_id旧 jp_mhlw を labour 明示に分割。
@@ -159,8 +159,8 @@ agencies:
   name_en: MEXT
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -172,11 +172,11 @@ agencies:
   name_en: MLIT
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mlit.go.jp/
 - agency_id: jp_mhlw_health
   iso2: JP
@@ -185,8 +185,8 @@ agencies:
   name_en: MHLW Health & Welfare
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -200,11 +200,11 @@ agencies:
   name_en: MAFF
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.maff.go.jp/
 - agency_id: jp_enecho
   iso2: JP
@@ -213,8 +213,8 @@ agencies:
   name_en: ANRE / MOE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -227,8 +227,8 @@ agencies:
   name_en: Japan Tourism Agency / JETRO
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -242,8 +242,8 @@ agencies:
   name_en: Customs and Tariff Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -256,8 +256,8 @@ agencies:
   name_en: data.go.jp
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
     L5: pending
@@ -270,11 +270,11 @@ agencies:
   name_en: U.S. Census Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
-    L4: pending
-    L5: pending
+    L4: partial
+    L5: partial
   portal_url: https://www.census.gov/
   open_data_url: https://www.census.gov/data.html
   notes: BEA/BLSもNSO級。Wave1で分割棚卸し。
@@ -299,11 +299,11 @@ agencies:
   name_en: Federal Reserve System
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
-    L4: pending
-    L5: pending
+    L4: partial
+    L5: partial
   portal_url: https://www.federalreserve.gov/
   open_data_url: https://fred.stlouisfed.org/
 - agency_id: us_treasury
@@ -313,11 +313,11 @@ agencies:
   name_en: U.S. Department of the Treasury
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://home.treasury.gov/
   open_data_url: https://fiscaldata.treasury.gov/
   api_docs_url: https://fiscaldata.treasury.gov/api-documentation/
@@ -354,11 +354,11 @@ agencies:
   name_en: Bureau of Labor Statistics
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bls.gov/
   notes: 2026-07-21 クローラ環境で403。公式ポータルとして登録（人間ブラウザ／別UAで再検証）。
 - agency_id: us_ed
@@ -460,11 +460,11 @@ agencies:
   name_en: Data.gov
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.gov/
 - agency_id: vn_gso
   iso2: VN
@@ -486,11 +486,11 @@ agencies:
   name_en: State Bank of Vietnam
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sbv.gov.vn/
 - agency_id: vn_mof
   iso2: VN
@@ -499,11 +499,11 @@ agencies:
   name_en: Ministry of Finance Viet Nam
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.vn/
 - agency_id: vn_ssc
   iso2: VN
@@ -642,7 +642,7 @@ agencies:
   name_ja: 国家データポータル
   name_en: National Data Portal (data.gov.vn)
   layer_status:
-    L0: done
+    L0: blocked
     L1: pending
     L2: pending
     L3: pending
@@ -650,6 +650,7 @@ agencies:
     L5: pending
   portal_url: https://data.gov.vn/
   open_data_url: https://open.data.gov.vn/
+  missing_reason: unstable_or_unverified
 - agency_id: th_nso
   iso2: TH
   agency_class: nso
@@ -657,11 +658,11 @@ agencies:
   name_en: National Statistical Office Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.nso.go.th/
   notes: 国民経済計算はNESDC主管も併記。
 - agency_id: th_nesdc
@@ -684,11 +685,11 @@ agencies:
   name_en: Bank of Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bot.or.th/
 - agency_id: th_mof
   iso2: TH
@@ -867,11 +868,11 @@ agencies:
   name_en: Bank Indonesia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bi.go.id/
 - agency_id: id_kemenkeu
   iso2: ID
@@ -880,11 +881,11 @@ agencies:
   name_en: Ministry of Finance Indonesia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.kemenkeu.go.id/
 - agency_id: id_ojk
   iso2: ID
@@ -1024,7 +1025,7 @@ agencies:
   name_ja: Satu Data Indonesia
   name_en: Satu Data Indonesia
   layer_status:
-    L0: done
+    L0: blocked
     L1: pending
     L2: pending
     L3: pending
@@ -1032,6 +1033,7 @@ agencies:
     L5: pending
   portal_url: https://satudata.go.id/
   open_data_url: https://satudata.go.id/
+  missing_reason: dns_or_unreachable
 - agency_id: in_mospi
   iso2: IN
   agency_class: nso
@@ -1039,11 +1041,11 @@ agencies:
   name_en: Ministry of Statistics and Programme Implementation
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mospi.gov.in/
   notes: SSL/API制約あり。NSO India。
 - agency_id: in_rbi
@@ -1053,11 +1055,11 @@ agencies:
   name_en: Reserve Bank of India
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.rbi.org.in/
   open_data_url: https://dbie.rbi.org.in/
 - agency_id: in_dea
@@ -1067,11 +1069,11 @@ agencies:
   name_en: Department of Economic Affairs / MoF
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://dea.gov.in/
 - agency_id: in_sebi
   iso2: IN
@@ -1211,11 +1213,11 @@ agencies:
   name_en: data.gov.in
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.gov.in/
 - agency_id: ph_psa
   iso2: PH
@@ -1238,11 +1240,11 @@ agencies:
   name_en: Bangko Sentral ng Pilipinas
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bsp.gov.ph/
 - agency_id: ph_dof
   iso2: PH
@@ -1395,11 +1397,11 @@ agencies:
   name_en: data.gov.ph
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.ph/
   notes: ポータル稼働状況はWave1で再確認。
 - agency_id: my_dosm
@@ -1409,11 +1411,11 @@ agencies:
   name_en: Department of Statistics Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.dosm.gov.my/
   open_data_url: https://open.dosm.gov.my/
 - agency_id: my_bnm
@@ -1423,11 +1425,11 @@ agencies:
   name_en: Bank Negara Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bnm.gov.my/
 - agency_id: my_mof
   iso2: MY
@@ -1436,11 +1438,11 @@ agencies:
   name_en: Ministry of Finance Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.my/
 - agency_id: my_sc
   iso2: MY
@@ -1580,11 +1582,11 @@ agencies:
   name_en: data.gov.my
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.gov.my/
   open_data_url: https://www.data.gov.my/
 - agency_id: sg_singstat
@@ -1594,11 +1596,11 @@ agencies:
   name_en: Department of Statistics Singapore
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
-    L4: pending
-    L5: pending
+    L4: partial
+    L5: partial
   portal_url: https://www.singstat.gov.sg/
   open_data_url: https://tablebuilder.singstat.gov.sg/
 - agency_id: sg_mas
@@ -1608,11 +1610,11 @@ agencies:
   name_en: Monetary Authority of Singapore
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mas.gov.sg/
 - agency_id: sg_mof
   iso2: SG
@@ -1621,11 +1623,11 @@ agencies:
   name_en: Ministry of Finance Singapore
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.sg/
 - agency_id: sg_mas_reg
   iso2: SG
@@ -1767,11 +1769,11 @@ agencies:
   name_en: data.gov.sg
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.sg/
 - agency_id: cn_nbs
   iso2: CN
@@ -1780,11 +1782,11 @@ agencies:
   name_en: National Bureau of Statistics of China
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.stats.gov.cn/
   open_data_url: https://data.stats.gov.cn/
 - agency_id: cn_pbc
@@ -1794,11 +1796,11 @@ agencies:
   name_en: People's Bank of China
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.pbc.gov.cn/
 - agency_id: cn_mof
   iso2: CN
@@ -1807,11 +1809,11 @@ agencies:
   name_en: Ministry of Finance PRC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.cn/
 - agency_id: cn_csrc
   iso2: CN
@@ -1950,7 +1952,7 @@ agencies:
   name_ja: 国家公共データ開放平台
   name_en: data.gov.cn
   layer_status:
-    L0: done
+    L0: blocked
     L1: pending
     L2: pending
     L3: pending
@@ -1958,6 +1960,7 @@ agencies:
     L5: pending
   portal_url: https://data.gov.cn/
   open_data_url: https://data.gov.cn/
+  missing_reason: unreachable
 - agency_id: kr_kostat
   iso2: KR
   agency_class: nso
@@ -1965,11 +1968,11 @@ agencies:
   name_en: Statistics Korea / KOSIS
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://kostat.go.kr/
   open_data_url: https://kosis.kr/
   api_docs_url: https://kosis.kr/openapi/index/index.do
@@ -1980,11 +1983,11 @@ agencies:
   name_en: Bank of Korea
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bok.or.kr/
 - agency_id: kr_mosf
   iso2: KR
@@ -1993,11 +1996,11 @@ agencies:
   name_en: Ministry of Economy and Finance
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moef.go.kr/
 - agency_id: kr_fss
   iso2: KR
@@ -2137,11 +2140,11 @@ agencies:
   name_en: data.go.kr
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.go.kr/
 - agency_id: tw_dgbas
   iso2: TW
@@ -2150,11 +2153,11 @@ agencies:
   name_en: DGBAS
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.stat.gov.tw/
   open_data_url: https://www.dgbas.gov.tw/
 - agency_id: tw_cbc
@@ -2164,11 +2167,11 @@ agencies:
   name_en: Central Bank of the Republic of China (Taiwan)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cbc.gov.tw/
 - agency_id: tw_mof
   iso2: TW
@@ -2177,11 +2180,11 @@ agencies:
   name_en: Ministry of Finance Taiwan
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.tw/
 - agency_id: tw_fsc
   iso2: TW
@@ -2321,11 +2324,11 @@ agencies:
   name_en: data.gov.tw
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.tw/
 - agency_id: hk_censtatd
   iso2: HK
@@ -2334,11 +2337,11 @@ agencies:
   name_en: Census and Statistics Department
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.censtatd.gov.hk/
 - agency_id: hk_hkma
   iso2: HK
@@ -2347,11 +2350,11 @@ agencies:
   name_en: Hong Kong Monetary Authority
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.hkma.gov.hk/
 - agency_id: hk_fstb
   iso2: HK
@@ -2360,11 +2363,11 @@ agencies:
   name_en: Financial Services and the Treasury Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.fstb.gov.hk/
 - agency_id: hk_sfc
   iso2: HK
@@ -2505,11 +2508,11 @@ agencies:
   name_en: data.gov.hk
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.hk/
 - agency_id: ae_fcsc
   iso2: AE

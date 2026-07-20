@@ -1,0 +1,24 @@
+iso2: CN
+source_note_ja: data.gov.cn 到達不可。Wave0 missing継続。
+L0:
+  portal_url: https://data.gov.cn/
+  verified: false
+  blocked_reason: unreachable
+L1_themes: []
+L2_datasets: []
+L3_series: []
+L4_notes: 人間ブラウザでL1再検証が必要
+L5_country_unique: []
+coverage:
+  L0: blocked
+  L1: blocked
+  L2: blocked
+  L3: pending
+  L4: pending
+  L5: pending
+blocked:
+  L0: unreachable
+  L1: unreachable
+  L2: awaiting_L0
+agency_id: cn_data_gov
+updated_at: '2026-07-21T04:16:30+09:00'

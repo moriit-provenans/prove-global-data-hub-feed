@@ -1,0 +1,39 @@
+iso2: TW
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.cbc.gov.tw/
+  verified: true
+L1_themes:
+- theme_id: cbc
+  name_ja: CBC Taiwan
+  name_en: CBC
+  url: https://www.cbc.gov.tw/
+L2_datasets:
+- dataset_id: tw_cbc
+  title: CBC portal
+  url: https://www.cbc.gov.tw/
+  api_id: null
+  update_freq: n/a
+  license: CBC terms
+  theme_id: cbc
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: CBC Taiwan
+  url: https://www.cbc.gov.tw/
+  why_unique_ja: 台湾中央銀行
+- title: CBC portal
+  url: https://www.cbc.gov.tw/
+  why_unique_ja: 金融統計入口
+- title: CBC home
+  url: https://www.cbc.gov.tw/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: tw_cbc
+updated_at: '2026-07-21T04:15:44+09:00'

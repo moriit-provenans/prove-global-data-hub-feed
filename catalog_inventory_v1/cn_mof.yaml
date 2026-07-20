@@ -1,0 +1,39 @@
+iso2: CN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.mof.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: mof
+  name_ja: MOF China
+  name_en: MOF
+  url: https://www.mof.gov.cn/
+L2_datasets:
+- dataset_id: cn_mof
+  title: MOF China
+  url: https://www.mof.gov.cn/
+  api_id: null
+  update_freq: n/a
+  license: MOF CN terms
+  theme_id: mof
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: MOF China
+  url: https://www.mof.gov.cn/
+  why_unique_ja: 中国財政部
+- title: MOF CN portal
+  url: https://www.mof.gov.cn/
+  why_unique_ja: 財政入口
+- title: Ministry of Finance PRC
+  url: https://www.mof.gov.cn/
+  why_unique_ja: 国固有MOF
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: cn_mof
+updated_at: '2026-07-21T04:15:44+09:00'

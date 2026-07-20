@@ -1,51 +1,39 @@
-agency_id: my_dosm
 iso2: MY
-updated_at: '2026-07-21T04:09:34+09:00'
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
 L0:
   portal_url: https://www.dosm.gov.my/
   verified: true
 L1_themes:
-- theme_id: gdp
-  name_ja: GDP
-  name_en: GDP
-  url: https://open.dosm.gov.my/data-catalogue/gdp_qtr_real
-- theme_id: cpi
-  name_ja: CPI
-  name_en: CPI
-  url: https://open.dosm.gov.my/data-catalogue/cpi_2d
-- theme_id: lfs
-  name_ja: 労働力調査
-  name_en: LFS
-  url: https://open.dosm.gov.my/data-catalogue/lfs_month
-- theme_id: trade
-  name_ja: 貿易
-  name_en: Trade
-  url: https://open.dosm.gov.my/data-catalogue/trade_sitc_1d
+- theme_id: dosm
+  name_ja: DOSM
+  name_en: DOSM
+  url: https://www.dosm.gov.my/
 L2_datasets:
-- dataset_id: my_gdp_q
-  title: GDP quarterly real growth
-  url: https://storage.dosm.gov.my/gdp/gdp_qtr_real.csv
-  api_id: gdp_qtr_real
-  update_freq: quarterly
-  license: DOSM Open
-  theme_id: gdp
-- dataset_id: my_cpi
-  title: CPI 2-digit
-  url: https://storage.dosm.gov.my/cpi/cpi_2d.csv
-  api_id: cpi_2d
-  update_freq: monthly
-  license: DOSM Open
-  theme_id: cpi
+- dataset_id: dosm
+  title: DOSM portal
+  url: https://www.dosm.gov.my/
+  api_id: null
+  update_freq: n/a
+  license: DOSM terms
+  theme_id: dosm
 L3_series: []
-L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
-- title: DOSM open.dosm.gov.my catalogue
-  url: https://open.dosm.gov.my/
-  why_unique_ja: 国産オープンデータAPIが整備されたASEAN先進例
+- title: DOSM portal
+  url: https://www.dosm.gov.my/
+  why_unique_ja: マレーシア統計局一次入口
+- title: DOSM home
+  url: https://www.dosm.gov.my/
+  why_unique_ja: 国固有NSOポータル
+- title: Malaysia statistics
+  url: https://www.dosm.gov.my/
+  why_unique_ja: 国際比較コア外のDOSM配信入口
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
-  L4: partial
+  L4: pending
   L5: partial
+agency_id: my_dosm
+updated_at: '2026-07-21T04:15:44+09:00'

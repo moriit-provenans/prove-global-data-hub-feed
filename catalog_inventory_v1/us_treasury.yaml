@@ -1,0 +1,50 @@
+iso2: US
+source_note_ja: U.S. Treasury + Fiscal Data。
+L0:
+  portal_url: https://home.treasury.gov/
+  verified: true
+L1_themes:
+- theme_id: treasury_home
+  name_ja: U.S. Treasury
+  name_en: Treasury
+  url: https://home.treasury.gov/
+- theme_id: fiscaldata
+  name_ja: Fiscal Data
+  name_en: Fiscal Data
+  url: https://fiscaldata.treasury.gov/
+L2_datasets:
+- dataset_id: treasury_home
+  title: Treasury home
+  url: https://home.treasury.gov/
+  api_id: null
+  update_freq: n/a
+  license: Treasury terms
+  theme_id: treasury_home
+- dataset_id: fiscaldata
+  title: Fiscal Data portal
+  url: https://fiscaldata.treasury.gov/
+  api_id: null
+  update_freq: continuous
+  license: Treasury terms
+  theme_id: fiscaldata
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Fiscal Data datasets
+  url: https://fiscaldata.treasury.gov/
+  why_unique_ja: 米連邦財政の機械可読配信は国際比較コアに薄い
+- title: U.S. Treasury portal
+  url: https://home.treasury.gov/
+  why_unique_ja: 財務省ポータル自体が国固有の公式入口
+- title: Fiscal Data API ecosystem
+  url: https://fiscaldata.treasury.gov/
+  why_unique_ja: Debt/revenue API群は米固有
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_treasury
+updated_at: '2026-07-21T04:15:44+09:00'

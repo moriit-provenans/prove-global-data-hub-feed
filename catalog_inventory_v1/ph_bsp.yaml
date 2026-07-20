@@ -1,0 +1,39 @@
+iso2: PH
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.bsp.gov.ph/
+  verified: true
+L1_themes:
+- theme_id: bsp
+  name_ja: Bangko Sentral ng Pilipinas
+  name_en: BSP
+  url: https://www.bsp.gov.ph/
+L2_datasets:
+- dataset_id: ph_bsp
+  title: BSP portal
+  url: https://www.bsp.gov.ph/
+  api_id: null
+  update_freq: n/a
+  license: BSP terms
+  theme_id: bsp
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: BSP portal
+  url: https://www.bsp.gov.ph/
+  why_unique_ja: フィリピン中央銀行
+- title: BSP home
+  url: https://www.bsp.gov.ph/
+  why_unique_ja: 金融統計入口
+- title: Bangko Sentral
+  url: https://www.bsp.gov.ph/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ph_bsp
+updated_at: '2026-07-21T04:15:44+09:00'

@@ -1,37 +1,39 @@
-agency_id: th_nso
 iso2: TH
-updated_at: '2026-07-21T04:09:34+09:00'
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
 L0:
   portal_url: https://www.nso.go.th/
   verified: true
 L1_themes:
-- theme_id: lfs
-  name_ja: 労働力調査
-  name_en: LFS
+- theme_id: nso
+  name_ja: NSO Thailand
+  name_en: NSO
   url: https://www.nso.go.th/
-- theme_id: nesdc_gdp
-  name_ja: NESDC GDP（連携）
-  name_en: NESDC GDP
-  url: https://www.nesdc.go.th/
-- theme_id: moc_cpi
-  name_ja: 商務省CPI（連携）
-  name_en: MOC CPI
-  url: https://www.moc.go.th/
 L2_datasets:
-- dataset_id: th_nesdc_gdp
-  title: NESDC Chain Volume GDP
-  url: https://www.nesdc.go.th/
+- dataset_id: th_nso
+  title: NSO Thailand
+  url: https://www.nso.go.th/
   api_id: null
-  update_freq: quarterly
-  license: NESDC
-  theme_id: nesdc_gdp
+  update_freq: n/a
+  license: NSO TH terms
+  theme_id: nso
 L3_series: []
-L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: NSO Thailand
+  url: https://www.nso.go.th/
+  why_unique_ja: タイ統計局
+- title: NSO TH portal
+  url: https://www.nso.go.th/
+  why_unique_ja: 国固有NSO
+- title: Thailand statistics
+  url: https://www.nso.go.th/
+  why_unique_ja: 国際比較外の一次入口
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
-  L4: partial
-  L5: pending
+  L4: pending
+  L5: partial
+agency_id: th_nso
+updated_at: '2026-07-21T04:15:44+09:00'

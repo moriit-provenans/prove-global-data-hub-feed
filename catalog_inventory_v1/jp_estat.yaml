@@ -1,6 +1,6 @@
 agency_id: jp_estat
 iso2: JP
-updated_at: '2026-07-21T04:09:00+09:00'
+updated_at: '2026-07-21T04:15:44+09:00'
 source_note_ja: L1は e-Stat 分野ナビ（2026-07-21 HEAD/GET検証済）。L2は政府統計コード付き実在カタログURL。
 L0:
   portal_url: https://www.e-stat.go.jp/
@@ -112,11 +112,17 @@ L2_datasets:
   theme_id: theme_index
 L3_series: []
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
-L5_country_unique: []
+L5_country_unique:
+- title: 労働力調査 詳細集計・長期時系列（総務省統計局）
+  url: https://www.stat.go.jp/data/roudou/longtime/03roudou.html
+  why_unique_ja: 長期時系列の詳細労働指標は国際比較コアに薄い日本固有の蓄積
+- title: 国民経済計算（内閣府／e-Stat 00100409）
+  url: https://www.e-stat.go.jp/stat-search/database?toukei=00100409
+  why_unique_ja: 日本SNA体系の詳細勘定は国際比較カタログだけでは足りない国固有層
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: partial
-  L5: pending
+  L5: partial

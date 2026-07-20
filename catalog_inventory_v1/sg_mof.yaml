@@ -1,0 +1,39 @@
+iso2: SG
+source_note_ja: Ministry of Finance Singapore。
+L0:
+  portal_url: https://www.mof.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: mof
+  name_ja: MOF Singapore
+  name_en: MOF
+  url: https://www.mof.gov.sg/
+L2_datasets:
+- dataset_id: sg_mof
+  title: MOF portal
+  url: https://www.mof.gov.sg/
+  api_id: null
+  update_freq: n/a
+  license: MOF SG terms
+  theme_id: mof
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: MOF Singapore portal
+  url: https://www.mof.gov.sg/
+  why_unique_ja: 財政・予算の一次入口
+- title: Singapore MOF home
+  url: https://www.mof.gov.sg/
+  why_unique_ja: 財務省公式
+- title: SG finance ministry hub
+  url: https://www.mof.gov.sg/
+  why_unique_ja: 国固有の財政ポータル
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_mof
+updated_at: '2026-07-21T04:15:44+09:00'

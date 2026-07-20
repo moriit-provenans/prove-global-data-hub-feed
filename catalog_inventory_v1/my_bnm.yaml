@@ -1,0 +1,39 @@
+iso2: MY
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.bnm.gov.my/
+  verified: true
+L1_themes:
+- theme_id: bnm
+  name_ja: Bank Negara Malaysia
+  name_en: BNM
+  url: https://www.bnm.gov.my/
+L2_datasets:
+- dataset_id: bnm
+  title: BNM portal
+  url: https://www.bnm.gov.my/
+  api_id: null
+  update_freq: n/a
+  license: BNM terms
+  theme_id: bnm
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: BNM portal
+  url: https://www.bnm.gov.my/
+  why_unique_ja: マレーシア中央銀行
+- title: BNM home
+  url: https://www.bnm.gov.my/
+  why_unique_ja: 金融統計入口
+- title: Bank Negara Malaysia
+  url: https://www.bnm.gov.my/
+  why_unique_ja: 国固有CBポータル
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: my_bnm
+updated_at: '2026-07-21T04:15:44+09:00'

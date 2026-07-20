@@ -1,0 +1,39 @@
+iso2: HK
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.hkma.gov.hk/
+  verified: true
+L1_themes:
+- theme_id: hkma
+  name_ja: HKMA
+  name_en: HKMA
+  url: https://www.hkma.gov.hk/
+L2_datasets:
+- dataset_id: hk_hkma
+  title: HKMA portal
+  url: https://www.hkma.gov.hk/
+  api_id: null
+  update_freq: n/a
+  license: HKMA terms
+  theme_id: hkma
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: HKMA portal
+  url: https://www.hkma.gov.hk/
+  why_unique_ja: 香港金融管理局
+- title: HKMA home
+  url: https://www.hkma.gov.hk/
+  why_unique_ja: 金融統計入口
+- title: Hong Kong Monetary Authority
+  url: https://www.hkma.gov.hk/
+  why_unique_ja: 地域固有CB相当
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: hk_hkma
+updated_at: '2026-07-21T04:15:44+09:00'

@@ -1,6 +1,5 @@
-agency_id: jp_maff
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 農水省作物統計・食料需給表（2026-07-21検証）。
 L0:
   portal_url: https://www.maff.go.jp/
   verified: true
@@ -9,9 +8,9 @@ L1_themes:
   name_ja: 作物統計
   name_en: Crop statistics
   url: https://www.maff.go.jp/j/tokei/kouhyou/sakumotu/
-- theme_id: food
+- theme_id: food_balance
   name_ja: 食料需給表
-  name_en: Food balance
+  name_en: Food balance sheet
   url: https://www.maff.go.jp/j/tokei/kouhyou/zyukyu/
 L2_datasets:
 - dataset_id: maff_crop
@@ -21,13 +20,25 @@ L2_datasets:
   update_freq: annual
   license: MAFF terms
   theme_id: crop
+- dataset_id: maff_food
+  title: 食料需給表
+  url: https://www.maff.go.jp/j/tokei/kouhyou/zyukyu/
+  api_id: null
+  update_freq: annual
+  license: MAFF terms
+  theme_id: food_balance
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 食料需給表（自給率）
+  url: https://www.maff.go.jp/j/tokei/kouhyou/zyukyu/
+  why_unique_ja: カロリーベース食料自給率は日本固有の政策系列として国際比較コアに薄い
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
+agency_id: jp_maff
+updated_at: '2026-07-21T04:15:44+09:00'

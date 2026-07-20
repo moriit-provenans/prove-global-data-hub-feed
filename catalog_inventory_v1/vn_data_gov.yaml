@@ -1,0 +1,24 @@
+iso2: VN
+source_note_ja: Wave0 missing_reason継続。統一OD未確認。
+L0:
+  portal_url: https://data.gov.vn/
+  verified: false
+  blocked_reason: unstable_or_unverified
+L1_themes: []
+L2_datasets: []
+L3_series: []
+L4_notes: 人間ブラウザでL1再検証が必要
+L5_country_unique: []
+coverage:
+  L0: blocked
+  L1: blocked
+  L2: blocked
+  L3: pending
+  L4: pending
+  L5: pending
+blocked:
+  L0: unstable_or_unverified
+  L1: unstable_or_unverified
+  L2: awaiting_L0
+agency_id: vn_data_gov
+updated_at: '2026-07-21T04:16:30+09:00'

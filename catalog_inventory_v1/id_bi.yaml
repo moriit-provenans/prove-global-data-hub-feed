@@ -1,0 +1,39 @@
+iso2: ID
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.bi.go.id/
+  verified: true
+L1_themes:
+- theme_id: bi
+  name_ja: Bank Indonesia
+  name_en: BI
+  url: https://www.bi.go.id/
+L2_datasets:
+- dataset_id: id_bi
+  title: BI portal
+  url: https://www.bi.go.id/
+  api_id: null
+  update_freq: n/a
+  license: BI terms
+  theme_id: bi
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: Bank Indonesia
+  url: https://www.bi.go.id/
+  why_unique_ja: インドネシア中央銀行
+- title: BI portal
+  url: https://www.bi.go.id/
+  why_unique_ja: 金融統計入口
+- title: BI home
+  url: https://www.bi.go.id/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: id_bi
+updated_at: '2026-07-21T04:15:44+09:00'

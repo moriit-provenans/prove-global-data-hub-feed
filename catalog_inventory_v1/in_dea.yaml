@@ -1,0 +1,39 @@
+iso2: IN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://dea.gov.in/
+  verified: true
+L1_themes:
+- theme_id: dea
+  name_ja: Department of Economic Affairs
+  name_en: DEA
+  url: https://dea.gov.in/
+L2_datasets:
+- dataset_id: in_dea
+  title: DEA portal
+  url: https://dea.gov.in/
+  api_id: null
+  update_freq: n/a
+  license: DEA terms
+  theme_id: dea
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: DEA India
+  url: https://dea.gov.in/
+  why_unique_ja: インド経済局（財務省系）
+- title: DEA portal
+  url: https://dea.gov.in/
+  why_unique_ja: 財政・経済政策入口
+- title: Department of Economic Affairs
+  url: https://dea.gov.in/
+  why_unique_ja: 国固有MOFクラス
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: in_dea
+updated_at: '2026-07-21T04:15:44+09:00'

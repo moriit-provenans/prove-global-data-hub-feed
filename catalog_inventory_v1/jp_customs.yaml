@@ -1,6 +1,5 @@
-agency_id: jp_customs
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 税関貿易統計本表・解説（2026-07-21検証）。
 L0:
   portal_url: https://www.customs.go.jp/
   verified: true
@@ -9,16 +8,27 @@ L1_themes:
   name_ja: 貿易統計本表
   name_en: Trade statistics
   url: https://www.customs.go.jp/toukei/
+- theme_id: trade_info
+  name_ja: 貿易統計の解説
+  name_en: Trade stats guide
+  url: https://www.customs.go.jp/toukei/info/index.htm
 L2_datasets:
 - dataset_id: customs_trade
   title: 貿易統計
   url: https://www.customs.go.jp/toukei/
   api_id: null
   update_freq: monthly
-  license: Customs terms
+  license: Customs/MOF terms
   theme_id: trade
+- dataset_id: customs_info
+  title: 貿易統計の見方・解説
+  url: https://www.customs.go.jp/toukei/info/index.htm
+  api_id: null
+  update_freq: n/a
+  license: Customs/MOF terms
+  theme_id: trade_info
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -27,3 +37,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_customs
+updated_at: '2026-07-21T04:15:44+09:00'

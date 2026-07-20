@@ -1,0 +1,39 @@
+iso2: IN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.rbi.org.in/
+  verified: true
+L1_themes:
+- theme_id: rbi
+  name_ja: Reserve Bank of India
+  name_en: RBI
+  url: https://www.rbi.org.in/
+L2_datasets:
+- dataset_id: in_rbi
+  title: RBI portal
+  url: https://www.rbi.org.in/
+  api_id: null
+  update_freq: n/a
+  license: RBI terms
+  theme_id: rbi
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: RBI portal
+  url: https://www.rbi.org.in/
+  why_unique_ja: インド準備銀行
+- title: RBI home
+  url: https://www.rbi.org.in/
+  why_unique_ja: 金融統計入口
+- title: Reserve Bank of India
+  url: https://www.rbi.org.in/
+  why_unique_ja: 国固有CB
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: in_rbi
+updated_at: '2026-07-21T04:15:44+09:00'

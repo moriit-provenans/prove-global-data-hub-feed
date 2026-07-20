@@ -1,26 +1,23 @@
-agency_id: vn_gso
 iso2: VN
-updated_at: '2026-07-21T04:09:34+09:00'
+source_note_ja: GSOはSSL検証失敗でクローラ不可。L1 blocked。
 L0:
   portal_url: https://www.gso.gov.vn/
-  verified: true
-L1_themes:
-- theme_id: national_accounts
-  name_ja: 国民経済計算
-  name_en: National Accounts
-  url: https://www.gso.gov.vn/
-- theme_id: cpi
-  name_ja: CPI
-  name_en: CPI
-  url: https://www.gso.gov.vn/
+  verified: false
+  blocked_reason: ssl_handshake_failed
+L1_themes: []
 L2_datasets: []
 L3_series: []
-L4_notes: NSDP/Excel経路はAtlasネットワークから不通。L2はWave1で再試行。
+L4_notes: 人間ブラウザでL1再検証が必要
 L5_country_unique: []
 coverage:
   L0: done
-  L1: done
-  L2: pending
+  L1: blocked
+  L2: blocked
   L3: pending
-  L4: partial
+  L4: pending
   L5: pending
+blocked:
+  L1: ssl_handshake_failed
+  L2: awaiting_L1
+agency_id: vn_gso
+updated_at: '2026-07-21T04:15:44+09:00'

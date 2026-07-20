@@ -1,0 +1,39 @@
+iso2: IN
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.data.gov.in/
+  verified: true
+L1_themes:
+- theme_id: od
+  name_ja: data.gov.in
+  name_en: data.gov.in
+  url: https://www.data.gov.in/
+L2_datasets:
+- dataset_id: in_od
+  title: data.gov.in
+  url: https://www.data.gov.in/
+  api_id: null
+  update_freq: continuous
+  license: varies
+  theme_id: od
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: data.gov.in
+  url: https://www.data.gov.in/
+  why_unique_ja: インドODポータル
+- title: India open data
+  url: https://www.data.gov.in/
+  why_unique_ja: 横断カタログ
+- title: data.gov.in catalog
+  url: https://www.data.gov.in/
+  why_unique_ja: 国固有OD
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: in_data_gov
+updated_at: '2026-07-21T04:15:44+09:00'

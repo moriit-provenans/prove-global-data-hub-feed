@@ -1,28 +1,34 @@
-agency_id: jp_mext
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 文科省統計トップ＋統計メニュー（個別調査深URLはクローラ403のためL1は検証済入口のみ）。
 L0:
   portal_url: https://www.mext.go.jp/
   verified: true
 L1_themes:
-- theme_id: school
-  name_ja: 学校基本調査
-  name_en: School basic survey
-  url: https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/
-- theme_id: science
-  name_ja: 科学技術研究調査
-  name_en: R&D survey
-  url: https://www.mext.go.jp/b_menu/toukei/chousa06/
+- theme_id: toukei_index
+  name_ja: 文部科学統計
+  name_en: MEXT statistics
+  url: https://www.mext.go.jp/b_menu/toukei/index.htm
+- theme_id: main_b8
+  name_ja: 統計一覧メニュー
+  name_en: Statistics menu
+  url: https://www.mext.go.jp/b_menu/toukei/main_b8.htm
 L2_datasets:
-- dataset_id: mext_school
-  title: 学校基本調査
-  url: https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/
+- dataset_id: mext_toukei_index
+  title: 文部科学統計トップ
+  url: https://www.mext.go.jp/b_menu/toukei/index.htm
   api_id: null
-  update_freq: annual
+  update_freq: n/a
   license: MEXT terms
-  theme_id: school
+  theme_id: toukei_index
+- dataset_id: mext_menu
+  title: 統計メニュー
+  url: https://www.mext.go.jp/b_menu/toukei/main_b8.htm
+  api_id: null
+  update_freq: n/a
+  license: MEXT terms
+  theme_id: main_b8
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique: []
 coverage:
   L0: done
@@ -31,3 +37,5 @@ coverage:
   L3: pending
   L4: pending
   L5: pending
+agency_id: jp_mext
+updated_at: '2026-07-21T04:15:44+09:00'

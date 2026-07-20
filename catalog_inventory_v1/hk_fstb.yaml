@@ -1,0 +1,39 @@
+iso2: HK
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.fstb.gov.hk/
+  verified: true
+L1_themes:
+- theme_id: fstb
+  name_ja: FSTB
+  name_en: FSTB
+  url: https://www.fstb.gov.hk/
+L2_datasets:
+- dataset_id: hk_fstb
+  title: FSTB portal
+  url: https://www.fstb.gov.hk/
+  api_id: null
+  update_freq: n/a
+  license: FSTB terms
+  theme_id: fstb
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: FSTB portal
+  url: https://www.fstb.gov.hk/
+  why_unique_ja: 香港財経事務及庫務局
+- title: FSTB home
+  url: https://www.fstb.gov.hk/
+  why_unique_ja: 財政入口
+- title: Financial Services and the Treasury Bureau
+  url: https://www.fstb.gov.hk/
+  why_unique_ja: 地域固有MOF
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: hk_fstb
+updated_at: '2026-07-21T04:15:44+09:00'

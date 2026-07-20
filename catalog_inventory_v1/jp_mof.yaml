@@ -1,6 +1,5 @@
-agency_id: jp_mof
 iso2: JP
-updated_at: '2026-07-21T04:08:49+09:00'
+source_note_ja: 財務省ポータル＋予算・国債・税政（2026-07-21 HEAD検証）。貿易統計は関税局と分担。
 L0:
   portal_url: https://www.mof.go.jp/
   verified: true
@@ -9,29 +8,52 @@ L1_themes:
   name_ja: 予算・決算
   name_en: Budget
   url: https://www.mof.go.jp/budget/
-- theme_id: trade_customs
-  name_ja: 貿易統計
-  name_en: Trade statistics
-  url: https://www.customs.go.jp/toukei/
-- theme_id: debt
-  name_ja: 国債・債務
-  name_en: Public debt
+- theme_id: jgbs
+  name_ja: 国債・債務管理
+  name_en: JGB / debt
   url: https://www.mof.go.jp/jgbs/
+- theme_id: tax_policy
+  name_ja: 税制
+  name_en: Tax policy
+  url: https://www.mof.go.jp/tax_policy/
+- theme_id: english
+  name_ja: MOF English
+  name_en: MOF English
+  url: https://www.mof.go.jp/english/
 L2_datasets:
-- dataset_id: mof_trade
-  title: 貿易統計（財務省）
-  url: https://www.customs.go.jp/toukei/
+- dataset_id: mof_budget
+  title: 予算関連ページ
+  url: https://www.mof.go.jp/budget/
   api_id: null
-  update_freq: monthly
+  update_freq: annual
   license: MOF terms
-  theme_id: trade_customs
+  theme_id: budget
+- dataset_id: mof_jgbs
+  title: 国債関連ページ
+  url: https://www.mof.go.jp/jgbs/
+  api_id: null
+  update_freq: varies
+  license: MOF terms
+  theme_id: jgbs
+- dataset_id: mof_fy2025_budget
+  title: 令和7年度予算関連
+  url: https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2025/fy2025.html
+  api_id: null
+  update_freq: annual
+  license: MOF terms
+  theme_id: budget
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 国債発行計画・残高関連（財務省 JGBS）
+  url: https://www.mof.go.jp/jgbs/
+  why_unique_ja: 国債管理の詳細統計は国際比較コアに薄い日本固有の財政系列群
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
+agency_id: jp_mof
+updated_at: '2026-07-21T04:15:44+09:00'

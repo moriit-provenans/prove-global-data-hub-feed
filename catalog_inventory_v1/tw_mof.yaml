@@ -1,0 +1,39 @@
+iso2: TW
+source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+L0:
+  portal_url: https://www.mof.gov.tw/
+  verified: true
+L1_themes:
+- theme_id: mof
+  name_ja: MOF Taiwan
+  name_en: MOF
+  url: https://www.mof.gov.tw/
+L2_datasets:
+- dataset_id: tw_mof
+  title: MOF Taiwan
+  url: https://www.mof.gov.tw/
+  api_id: null
+  update_freq: n/a
+  license: MOF TW terms
+  theme_id: mof
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: MOF Taiwan
+  url: https://www.mof.gov.tw/
+  why_unique_ja: 台湾財政部
+- title: MOF TW portal
+  url: https://www.mof.gov.tw/
+  why_unique_ja: 財政入口
+- title: Ministry of Finance Taiwan
+  url: https://www.mof.gov.tw/
+  why_unique_ja: 国固有MOF
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: tw_mof
+updated_at: '2026-07-21T04:15:44+09:00'
