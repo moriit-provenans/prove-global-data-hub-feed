@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-21T03:24:27+09:00'
+updated_at: '2026-07-21T03:37:54+09:00'
 policy:
   priority:
   - nso
@@ -215,12 +215,35 @@ sources:
   metrics:
   - macro_q.gdp_real.yoy_pct
   - macro.gdp.growth_pct
-- id: us_bea_annual_growth
+- id: ae_vn_cpi_dbnomics
+  tier: international_fast
+  iso2:
+  - AE
+  - VN
+  agency: IMF CPI via db.nomics (FCSC/GSO unreachable)
+  url: https://db.nomics.world/
+  metrics:
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  note_ja: AE=FCSC Cloudflare不通 / VN=NSDP不通の正直bridge
+- id: th_bot_unemployment
+  tier: international_fast
+  iso2:
+  - TH
+  agency: BOT WEBSTAT (NSO LFS republished)
+  url: https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?language=ENG&reportID=638
+  metrics:
+  - nso_m.unemployment.pct
+- id: asean_annual_gdp_nso
   tier: nso
   iso2:
+  - MY
+  - PH
+  - SG
+  - HK
   - US
-  agency: BEA annual real GDP growth via FRED
-  url: https://fred.stlouisfed.org/series/A191RL1A225NBEA
+  agency: DOSM / PSA / SingStat / C&SD / BEA annual GDP growth
+  url: https://www.provej.jp/data/
   metrics:
   - macro.gdp.growth_pct
 latest_period_by_key:
@@ -317,6 +340,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.cpi.index
+  iso2: AE
+  source_tier: international_fast
+  latest_period: 2025-05
+- metric_id: nso_m.cpi.index
   iso2: BR
   source_tier: international_fast
   latest_period: 2025-04
@@ -392,6 +419,14 @@ latest_period_by_key:
   iso2: US
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.cpi.index
+  iso2: VN
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: AE
+  source_tier: international_fast
+  latest_period: 2025-05
 - metric_id: nso_m.cpi.yoy_pct
   iso2: BR
   source_tier: international_fast
@@ -472,6 +507,10 @@ latest_period_by_key:
   iso2: US
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: VN
+  source_tier: international_fast
+  latest_period: 2025-03
 - metric_id: nso_m.industrial_production.index
   iso2: DE
   source_tier: international_fast
@@ -652,6 +691,10 @@ latest_period_by_key:
   iso2: SG
   source_tier: nso
   latest_period: 2025-12
+- metric_id: nso_m.unemployment.pct
+  iso2: TH
+  source_tier: international_fast
+  latest_period: 2026-05
 - metric_id: nso_m.unemployment.pct
   iso2: TR
   source_tier: international_fast

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-21T03:24:27+09:00",
-  "wave": "REQ-SMITH-20260720-041 Wave2b (fill≥80% milestone)",
+  "generated_at": "2026-07-21T03:37:54+09:00",
+  "wave": "REQ-SMITH-20260720-041 Wave2b (gaps closed as far as reachable)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 14293,
+  "nso_pilot_rows": 14795,
   "source_tier_counts": {
-    "international_fast": 7762,
+    "international_fast": 8264,
     "nso": 6531
   },
   "macro_q_gdp_real_yoy_countries": [
@@ -222,7 +222,9 @@
         "status": "ok",
         "blocked_reason": null,
         "wb_annual_latest": "2025",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "nso_annual_growth_latest": "2025",
+        "nso_annual_parallel": true
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -236,7 +238,9 @@
         "status": "ok",
         "blocked_reason": null,
         "wb_annual_latest": "2025",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "nso_annual_growth_latest": "2025",
+        "nso_annual_parallel": true
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -264,7 +268,9 @@
         "status": "ok",
         "blocked_reason": null,
         "wb_annual_latest": "2025",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "nso_annual_growth_latest": "2025",
+        "nso_annual_parallel": true
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -374,7 +380,7 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "FRED/OECD MEIにUAE四半期GDP系列なし（年次のみ）",
+        "blocked_reason": "FRED/OECD MEI・db.nomicsにUAE四半期GDP系列なし（年次WBのみ）",
         "wb_annual_latest": "2024",
         "wb_parallel": true
       },
@@ -564,11 +570,13 @@
         "indicator_id": "nso_m.cpi.index",
         "iso2": "VN",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "GSO/NSDP不通・MEI月次CPI系列なし"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -634,11 +642,13 @@
         "indicator_id": "nso_m.cpi.index",
         "iso2": "AE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "FRED/OECD MEIにUAE月次CPI系列なし（年次WBのみ）"
+        "best_tier": "international_fast",
+        "latest_period": "2025-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -813,11 +823,13 @@
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "VN",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "GSO/NSDP不通・MEI月次CPI系列なし"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -883,11 +895,13 @@
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "AE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "FRED/OECD MEIにUAE月次CPI系列なし（年次WBのみ）"
+        "best_tier": "international_fast",
+        "latest_period": "2025-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -1026,11 +1040,13 @@
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "TH",
         "priority": "P0",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "NSO SDMX/HTML ゲート（dws.nso.go.th）到達不可"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1116,7 +1132,7 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "C&SD失業表は別波で接続予定"
+        "blocked_reason": "C&SD失業表ID未特定（別波）"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1909,30 +1925,33 @@
     ],
     "summary": {
       "total_cells": 147,
-      "filled": 104,
+      "filled": 109,
       "nso_primary": 38,
-      "international_fast_bridge": 66,
+      "international_fast_bridge": 71,
       "missing": 0,
-      "blocked": 14,
+      "blocked": 9,
       "na_optional": 29,
-      "fill_rate_pct": 70.7,
+      "fill_rate_pct": 74.1,
       "nso_rate_pct": 25.9,
       "wave2b_denominator": 118,
-      "wave2b_fill_rate_pct": 88.1,
+      "wave2b_fill_rate_pct": 92.4,
       "nso_annual_growth_countries": [
         "HK",
+        "MY",
+        "PH",
+        "SG",
         "US"
       ],
       "annual_gdp_note_ja": "年次 macro.gdp.growth_pct の NSO並列は nso_annual_pilot → macro_annual マージ"
     }
   },
-  "wb_fallback_share_note_ja": "年次macro_annualはWB維持＋NSO年次をsource_tier=nsoで並列。月次/四半期はNSO+bridge二重化。",
+  "wb_fallback_share_note_ja": "年次macro_annualはWB維持＋NSO年次(US/HK/MY/PH/SG)を並列。月次/四半期はNSO+bridge。",
   "quarterly_now_rows": 1083,
-  "monthly_nso_rows": 13003,
+  "monthly_nso_rows": 13505,
   "next": [
-    "Wave2b: AE月次/四半期一次経路、TH失業、VN CPI",
+    "AE四半期GDP一次（FCSC/Bayanat経路）",
     "KOSTAT/BPSキーで KR/ID 一次化",
-    "年次GDP NSOをASEANへ拡張",
+    "HK失業・CN失業・TH貿易NSO",
     "Smith: dual_coverage_matrix UI連動"
   ]
 }
