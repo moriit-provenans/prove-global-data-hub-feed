@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T23:06:29+09:00'
+updated_at: '2026-07-21T03:23:05+09:00'
 policy:
   priority:
   - nso
@@ -59,6 +59,7 @@ sources:
   - IN
   - JP
   - KR
+  - SA
   - TR
   - US
   - VN
@@ -183,6 +184,45 @@ sources:
   url: https://www.gso.gov.vn/
   metrics:
   - macro_q.gdp_real.yoy_pct
+- id: p2_oecd_mei_bridge
+  tier: international_fast
+  iso2:
+  - GB
+  - DE
+  - FR
+  - CA
+  - BR
+  - TR
+  - SA
+  - JP
+  agency: OECD MEI / IMTS via FRED (Wave2b P2 bridge)
+  url: https://fred.stlouisfed.org/
+  metrics:
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+  - nso_m.merchandise_exports_usd
+  - nso_m.merchandise_imports_usd
+  - nso_m.industrial_production.index
+  - macro_q.gdp_real.yoy_pct
+  note_ja: P2本線。AEはMEI欠落でblocked。SA GDPはFRED水準からYoY導出。
+- id: hk_censtatd_gdp
+  tier: nso
+  iso2:
+  - HK
+  agency: Census and Statistics Department (C&SD) GDP
+  url: https://www.censtatd.gov.hk/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - macro.gdp.growth_pct
+- id: us_bea_annual_growth
+  tier: nso
+  iso2:
+  - US
+  agency: BEA annual real GDP growth via FRED
+  url: https://fred.stlouisfed.org/series/A191RL1A225NBEA
+  metrics:
+  - macro.gdp.growth_pct
 latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: BR
@@ -207,6 +247,10 @@ latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: GB
   source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: HK
+  source_tier: nso
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: ID
@@ -235,6 +279,10 @@ latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: PH
   source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: SA
+  source_tier: international_fast
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: SG
@@ -269,9 +317,29 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.cpi.index
+  iso2: BR
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.index
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.index
   iso2: CN
   source_tier: international_fast
   latest_period: 2025-04
+- metric_id: nso_m.cpi.index
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.index
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.index
+  iso2: GB
+  source_tier: international_fast
+  latest_period: 2025-03
 - metric_id: nso_m.cpi.index
   iso2: HK
   source_tier: nso
@@ -301,6 +369,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.index
+  iso2: SA
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.index
   iso2: SG
   source_tier: nso
   latest_period: 2026-05
@@ -308,6 +380,10 @@ latest_period_by_key:
   iso2: TH
   source_tier: nso
   latest_period: 2024-12
+- metric_id: nso_m.cpi.index
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2025-04
 - metric_id: nso_m.cpi.index
   iso2: TW
   source_tier: nso
@@ -317,9 +393,29 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: BR
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
   iso2: CN
   source_tier: international_fast
   latest_period: 2025-04
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: GB
+  source_tier: international_fast
+  latest_period: 2025-03
 - metric_id: nso_m.cpi.yoy_pct
   iso2: HK
   source_tier: nso
@@ -349,6 +445,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: SA
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
   iso2: SG
   source_tier: nso
   latest_period: 2026-05
@@ -360,6 +460,10 @@ latest_period_by_key:
   iso2: TH
   source_tier: nso
   latest_period: 2024-12
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2025-04
 - metric_id: nso_m.cpi.yoy_pct
   iso2: TW
   source_tier: nso
@@ -369,6 +473,18 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.industrial_production.index
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2024-03
+- metric_id: nso_m.industrial_production.index
+  iso2: GB
+  source_tier: international_fast
+  latest_period: 2024-03
+- metric_id: nso_m.industrial_production.index
+  iso2: JP
+  source_tier: international_fast
+  latest_period: 2024-03
+- metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso
   latest_period: 2026-06
@@ -377,7 +493,27 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.merchandise_exports_usd
+  iso2: BR
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_exports_usd
   iso2: CN
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2026-03
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2026-03
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: GB
   source_tier: international_fast
   latest_period: 2026-04
 - metric_id: nso_m.merchandise_exports_usd
@@ -409,11 +545,35 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.merchandise_exports_usd
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_exports_usd
   iso2: US
   source_tier: international_fast
   latest_period: 2026-04
 - metric_id: nso_m.merchandise_imports_usd
+  iso2: BR
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_imports_usd
   iso2: CN
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2026-03
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2026-03
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: GB
   source_tier: international_fast
   latest_period: 2026-04
 - metric_id: nso_m.merchandise_imports_usd
@@ -445,9 +605,29 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.merchandise_imports_usd
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2026-04
+- metric_id: nso_m.merchandise_imports_usd
   iso2: US
   source_tier: international_fast
   latest_period: 2026-04
+- metric_id: nso_m.unemployment.pct
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2026-06
+- metric_id: nso_m.unemployment.pct
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
+  iso2: GB
+  source_tier: international_fast
+  latest_period: 2026-02
 - metric_id: nso_m.unemployment.pct
   iso2: JP
   source_tier: international_fast
@@ -472,6 +652,10 @@ latest_period_by_key:
   iso2: SG
   source_tier: nso
   latest_period: 2025-12
+- metric_id: nso_m.unemployment.pct
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2026-05
 - metric_id: nso_m.unemployment.pct
   iso2: TW
   source_tier: nso

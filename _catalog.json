@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-20T23:06:29+09:00",
+  "last_updated": "2026-07-21T03:23:06+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10394,12 +10394,14 @@
         "DE",
         "FR",
         "GB",
+        "HK",
         "ID",
         "IN",
         "JP",
         "KR",
         "MY",
         "PH",
+        "SA",
         "SG",
         "TH",
         "TR",
@@ -10475,7 +10477,12 @@
       },
       "latest_period_nso": "2026-06",
       "available_iso2_nso": [
+        "BR",
+        "CA",
         "CN",
+        "DE",
+        "FR",
+        "GB",
         "HK",
         "ID",
         "IN",
@@ -10483,8 +10490,10 @@
         "KR",
         "MY",
         "PH",
+        "SA",
         "SG",
         "TH",
+        "TR",
         "TW",
         "US"
       ]
@@ -10521,7 +10530,12 @@
       },
       "latest_period_nso": "2026-06",
       "available_iso2_nso": [
+        "BR",
+        "CA",
         "CN",
+        "DE",
+        "FR",
+        "GB",
         "HK",
         "ID",
         "IN",
@@ -10529,8 +10543,10 @@
         "KR",
         "MY",
         "PH",
+        "SA",
         "SG",
         "TH",
+        "TR",
         "TW",
         "US"
       ]
@@ -10549,6 +10565,7 @@
       ],
       "source_tier_primary": "nso",
       "source_tiers": [
+        "international_fast",
         "nso"
       ],
       "latest_period": "2026-06",
@@ -10566,6 +10583,9 @@
       },
       "latest_period_nso": "2026-06",
       "available_iso2_nso": [
+        "DE",
+        "GB",
+        "JP",
         "US"
       ]
     },
@@ -10637,11 +10657,16 @@
       },
       "latest_period_nso": "2026-06",
       "available_iso2_nso": [
+        "CA",
+        "DE",
+        "FR",
+        "GB",
         "JP",
         "KR",
         "MY",
         "PH",
         "SG",
+        "TR",
         "TW",
         "US"
       ]
@@ -10785,7 +10810,12 @@
       },
       "latest_period_nso": "2026-05",
       "available_iso2_nso": [
+        "BR",
+        "CA",
         "CN",
+        "DE",
+        "FR",
+        "GB",
         "ID",
         "IN",
         "JP",
@@ -10793,6 +10823,7 @@
         "MY",
         "PH",
         "SG",
+        "TR",
         "US"
       ]
     },
@@ -10833,7 +10864,12 @@
       },
       "latest_period_nso": "2026-05",
       "available_iso2_nso": [
+        "BR",
+        "CA",
         "CN",
+        "DE",
+        "FR",
+        "GB",
         "ID",
         "IN",
         "JP",
@@ -10841,6 +10877,7 @@
         "MY",
         "PH",
         "SG",
+        "TR",
         "US"
       ]
     }

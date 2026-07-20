@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-20T23:06:29+09:00",
-  "wave": "REQ-SMITH-20260720-041 Wave2a (done)",
+  "generated_at": "2026-07-21T03:23:06+09:00",
+  "wave": "REQ-SMITH-20260720-041 Wave2b (in progress)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 9847,
+  "nso_pilot_rows": 14293,
   "source_tier_counts": {
-    "international_fast": 3361,
-    "nso": 6486
+    "international_fast": 7762,
+    "nso": 6531
   },
   "macro_q_gdp_real_yoy_countries": [
     "BR",
@@ -14,12 +14,14 @@
     "DE",
     "FR",
     "GB",
+    "HK",
     "ID",
     "IN",
     "JP",
     "KR",
     "MY",
     "PH",
+    "SA",
     "SG",
     "TH",
     "TR",
@@ -117,16 +119,31 @@
       "period": "2026-Q1",
       "tier": "nso",
       "value": 14.55
+    },
+    "SA": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 3.083382
+    },
+    "HK": {
+      "period": "2026-Q1",
+      "tier": "nso",
+      "value": 5.9
     }
   },
   "dual_coverage_matrix": {
-    "schema_version": "1.0-wave2a",
+    "schema_version": "1.1-wave2b",
     "req_id": "REQ-SMITH-20260720-041",
     "indicators": [
       "macro_q.gdp_real.yoy_pct",
       "nso_m.cpi.index",
       "nso_m.cpi.yoy_pct",
       "nso_m.unemployment.pct",
+      "nso_m.industrial_production.index",
+      "nso_m.merchandise_exports_usd",
+      "nso_m.merchandise_imports_usd"
+    ],
+    "optional_indicators": [
       "nso_m.industrial_production.index",
       "nso_m.merchandise_exports_usd",
       "nso_m.merchandise_imports_usd"
@@ -172,6 +189,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -186,8 +204,11 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "nso_annual_growth_latest": "2025",
+        "nso_annual_parallel": true
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -199,6 +220,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -212,6 +234,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -225,6 +248,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -238,6 +262,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -251,6 +276,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -264,6 +290,7 @@
           "international_fast"
         ],
         "status": "bridge",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -277,6 +304,7 @@
           "international_fast"
         ],
         "status": "bridge",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -290,6 +318,7 @@
           "international_fast"
         ],
         "status": "bridge",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -303,6 +332,7 @@
           "international_fast"
         ],
         "status": "bridge",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
         "wb_parallel": true
       },
@@ -316,6 +346,7 @@
           "nso"
         ],
         "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2026",
         "wb_parallel": true
       },
@@ -323,12 +354,17 @@
         "indicator_id": "macro_q.gdp_real.yoy_pct",
         "iso2": "HK",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null,
         "wb_annual_latest": "2025",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "nso_annual_growth_latest": "2025",
+        "nso_annual_parallel": true
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -338,6 +374,7 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "missing",
+        "blocked_reason": null,
         "wb_annual_latest": "2024",
         "wb_parallel": true
       },
@@ -345,176 +382,193 @@
         "indicator_id": "macro_q.gdp_real.yoy_pct",
         "iso2": "SA",
         "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null,
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2024-12",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "VN",
+        "priority": "P1",
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
         "status": "missing",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "TR",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "GB",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "DE",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "FR",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "CA",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "macro_q.gdp_real.yoy_pct",
-        "iso2": "BR",
-        "priority": "P2",
-        "best_tier": "international_fast",
-        "latest_period": "2026-Q1",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge",
-        "wb_annual_latest": "2025",
-        "wb_parallel": true
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "JP",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2026-05",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "US",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2026-06",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "MY",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2026-06",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "SG",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2026-05",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "TH",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2024-12",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "PH",
-        "priority": "P0",
-        "best_tier": "nso",
-        "latest_period": "2026-06",
-        "tiers_present": [
-          "nso"
-        ],
-        "status": "ok"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "CN",
-        "priority": "P0",
-        "best_tier": "international_fast",
-        "latest_period": "2025-04",
-        "tiers_present": [
-          "international_fast"
-        ],
-        "status": "bridge"
-      },
-      {
-        "indicator_id": "nso_m.cpi.index",
-        "iso2": "VN",
-        "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -525,7 +579,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -536,7 +591,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -547,7 +603,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -558,7 +615,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -569,7 +627,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -578,70 +637,92 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "SA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "TR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "FR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "CA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.index",
         "iso2": "BR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -652,7 +733,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -663,7 +745,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -674,7 +757,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -685,7 +769,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -697,7 +782,8 @@
           "international_fast",
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -708,7 +794,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -719,7 +806,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -728,7 +816,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -739,7 +828,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -750,7 +840,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -761,7 +852,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -772,7 +864,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -783,7 +876,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -792,70 +886,92 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "SA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "TR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "FR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "CA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
         "iso2": "BR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -867,7 +983,8 @@
           "international_fast",
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -878,7 +995,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -889,7 +1007,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -900,7 +1019,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -909,7 +1029,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -920,7 +1041,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -929,7 +1051,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -938,7 +1061,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -947,7 +1071,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -956,7 +1081,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -967,7 +1093,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -978,7 +1105,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -987,7 +1115,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -996,7 +1125,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1005,52 +1135,68 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "TR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-02",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "FR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "CA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1059,16 +1205,20 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "missing",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
         "iso2": "JP",
         "priority": "P0",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2024-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1079,7 +1229,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1088,7 +1239,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1097,7 +1249,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1106,7 +1259,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1115,7 +1269,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1124,7 +1279,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1133,7 +1289,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1142,7 +1299,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1151,7 +1309,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1160,7 +1319,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1169,7 +1329,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1178,7 +1339,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1187,7 +1349,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1196,7 +1359,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1205,25 +1369,32 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2024-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2024-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1232,7 +1403,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1241,7 +1413,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1250,7 +1423,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1261,7 +1435,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1272,7 +1447,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1283,7 +1459,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1294,7 +1471,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1303,7 +1481,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1314,7 +1493,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1325,7 +1505,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1334,7 +1515,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1345,7 +1527,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1356,7 +1539,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1367,7 +1551,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1376,7 +1561,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1385,7 +1571,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1394,7 +1581,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
@@ -1403,61 +1591,80 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "TR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "FR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "CA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_exports_usd",
         "iso2": "BR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1468,7 +1675,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1479,7 +1687,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1490,7 +1699,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1501,7 +1711,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1510,7 +1721,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1521,7 +1733,8 @@
         "tiers_present": [
           "nso"
         ],
-        "status": "ok"
+        "status": "ok",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1532,7 +1745,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1541,7 +1755,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1552,7 +1767,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1563,7 +1779,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1574,7 +1791,8 @@
         "tiers_present": [
           "international_fast"
         ],
-        "status": "bridge"
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1583,7 +1801,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1592,7 +1811,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1601,7 +1821,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
@@ -1610,82 +1831,108 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing"
+        "status": "na",
+        "blocked_reason": "optional_metric_no_reachable_series"
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "TR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "GB",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "DE",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "FR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "CA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.merchandise_imports_usd",
         "iso2": "BR",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "missing"
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       }
     ],
     "summary": {
       "total_cells": 147,
-      "filled": 68,
-      "nso_primary": 37,
-      "international_fast_bridge": 31,
-      "missing": 79,
-      "fill_rate_pct": 46.3,
-      "nso_rate_pct": 25.2,
-      "annual_gdp_wb_only_note_ja": "年次 macro.gdp.* は WB のみ（nso年次=Wave2b）"
+      "filled": 104,
+      "nso_primary": 38,
+      "international_fast_bridge": 66,
+      "missing": 14,
+      "blocked": 0,
+      "na_optional": 29,
+      "fill_rate_pct": 70.7,
+      "nso_rate_pct": 25.9,
+      "wave2b_denominator": 118,
+      "wave2b_fill_rate_pct": 88.1,
+      "nso_annual_growth_countries": [
+        "HK",
+        "US"
+      ],
+      "annual_gdp_note_ja": "年次 macro.gdp.growth_pct の NSO並列は nso_annual_pilot → macro_annual マージ"
     }
   },
-  "wb_fallback_share_note_ja": "年次macro_annualはWB併記維持。NSO年次はWave2b。月次/四半期はNSO+bridge二重化を優先。",
-  "quarterly_now_rows": 997,
-  "monthly_nso_rows": 8643,
+  "wb_fallback_share_note_ja": "年次macro_annualはWB維持＋NSO年次をsource_tier=nsoで並列。月次/四半期はNSO+bridge二重化。",
+  "quarterly_now_rows": 1083,
+  "monthly_nso_rows": 13003,
   "next": [
-    "P0: TH CPI鮮度（MOC 2024-12→2025+）、CN CPI NBS直結、JP IP",
-    "P1: KOSTAT_API_KEY / BPSキーで KR/ID 一次化",
-    "P1: VN CPI bridge、HK quarterly GDP",
-    "年次GDP NSO並列（Wave2b）",
+    "Wave2b: AE月次/四半期一次経路、TH失業、VN CPI",
+    "KOSTAT/BPSキーで KR/ID 一次化",
+    "年次GDP NSOをASEANへ拡張",
     "Smith: dual_coverage_matrix UI連動"
   ]
 }
