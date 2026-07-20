@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-20T22:22:51+09:00",
+  "last_updated": "2026-07-20T22:58:05+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10631,6 +10631,8 @@
       "available_iso2_nso": [
         "JP",
         "MY",
+        "PH",
+        "SG",
         "US"
       ]
     },
@@ -10735,6 +10737,76 @@
       "available_iso2_nso": [
         "JP"
       ]
+    },
+    {
+      "indicator_id": "nso_m.merchandise_exports_usd",
+      "name_ja": "財輸出額（月次・USD）",
+      "name_en": "Merchandise exports, monthly (USD)",
+      "unit": "USD",
+      "category": "貿易（月次）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CN",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "US"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2026-04",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.merchandise_imports_usd",
+      "name_ja": "財輸入額（月次・USD）",
+      "name_en": "Merchandise imports, monthly (USD)",
+      "unit": "USD",
+      "category": "貿易（月次）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CN",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "US"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2026-04",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
+        ]
+      }
     }
   ],
   "countries": [
