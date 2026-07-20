@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-20T21:02:07+09:00",
+  "last_updated": "2026-07-20T21:14:46+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10385,7 +10385,23 @@
           "international_fast",
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "TH",
+        "TR",
+        "US",
+        "VN"
+      ]
     },
     {
       "indicator_id": "nso_m.coincident_index",
@@ -10415,7 +10431,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.cpi.index",
@@ -10446,7 +10466,12 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "JP",
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.cpi.yoy_pct",
@@ -10476,7 +10501,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.industrial_production.index",
@@ -10506,7 +10535,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.leading_index",
@@ -10536,7 +10569,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.unemployment.pct",
@@ -10569,7 +10606,12 @@
           "international_fast",
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "JP",
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.gdp_nominal.level_jpy",
@@ -10599,7 +10641,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_q.gdp_real.index",
@@ -10629,7 +10675,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.gdp_real.level_jpy",
@@ -10659,7 +10709,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "JP"
+      ]
     }
   ],
   "countries": [

@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T21:02:07+09:00'
+updated_at: '2026-07-20T21:14:46+09:00'
 policy:
   priority:
   - nso
@@ -60,6 +60,7 @@ sources:
   - KR
   - TR
   - US
+  - VN
   agency: FRED republished OECD MEI
   url: https://fred.stlouisfed.org/
   metrics:
@@ -107,6 +108,10 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
+  iso2: TH
+  source_tier: nso
+  latest_period: 2025-Q4
+- metric_id: macro_q.gdp_real.yoy_pct
   iso2: TR
   source_tier: international_fast
   latest_period: 2026-Q1
@@ -117,6 +122,10 @@ latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: US
   source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: VN
+  source_tier: international_fast
   latest_period: 2026-Q1
 - metric_id: nso_m.coincident_index
   iso2: JP
