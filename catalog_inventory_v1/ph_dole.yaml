@@ -1,0 +1,23 @@
+iso2: PH
+source_note_ja: 'Department of Labor and Employment: クローラ到達不可（crawler_403）。L1 blocked。'
+L0:
+  portal_url: https://www.dole.gov.ph/
+  verified: false
+  blocked_reason: crawler_403
+L1_themes: []
+L2_datasets: []
+L3_series: []
+L4_notes: 人間ブラウザでL1再検証が必要
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: blocked
+  L2: blocked
+  L3: pending
+  L4: pending
+  L5: pending
+blocked:
+  L1: crawler_403
+  L2: awaiting_L1
+agency_id: ph_dole
+updated_at: '2026-07-21T04:20:35+09:00'

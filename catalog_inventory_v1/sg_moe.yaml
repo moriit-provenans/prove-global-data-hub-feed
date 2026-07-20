@@ -1,0 +1,47 @@
+iso2: SG
+source_note_ja: Ministry of Education L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.moe.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: moe
+  name_ja: MOE
+  name_en: MOE
+  url: https://www.moe.gov.sg/
+- theme_id: data
+  name_ja: MOE data
+  name_en: MOE data
+  url: https://www.moe.gov.sg/education-in-sg
+L2_datasets:
+- dataset_id: sg_moe_moe
+  title: MOE
+  url: https://www.moe.gov.sg/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: moe
+- dataset_id: sg_moe_data
+  title: MOE data
+  url: https://www.moe.gov.sg/education-in-sg
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: data
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Education: MOE'
+  url: https://www.moe.gov.sg/
+  why_unique_ja: SG固有の公的機関データ入口（education_science）
+- title: 'Ministry of Education: MOE data'
+  url: https://www.moe.gov.sg/education-in-sg
+  why_unique_ja: SG固有の公的機関データ入口（education_science）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_moe
+updated_at: '2026-07-21T04:20:35+09:00'

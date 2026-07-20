@@ -1,0 +1,33 @@
+iso2: PH
+source_note_ja: Department of Tourism / BOI L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.tourism.gov.ph/
+  verified: true
+L1_themes:
+- theme_id: tourism
+  name_ja: DOT PH
+  name_en: Tourism
+  url: https://www.tourism.gov.ph/
+L2_datasets:
+- dataset_id: ph_dot_boa_tourism
+  title: Tourism
+  url: https://www.tourism.gov.ph/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: tourism
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Department of Tourism / BOI: Tourism'
+  url: https://www.tourism.gov.ph/
+  why_unique_ja: PH固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ph_dot_boa
+updated_at: '2026-07-21T04:20:35+09:00'

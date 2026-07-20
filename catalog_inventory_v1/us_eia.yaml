@@ -1,0 +1,58 @@
+iso2: US
+source_note_ja: us_eia L1–L2（Wave1b recovery 検証済URLのみ）。
+L0:
+  portal_url: https://www.eia.gov/
+  verified: true
+L1_themes:
+- theme_id: eia
+  name_ja: EIA
+  name_en: EIA
+  url: https://www.eia.gov/
+- theme_id: api
+  name_ja: EIA Open Data API
+  name_en: EIA API
+  url: https://www.eia.gov/opendata/
+- theme_id: today
+  name_ja: Today in Energy
+  name_en: Today in Energy
+  url: https://www.eia.gov/todayinenergy/
+L2_datasets:
+- dataset_id: us_eia_eia
+  title: EIA
+  url: https://www.eia.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: eia
+- dataset_id: us_eia_api
+  title: EIA API
+  url: https://www.eia.gov/opendata/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: api
+- dataset_id: us_eia_today
+  title: Today in Energy
+  url: https://www.eia.gov/todayinenergy/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: today
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'us_eia: EIA API'
+  url: https://www.eia.gov/opendata/
+  why_unique_ja: US固有の公的機関データ入口
+- title: 'us_eia: Today in Energy'
+  url: https://www.eia.gov/todayinenergy/
+  why_unique_ja: US固有の公的機関データ入口
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_eia
+updated_at: '2026-07-21T04:22:46+09:00'

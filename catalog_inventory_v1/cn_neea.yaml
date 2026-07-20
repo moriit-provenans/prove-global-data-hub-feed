@@ -1,0 +1,33 @@
+iso2: CN
+source_note_ja: NEA / MEE L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: http://www.nea.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: nea
+  name_ja: NEA
+  name_en: NEA
+  url: http://www.nea.gov.cn/
+L2_datasets:
+- dataset_id: cn_neea_nea
+  title: NEA
+  url: http://www.nea.gov.cn/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: nea
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'NEA / MEE: NEA'
+  url: http://www.nea.gov.cn/
+  why_unique_ja: CN固有の公的機関データ入口（energy_environment）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: cn_neea
+updated_at: '2026-07-21T04:20:35+09:00'

@@ -1,0 +1,47 @@
+iso2: TH
+source_note_ja: MOTS / BOI L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.mots.go.th/
+  verified: true
+L1_themes:
+- theme_id: mots
+  name_ja: MOTS
+  name_en: MOTS
+  url: https://www.mots.go.th/
+- theme_id: boi
+  name_ja: BOI
+  name_en: BOI
+  url: https://www.boi.go.th/
+L2_datasets:
+- dataset_id: th_mots_boi_mots
+  title: MOTS
+  url: https://www.mots.go.th/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mots
+- dataset_id: th_mots_boi_boi
+  title: BOI
+  url: https://www.boi.go.th/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: boi
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MOTS / BOI: MOTS'
+  url: https://www.mots.go.th/
+  why_unique_ja: TH固有の公的機関データ入口（tourism_investment_promotion）
+- title: 'MOTS / BOI: BOI'
+  url: https://www.boi.go.th/
+  why_unique_ja: TH固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: th_mots_boi
+updated_at: '2026-07-21T04:20:35+09:00'

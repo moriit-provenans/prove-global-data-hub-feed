@@ -1,0 +1,61 @@
+iso2: US
+source_note_ja: U.S. Securities and Exchange Commission L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.sec.gov/
+  verified: true
+L1_themes:
+- theme_id: sec_home
+  name_ja: SEC
+  name_en: SEC
+  url: https://www.sec.gov/
+- theme_id: data
+  name_ja: SEC Data & filings
+  name_en: SEC data
+  url: https://www.sec.gov/data
+- theme_id: edgar
+  name_ja: EDGAR
+  name_en: EDGAR
+  url: https://www.sec.gov/edgar
+L2_datasets:
+- dataset_id: us_sec_sec_home
+  title: SEC
+  url: https://www.sec.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: sec_home
+- dataset_id: us_sec_data
+  title: SEC data
+  url: https://www.sec.gov/data
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: data
+- dataset_id: us_sec_edgar
+  title: EDGAR
+  url: https://www.sec.gov/edgar
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: edgar
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'U.S. Securities and Exchange Commission: SEC'
+  url: https://www.sec.gov/
+  why_unique_ja: US固有の公的機関データ入口（financial_regulator）
+- title: 'U.S. Securities and Exchange Commission: SEC data'
+  url: https://www.sec.gov/data
+  why_unique_ja: US固有の公的機関データ入口（financial_regulator）
+- title: 'U.S. Securities and Exchange Commission: EDGAR'
+  url: https://www.sec.gov/edgar
+  why_unique_ja: US固有の公的機関データ入口（financial_regulator）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_sec
+updated_at: '2026-07-21T04:20:35+09:00'

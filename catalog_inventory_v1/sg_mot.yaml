@@ -1,0 +1,47 @@
+iso2: SG
+source_note_ja: Ministry of Transport L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.mot.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: mot
+  name_ja: MOT
+  name_en: MOT
+  url: https://www.mot.gov.sg/
+- theme_id: lta
+  name_ja: LTA
+  name_en: LTA
+  url: https://www.lta.gov.sg/
+L2_datasets:
+- dataset_id: sg_mot_mot
+  title: MOT
+  url: https://www.mot.gov.sg/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mot
+- dataset_id: sg_mot_lta
+  title: LTA
+  url: https://www.lta.gov.sg/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: lta
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Transport: MOT'
+  url: https://www.mot.gov.sg/
+  why_unique_ja: SG固有の公的機関データ入口（land_construction_transport）
+- title: 'Ministry of Transport: LTA'
+  url: https://www.lta.gov.sg/
+  why_unique_ja: SG固有の公的機関データ入口（land_construction_transport）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_mot
+updated_at: '2026-07-21T04:20:35+09:00'

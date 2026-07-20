@@ -1,0 +1,33 @@
+iso2: KR
+source_note_ja: MOTIE Energy / MOE L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.me.go.kr/
+  verified: true
+L1_themes:
+- theme_id: me
+  name_ja: Ministry of Environment
+  name_en: MOE Env
+  url: https://www.me.go.kr/
+L2_datasets:
+- dataset_id: kr_motie_env_me
+  title: MOE Env
+  url: https://www.me.go.kr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: me
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MOTIE Energy / MOE: MOE Env'
+  url: https://www.me.go.kr/
+  why_unique_ja: KR固有の公的機関データ入口（energy_environment）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: kr_motie_env
+updated_at: '2026-07-21T04:20:35+09:00'

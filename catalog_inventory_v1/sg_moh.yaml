@@ -1,0 +1,47 @@
+iso2: SG
+source_note_ja: Ministry of Health L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.moh.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: moh
+  name_ja: MOH
+  name_en: MOH
+  url: https://www.moh.gov.sg/
+- theme_id: resources
+  name_ja: MOH resources
+  name_en: MOH resources
+  url: https://www.moh.gov.sg/resources-statistics
+L2_datasets:
+- dataset_id: sg_moh_moh
+  title: MOH
+  url: https://www.moh.gov.sg/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: moh
+- dataset_id: sg_moh_resources
+  title: MOH resources
+  url: https://www.moh.gov.sg/resources-statistics
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: resources
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Health: MOH'
+  url: https://www.moh.gov.sg/
+  why_unique_ja: SG固有の公的機関データ入口（health_welfare）
+- title: 'Ministry of Health: MOH resources'
+  url: https://www.moh.gov.sg/resources-statistics
+  why_unique_ja: SG固有の公的機関データ入口（health_welfare）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_moh
+updated_at: '2026-07-21T04:20:35+09:00'

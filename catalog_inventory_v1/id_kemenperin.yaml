@@ -1,0 +1,47 @@
+iso2: ID
+source_note_ja: Kemenperin / Kemendag L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://kemenperin.go.id/
+  verified: true
+L1_themes:
+- theme_id: kemenperin
+  name_ja: Kemenperin
+  name_en: Kemenperin
+  url: https://kemenperin.go.id/
+- theme_id: kemendag
+  name_ja: Kemendag
+  name_en: Kemendag
+  url: https://www.kemendag.go.id/
+L2_datasets:
+- dataset_id: id_kemenperin_kemenperin
+  title: Kemenperin
+  url: https://kemenperin.go.id/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: kemenperin
+- dataset_id: id_kemenperin_kemendag
+  title: Kemendag
+  url: https://www.kemendag.go.id/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: kemendag
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Kemenperin / Kemendag: Kemenperin'
+  url: https://kemenperin.go.id/
+  why_unique_ja: ID固有の公的機関データ入口（economy_industry_trade）
+- title: 'Kemenperin / Kemendag: Kemendag'
+  url: https://www.kemendag.go.id/
+  why_unique_ja: ID固有の公的機関データ入口（economy_industry_trade）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: id_kemenperin
+updated_at: '2026-07-21T04:20:35+09:00'

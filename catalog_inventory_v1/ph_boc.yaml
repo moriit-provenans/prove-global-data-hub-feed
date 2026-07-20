@@ -1,0 +1,33 @@
+iso2: PH
+source_note_ja: Bureau of Customs L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://customs.gov.ph/
+  verified: true
+L1_themes:
+- theme_id: boc
+  name_ja: Bureau of Customs
+  name_en: BOC
+  url: https://customs.gov.ph/
+L2_datasets:
+- dataset_id: ph_boc_boc
+  title: BOC
+  url: https://customs.gov.ph/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: boc
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Bureau of Customs: BOC'
+  url: https://customs.gov.ph/
+  why_unique_ja: PH固有の公的機関データ入口（customs_tax）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ph_boc
+updated_at: '2026-07-21T04:20:35+09:00'

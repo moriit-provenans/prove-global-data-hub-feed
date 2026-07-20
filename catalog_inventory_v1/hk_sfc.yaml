@@ -1,0 +1,47 @@
+iso2: HK
+source_note_ja: Securities and Futures Commission L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.sfc.hk/
+  verified: true
+L1_themes:
+- theme_id: sfc
+  name_ja: SFC
+  name_en: SFC
+  url: https://www.sfc.hk/
+- theme_id: en
+  name_ja: SFC EN
+  name_en: SFC EN
+  url: https://www.sfc.hk/en/
+L2_datasets:
+- dataset_id: hk_sfc_sfc
+  title: SFC
+  url: https://www.sfc.hk/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: sfc
+- dataset_id: hk_sfc_en
+  title: SFC EN
+  url: https://www.sfc.hk/en/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: en
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Securities and Futures Commission: SFC'
+  url: https://www.sfc.hk/
+  why_unique_ja: HK固有の公的機関データ入口（financial_regulator）
+- title: 'Securities and Futures Commission: SFC EN'
+  url: https://www.sfc.hk/en/
+  why_unique_ja: HK固有の公的機関データ入口（financial_regulator）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: hk_sfc
+updated_at: '2026-07-21T04:20:35+09:00'

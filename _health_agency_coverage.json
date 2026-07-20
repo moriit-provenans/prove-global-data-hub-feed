@@ -1,65 +1,65 @@
 {
   "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "updated_at": "2026-07-21T04:16:30+09:00",
-  "wave": "Wave1",
-  "note_ja": "Wave1開始時点の到達率。inventory coverage を registry.layer_status に同期して再計算。",
+  "updated_at": "2026-07-21T04:22:46+09:00",
+  "wave": "Wave1b",
+  "note_ja": "Wave1b: P0残り省庁クラス L1–L2。到達不能は blocked+reason。",
   "totals": {
     "countries": 21,
     "agencies": 297,
     "countries_with_all_14_classes": 21,
     "L0_done_agencies": 294,
-    "L0_blocked_agencies": 3,
-    "L1_done_agencies": 55,
-    "L2_partial_or_done_agencies": 55,
-    "L5_partial_or_done_agencies": 49,
-    "inventory_files_count": 68,
+    "L0_blocked_agencies": 0,
+    "L1_done_agencies": 153,
+    "L2_partial_or_done_agencies": 153,
+    "L5_partial_or_done_agencies": 147,
+    "inventory_files_count": 187,
     "P0_agencies": 185,
-    "P0_L1_done": 55,
-    "P0_L2_partial_or_done": 55,
-    "P0_L1_rate": 0.297,
-    "P0_L2_rate": 0.297,
+    "P0_L1_done": 153,
+    "P0_L2_partial_or_done": 153,
+    "P0_L1_rate": 0.827,
+    "P0_L2_rate": 0.827,
     "inventories_sample": [
+      "cn_csrc.yaml",
+      "cn_cta_mofcom.yaml",
+      "cn_customs.yaml",
       "cn_data_gov.yaml",
+      "cn_mara.yaml",
+      "cn_moe.yaml",
       "cn_mof.yaml",
+      "cn_mofcom.yaml",
+      "cn_mohrss.yaml",
+      "cn_mot.yaml",
       "cn_nbs.yaml",
+      "cn_neea.yaml",
+      "cn_nhc.yaml",
       "cn_pbc.yaml",
+      "hk_afcd.yaml",
+      "hk_cedb.yaml",
       "hk_censtatd.yaml",
+      "hk_customs.yaml",
       "hk_data_gov.yaml",
+      "hk_edb.yaml",
+      "hk_enb.yaml",
       "hk_fstb.yaml",
+      "hk_hhb.yaml",
       "hk_hkma.yaml",
+      "hk_labour.yaml",
+      "hk_sfc.yaml",
+      "hk_thb.yaml",
+      "hk_tourism_invest.yaml",
+      "id_beacukai.yaml",
       "id_bi.yaml",
       "id_bps.yaml",
+      "id_esdm.yaml",
+      "id_kemdikbud.yaml",
+      "id_kemenhub.yaml",
       "id_kemenkeu.yaml",
-      "id_satudata.yaml",
-      "in_data_gov.yaml",
-      "in_dea.yaml",
-      "in_mospi.yaml",
-      "in_rbi.yaml",
-      "jp_boj.yaml",
-      "jp_cao_esri.yaml",
-      "jp_customs.yaml",
-      "jp_data_go_jp.yaml",
-      "jp_enecho.yaml",
-      "jp_env.yaml",
-      "jp_estat.yaml",
-      "jp_fsa.yaml",
-      "jp_jetro.yaml",
-      "jp_jta.yaml",
-      "jp_maff.yaml",
-      "jp_meti.yaml",
-      "jp_mext.yaml",
-      "jp_mhlw.yaml",
-      "jp_mhlw_health.yaml",
-      "jp_mhlw_labour.yaml",
-      "jp_mlit.yaml",
-      "jp_mof.yaml",
-      "kr_bok.yaml",
-      "kr_data_go.yaml",
-      "kr_kostat.yaml",
-      "kr_mosf.yaml",
-      "my_bnm.yaml",
-      "my_data_gov.yaml"
+      "id_kemenparekraf_bkpm.yaml",
+      "id_kemenperin.yaml",
+      "id_kementan.yaml",
+      "id_kemkes.yaml",
+      "id_kemnaker.yaml"
     ]
   },
   "by_country": {
@@ -140,27 +140,36 @@
       "classes_missing": [],
       "L0_done": 15,
       "L0_blocked": 0,
-      "L1_done": 5,
-      "L2_partial_or_done": 5,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 2,
-      "L5_partial_or_done": 5,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.333,
-        "L2": 0.333,
+        "L1": 0.8,
+        "L2": 0.8,
         "L3": 0.0,
         "L4": 0.133,
-        "L5": 0.333,
+        "L5": 0.8,
         "class_coverage": 1.0
       },
       "inventory_files": [
         "catalog_inventory_v1/us_bls.yaml",
+        "catalog_inventory_v1/us_cbp.yaml",
+        "catalog_inventory_v1/us_cdc.yaml",
         "catalog_inventory_v1/us_census.yaml",
         "catalog_inventory_v1/us_census_bls.yaml",
+        "catalog_inventory_v1/us_commerce.yaml",
         "catalog_inventory_v1/us_data_gov.yaml",
+        "catalog_inventory_v1/us_dot.yaml",
+        "catalog_inventory_v1/us_ed.yaml",
+        "catalog_inventory_v1/us_eia.yaml",
         "catalog_inventory_v1/us_fed.yaml",
-        "catalog_inventory_v1/us_treasury.yaml"
+        "catalog_inventory_v1/us_sec.yaml",
+        "catalog_inventory_v1/us_selectusa.yaml",
+        "catalog_inventory_v1/us_treasury.yaml",
+        "catalog_inventory_v1/us_usda.yaml"
       ]
     },
     "SG": {
@@ -184,25 +193,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 1,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.071,
-        "L5": 0.286,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/sg_customs.yaml",
         "catalog_inventory_v1/sg_data_gov.yaml",
+        "catalog_inventory_v1/sg_ema.yaml",
         "catalog_inventory_v1/sg_mas.yaml",
+        "catalog_inventory_v1/sg_mas_reg.yaml",
+        "catalog_inventory_v1/sg_moe.yaml",
         "catalog_inventory_v1/sg_mof.yaml",
-        "catalog_inventory_v1/sg_singstat.yaml"
+        "catalog_inventory_v1/sg_moh.yaml",
+        "catalog_inventory_v1/sg_mom.yaml",
+        "catalog_inventory_v1/sg_mot.yaml",
+        "catalog_inventory_v1/sg_mti.yaml",
+        "catalog_inventory_v1/sg_sfa.yaml",
+        "catalog_inventory_v1/sg_singstat.yaml",
+        "catalog_inventory_v1/sg_stb_edb.yaml"
       ]
     },
     "MY": {
@@ -226,25 +245,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.286,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
         "catalog_inventory_v1/my_bnm.yaml",
+        "catalog_inventory_v1/my_customs.yaml",
         "catalog_inventory_v1/my_data_gov.yaml",
         "catalog_inventory_v1/my_dosm.yaml",
-        "catalog_inventory_v1/my_mof.yaml"
+        "catalog_inventory_v1/my_mafi.yaml",
+        "catalog_inventory_v1/my_miti.yaml",
+        "catalog_inventory_v1/my_moe.yaml",
+        "catalog_inventory_v1/my_mof.yaml",
+        "catalog_inventory_v1/my_moh.yaml",
+        "catalog_inventory_v1/my_mohr.yaml",
+        "catalog_inventory_v1/my_mot.yaml",
+        "catalog_inventory_v1/my_mota_mida.yaml",
+        "catalog_inventory_v1/my_nrecc.yaml",
+        "catalog_inventory_v1/my_sc.yaml"
       ]
     },
     "TH": {
@@ -268,25 +297,35 @@
       "classes_missing": [],
       "L0_done": 15,
       "L0_blocked": 0,
-      "L1_done": 2,
-      "L2_partial_or_done": 2,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 2,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.133,
-        "L2": 0.133,
+        "L1": 0.8,
+        "L2": 0.8,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.133,
+        "L5": 0.8,
         "class_coverage": 1.0
       },
       "inventory_files": [
         "catalog_inventory_v1/th_bot.yaml",
+        "catalog_inventory_v1/th_customs.yaml",
         "catalog_inventory_v1/th_data_go.yaml",
+        "catalog_inventory_v1/th_mnre.yaml",
+        "catalog_inventory_v1/th_moac.yaml",
+        "catalog_inventory_v1/th_moc.yaml",
+        "catalog_inventory_v1/th_moe.yaml",
         "catalog_inventory_v1/th_mof.yaml",
-        "catalog_inventory_v1/th_nso.yaml"
+        "catalog_inventory_v1/th_mol.yaml",
+        "catalog_inventory_v1/th_moph.yaml",
+        "catalog_inventory_v1/th_mot.yaml",
+        "catalog_inventory_v1/th_mots_boi.yaml",
+        "catalog_inventory_v1/th_nso.yaml",
+        "catalog_inventory_v1/th_sec.yaml"
       ]
     },
     "PH": {
@@ -310,25 +349,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 2,
-      "L2_partial_or_done": 2,
+      "L1_done": 7,
+      "L2_partial_or_done": 7,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 2,
+      "L5_partial_or_done": 7,
       "rates": {
         "L0": 1.0,
-        "L1": 0.143,
-        "L2": 0.143,
+        "L1": 0.5,
+        "L2": 0.5,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.143,
+        "L5": 0.5,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/ph_boc.yaml",
         "catalog_inventory_v1/ph_bsp.yaml",
+        "catalog_inventory_v1/ph_da.yaml",
         "catalog_inventory_v1/ph_data_gov.yaml",
+        "catalog_inventory_v1/ph_deped.yaml",
+        "catalog_inventory_v1/ph_doe.yaml",
         "catalog_inventory_v1/ph_dof.yaml",
-        "catalog_inventory_v1/ph_psa.yaml"
+        "catalog_inventory_v1/ph_doh.yaml",
+        "catalog_inventory_v1/ph_dole.yaml",
+        "catalog_inventory_v1/ph_dot_boa.yaml",
+        "catalog_inventory_v1/ph_dotr.yaml",
+        "catalog_inventory_v1/ph_dti.yaml",
+        "catalog_inventory_v1/ph_psa.yaml",
+        "catalog_inventory_v1/ph_sec.yaml"
       ]
     },
     "VN": {
@@ -351,26 +400,36 @@
       ],
       "classes_missing": [],
       "L0_done": 13,
-      "L0_blocked": 1,
-      "L1_done": 2,
-      "L2_partial_or_done": 2,
+      "L0_blocked": 0,
+      "L1_done": 6,
+      "L2_partial_or_done": 6,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 2,
+      "L5_partial_or_done": 6,
       "rates": {
         "L0": 0.929,
-        "L1": 0.143,
-        "L2": 0.143,
+        "L1": 0.429,
+        "L2": 0.429,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.143,
+        "L5": 0.429,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/vn_customs.yaml",
         "catalog_inventory_v1/vn_data_gov.yaml",
         "catalog_inventory_v1/vn_gso.yaml",
+        "catalog_inventory_v1/vn_mard.yaml",
+        "catalog_inventory_v1/vn_moet.yaml",
         "catalog_inventory_v1/vn_mof.yaml",
-        "catalog_inventory_v1/vn_sbv.yaml"
+        "catalog_inventory_v1/vn_moh.yaml",
+        "catalog_inventory_v1/vn_moit.yaml",
+        "catalog_inventory_v1/vn_molisa.yaml",
+        "catalog_inventory_v1/vn_monre.yaml",
+        "catalog_inventory_v1/vn_mt.yaml",
+        "catalog_inventory_v1/vn_sbv.yaml",
+        "catalog_inventory_v1/vn_ssc.yaml",
+        "catalog_inventory_v1/vn_vietnam_tourism_mpi.yaml"
       ]
     },
     "ID": {
@@ -393,25 +452,35 @@
       ],
       "classes_missing": [],
       "L0_done": 13,
-      "L0_blocked": 1,
-      "L1_done": 2,
-      "L2_partial_or_done": 2,
+      "L0_blocked": 0,
+      "L1_done": 10,
+      "L2_partial_or_done": 10,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 2,
+      "L5_partial_or_done": 10,
       "rates": {
         "L0": 0.929,
-        "L1": 0.143,
-        "L2": 0.143,
+        "L1": 0.714,
+        "L2": 0.714,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.143,
+        "L5": 0.714,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/id_beacukai.yaml",
         "catalog_inventory_v1/id_bi.yaml",
         "catalog_inventory_v1/id_bps.yaml",
+        "catalog_inventory_v1/id_esdm.yaml",
+        "catalog_inventory_v1/id_kemdikbud.yaml",
+        "catalog_inventory_v1/id_kemenhub.yaml",
         "catalog_inventory_v1/id_kemenkeu.yaml",
+        "catalog_inventory_v1/id_kemenparekraf_bkpm.yaml",
+        "catalog_inventory_v1/id_kemenperin.yaml",
+        "catalog_inventory_v1/id_kementan.yaml",
+        "catalog_inventory_v1/id_kemkes.yaml",
+        "catalog_inventory_v1/id_kemnaker.yaml",
+        "catalog_inventory_v1/id_ojk.yaml",
         "catalog_inventory_v1/id_satudata.yaml"
       ]
     },
@@ -436,25 +505,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 0.929,
+        "L2": 0.929,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.286,
+        "L5": 0.929,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/in_agriculture.yaml",
+        "catalog_inventory_v1/in_cbic.yaml",
         "catalog_inventory_v1/in_data_gov.yaml",
         "catalog_inventory_v1/in_dea.yaml",
+        "catalog_inventory_v1/in_dpiit.yaml",
+        "catalog_inventory_v1/in_education.yaml",
+        "catalog_inventory_v1/in_labour.yaml",
+        "catalog_inventory_v1/in_mnre.yaml",
+        "catalog_inventory_v1/in_mohfw.yaml",
+        "catalog_inventory_v1/in_morth.yaml",
         "catalog_inventory_v1/in_mospi.yaml",
-        "catalog_inventory_v1/in_rbi.yaml"
+        "catalog_inventory_v1/in_rbi.yaml",
+        "catalog_inventory_v1/in_sebi.yaml",
+        "catalog_inventory_v1/in_tourism_invest.yaml"
       ]
     },
     "CN": {
@@ -477,25 +556,35 @@
       ],
       "classes_missing": [],
       "L0_done": 13,
-      "L0_blocked": 1,
-      "L1_done": 3,
-      "L2_partial_or_done": 3,
+      "L0_blocked": 0,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 3,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 0.929,
-        "L1": 0.214,
-        "L2": 0.214,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.214,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/cn_csrc.yaml",
+        "catalog_inventory_v1/cn_cta_mofcom.yaml",
+        "catalog_inventory_v1/cn_customs.yaml",
         "catalog_inventory_v1/cn_data_gov.yaml",
+        "catalog_inventory_v1/cn_mara.yaml",
+        "catalog_inventory_v1/cn_moe.yaml",
         "catalog_inventory_v1/cn_mof.yaml",
+        "catalog_inventory_v1/cn_mofcom.yaml",
+        "catalog_inventory_v1/cn_mohrss.yaml",
+        "catalog_inventory_v1/cn_mot.yaml",
         "catalog_inventory_v1/cn_nbs.yaml",
+        "catalog_inventory_v1/cn_neea.yaml",
+        "catalog_inventory_v1/cn_nhc.yaml",
         "catalog_inventory_v1/cn_pbc.yaml"
       ]
     },
@@ -520,25 +609,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 0.929,
+        "L2": 0.929,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.286,
+        "L5": 0.929,
         "class_coverage": 1.0
       },
       "inventory_files": [
         "catalog_inventory_v1/kr_bok.yaml",
+        "catalog_inventory_v1/kr_customs.yaml",
         "catalog_inventory_v1/kr_data_go.yaml",
+        "catalog_inventory_v1/kr_fss.yaml",
         "catalog_inventory_v1/kr_kostat.yaml",
-        "catalog_inventory_v1/kr_mosf.yaml"
+        "catalog_inventory_v1/kr_mafra.yaml",
+        "catalog_inventory_v1/kr_mcst_invest.yaml",
+        "catalog_inventory_v1/kr_moe.yaml",
+        "catalog_inventory_v1/kr_moel.yaml",
+        "catalog_inventory_v1/kr_mohw.yaml",
+        "catalog_inventory_v1/kr_molit.yaml",
+        "catalog_inventory_v1/kr_mosf.yaml",
+        "catalog_inventory_v1/kr_motie.yaml",
+        "catalog_inventory_v1/kr_motie_env.yaml"
       ]
     },
     "TW": {
@@ -562,25 +661,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.286,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
       "inventory_files": [
         "catalog_inventory_v1/tw_cbc.yaml",
+        "catalog_inventory_v1/tw_customs.yaml",
         "catalog_inventory_v1/tw_data_gov.yaml",
         "catalog_inventory_v1/tw_dgbas.yaml",
-        "catalog_inventory_v1/tw_mof.yaml"
+        "catalog_inventory_v1/tw_fsc.yaml",
+        "catalog_inventory_v1/tw_moa.yaml",
+        "catalog_inventory_v1/tw_moe.yaml",
+        "catalog_inventory_v1/tw_moea.yaml",
+        "catalog_inventory_v1/tw_moenv.yaml",
+        "catalog_inventory_v1/tw_mof.yaml",
+        "catalog_inventory_v1/tw_mohw.yaml",
+        "catalog_inventory_v1/tw_mol.yaml",
+        "catalog_inventory_v1/tw_motc.yaml",
+        "catalog_inventory_v1/tw_tourism_invest.yaml"
       ]
     },
     "HK": {
@@ -604,25 +713,35 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 4,
-      "L2_partial_or_done": 4,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 4,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.286,
-        "L2": 0.286,
+        "L1": 0.929,
+        "L2": 0.929,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.286,
+        "L5": 0.929,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/hk_afcd.yaml",
+        "catalog_inventory_v1/hk_cedb.yaml",
         "catalog_inventory_v1/hk_censtatd.yaml",
+        "catalog_inventory_v1/hk_customs.yaml",
         "catalog_inventory_v1/hk_data_gov.yaml",
+        "catalog_inventory_v1/hk_edb.yaml",
+        "catalog_inventory_v1/hk_enb.yaml",
         "catalog_inventory_v1/hk_fstb.yaml",
-        "catalog_inventory_v1/hk_hkma.yaml"
+        "catalog_inventory_v1/hk_hhb.yaml",
+        "catalog_inventory_v1/hk_hkma.yaml",
+        "catalog_inventory_v1/hk_labour.yaml",
+        "catalog_inventory_v1/hk_sfc.yaml",
+        "catalog_inventory_v1/hk_thb.yaml",
+        "catalog_inventory_v1/hk_tourism_invest.yaml"
       ]
     },
     "AE": {
@@ -921,5 +1040,172 @@
       },
       "inventory_files": []
     }
-  }
+  },
+  "l5_country_unique_counts": {
+    "JP": 11,
+    "US": 28,
+    "SG": 29,
+    "MY": 21,
+    "TH": 17,
+    "PH": 11,
+    "VN": 10,
+    "ID": 16,
+    "IN": 22,
+    "CN": 18,
+    "KR": 22,
+    "TW": 22,
+    "HK": 23
+  },
+  "inventory_l1_blocked": [
+    {
+      "agency_id": "cn_data_gov",
+      "iso2": "CN",
+      "reason": "unreachable"
+    },
+    {
+      "agency_id": "cn_nhc",
+      "iso2": "CN",
+      "reason": "http_412"
+    },
+    {
+      "agency_id": "hk_afcd",
+      "iso2": "HK",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "id_bps",
+      "iso2": "ID",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "id_kemdikbud",
+      "iso2": "ID",
+      "reason": "dns_or_unreachable"
+    },
+    {
+      "agency_id": "id_kemenparekraf_bkpm",
+      "iso2": "ID",
+      "reason": "dns_or_unreachable"
+    },
+    {
+      "agency_id": "id_satudata",
+      "iso2": "ID",
+      "reason": "dns_or_unreachable"
+    },
+    {
+      "agency_id": "in_agriculture",
+      "iso2": "IN",
+      "reason": "dns_or_unreachable"
+    },
+    {
+      "agency_id": "kr_molit",
+      "iso2": "KR",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "my_moh",
+      "iso2": "MY",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "my_mohr",
+      "iso2": "MY",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "ph_deped",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_dof",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_doh",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_dole",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_dotr",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_psa",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ph_sec",
+      "iso2": "PH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "th_data_go",
+      "iso2": "TH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "th_mof",
+      "iso2": "TH",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "us_cbp",
+      "iso2": "US",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "us_dot",
+      "iso2": "US",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "vn_data_gov",
+      "iso2": "VN",
+      "reason": "unstable_or_unverified"
+    },
+    {
+      "agency_id": "vn_gso",
+      "iso2": "VN",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "vn_mard",
+      "iso2": "VN",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "vn_moh",
+      "iso2": "VN",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "vn_molisa",
+      "iso2": "VN",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "vn_monre",
+      "iso2": "VN",
+      "reason": "dns_or_unreachable"
+    },
+    {
+      "agency_id": "vn_mt",
+      "iso2": "VN",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "vn_ssc",
+      "iso2": "VN",
+      "reason": "timeout"
+    }
+  ]
 }

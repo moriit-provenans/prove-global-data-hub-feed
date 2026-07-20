@@ -1,6 +1,6 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:16:30+09:00'
+updated_at: '2026-07-21T04:22:46+09:00'
 wave: Wave1
 policy:
   layers:
@@ -328,11 +328,11 @@ agencies:
   name_en: U.S. Securities and Exchange Commission
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sec.gov/
 - agency_id: us_commerce
   iso2: US
@@ -341,11 +341,11 @@ agencies:
   name_en: U.S. Department of Commerce
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.commerce.gov/
 - agency_id: us_bls
   iso2: US
@@ -368,11 +368,11 @@ agencies:
   name_en: U.S. Department of Education
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ed.gov/
 - agency_id: us_dot
   iso2: US
@@ -394,11 +394,11 @@ agencies:
   name_en: CDC / HHS
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cdc.gov/
 - agency_id: us_usda
   iso2: US
@@ -407,11 +407,11 @@ agencies:
   name_en: U.S. Department of Agriculture
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.usda.gov/
   open_data_url: https://www.ers.usda.gov/
 - agency_id: us_eia
@@ -421,11 +421,11 @@ agencies:
   name_en: U.S. Energy Information Administration
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.eia.gov/
 - agency_id: us_selectusa
   iso2: US
@@ -434,11 +434,11 @@ agencies:
   name_en: SelectUSA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.trade.gov/selectusa
 - agency_id: us_cbp
   iso2: US
@@ -525,11 +525,11 @@ agencies:
   name_en: Ministry of Industry and Trade
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://moit.gov.vn/
 - agency_id: vn_molisa
   iso2: VN
@@ -551,11 +551,11 @@ agencies:
   name_en: Ministry of Education and Training
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://moet.gov.vn/
 - agency_id: vn_mt
   iso2: VN
@@ -616,11 +616,11 @@ agencies:
   name_en: MOCST / MPI
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.vietnamtourism.gov.vn/
   notes: 投資誘致 MPI https://www.mpi.gov.vn/
 - agency_id: vn_customs
@@ -630,11 +630,11 @@ agencies:
   name_en: General Department of Vietnam Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.gov.vn/
 - agency_id: vn_data_gov
   iso2: VN
@@ -642,7 +642,7 @@ agencies:
   name_ja: 国家データポータル
   name_en: National Data Portal (data.gov.vn)
   layer_status:
-    L0: blocked
+    L0: pending
     L1: pending
     L2: pending
     L3: pending
@@ -711,11 +711,11 @@ agencies:
   name_en: SEC Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sec.or.th/
 - agency_id: th_moc
   iso2: TH
@@ -724,11 +724,11 @@ agencies:
   name_en: Ministry of Commerce Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moc.go.th/
 - agency_id: th_mol
   iso2: TH
@@ -737,11 +737,11 @@ agencies:
   name_en: Ministry of Labour Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mol.go.th/
 - agency_id: th_moe
   iso2: TH
@@ -750,11 +750,11 @@ agencies:
   name_en: Ministry of Education Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moe.go.th/
 - agency_id: th_mot
   iso2: TH
@@ -763,11 +763,11 @@ agencies:
   name_en: Ministry of Transport Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mot.go.th/
 - agency_id: th_moph
   iso2: TH
@@ -776,11 +776,11 @@ agencies:
   name_en: Ministry of Public Health Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moph.go.th/
 - agency_id: th_moac
   iso2: TH
@@ -789,11 +789,11 @@ agencies:
   name_en: Ministry of Agriculture and Cooperatives
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moac.go.th/
 - agency_id: th_mnre
   iso2: TH
@@ -802,11 +802,11 @@ agencies:
   name_en: MNRE / MoE Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mnre.go.th/
 - agency_id: th_mots_boi
   iso2: TH
@@ -815,11 +815,11 @@ agencies:
   name_en: MOTS / BOI
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mots.go.th/
   notes: 投資誘致 https://www.boi.go.th/
 - agency_id: th_customs
@@ -829,11 +829,11 @@ agencies:
   name_en: Thai Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.go.th/
 - agency_id: th_data_go
   iso2: TH
@@ -894,11 +894,11 @@ agencies:
   name_en: Otoritas Jasa Keuangan
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ojk.go.id/
 - agency_id: id_kemenperin
   iso2: ID
@@ -907,11 +907,11 @@ agencies:
   name_en: Kemenperin / Kemendag
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://kemenperin.go.id/
   notes: 貿易省 https://www.kemendag.go.id/
 - agency_id: id_kemnaker
@@ -921,11 +921,11 @@ agencies:
   name_en: Ministry of Manpower
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://kemnaker.go.id/
 - agency_id: id_kemdikbud
   iso2: ID
@@ -947,11 +947,11 @@ agencies:
   name_en: Ministry of Transportation
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://dephub.go.id/
 - agency_id: id_kemkes
   iso2: ID
@@ -960,11 +960,11 @@ agencies:
   name_en: Ministry of Health Indonesia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.kemkes.go.id/
 - agency_id: id_kementan
   iso2: ID
@@ -973,11 +973,11 @@ agencies:
   name_en: Ministry of Agriculture
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.pertanian.go.id/
 - agency_id: id_esdm
   iso2: ID
@@ -986,11 +986,11 @@ agencies:
   name_en: Ministry of Energy and Mineral Resources
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.esdm.go.id/
 - agency_id: id_kemenparekraf_bkpm
   iso2: ID
@@ -1013,11 +1013,11 @@ agencies:
   name_en: Direktorat Jenderal Bea dan Cukai
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.beacukai.go.id/
 - agency_id: id_satudata
   iso2: ID
@@ -1025,7 +1025,7 @@ agencies:
   name_ja: Satu Data Indonesia
   name_en: Satu Data Indonesia
   layer_status:
-    L0: blocked
+    L0: pending
     L1: pending
     L2: pending
     L3: pending
@@ -1082,11 +1082,11 @@ agencies:
   name_en: SEBI
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sebi.gov.in/
 - agency_id: in_dpiit
   iso2: IN
@@ -1095,11 +1095,11 @@ agencies:
   name_en: DPIIT / Commerce
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://dpiit.gov.in/
 - agency_id: in_labour
   iso2: IN
@@ -1108,11 +1108,11 @@ agencies:
   name_en: Ministry of Labour and Employment
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://labour.gov.in/
 - agency_id: in_education
   iso2: IN
@@ -1121,11 +1121,11 @@ agencies:
   name_en: Ministry of Education India
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.education.gov.in/
 - agency_id: in_morth
   iso2: IN
@@ -1134,11 +1134,11 @@ agencies:
   name_en: Ministry of Road Transport and Highways
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://morth.nic.in/
 - agency_id: in_mohfw
   iso2: IN
@@ -1147,11 +1147,11 @@ agencies:
   name_en: Ministry of Health and Family Welfare
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mohfw.gov.in/
 - agency_id: in_agriculture
   iso2: IN
@@ -1173,11 +1173,11 @@ agencies:
   name_en: MNRE / MoEFCC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mnre.gov.in/
 - agency_id: in_tourism_invest
   iso2: IN
@@ -1186,11 +1186,11 @@ agencies:
   name_en: Ministry of Tourism / Invest India
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://tourism.gov.in/
   notes: 投資誘致 https://www.investindia.gov.in/
 - agency_id: in_cbic
@@ -1200,11 +1200,11 @@ agencies:
   name_en: Central Board of Indirect Taxes and Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cbic.gov.in/
 - agency_id: in_data_gov
   iso2: IN
@@ -1279,11 +1279,11 @@ agencies:
   name_en: Department of Trade and Industry
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.dti.gov.ph/
 - agency_id: ph_dole
   iso2: PH
@@ -1344,11 +1344,11 @@ agencies:
   name_en: Department of Agriculture
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.da.gov.ph/
 - agency_id: ph_doe
   iso2: PH
@@ -1357,11 +1357,11 @@ agencies:
   name_en: DOE / DENR
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.doe.gov.ph/
 - agency_id: ph_dot_boa
   iso2: PH
@@ -1370,11 +1370,11 @@ agencies:
   name_en: Department of Tourism / BOI
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tourism.gov.ph/
   notes: 投資誘致 BOI under DTI。
 - agency_id: ph_boc
@@ -1384,11 +1384,11 @@ agencies:
   name_en: Bureau of Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://customs.gov.ph/
 - agency_id: ph_data_gov
   iso2: PH
@@ -1451,11 +1451,11 @@ agencies:
   name_en: Securities Commission Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sc.com.my/
 - agency_id: my_miti
   iso2: MY
@@ -1464,11 +1464,11 @@ agencies:
   name_en: MITI Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.miti.gov.my/
 - agency_id: my_mohr
   iso2: MY
@@ -1490,11 +1490,11 @@ agencies:
   name_en: Ministry of Education Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moe.gov.my/
 - agency_id: my_mot
   iso2: MY
@@ -1503,11 +1503,11 @@ agencies:
   name_en: Ministry of Transport Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mot.gov.my/
 - agency_id: my_moh
   iso2: MY
@@ -1529,11 +1529,11 @@ agencies:
   name_en: Ministry of Agriculture and Food Security
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mafi.gov.my/
 - agency_id: my_nrecc
   iso2: MY
@@ -1542,11 +1542,11 @@ agencies:
   name_en: NRECC Malaysia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.nrecc.gov.my/
 - agency_id: my_mota_mida
   iso2: MY
@@ -1555,11 +1555,11 @@ agencies:
   name_en: MOTAC / MIDA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.motac.gov.my/
   notes: 投資誘致 https://www.mida.gov.my/
 - agency_id: my_customs
@@ -1569,11 +1569,11 @@ agencies:
   name_en: Royal Malaysian Customs Department
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.gov.my/
 - agency_id: my_data_gov
   iso2: MY
@@ -1636,11 +1636,11 @@ agencies:
   name_en: MAS (financial regulator)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mas.gov.sg/
   notes: 中央銀行と監督が同一機関。
 - agency_id: sg_mti
@@ -1650,11 +1650,11 @@ agencies:
   name_en: Ministry of Trade and Industry
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mti.gov.sg/
 - agency_id: sg_mom
   iso2: SG
@@ -1663,11 +1663,11 @@ agencies:
   name_en: Ministry of Manpower
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mom.gov.sg/
 - agency_id: sg_moe
   iso2: SG
@@ -1676,11 +1676,11 @@ agencies:
   name_en: Ministry of Education
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moe.gov.sg/
 - agency_id: sg_mot
   iso2: SG
@@ -1689,11 +1689,11 @@ agencies:
   name_en: Ministry of Transport
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mot.gov.sg/
 - agency_id: sg_moh
   iso2: SG
@@ -1702,11 +1702,11 @@ agencies:
   name_en: Ministry of Health
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moh.gov.sg/
 - agency_id: sg_sfa
   iso2: SG
@@ -1715,11 +1715,11 @@ agencies:
   name_en: Singapore Food Agency
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sfa.gov.sg/
   notes: 農業省は無く食品庁が相当。
 - agency_id: sg_ema
@@ -1729,11 +1729,11 @@ agencies:
   name_en: EMA / MSE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ema.gov.sg/
 - agency_id: sg_stb_edb
   iso2: SG
@@ -1742,11 +1742,11 @@ agencies:
   name_en: Singapore Tourism Board / EDB
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.stb.gov.sg/
   notes: 投資誘致は https://www.edb.gov.sg/
 - agency_id: sg_customs
@@ -1756,11 +1756,11 @@ agencies:
   name_en: Singapore Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.gov.sg/
 - agency_id: sg_data_gov
   iso2: SG
@@ -1822,11 +1822,11 @@ agencies:
   name_en: NFRA / CSRC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.csrc.gov.cn/
   notes: 銀行保険監督はNFRA。Wave1でURL再確認。
 - agency_id: cn_mofcom
@@ -1836,11 +1836,11 @@ agencies:
   name_en: Ministry of Commerce PRC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mofcom.gov.cn/
 - agency_id: cn_mohrss
   iso2: CN
@@ -1849,11 +1849,11 @@ agencies:
   name_en: Ministry of Human Resources and Social Security
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.mohrss.gov.cn/
 - agency_id: cn_moe
   iso2: CN
@@ -1862,11 +1862,11 @@ agencies:
   name_en: Ministry of Education PRC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.moe.gov.cn/
 - agency_id: cn_mot
   iso2: CN
@@ -1875,11 +1875,11 @@ agencies:
   name_en: Ministry of Transport PRC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mot.gov.cn/
 - agency_id: cn_nhc
   iso2: CN
@@ -1901,11 +1901,11 @@ agencies:
   name_en: Ministry of Agriculture and Rural Affairs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.moa.gov.cn/
 - agency_id: cn_neea
   iso2: CN
@@ -1914,11 +1914,11 @@ agencies:
   name_en: NEA / MEE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.nea.gov.cn/
 - agency_id: cn_cta_mofcom
   iso2: CN
@@ -1927,11 +1927,11 @@ agencies:
   name_en: Ministry of Culture and Tourism
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mct.gov.cn/
 - agency_id: cn_customs
   iso2: CN
@@ -1940,11 +1940,11 @@ agencies:
   name_en: General Administration of Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.customs.gov.cn/
 - agency_id: cn_data_gov
   iso2: CN
@@ -1952,7 +1952,7 @@ agencies:
   name_ja: 国家公共データ開放平台
   name_en: data.gov.cn
   layer_status:
-    L0: blocked
+    L0: pending
     L1: pending
     L2: pending
     L3: pending
@@ -2009,11 +2009,11 @@ agencies:
   name_en: FSC / FSS
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.fsc.go.kr/
 - agency_id: kr_motie
   iso2: KR
@@ -2022,11 +2022,11 @@ agencies:
   name_en: MOTIE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.motie.go.kr/
 - agency_id: kr_moel
   iso2: KR
@@ -2035,11 +2035,11 @@ agencies:
   name_en: Ministry of Employment and Labor
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moel.go.kr/
 - agency_id: kr_moe
   iso2: KR
@@ -2048,11 +2048,11 @@ agencies:
   name_en: Ministry of Education Korea
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moe.go.kr/
 - agency_id: kr_molit
   iso2: KR
@@ -2074,11 +2074,11 @@ agencies:
   name_en: Ministry of Health and Welfare
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mohw.go.kr/
 - agency_id: kr_mafra
   iso2: KR
@@ -2087,11 +2087,11 @@ agencies:
   name_en: MAFRA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mafra.go.kr/
 - agency_id: kr_motie_env
   iso2: KR
@@ -2100,11 +2100,11 @@ agencies:
   name_en: MOTIE Energy / MOE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.me.go.kr/
 - agency_id: kr_mcst_invest
   iso2: KR
@@ -2113,11 +2113,11 @@ agencies:
   name_en: MCST / Invest Korea
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mcst.go.kr/
   notes: Invest Korea https://www.investkorea.org/
 - agency_id: kr_customs
@@ -2127,11 +2127,11 @@ agencies:
   name_en: Korea Customs Service
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.go.kr/
 - agency_id: kr_data_go
   iso2: KR
@@ -2193,11 +2193,11 @@ agencies:
   name_en: Financial Supervisory Commission
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.fsc.gov.tw/
 - agency_id: tw_moea
   iso2: TW
@@ -2206,11 +2206,11 @@ agencies:
   name_en: Ministry of Economic Affairs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moea.gov.tw/
 - agency_id: tw_mol
   iso2: TW
@@ -2219,11 +2219,11 @@ agencies:
   name_en: Ministry of Labor
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mol.gov.tw/
 - agency_id: tw_moe
   iso2: TW
@@ -2232,11 +2232,11 @@ agencies:
   name_en: Ministry of Education Taiwan
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.edu.tw/
 - agency_id: tw_motc
   iso2: TW
@@ -2245,11 +2245,11 @@ agencies:
   name_en: Ministry of Transportation and Communications
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.motc.gov.tw/
 - agency_id: tw_mohw
   iso2: TW
@@ -2258,11 +2258,11 @@ agencies:
   name_en: Ministry of Health and Welfare
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mohw.gov.tw/
 - agency_id: tw_moa
   iso2: TW
@@ -2271,11 +2271,11 @@ agencies:
   name_en: Ministry of Agriculture
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moa.gov.tw/
 - agency_id: tw_moenv
   iso2: TW
@@ -2284,11 +2284,11 @@ agencies:
   name_en: MOENV / MOEA Energy
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moenv.gov.tw/
 - agency_id: tw_tourism_invest
   iso2: TW
@@ -2297,11 +2297,11 @@ agencies:
   name_en: Tourism Administration / Invest Taiwan
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.taiwan.net.tw/
   notes: 投資 https://investtaiwan.nat.gov.tw/
 - agency_id: tw_customs
@@ -2311,11 +2311,11 @@ agencies:
   name_en: Customs Administration, MOF
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://web.customs.gov.tw/
 - agency_id: tw_data_gov
   iso2: TW
@@ -2376,11 +2376,11 @@ agencies:
   name_en: Securities and Futures Commission
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sfc.hk/
 - agency_id: hk_cedb
   iso2: HK
@@ -2389,11 +2389,11 @@ agencies:
   name_en: Commerce and Economic Development Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cedb.gov.hk/
 - agency_id: hk_labour
   iso2: HK
@@ -2402,11 +2402,11 @@ agencies:
   name_en: Labour Department / LWB
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.labour.gov.hk/
 - agency_id: hk_edb
   iso2: HK
@@ -2415,11 +2415,11 @@ agencies:
   name_en: Education Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.edb.gov.hk/
 - agency_id: hk_thb
   iso2: HK
@@ -2428,11 +2428,11 @@ agencies:
   name_en: Transport and Logistics Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tlb.gov.hk/
 - agency_id: hk_hhb
   iso2: HK
@@ -2441,11 +2441,11 @@ agencies:
   name_en: Health Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.healthbureau.gov.hk/
 - agency_id: hk_afcd
   iso2: HK
@@ -2468,11 +2468,11 @@ agencies:
   name_en: Environment and Ecology Bureau
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.eeb.gov.hk/
 - agency_id: hk_tourism_invest
   iso2: HK
@@ -2481,11 +2481,11 @@ agencies:
   name_en: Tourism Commission / InvestHK
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tourism.gov.hk/
   notes: InvestHK https://www.investhk.gov.hk/
 - agency_id: hk_customs
@@ -2495,11 +2495,11 @@ agencies:
   name_en: Customs and Excise Department
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.gov.hk/
 - agency_id: hk_data_gov
   iso2: HK

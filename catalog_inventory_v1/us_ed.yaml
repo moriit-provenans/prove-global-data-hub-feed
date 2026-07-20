@@ -1,0 +1,61 @@
+iso2: US
+source_note_ja: U.S. Department of Education L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.ed.gov/
+  verified: true
+L1_themes:
+- theme_id: ed
+  name_ja: Education
+  name_en: Education
+  url: https://www.ed.gov/
+- theme_id: nces
+  name_ja: NCES
+  name_en: NCES
+  url: https://nces.ed.gov/
+- theme_id: data_ed
+  name_ja: ED Data
+  name_en: ED Data
+  url: https://www.ed.gov/data
+L2_datasets:
+- dataset_id: us_ed_ed
+  title: Education
+  url: https://www.ed.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ed
+- dataset_id: us_ed_nces
+  title: NCES
+  url: https://nces.ed.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: nces
+- dataset_id: us_ed_data_ed
+  title: ED Data
+  url: https://www.ed.gov/data
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: data_ed
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'U.S. Department of Education: Education'
+  url: https://www.ed.gov/
+  why_unique_ja: US固有の公的機関データ入口（education_science）
+- title: 'U.S. Department of Education: NCES'
+  url: https://nces.ed.gov/
+  why_unique_ja: US固有の公的機関データ入口（education_science）
+- title: 'U.S. Department of Education: ED Data'
+  url: https://www.ed.gov/data
+  why_unique_ja: US固有の公的機関データ入口（education_science）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_ed
+updated_at: '2026-07-21T04:20:35+09:00'

@@ -1,0 +1,33 @@
+iso2: KR
+source_note_ja: Ministry of Employment and Labor L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.moel.go.kr/
+  verified: true
+L1_themes:
+- theme_id: moel
+  name_ja: MOEL
+  name_en: MOEL
+  url: https://www.moel.go.kr/
+L2_datasets:
+- dataset_id: kr_moel_moel
+  title: MOEL
+  url: https://www.moel.go.kr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: moel
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Employment and Labor: MOEL'
+  url: https://www.moel.go.kr/
+  why_unique_ja: KR固有の公的機関データ入口（labour）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: kr_moel
+updated_at: '2026-07-21T04:20:35+09:00'

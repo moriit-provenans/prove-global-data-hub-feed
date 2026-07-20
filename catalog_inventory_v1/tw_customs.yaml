@@ -1,0 +1,33 @@
+iso2: TW
+source_note_ja: Customs Administration, MOF L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://web.customs.gov.tw/
+  verified: true
+L1_themes:
+- theme_id: customs
+  name_ja: TW Customs
+  name_en: Customs
+  url: https://web.customs.gov.tw/
+L2_datasets:
+- dataset_id: tw_customs_customs
+  title: Customs
+  url: https://web.customs.gov.tw/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: customs
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Customs Administration, MOF: Customs'
+  url: https://web.customs.gov.tw/
+  why_unique_ja: TW固有の公的機関データ入口（customs_tax）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: tw_customs
+updated_at: '2026-07-21T04:20:35+09:00'

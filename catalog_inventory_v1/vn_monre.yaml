@@ -1,0 +1,24 @@
+iso2: VN
+source_note_ja: 'Ministry of Natural Resources and Environment: クローラ到達不可（dns_or_unreachable）。L1
+  blocked。'
+L0:
+  portal_url: https://monre.gov.vn/
+  verified: false
+  blocked_reason: dns_or_unreachable
+L1_themes: []
+L2_datasets: []
+L3_series: []
+L4_notes: 人間ブラウザでL1再検証が必要
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: blocked
+  L2: blocked
+  L3: pending
+  L4: pending
+  L5: pending
+blocked:
+  L1: dns_or_unreachable
+  L2: awaiting_L1
+agency_id: vn_monre
+updated_at: '2026-07-21T04:20:35+09:00'

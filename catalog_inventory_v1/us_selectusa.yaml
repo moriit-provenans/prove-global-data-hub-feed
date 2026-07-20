@@ -1,0 +1,47 @@
+iso2: US
+source_note_ja: SelectUSA L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.trade.gov/selectusa
+  verified: true
+L1_themes:
+- theme_id: selectusa
+  name_ja: SelectUSA
+  name_en: SelectUSA
+  url: https://www.trade.gov/selectusa
+- theme_id: ita
+  name_ja: ITA
+  name_en: ITA
+  url: https://www.trade.gov/
+L2_datasets:
+- dataset_id: us_selectusa_selectusa
+  title: SelectUSA
+  url: https://www.trade.gov/selectusa
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: selectusa
+- dataset_id: us_selectusa_ita
+  title: ITA
+  url: https://www.trade.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ita
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'SelectUSA: SelectUSA'
+  url: https://www.trade.gov/selectusa
+  why_unique_ja: US固有の公的機関データ入口（tourism_investment_promotion）
+- title: 'SelectUSA: ITA'
+  url: https://www.trade.gov/
+  why_unique_ja: US固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_selectusa
+updated_at: '2026-07-21T04:20:35+09:00'

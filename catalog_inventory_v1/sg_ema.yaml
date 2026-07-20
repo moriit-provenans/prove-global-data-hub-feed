@@ -1,0 +1,47 @@
+iso2: SG
+source_note_ja: EMA / MSE L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.ema.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: ema
+  name_ja: EMA
+  name_en: EMA
+  url: https://www.ema.gov.sg/
+- theme_id: stats
+  name_ja: EMA statistics
+  name_en: EMA statistics
+  url: https://www.ema.gov.sg/resources/statistics
+L2_datasets:
+- dataset_id: sg_ema_ema
+  title: EMA
+  url: https://www.ema.gov.sg/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ema
+- dataset_id: sg_ema_stats
+  title: EMA statistics
+  url: https://www.ema.gov.sg/resources/statistics
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'EMA / MSE: EMA'
+  url: https://www.ema.gov.sg/
+  why_unique_ja: SG固有の公的機関データ入口（energy_environment）
+- title: 'EMA / MSE: EMA statistics'
+  url: https://www.ema.gov.sg/resources/statistics
+  why_unique_ja: SG固有の公的機関データ入口（energy_environment）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sg_ema
+updated_at: '2026-07-21T04:20:35+09:00'

@@ -1,0 +1,33 @@
+iso2: CN
+source_note_ja: Ministry of Commerce PRC L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.mofcom.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: mofcom
+  name_ja: MOFCOM
+  name_en: MOFCOM
+  url: https://www.mofcom.gov.cn/
+L2_datasets:
+- dataset_id: cn_mofcom_mofcom
+  title: MOFCOM
+  url: https://www.mofcom.gov.cn/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mofcom
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Commerce PRC: MOFCOM'
+  url: https://www.mofcom.gov.cn/
+  why_unique_ja: CN固有の公的機関データ入口（economy_industry_trade）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: cn_mofcom
+updated_at: '2026-07-21T04:20:35+09:00'

@@ -1,0 +1,47 @@
+iso2: MY
+source_note_ja: MOTAC / MIDA L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.motac.gov.my/
+  verified: true
+L1_themes:
+- theme_id: motac
+  name_ja: MOTAC
+  name_en: MOTAC
+  url: https://www.motac.gov.my/
+- theme_id: mida
+  name_ja: MIDA
+  name_en: MIDA
+  url: https://www.mida.gov.my/
+L2_datasets:
+- dataset_id: my_mota_mida_motac
+  title: MOTAC
+  url: https://www.motac.gov.my/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: motac
+- dataset_id: my_mota_mida_mida
+  title: MIDA
+  url: https://www.mida.gov.my/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mida
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MOTAC / MIDA: MOTAC'
+  url: https://www.motac.gov.my/
+  why_unique_ja: MY固有の公的機関データ入口（tourism_investment_promotion）
+- title: 'MOTAC / MIDA: MIDA'
+  url: https://www.mida.gov.my/
+  why_unique_ja: MY固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: my_mota_mida
+updated_at: '2026-07-21T04:20:35+09:00'

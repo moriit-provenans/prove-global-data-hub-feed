@@ -1,0 +1,47 @@
+iso2: US
+source_note_ja: CDC / HHS L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.cdc.gov/
+  verified: true
+L1_themes:
+- theme_id: cdc
+  name_ja: CDC
+  name_en: CDC
+  url: https://www.cdc.gov/
+- theme_id: nchs
+  name_ja: NCHS
+  name_en: NCHS
+  url: https://www.cdc.gov/nchs/
+L2_datasets:
+- dataset_id: us_cdc_cdc
+  title: CDC
+  url: https://www.cdc.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: cdc
+- dataset_id: us_cdc_nchs
+  title: NCHS
+  url: https://www.cdc.gov/nchs/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: nchs
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'CDC / HHS: CDC'
+  url: https://www.cdc.gov/
+  why_unique_ja: US固有の公的機関データ入口（health_welfare）
+- title: 'CDC / HHS: NCHS'
+  url: https://www.cdc.gov/nchs/
+  why_unique_ja: US固有の公的機関データ入口（health_welfare）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: us_cdc
+updated_at: '2026-07-21T04:20:35+09:00'

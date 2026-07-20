@@ -1,0 +1,33 @@
+iso2: PH
+source_note_ja: Department of Trade and Industry L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.dti.gov.ph/
+  verified: true
+L1_themes:
+- theme_id: dti
+  name_ja: DTI
+  name_en: DTI
+  url: https://www.dti.gov.ph/
+L2_datasets:
+- dataset_id: ph_dti_dti
+  title: DTI
+  url: https://www.dti.gov.ph/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: dti
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Department of Trade and Industry: DTI'
+  url: https://www.dti.gov.ph/
+  why_unique_ja: PH固有の公的機関データ入口（economy_industry_trade）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ph_dti
+updated_at: '2026-07-21T04:20:35+09:00'

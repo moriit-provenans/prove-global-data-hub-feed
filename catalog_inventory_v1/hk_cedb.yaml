@@ -1,0 +1,33 @@
+iso2: HK
+source_note_ja: Commerce and Economic Development Bureau L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.cedb.gov.hk/
+  verified: true
+L1_themes:
+- theme_id: cedb
+  name_ja: CEDB
+  name_en: CEDB
+  url: https://www.cedb.gov.hk/
+L2_datasets:
+- dataset_id: hk_cedb_cedb
+  title: CEDB
+  url: https://www.cedb.gov.hk/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: cedb
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Commerce and Economic Development Bureau: CEDB'
+  url: https://www.cedb.gov.hk/
+  why_unique_ja: HK固有の公的機関データ入口（economy_industry_trade）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: hk_cedb
+updated_at: '2026-07-21T04:20:35+09:00'

@@ -1,0 +1,47 @@
+iso2: IN
+source_note_ja: MNRE / MoEFCC L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://mnre.gov.in/
+  verified: true
+L1_themes:
+- theme_id: mnre
+  name_ja: MNRE
+  name_en: MNRE
+  url: https://mnre.gov.in/
+- theme_id: moefcc
+  name_ja: MoEFCC
+  name_en: MoEFCC
+  url: https://moef.gov.in/
+L2_datasets:
+- dataset_id: in_mnre_mnre
+  title: MNRE
+  url: https://mnre.gov.in/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mnre
+- dataset_id: in_mnre_moefcc
+  title: MoEFCC
+  url: https://moef.gov.in/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: moefcc
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MNRE / MoEFCC: MNRE'
+  url: https://mnre.gov.in/
+  why_unique_ja: IN固有の公的機関データ入口（energy_environment）
+- title: 'MNRE / MoEFCC: MoEFCC'
+  url: https://moef.gov.in/
+  why_unique_ja: IN固有の公的機関データ入口（energy_environment）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: in_mnre
+updated_at: '2026-07-21T04:20:35+09:00'

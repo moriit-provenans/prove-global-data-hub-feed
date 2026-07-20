@@ -1,0 +1,33 @@
+iso2: CN
+source_note_ja: Ministry of Culture and Tourism L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.mct.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: mct
+  name_ja: MCT
+  name_en: MCT
+  url: https://www.mct.gov.cn/
+L2_datasets:
+- dataset_id: cn_cta_mofcom_mct
+  title: MCT
+  url: https://www.mct.gov.cn/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mct
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Ministry of Culture and Tourism: MCT'
+  url: https://www.mct.gov.cn/
+  why_unique_ja: CN固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: cn_cta_mofcom
+updated_at: '2026-07-21T04:20:35+09:00'
