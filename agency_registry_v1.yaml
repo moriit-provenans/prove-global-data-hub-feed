@@ -1,0 +1,3975 @@
+schema_version: '1.0'
+req_id: REQ-SMITH-20260721-042
+updated_at: '2026-07-21T04:09:00+09:00'
+wave: Wave0
+policy:
+  layers:
+  - L0
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
+  skip_forbidden: true
+  collect_all_present_separately: true
+  agency_scope_note_ja: 統計局 alone 禁止。中央銀行・財務・金融監督・経産・労働・教育・国土建設・保健・農業・エネルギー環境・観光IPA・関税・オープンデータポータルを各国で列挙。
+agency_classes:
+- nso
+- central_bank
+- finance_ministry
+- financial_regulator
+- economy_industry_trade
+- labour
+- education_science
+- land_construction_transport
+- health_welfare
+- agriculture_food
+- energy_environment
+- tourism_investment_promotion
+- customs_tax
+- open_data_portal
+- other_official
+countries_iso2:
+- JP
+- US
+- SG
+- MY
+- TH
+- PH
+- VN
+- ID
+- IN
+- CN
+- KR
+- TW
+- HK
+- AE
+- SA
+- TR
+- GB
+- DE
+- FR
+- CA
+- BR
+agencies:
+- agency_id: jp_estat
+  iso2: JP
+  agency_class: nso
+  name_ja: 総務省統計局／e-Stat
+  name_en: Statistics Bureau / e-Stat
+  layer_status:
+    L0: done
+    L1: done
+    L2: partial
+    L3: partial
+    L4: partial
+    L5: pending
+  portal_url: https://www.e-stat.go.jp/
+  open_data_url: https://www.e-stat.go.jp/
+  api_docs_url: https://www.e-stat.go.jp/api/
+- agency_id: jp_cao_esri
+  iso2: JP
+  agency_class: other_official
+  name_ja: 内閣府 経済社会総合研究所
+  name_en: CAO ESRI
+  layer_status:
+    L0: done
+    L1: done
+    L2: partial
+    L3: partial
+    L4: partial
+    L5: pending
+  portal_url: https://www.esri.cao.go.jp/
+  open_data_url: https://www.esri.cao.go.jp/jp/sna/menu.html
+  notes: 国民経済計算（SNA）主管。e-Stat経由でも配信。
+- agency_id: jp_boj
+  iso2: JP
+  agency_class: central_bank
+  name_ja: 日本銀行
+  name_en: Bank of Japan
+  layer_status:
+    L0: done
+    L1: done
+    L2: partial
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.boj.or.jp/
+  open_data_url: https://www.stat-search.boj.or.jp/
+- agency_id: jp_mof
+  iso2: JP
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.go.jp/
+  notes: 予算・決算・財政統計。貿易統計は関税局と分担。
+- agency_id: jp_fsa
+  iso2: JP
+  agency_class: financial_regulator
+  name_ja: 金融庁
+  name_en: Financial Services Agency
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.fsa.go.jp/
+- agency_id: jp_meti
+  iso2: JP
+  agency_class: economy_industry_trade
+  name_ja: 経済産業省
+  name_en: METI
+  layer_status:
+    L0: done
+    L1: done
+    L2: partial
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.meti.go.jp/
+  open_data_url: https://www.meti.go.jp/statistics/index.html
+- agency_id: jp_mhlw_labour
+  iso2: JP
+  agency_class: labour
+  name_ja: 厚生労働省（労働統計）
+  name_en: MHLW Labour Statistics
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mhlw.go.jp/
+  open_data_url: https://www.mhlw.go.jp/toukei/index.html
+  notes: agency_id旧 jp_mhlw を labour 明示に分割。
+- agency_id: jp_mext
+  iso2: JP
+  agency_class: education_science
+  name_ja: 文部科学省
+  name_en: MEXT
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mext.go.jp/
+- agency_id: jp_mlit
+  iso2: JP
+  agency_class: land_construction_transport
+  name_ja: 国土交通省
+  name_en: MLIT
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mlit.go.jp/
+- agency_id: jp_mhlw_health
+  iso2: JP
+  agency_class: health_welfare
+  name_ja: 厚生労働省（保健・福祉統計）
+  name_en: MHLW Health & Welfare
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mhlw.go.jp/
+  open_data_url: https://www.mhlw.go.jp/toukei/list/114-1.html
+  notes: 同一省庁・保健福祉クラス。人口動態調査等。
+- agency_id: jp_maff
+  iso2: JP
+  agency_class: agriculture_food
+  name_ja: 農林水産省
+  name_en: MAFF
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.maff.go.jp/
+- agency_id: jp_enecho
+  iso2: JP
+  agency_class: energy_environment
+  name_ja: 資源エネルギー庁／環境省
+  name_en: ANRE / MOE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.enecho.meti.go.jp/statistics/
+  notes: エネルギー統計は資源エネルギー庁。環境は https://www.env.go.jp/ も併記。
+- agency_id: jp_jta
+  iso2: JP
+  agency_class: tourism_investment_promotion
+  name_ja: 観光庁／JETRO
+  name_en: Japan Tourism Agency / JETRO
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mlit.go.jp/kankocho/
+  open_data_url: https://www.jetro.go.jp/world/japan/stats/
+  notes: 観光庁ポータル＋JETRO貿易投資統計。
+- agency_id: jp_customs
+  iso2: JP
+  agency_class: customs_tax
+  name_ja: 財務省関税局／税関
+  name_en: Customs and Tariff Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.go.jp/
+  open_data_url: https://www.customs.go.jp/toukei/info/index.htm
+- agency_id: jp_data_go_jp
+  iso2: JP
+  agency_class: open_data_portal
+  name_ja: データカタログサイト data.go.jp
+  name_en: data.go.jp
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.go.jp/
+  open_data_url: https://www.data.go.jp/data/dataset
+- agency_id: us_census
+  iso2: US
+  agency_class: nso
+  name_ja: 米国センサス局
+  name_en: U.S. Census Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.census.gov/
+  open_data_url: https://data.census.gov/
+  notes: BEA/BLSもNSO級。Wave1で分割棚卸し。
+- agency_id: us_bea
+  iso2: US
+  agency_class: other_official
+  name_ja: 経済分析局 BEA
+  name_en: Bureau of Economic Analysis
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bea.gov/
+- agency_id: us_fed
+  iso2: US
+  agency_class: central_bank
+  name_ja: 連邦準備制度
+  name_en: Federal Reserve System
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.federalreserve.gov/
+  open_data_url: https://fred.stlouisfed.org/
+- agency_id: us_treasury
+  iso2: US
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: U.S. Department of the Treasury
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://home.treasury.gov/
+- agency_id: us_sec
+  iso2: US
+  agency_class: financial_regulator
+  name_ja: 証券取引委員会
+  name_en: U.S. Securities and Exchange Commission
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sec.gov/
+- agency_id: us_commerce
+  iso2: US
+  agency_class: economy_industry_trade
+  name_ja: 商務省
+  name_en: U.S. Department of Commerce
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.commerce.gov/
+- agency_id: us_bls
+  iso2: US
+  agency_class: labour
+  name_ja: 労働統計局 BLS
+  name_en: Bureau of Labor Statistics
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bls.gov/
+  notes: 2026-07-21 クローラ環境で403。公式ポータルとして登録（人間ブラウザ／別UAで再検証）。
+- agency_id: us_ed
+  iso2: US
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: U.S. Department of Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ed.gov/
+- agency_id: us_dot
+  iso2: US
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: U.S. Department of Transportation
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.transportation.gov/
+- agency_id: us_cdc
+  iso2: US
+  agency_class: health_welfare
+  name_ja: 疾病対策センター／HHS
+  name_en: CDC / HHS
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cdc.gov/
+- agency_id: us_usda
+  iso2: US
+  agency_class: agriculture_food
+  name_ja: 農務省
+  name_en: U.S. Department of Agriculture
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.usda.gov/
+  open_data_url: https://www.ers.usda.gov/
+- agency_id: us_eia
+  iso2: US
+  agency_class: energy_environment
+  name_ja: エネルギー情報局 EIA
+  name_en: U.S. Energy Information Administration
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.eia.gov/
+- agency_id: us_selectusa
+  iso2: US
+  agency_class: tourism_investment_promotion
+  name_ja: SelectUSA／商務省投資誘致
+  name_en: SelectUSA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.trade.gov/selectusa
+- agency_id: us_cbp
+  iso2: US
+  agency_class: customs_tax
+  name_ja: 税関・国境警備局
+  name_en: U.S. Customs and Border Protection
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cbp.gov/
+- agency_id: us_data_gov
+  iso2: US
+  agency_class: open_data_portal
+  name_ja: Data.gov
+  name_en: Data.gov
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.gov/
+- agency_id: vn_gso
+  iso2: VN
+  agency_class: nso
+  name_ja: ベトナム統計総局
+  name_en: General Statistics Office of Viet Nam
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gso.gov.vn/
+- agency_id: vn_sbv
+  iso2: VN
+  agency_class: central_bank
+  name_ja: ベトナム国家銀行
+  name_en: State Bank of Vietnam
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sbv.gov.vn/
+- agency_id: vn_mof
+  iso2: VN
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Viet Nam
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.vn/
+- agency_id: vn_ssc
+  iso2: VN
+  agency_class: financial_regulator
+  name_ja: 国家証券委員会
+  name_en: State Securities Commission
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://ssc.gov.vn/
+- agency_id: vn_moit
+  iso2: VN
+  agency_class: economy_industry_trade
+  name_ja: 商工省
+  name_en: Ministry of Industry and Trade
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://moit.gov.vn/
+- agency_id: vn_molisa
+  iso2: VN
+  agency_class: labour
+  name_ja: 労働傷病兵社会省
+  name_en: MOLISA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.molisa.gov.vn/
+- agency_id: vn_moet
+  iso2: VN
+  agency_class: education_science
+  name_ja: 教育訓練省
+  name_en: Ministry of Education and Training
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://moet.gov.vn/
+- agency_id: vn_mt
+  iso2: VN
+  agency_class: land_construction_transport
+  name_ja: 交通運輸省
+  name_en: Ministry of Transport
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mt.gov.vn/
+- agency_id: vn_moh
+  iso2: VN
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Viet Nam
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://moh.gov.vn/
+- agency_id: vn_mard
+  iso2: VN
+  agency_class: agriculture_food
+  name_ja: 農業農村開発省
+  name_en: Ministry of Agriculture and Rural Development
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mard.gov.vn/
+- agency_id: vn_monre
+  iso2: VN
+  agency_class: energy_environment
+  name_ja: 天然資源環境省
+  name_en: Ministry of Natural Resources and Environment
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://monre.gov.vn/
+- agency_id: vn_vietnam_tourism_mpi
+  iso2: VN
+  agency_class: tourism_investment_promotion
+  name_ja: 文化スポーツ観光省／計画投資省
+  name_en: MOCST / MPI
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.vietnamtourism.gov.vn/
+  notes: 投資誘致 MPI https://www.mpi.gov.vn/
+- agency_id: vn_customs
+  iso2: VN
+  agency_class: customs_tax
+  name_ja: 税関総局
+  name_en: General Department of Vietnam Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.gov.vn/
+- agency_id: vn_data_gov
+  iso2: VN
+  agency_class: open_data_portal
+  name_ja: ベトナムオープンデータ
+  name_en: Vietnam Open Data
+  layer_status:
+    L0: blocked
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  missing_reason: 統一 data.gov.vn 相当の安定ポータル未確認（Wave1でGSO/各省オープンデータを再調査）
+- agency_id: th_nso
+  iso2: TH
+  agency_class: nso
+  name_ja: タイ国家統計局
+  name_en: National Statistical Office Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.nso.go.th/
+  notes: 国民経済計算はNESDC主管も併記。
+- agency_id: th_nesdc
+  iso2: TH
+  agency_class: other_official
+  name_ja: 国家経済社会開発委員会
+  name_en: NESDC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.nesdc.go.th/
+- agency_id: th_bot
+  iso2: TH
+  agency_class: central_bank
+  name_ja: タイ中央銀行
+  name_en: Bank of Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bot.or.th/
+- agency_id: th_mof
+  iso2: TH
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.go.th/
+- agency_id: th_sec
+  iso2: TH
+  agency_class: financial_regulator
+  name_ja: 証券取引委員会
+  name_en: SEC Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sec.or.th/
+- agency_id: th_moc
+  iso2: TH
+  agency_class: economy_industry_trade
+  name_ja: 商業省
+  name_en: Ministry of Commerce Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moc.go.th/
+- agency_id: th_mol
+  iso2: TH
+  agency_class: labour
+  name_ja: 労働省
+  name_en: Ministry of Labour Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mol.go.th/
+- agency_id: th_moe
+  iso2: TH
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moe.go.th/
+- agency_id: th_mot
+  iso2: TH
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Ministry of Transport Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mot.go.th/
+- agency_id: th_moph
+  iso2: TH
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Public Health Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moph.go.th/
+- agency_id: th_moac
+  iso2: TH
+  agency_class: agriculture_food
+  name_ja: 農業協同組合省
+  name_en: Ministry of Agriculture and Cooperatives
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moac.go.th/
+- agency_id: th_mnre
+  iso2: TH
+  agency_class: energy_environment
+  name_ja: 天然資源環境省／エネルギー省
+  name_en: MNRE / MoE Thailand
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mnre.go.th/
+- agency_id: th_mots_boi
+  iso2: TH
+  agency_class: tourism_investment_promotion
+  name_ja: 観光スポーツ省／BOI
+  name_en: MOTS / BOI
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mots.go.th/
+  notes: 投資誘致 https://www.boi.go.th/
+- agency_id: th_customs
+  iso2: TH
+  agency_class: customs_tax
+  name_ja: タイ関税局
+  name_en: Thai Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.go.th/
+- agency_id: th_data_go
+  iso2: TH
+  agency_class: open_data_portal
+  name_ja: data.go.th
+  name_en: data.go.th
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.go.th/
+- agency_id: id_bps
+  iso2: ID
+  agency_class: nso
+  name_ja: インドネシア中央統計庁
+  name_en: BPS-Statistics Indonesia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bps.go.id/
+- agency_id: id_bi
+  iso2: ID
+  agency_class: central_bank
+  name_ja: インドネシア銀行
+  name_en: Bank Indonesia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bi.go.id/
+- agency_id: id_kemenkeu
+  iso2: ID
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Indonesia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.kemenkeu.go.id/
+- agency_id: id_ojk
+  iso2: ID
+  agency_class: financial_regulator
+  name_ja: 金融サービス庁 OJK
+  name_en: Otoritas Jasa Keuangan
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ojk.go.id/
+- agency_id: id_kemenperin
+  iso2: ID
+  agency_class: economy_industry_trade
+  name_ja: 工業省／貿易省
+  name_en: Kemenperin / Kemendag
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://kemenperin.go.id/
+  notes: 貿易省 https://www.kemendag.go.id/
+- agency_id: id_kemnaker
+  iso2: ID
+  agency_class: labour
+  name_ja: 労働省
+  name_en: Ministry of Manpower
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://kemnaker.go.id/
+- agency_id: id_kemdikbud
+  iso2: ID
+  agency_class: education_science
+  name_ja: 教育文化研究技術省
+  name_en: Kemdikbudristek
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.kemdikbud.go.id/
+- agency_id: id_kemenhub
+  iso2: ID
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Ministry of Transportation
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://dephub.go.id/
+- agency_id: id_kemkes
+  iso2: ID
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Indonesia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.kemkes.go.id/
+- agency_id: id_kementan
+  iso2: ID
+  agency_class: agriculture_food
+  name_ja: 農業省
+  name_en: Ministry of Agriculture
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.pertanian.go.id/
+- agency_id: id_esdm
+  iso2: ID
+  agency_class: energy_environment
+  name_ja: エネルギー鉱物資源省
+  name_en: Ministry of Energy and Mineral Resources
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.esdm.go.id/
+- agency_id: id_kemenparekraf_bkpm
+  iso2: ID
+  agency_class: tourism_investment_promotion
+  name_ja: 観光創造経済省／BKPM
+  name_en: Kemenparekraf / BKPM
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.kemenparekraf.go.id/
+  notes: 投資誘致 BKPM/Invest Indonesia。
+- agency_id: id_beacukai
+  iso2: ID
+  agency_class: customs_tax
+  name_ja: 関税消費税総局
+  name_en: Direktorat Jenderal Bea dan Cukai
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.beacukai.go.id/
+- agency_id: id_data_go
+  iso2: ID
+  agency_class: open_data_portal
+  name_ja: data.go.id
+  name_en: Satu Data Indonesia / data.go.id
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.go.id/
+- agency_id: in_mospi
+  iso2: IN
+  agency_class: nso
+  name_ja: 統計・計画実施省 MOSPI
+  name_en: Ministry of Statistics and Programme Implementation
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mospi.gov.in/
+  notes: SSL/API制約あり。NSO India。
+- agency_id: in_rbi
+  iso2: IN
+  agency_class: central_bank
+  name_ja: インド準備銀行
+  name_en: Reserve Bank of India
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.rbi.org.in/
+  open_data_url: https://dbie.rbi.org.in/
+- agency_id: in_dea
+  iso2: IN
+  agency_class: finance_ministry
+  name_ja: 財務省経済局
+  name_en: Department of Economic Affairs / MoF
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://dea.gov.in/
+- agency_id: in_sebi
+  iso2: IN
+  agency_class: financial_regulator
+  name_ja: 証券取引委員会
+  name_en: SEBI
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sebi.gov.in/
+- agency_id: in_dpiit
+  iso2: IN
+  agency_class: economy_industry_trade
+  name_ja: 産業国内貿易振興局／商工省
+  name_en: DPIIT / Commerce
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://dpiit.gov.in/
+- agency_id: in_labour
+  iso2: IN
+  agency_class: labour
+  name_ja: 労働雇用省
+  name_en: Ministry of Labour and Employment
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://labour.gov.in/
+- agency_id: in_education
+  iso2: IN
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education India
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.education.gov.in/
+- agency_id: in_morth
+  iso2: IN
+  agency_class: land_construction_transport
+  name_ja: 道路運輸高速道路省
+  name_en: Ministry of Road Transport and Highways
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://morth.nic.in/
+- agency_id: in_mohfw
+  iso2: IN
+  agency_class: health_welfare
+  name_ja: 保健家族福祉省
+  name_en: Ministry of Health and Family Welfare
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mohfw.gov.in/
+- agency_id: in_agriculture
+  iso2: IN
+  agency_class: agriculture_food
+  name_ja: 農業農民福祉省
+  name_en: Ministry of Agriculture & Farmers Welfare
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://agriculture.gov.in/
+- agency_id: in_mnre
+  iso2: IN
+  agency_class: energy_environment
+  name_ja: 新再生可能エネルギー省／環境森林気候変動省
+  name_en: MNRE / MoEFCC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mnre.gov.in/
+- agency_id: in_tourism_invest
+  iso2: IN
+  agency_class: tourism_investment_promotion
+  name_ja: 観光省／Invest India
+  name_en: Ministry of Tourism / Invest India
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://tourism.gov.in/
+  notes: 投資誘致 https://www.investindia.gov.in/
+- agency_id: in_cbic
+  iso2: IN
+  agency_class: customs_tax
+  name_ja: 中央間接税関税委員会
+  name_en: Central Board of Indirect Taxes and Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cbic.gov.in/
+- agency_id: in_data_gov
+  iso2: IN
+  agency_class: open_data_portal
+  name_ja: data.gov.in
+  name_en: data.gov.in
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.gov.in/
+- agency_id: ph_psa
+  iso2: PH
+  agency_class: nso
+  name_ja: フィリピン統計庁
+  name_en: Philippine Statistics Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://psa.gov.ph/
+  open_data_url: https://openstat.psa.gov.ph/
+- agency_id: ph_bsp
+  iso2: PH
+  agency_class: central_bank
+  name_ja: フィリピン中央銀行
+  name_en: Bangko Sentral ng Pilipinas
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bsp.gov.ph/
+- agency_id: ph_dof
+  iso2: PH
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Department of Finance Philippines
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.dof.gov.ph/
+- agency_id: ph_sec
+  iso2: PH
+  agency_class: financial_regulator
+  name_ja: 証券取引委員会
+  name_en: SEC Philippines
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sec.gov.ph/
+- agency_id: ph_dti
+  iso2: PH
+  agency_class: economy_industry_trade
+  name_ja: 貿易産業省
+  name_en: Department of Trade and Industry
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.dti.gov.ph/
+- agency_id: ph_dole
+  iso2: PH
+  agency_class: labour
+  name_ja: 労働雇用省
+  name_en: Department of Labor and Employment
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.dole.gov.ph/
+- agency_id: ph_deped
+  iso2: PH
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Department of Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.deped.gov.ph/
+- agency_id: ph_dotr
+  iso2: PH
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Department of Transportation
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://dotr.gov.ph/
+- agency_id: ph_doh
+  iso2: PH
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Department of Health
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://doh.gov.ph/
+- agency_id: ph_da
+  iso2: PH
+  agency_class: agriculture_food
+  name_ja: 農業省
+  name_en: Department of Agriculture
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.da.gov.ph/
+- agency_id: ph_doe
+  iso2: PH
+  agency_class: energy_environment
+  name_ja: エネルギー省／環境天然資源省
+  name_en: DOE / DENR
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.doe.gov.ph/
+- agency_id: ph_dot_boa
+  iso2: PH
+  agency_class: tourism_investment_promotion
+  name_ja: 観光省／BOI
+  name_en: Department of Tourism / BOI
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tourism.gov.ph/
+  notes: 投資誘致 BOI under DTI。
+- agency_id: ph_boc
+  iso2: PH
+  agency_class: customs_tax
+  name_ja: 関税局
+  name_en: Bureau of Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://customs.gov.ph/
+- agency_id: ph_data_gov
+  iso2: PH
+  agency_class: open_data_portal
+  name_ja: data.gov.ph
+  name_en: data.gov.ph
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.gov.ph/
+  notes: ポータル稼働状況はWave1で再確認。
+- agency_id: my_dosm
+  iso2: MY
+  agency_class: nso
+  name_ja: マレーシア統計局
+  name_en: Department of Statistics Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.dosm.gov.my/
+  open_data_url: https://open.dosm.gov.my/
+- agency_id: my_bnm
+  iso2: MY
+  agency_class: central_bank
+  name_ja: マレーシア中央銀行
+  name_en: Bank Negara Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bnm.gov.my/
+- agency_id: my_mof
+  iso2: MY
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.my/
+- agency_id: my_sc
+  iso2: MY
+  agency_class: financial_regulator
+  name_ja: 証券委員会
+  name_en: Securities Commission Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sc.com.my/
+- agency_id: my_miti
+  iso2: MY
+  agency_class: economy_industry_trade
+  name_ja: 国際貿易産業省
+  name_en: MITI Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.miti.gov.my/
+- agency_id: my_mohr
+  iso2: MY
+  agency_class: labour
+  name_ja: 人的資源省
+  name_en: Ministry of Human Resources
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mohr.gov.my/
+- agency_id: my_moe
+  iso2: MY
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moe.gov.my/
+- agency_id: my_mot
+  iso2: MY
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Ministry of Transport Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mot.gov.my/
+- agency_id: my_moh
+  iso2: MY
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moh.gov.my/
+- agency_id: my_mafi
+  iso2: MY
+  agency_class: agriculture_food
+  name_ja: 農業食料産業省
+  name_en: Ministry of Agriculture and Food Security
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mafi.gov.my/
+- agency_id: my_nrecc
+  iso2: MY
+  agency_class: energy_environment
+  name_ja: 天然資源・環境気候変動省
+  name_en: NRECC Malaysia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.nrecc.gov.my/
+- agency_id: my_mota_mida
+  iso2: MY
+  agency_class: tourism_investment_promotion
+  name_ja: 観光芸術文化省／MIDA
+  name_en: MOTAC / MIDA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.motac.gov.my/
+  notes: 投資誘致 https://www.mida.gov.my/
+- agency_id: my_customs
+  iso2: MY
+  agency_class: customs_tax
+  name_ja: 関税局
+  name_en: Royal Malaysian Customs Department
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.gov.my/
+- agency_id: my_data_gov
+  iso2: MY
+  agency_class: open_data_portal
+  name_ja: data.gov.my
+  name_en: data.gov.my
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.gov.my/
+- agency_id: sg_singstat
+  iso2: SG
+  agency_class: nso
+  name_ja: シンガポール統計局
+  name_en: Department of Statistics Singapore
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.singstat.gov.sg/
+  open_data_url: https://tablebuilder.singstat.gov.sg/
+- agency_id: sg_mas
+  iso2: SG
+  agency_class: central_bank
+  name_ja: シンガポール金融管理局
+  name_en: Monetary Authority of Singapore
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mas.gov.sg/
+- agency_id: sg_mof
+  iso2: SG
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Singapore
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.sg/
+- agency_id: sg_mas_reg
+  iso2: SG
+  agency_class: financial_regulator
+  name_ja: MAS（金融監督）
+  name_en: MAS (financial regulator)
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mas.gov.sg/
+  notes: 中央銀行と監督が同一機関。
+- agency_id: sg_mti
+  iso2: SG
+  agency_class: economy_industry_trade
+  name_ja: 貿易産業省
+  name_en: Ministry of Trade and Industry
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mti.gov.sg/
+- agency_id: sg_mom
+  iso2: SG
+  agency_class: labour
+  name_ja: 人材省
+  name_en: Ministry of Manpower
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mom.gov.sg/
+- agency_id: sg_moe
+  iso2: SG
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moe.gov.sg/
+- agency_id: sg_mot
+  iso2: SG
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Ministry of Transport
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mot.gov.sg/
+- agency_id: sg_moh
+  iso2: SG
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moh.gov.sg/
+- agency_id: sg_sfa
+  iso2: SG
+  agency_class: agriculture_food
+  name_ja: シンガポール食品庁
+  name_en: Singapore Food Agency
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sfa.gov.sg/
+  notes: 農業省は無く食品庁が相当。
+- agency_id: sg_ema
+  iso2: SG
+  agency_class: energy_environment
+  name_ja: エネルギー市場庁／持続可能性環境庁
+  name_en: EMA / MSE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ema.gov.sg/
+- agency_id: sg_stb_edb
+  iso2: SG
+  agency_class: tourism_investment_promotion
+  name_ja: 観光庁／EDB
+  name_en: Singapore Tourism Board / EDB
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.stb.gov.sg/
+  notes: 投資誘致は https://www.edb.gov.sg/
+- agency_id: sg_customs
+  iso2: SG
+  agency_class: customs_tax
+  name_ja: シンガポール税関
+  name_en: Singapore Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.gov.sg/
+- agency_id: sg_data_gov
+  iso2: SG
+  agency_class: open_data_portal
+  name_ja: data.gov.sg
+  name_en: data.gov.sg
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.gov.sg/
+- agency_id: cn_nbs
+  iso2: CN
+  agency_class: nso
+  name_ja: 国家統計局
+  name_en: National Bureau of Statistics of China
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.stats.gov.cn/
+  open_data_url: https://data.stats.gov.cn/
+- agency_id: cn_pbc
+  iso2: CN
+  agency_class: central_bank
+  name_ja: 中国人民銀行
+  name_en: People's Bank of China
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.pbc.gov.cn/
+- agency_id: cn_mof
+  iso2: CN
+  agency_class: finance_ministry
+  name_ja: 財政部
+  name_en: Ministry of Finance PRC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.cn/
+- agency_id: cn_csrc
+  iso2: CN
+  agency_class: financial_regulator
+  name_ja: 国家金融監督管理総局／証監会
+  name_en: NFRA / CSRC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.csrc.gov.cn/
+  notes: 銀行保険監督はNFRA。Wave1でURL再確認。
+- agency_id: cn_mofcom
+  iso2: CN
+  agency_class: economy_industry_trade
+  name_ja: 商務部
+  name_en: Ministry of Commerce PRC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mofcom.gov.cn/
+- agency_id: cn_mohrss
+  iso2: CN
+  agency_class: labour
+  name_ja: 人的資源社会保障部
+  name_en: Ministry of Human Resources and Social Security
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.mohrss.gov.cn/
+- agency_id: cn_moe
+  iso2: CN
+  agency_class: education_science
+  name_ja: 教育部
+  name_en: Ministry of Education PRC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.moe.gov.cn/
+- agency_id: cn_mot
+  iso2: CN
+  agency_class: land_construction_transport
+  name_ja: 交通運輸部
+  name_en: Ministry of Transport PRC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mot.gov.cn/
+- agency_id: cn_nhc
+  iso2: CN
+  agency_class: health_welfare
+  name_ja: 国家衛生健康委員会
+  name_en: National Health Commission
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.nhc.gov.cn/
+- agency_id: cn_mara
+  iso2: CN
+  agency_class: agriculture_food
+  name_ja: 農業農村部
+  name_en: Ministry of Agriculture and Rural Affairs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.moa.gov.cn/
+- agency_id: cn_neea
+  iso2: CN
+  agency_class: energy_environment
+  name_ja: 国家エネルギー局／生態環境部
+  name_en: NEA / MEE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.nea.gov.cn/
+- agency_id: cn_cta_mofcom
+  iso2: CN
+  agency_class: tourism_investment_promotion
+  name_ja: 文化観光部／投資誘致
+  name_en: Ministry of Culture and Tourism
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mct.gov.cn/
+- agency_id: cn_customs
+  iso2: CN
+  agency_class: customs_tax
+  name_ja: 税関総署
+  name_en: General Administration of Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: http://www.customs.gov.cn/
+- agency_id: cn_data_gov
+  iso2: CN
+  agency_class: open_data_portal
+  name_ja: 国家データ局／開放平台
+  name_en: National Data Administration portals
+  layer_status:
+    L0: blocked
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  missing_reason: 統一英語オープンデータポータルが流動的。data.stats.gov.cn をNSO側で優先。Wave1で国家データ局URL確定。
+- agency_id: kr_kostat
+  iso2: KR
+  agency_class: nso
+  name_ja: 統計庁／KOSIS
+  name_en: Statistics Korea / KOSIS
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://kostat.go.kr/
+  open_data_url: https://kosis.kr/
+  api_docs_url: https://kosis.kr/openapi/index/index.do
+- agency_id: kr_bok
+  iso2: KR
+  agency_class: central_bank
+  name_ja: 韓国銀行
+  name_en: Bank of Korea
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bok.or.kr/
+- agency_id: kr_mosf
+  iso2: KR
+  agency_class: finance_ministry
+  name_ja: 企画財政部
+  name_en: Ministry of Economy and Finance
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moef.go.kr/
+- agency_id: kr_fss
+  iso2: KR
+  agency_class: financial_regulator
+  name_ja: 金融委員会／金融監督院
+  name_en: FSC / FSS
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.fsc.go.kr/
+- agency_id: kr_motie
+  iso2: KR
+  agency_class: economy_industry_trade
+  name_ja: 産業通商資源部
+  name_en: MOTIE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.motie.go.kr/
+- agency_id: kr_moel
+  iso2: KR
+  agency_class: labour
+  name_ja: 雇用労働部
+  name_en: Ministry of Employment and Labor
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moel.go.kr/
+- agency_id: kr_moe
+  iso2: KR
+  agency_class: education_science
+  name_ja: 教育部
+  name_en: Ministry of Education Korea
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moe.go.kr/
+- agency_id: kr_molit
+  iso2: KR
+  agency_class: land_construction_transport
+  name_ja: 国土交通部
+  name_en: MOLIT
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.molit.go.kr/
+- agency_id: kr_mohw
+  iso2: KR
+  agency_class: health_welfare
+  name_ja: 保健福祉部
+  name_en: Ministry of Health and Welfare
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mohw.go.kr/
+- agency_id: kr_mafra
+  iso2: KR
+  agency_class: agriculture_food
+  name_ja: 農林畜産食品部
+  name_en: MAFRA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mafra.go.kr/
+- agency_id: kr_motie_env
+  iso2: KR
+  agency_class: energy_environment
+  name_ja: 産業通商資源部（エネルギー）／環境部
+  name_en: MOTIE Energy / MOE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.me.go.kr/
+- agency_id: kr_mcst_invest
+  iso2: KR
+  agency_class: tourism_investment_promotion
+  name_ja: 文化体育観光部／Invest Korea
+  name_en: MCST / Invest Korea
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mcst.go.kr/
+  notes: Invest Korea https://www.investkorea.org/
+- agency_id: kr_customs
+  iso2: KR
+  agency_class: customs_tax
+  name_ja: 関税庁
+  name_en: Korea Customs Service
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.go.kr/
+- agency_id: kr_data_go
+  iso2: KR
+  agency_class: open_data_portal
+  name_ja: data.go.kr
+  name_en: data.go.kr
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.go.kr/
+- agency_id: tw_dgbas
+  iso2: TW
+  agency_class: nso
+  name_ja: 行政院主計總處
+  name_en: DGBAS
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.stat.gov.tw/
+  open_data_url: https://www.dgbas.gov.tw/
+- agency_id: tw_cbc
+  iso2: TW
+  agency_class: central_bank
+  name_ja: 中央銀行
+  name_en: Central Bank of the Republic of China (Taiwan)
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cbc.gov.tw/
+- agency_id: tw_mof
+  iso2: TW
+  agency_class: finance_ministry
+  name_ja: 財政部
+  name_en: Ministry of Finance Taiwan
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.tw/
+- agency_id: tw_fsc
+  iso2: TW
+  agency_class: financial_regulator
+  name_ja: 金融監督管理委員会
+  name_en: Financial Supervisory Commission
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.fsc.gov.tw/
+- agency_id: tw_moea
+  iso2: TW
+  agency_class: economy_industry_trade
+  name_ja: 経済部
+  name_en: Ministry of Economic Affairs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moea.gov.tw/
+- agency_id: tw_mol
+  iso2: TW
+  agency_class: labour
+  name_ja: 労働部
+  name_en: Ministry of Labor
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mol.gov.tw/
+- agency_id: tw_moe
+  iso2: TW
+  agency_class: education_science
+  name_ja: 教育部
+  name_en: Ministry of Education Taiwan
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.edu.tw/
+- agency_id: tw_motc
+  iso2: TW
+  agency_class: land_construction_transport
+  name_ja: 交通部
+  name_en: Ministry of Transportation and Communications
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.motc.gov.tw/
+- agency_id: tw_mohw
+  iso2: TW
+  agency_class: health_welfare
+  name_ja: 衛生福利部
+  name_en: Ministry of Health and Welfare
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mohw.gov.tw/
+- agency_id: tw_moa
+  iso2: TW
+  agency_class: agriculture_food
+  name_ja: 農業部
+  name_en: Ministry of Agriculture
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moa.gov.tw/
+- agency_id: tw_moenv
+  iso2: TW
+  agency_class: energy_environment
+  name_ja: 環境部／経済部エネルギー署
+  name_en: MOENV / MOEA Energy
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moenv.gov.tw/
+- agency_id: tw_tourism_invest
+  iso2: TW
+  agency_class: tourism_investment_promotion
+  name_ja: 交通部観光署／投資審議
+  name_en: Tourism Administration / Invest Taiwan
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.taiwan.net.tw/
+  notes: 投資 https://investtaiwan.nat.gov.tw/
+- agency_id: tw_customs
+  iso2: TW
+  agency_class: customs_tax
+  name_ja: 財政部関務署
+  name_en: Customs Administration, MOF
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://web.customs.gov.tw/
+- agency_id: tw_data_gov
+  iso2: TW
+  agency_class: open_data_portal
+  name_ja: data.gov.tw
+  name_en: data.gov.tw
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.gov.tw/
+- agency_id: hk_censtatd
+  iso2: HK
+  agency_class: nso
+  name_ja: 政府統計処
+  name_en: Census and Statistics Department
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.censtatd.gov.hk/
+- agency_id: hk_hkma
+  iso2: HK
+  agency_class: central_bank
+  name_ja: 香港金融管理局
+  name_en: Hong Kong Monetary Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.hkma.gov.hk/
+- agency_id: hk_fstb
+  iso2: HK
+  agency_class: finance_ministry
+  name_ja: 財経事務及庫務局
+  name_en: Financial Services and the Treasury Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.fstb.gov.hk/
+- agency_id: hk_sfc
+  iso2: HK
+  agency_class: financial_regulator
+  name_ja: 証券先物事務監察委員会
+  name_en: Securities and Futures Commission
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sfc.hk/
+- agency_id: hk_cedb
+  iso2: HK
+  agency_class: economy_industry_trade
+  name_ja: 商務及経済発展局
+  name_en: Commerce and Economic Development Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cedb.gov.hk/
+- agency_id: hk_labour
+  iso2: HK
+  agency_class: labour
+  name_ja: 労工及福利局／労工処
+  name_en: Labour Department / LWB
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.labour.gov.hk/
+- agency_id: hk_edb
+  iso2: HK
+  agency_class: education_science
+  name_ja: 教育局
+  name_en: Education Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.edb.gov.hk/
+- agency_id: hk_thb
+  iso2: HK
+  agency_class: land_construction_transport
+  name_ja: 運輸及物流局
+  name_en: Transport and Logistics Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tlb.gov.hk/
+- agency_id: hk_hhb
+  iso2: HK
+  agency_class: health_welfare
+  name_ja: 医務衛生局
+  name_en: Health Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.healthbureau.gov.hk/
+- agency_id: hk_afcd
+  iso2: HK
+  agency_class: agriculture_food
+  name_ja: 漁農自然護理署
+  name_en: Agriculture, Fisheries and Conservation Department
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.afcd.gov.hk/
+  notes: 食料は食環署 FEHD も関連。
+- agency_id: hk_enb
+  iso2: HK
+  agency_class: energy_environment
+  name_ja: 環境及生態局
+  name_en: Environment and Ecology Bureau
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.eeb.gov.hk/
+- agency_id: hk_tourism_invest
+  iso2: HK
+  agency_class: tourism_investment_promotion
+  name_ja: 観光事務署／InvestHK
+  name_en: Tourism Commission / InvestHK
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tourism.gov.hk/
+  notes: InvestHK https://www.investhk.gov.hk/
+- agency_id: hk_customs
+  iso2: HK
+  agency_class: customs_tax
+  name_ja: 香港海関
+  name_en: Customs and Excise Department
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.customs.gov.hk/
+- agency_id: hk_data_gov
+  iso2: HK
+  agency_class: open_data_portal
+  name_ja: data.gov.hk
+  name_en: data.gov.hk
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://data.gov.hk/
+- agency_id: ae_fcsc
+  iso2: AE
+  agency_class: nso
+  name_ja: 連邦競争力統計センター
+  name_en: Federal Competitiveness and Statistics Centre
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://fcsc.gov.ae/
+  notes: 旧 FCSA。2026-07-21 HEADで403（ボット遮断の可能性）。公式NSOとして登録・Wave1で再検証。
+- agency_id: ae_cbuae
+  iso2: AE
+  agency_class: central_bank
+  name_ja: UAE中央銀行
+  name_en: Central Bank of the UAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.centralbank.ae/
+- agency_id: ae_mof
+  iso2: AE
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance UAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mof.gov.ae/
+- agency_id: ae_sca
+  iso2: AE
+  agency_class: financial_regulator
+  name_ja: 証券商品庁
+  name_en: Securities and Commodities Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sca.gov.ae/
+- agency_id: ae_moei
+  iso2: AE
+  agency_class: economy_industry_trade
+  name_ja: 経済省
+  name_en: Ministry of Economy UAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moec.gov.ae/
+- agency_id: ae_mohre
+  iso2: AE
+  agency_class: labour
+  name_ja: 人的資源・エミレーツ化省
+  name_en: Ministry of Human Resources and Emiratisation
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mohre.gov.ae/
+- agency_id: ae_moe
+  iso2: AE
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education UAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moe.gov.ae/
+- agency_id: ae_mot
+  iso2: AE
+  agency_class: land_construction_transport
+  name_ja: エネルギー・インフラ省（交通）
+  name_en: Ministry of Energy and Infrastructure
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moei.gov.ae/
+  notes: 交通・インフラ所管は省再編に注意。
+- agency_id: ae_mohap
+  iso2: AE
+  agency_class: health_welfare
+  name_ja: 保健予防省
+  name_en: Ministry of Health and Prevention
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mohap.gov.ae/
+- agency_id: ae_moccae
+  iso2: AE
+  agency_class: agriculture_food
+  name_ja: 気候変動環境省（食料）
+  name_en: MOCCAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moccae.gov.ae/
+- agency_id: ae_moei_energy
+  iso2: AE
+  agency_class: energy_environment
+  name_ja: エネルギー・インフラ省／気候変動環境省
+  name_en: MOEI / MOCCAE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moei.gov.ae/
+- agency_id: ae_dct_invest
+  iso2: AE
+  agency_class: tourism_investment_promotion
+  name_ja: 経済省投資／観光当局
+  name_en: Ministry of Economy / DTCM etc.
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moec.gov.ae/
+  notes: 観光は首長国別当局が強い（DTCM等）。
+- agency_id: ae_fca
+  iso2: AE
+  agency_class: customs_tax
+  name_ja: 連邦税関当局
+  name_en: Federal Authority for Identity, Citizenship, Customs & Port Security
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.icp.gov.ae/
+  notes: 関税機能はICP配下。Wave1で税関専用URL確認。
+- agency_id: ae_bayanat
+  iso2: AE
+  agency_class: open_data_portal
+  name_ja: Bayanat / UAE Open Data
+  name_en: bayanat.ae
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://bayanat.ae/
+- agency_id: sa_gastat
+  iso2: SA
+  agency_class: nso
+  name_ja: サウジ統計庁
+  name_en: General Authority for Statistics
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.stats.gov.sa/
+- agency_id: sa_sama
+  iso2: SA
+  agency_class: central_bank
+  name_ja: サウジ中央銀行
+  name_en: Saudi Central Bank (SAMA)
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.sama.gov.sa/
+- agency_id: sa_mof
+  iso2: SA
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Saudi Arabia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mof.gov.sa/
+- agency_id: sa_cma
+  iso2: SA
+  agency_class: financial_regulator
+  name_ja: 資本市場庁
+  name_en: Capital Market Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://cma.org.sa/
+- agency_id: sa_mci
+  iso2: SA
+  agency_class: economy_industry_trade
+  name_ja: 商工業省
+  name_en: Ministry of Commerce
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mc.gov.sa/
+- agency_id: sa_hrsd
+  iso2: SA
+  agency_class: labour
+  name_ja: 人的資源社会開発省
+  name_en: Ministry of Human Resources and Social Development
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.hrsd.gov.sa/
+- agency_id: sa_moe
+  iso2: SA
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education Saudi Arabia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://moe.gov.sa/
+- agency_id: sa_mot
+  iso2: SA
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Ministry of Transport Saudi Arabia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mot.gov.sa/
+- agency_id: sa_moh
+  iso2: SA
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Saudi Arabia
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moh.gov.sa/
+- agency_id: sa_mewa
+  iso2: SA
+  agency_class: agriculture_food
+  name_ja: 環境水農業省
+  name_en: MEWA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.mewa.gov.sa/
+- agency_id: sa_energy
+  iso2: SA
+  agency_class: energy_environment
+  name_ja: エネルギー省
+  name_en: Ministry of Energy
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.moenergy.gov.sa/
+- agency_id: sa_mt_invest
+  iso2: SA
+  agency_class: tourism_investment_promotion
+  name_ja: 観光省／MISA
+  name_en: Ministry of Tourism / MISA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://mt.gov.sa/
+  notes: 投資誘致 https://misa.gov.sa/
+- agency_id: sa_zatca
+  iso2: SA
+  agency_class: customs_tax
+  name_ja: ZATCA（税・関税）
+  name_en: Zakat, Tax and Customs Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://zatca.gov.sa/
+- agency_id: sa_data_gov
+  iso2: SA
+  agency_class: open_data_portal
+  name_ja: Saudi Open Data Portal
+  name_en: od.data.gov.sa
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://od.data.gov.sa/
+  notes: data.gov.sa 直下はタイムアウト／遷移あり。Open Data は od.data.gov.sa をL0とする。
+- agency_id: tr_tuik
+  iso2: TR
+  agency_class: nso
+  name_ja: トルコ統計局
+  name_en: TurkStat (TÜİK)
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tuik.gov.tr/
+- agency_id: tr_tcmb
+  iso2: TR
+  agency_class: central_bank
+  name_ja: トルコ中央銀行
+  name_en: Central Bank of the Republic of Türkiye
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tcmb.gov.tr/
+- agency_id: tr_hmb
+  iso2: TR
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Treasury and Finance
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.hmb.gov.tr/
+- agency_id: tr_spk
+  iso2: TR
+  agency_class: financial_regulator
+  name_ja: 資本市場委員会
+  name_en: Capital Markets Board of Türkiye
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.spk.gov.tr/
+- agency_id: tr_ticaret
+  iso2: TR
+  agency_class: economy_industry_trade
+  name_ja: 貿易省／産業技術省
+  name_en: Ministry of Trade / Industry
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ticaret.gov.tr/
+- agency_id: tr_csgb
+  iso2: TR
+  agency_class: labour
+  name_ja: 労働社会保障省
+  name_en: Ministry of Labour and Social Security
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.csgb.gov.tr/
+- agency_id: tr_meb
+  iso2: TR
+  agency_class: education_science
+  name_ja: 国民教育省
+  name_en: Ministry of National Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.meb.gov.tr/
+- agency_id: tr_uab
+  iso2: TR
+  agency_class: land_construction_transport
+  name_ja: 運輸インフラ省
+  name_en: Ministry of Transport and Infrastructure
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.uab.gov.tr/
+- agency_id: tr_saglik
+  iso2: TR
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Türkiye
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.saglik.gov.tr/
+- agency_id: tr_tarim
+  iso2: TR
+  agency_class: agriculture_food
+  name_ja: 農林業省
+  name_en: Ministry of Agriculture and Forestry
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.tarimorman.gov.tr/
+- agency_id: tr_enerji
+  iso2: TR
+  agency_class: energy_environment
+  name_ja: エネルギー天然資源省
+  name_en: Ministry of Energy and Natural Resources
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://enerji.gov.tr/
+- agency_id: tr_kultur_invest
+  iso2: TR
+  agency_class: tourism_investment_promotion
+  name_ja: 文化観光省／投資庁
+  name_en: Ministry of Culture and Tourism / Invest in Türkiye
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ktb.gov.tr/
+  notes: Invest https://www.invest.gov.tr/
+- agency_id: tr_gumruk
+  iso2: TR
+  agency_class: customs_tax
+  name_ja: 貿易省関税
+  name_en: Ministry of Trade — Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ticaret.gov.tr/
+  notes: 関税機能は貿易省配下。
+- agency_id: tr_data_gov
+  iso2: TR
+  agency_class: open_data_portal
+  name_ja: Turkey Open Data
+  name_en: Turkey Open Data Portal
+  layer_status:
+    L0: blocked
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  missing_reason: 統一オープンデータポータルURLが流動的。Wave1で再調査（data.gov.tr 候補）。
+- agency_id: gb_ons
+  iso2: GB
+  agency_class: nso
+  name_ja: 英国国家統計局
+  name_en: Office for National Statistics
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ons.gov.uk/
+- agency_id: gb_boe
+  iso2: GB
+  agency_class: central_bank
+  name_ja: イングランド銀行
+  name_en: Bank of England
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bankofengland.co.uk/
+- agency_id: gb_hmt
+  iso2: GB
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: HM Treasury
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/hm-treasury
+- agency_id: gb_fca
+  iso2: GB
+  agency_class: financial_regulator
+  name_ja: 金融行為監督機構
+  name_en: Financial Conduct Authority
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.fca.org.uk/
+- agency_id: gb_beis_dbt
+  iso2: GB
+  agency_class: economy_industry_trade
+  name_ja: ビジネス貿易省
+  name_en: Department for Business and Trade
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-business-and-trade
+- agency_id: gb_dwp
+  iso2: GB
+  agency_class: labour
+  name_ja: 労働年金省
+  name_en: Department for Work and Pensions
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-work-pensions
+- agency_id: gb_dfe
+  iso2: GB
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Department for Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-education
+- agency_id: gb_dft
+  iso2: GB
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Department for Transport
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-transport
+- agency_id: gb_dhsc
+  iso2: GB
+  agency_class: health_welfare
+  name_ja: 保健社会福祉省
+  name_en: Department of Health and Social Care
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-of-health-and-social-care
+- agency_id: gb_defra
+  iso2: GB
+  agency_class: agriculture_food
+  name_ja: 環境食糧農村地域省
+  name_en: Defra
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs
+- agency_id: gb_desnz
+  iso2: GB
+  agency_class: energy_environment
+  name_ja: エネルギー安全保障・ネットゼロ省
+  name_en: DESNZ
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero
+- agency_id: gb_dcms_invest
+  iso2: GB
+  agency_class: tourism_investment_promotion
+  name_ja: 文化メディアスポーツ省／DBT投資
+  name_en: DCMS / DBT Invest
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/department-for-culture-media-and-sport
+  notes: VisitBritain / DBT investment promotion。
+- agency_id: gb_hmrc
+  iso2: GB
+  agency_class: customs_tax
+  name_ja: 歳入関税庁
+  name_en: HM Revenue & Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.uk/government/organisations/hm-revenue-customs
+- agency_id: gb_data_gov
+  iso2: GB
+  agency_class: open_data_portal
+  name_ja: data.gov.uk
+  name_en: data.gov.uk
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.gov.uk/
+- agency_id: de_destatis
+  iso2: DE
+  agency_class: nso
+  name_ja: 連邦統計局
+  name_en: Destatis
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.destatis.de/
+- agency_id: de_buba
+  iso2: DE
+  agency_class: central_bank
+  name_ja: ドイツ連邦銀行
+  name_en: Deutsche Bundesbank
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bundesbank.de/
+- agency_id: de_bmf
+  iso2: DE
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Federal Ministry of Finance
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bundesfinanzministerium.de/
+- agency_id: de_bafin
+  iso2: DE
+  agency_class: financial_regulator
+  name_ja: 連邦金融監督庁
+  name_en: BaFin
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bafin.de/
+- agency_id: de_bmwk
+  iso2: DE
+  agency_class: economy_industry_trade
+  name_ja: 経済気候保護省
+  name_en: BMWK
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmwk.de/
+- agency_id: de_bmas
+  iso2: DE
+  agency_class: labour
+  name_ja: 労働社会省
+  name_en: BMAS
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmas.de/
+- agency_id: de_bmbf
+  iso2: DE
+  agency_class: education_science
+  name_ja: 教育研究省
+  name_en: BMBF
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmbf.de/
+- agency_id: de_bmdv
+  iso2: DE
+  agency_class: land_construction_transport
+  name_ja: デジタル・交通省
+  name_en: BMDV
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmdv.bund.de/
+- agency_id: de_bmg
+  iso2: DE
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: BMG
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bundesgesundheitsministerium.de/
+- agency_id: de_bmel
+  iso2: DE
+  agency_class: agriculture_food
+  name_ja: 食料農業省
+  name_en: BMEL
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmel.de/
+- agency_id: de_bmuv
+  iso2: DE
+  agency_class: energy_environment
+  name_ja: 環境自然保護原子力安全消費者保護省
+  name_en: BMUV
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bmuv.de/
+  notes: エネルギーはBMWKと分担。
+- agency_id: de_bmw_invest
+  iso2: DE
+  agency_class: tourism_investment_promotion
+  name_ja: 経済省／GTAI
+  name_en: BMWK / Germany Trade & Invest
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gtai.de/
+- agency_id: de_zoll
+  iso2: DE
+  agency_class: customs_tax
+  name_ja: 連邦関税当局
+  name_en: Zoll / Customs
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.zoll.de/
+- agency_id: de_govdata
+  iso2: DE
+  agency_class: open_data_portal
+  name_ja: GovData
+  name_en: GovData
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.govdata.de/
+- agency_id: fr_insee
+  iso2: FR
+  agency_class: nso
+  name_ja: 国立統計経済研究所
+  name_en: INSEE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.insee.fr/
+- agency_id: fr_bdf
+  iso2: FR
+  agency_class: central_bank
+  name_ja: フランス銀行
+  name_en: Banque de France
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.banque-france.fr/
+- agency_id: fr_dgfip
+  iso2: FR
+  agency_class: finance_ministry
+  name_ja: 経済財務産業デジタル主権省
+  name_en: Ministry of the Economy and Finance
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.economie.gouv.fr/
+- agency_id: fr_amf
+  iso2: FR
+  agency_class: financial_regulator
+  name_ja: 金融市場庁
+  name_en: AMF
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.amf-france.org/
+- agency_id: fr_dge
+  iso2: FR
+  agency_class: economy_industry_trade
+  name_ja: 企業総局／経済省
+  name_en: DGE / Economy Ministry
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.entreprises.gouv.fr/
+- agency_id: fr_travail
+  iso2: FR
+  agency_class: labour
+  name_ja: 労働省
+  name_en: Ministry of Labour
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://travail-emploi.gouv.fr/
+- agency_id: fr_education
+  iso2: FR
+  agency_class: education_science
+  name_ja: 国民教育省
+  name_en: Ministry of National Education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.education.gouv.fr/
+- agency_id: fr_ecologie
+  iso2: FR
+  agency_class: land_construction_transport
+  name_ja: 生態転換省（運輸・建設）
+  name_en: Ministry for Ecological Transition
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ecologie.gouv.fr/
+- agency_id: fr_sante
+  iso2: FR
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://sante.gouv.fr/
+- agency_id: fr_agriculture
+  iso2: FR
+  agency_class: agriculture_food
+  name_ja: 農業食料主権省
+  name_en: Ministry of Agriculture
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://agriculture.gouv.fr/
+- agency_id: fr_energie
+  iso2: FR
+  agency_class: energy_environment
+  name_ja: 生態転換省（エネルギー・環境）
+  name_en: Ecological Transition — Energy
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ecologie.gouv.fr/
+- agency_id: fr_diplomatie_invest
+  iso2: FR
+  agency_class: tourism_investment_promotion
+  name_ja: 観光当局／Business France
+  name_en: Atout France / Business France
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.businessfrance.fr/
+- agency_id: fr_douane
+  iso2: FR
+  agency_class: customs_tax
+  name_ja: 関税総局
+  name_en: Direction générale des douanes
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.douane.gouv.fr/
+- agency_id: fr_data_gouv
+  iso2: FR
+  agency_class: open_data_portal
+  name_ja: data.gouv.fr
+  name_en: data.gouv.fr
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.data.gouv.fr/
+- agency_id: ca_statcan
+  iso2: CA
+  agency_class: nso
+  name_ja: カナダ統計局
+  name_en: Statistics Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.statcan.gc.ca/
+- agency_id: ca_boc
+  iso2: CA
+  agency_class: central_bank
+  name_ja: カナダ銀行
+  name_en: Bank of Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bankofcanada.ca/
+- agency_id: ca_fin
+  iso2: CA
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Department of Finance Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.canada.ca/en/department-finance.html
+- agency_id: ca_osfi
+  iso2: CA
+  agency_class: financial_regulator
+  name_ja: 金融機関監督庁
+  name_en: OSFI
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.osfi-bsif.gc.ca/
+- agency_id: ca_isd
+  iso2: CA
+  agency_class: economy_industry_trade
+  name_ja: イノベーション科学経済開発省
+  name_en: ISED
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://ised-isde.canada.ca/
+- agency_id: ca_esdc
+  iso2: CA
+  agency_class: labour
+  name_ja: 雇用社会開発省
+  name_en: ESDC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.canada.ca/en/employment-social-development.html
+- agency_id: ca_esdc_edu
+  iso2: CA
+  agency_class: education_science
+  name_ja: イノベーション科学経済開発省（科学）／州教育
+  name_en: ISED Science / provincial education
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://ised-isde.canada.ca/
+  notes: 初等中等教育は州管轄。連邦は科学・高等教育関連。
+- agency_id: ca_tc
+  iso2: CA
+  agency_class: land_construction_transport
+  name_ja: 運輸省
+  name_en: Transport Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://tc.canada.ca/
+- agency_id: ca_hc
+  iso2: CA
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Health Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.canada.ca/en/health-canada.html
+- agency_id: ca_aafc
+  iso2: CA
+  agency_class: agriculture_food
+  name_ja: 農業アグリフード省
+  name_en: Agriculture and Agri-Food Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://agriculture.canada.ca/
+- agency_id: ca_nrcan
+  iso2: CA
+  agency_class: energy_environment
+  name_ja: 天然資源省／環境気候変動省
+  name_en: NRCan / ECCC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://natural-resources.canada.ca/
+- agency_id: ca_destination_invest
+  iso2: CA
+  agency_class: tourism_investment_promotion
+  name_ja: Destination Canada／Invest in Canada
+  name_en: Destination Canada / Invest in Canada
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.destinationcanada.com/
+  notes: Invest https://www.investcanada.ca/
+- agency_id: ca_cbsa
+  iso2: CA
+  agency_class: customs_tax
+  name_ja: 国境サービス庁
+  name_en: Canada Border Services Agency
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.cbsa-asfc.gc.ca/
+- agency_id: ca_open_data
+  iso2: CA
+  agency_class: open_data_portal
+  name_ja: Open Government Portal
+  name_en: open.canada.ca
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://open.canada.ca/
+- agency_id: br_ibge
+  iso2: BR
+  agency_class: nso
+  name_ja: ブラジル地理統計院
+  name_en: IBGE
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.ibge.gov.br/
+- agency_id: br_bcb
+  iso2: BR
+  agency_class: central_bank
+  name_ja: ブラジル中央銀行
+  name_en: Banco Central do Brasil
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.bcb.gov.br/
+- agency_id: br_fazenda
+  iso2: BR
+  agency_class: finance_ministry
+  name_ja: 財務省
+  name_en: Ministry of Finance Brazil
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/fazenda/
+- agency_id: br_cvm
+  iso2: BR
+  agency_class: financial_regulator
+  name_ja: 証券委員会
+  name_en: CVM
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/cvm/
+- agency_id: br_mdic
+  iso2: BR
+  agency_class: economy_industry_trade
+  name_ja: 開発商工サービス省
+  name_en: MDIC
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/mdic/
+- agency_id: br_mte
+  iso2: BR
+  agency_class: labour
+  name_ja: 労働雇用省
+  name_en: Ministry of Labour and Employment
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/trabalho-e-emprego/
+- agency_id: br_mec
+  iso2: BR
+  agency_class: education_science
+  name_ja: 教育省
+  name_en: Ministry of Education Brazil
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/mec/
+- agency_id: br_infra
+  iso2: BR
+  agency_class: land_construction_transport
+  name_ja: 運輸省／都市省
+  name_en: Ministry of Transport / Cities
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/transportes/
+- agency_id: br_saude
+  iso2: BR
+  agency_class: health_welfare
+  name_ja: 保健省
+  name_en: Ministry of Health Brazil
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/saude/
+- agency_id: br_mapa
+  iso2: BR
+  agency_class: agriculture_food
+  name_ja: 農業畜産供給省
+  name_en: MAPA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/agricultura/
+- agency_id: br_mme
+  iso2: BR
+  agency_class: energy_environment
+  name_ja: 鉱山エネルギー省／環境省
+  name_en: MME / MMA
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/mme/
+- agency_id: br_turismo_apex
+  iso2: BR
+  agency_class: tourism_investment_promotion
+  name_ja: 観光省／ApexBrasil
+  name_en: Ministry of Tourism / ApexBrasil
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/turismo/
+  notes: 投資誘致 ApexBrasil。
+- agency_id: br_receita
+  iso2: BR
+  agency_class: customs_tax
+  name_ja: 連邦歳入庁
+  name_en: Receita Federal
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://www.gov.br/receitafederal/
+- agency_id: br_dados_gov
+  iso2: BR
+  agency_class: open_data_portal
+  name_ja: dados.gov.br
+  name_en: dados.gov.br
+  layer_status:
+    L0: done
+    L1: pending
+    L2: pending
+    L3: pending
+    L4: pending
+    L5: pending
+  portal_url: https://dados.gov.br/

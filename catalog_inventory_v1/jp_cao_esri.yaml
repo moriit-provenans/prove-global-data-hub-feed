@@ -1,0 +1,52 @@
+agency_id: jp_cao_esri
+iso2: JP
+updated_at: '2026-07-21T04:09:00+09:00'
+source_note_ja: 内閣府ESRI 国民経済計算メニュー実URL（2026-07-21検証）。
+L0:
+  portal_url: https://www.esri.cao.go.jp/
+  verified: true
+L1_themes:
+- theme_id: sna_menu
+  name_ja: 国民経済計算（トップ）
+  name_en: National Accounts
+  url: https://www.esri.cao.go.jp/jp/sna/menu.html
+- theme_id: sna_qe
+  name_ja: 四半期別GDP速報
+  name_en: Quarterly GDP flash
+  url: https://www.esri.cao.go.jp/jp/sna/sokuhou/sokuhou_top.html
+- theme_id: sna_data
+  name_ja: 統計データ一覧
+  name_en: SNA data list
+  url: https://www.esri.cao.go.jp/jp/sna/data/data.html
+L2_datasets:
+- dataset_id: cao_qe_top
+  title: 四半期別GDP速報トップ
+  url: https://www.esri.cao.go.jp/jp/sna/sokuhou/sokuhou_top.html
+  api_id: null
+  update_freq: quarterly (8 releases/year)
+  license: CAO ESRI terms
+  theme_id: sna_qe
+- dataset_id: cao_data_list
+  title: 国民経済計算 統計データ
+  url: https://www.esri.cao.go.jp/jp/sna/data/data.html
+  api_id: null
+  update_freq: varies
+  license: CAO ESRI terms
+  theme_id: sna_data
+- dataset_id: estat_sna_bridge
+  title: e-Stat 国民経済計算 DB（橋渡し）
+  url: https://www.e-stat.go.jp/stat-search/database?toukei=00100409
+  api_id: 00100409
+  update_freq: quarterly/annual
+  license: e-Stat terms
+  theme_id: sna_menu
+L3_series: []
+L4_notes: 既存 jp_estat_cao_gdp 観測は継続。本inventoryはカタログ資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: partial
+  L4: partial
+  L5: pending

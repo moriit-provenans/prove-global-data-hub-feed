@@ -1,0 +1,122 @@
+agency_id: jp_estat
+iso2: JP
+updated_at: '2026-07-21T04:09:00+09:00'
+source_note_ja: L1は e-Stat 分野ナビ（2026-07-21 HEAD/GET検証済）。L2は政府統計コード付き実在カタログURL。
+L0:
+  portal_url: https://www.e-stat.go.jp/
+  verified: true
+L1_themes:
+- theme_id: bunya_01
+  name_ja: 国土・気象
+  name_en: Land and Weather
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=01
+- theme_id: bunya_02
+  name_ja: 人口・世帯
+  name_en: Population and Households
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=02
+- theme_id: bunya_03
+  name_ja: 労働・賃金
+  name_en: Labour and Wages
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=03
+- theme_id: bunya_04
+  name_ja: 農林水産業
+  name_en: Agriculture, Forestry and Fisheries
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=04
+- theme_id: bunya_05
+  name_ja: 鉱工業
+  name_en: Mining and Manufacturing
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=05
+- theme_id: bunya_06
+  name_ja: 商業・サービス業
+  name_en: Domestic Trade and Services
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=06
+- theme_id: bunya_07
+  name_ja: 企業・家計・経済
+  name_en: Business, Household, Economy
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=07
+- theme_id: bunya_08
+  name_ja: 住宅・土地・建設
+  name_en: Housing, Estate and Construction
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=08
+- theme_id: bunya_09
+  name_ja: エネルギー・水
+  name_en: Energy and Water
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=09
+- theme_id: bunya_10
+  name_ja: 運輸・観光
+  name_en: Transport and Sightseeing
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=10
+- theme_id: bunya_11
+  name_ja: 情報通信・科学技術
+  name_en: ICT, Science and Technology
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=11
+- theme_id: bunya_12
+  name_ja: 教育・文化・スポーツ・生活
+  name_en: Education, Culture, Sports and Life
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=12
+- theme_id: bunya_13
+  name_ja: 行財政
+  name_en: Administration and Public Finance
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=13
+- theme_id: bunya_14
+  name_ja: 司法・安全・環境
+  name_en: Justice, Security and Environment
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=14
+- theme_id: bunya_15
+  name_ja: 社会保障・衛生
+  name_en: Social Security and Sanitation
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=15
+- theme_id: bunya_16
+  name_ja: 国際
+  name_en: International
+  url: https://www.e-stat.go.jp/stat-search?bunya_l=16
+- theme_id: theme_index
+  name_ja: 分野から探す（索引）
+  name_en: Statistics by Theme
+  url: https://www.e-stat.go.jp/statistics-by-theme
+L2_datasets:
+- dataset_id: estat_lfs_00200531
+  title: 労働力調査
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200531
+  api_id: '00200531'
+  update_freq: monthly
+  license: e-Stat terms / government statistics
+  theme_id: bunya_03
+- dataset_id: estat_cpi_00200571
+  title: 消費者物価指数
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200571
+  api_id: '00200571'
+  update_freq: monthly
+  license: e-Stat terms / government statistics
+  theme_id: bunya_07
+- dataset_id: estat_hies_00200533
+  title: 家計調査
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200533
+  api_id: '00200533'
+  update_freq: monthly
+  license: e-Stat terms / government statistics
+  theme_id: bunya_07
+- dataset_id: estat_sna_00100409
+  title: 国民経済計算（データベース）
+  url: https://www.e-stat.go.jp/stat-search/database?toukei=00100409
+  api_id: 00100409
+  update_freq: quarterly/annual
+  license: e-Stat terms / government statistics
+  theme_id: bunya_07
+- dataset_id: estat_api_docs
+  title: e-Stat API ドキュメント
+  url: https://www.e-stat.go.jp/api/
+  api_id: null
+  update_freq: n/a
+  license: e-Stat API terms
+  theme_id: theme_index
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: pending

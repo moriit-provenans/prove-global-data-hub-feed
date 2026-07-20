@@ -1,0 +1,56 @@
+agency_id: jp_meti
+iso2: JP
+updated_at: '2026-07-21T04:09:00+09:00'
+source_note_ja: 経産省統計トップ＋鉱工業指数・商業動態を実URL登録（2026-07-21検証）。
+L0:
+  portal_url: https://www.meti.go.jp/
+  verified: true
+L1_themes:
+- theme_id: meti_stats
+  name_ja: 経済産業省 統計
+  name_en: METI Statistics
+  url: https://www.meti.go.jp/statistics/index.html
+- theme_id: meti_iip
+  name_ja: 鉱工業指数
+  name_en: Indices of Industrial Production
+  url: https://www.meti.go.jp/statistics/tyo/iip/index.html
+- theme_id: meti_syoudou
+  name_ja: 商業動態統計
+  name_en: Current Survey of Commerce
+  url: https://www.meti.go.jp/statistics/tyo/syoudou/index.html
+- theme_id: enecho_stats
+  name_ja: 資源エネルギー庁 統計
+  name_en: ANRE Statistics
+  url: https://www.enecho.meti.go.jp/statistics/
+L2_datasets:
+- dataset_id: meti_iip_portal
+  title: 鉱工業指数（IIP）統計ページ
+  url: https://www.meti.go.jp/statistics/tyo/iip/index.html
+  api_id: null
+  update_freq: monthly
+  license: METI terms
+  theme_id: meti_iip
+- dataset_id: meti_syoudou_portal
+  title: 商業動態統計ページ
+  url: https://www.meti.go.jp/statistics/tyo/syoudou/index.html
+  api_id: null
+  update_freq: monthly
+  license: METI terms
+  theme_id: meti_syoudou
+- dataset_id: enecho_stats_portal
+  title: エネルギー統計ポータル
+  url: https://www.enecho.meti.go.jp/statistics/
+  api_id: null
+  update_freq: varies
+  license: ANRE/METI terms
+  theme_id: enecho_stats
+L3_series: []
+L4_notes: ''
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

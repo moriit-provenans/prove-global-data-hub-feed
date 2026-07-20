@@ -1,0 +1,21 @@
+# catalog_inventory スキーマ（REQ-SMITH-042）
+# 1ファイル = 1機関。L0–L5 をこの構造で埋める。空欄スキップ禁止（unknown/blocked+reason可）。
+
+agency_id: jp_estat   # agency_registry_v1.yaml と一致
+iso2: JP
+updated_at: '2026-07-21T04:05:00+09:00'
+L0:
+  portal_url: https://www.e-stat.go.jp/
+  verified: true
+L1_themes: []   # [{theme_id, name_ja, name_en, url}]
+L2_datasets: [] # [{dataset_id, title, url, api_id, update_freq, license, theme_id}]
+L3_series: []   # [{series_id, dataset_id, title, unit, freq, definition_url}]
+L4_notes: ''    # 観測は nso_pilot / timeseries へ。ここには取得経路メモ
+L5_country_unique: []  # [{title, url, why_unique_ja}] 国際比較カタログに無い実在系列のみ
+coverage:
+  L0: done
+  L1: pending
+  L2: pending
+  L3: partial
+  L4: partial
+  L5: pending
