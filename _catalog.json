@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-20T23:03:00+09:00",
+  "last_updated": "2026-07-20T23:05:24+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10531,7 +10531,8 @@
         "PH",
         "SG",
         "TH",
-        "TW"
+        "TW",
+        "US"
       ]
     },
     {
@@ -10764,9 +10765,10 @@
         "KR",
         "US"
       ],
-      "source_tier_primary": "international_fast",
+      "source_tier_primary": "nso",
       "source_tiers": [
-        "international_fast"
+        "international_fast",
+        "nso"
       ],
       "latest_period": "2026-04",
       "phase": "nso_wave1",
@@ -10781,13 +10783,16 @@
           "international_fast"
         ]
       },
-      "latest_period_nso": "2026-04",
+      "latest_period_nso": "2026-05",
       "available_iso2_nso": [
         "CN",
         "ID",
         "IN",
         "JP",
         "KR",
+        "MY",
+        "PH",
+        "SG",
         "US"
       ]
     },
@@ -10808,9 +10813,10 @@
         "KR",
         "US"
       ],
-      "source_tier_primary": "international_fast",
+      "source_tier_primary": "nso",
       "source_tiers": [
-        "international_fast"
+        "international_fast",
+        "nso"
       ],
       "latest_period": "2026-04",
       "phase": "nso_wave1",
@@ -10825,13 +10831,16 @@
           "international_fast"
         ]
       },
-      "latest_period_nso": "2026-04",
+      "latest_period_nso": "2026-05",
       "available_iso2_nso": [
         "CN",
         "ID",
         "IN",
         "JP",
         "KR",
+        "MY",
+        "PH",
+        "SG",
         "US"
       ]
     }

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso",
   "feed_id": "nso_macro_quarterly",
-  "last_updated": "2026-07-20T23:03:00+09:00",
+  "last_updated": "2026-07-20T23:05:24+09:00",
   "frequency": "quarterly",
   "source": {
     "label": "NSO + OECD quarterly pilot (all tiers)",

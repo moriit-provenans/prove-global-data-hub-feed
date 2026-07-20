@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T23:03:00+09:00'
+updated_at: '2026-07-20T23:05:24+09:00'
 policy:
   priority:
   - nso
@@ -42,6 +42,7 @@ sources:
   url: https://fred.stlouisfed.org/
   metrics:
   - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
   - nso_m.unemployment.pct
   - nso_m.industrial_production.index
   - nso_q.gdp_real.index
@@ -77,6 +78,8 @@ sources:
   - nso_m.cpi.index
   - nso_m.cpi.yoy_pct
   - nso_m.unemployment.pct
+  - nso_m.merchandise_exports_usd
+  - nso_m.merchandise_imports_usd
 - id: sg_singstat
   tier: nso
   iso2:
@@ -88,6 +91,8 @@ sources:
   - nso_m.cpi.index
   - nso_m.cpi.yoy_pct
   - nso_m.unemployment.pct
+  - nso_m.merchandise_exports_usd
+  - nso_m.merchandise_imports_usd
 - id: th_nesdc_moc
   tier: nso
   iso2:
@@ -108,6 +113,8 @@ sources:
   - nso_m.cpi.index
   - nso_m.cpi.yoy_pct
   - nso_m.unemployment.pct
+  - nso_m.merchandise_exports_usd
+  - nso_m.merchandise_imports_usd
 - id: cn_nbs
   tier: nso
   iso2:
@@ -357,6 +364,10 @@ latest_period_by_key:
   iso2: TW
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso
@@ -386,6 +397,18 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2026-04
 - metric_id: nso_m.merchandise_exports_usd
+  iso2: MY
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: PH
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: SG
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_exports_usd
   iso2: US
   source_tier: international_fast
   latest_period: 2026-04
@@ -409,6 +432,18 @@ latest_period_by_key:
   iso2: KR
   source_tier: international_fast
   latest_period: 2026-04
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: MY
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: PH
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.merchandise_imports_usd
+  iso2: SG
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.merchandise_imports_usd
   iso2: US
   source_tier: international_fast
