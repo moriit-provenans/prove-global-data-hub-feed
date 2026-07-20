@@ -1,5 +1,5 @@
 iso2: PH
-source_note_ja: 'Department of Health: クローラ到達不可（crawler_403）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。
 L0:
   portal_url: https://doh.gov.ph/
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: crawler_403
   L2: awaiting_L1
+  tried_urls:
+  - https://doh.gov.ph/
+  - https://www.doh.gov.ph/
+  - https://doh.gov.ph/statistics
 agency_id: ph_doh
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

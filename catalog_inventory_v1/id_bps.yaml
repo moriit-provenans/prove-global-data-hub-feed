@@ -1,23 +1,47 @@
 iso2: ID
-source_note_ja: BPSはクローラ403。L1 blocked。
+source_note_ja: id_bps L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
-  portal_url: https://www.bps.go.id/
-  verified: false
-  blocked_reason: crawler_403
-L1_themes: []
-L2_datasets: []
+  portal_url: https://silastik.bps.go.id/
+  verified: true
+L1_themes:
+- theme_id: silastik
+  name_ja: Silastik
+  name_en: Silastik
+  url: https://silastik.bps.go.id/
+- theme_id: webapi
+  name_ja: BPS WebAPI
+  name_en: BPS API
+  url: https://webapi.bps.go.id/
+L2_datasets:
+- dataset_id: id_bps_silastik
+  title: Silastik
+  url: https://silastik.bps.go.id/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: silastik
+- dataset_id: id_bps_webapi
+  title: BPS API
+  url: https://webapi.bps.go.id/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: webapi
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'id_bps: Silastik'
+  url: https://silastik.bps.go.id/
+  why_unique_ja: ID固有の公的機関データ入口（Wave1d recovery）
+- title: 'id_bps: BPS API'
+  url: https://webapi.bps.go.id/
+  why_unique_ja: ID固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: crawler_403
-  L2: awaiting_L1
+  L5: partial
 agency_id: id_bps
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

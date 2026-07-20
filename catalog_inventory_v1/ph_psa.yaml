@@ -1,5 +1,5 @@
 iso2: PH
-source_note_ja: PSAポータルはクローラ403。registry portal_url維持・L1 blocked。
+source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=4。
 L0:
   portal_url: https://psa.gov.ph/
   verified: false
@@ -19,5 +19,10 @@ coverage:
 blocked:
   L1: crawler_403
   L2: awaiting_L1
+  tried_urls:
+  - https://psa.gov.ph/
+  - https://openstat.psa.gov.ph/
+  - https://psada.psa.gov.ph/
+  - https://www.psa.gov.ph/
 agency_id: ph_psa
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

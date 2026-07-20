@@ -1,5 +1,5 @@
 iso2: ID
-source_note_ja: 'Kemdikbudristek: クローラ到達不可（dns_or_unreachable）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（dns_or_unreachable）。試行URL数=3。
 L0:
   portal_url: https://www.kemdikbud.go.id/
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: dns_or_unreachable
   L2: awaiting_L1
+  tried_urls:
+  - https://www.kemdikbud.go.id/
+  - https://data.kemdikbud.go.id/
+  - https://www.kemendikbud.go.id/
 agency_id: id_kemdikbud
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

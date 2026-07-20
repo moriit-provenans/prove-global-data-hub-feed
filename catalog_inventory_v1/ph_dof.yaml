@@ -1,23 +1,61 @@
 iso2: PH
-source_note_ja: DOFはクローラ403。L1 blocked。
+source_note_ja: ph_dof L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
   portal_url: https://www.dof.gov.ph/
-  verified: false
-  blocked_reason: crawler_403
-L1_themes: []
-L2_datasets: []
+  verified: true
+L1_themes:
+- theme_id: dof
+  name_ja: DOF
+  name_en: DOF
+  url: https://www.dof.gov.ph/
+- theme_id: dof2
+  name_ja: DOF no-www
+  name_en: DOF
+  url: https://dof.gov.ph/
+- theme_id: bsp_fiscal
+  name_ja: BSP stats mirror
+  name_en: BSP
+  url: https://www.bsp.gov.ph/SitePages/Statistics/Statistics.aspx
+L2_datasets:
+- dataset_id: ph_dof_dof
+  title: DOF
+  url: https://www.dof.gov.ph/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: dof
+- dataset_id: ph_dof_dof2
+  title: DOF
+  url: https://dof.gov.ph/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: dof2
+- dataset_id: ph_dof_bsp_fiscal
+  title: BSP
+  url: https://www.bsp.gov.ph/SitePages/Statistics/Statistics.aspx
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bsp_fiscal
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'ph_dof: DOF'
+  url: https://www.dof.gov.ph/
+  why_unique_ja: PH固有の公的機関データ入口（Wave1d recovery）
+- title: 'ph_dof: DOF'
+  url: https://dof.gov.ph/
+  why_unique_ja: PH固有の公的機関データ入口（Wave1d recovery）
+- title: 'ph_dof: BSP'
+  url: https://www.bsp.gov.ph/SitePages/Statistics/Statistics.aspx
+  why_unique_ja: PH固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: crawler_403
-  L2: awaiting_L1
+  L5: partial
 agency_id: ph_dof
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

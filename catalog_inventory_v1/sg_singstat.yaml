@@ -1,6 +1,7 @@
 iso2: SG
 source_note_ja: 'SingStatポータル＋Table Builderのみ登録（find-data deep pathは2026-07-21時点で404）。
-  Wave1c: SingStat Table Builder 公開表ID stubs。観測値は未取得。'
+  Wave1c: SingStat Table Builder 公開表ID stubs。観測値は未取得。 Wave1d: SingStat Table Builder
+  L3 deepen。'
 L0:
   portal_url: https://www.singstat.gov.sg/
   verified: true
@@ -59,6 +60,26 @@ L3_series:
   status: stub
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
+- series_id: M083811
+  title: Domestic Exports Of Goods
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M700981
+  title: Resident Population
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M212901
+  title: Consumer Price Index By Household Income Group
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M083901
+  title: Unit Labour Cost Index
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: SingStat Table Builder
@@ -78,4 +99,4 @@ coverage:
   L4: partial
   L5: partial
 agency_id: sg_singstat
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

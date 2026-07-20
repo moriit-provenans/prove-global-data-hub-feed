@@ -1,5 +1,5 @@
 iso2: FR
-source_note_ja: 'DGE / Economy Ministry: クローラ到達不可（ssl_handshake_failed）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（ssl_handshake_failed）。試行URL数=3。
 L0:
   portal_url: https://www.entreprises.gouv.fr/
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: ssl_handshake_failed
   L2: awaiting_L1
+  tried_urls:
+  - https://www.entreprises.gouv.fr/
+  - https://www.economie.gouv.fr/
+  - https://www.economie.gouv.fr/directions-et-services/direction-generale-des-entreprises-dge
 agency_id: fr_dge
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

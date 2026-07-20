@@ -1,6 +1,5 @@
 iso2: VN
-source_note_ja: 'Ministry of Agriculture and Rural Development: クローラ到達不可（timeout）。L1
-  blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（timeout）。試行URL数=3。
 L0:
   portal_url: https://www.mard.gov.vn/
   verified: false
@@ -20,5 +19,9 @@ coverage:
 blocked:
   L1: timeout
   L2: awaiting_L1
+  tried_urls:
+  - https://www.mard.gov.vn/
+  - http://www.mard.gov.vn/
+  - https://mard.gov.vn/
 agency_id: vn_mard
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

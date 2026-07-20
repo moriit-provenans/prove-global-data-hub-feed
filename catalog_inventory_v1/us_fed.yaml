@@ -1,6 +1,6 @@
 iso2: US
 source_note_ja: 'Federal Reserve Board data hub（FREDは本セッションでタイムアウトのため未登録・blocked候補）。
-  Wave1c: FRED series ID stubs 追加。'
+  Wave1c: FRED series ID stubs 追加。 Wave1d: FRED L3 deepen。'
 L0:
   portal_url: https://www.federalreserve.gov/
   verified: true
@@ -64,6 +64,26 @@ L3_series:
   status: stub
   url: https://fred.stlouisfed.org/series/INDPRO
   source: FRED
+- series_id: M2SL
+  title: M2 Money Stock
+  status: stub
+  url: https://fred.stlouisfed.org/series/M2SL
+  source: FRED
+- series_id: DEXUSEU
+  title: U.S. / Euro Foreign Exchange Rate
+  status: stub
+  url: https://fred.stlouisfed.org/series/DEXUSEU
+  source: FRED
+- series_id: HOUST
+  title: 'Housing Starts: Total New Privately Owned Housing Units Started'
+  status: stub
+  url: https://fred.stlouisfed.org/series/HOUST
+  source: FRED
+- series_id: RSAFS
+  title: Advance Real Retail and Food Services Sales
+  status: stub
+  url: https://fred.stlouisfed.org/series/RSAFS
+  source: FRED
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: Federal Reserve Data hub
@@ -86,4 +106,4 @@ coverage:
   L4: partial
   L5: partial
 agency_id: us_fed
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

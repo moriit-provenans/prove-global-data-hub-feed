@@ -1,8 +1,9 @@
 agency_id: jp_estat
 iso2: JP
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'
 source_note_ja: 'L1は e-Stat 分野ナビ（2026-07-21 HEAD/GET検証済）。L2は政府統計コード付き実在カタログURL。 Wave1c:
-  L3 series stubs（e-Stat 統計コード＝実在 toukei ID）。観測値は未取得。'
+  L3 series stubs（e-Stat 統計コード＝実在 toukei ID）。観測値は未取得。 Wave1d: L3 deepen（追加 toukei
+  ID）。観測値は未取得。'
 L0:
   portal_url: https://www.e-stat.go.jp/
   verified: true
@@ -151,6 +152,36 @@ L3_series:
   title: 鉱工業指数（統計表一覧）
   status: stub
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200553
+  source: e-Stat
+- series_id: '00200524'
+  title: 就業構造基本調査（統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200524
+  source: e-Stat
+- series_id: '00200561'
+  title: 企業物価指数（統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200561
+  source: e-Stat
+- series_id: '00200502'
+  title: 国勢調査（統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200502
+  source: e-Stat
+- series_id: '00200572'
+  title: 小売物価統計調査（統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200572
+  source: e-Stat
+- series_id: '00200566'
+  title: 景気動向指数（統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00200566
+  source: e-Stat
+- series_id: '00350300'
+  title: 貿易統計（財務省／統計表一覧）
+  status: stub
+  url: https://www.e-stat.go.jp/stat-search/files?toukei=00350300
   source: e-Stat
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:

@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "updated_at": "2026-07-21T04:26:59+09:00",
-  "wave": "Wave1c",
-  "note_ja": "Wave1c: P1/P2 8か国 L1–L2 + L5≥5/国。JP e-Stat / US BEA·BLS·FRED / SG SingStat の L3 series stubs 開始。",
+  "updated_at": "2026-07-21T04:31:01+09:00",
+  "wave": "Wave1d",
+  "note_ja": "Wave1d: blocked recovery（代替公式URL）＋ L3 stubs拡張（Destatis/ONS/StatCan/IBGE＋JP/US/SG deepen）＋ L5 JP≥15 / P0≥10。",
   "totals": {
     "countries": 21,
     "agencies": 297,
     "countries_with_all_14_classes": 21,
-    "L0_done_agencies": 294,
+    "L0_done_agencies": 297,
     "L0_blocked_agencies": 0,
-    "L1_done_agencies": 239,
-    "L2_partial_or_done_agencies": 239,
-    "L5_partial_or_done_agencies": 233,
+    "L1_done_agencies": 268,
+    "L2_partial_or_done_agencies": 268,
+    "L5_partial_or_done_agencies": 262,
     "inventory_files_count": 300,
     "P0_agencies": 185,
-    "P0_L1_done": 154,
-    "P0_L2_partial_or_done": 154,
-    "P0_L1_rate": 0.832,
-    "P0_L2_rate": 0.832,
+    "P0_L1_done": 162,
+    "P0_L2_partial_or_done": 162,
+    "P0_L1_rate": 0.876,
+    "P0_L2_rate": 0.876,
     "inventories_sample": [
       "ae_bayanat.yaml",
       "ae_cbuae.yaml",
@@ -61,21 +61,25 @@
       "ca_open_data.yaml",
       "ca_osfi.yaml"
     ],
-    "overall_L1_done": 239,
-    "overall_L2_partial_or_done": 239,
-    "overall_L1_rate": 0.805,
-    "overall_L2_rate": 0.805,
+    "overall_L1_done": 268,
+    "overall_L2_partial_or_done": 268,
+    "overall_L1_rate": 0.902,
+    "overall_L2_rate": 0.902,
     "P12_agencies": 112,
-    "P12_L1_done": 85,
-    "P12_L2_partial_or_done": 85,
-    "P12_L1_rate": 0.759,
-    "P12_L2_rate": 0.759,
+    "P12_L1_done": 106,
+    "P12_L2_partial_or_done": 106,
+    "P12_L1_rate": 0.946,
+    "P12_L2_rate": 0.946,
     "l3_stub_files": {
-      "jp_estat": 8,
-      "us_bls": 6,
-      "us_bea": 6,
-      "us_fed_fred": 7,
-      "sg_singstat": 6
+      "jp_estat": 14,
+      "us_bls": 10,
+      "us_bea": 9,
+      "us_fed_fred": 11,
+      "sg_singstat": 10,
+      "de_destatis": 7,
+      "gb_ons": 8,
+      "ca_statcan": 7,
+      "br_ibge": 7
     }
   },
   "by_country": {
@@ -156,18 +160,18 @@
       "classes_missing": [],
       "L0_done": 15,
       "L0_blocked": 0,
-      "L1_done": 13,
-      "L2_partial_or_done": 13,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 3,
       "L4_partial_or_done": 2,
-      "L5_partial_or_done": 13,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.867,
-        "L2": 0.867,
+        "L1": 0.933,
+        "L2": 0.933,
         "L3": 0.2,
         "L4": 0.133,
-        "L5": 0.867,
+        "L5": 0.933,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -314,18 +318,18 @@
       "classes_missing": [],
       "L0_done": 15,
       "L0_blocked": 0,
-      "L1_done": 12,
-      "L2_partial_or_done": 12,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 12,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.8,
-        "L2": 0.8,
+        "L1": 0.867,
+        "L2": 0.867,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.8,
+        "L5": 0.867,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -366,18 +370,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 7,
-      "L2_partial_or_done": 7,
+      "L1_done": 10,
+      "L2_partial_or_done": 10,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 7,
+      "L5_partial_or_done": 10,
       "rates": {
         "L0": 1.0,
-        "L1": 0.5,
-        "L2": 0.5,
+        "L1": 0.714,
+        "L2": 0.714,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.5,
+        "L5": 0.714,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -416,7 +420,7 @@
         "open_data_portal"
       ],
       "classes_missing": [],
-      "L0_done": 13,
+      "L0_done": 14,
       "L0_blocked": 0,
       "L1_done": 6,
       "L2_partial_or_done": 6,
@@ -424,7 +428,7 @@
       "L4_partial_or_done": 0,
       "L5_partial_or_done": 6,
       "rates": {
-        "L0": 0.929,
+        "L0": 1.0,
         "L1": 0.429,
         "L2": 0.429,
         "L3": 0.0,
@@ -468,20 +472,20 @@
         "open_data_portal"
       ],
       "classes_missing": [],
-      "L0_done": 13,
+      "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 10,
-      "L2_partial_or_done": 10,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 10,
+      "L5_partial_or_done": 12,
       "rates": {
-        "L0": 0.929,
-        "L1": 0.714,
-        "L2": 0.714,
+        "L0": 1.0,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.714,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -522,18 +526,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 13,
-      "L2_partial_or_done": 13,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 13,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.929,
-        "L2": 0.929,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.929,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -572,7 +576,7 @@
         "open_data_portal"
       ],
       "classes_missing": [],
-      "L0_done": 13,
+      "L0_done": 14,
       "L0_blocked": 0,
       "L1_done": 12,
       "L2_partial_or_done": 12,
@@ -580,7 +584,7 @@
       "L4_partial_or_done": 0,
       "L5_partial_or_done": 12,
       "rates": {
-        "L0": 0.929,
+        "L0": 1.0,
         "L1": 0.857,
         "L2": 0.857,
         "L3": 0.0,
@@ -782,18 +786,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 5,
-      "L2_partial_or_done": 5,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 5,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.357,
-        "L2": 0.357,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.357,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -834,18 +838,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 8,
-      "L2_partial_or_done": 8,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 8,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.571,
-        "L2": 0.571,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.571,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -886,18 +890,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 13,
-      "L2_partial_or_done": 13,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 13,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.929,
-        "L2": 0.929,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.929,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -940,14 +944,14 @@
       "L0_blocked": 0,
       "L1_done": 14,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 0,
+      "L3_partial_or_done": 1,
       "L4_partial_or_done": 0,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.0,
+        "L3": 0.071,
         "L4": 0.0,
         "L5": 1.0,
         "class_coverage": 1.0
@@ -990,18 +994,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 9,
-      "L2_partial_or_done": 9,
-      "L3_partial_or_done": 0,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
+      "L3_partial_or_done": 1,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 9,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.643,
-        "L2": 0.643,
-        "L3": 0.0,
+        "L1": 1.0,
+        "L2": 1.0,
+        "L3": 0.071,
         "L4": 0.0,
-        "L5": 0.643,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -1042,18 +1046,18 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 8,
-      "L2_partial_or_done": 8,
+      "L1_done": 12,
+      "L2_partial_or_done": 12,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 8,
+      "L5_partial_or_done": 12,
       "rates": {
         "L0": 1.0,
-        "L1": 0.571,
-        "L2": 0.571,
+        "L1": 0.857,
+        "L2": 0.857,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.571,
+        "L5": 0.857,
         "class_coverage": 1.0
       },
       "inventory_files": [
@@ -1096,14 +1100,14 @@
       "L0_blocked": 0,
       "L1_done": 14,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 0,
+      "L3_partial_or_done": 1,
       "L4_partial_or_done": 0,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.0,
+        "L3": 0.071,
         "L4": 0.0,
         "L5": 1.0,
         "class_coverage": 1.0
@@ -1148,14 +1152,14 @@
       "L0_blocked": 0,
       "L1_done": 14,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 0,
+      "L3_partial_or_done": 1,
       "L4_partial_or_done": 0,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.0,
+        "L3": 0.071,
         "L4": 0.0,
         "L5": 1.0,
         "class_coverage": 1.0
@@ -1179,53 +1183,33 @@
     }
   },
   "l5_country_unique_counts": {
-    "JP": 11,
-    "US": 31,
+    "JP": 15,
+    "US": 32,
     "SG": 29,
     "MY": 21,
-    "TH": 17,
-    "PH": 11,
+    "TH": 18,
+    "PH": 16,
     "VN": 10,
-    "ID": 16,
-    "IN": 22,
+    "ID": 19,
+    "IN": 23,
     "CN": 18,
     "KR": 22,
     "TW": 22,
     "HK": 23,
-    "AE": 5,
-    "SA": 9,
-    "TR": 15,
+    "AE": 16,
+    "SA": 17,
+    "TR": 16,
     "GB": 16,
-    "DE": 10,
-    "FR": 9,
+    "DE": 20,
+    "FR": 16,
     "CA": 15,
     "BR": 16
   },
   "inventory_l1_blocked": [
     {
-      "agency_id": "ae_bayanat",
-      "iso2": "AE",
-      "reason": "ssl_handshake_failed"
-    },
-    {
       "agency_id": "ae_cbuae",
       "iso2": "AE",
       "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ae_dct_invest",
-      "iso2": "AE",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "ae_fcsc",
-      "iso2": "AE",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ae_moei",
-      "iso2": "AE",
-      "reason": "ssl_handshake_failed"
     },
     {
       "agency_id": "ae_moei_energy",
@@ -1233,54 +1217,14 @@
       "reason": "timeout"
     },
     {
-      "agency_id": "ae_mohap",
-      "iso2": "AE",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "ae_mohre",
-      "iso2": "AE",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "ae_mot",
-      "iso2": "AE",
-      "reason": "timeout"
-    },
-    {
       "agency_id": "cn_data_gov",
       "iso2": "CN",
-      "reason": "unreachable"
+      "reason": "dns_or_unreachable"
     },
     {
       "agency_id": "cn_nhc",
       "iso2": "CN",
       "reason": "http_412"
-    },
-    {
-      "agency_id": "de_bafin",
-      "iso2": "DE",
-      "reason": "http_400"
-    },
-    {
-      "agency_id": "de_bmbf",
-      "iso2": "DE",
-      "reason": "http_400"
-    },
-    {
-      "agency_id": "de_bmel",
-      "iso2": "DE",
-      "reason": "http_400"
-    },
-    {
-      "agency_id": "de_govdata",
-      "iso2": "DE",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "de_zoll",
-      "iso2": "DE",
-      "reason": "http_400"
     },
     {
       "agency_id": "fr_agriculture",
@@ -1293,34 +1237,9 @@
       "reason": "ssl_handshake_failed"
     },
     {
-      "agency_id": "fr_dgfip",
-      "iso2": "FR",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "fr_education",
-      "iso2": "FR",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "fr_sante",
-      "iso2": "FR",
-      "reason": "unreachable"
-    },
-    {
-      "agency_id": "fr_travail",
-      "iso2": "FR",
-      "reason": "unreachable"
-    },
-    {
       "agency_id": "hk_afcd",
       "iso2": "HK",
       "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "id_bps",
-      "iso2": "ID",
-      "reason": "crawler_403"
     },
     {
       "agency_id": "id_kemdikbud",
@@ -1330,16 +1249,6 @@
     {
       "agency_id": "id_kemenparekraf_bkpm",
       "iso2": "ID",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "id_satudata",
-      "iso2": "ID",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "in_agriculture",
-      "iso2": "IN",
       "reason": "dns_or_unreachable"
     },
     {
@@ -1363,11 +1272,6 @@
       "reason": "crawler_403"
     },
     {
-      "agency_id": "ph_dof",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
       "agency_id": "ph_doh",
       "iso2": "PH",
       "reason": "crawler_403"
@@ -1378,17 +1282,7 @@
       "reason": "crawler_403"
     },
     {
-      "agency_id": "ph_dotr",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
       "agency_id": "ph_psa",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ph_sec",
       "iso2": "PH",
       "reason": "crawler_403"
     },
@@ -1398,48 +1292,13 @@
       "reason": "timeout"
     },
     {
-      "agency_id": "sa_energy",
-      "iso2": "SA",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "sa_mci",
-      "iso2": "SA",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "sa_mof",
-      "iso2": "SA",
-      "reason": "timeout"
-    },
-    {
       "agency_id": "sa_mot",
       "iso2": "SA",
       "reason": "unreachable"
     },
     {
-      "agency_id": "sa_mt_invest",
-      "iso2": "SA",
-      "reason": "crawler_403"
-    },
-    {
       "agency_id": "th_data_go",
       "iso2": "TH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "th_mof",
-      "iso2": "TH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "tr_data_gov",
-      "iso2": "TR",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "us_cbp",
-      "iso2": "US",
       "reason": "crawler_403"
     },
     {
@@ -1450,7 +1309,7 @@
     {
       "agency_id": "vn_data_gov",
       "iso2": "VN",
-      "reason": "unstable_or_unverified"
+      "reason": "dns_or_unreachable"
     },
     {
       "agency_id": "vn_gso",
@@ -1487,5 +1346,37 @@
       "iso2": "VN",
       "reason": "timeout"
     }
-  ]
+  ],
+  "wave1d_recovered": [
+    "ae_bayanat",
+    "ae_dct_invest",
+    "ae_fcsc",
+    "ae_moei",
+    "ae_mohap",
+    "ae_mohre",
+    "ae_mot",
+    "de_bafin",
+    "de_bmbf",
+    "de_bmel",
+    "de_govdata",
+    "de_zoll",
+    "fr_dgfip",
+    "fr_education",
+    "fr_sante",
+    "fr_travail",
+    "id_bps",
+    "id_satudata",
+    "in_agriculture",
+    "ph_dof",
+    "ph_dotr",
+    "ph_sec",
+    "sa_energy",
+    "sa_mci",
+    "sa_mof",
+    "sa_mt_invest",
+    "th_mof",
+    "tr_data_gov",
+    "us_cbp"
+  ],
+  "wave1d_still_blocked_count": 28
 }

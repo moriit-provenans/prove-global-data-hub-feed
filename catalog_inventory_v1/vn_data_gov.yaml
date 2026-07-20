@@ -1,24 +1,27 @@
 iso2: VN
-source_note_ja: Wave0 missing_reason継続。統一OD未確認。
+source_note_ja: Wave1d recovery試行後も到達不可（dns_or_unreachable）。試行URL数=3。
 L0:
   portal_url: https://data.gov.vn/
   verified: false
-  blocked_reason: unstable_or_unverified
+  blocked_reason: dns_or_unreachable
 L1_themes: []
 L2_datasets: []
 L3_series: []
 L4_notes: 人間ブラウザでL1再検証が必要
 L5_country_unique: []
 coverage:
-  L0: blocked
+  L0: done
   L1: blocked
   L2: blocked
   L3: pending
   L4: pending
   L5: pending
 blocked:
-  L0: unstable_or_unverified
-  L1: unstable_or_unverified
-  L2: awaiting_L0
+  L1: dns_or_unreachable
+  L2: awaiting_L1
+  tried_urls:
+  - https://data.gov.vn/
+  - http://data.gov.vn/
+  - https://dichvucong.gov.vn/
 agency_id: vn_data_gov
-updated_at: '2026-07-21T04:16:30+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

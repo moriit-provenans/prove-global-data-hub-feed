@@ -1,5 +1,6 @@
 iso2: DE
-source_note_ja: Destatis L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Destatis L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d: GENESIS
+  statistic code stubs。'
 L0:
   portal_url: https://www.destatis.de/
   verified: true
@@ -8,6 +9,10 @@ L1_themes:
   name_ja: Destatis
   name_en: Destatis
   url: https://www.destatis.de/
+- theme_id: genesis
+  name_ja: GENESIS-Online
+  name_en: GENESIS
+  url: https://www-genesis.destatis.de/
 L2_datasets:
 - dataset_id: de_destatis_destatis
   title: Destatis
@@ -16,7 +21,49 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: destatis
-L3_series: []
+- dataset_id: de_destatis_genesis
+  title: GENESIS-Online
+  url: https://www-genesis.destatis.de/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: genesis
+L3_series:
+- series_id: 61111-0001
+  title: Consumer price index (GENESIS 61111)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=61111
+  source: Destatis GENESIS
+- series_id: 12211-0001
+  title: Labour force survey / employment (GENESIS 12211)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=12211
+  source: Destatis GENESIS
+- series_id: 81000-0001
+  title: National accounts (GENESIS 81000)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=81000
+  source: Destatis GENESIS
+- series_id: 42151-0001
+  title: Production index manufacturing (GENESIS 42151)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=42151
+  source: Destatis GENESIS
+- series_id: 51000-0001
+  title: Foreign trade (GENESIS 51000)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=51000
+  source: Destatis GENESIS
+- series_id: 12411-0001
+  title: Population (GENESIS 12411)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=12411
+  source: Destatis GENESIS
+- series_id: 61351-0001
+  title: Producer prices industrial products (GENESIS 61351)
+  status: stub
+  url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=61351
+  source: Destatis GENESIS
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: 'Destatis: Destatis'
@@ -26,8 +73,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: pending
   L5: partial
 agency_id: de_destatis
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

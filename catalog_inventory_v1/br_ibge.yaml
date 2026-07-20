@@ -1,5 +1,6 @@
 iso2: BR
-source_note_ja: IBGE L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'IBGE L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d: SIDRA table
+  ID stubs。'
 L0:
   portal_url: https://www.ibge.gov.br/
   verified: true
@@ -27,7 +28,42 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: sidra
-L3_series: []
+L3_series:
+- series_id: '1737'
+  title: IPCA — Índice Nacional de Preços ao Consumidor Amplo (SIDRA 1737)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/1737
+  source: IBGE SIDRA
+- series_id: '5932'
+  title: Contas Nacionais Trimestrais — PIB (SIDRA 5932)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/5932
+  source: IBGE SIDRA
+- series_id: '4093'
+  title: PNAD Contínua — taxa de desocupação (SIDRA 4093)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/4093
+  source: IBGE SIDRA
+- series_id: '3653'
+  title: PIM-PF — Produção industrial (SIDRA 3653)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/3653
+  source: IBGE SIDRA
+- series_id: '3418'
+  title: PMC — Comércio varejista (SIDRA 3418)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/3418
+  source: IBGE SIDRA
+- series_id: '1620'
+  title: População residente (SIDRA 1620)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/1620
+  source: IBGE SIDRA
+- series_id: '6784'
+  title: IPP — Índice de Preços ao Produtor (SIDRA 6784)
+  status: stub
+  url: https://sidra.ibge.gov.br/tabela/6784
+  source: IBGE SIDRA
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: 'IBGE: IBGE'
@@ -40,8 +76,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: pending
   L5: partial
 agency_id: br_ibge
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

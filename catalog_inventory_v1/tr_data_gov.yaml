@@ -1,23 +1,33 @@
 iso2: TR
-source_note_ja: 'Turkey Open Data Portal: クローラ到達不可（timeout）。L1 blocked。'
+source_note_ja: tr_data_gov L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
-  portal_url: https://data.gov.tr/
-  verified: false
-  blocked_reason: timeout
-L1_themes: []
-L2_datasets: []
+  portal_url: https://www.turkiye.gov.tr/
+  verified: true
+L1_themes:
+- theme_id: turkiye
+  name_ja: turkiye.gov.tr
+  name_en: e-Devlet
+  url: https://www.turkiye.gov.tr/
+L2_datasets:
+- dataset_id: tr_data_gov_turkiye
+  title: e-Devlet
+  url: https://www.turkiye.gov.tr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: turkiye
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'tr_data_gov: e-Devlet'
+  url: https://www.turkiye.gov.tr/
+  why_unique_ja: TR固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: timeout
-  L2: awaiting_L1
+  L5: partial
 agency_id: tr_data_gov
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

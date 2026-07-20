@@ -1,5 +1,5 @@
 iso2: US
-source_note_ja: 'Wave1c: BLS 公式 series ID stubs（CPI/CPS/CES/LPC/PPI）。観測値は未取得。'
+source_note_ja: 'Wave1d: BLS series ID stubs deepen（CPI/CPS/CES/LPC/PPI/ECI）。観測値は未取得。'
 L0:
   portal_url: https://www.bls.gov/
   verified: true
@@ -80,6 +80,26 @@ L3_series:
   status: stub
   url: https://www.bls.gov/ppi/
   source: BLS
+- series_id: CUUR0000SA0E
+  title: CPI-U Energy
+  status: stub
+  url: https://www.bls.gov/cpi/
+  source: BLS
+- series_id: LNS11300000
+  title: Labor Force Participation Rate
+  status: stub
+  url: https://www.bls.gov/cps/
+  source: BLS
+- series_id: CES0500000002
+  title: Average weekly hours of all employees, total private
+  status: stub
+  url: https://www.bls.gov/ces/
+  source: BLS
+- series_id: ECI11102I
+  title: 'Employment Cost Index: Total compensation for private industry workers'
+  status: stub
+  url: https://www.bls.gov/eci/
+  source: BLS
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: BLS official portal
@@ -93,4 +113,4 @@ coverage:
   L4: pending
   L5: partial
 agency_id: us_bls
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

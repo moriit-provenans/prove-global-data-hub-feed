@@ -1,23 +1,61 @@
 iso2: SA
-source_note_ja: 'Ministry of Finance Saudi Arabia: クローラ到達不可（timeout）。L1 blocked。'
+source_note_ja: sa_mof L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
   portal_url: https://www.mof.gov.sa/
-  verified: false
-  blocked_reason: timeout
-L1_themes: []
-L2_datasets: []
+  verified: true
+L1_themes:
+- theme_id: mof
+  name_ja: MoF SA
+  name_en: MoF
+  url: https://www.mof.gov.sa/
+- theme_id: mof_en
+  name_ja: MoF EN
+  name_en: MoF EN
+  url: https://www.mof.gov.sa/en
+- theme_id: budget
+  name_ja: Budget SA
+  name_en: Budget
+  url: https://www.mof.gov.sa/en/budget
+L2_datasets:
+- dataset_id: sa_mof_mof
+  title: MoF
+  url: https://www.mof.gov.sa/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mof
+- dataset_id: sa_mof_mof_en
+  title: MoF EN
+  url: https://www.mof.gov.sa/en
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mof_en
+- dataset_id: sa_mof_budget
+  title: Budget
+  url: https://www.mof.gov.sa/en/budget
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: budget
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'sa_mof: MoF'
+  url: https://www.mof.gov.sa/
+  why_unique_ja: SA固有の公的機関データ入口（Wave1d recovery）
+- title: 'sa_mof: MoF EN'
+  url: https://www.mof.gov.sa/en
+  why_unique_ja: SA固有の公的機関データ入口（Wave1d recovery）
+- title: 'sa_mof: Budget'
+  url: https://www.mof.gov.sa/en/budget
+  why_unique_ja: SA固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: timeout
-  L2: awaiting_L1
+  L5: partial
 agency_id: sa_mof
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

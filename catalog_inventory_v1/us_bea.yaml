@@ -1,6 +1,6 @@
 iso2: US
 source_note_ja: 'Wave1c: BEA ポータル＋NIPA/ITA/Regional の L3 series stubs（表ID＝公式 catalog
-  名称）。'
+  名称）。 Wave1d: BEA L3 deepen。'
 L0:
   portal_url: https://www.bea.gov/
   verified: true
@@ -56,6 +56,11 @@ L3_series:
   status: stub
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
+- series_id: NIPA_T10102
+  title: Table 1.1.2. Contributions to Percent Change in Real Gross Domestic Product
+  status: stub
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  source: BEA NIPA
 - series_id: ITA_IntlServTrade
   title: International Trade in Goods and Services
   status: stub
@@ -71,6 +76,16 @@ L3_series:
   status: stub
   url: https://www.bea.gov/data/gdp/gdp-industry
   source: BEA Industry
+- series_id: NIPA_T50101
+  title: Table 5.1. Saving and Investment
+  status: stub
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  source: BEA NIPA
+- series_id: PCE
+  title: Personal Consumption Expenditures
+  status: stub
+  url: https://www.bea.gov/data/consumer-spending/national
+  source: BEA
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: BEA NIPA interactive tables
@@ -87,4 +102,4 @@ coverage:
   L4: pending
   L5: partial
 agency_id: us_bea
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

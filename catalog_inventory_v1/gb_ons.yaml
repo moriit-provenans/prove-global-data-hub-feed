@@ -1,5 +1,6 @@
 iso2: GB
-source_note_ja: Office for National Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Office for National Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+  Wave1d: ONS series ID stubs。'
 L0:
   portal_url: https://www.ons.gov.uk/
   verified: true
@@ -8,6 +9,10 @@ L1_themes:
   name_ja: ONS
   name_en: ONS
   url: https://www.ons.gov.uk/
+- theme_id: timeseries
+  name_ja: ONS time series
+  name_en: Time series
+  url: https://www.ons.gov.uk/timeseriestool
 L2_datasets:
 - dataset_id: gb_ons_ons
   title: ONS
@@ -16,7 +21,54 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: ons
-L3_series: []
+- dataset_id: gb_ons_timeseries
+  title: ONS time series tool
+  url: https://www.ons.gov.uk/timeseriestool
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: timeseries
+L3_series:
+- series_id: ABMI
+  title: GDP (ABMI) — chained volume measure
+  status: stub
+  url: https://www.ons.gov.uk/economy/grossdomesticproductgdp
+  source: ONS
+- series_id: D7BT
+  title: CPIH / CPI (D7BT related CPI index)
+  status: stub
+  url: https://www.ons.gov.uk/economy/inflationandpriceindices
+  source: ONS
+- series_id: MGSL
+  title: Unemployment rate (MGSL)
+  status: stub
+  url: https://www.ons.gov.uk/employmentandlabourmarket
+  source: ONS
+- series_id: LF24
+  title: Employment rate (LF24)
+  status: stub
+  url: https://www.ons.gov.uk/employmentandlabourmarket
+  source: ONS
+- series_id: IKBH
+  title: Public sector net borrowing (IKBH)
+  status: stub
+  url: https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes
+  source: ONS
+- series_id: G7AU
+  title: Retail sales index (G7AU)
+  status: stub
+  url: https://www.ons.gov.uk/businessindustryandtrade/retailindustry
+  source: ONS
+- series_id: L55O
+  title: Average weekly earnings (L55O)
+  status: stub
+  url: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours
+  source: ONS
+- series_id: DIAL
+  title: Balance of payments current account (DIAL)
+  status: stub
+  url: https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments
+  source: ONS
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: 'Office for National Statistics: ONS'
@@ -26,8 +78,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: pending
   L5: partial
 agency_id: gb_ons
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

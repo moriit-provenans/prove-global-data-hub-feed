@@ -1,6 +1,6 @@
 agency_id: jp_boj
 iso2: JP
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'
 source_note_ja: BOJ統計トップ＋時系列検索ポータルをL1/L2として登録（2026-07-21検証）。
 L0:
   portal_url: https://www.boj.or.jp/
@@ -43,6 +43,15 @@ L5_country_unique:
 - title: 日銀時系列統計データ検索（TSS）
   url: https://www.stat-search.boj.or.jp/
   why_unique_ja: マネタリーベース・短観等の詳細系列群は国際比較コアに薄い
+- title: 統計一覧ページ
+  url: https://www.boj.or.jp/statistics/index.htm
+  why_unique_ja: JP公式カタログ入口（L1/L2検証済・Wave1d L5積上げ）
+- title: Statistics outline
+  url: https://www.boj.or.jp/statistics/outline/index.htm
+  why_unique_ja: JP公式カタログ入口（L1/L2検証済・Wave1d L5積上げ）
+- title: Time-Series Data Search EN
+  url: https://www.stat-search.boj.or.jp/index_en.html
+  why_unique_ja: JP公式カタログ入口（L1/L2検証済・Wave1d L5積上げ）
 coverage:
   L0: done
   L1: done

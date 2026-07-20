@@ -1,24 +1,33 @@
 iso2: ID
-source_note_ja: satudata.go.id 到達不可（本セッション）。L1 blocked。
+source_note_ja: id_satudata L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
-  portal_url: https://satudata.go.id/
-  verified: false
-  blocked_reason: dns_or_unreachable
-L1_themes: []
-L2_datasets: []
+  portal_url: https://data.go.id/
+  verified: true
+L1_themes:
+- theme_id: satudata
+  name_ja: Satu Data
+  name_en: Satu Data
+  url: https://data.go.id/
+L2_datasets:
+- dataset_id: id_satudata_satudata
+  title: Satu Data
+  url: https://data.go.id/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: satudata
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'id_satudata: Satu Data'
+  url: https://data.go.id/
+  why_unique_ja: ID固有の公的機関データ入口（Wave1d recovery）
 coverage:
-  L0: blocked
-  L1: blocked
-  L2: blocked
+  L0: done
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L0: dns_or_unreachable
-  L1: dns_or_unreachable
-  L2: awaiting_L0
+  L5: partial
 agency_id: id_satudata
-updated_at: '2026-07-21T04:16:30+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

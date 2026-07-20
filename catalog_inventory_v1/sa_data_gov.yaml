@@ -1,5 +1,5 @@
 iso2: SA
-source_note_ja: 'od.data.gov.sa: クローラ到達不可（timeout）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（timeout）。試行URL数=3。
 L0:
   portal_url: https://data.gov.sa/en
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: timeout
   L2: awaiting_L1
+  tried_urls:
+  - https://od.data.gov.sa/
+  - https://data.gov.sa/
+  - https://www.my.gov.sa/
 agency_id: sa_data_gov
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

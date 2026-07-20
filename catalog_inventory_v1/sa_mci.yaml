@@ -1,23 +1,33 @@
 iso2: SA
-source_note_ja: 'Ministry of Commerce: クローラ到達不可（ssl_handshake_failed）。L1 blocked。'
+source_note_ja: sa_mci L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
-  portal_url: https://mc.gov.sa/
-  verified: false
-  blocked_reason: ssl_handshake_failed
-L1_themes: []
-L2_datasets: []
+  portal_url: https://misa.gov.sa/
+  verified: true
+L1_themes:
+- theme_id: misa
+  name_ja: MISA
+  name_en: MISA
+  url: https://misa.gov.sa/
+L2_datasets:
+- dataset_id: sa_mci_misa
+  title: MISA
+  url: https://misa.gov.sa/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: misa
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'sa_mci: MISA'
+  url: https://misa.gov.sa/
+  why_unique_ja: SA固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: ssl_handshake_failed
-  L2: awaiting_L1
+  L5: partial
 agency_id: sa_mci
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

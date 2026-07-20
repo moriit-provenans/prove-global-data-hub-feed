@@ -1,5 +1,5 @@
 iso2: MY
-source_note_ja: 'Ministry of Health Malaysia: クローラ到達不可（crawler_403）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。
 L0:
   portal_url: https://www.moh.gov.my/
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: crawler_403
   L2: awaiting_L1
+  tried_urls:
+  - https://www.moh.gov.my/
+  - https://www.myhealth.gov.my/
+  - https://www.kkm.gov.my/
 agency_id: my_moh
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

@@ -1,5 +1,5 @@
 iso2: SA
-source_note_ja: 'Ministry of Transport Saudi Arabia: クローラ到達不可（unreachable）。L1 blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（unreachable）。試行URL数=3。
 L0:
   portal_url: https://www.mot.gov.sa/
   verified: false
@@ -19,5 +19,9 @@ coverage:
 blocked:
   L1: unreachable
   L2: awaiting_L1
+  tried_urls:
+  - https://www.mot.gov.sa/
+  - https://www.mot.gov.sa/en
+  - https://tga.gov.sa/
 agency_id: sa_mot
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

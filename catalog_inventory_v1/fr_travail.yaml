@@ -1,23 +1,47 @@
 iso2: FR
-source_note_ja: 'Ministry of Labour: クローラ到達不可（unreachable）。L1 blocked。'
+source_note_ja: fr_travail L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
   portal_url: https://travail-emploi.gouv.fr/
-  verified: false
-  blocked_reason: unreachable
-L1_themes: []
-L2_datasets: []
+  verified: true
+L1_themes:
+- theme_id: travail
+  name_ja: travail-emploi.gouv.fr
+  name_en: Travail
+  url: https://travail-emploi.gouv.fr/
+- theme_id: dares
+  name_ja: DARES
+  name_en: DARES
+  url: https://dares.travail-emploi.gouv.fr/
+L2_datasets:
+- dataset_id: fr_travail_travail
+  title: Travail
+  url: https://travail-emploi.gouv.fr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: travail
+- dataset_id: fr_travail_dares
+  title: DARES
+  url: https://dares.travail-emploi.gouv.fr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: dares
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'fr_travail: Travail'
+  url: https://travail-emploi.gouv.fr/
+  why_unique_ja: FR固有の公的機関データ入口（Wave1d recovery）
+- title: 'fr_travail: DARES'
+  url: https://dares.travail-emploi.gouv.fr/
+  why_unique_ja: FR固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: unreachable
-  L2: awaiting_L1
+  L5: partial
 agency_id: fr_travail
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

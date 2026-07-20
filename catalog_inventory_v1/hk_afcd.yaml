@@ -1,6 +1,5 @@
 iso2: HK
-source_note_ja: 'Agriculture, Fisheries and Conservation Department: クローラ到達不可（ssl_handshake_failed）。L1
-  blocked。'
+source_note_ja: Wave1d recovery試行後も到達不可（ssl_handshake_failed）。試行URL数=3。
 L0:
   portal_url: https://www.afcd.gov.hk/
   verified: false
@@ -20,5 +19,9 @@ coverage:
 blocked:
   L1: ssl_handshake_failed
   L2: awaiting_L1
+  tried_urls:
+  - https://www.afcd.gov.hk/
+  - https://www.afcd.gov.hk/english/index.html
+  - https://www.afcd.gov.hk/english/statistics/statistics.html
 agency_id: hk_afcd
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

@@ -1,6 +1,6 @@
 agency_id: jp_cao_esri
 iso2: JP
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'
 source_note_ja: 内閣府ESRI 国民経済計算メニュー実URL（2026-07-21検証）。
 L0:
   portal_url: https://www.esri.cao.go.jp/
@@ -46,6 +46,9 @@ L5_country_unique:
 - title: 内閣府 SNA メニュー
   url: https://www.esri.cao.go.jp/jp/sna/menu.html
   why_unique_ja: QE・年次推計の一次ポータルは日本固有の国民経済計算配信経路
+- title: 四半期別GDP速報トップ
+  url: https://www.esri.cao.go.jp/jp/sna/sokuhou/sokuhou_top.html
+  why_unique_ja: JP公式カタログ入口（L1/L2検証済・Wave1d L5積上げ）
 coverage:
   L0: done
   L1: done

@@ -1,23 +1,47 @@
 iso2: DE
-source_note_ja: 'BMBF: クローラ到達不可（http_400）。L1 blocked。'
+source_note_ja: de_bmbf L1–L2（Wave1d recovery 検証済代替URLのみ）。
 L0:
   portal_url: https://www.bmbf.de/
-  verified: false
-  blocked_reason: http_400
-L1_themes: []
-L2_datasets: []
+  verified: true
+L1_themes:
+- theme_id: bmbf
+  name_ja: BMBF
+  name_en: BMBF
+  url: https://www.bmbf.de/
+- theme_id: bmbf_de
+  name_ja: BMBF DE home
+  name_en: BMBF
+  url: https://www.bmbf.de/bmbf/de/home/home_node.html
+L2_datasets:
+- dataset_id: de_bmbf_bmbf
+  title: BMBF
+  url: https://www.bmbf.de/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bmbf
+- dataset_id: de_bmbf_bmbf_de
+  title: BMBF
+  url: https://www.bmbf.de/bmbf/de/home/home_node.html
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bmbf_de
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'de_bmbf: BMBF'
+  url: https://www.bmbf.de/
+  why_unique_ja: DE固有の公的機関データ入口（Wave1d recovery）
+- title: 'de_bmbf: BMBF'
+  url: https://www.bmbf.de/bmbf/de/home/home_node.html
+  why_unique_ja: DE固有の公的機関データ入口（Wave1d recovery）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
-blocked:
-  L1: http_400
-  L2: awaiting_L1
+  L5: partial
 agency_id: de_bmbf
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'

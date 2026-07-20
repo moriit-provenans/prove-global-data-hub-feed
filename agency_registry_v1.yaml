@@ -1,6 +1,6 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'
 wave: Wave1
 policy:
   layers:
@@ -447,11 +447,11 @@ agencies:
   name_en: U.S. Customs and Border Protection
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cbp.gov/
 - agency_id: us_data_gov
   iso2: US
@@ -642,7 +642,7 @@ agencies:
   name_ja: 国家データポータル
   name_en: National Data Portal (data.gov.vn)
   layer_status:
-    L0: pending
+    L0: done
     L1: pending
     L2: pending
     L3: pending
@@ -698,11 +698,11 @@ agencies:
   name_en: Ministry of Finance Thailand
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.go.th/
 - agency_id: th_sec
   iso2: TH
@@ -855,11 +855,11 @@ agencies:
   name_en: BPS-Statistics Indonesia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bps.go.id/
 - agency_id: id_bi
   iso2: ID
@@ -1025,12 +1025,12 @@ agencies:
   name_ja: Satu Data Indonesia
   name_en: Satu Data Indonesia
   layer_status:
-    L0: pending
-    L1: pending
-    L2: pending
+    L0: done
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://satudata.go.id/
   open_data_url: https://satudata.go.id/
   missing_reason: dns_or_unreachable
@@ -1160,11 +1160,11 @@ agencies:
   name_en: Ministry of Agriculture & Farmers Welfare
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://agriculture.gov.in/
 - agency_id: in_mnre
   iso2: IN
@@ -1253,11 +1253,11 @@ agencies:
   name_en: Department of Finance Philippines
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.dof.gov.ph/
 - agency_id: ph_sec
   iso2: PH
@@ -1266,11 +1266,11 @@ agencies:
   name_en: SEC Philippines
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sec.gov.ph/
 - agency_id: ph_dti
   iso2: PH
@@ -1318,11 +1318,11 @@ agencies:
   name_en: Department of Transportation
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://dotr.gov.ph/
 - agency_id: ph_doh
   iso2: PH
@@ -1952,7 +1952,7 @@ agencies:
   name_ja: 国家公共データ開放平台
   name_en: data.gov.cn
   layer_status:
-    L0: pending
+    L0: done
     L1: pending
     L2: pending
     L3: pending
@@ -2521,11 +2521,11 @@ agencies:
   name_en: Federal Competitiveness and Statistics Centre
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://fcsc.gov.ae/
   notes: 旧 FCSA。2026-07-21 HEADで403（ボット遮断の可能性）。公式NSOとして登録・Wave1で再検証。
   open_data_url: https://uaestat.fcsc.gov.ae/en
@@ -2575,11 +2575,11 @@ agencies:
   name_en: Ministry of Economy UAE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moec.gov.ae/
 - agency_id: ae_mohre
   iso2: AE
@@ -2588,11 +2588,11 @@ agencies:
   name_en: Ministry of Human Resources and Emiratisation
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mohre.gov.ae/
 - agency_id: ae_moe
   iso2: AE
@@ -2614,11 +2614,11 @@ agencies:
   name_en: Ministry of Energy and Infrastructure
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moei.gov.ae/
   notes: 交通・インフラ所管は省再編に注意。
 - agency_id: ae_mohap
@@ -2628,11 +2628,11 @@ agencies:
   name_en: Ministry of Health and Prevention
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mohap.gov.ae/
 - agency_id: ae_moccae
   iso2: AE
@@ -2667,11 +2667,11 @@ agencies:
   name_en: Ministry of Economy / DTCM etc.
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moec.gov.ae/
   notes: 観光は首長国別当局が強い（DTCM等）。
 - agency_id: ae_fca
@@ -2695,11 +2695,11 @@ agencies:
   name_en: bayanat.ae
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://bayanat.ae/en
   open_data_url: https://bayanat.ae/en
 - agency_id: sa_gastat
@@ -2735,11 +2735,11 @@ agencies:
   name_en: Ministry of Finance Saudi Arabia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mof.gov.sa/
 - agency_id: sa_cma
   iso2: SA
@@ -2761,11 +2761,11 @@ agencies:
   name_en: Ministry of Commerce
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mc.gov.sa/
 - agency_id: sa_hrsd
   iso2: SA
@@ -2839,11 +2839,11 @@ agencies:
   name_en: Ministry of Energy
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moenergy.gov.sa/
 - agency_id: sa_mt_invest
   iso2: SA
@@ -2852,11 +2852,11 @@ agencies:
   name_en: Ministry of Tourism / MISA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mt.gov.sa/
   notes: 投資誘致 https://misa.gov.sa/
 - agency_id: sa_zatca
@@ -3065,11 +3065,11 @@ agencies:
   name_en: Turkey Open Data Portal
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.tr/
   open_data_url: https://data.gov.tr/
 - agency_id: gb_ons
@@ -3081,7 +3081,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.ons.gov.uk/
@@ -3264,7 +3264,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.destatis.de/
@@ -3301,11 +3301,11 @@ agencies:
   name_en: BaFin
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bafin.de/
 - agency_id: de_bmwk
   iso2: DE
@@ -3340,11 +3340,11 @@ agencies:
   name_en: BMBF
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmbf.de/
 - agency_id: de_bmdv
   iso2: DE
@@ -3379,11 +3379,11 @@ agencies:
   name_en: BMEL
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmel.de/
 - agency_id: de_bmuv
   iso2: DE
@@ -3419,11 +3419,11 @@ agencies:
   name_en: Zoll / Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.zoll.de/
 - agency_id: de_govdata
   iso2: DE
@@ -3432,11 +3432,11 @@ agencies:
   name_en: GovData
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.govdata.de/
 - agency_id: fr_insee
   iso2: FR
@@ -3471,11 +3471,11 @@ agencies:
   name_en: Ministry of the Economy and Finance
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.economie.gouv.fr/
 - agency_id: fr_amf
   iso2: FR
@@ -3510,11 +3510,11 @@ agencies:
   name_en: Ministry of Labour
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://travail-emploi.gouv.fr/
 - agency_id: fr_education
   iso2: FR
@@ -3523,11 +3523,11 @@ agencies:
   name_en: Ministry of National Education
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.education.gouv.fr/
 - agency_id: fr_ecologie
   iso2: FR
@@ -3549,11 +3549,11 @@ agencies:
   name_en: Ministry of Health
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://sante.gouv.fr/
 - agency_id: fr_agriculture
   iso2: FR
@@ -3629,7 +3629,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.statcan.gc.ca/
@@ -3813,7 +3813,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.ibge.gov.br/

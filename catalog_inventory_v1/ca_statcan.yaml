@@ -1,5 +1,6 @@
 iso2: CA
-source_note_ja: Statistics Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Statistics Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d:
+  StatCan table ID stubs。'
 L0:
   portal_url: https://www.statcan.gc.ca/
   verified: true
@@ -8,6 +9,10 @@ L1_themes:
   name_ja: StatCan
   name_en: StatCan
   url: https://www.statcan.gc.ca/
+- theme_id: cansim
+  name_ja: StatCan data tables
+  name_en: Data tables
+  url: https://www150.statcan.gc.ca/n1/en/type/data
 L2_datasets:
 - dataset_id: ca_statcan_statcan
   title: StatCan
@@ -16,7 +21,49 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: statcan
-L3_series: []
+- dataset_id: ca_statcan_tables
+  title: StatCan data tables
+  url: https://www150.statcan.gc.ca/n1/en/type/data
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: cansim
+L3_series:
+- series_id: 14-10-0287-01
+  title: Labour force characteristics (14-10-0287-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028701
+  source: StatCan
+- series_id: 18-10-0004-01
+  title: Consumer Price Index (18-10-0004-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401
+  source: StatCan
+- series_id: 36-10-0104-01
+  title: Gross domestic product (36-10-0104-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401
+  source: StatCan
+- series_id: 16-10-0047-01
+  title: Manufacturing sales (16-10-0047-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610004701
+  source: StatCan
+- series_id: 12-10-0121-01
+  title: International merchandise trade (12-10-0121-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1210012101
+  source: StatCan
+- series_id: 14-10-0327-01
+  title: Employment by industry (14-10-0327-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032701
+  source: StatCan
+- series_id: 34-10-0126-01
+  title: Building permits (34-10-0126-01)
+  status: stub
+  url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410012601
+  source: StatCan
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: 'Statistics Canada: StatCan'
@@ -26,8 +73,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: pending
   L5: partial
 agency_id: ca_statcan
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T04:31:01+09:00'
