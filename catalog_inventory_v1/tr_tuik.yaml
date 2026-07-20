@@ -1,5 +1,6 @@
 iso2: TR
-source_note_ja: TurkStat (TÜİK) L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'TurkStat (TÜİK) L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave2c:
+  L3+L4 (4/4).'
 L0:
   portal_url: https://www.tuik.gov.tr/
   verified: true
@@ -27,8 +28,33 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: en
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: tuik_cpi_index
+  title: CPI index OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/TURCPIALLMINMEI
+  source: tr_tuik
+  obs_count: 124
+- series_id: tuik_cpi_yoy
+  title: CPI YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/CPALTT01TRM659N
+  source: tr_tuik
+  obs_count: 124
+- series_id: tuik_unemployment
+  title: Unemployment OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/LRHUTTTTTRM156S
+  source: tr_tuik
+  obs_count: 137
+- series_id: tuik_gdp_yoy
+  title: GDP YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/TURGDPRQPSMEI
+  source: tr_tuik
+  obs_count: 45
+L4_notes: 'Wave2c L4 2026-07-21: harvested=4/4; TURKSTAT primary pending; Wave2c FRED
+  OECD bridge (international_fast)'
 L5_country_unique:
 - title: 'TurkStat (TÜİK): TurkStat'
   url: https://www.tuik.gov.tr/
@@ -40,8 +66,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tr_tuik
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

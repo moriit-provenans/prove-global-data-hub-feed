@@ -1,5 +1,5 @@
 iso2: TH
-source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2c: L3+L4 (3/3).'
 L0:
   portal_url: https://www.nso.go.th/
   verified: true
@@ -16,8 +16,26 @@ L2_datasets:
   update_freq: n/a
   license: NSO TH terms
   theme_id: nso
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: th_cpi_index_imf
+  title: TH CPI index IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.TH.PCPI_IX
+  source: th_nso
+  obs_count: 123
+- series_id: th_cpi_yoy_imf
+  title: TH CPI YoY IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.TH.PCPI_PC_CP_A_PT
+  source: th_nso
+  obs_count: 123
+- series_id: nesdc_gdp_yoy
+  title: NESDC CVM GDP YoY
+  status: harvested
+  url: https://www.nesdc.go.th/wordpress/wp-content/uploads/2026/03/ChainVolumeMeasures.xlsx
+  source: th_nso
+  obs_count: 128
+L4_notes: 'Wave2c L4 2026-07-21: harvested=3/3; IMF CPI via db.nomics (international_fast)'
 L5_country_unique:
 - title: NSO Thailand
   url: https://www.nso.go.th/
@@ -32,8 +50,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: th_nso
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:24:49+09:00'

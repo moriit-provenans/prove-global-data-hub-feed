@@ -1,5 +1,5 @@
 iso2: ID
-source_note_ja: id_bps L1–L2（Wave1d recovery 検証済代替URLのみ）。
+source_note_ja: 'id_bps L1–L2（Wave1d recovery 検証済代替URLのみ）。 Wave2c: L3+L4 (4/4).'
 L0:
   portal_url: https://silastik.bps.go.id/
   verified: true
@@ -27,8 +27,33 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: webapi
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: bps_cpi_index
+  title: CPI index OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/IDNCPIALLMINMEI
+  source: id_bps
+  obs_count: 124
+- series_id: bps_cpi_yoy
+  title: CPI YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/CPALTT01IDM659N
+  source: id_bps
+  obs_count: 124
+- series_id: bps_unemployment
+  title: Unemployment OECD via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/LRUNTTTTIDQ156N
+  source: id_bps
+  obs_count: 2
+- series_id: bps_gdp_yoy
+  title: GDP YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/IDNGDPRQPSMEI
+  source: id_bps
+  obs_count: 45
+L4_notes: 'Wave2c L4 2026-07-21: harvested=4/4; BPS API key optional; Wave2c FRED
+  OECD bridge (international_fast)'
 L5_country_unique:
 - title: 'id_bps: Silastik'
   url: https://silastik.bps.go.id/
@@ -40,8 +65,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: id_bps
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

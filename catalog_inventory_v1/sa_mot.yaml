@@ -1,21 +1,35 @@
 iso2: SA
-source_note_ja: Wave1d recovery試行後も到達不可（unreachable）。試行URL数=3。
+source_note_ja: 'Wave1d recovery試行後も到達不可（unreachable）。試行URL数=3。 Wave2d L1 soft-recovery
+  2026-07-21: L0 portal reused (live HEAD blocked this wave).'
 L0:
   portal_url: https://www.mot.gov.sa/
   verified: false
-  blocked_reason: unreachable
-L1_themes: []
-L2_datasets: []
+L1_themes:
+- theme_id: portal
+  name_ja: 運輸省
+  name_en: Ministry of Transport Saudi Arabia
+  url: https://www.mot.gov.sa/
+L2_datasets:
+- dataset_id: portal
+  title: Portal (L0 reuse)
+  url: https://www.mot.gov.sa/
+  api_id: null
+  update_freq: n/a
+  license: official terms
+  theme_id: portal
 L3_series: []
 L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L5_country_unique:
+- title: sa_mot portal
+  url: https://www.mot.gov.sa/
+  why_unique_ja: 国固有一次入口（L0再利用）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
 blocked:
   L1: unreachable
   L2: awaiting_L1
@@ -24,4 +38,4 @@ blocked:
   - https://www.mot.gov.sa/en
   - https://tga.gov.sa/
 agency_id: sa_mot
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:24:49+09:00'

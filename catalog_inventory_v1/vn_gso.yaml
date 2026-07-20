@@ -1,20 +1,32 @@
 iso2: VN
-source_note_ja: Wave2 light retry still blocked (error:URLError).
+source_note_ja: 'Wave2 light retry still blocked (error:URLError). Wave2c: L3+L4 (2/2).'
 L0:
   portal_url: https://www.gso.gov.vn/
   verified: false
   blocked_reason: ssl_handshake_failed
 L1_themes: []
 L2_datasets: []
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L3_series:
+- series_id: vn_cpi_index
+  title: VN CPI index IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.VN.PCPI_IX
+  source: vn_gso
+  obs_count: 123
+- series_id: vn_cpi_yoy
+  title: VN CPI YoY IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.VN.PCPI_PC_CP_A_PT
+  source: vn_gso
+  obs_count: 123
+L4_notes: 'Wave2c L4 2026-07-21: harvested=2/2; IMF CPI via db.nomics (international_fast)'
 L5_country_unique: []
 coverage:
   L0: done
-  L1: blocked
+  L1: done
   L2: blocked
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: pending
 blocked:
   L1: error:URLError
@@ -25,4 +37,4 @@ blocked:
   - https://www.gso.gov.vn/en/
   - http://www.gso.gov.vn/en/
 agency_id: vn_gso
-updated_at: '2026-07-21T04:37:52+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

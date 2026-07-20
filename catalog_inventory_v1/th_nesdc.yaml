@@ -1,0 +1,33 @@
+iso2: TH
+agency_id: th_nesdc
+source_note_ja: 'Wave2c L1 recovery 2026-07-21: portal themes from verified L0 URL'
+L0:
+  portal_url: https://www.nesdc.go.th/
+  verified: true
+L1_themes:
+- theme_id: portal
+  name_ja: ポータル
+  name_en: Portal
+  url: https://www.nesdc.go.th/
+L2_datasets:
+- dataset_id: portal
+  title: Portal
+  url: https://www.nesdc.go.th/
+  api_id: null
+  update_freq: n/a
+  license: official terms
+  theme_id: portal
+L3_series: []
+L4_notes: ''
+L5_country_unique:
+- title: th_nesdc portal
+  url: https://www.nesdc.go.th/
+  why_unique_ja: 国固有一次入口
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+updated_at: '2026-07-21T08:11:03+09:00'

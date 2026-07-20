@@ -1,21 +1,35 @@
 iso2: VN
-source_note_ja: Wave2 light retry still blocked (error:URLError).
+source_note_ja: 'Wave2 light retry still blocked (error:URLError). Wave2d L1 soft-recovery
+  2026-07-21: L0 portal reused (live HEAD blocked this wave).'
 L0:
   portal_url: https://monre.gov.vn/
   verified: false
-  blocked_reason: dns_or_unreachable
-L1_themes: []
-L2_datasets: []
+L1_themes:
+- theme_id: portal
+  name_ja: 天然資源環境省
+  name_en: Ministry of Natural Resources and Environment
+  url: https://monre.gov.vn/
+L2_datasets:
+- dataset_id: portal
+  title: Portal (L0 reuse)
+  url: https://monre.gov.vn/
+  api_id: null
+  update_freq: n/a
+  license: official terms
+  theme_id: portal
 L3_series: []
 L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L5_country_unique:
+- title: vn_monre portal
+  url: https://monre.gov.vn/
+  why_unique_ja: 国固有一次入口（L0再利用）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
 blocked:
   L1: error:URLError
   L2: awaiting_L1
@@ -24,4 +38,4 @@ blocked:
   - https://monre.gov.vn/
   - http://www.monre.gov.vn/
 agency_id: vn_monre
-updated_at: '2026-07-21T04:37:52+09:00'
+updated_at: '2026-07-21T08:24:49+09:00'

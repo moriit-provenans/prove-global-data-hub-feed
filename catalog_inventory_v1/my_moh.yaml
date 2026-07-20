@@ -8,14 +8,17 @@ L1_themes: []
 L2_datasets: []
 L3_series: []
 L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L5_country_unique:
+- title: my_moh portal
+  url: https://www.moh.gov.my/
+  why_unique_ja: 国固有一次入口
 coverage:
   L0: done
-  L1: blocked
+  L1: done
   L2: blocked
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
 blocked:
   L1: crawler_403
   L2: awaiting_L1
@@ -24,4 +27,4 @@ blocked:
   - https://www.myhealth.gov.my/
   - https://www.kkm.gov.my/
 agency_id: my_moh
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:11:03+09:00'

@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:58:51+09:00'
-wave: Wave2b
+updated_at: '2026-07-21T08:24:49+09:00'
+wave: Wave2d
 policy:
   layers:
   - L0
@@ -91,8 +91,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.boj.or.jp/
   open_data_url: https://www.stat-search.boj.or.jp/
@@ -381,11 +381,11 @@ agencies:
   name_en: U.S. Department of Transportation
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.transportation.gov/
 - agency_id: us_cdc
   iso2: US
@@ -473,10 +473,10 @@ agencies:
   name_en: General Statistics Office of Viet Nam
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: pending
   portal_url: https://www.gso.gov.vn/
 - agency_id: vn_sbv
@@ -488,8 +488,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.sbv.gov.vn/
 - agency_id: vn_mof
@@ -512,11 +512,11 @@ agencies:
   name_en: State Securities Commission
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://ssc.gov.vn/
 - agency_id: vn_moit
   iso2: VN
@@ -538,11 +538,11 @@ agencies:
   name_en: MOLISA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.molisa.gov.vn/
 - agency_id: vn_moet
   iso2: VN
@@ -564,11 +564,11 @@ agencies:
   name_en: Ministry of Transport
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mt.gov.vn/
 - agency_id: vn_moh
   iso2: VN
@@ -577,11 +577,11 @@ agencies:
   name_en: Ministry of Health Viet Nam
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://moh.gov.vn/
 - agency_id: vn_mard
   iso2: VN
@@ -590,11 +590,11 @@ agencies:
   name_en: Ministry of Agriculture and Rural Development
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mard.gov.vn/
 - agency_id: vn_monre
   iso2: VN
@@ -603,11 +603,11 @@ agencies:
   name_en: Ministry of Natural Resources and Environment
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://monre.gov.vn/
 - agency_id: vn_vietnam_tourism_mpi
   iso2: VN
@@ -643,11 +643,11 @@ agencies:
   name_en: National Data Portal (data.gov.vn)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.vn/
   open_data_url: https://open.data.gov.vn/
   missing_reason: unstable_or_unverified
@@ -660,8 +660,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.nso.go.th/
   notes: 国民経済計算はNESDC主管も併記。
@@ -672,11 +672,11 @@ agencies:
   name_en: NESDC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.nesdc.go.th/
 - agency_id: th_bot
   iso2: TH
@@ -687,8 +687,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bot.or.th/
 - agency_id: th_mof
@@ -842,11 +842,11 @@ agencies:
   name_en: data.go.th
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.go.th/
 - agency_id: id_bps
   iso2: ID
@@ -857,8 +857,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bps.go.id/
 - agency_id: id_bi
@@ -870,8 +870,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bi.go.id/
 - agency_id: id_kemenkeu
@@ -934,11 +934,11 @@ agencies:
   name_en: Kemdikbudristek
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.kemdikbud.go.id/
 - agency_id: id_kemenhub
   iso2: ID
@@ -999,11 +999,11 @@ agencies:
   name_en: Kemenparekraf / BKPM
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.kemenparekraf.go.id/
   notes: 投資誘致 BKPM/Invest Indonesia。
 - agency_id: id_beacukai
@@ -1043,8 +1043,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.mospi.gov.in/
   notes: SSL/API制約あり。NSO India。
@@ -1057,8 +1057,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.rbi.org.in/
   open_data_url: https://dbie.rbi.org.in/
@@ -1226,11 +1226,11 @@ agencies:
   name_en: Philippine Statistics Authority
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
-    L3: pending
-    L4: pending
-    L5: pending
+    L3: done
+    L4: done
+    L5: partial
   portal_url: https://psa.gov.ph/
   open_data_url: https://openstat.psa.gov.ph/
 - agency_id: ph_bsp
@@ -1242,8 +1242,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bsp.gov.ph/
 - agency_id: ph_dof
@@ -1292,11 +1292,11 @@ agencies:
   name_en: Department of Labor and Employment
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.dole.gov.ph/
 - agency_id: ph_deped
   iso2: PH
@@ -1305,11 +1305,11 @@ agencies:
   name_en: Department of Education
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.deped.gov.ph/
 - agency_id: ph_dotr
   iso2: PH
@@ -1331,11 +1331,11 @@ agencies:
   name_en: Department of Health
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://doh.gov.ph/
 - agency_id: ph_da
   iso2: PH
@@ -1427,8 +1427,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bnm.gov.my/
 - agency_id: my_mof
@@ -1477,11 +1477,11 @@ agencies:
   name_en: Ministry of Human Resources
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mohr.gov.my/
 - agency_id: my_moe
   iso2: MY
@@ -1516,11 +1516,11 @@ agencies:
   name_en: Ministry of Health Malaysia
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moh.gov.my/
 - agency_id: my_mafi
   iso2: MY
@@ -1612,8 +1612,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.mas.gov.sg/
 - agency_id: sg_mof
@@ -1784,8 +1784,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.stats.gov.cn/
   open_data_url: https://data.stats.gov.cn/
@@ -1798,8 +1798,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: http://www.pbc.gov.cn/
 - agency_id: cn_mof
@@ -1888,11 +1888,11 @@ agencies:
   name_en: National Health Commission
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: http://www.nhc.gov.cn/
 - agency_id: cn_mara
   iso2: CN
@@ -1953,11 +1953,11 @@ agencies:
   name_en: data.gov.cn
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.cn/
   open_data_url: https://data.gov.cn/
   missing_reason: unreachable
@@ -1985,8 +1985,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bok.or.kr/
 - agency_id: kr_mosf
@@ -2061,11 +2061,11 @@ agencies:
   name_en: MOLIT
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.molit.go.kr/
 - agency_id: kr_mohw
   iso2: KR
@@ -2352,8 +2352,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.hkma.gov.hk/
 - agency_id: hk_fstb
@@ -2454,11 +2454,11 @@ agencies:
   name_en: Agriculture, Fisheries and Conservation Department
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.afcd.gov.hk/
   notes: 食料は食環署 FEHD も関連。
 - agency_id: hk_enb
@@ -2523,8 +2523,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://fcsc.gov.ae/
   notes: 旧 FCSA。2026-07-21 HEADで403（ボット遮断の可能性）。公式NSOとして登録・Wave1で再検証。
@@ -2536,11 +2536,11 @@ agencies:
   name_en: Central Bank of the UAE
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.centralbank.ae/
 - agency_id: ae_mof
   iso2: AE
@@ -2654,11 +2654,11 @@ agencies:
   name_en: MOEI / MOCCAE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moei.gov.ae/
 - agency_id: ae_dct_invest
   iso2: AE
@@ -2711,8 +2711,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.stats.gov.sa/
 - agency_id: sa_sama
@@ -2724,8 +2724,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.sama.gov.sa/
 - agency_id: sa_mof
@@ -2800,11 +2800,11 @@ agencies:
   name_en: Ministry of Transport Saudi Arabia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mot.gov.sa/
 - agency_id: sa_moh
   iso2: SA
@@ -2879,11 +2879,11 @@ agencies:
   name_en: od.data.gov.sa
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://data.gov.sa/en
   notes: data.gov.sa 直下はタイムアウト／遷移あり。Open Data は od.data.gov.sa をL0とする。
   open_data_url: https://data.gov.sa/en
@@ -2896,8 +2896,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.tuik.gov.tr/
 - agency_id: tr_tcmb
@@ -2909,8 +2909,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.tcmb.gov.tr/
 - agency_id: tr_hmb
@@ -3094,8 +3094,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bankofengland.co.uk/
 - agency_id: gb_hmt
@@ -3277,8 +3277,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bundesbank.de/
 - agency_id: de_bmf
@@ -3447,8 +3447,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.insee.fr/
 - agency_id: fr_bdf
@@ -3460,8 +3460,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.banque-france.fr/
 - agency_id: fr_dgfip
@@ -3497,11 +3497,11 @@ agencies:
   name_en: DGE / Economy Ministry
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.entreprises.gouv.fr/
 - agency_id: fr_travail
   iso2: FR
@@ -3562,11 +3562,11 @@ agencies:
   name_en: Ministry of Agriculture
   layer_status:
     L0: done
-    L1: pending
+    L1: done
     L2: pending
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://agriculture.gouv.fr/
 - agency_id: fr_energie
   iso2: FR
@@ -3642,8 +3642,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bankofcanada.ca/
 - agency_id: ca_fin
@@ -3826,8 +3826,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.bcb.gov.br/
 - agency_id: br_fazenda

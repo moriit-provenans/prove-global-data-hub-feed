@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-21T04:58:35+09:00",
+  "last_updated": "2026-07-21T08:25:30+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10667,6 +10667,7 @@
         "DE",
         "FR",
         "GB",
+        "ID",
         "JP",
         "KR",
         "MY",
@@ -11396,7 +11397,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024",
+      "available_iso2_nso": [
+        "SG"
+      ]
     },
     {
       "indicator_id": "nso_a.fdi_stock.million_sgd",
@@ -11426,7 +11431,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024",
+      "available_iso2_nso": [
+        "SG"
+      ]
     },
     {
       "indicator_id": "nso_a.population",
@@ -11459,7 +11468,12 @@
           "international_fast",
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2025",
+      "available_iso2_nso": [
+        "BR",
+        "DE"
+      ]
     },
     {
       "indicator_id": "nso_m.avg_weekly_earnings.gbp",
@@ -11489,7 +11503,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
     },
     {
       "indicator_id": "nso_m.cgpi.index",
@@ -11519,7 +11537,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.cpi_hicp.index",
@@ -11549,7 +11571,11 @@
         "tiers": [
           "international_fast"
         ]
-      }
+      },
+      "latest_period_nso": "2025-12",
+      "available_iso2_nso": [
+        "DE"
+      ]
     },
     {
       "indicator_id": "nso_m.housing_starts.units",
@@ -11579,7 +11605,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2025-01",
+      "available_iso2_nso": [
+        "CA"
+      ]
     },
     {
       "indicator_id": "nso_m.manufacturing_sales.thousands_cad",
@@ -11609,7 +11639,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "CA"
+      ]
     },
     {
       "indicator_id": "nso_m.population",
@@ -11639,7 +11673,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "1980-00",
+      "available_iso2_nso": [
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.ppi.index",
@@ -11669,7 +11707,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2022-12",
+      "available_iso2_nso": [
+        "DE"
+      ]
     },
     {
       "indicator_id": "nso_m.psnd_gdp.pct",
@@ -11699,7 +11741,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
     },
     {
       "indicator_id": "nso_m.retail_sales.index",
@@ -11730,7 +11776,12 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB",
+        "JP"
+      ]
     },
     {
       "indicator_id": "nso_m.trade_balance_goods_services.million_usd",
@@ -11760,7 +11811,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.current_account.million_gbp",
@@ -11790,7 +11845,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
     },
     {
       "indicator_id": "nso_q.gdp_all_industry.million_usd",
@@ -11820,7 +11879,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.gdp_real.level",
@@ -11850,7 +11913,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "MY"
+      ]
     },
     {
       "indicator_id": "nso_q.gross_saving.billion_usd",
@@ -11880,7 +11947,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.household_net_worth.million_sgd",
@@ -11910,7 +11981,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "SG"
+      ]
     },
     {
       "indicator_id": "nso_q.pce.billion_usd",
@@ -11940,7 +12015,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.personal_income.billion_usd",
@@ -11970,7 +12049,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q2",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.va_manufacturing_share_gdp.pct",
@@ -12000,7 +12083,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.va_per_worker.yoy_pct",
@@ -12029,6 +12116,57 @@
         "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
         "tiers": [
           "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "SG"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.policy_rate.pct",
+      "name_ja": "nso_m.policy_rate.pct",
+      "name_en": "nso_m.policy_rate.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
         ]
       }
     }

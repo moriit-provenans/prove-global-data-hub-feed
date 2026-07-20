@@ -1,5 +1,5 @@
 iso2: IN
-source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2c: L3+L4 (3/3).'
 L0:
   portal_url: https://www.mospi.gov.in/
   verified: true
@@ -16,8 +16,27 @@ L2_datasets:
   update_freq: n/a
   license: MoSPI terms
   theme_id: mospi
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: mospi_cpi_index
+  title: CPI index OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/INDCPIALLMINMEI
+  source: in_mospi
+  obs_count: 123
+- series_id: mospi_cpi_yoy
+  title: CPI YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/CPALTT01INM659N
+  source: in_mospi
+  obs_count: 123
+- series_id: mospi_gdp_yoy
+  title: GDP YoY OECD MEI via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/INDGDPRQPSMEI
+  source: in_mospi
+  obs_count: 45
+L4_notes: 'Wave2c L4 2026-07-21: harvested=3/3; MOSPI primary pending; Wave2c FRED
+  OECD bridge (international_fast)'
 L5_country_unique:
 - title: MoSPI portal
   url: https://www.mospi.gov.in/
@@ -32,8 +51,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: in_mospi
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

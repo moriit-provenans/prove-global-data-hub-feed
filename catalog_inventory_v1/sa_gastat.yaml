@@ -1,5 +1,6 @@
 iso2: SA
-source_note_ja: General Authority for Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'General Authority for Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+  Wave2c: L3+L4 (2/2).'
 L0:
   portal_url: https://www.stats.gov.sa/
   verified: true
@@ -27,8 +28,21 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: en
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: gastat_cpi_index
+  title: CPI index OECD via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/SAUCPALTT01IXNBM
+  source: sa_gastat
+  obs_count: 107
+- series_id: gastat_cpi_yoy
+  title: CPI YoY OECD via FRED
+  status: harvested
+  url: https://fred.stlouisfed.org/series/SAUCPALTT01GYM
+  source: sa_gastat
+  obs_count: 123
+L4_notes: 'Wave2c L4 2026-07-21: harvested=2/2; GASTAT primary pending; Wave2c FRED
+  OECD bridge (international_fast)'
 L5_country_unique:
 - title: 'General Authority for Statistics: GASTAT'
   url: https://www.stats.gov.sa/
@@ -40,8 +54,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: sa_gastat
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

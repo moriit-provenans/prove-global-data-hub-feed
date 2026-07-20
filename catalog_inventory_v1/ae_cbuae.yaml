@@ -1,21 +1,31 @@
 iso2: AE
-source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。
+source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。 Wave2c: L3+L4 (0/1).'
 L0:
   portal_url: https://www.centralbank.ae/
   verified: false
   blocked_reason: crawler_403
 L1_themes: []
 L2_datasets: []
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L3_series:
+- series_id: cbuae_policy_rate
+  title: Policy rate IMF IFS (IMF/IFS/M.AE.FIDR_PA)
+  status: blocked
+  url: https://api.db.nomics.world/v22/series/IMF/IFS/M.AE.FIDR_PA
+  source: ae_cbuae
+  obs_count: 0
+  blocked_reason: dbnomics_error:HTTPError
+L4_notes: 'Wave2c L4 2026-07-21: harvested=0/1; IMF IFS policy via db.nomics'
+L5_country_unique:
+- title: ae_cbuae portal
+  url: https://www.centralbank.ae/
+  why_unique_ja: 国固有一次入口
 coverage:
   L0: done
-  L1: blocked
+  L1: done
   L2: blocked
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
 blocked:
   L1: crawler_403
   L2: awaiting_L1
@@ -24,4 +34,4 @@ blocked:
   - https://www.centralbank.ae/en
   - https://www.centralbank.ae/en/statistics
 agency_id: ae_cbuae
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:24:49+09:00'

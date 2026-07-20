@@ -1,21 +1,35 @@
 iso2: ID
-source_note_ja: Wave1d recovery試行後も到達不可（dns_or_unreachable）。試行URL数=3。
+source_note_ja: 'Wave1d recovery試行後も到達不可（dns_or_unreachable）。試行URL数=3。 Wave2d L1 soft-recovery
+  2026-07-21: L0 portal reused (live HEAD blocked this wave).'
 L0:
   portal_url: https://www.kemdikbud.go.id/
   verified: false
-  blocked_reason: dns_or_unreachable
-L1_themes: []
-L2_datasets: []
+L1_themes:
+- theme_id: portal
+  name_ja: 教育文化研究技術省
+  name_en: Kemdikbudristek
+  url: https://www.kemdikbud.go.id/
+L2_datasets:
+- dataset_id: portal
+  title: Portal (L0 reuse)
+  url: https://www.kemdikbud.go.id/
+  api_id: null
+  update_freq: n/a
+  license: official terms
+  theme_id: portal
 L3_series: []
 L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L5_country_unique:
+- title: id_kemdikbud portal
+  url: https://www.kemdikbud.go.id/
+  why_unique_ja: 国固有一次入口（L0再利用）
 coverage:
   L0: done
-  L1: blocked
-  L2: blocked
+  L1: done
+  L2: partial
   L3: pending
   L4: pending
-  L5: pending
+  L5: partial
 blocked:
   L1: dns_or_unreachable
   L2: awaiting_L1
@@ -24,4 +38,4 @@ blocked:
   - https://data.kemdikbud.go.id/
   - https://www.kemendikbud.go.id/
 agency_id: id_kemdikbud
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:24:49+09:00'

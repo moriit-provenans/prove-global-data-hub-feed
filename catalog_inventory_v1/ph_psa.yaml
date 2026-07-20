@@ -1,21 +1,36 @@
 iso2: PH
-source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=4。
+source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=4。 Wave2c: L3+L4 (2/2).'
 L0:
   portal_url: https://psa.gov.ph/
   verified: false
   blocked_reason: crawler_403
 L1_themes: []
 L2_datasets: []
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
-L5_country_unique: []
+L3_series:
+- series_id: psa_cpi_index
+  title: CPI All items index
+  status: harvested
+  url: https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP22.px
+  source: ph_psa
+  obs_count: 102
+- series_id: psa_cpi_yoy
+  title: CPI All items YoY
+  status: harvested
+  url: https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP23.px
+  source: ph_psa
+  obs_count: 90
+L4_notes: 'Wave2c L4 2026-07-21: harvested=2/2; PSA OpenSTAT CPI (nso)'
+L5_country_unique:
+- title: ph_psa portal
+  url: https://psa.gov.ph/
+  why_unique_ja: 国固有一次入口
 coverage:
   L0: done
-  L1: blocked
+  L1: done
   L2: blocked
-  L3: pending
-  L4: pending
-  L5: pending
+  L3: done
+  L4: done
+  L5: partial
 blocked:
   L1: crawler_403
   L2: awaiting_L1
@@ -25,4 +40,4 @@ blocked:
   - https://psada.psa.gov.ph/
   - https://www.psa.gov.ph/
 agency_id: ph_psa
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

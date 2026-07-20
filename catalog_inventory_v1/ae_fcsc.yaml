@@ -1,5 +1,5 @@
 iso2: AE
-source_note_ja: ae_fcsc L1–L2（Wave1d recovery 検証済代替URLのみ）。
+source_note_ja: 'ae_fcsc L1–L2（Wave1d recovery 検証済代替URLのみ）。 Wave2c: L3+L4 (2/2).'
 L0:
   portal_url: https://bayanat.ae/
   verified: true
@@ -27,8 +27,20 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: uae_gov
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: ae_cpi_index
+  title: AE CPI index IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.AE.PCPI_IX
+  source: ae_fcsc
+  obs_count: 125
+- series_id: ae_cpi_yoy
+  title: AE CPI YoY IMF
+  status: harvested
+  url: https://api.db.nomics.world/v22/series/IMF/CPI/M.AE.PCPI_PC_CP_A_PT
+  source: ae_fcsc
+  obs_count: 125
+L4_notes: 'Wave2c L4 2026-07-21: harvested=2/2; IMF CPI via db.nomics (international_fast)'
 L5_country_unique:
 - title: 'ae_fcsc: Bayanat'
   url: https://bayanat.ae/
@@ -40,8 +52,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: ae_fcsc
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'

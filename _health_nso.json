@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-21T04:58:35+09:00",
+  "generated_at": "2026-07-21T08:25:30+09:00",
   "wave": "REQ-SMITH-20260720-041 Wave2b (gaps closed as far as reachable)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 23756,
+  "nso_pilot_rows": 28967,
   "source_tier_counts": {
-    "international_fast": 8803,
-    "nso": 14953
+    "international_fast": 13702,
+    "nso": 15265
   },
   "macro_q_gdp_real_yoy_countries": [
     "BR",
@@ -47,8 +47,8 @@
     },
     "DE": {
       "period": "2026-Q1",
-      "tier": "international_fast",
-      "value": 0.3432485328
+      "tier": "nso",
+      "value": 0.3432
     },
     "FR": {
       "period": "2026-Q1",
@@ -122,8 +122,8 @@
     },
     "US": {
       "period": "2026-Q1",
-      "tier": "international_fast",
-      "value": 2.68474334142634
+      "tier": "nso",
+      "value": 2.1
     },
     "VN": {
       "period": "2026-Q1",
@@ -279,6 +279,7 @@
         "best_tier": "nso",
         "latest_period": "2025-Q4",
         "tiers_present": [
+          "international_fast",
           "nso"
         ],
         "status": "ok",
@@ -541,6 +542,7 @@
         "best_tier": "nso",
         "latest_period": "2024-12",
         "tiers_present": [
+          "international_fast",
           "nso"
         ],
         "status": "ok",
@@ -1096,11 +1098,13 @@
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "ID",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "BPS APIキー未登録"
+        "best_tier": "international_fast",
+        "latest_period": "2015-Q3",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1947,16 +1951,16 @@
     ],
     "summary": {
       "total_cells": 147,
-      "filled": 111,
+      "filled": 112,
       "nso_primary": 58,
-      "international_fast_bridge": 53,
+      "international_fast_bridge": 54,
       "missing": 0,
-      "blocked": 8,
+      "blocked": 7,
       "na_optional": 28,
-      "fill_rate_pct": 75.5,
+      "fill_rate_pct": 76.2,
       "nso_rate_pct": 39.5,
       "wave2b_denominator": 119,
-      "wave2b_fill_rate_pct": 93.3,
+      "wave2b_fill_rate_pct": 94.1,
       "nso_annual_growth_countries": [
         "HK",
         "MY",
@@ -1968,8 +1972,8 @@
     }
   },
   "wb_fallback_share_note_ja": "年次macro_annualはWB維持＋NSO年次(US/HK/MY/PH/SG)を並列。月次/四半期はNSO+bridge。",
-  "quarterly_now_rows": 2289,
-  "monthly_nso_rows": 16651,
+  "quarterly_now_rows": 2296,
+  "monthly_nso_rows": 18905,
   "next": [
     "AE四半期GDP一次（FCSC/Bayanat経路）",
     "KOSTAT/BPSキーで KR/ID 一次化",

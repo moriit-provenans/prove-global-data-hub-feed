@@ -1,5 +1,6 @@
 iso2: DE
-source_note_ja: Deutsche Bundesbank L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Deutsche Bundesbank L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave2c:
+  L3+L4 (1/1).'
 L0:
   portal_url: https://www.bundesbank.de/
   verified: true
@@ -27,8 +28,15 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: stats
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: buba_call_rate
+  title: Call/interbank rate via FRED IRSTCI01DEM156N
+  status: harvested
+  url: https://fred.stlouisfed.org/series/IRSTCI01DEM156N
+  source: de_buba
+  obs_count: 138
+L4_notes: 'Wave2c L4 2026-07-21: harvested=1/1; Central bank rate via FRED IRSTCI
+  (international_fast redistribution)'
 L5_country_unique:
 - title: 'Deutsche Bundesbank: Bundesbank'
   url: https://www.bundesbank.de/
@@ -40,8 +48,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: de_buba
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:16:52+09:00'
