@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T03:23:06+09:00",
+  "generated_at": "2026-07-21T03:23:44+09:00",
   "wave": "REQ-SMITH-20260720-041 Wave2b (in progress)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
   "nso_pilot_rows": 14293,
@@ -373,8 +373,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null,
+        "status": "blocked",
+        "blocked_reason": "FRED/OECD MEIにUAE四半期GDP系列なし（年次のみ）",
         "wb_annual_latest": "2024",
         "wb_parallel": true
       },
@@ -567,8 +567,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "GSO/NSDP不通・MEI月次CPI系列なし"
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -637,8 +637,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "FRED/OECD MEIにUAE月次CPI系列なし（年次WBのみ）"
       },
       {
         "indicator_id": "nso_m.cpi.index",
@@ -816,8 +816,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "GSO/NSDP不通・MEI月次CPI系列なし"
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -886,8 +886,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "FRED/OECD MEIにUAE月次CPI系列なし（年次WBのみ）"
       },
       {
         "indicator_id": "nso_m.cpi.yoy_pct",
@@ -1029,8 +1029,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "NSO SDMX/HTML ゲート（dws.nso.go.th）到達不可"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1051,8 +1051,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "NBS都市失業はUUID/Playwright要"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1061,8 +1061,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "GSO一次不通"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1071,8 +1071,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "BPS APIキー未登録"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1081,8 +1081,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "MOSPI SSL障害"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1115,8 +1115,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "C&SD失業表は別波で接続予定"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1125,8 +1125,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "公開APIで月次失業系列未確認"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1205,8 +1205,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "FRED LRHUTTTTBRM156S なし"
       },
       {
         "indicator_id": "nso_m.industrial_production.index",
@@ -1912,8 +1912,8 @@
       "filled": 104,
       "nso_primary": 38,
       "international_fast_bridge": 66,
-      "missing": 14,
-      "blocked": 0,
+      "missing": 1,
+      "blocked": 13,
       "na_optional": 29,
       "fill_rate_pct": 70.7,
       "nso_rate_pct": 25.9,
