@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0-nso-wave",
   "feed_id": "market_matrix",
-  "last_updated": "2026-07-20T21:14:44+09:00",
+  "last_updated": "2026-07-20T21:50:35+09:00",
   "source": {
     "label": "Atlas DataLake market-grid（自動抽出＋事実品質ゲート）",
     "disclaimer_ja": "業種特化の market-size のみ。同一国で金額が複数業種に転用されている数値は除外。"
@@ -86,7 +86,7 @@
       "module_id": "B1",
       "title_ja": "業種×国 市場規模マトリクス",
       "title_en": "Industry x country market size matrix",
-      "last_updated": "2026-07-20T21:14:44+09:00",
+      "last_updated": "2026-07-20T21:50:35+09:00",
       "source": {
         "label": "Atlas DataLake market-grid"
       },
