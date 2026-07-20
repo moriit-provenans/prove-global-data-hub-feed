@@ -276,8 +276,9 @@ agencies:
     L4: pending
     L5: pending
   portal_url: https://www.census.gov/
-  open_data_url: https://data.census.gov/
+  open_data_url: https://www.census.gov/data.html
   notes: BEA/BLSもNSO級。Wave1で分割棚卸し。
+  api_docs_url: https://www.census.gov/data/developers/data-sets.html
 - agency_id: us_bea
   iso2: US
   agency_class: other_official
@@ -318,6 +319,8 @@ agencies:
     L4: pending
     L5: pending
   portal_url: https://home.treasury.gov/
+  open_data_url: https://fiscaldata.treasury.gov/
+  api_docs_url: https://fiscaldata.treasury.gov/api-documentation/
 - agency_id: us_sec
   iso2: US
   agency_class: financial_regulator
@@ -636,16 +639,17 @@ agencies:
 - agency_id: vn_data_gov
   iso2: VN
   agency_class: open_data_portal
-  name_ja: ベトナムオープンデータ
-  name_en: Vietnam Open Data
+  name_ja: 国家データポータル
+  name_en: National Data Portal (data.gov.vn)
   layer_status:
-    L0: blocked
+    L0: done
     L1: pending
     L2: pending
     L3: pending
     L4: pending
     L5: pending
-  missing_reason: 統一 data.gov.vn 相当の安定ポータル未確認（Wave1でGSO/各省オープンデータを再調査）
+  portal_url: https://data.gov.vn/
+  open_data_url: https://open.data.gov.vn/
 - agency_id: th_nso
   iso2: TH
   agency_class: nso
@@ -1014,11 +1018,11 @@ agencies:
     L4: pending
     L5: pending
   portal_url: https://www.beacukai.go.id/
-- agency_id: id_data_go
+- agency_id: id_satudata
   iso2: ID
   agency_class: open_data_portal
-  name_ja: data.go.id
-  name_en: Satu Data Indonesia / data.go.id
+  name_ja: Satu Data Indonesia
+  name_en: Satu Data Indonesia
   layer_status:
     L0: done
     L1: pending
@@ -1026,7 +1030,8 @@ agencies:
     L3: pending
     L4: pending
     L5: pending
-  portal_url: https://data.go.id/
+  portal_url: https://satudata.go.id/
+  open_data_url: https://satudata.go.id/
 - agency_id: in_mospi
   iso2: IN
   agency_class: nso
@@ -1581,6 +1586,7 @@ agencies:
     L4: pending
     L5: pending
   portal_url: https://www.data.gov.my/
+  open_data_url: https://www.data.gov.my/
 - agency_id: sg_singstat
   iso2: SG
   agency_class: nso
@@ -1941,16 +1947,17 @@ agencies:
 - agency_id: cn_data_gov
   iso2: CN
   agency_class: open_data_portal
-  name_ja: 国家データ局／開放平台
-  name_en: National Data Administration portals
+  name_ja: 国家公共データ開放平台
+  name_en: data.gov.cn
   layer_status:
-    L0: blocked
+    L0: done
     L1: pending
     L2: pending
     L3: pending
     L4: pending
     L5: pending
-  missing_reason: 統一英語オープンデータポータルが流動的。data.stats.gov.cn をNSO側で優先。Wave1で国家データ局URL確定。
+  portal_url: https://data.gov.cn/
+  open_data_url: https://data.gov.cn/
 - agency_id: kr_kostat
   iso2: KR
   agency_class: nso
@@ -2518,6 +2525,7 @@ agencies:
     L5: pending
   portal_url: https://fcsc.gov.ae/
   notes: 旧 FCSA。2026-07-21 HEADで403（ボット遮断の可能性）。公式NSOとして登録・Wave1で再検証。
+  open_data_url: https://uaestat.fcsc.gov.ae/en
 - agency_id: ae_cbuae
   iso2: AE
   agency_class: central_bank
@@ -2689,7 +2697,8 @@ agencies:
     L3: pending
     L4: pending
     L5: pending
-  portal_url: https://bayanat.ae/
+  portal_url: https://bayanat.ae/en
+  open_data_url: https://bayanat.ae/en
 - agency_id: sa_gastat
   iso2: SA
   agency_class: nso
@@ -2872,8 +2881,9 @@ agencies:
     L3: pending
     L4: pending
     L5: pending
-  portal_url: https://od.data.gov.sa/
+  portal_url: https://data.gov.sa/en
   notes: data.gov.sa 直下はタイムアウト／遷移あり。Open Data は od.data.gov.sa をL0とする。
+  open_data_url: https://data.gov.sa/en
 - agency_id: tr_tuik
   iso2: TR
   agency_class: nso
@@ -3684,11 +3694,11 @@ agencies:
     L4: pending
     L5: pending
   portal_url: https://www.canada.ca/en/employment-social-development.html
-- agency_id: ca_esdc_edu
+- agency_id: ca_education
   iso2: CA
   agency_class: education_science
-  name_ja: イノベーション科学経済開発省（科学）／州教育
-  name_en: ISED Science / provincial education
+  name_ja: 教育（連邦ポータル）
+  name_en: Education (Canada.ca)
   layer_status:
     L0: done
     L1: pending
@@ -3696,7 +3706,7 @@ agencies:
     L3: pending
     L4: pending
     L5: pending
-  portal_url: https://ised-isde.canada.ca/
+  portal_url: https://www.canada.ca/en/services/culture/education.html
   notes: 初等中等教育は州管轄。連邦は科学・高等教育関連。
 - agency_id: ca_tc
   iso2: CA
