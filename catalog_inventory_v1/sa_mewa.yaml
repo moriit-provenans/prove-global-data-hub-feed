@@ -1,0 +1,33 @@
+iso2: SA
+source_note_ja: MEWA L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.mewa.gov.sa/
+  verified: true
+L1_themes:
+- theme_id: mewa
+  name_ja: MEWA
+  name_en: MEWA
+  url: https://www.mewa.gov.sa/
+L2_datasets:
+- dataset_id: sa_mewa_mewa
+  title: MEWA
+  url: https://www.mewa.gov.sa/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mewa
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MEWA: MEWA'
+  url: https://www.mewa.gov.sa/
+  why_unique_ja: SA固有の公的機関データ入口（agriculture_food）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sa_mewa
+updated_at: '2026-07-21T04:26:59+09:00'

@@ -1,5 +1,6 @@
 iso2: US
-source_note_ja: Federal Reserve Board data hub（FREDは本セッションでタイムアウトのため未登録・blocked候補）。
+source_note_ja: 'Federal Reserve Board data hub（FREDは本セッションでタイムアウトのため未登録・blocked候補）。
+  Wave1c: FRED series ID stubs 追加。'
 L0:
   portal_url: https://www.federalreserve.gov/
   verified: true
@@ -8,6 +9,10 @@ L1_themes:
   name_ja: Fed Data
   name_en: Board data
   url: https://www.federalreserve.gov/data.htm
+- theme_id: fred
+  name_ja: FRED
+  name_en: FRED
+  url: https://fred.stlouisfed.org/
 L2_datasets:
 - dataset_id: fed_data
   title: Federal Reserve Data
@@ -16,7 +21,49 @@ L2_datasets:
   update_freq: varies
   license: FRB terms
   theme_id: fed_data
-L3_series: []
+- dataset_id: fred_home
+  title: FRED
+  url: https://fred.stlouisfed.org/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: fred
+L3_series:
+- series_id: GDP
+  title: Gross Domestic Product
+  status: stub
+  url: https://fred.stlouisfed.org/series/GDP
+  source: FRED
+- series_id: UNRATE
+  title: Unemployment Rate
+  status: stub
+  url: https://fred.stlouisfed.org/series/UNRATE
+  source: FRED
+- series_id: CPIAUCSL
+  title: 'Consumer Price Index for All Urban Consumers: All Items'
+  status: stub
+  url: https://fred.stlouisfed.org/series/CPIAUCSL
+  source: FRED
+- series_id: FEDFUNDS
+  title: Federal Funds Effective Rate
+  status: stub
+  url: https://fred.stlouisfed.org/series/FEDFUNDS
+  source: FRED
+- series_id: DGS10
+  title: Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity
+  status: stub
+  url: https://fred.stlouisfed.org/series/DGS10
+  source: FRED
+- series_id: PAYEMS
+  title: All Employees, Total Nonfarm
+  status: stub
+  url: https://fred.stlouisfed.org/series/PAYEMS
+  source: FRED
+- series_id: INDPRO
+  title: 'Industrial Production: Total Index'
+  status: stub
+  url: https://fred.stlouisfed.org/series/INDPRO
+  source: FRED
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: Federal Reserve Data hub
@@ -28,12 +75,15 @@ L5_country_unique:
 - title: FRB data.htm
   url: https://www.federalreserve.gov/data.htm
   why_unique_ja: 国際比較コア外のFRB配信入口
+- title: FRED (St. Louis Fed)
+  url: https://fred.stlouisfed.org/
+  why_unique_ja: 公開マクロ系列の米側ハブ（Fed関連）
 coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: partial
   L5: partial
 agency_id: us_fed
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:26:59+09:00'

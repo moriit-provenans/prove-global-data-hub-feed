@@ -1,0 +1,33 @@
+iso2: GB
+source_note_ja: Department for Work and Pensions L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.gov.uk/government/organisations/department-for-work-pensions
+  verified: true
+L1_themes:
+- theme_id: dwp
+  name_ja: DWP
+  name_en: DWP
+  url: https://www.gov.uk/government/organisations/department-for-work-pensions
+L2_datasets:
+- dataset_id: gb_dwp_dwp
+  title: DWP
+  url: https://www.gov.uk/government/organisations/department-for-work-pensions
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: dwp
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Department for Work and Pensions: DWP'
+  url: https://www.gov.uk/government/organisations/department-for-work-pensions
+  why_unique_ja: GB固有の公的機関データ入口（labour）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: gb_dwp
+updated_at: '2026-07-21T04:26:59+09:00'

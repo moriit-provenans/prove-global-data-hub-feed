@@ -1,0 +1,33 @@
+iso2: DE
+source_note_ja: BMDV L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.bmdv.bund.de/
+  verified: true
+L1_themes:
+- theme_id: bmdv
+  name_ja: BMDV
+  name_en: BMDV
+  url: https://www.bmdv.bund.de/
+L2_datasets:
+- dataset_id: de_bmdv_bmdv
+  title: BMDV
+  url: https://www.bmdv.bund.de/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bmdv
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'BMDV: BMDV'
+  url: https://www.bmdv.bund.de/
+  why_unique_ja: DE固有の公的機関データ入口（land_construction_transport）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: de_bmdv
+updated_at: '2026-07-21T04:26:59+09:00'

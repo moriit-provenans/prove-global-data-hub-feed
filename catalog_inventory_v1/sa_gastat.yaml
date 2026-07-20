@@ -1,0 +1,47 @@
+iso2: SA
+source_note_ja: General Authority for Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.stats.gov.sa/
+  verified: true
+L1_themes:
+- theme_id: gastat
+  name_ja: GASTAT
+  name_en: GASTAT
+  url: https://www.stats.gov.sa/
+- theme_id: en
+  name_ja: GASTAT EN
+  name_en: GASTAT EN
+  url: https://www.stats.gov.sa/en
+L2_datasets:
+- dataset_id: sa_gastat_gastat
+  title: GASTAT
+  url: https://www.stats.gov.sa/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: gastat
+- dataset_id: sa_gastat_en
+  title: GASTAT EN
+  url: https://www.stats.gov.sa/en
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: en
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'General Authority for Statistics: GASTAT'
+  url: https://www.stats.gov.sa/
+  why_unique_ja: SA固有の公的機関データ入口（nso）
+- title: 'General Authority for Statistics: GASTAT EN'
+  url: https://www.stats.gov.sa/en
+  why_unique_ja: SA固有の公的機関データ入口（nso）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: sa_gastat
+updated_at: '2026-07-21T04:26:59+09:00'

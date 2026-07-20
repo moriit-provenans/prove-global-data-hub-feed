@@ -1,0 +1,33 @@
+iso2: CA
+source_note_ja: Department of Finance Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.canada.ca/en/department-finance.html
+  verified: true
+L1_themes:
+- theme_id: fin
+  name_ja: Department of Finance
+  name_en: Finance
+  url: https://www.canada.ca/en/department-finance.html
+L2_datasets:
+- dataset_id: ca_fin_fin
+  title: Finance
+  url: https://www.canada.ca/en/department-finance.html
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: fin
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Department of Finance Canada: Finance'
+  url: https://www.canada.ca/en/department-finance.html
+  why_unique_ja: CA固有の公的機関データ入口（finance_ministry）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ca_fin
+updated_at: '2026-07-21T04:26:59+09:00'

@@ -1,0 +1,33 @@
+iso2: AE
+source_note_ja: Securities and Commodities Authority L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.sca.gov.ae/
+  verified: true
+L1_themes:
+- theme_id: sca
+  name_ja: SCA
+  name_en: SCA
+  url: https://www.sca.gov.ae/
+L2_datasets:
+- dataset_id: ae_sca_sca
+  title: SCA
+  url: https://www.sca.gov.ae/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: sca
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Securities and Commodities Authority: SCA'
+  url: https://www.sca.gov.ae/
+  why_unique_ja: AE固有の公的機関データ入口（financial_regulator）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: ae_sca
+updated_at: '2026-07-21T04:26:59+09:00'

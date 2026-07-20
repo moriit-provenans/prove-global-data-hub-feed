@@ -1,0 +1,47 @@
+iso2: GB
+source_note_ja: Bank of England L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.bankofengland.co.uk/
+  verified: true
+L1_themes:
+- theme_id: boe
+  name_ja: Bank of England
+  name_en: BoE
+  url: https://www.bankofengland.co.uk/
+- theme_id: stats
+  name_ja: BoE statistics
+  name_en: Statistics
+  url: https://www.bankofengland.co.uk/statistics
+L2_datasets:
+- dataset_id: gb_boe_boe
+  title: BoE
+  url: https://www.bankofengland.co.uk/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: boe
+- dataset_id: gb_boe_stats
+  title: Statistics
+  url: https://www.bankofengland.co.uk/statistics
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Bank of England: BoE'
+  url: https://www.bankofengland.co.uk/
+  why_unique_ja: GB固有の公的機関データ入口（central_bank）
+- title: 'Bank of England: Statistics'
+  url: https://www.bankofengland.co.uk/statistics
+  why_unique_ja: GB固有の公的機関データ入口（central_bank）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: gb_boe
+updated_at: '2026-07-21T04:26:59+09:00'

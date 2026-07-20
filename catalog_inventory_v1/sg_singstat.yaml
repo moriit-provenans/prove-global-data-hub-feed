@@ -1,5 +1,6 @@
 iso2: SG
-source_note_ja: SingStatポータル＋Table Builderのみ登録（find-data deep pathは2026-07-21時点で404）。
+source_note_ja: 'SingStatポータル＋Table Builderのみ登録（find-data deep pathは2026-07-21時点で404）。
+  Wave1c: SingStat Table Builder 公開表ID stubs。観測値は未取得。'
 L0:
   portal_url: https://www.singstat.gov.sg/
   verified: true
@@ -27,7 +28,37 @@ L2_datasets:
   update_freq: continuous
   license: SingStat terms
   theme_id: tablebuilder
-L3_series: []
+L3_series:
+- series_id: M015671
+  title: Gross Domestic Product At Current Market Prices
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M015711
+  title: Gross Domestic Product In Chained (2015) Dollars
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M212881
+  title: Consumer Price Index
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M182581
+  title: Labour Force
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M083741
+  title: Merchandise Imports And Exports
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
+- series_id: M015821
+  title: Gross Domestic Product By Industry
+  status: stub
+  url: https://tablebuilder.singstat.gov.sg/
+  source: SingStat
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: SingStat Table Builder
@@ -43,8 +74,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: partial
   L5: partial
 agency_id: sg_singstat
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:26:59+09:00'

@@ -1,0 +1,33 @@
+iso2: BR
+source_note_ja: dados.gov.br L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://dados.gov.br/
+  verified: true
+L1_themes:
+- theme_id: od
+  name_ja: dados.gov.br
+  name_en: Open data
+  url: https://dados.gov.br/
+L2_datasets:
+- dataset_id: br_dados_gov_od
+  title: Open data
+  url: https://dados.gov.br/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: od
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'dados.gov.br: Open data'
+  url: https://dados.gov.br/
+  why_unique_ja: BR固有の公的機関データ入口（open_data_portal）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: br_dados_gov
+updated_at: '2026-07-21T04:26:59+09:00'

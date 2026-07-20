@@ -1,0 +1,33 @@
+iso2: DE
+source_note_ja: BMWK / Germany Trade & Invest L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.gtai.de/
+  verified: true
+L1_themes:
+- theme_id: gtai
+  name_ja: GTAI
+  name_en: GTAI
+  url: https://www.gtai.de/
+L2_datasets:
+- dataset_id: de_bmw_invest_gtai
+  title: GTAI
+  url: https://www.gtai.de/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: gtai
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'BMWK / Germany Trade & Invest: GTAI'
+  url: https://www.gtai.de/
+  why_unique_ja: DE固有の公的機関データ入口（tourism_investment_promotion）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: de_bmw_invest
+updated_at: '2026-07-21T04:26:59+09:00'

@@ -1,0 +1,47 @@
+iso2: FR
+source_note_ja: Banque de France L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.banque-france.fr/
+  verified: true
+L1_themes:
+- theme_id: bdf
+  name_ja: Banque de France
+  name_en: BdF
+  url: https://www.banque-france.fr/
+- theme_id: stats
+  name_ja: BdF statistiques
+  name_en: Statistics
+  url: https://www.banque-france.fr/statistiques
+L2_datasets:
+- dataset_id: fr_bdf_bdf
+  title: BdF
+  url: https://www.banque-france.fr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bdf
+- dataset_id: fr_bdf_stats
+  title: Statistics
+  url: https://www.banque-france.fr/statistiques
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Banque de France: BdF'
+  url: https://www.banque-france.fr/
+  why_unique_ja: FR固有の公的機関データ入口（central_bank）
+- title: 'Banque de France: Statistics'
+  url: https://www.banque-france.fr/statistiques
+  why_unique_ja: FR固有の公的機関データ入口（central_bank）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: fr_bdf
+updated_at: '2026-07-21T04:26:59+09:00'

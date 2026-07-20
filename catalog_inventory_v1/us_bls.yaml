@@ -1,5 +1,5 @@
 iso2: US
-source_note_ja: BLS CPIポータルはクローラ403のため労働統計トップをL0/L1に使用（notes）。CPI深URLは人間ブラウザで要再確認。
+source_note_ja: 'Wave1c: BLS 公式 series ID stubs（CPI/CPS/CES/LPC/PPI）。観測値は未取得。'
 L0:
   portal_url: https://www.bls.gov/
   verified: true
@@ -8,15 +8,78 @@ L1_themes:
   name_ja: BLS Home
   name_en: BLS
   url: https://www.bls.gov/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.bls.gov/cpi/
+- theme_id: cps
+  name_ja: CPS / unemployment
+  name_en: CPS
+  url: https://www.bls.gov/cps/
+- theme_id: ces
+  name_ja: CES employment
+  name_en: CES
+  url: https://www.bls.gov/ces/
 L2_datasets:
 - dataset_id: bls_home
   title: BLS portal
   url: https://www.bls.gov/
   api_id: null
-  update_freq: n/a
-  license: BLS terms
+  update_freq: varies
+  license: official terms
   theme_id: bls_home
-L3_series: []
+- dataset_id: bls_cpi
+  title: CPI
+  url: https://www.bls.gov/cpi/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: cpi
+- dataset_id: bls_cps
+  title: CPS
+  url: https://www.bls.gov/cps/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: cps
+- dataset_id: bls_ces
+  title: CES
+  url: https://www.bls.gov/ces/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ces
+L3_series:
+- series_id: CUUR0000SA0
+  title: CPI-U All items (U.S. city average)
+  status: stub
+  url: https://www.bls.gov/cpi/
+  source: BLS
+- series_id: LNS14000000
+  title: Unemployment Rate (Seasonally Adjusted)
+  status: stub
+  url: https://www.bls.gov/cps/
+  source: BLS
+- series_id: CES0000000001
+  title: All employees, total nonfarm
+  status: stub
+  url: https://www.bls.gov/ces/
+  source: BLS
+- series_id: CES0500000003
+  title: Average hourly earnings of all employees, total private
+  status: stub
+  url: https://www.bls.gov/ces/
+  source: BLS
+- series_id: PRS85006092
+  title: Labor productivity (output per hour) — nonfarm business
+  status: stub
+  url: https://www.bls.gov/lpc/
+  source: BLS
+- series_id: WPUFD4
+  title: PPI Final demand
+  status: stub
+  url: https://www.bls.gov/ppi/
+  source: BLS
 L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
 L5_country_unique:
 - title: BLS official portal
@@ -26,8 +89,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
+  L3: partial
   L4: pending
   L5: partial
 agency_id: us_bls
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:26:59+09:00'

@@ -1,6 +1,6 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:22:46+09:00'
+updated_at: '2026-07-21T04:26:59+09:00'
 wave: Wave1
 policy:
   layers:
@@ -61,7 +61,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: partial
     L5: partial
   portal_url: https://www.e-stat.go.jp/
@@ -286,11 +286,11 @@ agencies:
   name_en: Bureau of Economic Analysis
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
-    L3: pending
+    L1: done
+    L2: partial
+    L3: partial
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bea.gov/
 - agency_id: us_fed
   iso2: US
@@ -301,7 +301,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: partial
     L5: partial
   portal_url: https://www.federalreserve.gov/
@@ -356,7 +356,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.bls.gov/
@@ -1598,7 +1598,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: partial
     L5: partial
   portal_url: https://www.singstat.gov.sg/
@@ -2549,11 +2549,11 @@ agencies:
   name_en: Ministry of Finance UAE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://mof.gov.ae/
 - agency_id: ae_sca
   iso2: AE
@@ -2562,11 +2562,11 @@ agencies:
   name_en: Securities and Commodities Authority
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sca.gov.ae/
 - agency_id: ae_moei
   iso2: AE
@@ -2601,11 +2601,11 @@ agencies:
   name_en: Ministry of Education UAE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moe.gov.ae/
 - agency_id: ae_mot
   iso2: AE
@@ -2641,11 +2641,11 @@ agencies:
   name_en: MOCCAE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moccae.gov.ae/
 - agency_id: ae_moei_energy
   iso2: AE
@@ -2681,11 +2681,11 @@ agencies:
   name_en: Federal Authority for Identity, Citizenship, Customs & Port Security
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.icp.gov.ae/
   notes: 関税機能はICP配下。Wave1で税関専用URL確認。
 - agency_id: ae_bayanat
@@ -2709,11 +2709,11 @@ agencies:
   name_en: General Authority for Statistics
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.stats.gov.sa/
 - agency_id: sa_sama
   iso2: SA
@@ -2722,11 +2722,11 @@ agencies:
   name_en: Saudi Central Bank (SAMA)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.sama.gov.sa/
 - agency_id: sa_mof
   iso2: SA
@@ -2748,11 +2748,11 @@ agencies:
   name_en: Capital Market Authority
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://cma.org.sa/
 - agency_id: sa_mci
   iso2: SA
@@ -2774,11 +2774,11 @@ agencies:
   name_en: Ministry of Human Resources and Social Development
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.hrsd.gov.sa/
 - agency_id: sa_moe
   iso2: SA
@@ -2787,11 +2787,11 @@ agencies:
   name_en: Ministry of Education Saudi Arabia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://moe.gov.sa/
 - agency_id: sa_mot
   iso2: SA
@@ -2813,11 +2813,11 @@ agencies:
   name_en: Ministry of Health Saudi Arabia
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.moh.gov.sa/
 - agency_id: sa_mewa
   iso2: SA
@@ -2826,11 +2826,11 @@ agencies:
   name_en: MEWA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.mewa.gov.sa/
 - agency_id: sa_energy
   iso2: SA
@@ -2866,11 +2866,11 @@ agencies:
   name_en: Zakat, Tax and Customs Authority
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://zatca.gov.sa/
 - agency_id: sa_data_gov
   iso2: SA
@@ -2894,11 +2894,11 @@ agencies:
   name_en: TurkStat (TÜİK)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tuik.gov.tr/
 - agency_id: tr_tcmb
   iso2: TR
@@ -2907,11 +2907,11 @@ agencies:
   name_en: Central Bank of the Republic of Türkiye
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tcmb.gov.tr/
 - agency_id: tr_hmb
   iso2: TR
@@ -2920,11 +2920,11 @@ agencies:
   name_en: Ministry of Treasury and Finance
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.hmb.gov.tr/
 - agency_id: tr_spk
   iso2: TR
@@ -2933,11 +2933,11 @@ agencies:
   name_en: Capital Markets Board of Türkiye
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.spk.gov.tr/
 - agency_id: tr_ticaret
   iso2: TR
@@ -2946,11 +2946,11 @@ agencies:
   name_en: Ministry of Trade / Industry
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ticaret.gov.tr/
 - agency_id: tr_csgb
   iso2: TR
@@ -2959,11 +2959,11 @@ agencies:
   name_en: Ministry of Labour and Social Security
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.csgb.gov.tr/
 - agency_id: tr_meb
   iso2: TR
@@ -2972,11 +2972,11 @@ agencies:
   name_en: Ministry of National Education
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.meb.gov.tr/
 - agency_id: tr_uab
   iso2: TR
@@ -2985,11 +2985,11 @@ agencies:
   name_en: Ministry of Transport and Infrastructure
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.uab.gov.tr/
 - agency_id: tr_saglik
   iso2: TR
@@ -2998,11 +2998,11 @@ agencies:
   name_en: Ministry of Health Türkiye
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.saglik.gov.tr/
 - agency_id: tr_tarim
   iso2: TR
@@ -3011,11 +3011,11 @@ agencies:
   name_en: Ministry of Agriculture and Forestry
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.tarimorman.gov.tr/
 - agency_id: tr_enerji
   iso2: TR
@@ -3024,11 +3024,11 @@ agencies:
   name_en: Ministry of Energy and Natural Resources
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://enerji.gov.tr/
 - agency_id: tr_kultur_invest
   iso2: TR
@@ -3037,11 +3037,11 @@ agencies:
   name_en: Ministry of Culture and Tourism / Invest in Türkiye
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ktb.gov.tr/
   notes: Invest https://www.invest.gov.tr/
 - agency_id: tr_gumruk
@@ -3051,11 +3051,11 @@ agencies:
   name_en: Ministry of Trade — Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ticaret.gov.tr/
   notes: 関税機能は貿易省配下。
 - agency_id: tr_data_gov
@@ -3079,11 +3079,11 @@ agencies:
   name_en: Office for National Statistics
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ons.gov.uk/
 - agency_id: gb_boe
   iso2: GB
@@ -3092,11 +3092,11 @@ agencies:
   name_en: Bank of England
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bankofengland.co.uk/
 - agency_id: gb_hmt
   iso2: GB
@@ -3105,11 +3105,11 @@ agencies:
   name_en: HM Treasury
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/hm-treasury
 - agency_id: gb_fca
   iso2: GB
@@ -3118,11 +3118,11 @@ agencies:
   name_en: Financial Conduct Authority
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.fca.org.uk/
 - agency_id: gb_beis_dbt
   iso2: GB
@@ -3131,11 +3131,11 @@ agencies:
   name_en: Department for Business and Trade
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-business-and-trade
 - agency_id: gb_dwp
   iso2: GB
@@ -3144,11 +3144,11 @@ agencies:
   name_en: Department for Work and Pensions
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-work-pensions
 - agency_id: gb_dfe
   iso2: GB
@@ -3157,11 +3157,11 @@ agencies:
   name_en: Department for Education
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-education
 - agency_id: gb_dft
   iso2: GB
@@ -3170,11 +3170,11 @@ agencies:
   name_en: Department for Transport
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-transport
 - agency_id: gb_dhsc
   iso2: GB
@@ -3183,11 +3183,11 @@ agencies:
   name_en: Department of Health and Social Care
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-of-health-and-social-care
 - agency_id: gb_defra
   iso2: GB
@@ -3196,11 +3196,11 @@ agencies:
   name_en: Defra
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs
 - agency_id: gb_desnz
   iso2: GB
@@ -3209,11 +3209,11 @@ agencies:
   name_en: DESNZ
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero
 - agency_id: gb_dcms_invest
   iso2: GB
@@ -3222,11 +3222,11 @@ agencies:
   name_en: DCMS / DBT Invest
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-culture-media-and-sport
   notes: VisitBritain / DBT investment promotion。
 - agency_id: gb_hmrc
@@ -3236,11 +3236,11 @@ agencies:
   name_en: HM Revenue & Customs
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.uk/government/organisations/hm-revenue-customs
 - agency_id: gb_data_gov
   iso2: GB
@@ -3249,11 +3249,11 @@ agencies:
   name_en: data.gov.uk
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.gov.uk/
 - agency_id: de_destatis
   iso2: DE
@@ -3262,11 +3262,11 @@ agencies:
   name_en: Destatis
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.destatis.de/
 - agency_id: de_buba
   iso2: DE
@@ -3275,11 +3275,11 @@ agencies:
   name_en: Deutsche Bundesbank
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bundesbank.de/
 - agency_id: de_bmf
   iso2: DE
@@ -3288,11 +3288,11 @@ agencies:
   name_en: Federal Ministry of Finance
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bundesfinanzministerium.de/
 - agency_id: de_bafin
   iso2: DE
@@ -3314,11 +3314,11 @@ agencies:
   name_en: BMWK
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmwk.de/
 - agency_id: de_bmas
   iso2: DE
@@ -3327,11 +3327,11 @@ agencies:
   name_en: BMAS
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmas.de/
 - agency_id: de_bmbf
   iso2: DE
@@ -3353,11 +3353,11 @@ agencies:
   name_en: BMDV
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmdv.bund.de/
 - agency_id: de_bmg
   iso2: DE
@@ -3366,11 +3366,11 @@ agencies:
   name_en: BMG
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bundesgesundheitsministerium.de/
 - agency_id: de_bmel
   iso2: DE
@@ -3392,11 +3392,11 @@ agencies:
   name_en: BMUV
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bmuv.de/
   notes: エネルギーはBMWKと分担。
 - agency_id: de_bmw_invest
@@ -3406,11 +3406,11 @@ agencies:
   name_en: BMWK / Germany Trade & Invest
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gtai.de/
 - agency_id: de_zoll
   iso2: DE
@@ -3445,11 +3445,11 @@ agencies:
   name_en: INSEE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.insee.fr/
 - agency_id: fr_bdf
   iso2: FR
@@ -3458,11 +3458,11 @@ agencies:
   name_en: Banque de France
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.banque-france.fr/
 - agency_id: fr_dgfip
   iso2: FR
@@ -3484,11 +3484,11 @@ agencies:
   name_en: AMF
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.amf-france.org/
 - agency_id: fr_dge
   iso2: FR
@@ -3536,11 +3536,11 @@ agencies:
   name_en: Ministry for Ecological Transition
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ecologie.gouv.fr/
 - agency_id: fr_sante
   iso2: FR
@@ -3575,11 +3575,11 @@ agencies:
   name_en: Ecological Transition — Energy
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ecologie.gouv.fr/
 - agency_id: fr_diplomatie_invest
   iso2: FR
@@ -3588,11 +3588,11 @@ agencies:
   name_en: Atout France / Business France
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.businessfrance.fr/
 - agency_id: fr_douane
   iso2: FR
@@ -3601,11 +3601,11 @@ agencies:
   name_en: Direction générale des douanes
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.douane.gouv.fr/
 - agency_id: fr_data_gouv
   iso2: FR
@@ -3614,11 +3614,11 @@ agencies:
   name_en: data.gouv.fr
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.data.gouv.fr/
 - agency_id: ca_statcan
   iso2: CA
@@ -3627,11 +3627,11 @@ agencies:
   name_en: Statistics Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.statcan.gc.ca/
 - agency_id: ca_boc
   iso2: CA
@@ -3640,11 +3640,11 @@ agencies:
   name_en: Bank of Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bankofcanada.ca/
 - agency_id: ca_fin
   iso2: CA
@@ -3653,11 +3653,11 @@ agencies:
   name_en: Department of Finance Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.canada.ca/en/department-finance.html
 - agency_id: ca_osfi
   iso2: CA
@@ -3666,11 +3666,11 @@ agencies:
   name_en: OSFI
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.osfi-bsif.gc.ca/
 - agency_id: ca_isd
   iso2: CA
@@ -3679,11 +3679,11 @@ agencies:
   name_en: ISED
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://ised-isde.canada.ca/
 - agency_id: ca_esdc
   iso2: CA
@@ -3692,11 +3692,11 @@ agencies:
   name_en: ESDC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.canada.ca/en/employment-social-development.html
 - agency_id: ca_education
   iso2: CA
@@ -3705,11 +3705,11 @@ agencies:
   name_en: Education (Canada.ca)
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.canada.ca/en/services/culture/education.html
   notes: 初等中等教育は州管轄。連邦は科学・高等教育関連。
 - agency_id: ca_tc
@@ -3719,11 +3719,11 @@ agencies:
   name_en: Transport Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://tc.canada.ca/
 - agency_id: ca_hc
   iso2: CA
@@ -3732,11 +3732,11 @@ agencies:
   name_en: Health Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.canada.ca/en/health-canada.html
 - agency_id: ca_aafc
   iso2: CA
@@ -3745,11 +3745,11 @@ agencies:
   name_en: Agriculture and Agri-Food Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://agriculture.canada.ca/
 - agency_id: ca_nrcan
   iso2: CA
@@ -3758,11 +3758,11 @@ agencies:
   name_en: NRCan / ECCC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://natural-resources.canada.ca/
 - agency_id: ca_destination_invest
   iso2: CA
@@ -3771,11 +3771,11 @@ agencies:
   name_en: Destination Canada / Invest in Canada
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.destinationcanada.com/
   notes: Invest https://www.investcanada.ca/
 - agency_id: ca_cbsa
@@ -3785,11 +3785,11 @@ agencies:
   name_en: Canada Border Services Agency
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.cbsa-asfc.gc.ca/
 - agency_id: ca_open_data
   iso2: CA
@@ -3798,11 +3798,11 @@ agencies:
   name_en: open.canada.ca
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://open.canada.ca/
 - agency_id: br_ibge
   iso2: BR
@@ -3811,11 +3811,11 @@ agencies:
   name_en: IBGE
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.ibge.gov.br/
 - agency_id: br_bcb
   iso2: BR
@@ -3824,11 +3824,11 @@ agencies:
   name_en: Banco Central do Brasil
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.bcb.gov.br/
 - agency_id: br_fazenda
   iso2: BR
@@ -3837,11 +3837,11 @@ agencies:
   name_en: Ministry of Finance Brazil
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/fazenda/
 - agency_id: br_cvm
   iso2: BR
@@ -3850,11 +3850,11 @@ agencies:
   name_en: CVM
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/cvm/
 - agency_id: br_mdic
   iso2: BR
@@ -3863,11 +3863,11 @@ agencies:
   name_en: MDIC
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/mdic/
 - agency_id: br_mte
   iso2: BR
@@ -3876,11 +3876,11 @@ agencies:
   name_en: Ministry of Labour and Employment
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/trabalho-e-emprego/
 - agency_id: br_mec
   iso2: BR
@@ -3889,11 +3889,11 @@ agencies:
   name_en: Ministry of Education Brazil
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/mec/
 - agency_id: br_infra
   iso2: BR
@@ -3902,11 +3902,11 @@ agencies:
   name_en: Ministry of Transport / Cities
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/transportes/
 - agency_id: br_saude
   iso2: BR
@@ -3915,11 +3915,11 @@ agencies:
   name_en: Ministry of Health Brazil
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/saude/
 - agency_id: br_mapa
   iso2: BR
@@ -3928,11 +3928,11 @@ agencies:
   name_en: MAPA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/agricultura/
 - agency_id: br_mme
   iso2: BR
@@ -3941,11 +3941,11 @@ agencies:
   name_en: MME / MMA
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/mme/
 - agency_id: br_turismo_apex
   iso2: BR
@@ -3954,11 +3954,11 @@ agencies:
   name_en: Ministry of Tourism / ApexBrasil
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/turismo/
   notes: 投資誘致 ApexBrasil。
 - agency_id: br_receita
@@ -3968,11 +3968,11 @@ agencies:
   name_en: Receita Federal
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://www.gov.br/receitafederal/
 - agency_id: br_dados_gov
   iso2: BR
@@ -3981,9 +3981,9 @@ agencies:
   name_en: dados.gov.br
   layer_status:
     L0: done
-    L1: pending
-    L2: pending
+    L1: done
+    L2: partial
     L3: pending
     L4: pending
-    L5: pending
+    L5: partial
   portal_url: https://dados.gov.br/

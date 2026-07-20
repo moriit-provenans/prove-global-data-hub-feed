@@ -1,0 +1,33 @@
+iso2: GB
+source_note_ja: HM Treasury L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.gov.uk/government/organisations/hm-treasury
+  verified: true
+L1_themes:
+- theme_id: hmt
+  name_ja: HM Treasury
+  name_en: HMT
+  url: https://www.gov.uk/government/organisations/hm-treasury
+L2_datasets:
+- dataset_id: gb_hmt_hmt
+  title: HMT
+  url: https://www.gov.uk/government/organisations/hm-treasury
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: hmt
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'HM Treasury: HMT'
+  url: https://www.gov.uk/government/organisations/hm-treasury
+  why_unique_ja: GB固有の公的機関データ入口（finance_ministry）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: gb_hmt
+updated_at: '2026-07-21T04:26:59+09:00'

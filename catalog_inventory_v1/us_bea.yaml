@@ -1,0 +1,90 @@
+iso2: US
+source_note_ja: 'Wave1c: BEA ポータル＋NIPA/ITA/Regional の L3 series stubs（表ID＝公式 catalog
+  名称）。'
+L0:
+  portal_url: https://www.bea.gov/
+  verified: true
+L1_themes:
+- theme_id: bea_home
+  name_ja: BEA
+  name_en: BEA
+  url: https://www.bea.gov/
+- theme_id: nipa
+  name_ja: NIPA / GDP
+  name_en: NIPA
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+- theme_id: ita
+  name_ja: International trade
+  name_en: ITA
+  url: https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services
+L2_datasets:
+- dataset_id: bea_home
+  title: BEA portal
+  url: https://www.bea.gov/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: bea_home
+- dataset_id: bea_nipa
+  title: NIPA tables
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: nipa
+- dataset_id: bea_ita
+  title: International Trade in Goods and Services
+  url: https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ita
+L3_series:
+- series_id: NIPA_T10101
+  title: Table 1.1.1. Percent Change From Preceding Period in Real Gross Domestic
+    Product
+  status: stub
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  source: BEA NIPA
+- series_id: NIPA_T10105
+  title: Table 1.1.5. Gross Domestic Product
+  status: stub
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  source: BEA NIPA
+- series_id: NIPA_T20100
+  title: Table 2.1. Personal Income and Its Disposition
+  status: stub
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  source: BEA NIPA
+- series_id: ITA_IntlServTrade
+  title: International Trade in Goods and Services
+  status: stub
+  url: https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services
+  source: BEA ITA
+- series_id: Regional_GDP
+  title: GDP by State / Metro
+  status: stub
+  url: https://www.bea.gov/data/gdp/gdp-state
+  source: BEA Regional
+- series_id: Industry_GDPByIndustry
+  title: GDP by Industry
+  status: stub
+  url: https://www.bea.gov/data/gdp/gdp-industry
+  source: BEA Industry
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: BEA NIPA interactive tables
+  url: https://www.bea.gov/itable/national-gdp-and-personal-income
+  why_unique_ja: 米国民経済計算の一次表カタログ
+- title: BEA GDP by State
+  url: https://www.bea.gov/data/gdp/gdp-state
+  why_unique_ja: 州別GDPは国際比較コア外の米固有系列群
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: partial
+  L4: pending
+  L5: partial
+agency_id: us_bea
+updated_at: '2026-07-21T04:26:59+09:00'

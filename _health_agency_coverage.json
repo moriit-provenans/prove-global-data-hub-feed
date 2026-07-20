@@ -1,66 +1,82 @@
 {
   "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "updated_at": "2026-07-21T04:22:46+09:00",
-  "wave": "Wave1b",
-  "note_ja": "Wave1b: P0残り省庁クラス L1–L2。到達不能は blocked+reason。",
+  "updated_at": "2026-07-21T04:26:59+09:00",
+  "wave": "Wave1c",
+  "note_ja": "Wave1c: P1/P2 8か国 L1–L2 + L5≥5/国。JP e-Stat / US BEA·BLS·FRED / SG SingStat の L3 series stubs 開始。",
   "totals": {
     "countries": 21,
     "agencies": 297,
     "countries_with_all_14_classes": 21,
     "L0_done_agencies": 294,
     "L0_blocked_agencies": 0,
-    "L1_done_agencies": 153,
-    "L2_partial_or_done_agencies": 153,
-    "L5_partial_or_done_agencies": 147,
-    "inventory_files_count": 187,
+    "L1_done_agencies": 239,
+    "L2_partial_or_done_agencies": 239,
+    "L5_partial_or_done_agencies": 233,
+    "inventory_files_count": 300,
     "P0_agencies": 185,
-    "P0_L1_done": 153,
-    "P0_L2_partial_or_done": 153,
-    "P0_L1_rate": 0.827,
-    "P0_L2_rate": 0.827,
+    "P0_L1_done": 154,
+    "P0_L2_partial_or_done": 154,
+    "P0_L1_rate": 0.832,
+    "P0_L2_rate": 0.832,
     "inventories_sample": [
-      "cn_csrc.yaml",
-      "cn_cta_mofcom.yaml",
-      "cn_customs.yaml",
-      "cn_data_gov.yaml",
-      "cn_mara.yaml",
-      "cn_moe.yaml",
-      "cn_mof.yaml",
-      "cn_mofcom.yaml",
-      "cn_mohrss.yaml",
-      "cn_mot.yaml",
-      "cn_nbs.yaml",
-      "cn_neea.yaml",
-      "cn_nhc.yaml",
-      "cn_pbc.yaml",
-      "hk_afcd.yaml",
-      "hk_cedb.yaml",
-      "hk_censtatd.yaml",
-      "hk_customs.yaml",
-      "hk_data_gov.yaml",
-      "hk_edb.yaml",
-      "hk_enb.yaml",
-      "hk_fstb.yaml",
-      "hk_hhb.yaml",
-      "hk_hkma.yaml",
-      "hk_labour.yaml",
-      "hk_sfc.yaml",
-      "hk_thb.yaml",
-      "hk_tourism_invest.yaml",
-      "id_beacukai.yaml",
-      "id_bi.yaml",
-      "id_bps.yaml",
-      "id_esdm.yaml",
-      "id_kemdikbud.yaml",
-      "id_kemenhub.yaml",
-      "id_kemenkeu.yaml",
-      "id_kemenparekraf_bkpm.yaml",
-      "id_kemenperin.yaml",
-      "id_kementan.yaml",
-      "id_kemkes.yaml",
-      "id_kemnaker.yaml"
-    ]
+      "ae_bayanat.yaml",
+      "ae_cbuae.yaml",
+      "ae_dct_invest.yaml",
+      "ae_fca.yaml",
+      "ae_fcsc.yaml",
+      "ae_moccae.yaml",
+      "ae_moe.yaml",
+      "ae_moei.yaml",
+      "ae_moei_energy.yaml",
+      "ae_mof.yaml",
+      "ae_mohap.yaml",
+      "ae_mohre.yaml",
+      "ae_mot.yaml",
+      "ae_sca.yaml",
+      "br_bcb.yaml",
+      "br_cvm.yaml",
+      "br_dados_gov.yaml",
+      "br_fazenda.yaml",
+      "br_ibge.yaml",
+      "br_infra.yaml",
+      "br_mapa.yaml",
+      "br_mdic.yaml",
+      "br_mec.yaml",
+      "br_mme.yaml",
+      "br_mte.yaml",
+      "br_receita.yaml",
+      "br_saude.yaml",
+      "br_turismo_apex.yaml",
+      "ca_aafc.yaml",
+      "ca_boc.yaml",
+      "ca_cbsa.yaml",
+      "ca_destination_invest.yaml",
+      "ca_education.yaml",
+      "ca_esdc.yaml",
+      "ca_fin.yaml",
+      "ca_hc.yaml",
+      "ca_isd.yaml",
+      "ca_nrcan.yaml",
+      "ca_open_data.yaml",
+      "ca_osfi.yaml"
+    ],
+    "overall_L1_done": 239,
+    "overall_L2_partial_or_done": 239,
+    "overall_L1_rate": 0.805,
+    "overall_L2_rate": 0.805,
+    "P12_agencies": 112,
+    "P12_L1_done": 85,
+    "P12_L2_partial_or_done": 85,
+    "P12_L1_rate": 0.759,
+    "P12_L2_rate": 0.759,
+    "l3_stub_files": {
+      "jp_estat": 8,
+      "us_bls": 6,
+      "us_bea": 6,
+      "us_fed_fred": 7,
+      "sg_singstat": 6
+    }
   },
   "by_country": {
     "JP": {
@@ -86,14 +102,14 @@
       "L0_blocked": 0,
       "L1_done": 15,
       "L2_partial_or_done": 15,
-      "L3_partial_or_done": 1,
+      "L3_partial_or_done": 2,
       "L4_partial_or_done": 2,
       "L5_partial_or_done": 9,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.067,
+        "L3": 0.133,
         "L4": 0.133,
         "L5": 0.6,
         "class_coverage": 1.0
@@ -140,21 +156,22 @@
       "classes_missing": [],
       "L0_done": 15,
       "L0_blocked": 0,
-      "L1_done": 12,
-      "L2_partial_or_done": 12,
-      "L3_partial_or_done": 0,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
+      "L3_partial_or_done": 3,
       "L4_partial_or_done": 2,
-      "L5_partial_or_done": 12,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.8,
-        "L2": 0.8,
-        "L3": 0.0,
+        "L1": 0.867,
+        "L2": 0.867,
+        "L3": 0.2,
         "L4": 0.133,
-        "L5": 0.8,
+        "L5": 0.867,
         "class_coverage": 1.0
       },
       "inventory_files": [
+        "catalog_inventory_v1/us_bea.yaml",
         "catalog_inventory_v1/us_bls.yaml",
         "catalog_inventory_v1/us_cbp.yaml",
         "catalog_inventory_v1/us_cdc.yaml",
@@ -195,14 +212,14 @@
       "L0_blocked": 0,
       "L1_done": 14,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 0,
+      "L3_partial_or_done": 1,
       "L4_partial_or_done": 1,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.0,
+        "L3": 0.071,
         "L4": 0.071,
         "L5": 1.0,
         "class_coverage": 1.0
@@ -765,21 +782,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 5,
+      "L2_partial_or_done": 5,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 5,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 0.357,
+        "L2": 0.357,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 0.357,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/ae_bayanat.yaml",
+        "catalog_inventory_v1/ae_cbuae.yaml",
+        "catalog_inventory_v1/ae_dct_invest.yaml",
+        "catalog_inventory_v1/ae_fca.yaml",
+        "catalog_inventory_v1/ae_fcsc.yaml",
+        "catalog_inventory_v1/ae_moccae.yaml",
+        "catalog_inventory_v1/ae_moe.yaml",
+        "catalog_inventory_v1/ae_moei.yaml",
+        "catalog_inventory_v1/ae_moei_energy.yaml",
+        "catalog_inventory_v1/ae_mof.yaml",
+        "catalog_inventory_v1/ae_mohap.yaml",
+        "catalog_inventory_v1/ae_mohre.yaml",
+        "catalog_inventory_v1/ae_mot.yaml",
+        "catalog_inventory_v1/ae_sca.yaml"
+      ]
     },
     "SA": {
       "agency_count": 14,
@@ -802,21 +834,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 8,
+      "L2_partial_or_done": 8,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 8,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 0.571,
+        "L2": 0.571,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 0.571,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/sa_cma.yaml",
+        "catalog_inventory_v1/sa_data_gov.yaml",
+        "catalog_inventory_v1/sa_energy.yaml",
+        "catalog_inventory_v1/sa_gastat.yaml",
+        "catalog_inventory_v1/sa_hrsd.yaml",
+        "catalog_inventory_v1/sa_mci.yaml",
+        "catalog_inventory_v1/sa_mewa.yaml",
+        "catalog_inventory_v1/sa_moe.yaml",
+        "catalog_inventory_v1/sa_mof.yaml",
+        "catalog_inventory_v1/sa_moh.yaml",
+        "catalog_inventory_v1/sa_mot.yaml",
+        "catalog_inventory_v1/sa_mt_invest.yaml",
+        "catalog_inventory_v1/sa_sama.yaml",
+        "catalog_inventory_v1/sa_zatca.yaml"
+      ]
     },
     "TR": {
       "agency_count": 14,
@@ -839,21 +886,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 13,
+      "L2_partial_or_done": 13,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 0.929,
+        "L2": 0.929,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 0.929,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/tr_csgb.yaml",
+        "catalog_inventory_v1/tr_data_gov.yaml",
+        "catalog_inventory_v1/tr_enerji.yaml",
+        "catalog_inventory_v1/tr_gumruk.yaml",
+        "catalog_inventory_v1/tr_hmb.yaml",
+        "catalog_inventory_v1/tr_kultur_invest.yaml",
+        "catalog_inventory_v1/tr_meb.yaml",
+        "catalog_inventory_v1/tr_saglik.yaml",
+        "catalog_inventory_v1/tr_spk.yaml",
+        "catalog_inventory_v1/tr_tarim.yaml",
+        "catalog_inventory_v1/tr_tcmb.yaml",
+        "catalog_inventory_v1/tr_ticaret.yaml",
+        "catalog_inventory_v1/tr_tuik.yaml",
+        "catalog_inventory_v1/tr_uab.yaml"
+      ]
     },
     "GB": {
       "agency_count": 14,
@@ -876,21 +938,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/gb_beis_dbt.yaml",
+        "catalog_inventory_v1/gb_boe.yaml",
+        "catalog_inventory_v1/gb_data_gov.yaml",
+        "catalog_inventory_v1/gb_dcms_invest.yaml",
+        "catalog_inventory_v1/gb_defra.yaml",
+        "catalog_inventory_v1/gb_desnz.yaml",
+        "catalog_inventory_v1/gb_dfe.yaml",
+        "catalog_inventory_v1/gb_dft.yaml",
+        "catalog_inventory_v1/gb_dhsc.yaml",
+        "catalog_inventory_v1/gb_dwp.yaml",
+        "catalog_inventory_v1/gb_fca.yaml",
+        "catalog_inventory_v1/gb_hmrc.yaml",
+        "catalog_inventory_v1/gb_hmt.yaml",
+        "catalog_inventory_v1/gb_ons.yaml"
+      ]
     },
     "DE": {
       "agency_count": 14,
@@ -913,21 +990,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 9,
+      "L2_partial_or_done": 9,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 9,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 0.643,
+        "L2": 0.643,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 0.643,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/de_bafin.yaml",
+        "catalog_inventory_v1/de_bmas.yaml",
+        "catalog_inventory_v1/de_bmbf.yaml",
+        "catalog_inventory_v1/de_bmdv.yaml",
+        "catalog_inventory_v1/de_bmel.yaml",
+        "catalog_inventory_v1/de_bmf.yaml",
+        "catalog_inventory_v1/de_bmg.yaml",
+        "catalog_inventory_v1/de_bmuv.yaml",
+        "catalog_inventory_v1/de_bmw_invest.yaml",
+        "catalog_inventory_v1/de_bmwk.yaml",
+        "catalog_inventory_v1/de_buba.yaml",
+        "catalog_inventory_v1/de_destatis.yaml",
+        "catalog_inventory_v1/de_govdata.yaml",
+        "catalog_inventory_v1/de_zoll.yaml"
+      ]
     },
     "FR": {
       "agency_count": 14,
@@ -950,21 +1042,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 8,
+      "L2_partial_or_done": 8,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 8,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 0.571,
+        "L2": 0.571,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 0.571,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/fr_agriculture.yaml",
+        "catalog_inventory_v1/fr_amf.yaml",
+        "catalog_inventory_v1/fr_bdf.yaml",
+        "catalog_inventory_v1/fr_data_gouv.yaml",
+        "catalog_inventory_v1/fr_dge.yaml",
+        "catalog_inventory_v1/fr_dgfip.yaml",
+        "catalog_inventory_v1/fr_diplomatie_invest.yaml",
+        "catalog_inventory_v1/fr_douane.yaml",
+        "catalog_inventory_v1/fr_ecologie.yaml",
+        "catalog_inventory_v1/fr_education.yaml",
+        "catalog_inventory_v1/fr_energie.yaml",
+        "catalog_inventory_v1/fr_insee.yaml",
+        "catalog_inventory_v1/fr_sante.yaml",
+        "catalog_inventory_v1/fr_travail.yaml"
+      ]
     },
     "CA": {
       "agency_count": 14,
@@ -987,21 +1094,36 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/ca_aafc.yaml",
+        "catalog_inventory_v1/ca_boc.yaml",
+        "catalog_inventory_v1/ca_cbsa.yaml",
+        "catalog_inventory_v1/ca_destination_invest.yaml",
+        "catalog_inventory_v1/ca_education.yaml",
+        "catalog_inventory_v1/ca_esdc.yaml",
+        "catalog_inventory_v1/ca_fin.yaml",
+        "catalog_inventory_v1/ca_hc.yaml",
+        "catalog_inventory_v1/ca_isd.yaml",
+        "catalog_inventory_v1/ca_nrcan.yaml",
+        "catalog_inventory_v1/ca_open_data.yaml",
+        "catalog_inventory_v1/ca_osfi.yaml",
+        "catalog_inventory_v1/ca_statcan.yaml",
+        "catalog_inventory_v1/ca_tc.yaml"
+      ]
     },
     "BR": {
       "agency_count": 14,
@@ -1024,26 +1146,41 @@
       "classes_missing": [],
       "L0_done": 14,
       "L0_blocked": 0,
-      "L1_done": 0,
-      "L2_partial_or_done": 0,
+      "L1_done": 14,
+      "L2_partial_or_done": 14,
       "L3_partial_or_done": 0,
       "L4_partial_or_done": 0,
-      "L5_partial_or_done": 0,
+      "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
-        "L1": 0.0,
-        "L2": 0.0,
+        "L1": 1.0,
+        "L2": 1.0,
         "L3": 0.0,
         "L4": 0.0,
-        "L5": 0.0,
+        "L5": 1.0,
         "class_coverage": 1.0
       },
-      "inventory_files": []
+      "inventory_files": [
+        "catalog_inventory_v1/br_bcb.yaml",
+        "catalog_inventory_v1/br_cvm.yaml",
+        "catalog_inventory_v1/br_dados_gov.yaml",
+        "catalog_inventory_v1/br_fazenda.yaml",
+        "catalog_inventory_v1/br_ibge.yaml",
+        "catalog_inventory_v1/br_infra.yaml",
+        "catalog_inventory_v1/br_mapa.yaml",
+        "catalog_inventory_v1/br_mdic.yaml",
+        "catalog_inventory_v1/br_mec.yaml",
+        "catalog_inventory_v1/br_mme.yaml",
+        "catalog_inventory_v1/br_mte.yaml",
+        "catalog_inventory_v1/br_receita.yaml",
+        "catalog_inventory_v1/br_saude.yaml",
+        "catalog_inventory_v1/br_turismo_apex.yaml"
+      ]
     }
   },
   "l5_country_unique_counts": {
     "JP": 11,
-    "US": 28,
+    "US": 31,
     "SG": 29,
     "MY": 21,
     "TH": 17,
@@ -1054,9 +1191,62 @@
     "CN": 18,
     "KR": 22,
     "TW": 22,
-    "HK": 23
+    "HK": 23,
+    "AE": 5,
+    "SA": 9,
+    "TR": 15,
+    "GB": 16,
+    "DE": 10,
+    "FR": 9,
+    "CA": 15,
+    "BR": 16
   },
   "inventory_l1_blocked": [
+    {
+      "agency_id": "ae_bayanat",
+      "iso2": "AE",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "ae_cbuae",
+      "iso2": "AE",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ae_dct_invest",
+      "iso2": "AE",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "ae_fcsc",
+      "iso2": "AE",
+      "reason": "crawler_403"
+    },
+    {
+      "agency_id": "ae_moei",
+      "iso2": "AE",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "ae_moei_energy",
+      "iso2": "AE",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "ae_mohap",
+      "iso2": "AE",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "ae_mohre",
+      "iso2": "AE",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "ae_mot",
+      "iso2": "AE",
+      "reason": "timeout"
+    },
     {
       "agency_id": "cn_data_gov",
       "iso2": "CN",
@@ -1066,6 +1256,61 @@
       "agency_id": "cn_nhc",
       "iso2": "CN",
       "reason": "http_412"
+    },
+    {
+      "agency_id": "de_bafin",
+      "iso2": "DE",
+      "reason": "http_400"
+    },
+    {
+      "agency_id": "de_bmbf",
+      "iso2": "DE",
+      "reason": "http_400"
+    },
+    {
+      "agency_id": "de_bmel",
+      "iso2": "DE",
+      "reason": "http_400"
+    },
+    {
+      "agency_id": "de_govdata",
+      "iso2": "DE",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "de_zoll",
+      "iso2": "DE",
+      "reason": "http_400"
+    },
+    {
+      "agency_id": "fr_agriculture",
+      "iso2": "FR",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "fr_dge",
+      "iso2": "FR",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "fr_dgfip",
+      "iso2": "FR",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "fr_education",
+      "iso2": "FR",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "fr_sante",
+      "iso2": "FR",
+      "reason": "unreachable"
+    },
+    {
+      "agency_id": "fr_travail",
+      "iso2": "FR",
+      "reason": "unreachable"
     },
     {
       "agency_id": "hk_afcd",
@@ -1148,6 +1393,36 @@
       "reason": "crawler_403"
     },
     {
+      "agency_id": "sa_data_gov",
+      "iso2": "SA",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "sa_energy",
+      "iso2": "SA",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "sa_mci",
+      "iso2": "SA",
+      "reason": "ssl_handshake_failed"
+    },
+    {
+      "agency_id": "sa_mof",
+      "iso2": "SA",
+      "reason": "timeout"
+    },
+    {
+      "agency_id": "sa_mot",
+      "iso2": "SA",
+      "reason": "unreachable"
+    },
+    {
+      "agency_id": "sa_mt_invest",
+      "iso2": "SA",
+      "reason": "crawler_403"
+    },
+    {
       "agency_id": "th_data_go",
       "iso2": "TH",
       "reason": "crawler_403"
@@ -1156,6 +1431,11 @@
       "agency_id": "th_mof",
       "iso2": "TH",
       "reason": "crawler_403"
+    },
+    {
+      "agency_id": "tr_data_gov",
+      "iso2": "TR",
+      "reason": "timeout"
     },
     {
       "agency_id": "us_cbp",

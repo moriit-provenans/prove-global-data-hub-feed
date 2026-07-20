@@ -1,0 +1,33 @@
+iso2: BR
+source_note_ja: MDIC L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.gov.br/mdic/
+  verified: true
+L1_themes:
+- theme_id: mdic
+  name_ja: MDIC
+  name_en: MDIC
+  url: https://www.gov.br/mdic/
+L2_datasets:
+- dataset_id: br_mdic_mdic
+  title: MDIC
+  url: https://www.gov.br/mdic/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: mdic
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'MDIC: MDIC'
+  url: https://www.gov.br/mdic/
+  why_unique_ja: BR固有の公的機関データ入口（economy_industry_trade）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: br_mdic
+updated_at: '2026-07-21T04:26:59+09:00'

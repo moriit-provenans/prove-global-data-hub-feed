@@ -1,0 +1,47 @@
+iso2: DE
+source_note_ja: Deutsche Bundesbank L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.bundesbank.de/
+  verified: true
+L1_themes:
+- theme_id: buba
+  name_ja: Bundesbank
+  name_en: Bundesbank
+  url: https://www.bundesbank.de/
+- theme_id: stats
+  name_ja: Bundesbank statistics
+  name_en: Statistics
+  url: https://www.bundesbank.de/en/statistics
+L2_datasets:
+- dataset_id: de_buba_buba
+  title: Bundesbank
+  url: https://www.bundesbank.de/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: buba
+- dataset_id: de_buba_stats
+  title: Statistics
+  url: https://www.bundesbank.de/en/statistics
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Deutsche Bundesbank: Bundesbank'
+  url: https://www.bundesbank.de/
+  why_unique_ja: DE固有の公的機関データ入口（central_bank）
+- title: 'Deutsche Bundesbank: Statistics'
+  url: https://www.bundesbank.de/en/statistics
+  why_unique_ja: DE固有の公的機関データ入口（central_bank）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: de_buba
+updated_at: '2026-07-21T04:26:59+09:00'

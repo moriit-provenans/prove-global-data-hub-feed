@@ -1,0 +1,47 @@
+iso2: TR
+source_note_ja: Central Bank of the Republic of Türkiye L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.tcmb.gov.tr/
+  verified: true
+L1_themes:
+- theme_id: tcmb
+  name_ja: CBRT
+  name_en: CBRT
+  url: https://www.tcmb.gov.tr/
+- theme_id: evds
+  name_ja: EVDS
+  name_en: EVDS
+  url: https://evds2.tcmb.gov.tr/
+L2_datasets:
+- dataset_id: tr_tcmb_tcmb
+  title: CBRT
+  url: https://www.tcmb.gov.tr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: tcmb
+- dataset_id: tr_tcmb_evds
+  title: EVDS
+  url: https://evds2.tcmb.gov.tr/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: evds
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Central Bank of the Republic of Türkiye: CBRT'
+  url: https://www.tcmb.gov.tr/
+  why_unique_ja: TR固有の公的機関データ入口（central_bank）
+- title: 'Central Bank of the Republic of Türkiye: EVDS'
+  url: https://evds2.tcmb.gov.tr/
+  why_unique_ja: TR固有の公的機関データ入口（central_bank）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: tr_tcmb
+updated_at: '2026-07-21T04:26:59+09:00'

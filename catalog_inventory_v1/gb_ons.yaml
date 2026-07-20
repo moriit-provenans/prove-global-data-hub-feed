@@ -1,0 +1,33 @@
+iso2: GB
+source_note_ja: Office for National Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.ons.gov.uk/
+  verified: true
+L1_themes:
+- theme_id: ons
+  name_ja: ONS
+  name_en: ONS
+  url: https://www.ons.gov.uk/
+L2_datasets:
+- dataset_id: gb_ons_ons
+  title: ONS
+  url: https://www.ons.gov.uk/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: ons
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Office for National Statistics: ONS'
+  url: https://www.ons.gov.uk/
+  why_unique_ja: GB固有の公的機関データ入口（nso）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: gb_ons
+updated_at: '2026-07-21T04:26:59+09:00'

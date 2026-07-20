@@ -1,0 +1,47 @@
+iso2: GB
+source_note_ja: Financial Conduct Authority L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+L0:
+  portal_url: https://www.fca.org.uk/
+  verified: true
+L1_themes:
+- theme_id: fca
+  name_ja: FCA
+  name_en: FCA
+  url: https://www.fca.org.uk/
+- theme_id: data
+  name_ja: FCA data
+  name_en: FCA data
+  url: https://www.fca.org.uk/data
+L2_datasets:
+- dataset_id: gb_fca_fca
+  title: FCA
+  url: https://www.fca.org.uk/
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: fca
+- dataset_id: gb_fca_data
+  title: FCA data
+  url: https://www.fca.org.uk/data
+  api_id: null
+  update_freq: varies
+  license: official terms
+  theme_id: data
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L5_country_unique:
+- title: 'Financial Conduct Authority: FCA'
+  url: https://www.fca.org.uk/
+  why_unique_ja: GB固有の公的機関データ入口（financial_regulator）
+- title: 'Financial Conduct Authority: FCA data'
+  url: https://www.fca.org.uk/data
+  why_unique_ja: GB固有の公的機関データ入口（financial_regulator）
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: partial
+agency_id: gb_fca
+updated_at: '2026-07-21T04:26:59+09:00'
