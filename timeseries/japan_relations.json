@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso-a3",
   "feed_id": "japan_relations",
-  "last_updated": "2026-07-20T21:18:15+09:00",
+  "last_updated": "2026-07-20T22:22:48+09:00",
   "frequency": "annual",
   "source": {
     "label": "MOFA/MOF/JETRO/JNTO/JBIC + e-Stat trade refresh (A3)",
