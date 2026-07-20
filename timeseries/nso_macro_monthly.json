@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso",
   "feed_id": "nso_macro_monthly",
-  "last_updated": "2026-07-20T23:05:24+09:00",
+  "last_updated": "2026-07-20T23:06:29+09:00",
   "frequency": "monthly",
   "source": {
     "label": "NSO monthly pilot (all tiers)",
