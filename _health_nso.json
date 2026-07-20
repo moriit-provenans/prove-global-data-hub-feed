@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-20T22:07:32+09:00",
+  "generated_at": "2026-07-20T22:22:51+09:00",
   "wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 4700,
+  "nso_pilot_rows": 5368,
   "source_tier_counts": {
-    "international_fast": 1134,
-    "nso": 3566
+    "international_fast": 1370,
+    "nso": 3998
   },
   "macro_q_gdp_real_yoy_countries": [
     "BR",
@@ -115,7 +115,7 @@
   "wb_fallback_share_note_ja": "本WaveはNSO/OECD追加。年次macro_annualのWB比率是正は段階的（カタログメタで可視化）。",
   "quarterly_was_empty": true,
   "quarterly_now_rows": 993,
-  "monthly_nso_rows": 3500,
+  "monthly_nso_rows": 4168,
   "next": [
     "VN/TH/ID/IN の統計局API直結（OECD橋渡しからの昇格）",
     "JP CPI e-Stat表の特定",

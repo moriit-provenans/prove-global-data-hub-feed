@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T22:07:32+09:00'
+updated_at: '2026-07-20T22:22:51+09:00'
 policy:
   priority:
   - nso
@@ -51,6 +51,7 @@ sources:
   iso2:
   - BR
   - CA
+  - CN
   - DE
   - FR
   - GB
@@ -148,6 +149,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.cpi.index
+  iso2: CN
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.index
   iso2: ID
   source_tier: international_fast
   latest_period: 2025-04
@@ -164,14 +169,26 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.index
+  iso2: PH
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.cpi.index
   iso2: SG
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.cpi.index
+  iso2: TH
+  source_tier: nso
+  latest_period: 2024-12
 - metric_id: nso_m.cpi.index
   iso2: US
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: CN
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.yoy_pct
   iso2: ID
   source_tier: international_fast
   latest_period: 2025-04
@@ -188,9 +205,17 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: PH
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.cpi.yoy_pct
   iso2: SG
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: TH
+  source_tier: nso
+  latest_period: 2024-12
 - metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso
