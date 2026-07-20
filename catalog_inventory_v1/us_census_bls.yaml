@@ -1,0 +1,55 @@
+agency_id: us_census_bls
+iso2: US
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.census.gov/
+  verified: true
+L1_themes:
+- theme_id: acs
+  name_ja: American Community Survey
+  name_en: ACS
+  url: https://www.census.gov/programs-surveys/acs
+- theme_id: economic
+  name_ja: Economic Census / indicators
+  name_en: Economic
+  url: https://www.census.gov/economic-indicators/
+- theme_id: bls_cpi
+  name_ja: BLS CPI
+  name_en: CPI
+  url: https://www.bls.gov/cpi/
+- theme_id: bls_empsit
+  name_ja: Employment Situation
+  name_en: Employment
+  url: https://www.bls.gov/news.release/empsit.toc.htm
+- theme_id: bea_gdp
+  name_ja: BEA GDP
+  name_en: GDP
+  url: https://www.bea.gov/data/gdp
+L2_datasets:
+- dataset_id: bls_cpi
+  title: Consumer Price Index
+  url: https://www.bls.gov/cpi/
+  api_id: bls:CUUR0000SA0
+  update_freq: monthly
+  license: BLS
+  theme_id: bls_cpi
+- dataset_id: fred_indpro
+  title: Industrial Production (Fed/FRED)
+  url: https://fred.stlouisfed.org/series/INDPRO
+  api_id: fred:INDPRO
+  update_freq: monthly
+  license: FRED
+  theme_id: economic
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique:
+- title: BEA Personal Income by State
+  url: https://www.bea.gov/data/income-saving/personal-income-by-state
+  why_unique_ja: 州別個人所得は国際比較カタログに薄い
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: partial

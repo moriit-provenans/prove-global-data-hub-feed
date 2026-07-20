@@ -1,0 +1,30 @@
+agency_id: in_mospi
+iso2: IN
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.mospi.gov.in/
+  verified: true
+L1_themes:
+- theme_id: national_accounts
+  name_ja: 国民経済計算
+  name_en: National Accounts
+  url: https://www.mospi.gov.in/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.mospi.gov.in/
+- theme_id: iip
+  name_ja: IIP
+  name_en: IIP
+  url: https://www.mospi.gov.in/
+L2_datasets: []
+L3_series: []
+L4_notes: MOSPI APIはSSL障害。OECD MEI bridge継続。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: pending
+  L3: pending
+  L4: partial
+  L5: pending

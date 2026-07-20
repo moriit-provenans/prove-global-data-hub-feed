@@ -1,0 +1,33 @@
+agency_id: id_bps
+iso2: ID
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.bps.go.id/
+  verified: true
+L1_themes:
+- theme_id: national_accounts
+  name_ja: 国民経済計算
+  name_en: National Accounts
+  url: https://www.bps.go.id/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.bps.go.id/
+L2_datasets:
+- dataset_id: bps_webapi
+  title: BPS WebAPI
+  url: https://webapi.bps.go.id/
+  api_id: bps-webapi
+  update_freq: varies
+  license: BPS (key required)
+  theme_id: national_accounts
+L3_series: []
+L4_notes: WebAPIは無料キー必須（playbookあり）。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: pending

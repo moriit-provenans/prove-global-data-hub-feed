@@ -1,0 +1,30 @@
+agency_id: cn_nbs
+iso2: CN
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.stats.gov.cn/
+  verified: true
+L1_themes:
+- theme_id: national_accounts
+  name_ja: 国民経済計算
+  name_en: National Accounts
+  url: https://www.stats.gov.cn/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.stats.gov.cn/
+- theme_id: iip
+  name_ja: 工業生産
+  name_en: Industrial production
+  url: https://www.stats.gov.cn/
+L2_datasets: []
+L3_series: []
+L4_notes: NBSデータ取得はUUID/Playwrightが必要な場合あり。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: pending
+  L3: pending
+  L4: partial
+  L5: pending

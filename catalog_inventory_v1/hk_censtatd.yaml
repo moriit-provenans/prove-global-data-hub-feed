@@ -1,0 +1,44 @@
+agency_id: hk_censtatd
+iso2: HK
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.censtatd.gov.hk/
+  verified: true
+L1_themes:
+- theme_id: gdp
+  name_ja: GDP
+  name_en: GDP
+  url: https://www.censtatd.gov.hk/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.censtatd.gov.hk/
+- theme_id: labour
+  name_ja: 労働
+  name_en: Labour
+  url: https://www.censtatd.gov.hk/
+L2_datasets:
+- dataset_id: hk_cpi_510
+  title: Composite CPI table 510-60001
+  url: https://www.censtatd.gov.hk/api/
+  api_id: 510-60001
+  update_freq: monthly
+  license: C&SD
+  theme_id: cpi
+- dataset_id: hk_gdp_310
+  title: GDP table 310-31001
+  url: https://www.censtatd.gov.hk/api/
+  api_id: 310-31001
+  update_freq: quarterly
+  license: C&SD
+  theme_id: gdp
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: pending

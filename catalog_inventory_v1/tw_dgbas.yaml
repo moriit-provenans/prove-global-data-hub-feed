@@ -1,0 +1,40 @@
+agency_id: tw_dgbas
+iso2: TW
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.stat.gov.tw/
+  verified: true
+L1_themes:
+- theme_id: main_indicators
+  name_ja: 主要経済指標
+  name_en: Main indicators
+  url: https://www.stat.gov.tw/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.stat.gov.tw/
+- theme_id: gdp
+  name_ja: GDP
+  name_en: GDP
+  url: https://www.stat.gov.tw/
+L2_datasets:
+- dataset_id: tw_mol_od
+  title: DGBAS monthly indicators (data.gov.tw)
+  url: https://data.gov.tw/
+  api_id: A17030000J-000016-wWs
+  update_freq: monthly
+  license: data.gov.tw
+  theme_id: main_indicators
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique:
+- title: DGBAS 每月國內主要經濟指標
+  url: https://data.gov.tw/
+  why_unique_ja: 台湾はWB非収録のため国固有オープンデータが本線
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: partial

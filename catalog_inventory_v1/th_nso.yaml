@@ -1,0 +1,37 @@
+agency_id: th_nso
+iso2: TH
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.nso.go.th/
+  verified: true
+L1_themes:
+- theme_id: lfs
+  name_ja: 労働力調査
+  name_en: LFS
+  url: https://www.nso.go.th/
+- theme_id: nesdc_gdp
+  name_ja: NESDC GDP（連携）
+  name_en: NESDC GDP
+  url: https://www.nesdc.go.th/
+- theme_id: moc_cpi
+  name_ja: 商務省CPI（連携）
+  name_en: MOC CPI
+  url: https://www.moc.go.th/
+L2_datasets:
+- dataset_id: th_nesdc_gdp
+  title: NESDC Chain Volume GDP
+  url: https://www.nesdc.go.th/
+  api_id: null
+  update_freq: quarterly
+  license: NESDC
+  theme_id: nesdc_gdp
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: pending

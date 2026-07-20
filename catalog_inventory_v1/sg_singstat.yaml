@@ -1,0 +1,51 @@
+agency_id: sg_singstat
+iso2: SG
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.singstat.gov.sg/
+  verified: true
+L1_themes:
+- theme_id: gdp
+  name_ja: 国民経済計算
+  name_en: National Accounts
+  url: https://www.singstat.gov.sg/find-data/search-by-theme/economy/national-accounts
+- theme_id: cpi
+  name_ja: 物価
+  name_en: Prices
+  url: https://www.singstat.gov.sg/find-data/search-by-theme/economy/prices-and-price-indices
+- theme_id: labour
+  name_ja: 労働
+  name_en: Labour
+  url: https://www.singstat.gov.sg/find-data/search-by-theme/economy/labour-employment-wages-and-productivity
+- theme_id: trade
+  name_ja: 貿易
+  name_en: Trade
+  url: https://www.singstat.gov.sg/find-data/search-by-theme/economy/external-trade
+L2_datasets:
+- dataset_id: sg_gdp_yoy
+  title: GDP YoY (data.gov.sg)
+  url: https://data.gov.sg/datasets?query=GDP
+  api_id: d_a5ff719648a0e6d4b4c623ee383ab686
+  update_freq: quarterly
+  license: Singapore Open Data
+  theme_id: gdp
+- dataset_id: sg_cpi
+  title: CPI
+  url: https://tablebuilder.singstat.gov.sg/
+  api_id: d_bdaff844e3ef89d39fceb962ff8f0791
+  update_freq: monthly
+  license: Singapore Open Data
+  theme_id: cpi
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique:
+- title: Total Merchandise Trade (SingStat)
+  url: https://data.gov.sg/
+  why_unique_ja: 再輸出比率が高い貿易構造の国固有系列
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: partial

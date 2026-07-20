@@ -1,0 +1,26 @@
+agency_id: vn_gso
+iso2: VN
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://www.gso.gov.vn/
+  verified: true
+L1_themes:
+- theme_id: national_accounts
+  name_ja: 国民経済計算
+  name_en: National Accounts
+  url: https://www.gso.gov.vn/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://www.gso.gov.vn/
+L2_datasets: []
+L3_series: []
+L4_notes: NSDP/Excel経路はAtlasネットワークから不通。L2はWave1で再試行。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: pending
+  L3: pending
+  L4: partial
+  L5: pending

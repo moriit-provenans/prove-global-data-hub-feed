@@ -1,0 +1,37 @@
+agency_id: kr_kostat
+iso2: KR
+updated_at: '2026-07-21T04:09:34+09:00'
+L0:
+  portal_url: https://kostat.go.kr/
+  verified: true
+L1_themes:
+- theme_id: kosis
+  name_ja: KOSIS
+  name_en: KOSIS
+  url: https://kosis.kr/
+- theme_id: cpi
+  name_ja: CPI
+  name_en: CPI
+  url: https://kosis.kr/
+- theme_id: gdp
+  name_ja: GDP
+  name_en: GDP
+  url: https://kosis.kr/
+L2_datasets:
+- dataset_id: kosis_openapi
+  title: KOSIS OpenAPI
+  url: https://kosis.kr/openapi/
+  api_id: kosis
+  update_freq: varies
+  license: KOSTAT (key)
+  theme_id: kosis
+L3_series: []
+L4_notes: Wave1 NSO inventory start. Observations via existing collectors where wired.
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: partial
+  L5: pending
