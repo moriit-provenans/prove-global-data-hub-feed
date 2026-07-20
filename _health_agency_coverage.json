@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-21T04:10:57+09:00",
+  "generated_at": "2026-07-21T04:11:22+09:00",
   "req_id": "REQ-SMITH-20260721-042",
   "wave": "Wave0+research_patch",
   "total_cells": 294,
-  "l0_done": 293,
-  "l0_rate_pct": 99.7,
+  "l0_done": 294,
+  "l0_rate_pct": 100.0,
   "countries": [
     "JP",
     "US",
@@ -1833,9 +1833,9 @@
       "iso2": "TR",
       "agency_class": "open_data_portal",
       "agency_id": "tr_data_gov",
-      "L0": "blocked",
-      "has_portal": false,
-      "missing_reason": "統一オープンデータポータルURLが流動的。Wave1で再調査（data.gov.tr 候補）。"
+      "L0": "done",
+      "has_portal": true,
+      "missing_reason": null
     },
     {
       "iso2": "GB",
@@ -2397,6 +2397,5 @@
       "has_portal": true,
       "missing_reason": null
     }
-  ],
-  "notes_ja": "Research subagent URL補完反映（VN/CN/ID open data・CA教育等）"
+  ]
 }

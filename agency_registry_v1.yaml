@@ -3058,16 +3058,17 @@ agencies:
 - agency_id: tr_data_gov
   iso2: TR
   agency_class: open_data_portal
-  name_ja: Turkey Open Data
+  name_ja: data.gov.tr
   name_en: Turkey Open Data Portal
   layer_status:
-    L0: blocked
+    L0: done
     L1: pending
     L2: pending
     L3: pending
     L4: pending
     L5: pending
-  missing_reason: 統一オープンデータポータルURLが流動的。Wave1で再調査（data.gov.tr 候補）。
+  portal_url: https://data.gov.tr/
+  open_data_url: https://data.gov.tr/
 - agency_id: gb_ons
   iso2: GB
   agency_class: nso
