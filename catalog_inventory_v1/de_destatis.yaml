@@ -1,6 +1,7 @@
 iso2: DE
 source_note_ja: 'Destatis L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d: GENESIS
-  statistic code stubs。 Wave2: L3→L4 observation harvest (0/7).'
+  statistic code stubs。 Wave2: L3→L4 observation harvest (0/7). Wave2b: L4 expand
+  (7/7).'
 L0:
   portal_url: https://www.destatis.de/
   verified: true
@@ -31,54 +32,47 @@ L2_datasets:
 L3_series:
 - series_id: 61111-0001
   title: Consumer price index (GENESIS 61111)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=61111
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 123
 - series_id: 12211-0001
   title: Labour force survey / employment (GENESIS 12211)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=12211
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 137
 - series_id: 81000-0001
   title: National accounts (GENESIS 81000)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=81000
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 45
 - series_id: 42151-0001
   title: Production index manufacturing (GENESIS 42151)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=42151
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 111
 - series_id: 51000-0001
   title: Foreign trade (GENESIS 51000)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=51000
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 135
 - series_id: 12411-0001
   title: Population (GENESIS 12411)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=12411
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
+  obs_count: 11
 - series_id: 61351-0001
   title: Producer prices industrial products (GENESIS 61351)
-  status: blocked
+  status: harvested
   url: https://www-genesis.destatis.de/genesis/online?operation=statistic&code=61351
   source: Destatis GENESIS
-  obs_count: 0
-  blocked_reason: genesis_rest_html_or_auth_wall
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=0/7 series; obs_points~0.'
+  obs_count: 96
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=7/7 series.'
 L5_country_unique:
 - title: 'Destatis: Destatis'
   url: https://www.destatis.de/
@@ -88,7 +82,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: pending
+  L4: done
   L5: partial
 agency_id: de_destatis
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

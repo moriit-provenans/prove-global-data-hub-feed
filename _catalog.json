@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-21T04:47:43+09:00",
+  "last_updated": "2026-07-21T04:58:35+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10660,7 +10660,7 @@
           "nso"
         ]
       },
-      "latest_period_nso": "2026-06",
+      "latest_period_nso": "2026-Q1",
       "available_iso2_nso": [
         "BR",
         "CA",
@@ -10744,7 +10744,9 @@
       "latest_period_nso": "2026-Q1",
       "available_iso2_nso": [
         "CA",
+        "DE",
         "GB",
+        "SG",
         "US"
       ]
     },
@@ -10918,7 +10920,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.avg_weekly_hours",
@@ -10948,7 +10954,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.cpi_energy.index",
@@ -10978,7 +10988,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.employment_rate.pct",
@@ -11008,7 +11022,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
     },
     {
       "indicator_id": "nso_m.fed_funds.pct",
@@ -11038,7 +11056,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.fx_usd_eur",
@@ -11068,7 +11090,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-07",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.housing_starts.thousands",
@@ -11098,7 +11124,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.lfpr.pct",
@@ -11128,7 +11158,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.m2.billions",
@@ -11158,7 +11192,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.nonfarm_payrolls.thousands",
@@ -11188,7 +11226,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.ppi_final_demand.index",
@@ -11218,7 +11260,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.retail_sales_real.index",
@@ -11248,7 +11294,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_m.treasury_10y.pct",
@@ -11278,7 +11328,11 @@
         "tiers": [
           "nso"
         ]
-      }
+      },
+      "latest_period_nso": "2026-07",
+      "available_iso2_nso": [
+        "US"
+      ]
     },
     {
       "indicator_id": "nso_q.labor_productivity.index",
@@ -11297,6 +11351,674 @@
         "nso"
       ],
       "latest_period": "2024-Q4",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-Q4",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_a.fdi_income.million_sgd",
+      "name_ja": "nso_a.fdi_income.million_sgd",
+      "name_en": "nso_a.fdi_income.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_a.fdi_stock.million_sgd",
+      "name_ja": "nso_a.fdi_stock.million_sgd",
+      "name_en": "nso_a.fdi_stock.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_a.population",
+      "name_ja": "nso_a.population",
+      "name_en": "nso_a.population",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "DE"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2025",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.avg_weekly_earnings.gbp",
+      "name_ja": "nso_m.avg_weekly_earnings.gbp",
+      "name_en": "nso_m.avg_weekly_earnings.gbp",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.cgpi.index",
+      "name_ja": "nso_m.cgpi.index",
+      "name_en": "nso_m.cgpi.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.cpi_hicp.index",
+      "name_ja": "nso_m.cpi_hicp.index",
+      "name_en": "nso_m.cpi_hicp.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "DE"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2025-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.housing_starts.units",
+      "name_ja": "nso_m.housing_starts.units",
+      "name_en": "nso_m.housing_starts.units",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CA"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2025-01",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.manufacturing_sales.thousands_cad",
+      "name_ja": "nso_m.manufacturing_sales.thousands_cad",
+      "name_en": "nso_m.manufacturing_sales.thousands_cad",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CA"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.population",
+      "name_ja": "nso_m.population",
+      "name_en": "nso_m.population",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "1980-00",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.ppi.index",
+      "name_ja": "nso_m.ppi.index",
+      "name_en": "nso_m.ppi.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "DE"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2022-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.psnd_gdp.pct",
+      "name_ja": "nso_m.psnd_gdp.pct",
+      "name_en": "nso_m.psnd_gdp.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.retail_sales.index",
+      "name_ja": "nso_m.retail_sales.index",
+      "name_en": "nso_m.retail_sales.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB",
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.trade_balance_goods_services.million_usd",
+      "name_ja": "nso_m.trade_balance_goods_services.million_usd",
+      "name_en": "nso_m.trade_balance_goods_services.million_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.current_account.million_gbp",
+      "name_ja": "nso_q.current_account.million_gbp",
+      "name_en": "nso_q.current_account.million_gbp",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gdp_all_industry.million_usd",
+      "name_ja": "nso_q.gdp_all_industry.million_usd",
+      "name_en": "nso_q.gdp_all_industry.million_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.level",
+      "name_ja": "nso_q.gdp_real.level",
+      "name_en": "nso_q.gdp_real.level",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "MY"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gross_saving.billion_usd",
+      "name_ja": "nso_q.gross_saving.billion_usd",
+      "name_en": "nso_q.gross_saving.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.household_net_worth.million_sgd",
+      "name_ja": "nso_q.household_net_worth.million_sgd",
+      "name_en": "nso_q.household_net_worth.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.pce.billion_usd",
+      "name_ja": "nso_q.pce.billion_usd",
+      "name_en": "nso_q.pce.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.personal_income.billion_usd",
+      "name_ja": "nso_q.personal_income.billion_usd",
+      "name_en": "nso_q.personal_income.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q2",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.va_manufacturing_share_gdp.pct",
+      "name_ja": "nso_q.va_manufacturing_share_gdp.pct",
+      "name_en": "nso_q.va_manufacturing_share_gdp.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.va_per_worker.yoy_pct",
+      "name_ja": "nso_q.va_per_worker.yoy_pct",
+      "name_en": "nso_q.va_per_worker.yoy_pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
       "phase": "nso_wave1",
       "priority": "P0",
       "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",

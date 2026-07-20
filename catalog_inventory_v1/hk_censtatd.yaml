@@ -1,5 +1,5 @@
 iso2: HK
-source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2b: L3+L4 expand (1/2).'
 L0:
   portal_url: https://www.censtatd.gov.hk/
   verified: true
@@ -16,8 +16,20 @@ L2_datasets:
   update_freq: n/a
   license: C&SD terms
   theme_id: censtatd
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: 510-60001
+  title: Composite CPI
+  status: harvested
+  url: https://www.censtatd.gov.hk/api/
+  source: hk_censtatd
+  obs_count: 137
+- series_id: 310-31001
+  title: GDP
+  status: harvested
+  url: https://www.censtatd.gov.hk/api/
+  source: hk_censtatd
+  obs_count: 209
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=2/2 series.'
 L5_country_unique:
 - title: C&SD portal
   url: https://www.censtatd.gov.hk/
@@ -32,8 +44,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: hk_censtatd
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:58:22+09:00'

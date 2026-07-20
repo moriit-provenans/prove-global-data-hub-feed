@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:47:04+09:00'
-wave: Wave2
+updated_at: '2026-07-21T04:58:51+09:00'
+wave: Wave2b
 policy:
   layers:
   - L0
@@ -289,7 +289,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: done
     L5: partial
   portal_url: https://www.bea.gov/
 - agency_id: us_fed
@@ -1413,8 +1413,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.dosm.gov.my/
   open_data_url: https://open.dosm.gov.my/
@@ -1970,8 +1970,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://kostat.go.kr/
   open_data_url: https://kosis.kr/
@@ -2155,8 +2155,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.stat.gov.tw/
   open_data_url: https://www.dgbas.gov.tw/
@@ -2339,8 +2339,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.censtatd.gov.hk/
 - agency_id: hk_hkma
@@ -3082,7 +3082,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: partial
+    L4: done
     L5: partial
   portal_url: https://www.ons.gov.uk/
 - agency_id: gb_boe
@@ -3265,7 +3265,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: done
     L5: partial
   portal_url: https://www.destatis.de/
 - agency_id: de_buba

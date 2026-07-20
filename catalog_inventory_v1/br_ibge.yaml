@@ -1,6 +1,6 @@
 iso2: BR
 source_note_ja: 'IBGE L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d: SIDRA table
-  ID stubs。 Wave2: L3→L4 observation harvest (4/7).'
+  ID stubs。 Wave2: L3→L4 observation harvest (4/7). Wave2b: L4 expand (5/7).'
 L0:
   portal_url: https://www.ibge.gov.br/
   verified: true
@@ -59,22 +59,21 @@ L3_series:
   url: https://sidra.ibge.gov.br/tabela/3418
   source: IBGE SIDRA
   obs_count: 0
-  blocked_reason: sidra_params_not_wired_or_failed
+  blocked_reason: empty
 - series_id: '1620'
   title: População residente (SIDRA 1620)
-  status: blocked
+  status: harvested
   url: https://sidra.ibge.gov.br/tabela/1620
   source: IBGE SIDRA
-  obs_count: 0
-  blocked_reason: sidra_params_not_wired_or_failed
+  obs_count: 9
 - series_id: '6784'
   title: IPP — Índice de Preços ao Produtor (SIDRA 6784)
   status: blocked
   url: https://sidra.ibge.gov.br/tabela/6784
   source: IBGE SIDRA
   obs_count: 0
-  blocked_reason: sidra_params_not_wired_or_failed
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=4/7 series; obs_points~451.'
+  blocked_reason: http_400
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=5/7 series.'
 L5_country_unique:
 - title: 'IBGE: IBGE'
   url: https://www.ibge.gov.br/
@@ -90,4 +89,4 @@ coverage:
   L4: partial
   L5: partial
 agency_id: br_ibge
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

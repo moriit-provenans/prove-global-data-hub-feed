@@ -1,5 +1,5 @@
 iso2: TW
-source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2b: L3+L4 expand (3/3).'
 L0:
   portal_url: https://www.stat.gov.tw/
   verified: true
@@ -16,8 +16,26 @@ L2_datasets:
   update_freq: n/a
   license: DGBAS terms
   theme_id: stat
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: dgbas_cpi
+  title: CPI index/YoY (monthly indicators)
+  status: harvested
+  url: https://apiservice.mol.gov.tw/OdService/download/A17030000J-000016-wWs
+  source: tw_dgbas
+  obs_count: 13
+- series_id: dgbas_unemployment
+  title: Unemployment rate
+  status: harvested
+  url: https://apiservice.mol.gov.tw/OdService/download/A17030000J-000016-wWs
+  source: tw_dgbas
+  obs_count: 13
+- series_id: dgbas_gdp_yoy
+  title: GDP YoY from monthly release
+  status: harvested
+  url: https://apiservice.mol.gov.tw/OdService/download/A17030000J-000016-wWs
+  source: tw_dgbas
+  obs_count: 4
+L4_notes: 'Wave2b L4 2026-07-21: harvested=3/3;'
 L5_country_unique:
 - title: stat.gov.tw
   url: https://www.stat.gov.tw/
@@ -32,8 +50,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tw_dgbas
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

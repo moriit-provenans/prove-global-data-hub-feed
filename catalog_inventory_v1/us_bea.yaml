@@ -1,6 +1,7 @@
 iso2: US
 source_note_ja: 'Wave1c: BEA ポータル＋NIPA/ITA/Regional の L3 series stubs（表ID＝公式 catalog
-  名称）。 Wave1d: BEA L3 deepen。 Wave2: L3→L4 observation harvest (0/9).'
+  名称）。 Wave1d: BEA L3 deepen。 Wave2: L3→L4 observation harvest (0/9). Wave2b: L4 expand
+  (9/9).'
 L0:
   portal_url: https://www.bea.gov/
   verified: true
@@ -43,68 +44,59 @@ L3_series:
 - series_id: NIPA_T10101
   title: Table 1.1.1. Percent Change From Preceding Period in Real Gross Domestic
     Product
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: NIPA_T10105
   title: Table 1.1.5. Gross Domestic Product
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: NIPA_T20100
   title: Table 2.1. Personal Income and Its Disposition
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 137
 - series_id: NIPA_T10102
   title: Table 1.1.2. Contributions to Percent Change in Real Gross Domestic Product
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: ITA_IntlServTrade
   title: International Trade in Goods and Services
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services
   source: BEA ITA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 137
 - series_id: Regional_GDP
   title: GDP by State / Metro
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/data/gdp/gdp-state
   source: BEA Regional
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: Industry_GDPByIndustry
   title: GDP by Industry
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/data/gdp/gdp-industry
   source: BEA Industry
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: NIPA_T50101
   title: Table 5.1. Saving and Investment
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
   source: BEA NIPA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
+  obs_count: 45
 - series_id: PCE
   title: Personal Consumption Expenditures
-  status: blocked
+  status: harvested
   url: https://www.bea.gov/data/consumer-spending/national
   source: BEA
-  obs_count: 0
-  blocked_reason: BEA_API_KEY_missing
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=0/9 series; obs_points~0.'
+  obs_count: 45
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=9/9 series.'
 L5_country_unique:
 - title: BEA NIPA interactive tables
   url: https://www.bea.gov/itable/national-gdp-and-personal-income
@@ -117,7 +109,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: pending
+  L4: done
   L5: partial
 agency_id: us_bea
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

@@ -1,6 +1,7 @@
 iso2: CA
 source_note_ja: 'Statistics Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave1d:
-  StatCan table ID stubs。 Wave2: L3→L4 observation harvest (3/7).'
+  StatCan table ID stubs。 Wave2: L3→L4 observation harvest (3/7). Wave2b: L4 expand
+  (6/7).'
 L0:
   portal_url: https://www.statcan.gc.ca/
   verified: true
@@ -49,33 +50,30 @@ L3_series:
   obs_count: 120
 - series_id: 16-10-0047-01
   title: Manufacturing sales (16-10-0047-01)
-  status: blocked
+  status: harvested
   url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1610004701
   source: StatCan
-  obs_count: 0
-  blocked_reason: vector_id_not_wired_this_wave
+  obs_count: 120
 - series_id: 12-10-0121-01
   title: International merchandise trade (12-10-0121-01)
   status: blocked
   url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1210012101
   source: StatCan
   obs_count: 0
-  blocked_reason: vector_id_not_wired_this_wave
+  blocked_reason: cube_inactive_or_coord_unresolved
 - series_id: 14-10-0327-01
   title: Employment by industry (14-10-0327-01)
-  status: blocked
+  status: harvested
   url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032701
   source: StatCan
-  obs_count: 0
-  blocked_reason: vector_id_not_wired_this_wave
+  obs_count: 10
 - series_id: 34-10-0126-01
   title: Building permits (34-10-0126-01)
-  status: blocked
+  status: harvested
   url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410012601
   source: StatCan
-  obs_count: 0
-  blocked_reason: vector_id_not_wired_this_wave
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=3/7 series; obs_points~360.'
+  obs_count: 71
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=6/7 series.'
 L5_country_unique:
 - title: 'Statistics Canada: StatCan'
   url: https://www.statcan.gc.ca/
@@ -88,4 +86,4 @@ coverage:
   L4: partial
   L5: partial
 agency_id: ca_statcan
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

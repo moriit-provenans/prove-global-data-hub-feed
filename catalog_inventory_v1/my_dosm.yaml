@@ -1,5 +1,5 @@
 iso2: MY
-source_note_ja: Wave1 L0–L2 start（検証済ポータル）。
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2b: L3+L4 expand (2/3).'
 L0:
   portal_url: https://www.dosm.gov.my/
   verified: true
@@ -16,8 +16,26 @@ L2_datasets:
   update_freq: n/a
   license: DOSM terms
   theme_id: dosm
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: cpi_2d_overall
+  title: CPI overall (open.dosm cpi_2d)
+  status: harvested
+  url: https://storage.dosm.gov.my/cpi/cpi_2d.csv
+  source: my_dosm
+  obs_count: 138
+- series_id: lfs_u_rate
+  title: LFS unemployment rate
+  status: harvested
+  url: https://storage.dosm.gov.my/labour/lfs_month.csv
+  source: my_dosm
+  obs_count: 137
+- series_id: gdp_qtr_real
+  title: GDP quarterly real
+  status: harvested
+  url: https://storage.dosm.gov.my/gdp/gdp_qtr_real.csv
+  source: my_dosm
+  obs_count: 41
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=3/3 series.'
 L5_country_unique:
 - title: DOSM portal
   url: https://www.dosm.gov.my/
@@ -32,8 +50,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: my_dosm
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T04:58:22+09:00'

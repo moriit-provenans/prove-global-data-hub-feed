@@ -1,7 +1,7 @@
 iso2: SG
 source_note_ja: 'SingStatポータル＋Table Builderのみ登録（find-data deep pathは2026-07-21時点で404）。
   Wave1c: SingStat Table Builder 公開表ID stubs。観測値は未取得。 Wave1d: SingStat Table Builder
-  L3 deepen。 Wave2: L3→L4 observation harvest (2/10).'
+  L3 deepen。 Wave2: L3→L4 observation harvest (2/10). Wave2b: L4 expand (8/10).'
 L0:
   portal_url: https://www.singstat.gov.sg/
   verified: true
@@ -32,18 +32,16 @@ L2_datasets:
 L3_series:
 - series_id: M015671
   title: Gross Domestic Product At Current Market Prices
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
+  obs_count: 45
 - series_id: M015711
   title: Gross Domestic Product In Chained (2015) Dollars
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
+  obs_count: 45
 - series_id: M212881
   title: Consumer Price Index
   status: harvested
@@ -65,25 +63,22 @@ L3_series:
   blocked_reason: tablebuilder_api_404_or_not_wired
 - series_id: M015821
   title: Gross Domestic Product By Industry
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
+  obs_count: 45
 - series_id: M083811
   title: Domestic Exports Of Goods
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
+  obs_count: 10
 - series_id: M700981
   title: Resident Population
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
+  obs_count: 45
 - series_id: M212901
   title: Consumer Price Index By Household Income Group
   status: blocked
@@ -93,12 +88,11 @@ L3_series:
   blocked_reason: tablebuilder_api_404_or_not_wired
 - series_id: M083901
   title: Unit Labour Cost Index
-  status: blocked
+  status: harvested
   url: https://tablebuilder.singstat.gov.sg/
   source: SingStat
-  obs_count: 0
-  blocked_reason: tablebuilder_api_404_or_not_wired
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=2/10 series; obs_points~453.'
+  obs_count: 10
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=8/10 series.'
 L5_country_unique:
 - title: SingStat Table Builder
   url: https://tablebuilder.singstat.gov.sg/
@@ -117,4 +111,4 @@ coverage:
   L4: partial
   L5: partial
 agency_id: sg_singstat
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'

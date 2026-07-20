@@ -1,6 +1,7 @@
 iso2: GB
 source_note_ja: 'Office for National Statistics L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
-  Wave1d: ONS series ID stubs。 Wave2: L3→L4 observation harvest (3/8).'
+  Wave1d: ONS series ID stubs。 Wave2: L3→L4 observation harvest (3/8). Wave2b: L4
+  expand (8/8).'
 L0:
   portal_url: https://www.ons.gov.uk/
   verified: true
@@ -43,11 +44,10 @@ L3_series:
   obs_count: 182
 - series_id: MGSL
   title: Unemployment rate (MGSL)
-  status: blocked
+  status: harvested
   url: https://www.ons.gov.uk/employmentandlabourmarket
   source: ONS
-  obs_count: 0
-  blocked_reason: http_404_or_missing_cdid
+  obs_count: 180
 - series_id: LF24
   title: Employment rate (LF24)
   status: harvested
@@ -56,33 +56,29 @@ L3_series:
   obs_count: 180
 - series_id: IKBH
   title: Public sector net borrowing (IKBH)
-  status: blocked
+  status: harvested
   url: https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes
   source: ONS
-  obs_count: 0
-  blocked_reason: http_404_or_missing_cdid
+  obs_count: 182
 - series_id: G7AU
   title: Retail sales index (G7AU)
-  status: blocked
+  status: harvested
   url: https://www.ons.gov.uk/businessindustryandtrade/retailindustry
   source: ONS
-  obs_count: 0
-  blocked_reason: rate_limited_429
+  obs_count: 182
 - series_id: L55O
   title: Average weekly earnings (L55O)
-  status: blocked
+  status: harvested
   url: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours
   source: ONS
-  obs_count: 0
-  blocked_reason: rate_limited_429
+  obs_count: 181
 - series_id: DIAL
   title: Balance of payments current account (DIAL)
-  status: blocked
+  status: harvested
   url: https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments
   source: ONS
-  obs_count: 0
-  blocked_reason: http_404_or_missing_cdid
-L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=3/8 series; obs_points~407.'
+  obs_count: 45
+L4_notes: 'Wave2b L4 expand 2026-07-21: harvested=8/8 series.'
 L5_country_unique:
 - title: 'Office for National Statistics: ONS'
   url: https://www.ons.gov.uk/
@@ -92,7 +88,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: partial
+  L4: done
   L5: partial
 agency_id: gb_ons
-updated_at: '2026-07-21T04:47:04+09:00'
+updated_at: '2026-07-21T04:56:29+09:00'
