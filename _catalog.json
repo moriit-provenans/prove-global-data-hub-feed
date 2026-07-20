@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-13T21:22:56+09:00",
+  "last_updated": "2026-07-20T20:59:14+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。",
+  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -10344,6 +10344,291 @@
         "url": ""
       },
       "feed_id": "country_profile"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "name_ja": "実質GDP成長率（四半期・前年同期比）",
+      "name_en": "Real GDP growth, quarterly (YoY %)",
+      "unit": "%",
+      "category": "マクロ（四半期）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "TR",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.coincident_index",
+      "name_ja": "景気動向指数・一致（月次）",
+      "name_en": "Coincident CI, monthly",
+      "unit": "index",
+      "category": "景気（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.cpi.index",
+      "name_ja": "消費者物価指数（月次）",
+      "name_en": "CPI index, monthly",
+      "unit": "index",
+      "category": "物価（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.industrial_production.index",
+      "name_ja": "鉱工業生産指数（月次）",
+      "name_en": "Industrial production index, monthly",
+      "unit": "index",
+      "category": "産業（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.leading_index",
+      "name_ja": "景気動向指数・先行（月次）",
+      "name_en": "Leading CI, monthly",
+      "unit": "index",
+      "category": "景気（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.unemployment.pct",
+      "name_ja": "失業率（月次）",
+      "name_en": "Unemployment rate, monthly",
+      "unit": "%",
+      "category": "労働（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gdp_nominal.level_jpy",
+      "name_ja": "名目GDP（四半期・季節調整・億円）",
+      "name_en": "Nominal GDP level, quarterly SA (JPY)",
+      "unit": "billion_JPY",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.index",
+      "name_ja": "実質GDP指数（四半期）",
+      "name_en": "Real GDP index, quarterly",
+      "unit": "index",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.level_jpy",
+      "name_ja": "実質GDP（四半期・季節調整・億円相当）",
+      "name_en": "Real GDP level, quarterly SA (JPY)",
+      "unit": "billion_JPY_2020chain",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
     }
   ],
   "countries": [

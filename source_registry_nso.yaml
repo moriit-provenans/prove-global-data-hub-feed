@@ -1,0 +1,160 @@
+schema_version: '1.0'
+updated_at: '2026-07-20T20:59:14+09:00'
+policy:
+  priority:
+  - nso
+  - international_fast
+  - wb_fallback
+  owner_note_ja: 'Polaris 2026-07-20: WB偏重是正。各国統計局から足元を取る。'
+sources:
+- id: jp_estat_cao_gdp
+  tier: nso
+  iso2:
+  - JP
+  agency: 内閣府（e-Stat）
+  url: https://www.e-stat.go.jp/
+  metrics:
+  - nso_q.gdp_real.level_jpy
+  - nso_q.gdp_nominal.level_jpy
+  - macro_q.gdp_real.yoy_pct
+- id: jp_estat_ci
+  tier: nso
+  iso2:
+  - JP
+  agency: 内閣府 景気動向指数
+  url: https://www.e-stat.go.jp/
+  metrics:
+  - nso_m.leading_index
+  - nso_m.coincident_index
+- id: jp_estat_lfs
+  tier: nso
+  iso2:
+  - JP
+  agency: 総務省 労働力調査
+  url: https://www.e-stat.go.jp/
+  metrics:
+  - nso_m.unemployment.pct
+- id: us_fred
+  tier: nso
+  iso2:
+  - US
+  agency: FRED (BEA/BLS)
+  url: https://fred.stlouisfed.org/
+  metrics:
+  - nso_m.cpi.index
+  - nso_m.unemployment.pct
+  - nso_m.industrial_production.index
+  - nso_q.gdp_real.index
+  - macro_q.gdp_real.yoy_pct
+- id: fred_oecd_mei_gdp_yoy
+  tier: international_fast
+  iso2:
+  - BR
+  - CA
+  - DE
+  - FR
+  - GB
+  - ID
+  - IN
+  - JP
+  - KR
+  - TR
+  - US
+  agency: FRED republished OECD MEI
+  url: https://fred.stlouisfed.org/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  note_ja: TH/VN/MY/PH/SG/CN はMEI ID無し → NSO直結が次
+latest_period_by_key:
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: BR
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: CA
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: DE
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: FR
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: GB
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: ID
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: IN
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: JP
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: KR
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: TR
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: US
+  source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_m.coincident_index
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.cpi.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.industrial_production.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.leading_index
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
+  iso2: JP
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_q.gdp_nominal.level_jpy
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_q.gdp_real.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_q.gdp_real.level_jpy
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-Q1

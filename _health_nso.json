@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-20T20:59:14+09:00",
+  "wave": "REQ-POLARIS-20260720-001 Wave1",
+  "nso_pilot_rows": 1660,
+  "source_tier_counts": {
+    "international_fast": 632,
+    "nso": 1028
+  },
+  "macro_q_gdp_real_yoy_countries": [
+    "BR",
+    "CA",
+    "DE",
+    "FR",
+    "GB",
+    "ID",
+    "IN",
+    "JP",
+    "KR",
+    "TR",
+    "US"
+  ],
+  "macro_q_gdp_real_yoy_latest": {
+    "BR": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 1.80578118902075
+    },
+    "CA": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": -0.0542757555
+    },
+    "DE": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 0.3432485328
+    },
+    "FR": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 0.8735510182
+    },
+    "GB": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 0.912997846917252
+    },
+    "ID": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 5.4625100904
+    },
+    "IN": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 7.9649786212
+    },
+    "JP": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 0.31704050434187
+    },
+    "KR": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 3.77549439175968
+    },
+    "TR": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 2.83233619786336
+    },
+    "US": {
+      "period": "2026-Q1",
+      "tier": "international_fast",
+      "value": 2.68474334142634
+    }
+  },
+  "wb_fallback_share_note_ja": "本WaveはNSO/OECD追加。年次macro_annualのWB比率是正は段階的（カタログメタで可視化）。",
+  "quarterly_was_empty": true,
+  "quarterly_now_rows": 630,
+  "monthly_nso_rows": 823,
+  "next": [
+    "VN/TH/ID/IN の統計局API直結（OECD橋渡しからの昇格）",
+    "JP CPI e-Stat表の特定",
+    "IMF_API_KEY で QNEA 本命合流",
+    "Smith: source_tier / 鮮度バッジUI"
+  ]
+}
