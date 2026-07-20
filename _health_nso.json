@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T03:23:44+09:00",
-  "wave": "REQ-SMITH-20260720-041 Wave2b (in progress)",
+  "generated_at": "2026-07-21T03:24:27+09:00",
+  "wave": "REQ-SMITH-20260720-041 Wave2b (fill≥80% milestone)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
   "nso_pilot_rows": 14293,
   "source_tier_counts": {
@@ -1135,8 +1135,8 @@
         "best_tier": null,
         "latest_period": null,
         "tiers_present": [],
-        "status": "missing",
-        "blocked_reason": null
+        "status": "blocked",
+        "blocked_reason": "FRED/OECD MEIにサウジ月次失業系列なし"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1912,8 +1912,8 @@
       "filled": 104,
       "nso_primary": 38,
       "international_fast_bridge": 66,
-      "missing": 1,
-      "blocked": 13,
+      "missing": 0,
+      "blocked": 14,
       "na_optional": 29,
       "fill_rate_pct": 70.7,
       "nso_rate_pct": 25.9,
