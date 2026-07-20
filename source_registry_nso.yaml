@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T21:51:06+09:00'
+updated_at: '2026-07-20T22:07:32+09:00'
 policy:
   priority:
   - nso
@@ -148,6 +148,14 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.cpi.index
+  iso2: ID
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.index
+  iso2: IN
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.index
   iso2: JP
   source_tier: nso
   latest_period: 2026-05
@@ -155,11 +163,23 @@ latest_period_by_key:
   iso2: MY
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.cpi.index
+  iso2: SG
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.cpi.index
   iso2: US
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: ID
+  source_tier: international_fast
+  latest_period: 2025-04
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: IN
+  source_tier: international_fast
+  latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
   iso2: JP
   source_tier: nso
   latest_period: 2026-05
@@ -167,6 +187,10 @@ latest_period_by_key:
   iso2: MY
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: SG
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso
