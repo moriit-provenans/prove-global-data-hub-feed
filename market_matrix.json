@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0-nso-wave",
   "feed_id": "market_matrix",
-  "last_updated": "2026-07-12T20:08:01+09:00",
+  "last_updated": "2026-07-20T21:14:44+09:00",
   "source": {
-    "label": "Atlas DataLake market-grid（事実品質ゲート適用）",
-    "disclaimer_ja": "本ページの数値は Atlas DataLake の業種別調査ノートからの二次加工です。投資・経営判断は自己責任でお願いします。"
+    "label": "Atlas DataLake market-grid（自動抽出＋事実品質ゲート）",
+    "disclaimer_ja": "業種特化の market-size のみ。同一国で金額が複数業種に転用されている数値は除外。"
   },
   "meta": {
     "countries": [
@@ -14,24 +14,9 @@
         "name_en": "China"
       },
       {
-        "iso2": "TH",
-        "name_ja": "タイ",
-        "name_en": "Thailand"
-      },
-      {
-        "iso2": "VN",
-        "name_ja": "ベトナム",
-        "name_en": "Vietnam"
-      },
-      {
-        "iso2": "US",
-        "name_ja": "米国",
-        "name_en": "United States"
-      },
-      {
-        "iso2": "TW",
-        "name_ja": "台湾",
-        "name_en": "Taiwan"
+        "iso2": "ID",
+        "name_ja": "インドネシア",
+        "name_en": "Indonesia"
       },
       {
         "iso2": "KR",
@@ -39,35 +24,92 @@
         "name_en": "Korea"
       },
       {
-        "iso2": "ID",
-        "name_ja": "インドネシア",
-        "name_en": "Indonesia"
+        "iso2": "TH",
+        "name_ja": "タイ",
+        "name_en": "Thailand"
+      },
+      {
+        "iso2": "TW",
+        "name_ja": "台湾",
+        "name_en": "Taiwan"
+      },
+      {
+        "iso2": "US",
+        "name_ja": "米国",
+        "name_en": "United States"
+      },
+      {
+        "iso2": "VN",
+        "name_ja": "ベトナム",
+        "name_en": "Vietnam"
       }
     ],
     "industries": [
       {
+        "industry_id": "food-beverage",
+        "name_ja": "食品・飲料",
+        "name_en": "food-beverage"
+      },
+      {
         "industry_id": "medical-devices",
         "name_ja": "医療機器",
-        "name_en": "Medical devices"
+        "name_en": "medical-devices"
+      },
+      {
+        "industry_id": "pharma-biotech",
+        "name_ja": "医薬・バイオ",
+        "name_en": "pharma-biotech"
       }
     ],
-    "coverage_note_ja": "Phase 2 初回は「医療機器（medical-devices）」1 業種 × 7 か国のみ。他業種は事実品質ゲートで保留（詳細は excluded_note）。",
-    "excluded_note_ja": "以下は tags:[market-size] があるが、同一国の複数業種セルで同じ集計値が 転用されているため B1 には含めていない（業種特化データではないため）：①インド cosmetics/snacks-confectionery/food-beverage/foodtech/home-appliances/health-food/daily-goods の7業種＝全て「インド FMCG 市場全体」の同一数値を転用。②韓国 cybersecurity/telecom-5g/content-entertainment の3業種＝全て「韓国 ICT 市場全体」の同一数値を転用。③各国の pharma-biotech セルの多くが同国の medical-devices セルと同一数値（データ生成時の未分化）。→ Phase 3 で業種特化ファクトへの格上げが必要（DataLake α層バックフィル対象）。"
+    "coverage_note_ja": "自動抽出 3 セル （候補 20・横断重複除外 17）。",
+    "extraction_report": {
+      "candidates": 20,
+      "excluded_cross_industry_dup": 17,
+      "kept_cells": 3,
+      "by_industry": {
+        "food-beverage": 1,
+        "medical-devices": 1,
+        "pharma-biotech": 1
+      },
+      "by_iso2": {
+        "TH": 1,
+        "VN": 2
+      },
+      "final_cells": 9,
+      "baseline_b1": 7,
+      "auto_added": 2
+    },
+    "excluded_note_ja": "同一 iso2 で同一金額（百万USD丸め）が複数業種に出現するケースは国全体転用と判断して除外。"
   },
   "modules": {
     "B1_market_size": {
       "module_id": "B1",
       "title_ja": "業種×国 市場規模マトリクス",
       "title_en": "Industry x country market size matrix",
-      "last_updated": "2026-07-12T20:08:01+09:00",
+      "last_updated": "2026-07-20T21:14:44+09:00",
       "source": {
         "label": "Atlas DataLake market-grid"
       },
       "cells": [
         {
+          "iso2": "TH",
+          "industry_id": "food-beverage",
+          "market_size_usd": 7400000000.0,
+          "market_size_year": 2024,
+          "cagr_pct": null,
+          "cagr_period": null,
+          "veritas": "✅",
+          "cell_path": "prove/market-grid/thailand/food-beverage/cell.yaml",
+          "metric_ids": [
+            "market.size.value_usd"
+          ],
+          "note_ja": "Modern Trade市場規模THB2.58兆(USD約74億・2024)・近代小売の浸透がASEANで高い",
+          "source_ja": "Krungsri Research / Worldpanel"
+        },
+        {
           "iso2": "CN",
           "industry_id": "medical-devices",
-          "market_size_usd": 140000000000,
+          "market_size_usd": 140000000000.0,
           "market_size_year": 2025,
           "cagr_pct": null,
           "cagr_period": null,
@@ -80,71 +122,24 @@
           "source_ja": "中国産業データ（β深掘り・cell.yaml C1_market）"
         },
         {
-          "iso2": "TH",
+          "iso2": "ID",
           "industry_id": "medical-devices",
-          "market_size_usd": 7000000000,
+          "market_size_usd": 8000000000.0,
           "market_size_year": 2024,
           "cagr_pct": null,
           "cagr_period": null,
           "veritas": "✅",
-          "cell_path": "prove/market-grid/thailand/medical-devices/cell.yaml",
+          "cell_path": "prove/market-grid/indonesia/medical-devices/cell.yaml",
           "metric_ids": [
             "market.size.value_usd"
           ],
-          "note_ja": "ASEAN第2位。輸入依存度80%超。メディカルツーリズム拠点（年350万人）。",
-          "source_ja": "タイ産業データ（β深掘り・cell.yaml C1_market）"
-        },
-        {
-          "iso2": "VN",
-          "industry_id": "medical-devices",
-          "market_size_usd": 2300000000,
-          "market_size_year": 2024,
-          "cagr_pct": 10.0,
-          "cagr_period": "2023-2024",
-          "veritas": "✅",
-          "cell_path": "prove/market-grid/vietnam/medical-devices/cell.yaml",
-          "metric_ids": [
-            "market.size.value_usd",
-            "market.cagr.pct"
-          ],
-          "note_ja": "ASEAN最高成長率。輸入依存度90%超（ASEAN最高）。",
-          "source_ja": "Asia Actual / GBI Vietnam"
-        },
-        {
-          "iso2": "US",
-          "industry_id": "medical-devices",
-          "market_size_usd": 190000000000,
-          "market_size_year": 2024,
-          "cagr_pct": null,
-          "cagr_period": null,
-          "veritas": "✅",
-          "cell_path": "prove/market-grid/usa/medical-devices/cell.yaml",
-          "metric_ids": [
-            "market.size.value_usd"
-          ],
-          "note_ja": "世界最大（世界市場の40%）。範囲値 USD 1,800-2,000億の中央値。",
-          "source_ja": "AdvaMed / Frost & Sullivan US Medtech 2025"
-        },
-        {
-          "iso2": "TW",
-          "industry_id": "medical-devices",
-          "market_size_usd": 3900000000,
-          "market_size_year": 2024,
-          "cagr_pct": 5.5,
-          "cagr_period": "annual",
-          "veritas": "✅",
-          "cell_path": "prove/market-grid/taiwan/medical-devices/cell.yaml",
-          "metric_ids": [
-            "market.size.value_usd",
-            "market.cagr.pct"
-          ],
-          "note_ja": "範囲値 USD 38-40億の中央値。輸入依存度60%超。",
-          "source_ja": "ITRI / 経済部工業局"
+          "note_ja": "ASEAN第1位（人口2.8億）。輸入依存度90%超。",
+          "source_ja": "Krungsri Research / MedDeviceGuide"
         },
         {
           "iso2": "KR",
           "industry_id": "medical-devices",
-          "market_size_usd": 9750000000,
+          "market_size_usd": 9750000000.0,
           "market_size_year": 2025,
           "cagr_pct": 7.0,
           "cagr_period": "annual",
@@ -158,19 +153,81 @@
           "source_ja": "KMDIA / Frost & Sullivan"
         },
         {
-          "iso2": "ID",
+          "iso2": "TH",
           "industry_id": "medical-devices",
-          "market_size_usd": 8000000000,
+          "market_size_usd": 7000000000.0,
           "market_size_year": 2024,
           "cagr_pct": null,
           "cagr_period": null,
           "veritas": "✅",
-          "cell_path": "prove/market-grid/indonesia/medical-devices/cell.yaml",
+          "cell_path": "prove/market-grid/thailand/medical-devices/cell.yaml",
           "metric_ids": [
             "market.size.value_usd"
           ],
-          "note_ja": "ASEAN第1位（人口2.8億）。輸入依存度90%超。",
-          "source_ja": "Krungsri Research / MedDeviceGuide"
+          "note_ja": "ASEAN第2位。輸入依存度80%超。メディカルツーリズム拠点（年350万人）。",
+          "source_ja": "タイ産業データ（β深掘り・cell.yaml C1_market）"
+        },
+        {
+          "iso2": "TW",
+          "industry_id": "medical-devices",
+          "market_size_usd": 3900000000.0,
+          "market_size_year": 2024,
+          "cagr_pct": 5.5,
+          "cagr_period": "annual",
+          "veritas": "✅",
+          "cell_path": "prove/market-grid/taiwan/medical-devices/cell.yaml",
+          "metric_ids": [
+            "market.size.value_usd",
+            "market.cagr.pct"
+          ],
+          "note_ja": "範囲値 USD 38-40億の中央値。輸入依存度60%超。",
+          "source_ja": "ITRI / 経済部工業局"
+        },
+        {
+          "iso2": "US",
+          "industry_id": "medical-devices",
+          "market_size_usd": 190000000000.0,
+          "market_size_year": 2024,
+          "cagr_pct": null,
+          "cagr_period": null,
+          "veritas": "✅",
+          "cell_path": "prove/market-grid/usa/medical-devices/cell.yaml",
+          "metric_ids": [
+            "market.size.value_usd"
+          ],
+          "note_ja": "世界最大（世界市場の40%）。範囲値 USD 1,800-2,000億の中央値。",
+          "source_ja": "AdvaMed / Frost & Sullivan US Medtech 2025"
+        },
+        {
+          "iso2": "VN",
+          "industry_id": "medical-devices",
+          "market_size_usd": 2300000000.0,
+          "market_size_year": 2024,
+          "cagr_pct": 10.0,
+          "cagr_period": "2023-2024",
+          "veritas": "✅",
+          "cell_path": "prove/market-grid/vietnam/medical-devices/cell.yaml",
+          "metric_ids": [
+            "market.size.value_usd",
+            "market.cagr.pct"
+          ],
+          "note_ja": "ASEAN最高成長率。輸入依存度90%超（ASEAN最高）。",
+          "source_ja": "Asia Actual / GBI Vietnam"
+        },
+        {
+          "iso2": "VN",
+          "industry_id": "pharma-biotech",
+          "market_size_usd": 7000000000.0,
+          "market_size_year": 2024,
+          "cagr_pct": null,
+          "cagr_period": null,
+          "veritas": "⚠️",
+          "cell_path": "prove/market-grid/vietnam/pharma-biotech/cell.yaml",
+          "metric_ids": [
+            "market.size.value_usd"
+          ],
+          "note_ja": "ベトナム医薬品市場 2024 約 USD 70 億・年 +8〜10% 成長（ASEAN 第3位）",
+          "source_ja": "業界推計（IQVIA / Fitch Solutions 系の公開レンジ）"
         }
       ]
     }

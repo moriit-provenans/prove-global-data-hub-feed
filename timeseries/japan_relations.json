@@ -1,12 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "0.3-nso-a3",
   "feed_id": "japan_relations",
-  "last_updated": "2026-07-13T11:11:10+09:00",
+  "last_updated": "2026-07-20T21:18:15+09:00",
   "frequency": "annual",
   "source": {
-    "label": "MOFA + MOF + JETRO + JNTO + JBIC(curated)",
-    "url": "https://www.mofa.go.jp/",
-    "disclaimer_ja": "在留邦人・日系拠点はe-Stat API（更新年次は表による）。貿易は章別合算。訪日はJNTO_XLSX_PATH未設定時⚠️。経産省 affiliates と MOFA companies は定義が異なる。JBIC有望国得票率はPDFキュレートサンプル（⚠️・機械パース未了）。"
+    "label": "MOFA/MOF/JETRO/JNTO/JBIC + e-Stat trade refresh (A3)",
+    "priority": [
+      "nso",
+      "international_fast"
+    ]
   },
   "meta": {
     "indicator_ids": [
@@ -44,7 +46,8 @@
       "from": 2000,
       "to": 2026
     },
-    "row_count": 1032
+    "row_count": 1040,
+    "wave": "REQ-POLARIS-001 A3"
   },
   "observations": [
     {
@@ -1419,109 +1422,121 @@
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "AE",
       "year": 2023,
-      "value": 4961276555.0,
+      "value": 4961281563.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "AE",
       "year": 2024,
-      "value": 6361130694.0,
+      "value": 6361144690.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "AE",
       "year": 2025,
-      "value": 6994233929.0,
+      "value": 6994370294.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "AE",
       "year": 2026,
-      "value": 2129533159.0,
+      "value": 2129540359.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "BR",
       "year": 2023,
-      "value": 1923443545.0,
+      "value": 2057124362.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "BR",
       "year": 2024,
-      "value": 2245943096.0,
+      "value": 2412731661.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "BR",
       "year": 2025,
-      "value": 2341718116.0,
+      "value": 2517079877.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "BR",
       "year": 2026,
-      "value": 973449322.0,
+      "value": 1086065394.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "CA",
       "year": 2023,
-      "value": 5488905805.0,
+      "value": 5521394548.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "CA",
       "year": 2024,
-      "value": 5949413481.0,
+      "value": 5990950446.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "CA",
       "year": 2025,
-      "value": 5959054467.0,
+      "value": 6015695898.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "CA",
       "year": 2026,
-      "value": 3283605530.0,
+      "value": 3304959168.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1529,8 +1544,9 @@
       "year": 2023,
       "value": 55243867622.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1538,8 +1554,9 @@
       "year": 2024,
       "value": 59013840561.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1547,8 +1564,9 @@
       "year": 2025,
       "value": 58296068993.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1556,8 +1574,9 @@
       "year": 2026,
       "value": 25757790479.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1565,8 +1584,9 @@
       "year": 2023,
       "value": 8598190967.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1574,8 +1594,9 @@
       "year": 2024,
       "value": 8131729898.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1583,8 +1604,9 @@
       "year": 2025,
       "value": 8465381231.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1592,80 +1614,89 @@
       "year": 2026,
       "value": 3870172127.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "FR",
       "year": 2023,
-      "value": 3268208400.0,
+      "value": 3397906258.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "FR",
       "year": 2024,
-      "value": 3259235837.0,
+      "value": 3399539228.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "FR",
       "year": 2025,
-      "value": 3262755608.0,
+      "value": 3397510821.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "FR",
       "year": 2026,
-      "value": 1531628245.0,
+      "value": 1605977587.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "GB",
       "year": 2023,
-      "value": 5709283219.0,
+      "value": 14857292443.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "GB",
       "year": 2024,
-      "value": 5782307673.0,
+      "value": 15215669722.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "GB",
       "year": 2025,
-      "value": 5981924073.0,
+      "value": 14481443316.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "GB",
       "year": 2026,
-      "value": 2795109789.0,
+      "value": 6702419889.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1673,8 +1704,9 @@
       "year": 2023,
       "value": 12644836977.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1682,8 +1714,9 @@
       "year": 2024,
       "value": 14845174799.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1691,8 +1724,9 @@
       "year": 2025,
       "value": 17110214506.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1700,8 +1734,9 @@
       "year": 2026,
       "value": 7566101708.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1709,8 +1744,9 @@
       "year": 2023,
       "value": 6877037861.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1718,8 +1754,9 @@
       "year": 2024,
       "value": 6593921445.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1727,8 +1764,9 @@
       "year": 2025,
       "value": 6288711580.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1736,44 +1774,49 @@
       "year": 2026,
       "value": 2524170677.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "IN",
       "year": 2023,
-      "value": 7029982713.0,
+      "value": 7104095507.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "IN",
       "year": 2024,
-      "value": 8150803890.0,
+      "value": 8204019401.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "IN",
       "year": 2025,
-      "value": 8761596314.0,
+      "value": 8810779692.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "IN",
       "year": 2026,
-      "value": 3971534670.0,
+      "value": 3998396553.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1781,8 +1824,9 @@
       "year": 2023,
       "value": 20719726421.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1790,8 +1834,9 @@
       "year": 2024,
       "value": 21921920592.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1799,8 +1844,9 @@
       "year": 2025,
       "value": 21612419157.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1808,8 +1854,9 @@
       "year": 2026,
       "value": 9923237475.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1817,8 +1864,9 @@
       "year": 2023,
       "value": 6378793637.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1826,8 +1874,9 @@
       "year": 2024,
       "value": 6832398210.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1835,8 +1884,9 @@
       "year": 2025,
       "value": 6780691271.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1844,8 +1894,9 @@
       "year": 2026,
       "value": 3473145586.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1853,8 +1904,9 @@
       "year": 2023,
       "value": 4631317837.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1862,8 +1914,9 @@
       "year": 2024,
       "value": 4896869849.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1871,8 +1924,9 @@
       "year": 2025,
       "value": 5046661070.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1880,8 +1934,9 @@
       "year": 2026,
       "value": 2383091047.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1889,8 +1944,9 @@
       "year": 2023,
       "value": 3468169757.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1898,8 +1954,9 @@
       "year": 2024,
       "value": 3547479540.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1907,8 +1964,9 @@
       "year": 2025,
       "value": 4176587774.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1916,8 +1974,9 @@
       "year": 2026,
       "value": 1112852473.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1925,8 +1984,9 @@
       "year": 2023,
       "value": 7828800014.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1934,8 +1994,9 @@
       "year": 2024,
       "value": 9153907848.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1943,8 +2004,9 @@
       "year": 2025,
       "value": 9480691227.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1952,8 +2014,9 @@
       "year": 2026,
       "value": 4196504970.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1961,8 +2024,9 @@
       "year": 2023,
       "value": 13578647937.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1970,8 +2034,9 @@
       "year": 2024,
       "value": 13148795224.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1979,8 +2044,9 @@
       "year": 2025,
       "value": 13621756113.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -1988,44 +2054,49 @@
       "year": 2026,
       "value": 6162982703.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "TR",
       "year": 2023,
-      "value": 2026294000.0,
+      "value": 8516479329.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "TR",
       "year": 2024,
-      "value": 1802699595.0,
+      "value": 8265130467.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "TR",
       "year": 2025,
-      "value": 1801290593.0,
+      "value": 8007526165.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
       "iso2": "TR",
       "year": 2026,
-      "value": 700957185.0,
+      "value": 3598044082.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2033,8 +2104,9 @@
       "year": 2023,
       "value": 19120386177.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2042,8 +2114,9 @@
       "year": 2024,
       "value": 21801358558.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2051,8 +2124,9 @@
       "year": 2025,
       "value": 25030791466.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2060,8 +2134,49 @@
       "year": 2026,
       "value": 12476991832.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.exports_to.jpy",
+      "iso2": "US",
+      "year": 2023,
+      "value": 70518230196.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.exports_to.jpy",
+      "iso2": "US",
+      "year": 2024,
+      "value": 73646078423.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.exports_to.jpy",
+      "iso2": "US",
+      "year": 2025,
+      "value": 69771153828.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.exports_to.jpy",
+      "iso2": "US",
+      "year": 2026,
+      "value": 30361113435.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2069,8 +2184,9 @@
       "year": 2023,
       "value": 7933077285.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2078,8 +2194,9 @@
       "year": 2024,
       "value": 8468376376.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2087,8 +2204,9 @@
       "year": 2025,
       "value": 9252591417.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.exports_to.jpy",
@@ -2096,8 +2214,9 @@
       "year": 2026,
       "value": 4275551001.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002160",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002160 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.fdi_outward_stock.usd",
@@ -6486,685 +6605,801 @@
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "AE",
       "year": 2023,
-      "value": 77580172.0,
+      "value": 16163771133.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "AE",
       "year": 2024,
-      "value": 79511117.0,
+      "value": 17391242620.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "AE",
       "year": 2025,
-      "value": 79417198.0,
+      "value": 15270549440.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "AE",
       "year": 2026,
-      "value": 19512346.0,
+      "value": 4549204014.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "BR",
       "year": 2023,
-      "value": 42211251.0,
+      "value": 5153673336.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "BR",
       "year": 2024,
-      "value": 32147129.0,
+      "value": 4851874513.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "BR",
       "year": 2025,
-      "value": 28099811.0,
+      "value": 4422570696.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "BR",
       "year": 2026,
-      "value": 13306371.0,
+      "value": 1930705887.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CA",
       "year": 2023,
-      "value": 277434250.0,
+      "value": 7359518574.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CA",
       "year": 2024,
-      "value": 37710842.0,
+      "value": 7091066212.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CA",
       "year": 2025,
-      "value": 34373105.0,
+      "value": 6367079058.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CA",
       "year": 2026,
-      "value": 19203205.0,
+      "value": 2907911312.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CN",
       "year": 2023,
-      "value": 51542980675.0,
+      "value": 76183908951.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CN",
       "year": 2024,
-      "value": 51019611471.0,
+      "value": 79014404735.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CN",
       "year": 2025,
-      "value": 56770469809.0,
+      "value": 84164165633.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "CN",
       "year": 2026,
-      "value": 25013100428.0,
+      "value": 38404507589.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "DE",
       "year": 2023,
-      "value": 794791941.0,
+      "value": 9483414971.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "DE",
       "year": 2024,
-      "value": 769238259.0,
+      "value": 9663788431.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "DE",
       "year": 2025,
-      "value": 798653198.0,
+      "value": 10564940338.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "DE",
       "year": 2026,
-      "value": 345564794.0,
+      "value": 4373398970.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "FR",
       "year": 2023,
-      "value": 145573103.0,
+      "value": 5919415433.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "FR",
       "year": 2024,
-      "value": 108015455.0,
+      "value": 6455211649.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "FR",
       "year": 2025,
-      "value": 95492163.0,
+      "value": 6835467142.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "FR",
       "year": 2026,
-      "value": 42228737.0,
+      "value": 3261674252.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "GB",
       "year": 2023,
-      "value": 160304346.0,
+      "value": 38937005963.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "GB",
       "year": 2024,
-      "value": 147881344.0,
+      "value": 34964517858.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "GB",
       "year": 2025,
-      "value": 175519576.0,
+      "value": 30188581428.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "GB",
       "year": 2026,
-      "value": 58441233.0,
+      "value": 12829956530.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "HK",
       "year": 2023,
-      "value": 17278656.0,
+      "value": 497903258.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "HK",
       "year": 2024,
-      "value": 16425862.0,
+      "value": 607764968.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "HK",
       "year": 2025,
-      "value": 15276044.0,
+      "value": 580696134.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "HK",
       "year": 2026,
-      "value": 4296697.0,
+      "value": 228095066.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "ID",
       "year": 2023,
-      "value": 2403560435.0,
+      "value": 12105901034.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "ID",
       "year": 2024,
-      "value": 1951675048.0,
+      "value": 12080723909.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "ID",
       "year": 2025,
-      "value": 1988940351.0,
+      "value": 10276904657.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "ID",
       "year": 2026,
-      "value": 908664356.0,
+      "value": 4117509261.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "IN",
       "year": 2023,
-      "value": 173100472.0,
+      "value": 2523764881.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "IN",
       "year": 2024,
-      "value": 162529123.0,
+      "value": 3205223815.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "IN",
       "year": 2025,
-      "value": 205427736.0,
+      "value": 3486806543.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "IN",
       "year": 2026,
-      "value": 96864313.0,
+      "value": 1590281956.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "KR",
       "year": 2023,
-      "value": 4250551344.0,
+      "value": 13532331181.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "KR",
       "year": 2024,
-      "value": 3843491385.0,
+      "value": 14925237287.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "KR",
       "year": 2025,
-      "value": 3344885443.0,
+      "value": 13927618485.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "KR",
       "year": 2026,
-      "value": 927077845.0,
+      "value": 7150336641.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "MY",
       "year": 2023,
-      "value": 9385030201.0,
+      "value": 9425880321.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "MY",
       "year": 2024,
-      "value": 8925109564.0,
+      "value": 9569121246.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "MY",
       "year": 2025,
-      "value": 8684519808.0,
+      "value": 9563687979.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "MY",
       "year": 2026,
-      "value": 3130620377.0,
+      "value": 4354528038.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "PH",
       "year": 2023,
-      "value": 1930431688.0,
+      "value": 4512376969.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "PH",
       "year": 2024,
-      "value": 1852444095.0,
+      "value": 4474812559.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "PH",
       "year": 2025,
-      "value": 1713384867.0,
+      "value": 4858183516.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "PH",
       "year": 2026,
-      "value": 701503895.0,
+      "value": 2061939200.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SA",
       "year": 2023,
-      "value": 63760094.0,
+      "value": 14737367234.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SA",
       "year": 2024,
-      "value": 55496226.0,
+      "value": 13610957677.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SA",
       "year": 2025,
-      "value": 54454548.0,
+      "value": 11828983128.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SA",
       "year": 2026,
-      "value": 22502590.0,
+      "value": 5049390766.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SG",
       "year": 2023,
-      "value": 197287357.0,
+      "value": 3661261771.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SG",
       "year": 2024,
-      "value": 166342500.0,
+      "value": 3631978656.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SG",
       "year": 2025,
-      "value": 155213339.0,
+      "value": 3554342187.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "SG",
       "year": 2026,
-      "value": 64490300.0,
+      "value": 1630626082.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TH",
       "year": 2023,
-      "value": 8269277186.0,
+      "value": 10947280153.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TH",
       "year": 2024,
-      "value": 9480296021.0,
+      "value": 11299049262.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TH",
       "year": 2025,
-      "value": 9160616896.0,
+      "value": 11418387137.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TH",
       "year": 2026,
-      "value": 3820609087.0,
+      "value": 5286614538.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TR",
       "year": 2023,
-      "value": 18725402.0,
+      "value": 3125370845.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TR",
       "year": 2024,
-      "value": 17627247.0,
+      "value": 3477057185.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TR",
       "year": 2025,
-      "value": 15869986.0,
+      "value": 4088546586.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TR",
       "year": 2026,
-      "value": 6444639.0,
+      "value": 1620614678.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TW",
       "year": 2023,
-      "value": 2665020305.0,
+      "value": 17076232520.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TW",
       "year": 2024,
-      "value": 2118500192.0,
+      "value": 15584671225.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TW",
       "year": 2025,
-      "value": 1983815080.0,
+      "value": 16858080903.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "TW",
       "year": 2026,
-      "value": 755664334.0,
+      "value": 8893882196.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.imports_from.jpy",
+      "iso2": "US",
+      "year": 2023,
+      "value": 36825994953.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.imports_from.jpy",
+      "iso2": "US",
+      "year": 2024,
+      "value": 40314167875.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.imports_from.jpy",
+      "iso2": "US",
+      "year": 2025,
+      "value": 40916658686.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
+    },
+    {
+      "indicator_id": "japan.imports_from.jpy",
+      "iso2": "US",
+      "year": 2026,
+      "value": 19200849583.0,
+      "unit": "JPY_1000",
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "VN",
       "year": 2023,
-      "value": 6759822251.0,
+      "value": 11151030086.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "VN",
       "year": 2024,
-      "value": 7551486488.0,
+      "value": 12572219883.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "VN",
       "year": 2025,
-      "value": 8041694955.0,
+      "value": 14082132869.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.imports_from.jpy",
       "iso2": "VN",
       "year": 2026,
-      "value": 3512682990.0,
+      "value": 6682525932.0,
       "unit": "JPY_1000",
-      "source_ref": "statsDataId=0004002161",
-      "veritas": "✅"
+      "source_ref": "statsDataId=0004002163 cat02=120 summed",
+      "veritas": "✅",
+      "source_tier": "nso"
     },
     {
       "indicator_id": "japan.jbic_promising_votes.pct",
