@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T20:59:14+09:00'
+updated_at: '2026-07-20T21:02:07+09:00'
 policy:
   priority:
   - nso
@@ -123,9 +123,17 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.cpi.index
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.cpi.index
   iso2: US
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: JP
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso

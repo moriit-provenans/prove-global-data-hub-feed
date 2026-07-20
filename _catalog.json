@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-07-20T20:59:14+09:00",
+  "last_updated": "2026-07-20T21:02:07+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
@@ -10427,6 +10427,7 @@
         "monthly"
       ],
       "available_iso2": [
+        "JP",
         "US"
       ],
       "source_tier_primary": "nso",
@@ -10434,6 +10435,36 @@
         "nso"
       ],
       "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      }
+    },
+    {
+      "indicator_id": "nso_m.cpi.yoy_pct",
+      "name_ja": "消費者物価上昇率（前年同月比・月次）",
+      "name_en": "CPI YoY %, monthly",
+      "unit": "%",
+      "category": "物価（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
       "phase": "nso_wave1",
       "priority": "P0",
       "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
