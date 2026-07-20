@@ -1,0 +1,22 @@
+agency_id: jp_enecho
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.enecho.meti.go.jp/
+  verified: true
+L1_themes:
+- theme_id: energy
+  name_ja: エネルギー統計
+  name_en: Energy stats
+  url: https://www.enecho.meti.go.jp/statistics/
+L2_datasets: []
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

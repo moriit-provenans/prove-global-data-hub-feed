@@ -1,0 +1,37 @@
+agency_id: jp_mof
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.mof.go.jp/
+  verified: true
+L1_themes:
+- theme_id: budget
+  name_ja: 予算・決算
+  name_en: Budget
+  url: https://www.mof.go.jp/budget/
+- theme_id: trade_customs
+  name_ja: 貿易統計
+  name_en: Trade statistics
+  url: https://www.customs.go.jp/toukei/
+- theme_id: debt
+  name_ja: 国債・債務
+  name_en: Public debt
+  url: https://www.mof.go.jp/jgbs/
+L2_datasets:
+- dataset_id: mof_trade
+  title: 貿易統計（財務省）
+  url: https://www.customs.go.jp/toukei/
+  api_id: null
+  update_freq: monthly
+  license: MOF terms
+  theme_id: trade_customs
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

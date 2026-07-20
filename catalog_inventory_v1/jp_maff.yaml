@@ -1,0 +1,33 @@
+agency_id: jp_maff
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.maff.go.jp/
+  verified: true
+L1_themes:
+- theme_id: crop
+  name_ja: 作物統計
+  name_en: Crop statistics
+  url: https://www.maff.go.jp/j/tokei/kouhyou/sakumotu/
+- theme_id: food
+  name_ja: 食料需給表
+  name_en: Food balance
+  url: https://www.maff.go.jp/j/tokei/kouhyou/zyukyu/
+L2_datasets:
+- dataset_id: maff_crop
+  title: 作物統計調査
+  url: https://www.maff.go.jp/j/tokei/kouhyou/sakumotu/
+  api_id: null
+  update_freq: annual
+  license: MAFF terms
+  theme_id: crop
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

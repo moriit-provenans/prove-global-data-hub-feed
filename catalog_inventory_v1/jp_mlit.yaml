@@ -1,0 +1,37 @@
+agency_id: jp_mlit
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.mlit.go.jp/
+  verified: true
+L1_themes:
+- theme_id: construction
+  name_ja: 建設工事受注動態
+  name_en: Construction orders
+  url: https://www.mlit.go.jp/toukeijouhou/chojou/
+- theme_id: transport
+  name_ja: 運輸関連統計
+  name_en: Transport stats
+  url: https://www.mlit.go.jp/k-toukei/
+- theme_id: tourism
+  name_ja: 宿泊旅行統計等
+  name_en: Tourism stats
+  url: https://www.mlit.go.jp/kankocho/tokei/
+L2_datasets:
+- dataset_id: mlit_const
+  title: 建設工事受注動態統計
+  url: https://www.mlit.go.jp/toukeijouhou/chojou/
+  api_id: null
+  update_freq: monthly
+  license: MLIT terms
+  theme_id: construction
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

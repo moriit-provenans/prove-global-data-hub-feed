@@ -1,0 +1,37 @@
+agency_id: jp_mhlw
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.mhlw.go.jp/
+  verified: true
+L1_themes:
+- theme_id: monthly_labour
+  name_ja: 毎月勤労統計
+  name_en: Monthly Labour Survey
+  url: https://www.mhlw.go.jp/toukei/list/30-1.html
+- theme_id: vaw
+  name_ja: 賃金構造基本統計
+  name_en: Wage structure
+  url: https://www.mhlw.go.jp/toukei/list/chinginkouzou.html
+- theme_id: vital
+  name_ja: 人口動態統計
+  name_en: Vital statistics
+  url: https://www.mhlw.go.jp/toukei/list/81-1.html
+L2_datasets:
+- dataset_id: mhlw_mls
+  title: 毎月勤労統計調査
+  url: https://www.mhlw.go.jp/toukei/list/30-1.html
+  api_id: null
+  update_freq: monthly
+  license: MHLW terms
+  theme_id: monthly_labour
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

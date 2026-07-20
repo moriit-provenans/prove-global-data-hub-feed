@@ -1,0 +1,29 @@
+agency_id: jp_data_go_jp
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.data.go.jp/
+  verified: true
+L1_themes:
+- theme_id: catalog
+  name_ja: データカタログ横断
+  name_en: Cross-agency catalog
+  url: https://www.data.go.jp/data/dataset
+L2_datasets:
+- dataset_id: data_go_catalog
+  title: データカタログ検索
+  url: https://www.data.go.jp/data/dataset
+  api_id: ckan
+  update_freq: continuous
+  license: varies
+  theme_id: catalog
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

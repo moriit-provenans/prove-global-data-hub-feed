@@ -1,0 +1,33 @@
+agency_id: jp_jetro
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.jetro.go.jp/
+  verified: true
+L1_themes:
+- theme_id: invest
+  name_ja: 対日投資・ビジネス情報
+  name_en: Invest Japan
+  url: https://www.jetro.go.jp/invest/
+- theme_id: trade_invest_stats
+  name_ja: 貿易投資統計
+  name_en: Trade & investment stats
+  url: https://www.jetro.go.jp/world/japan/stats/
+L2_datasets:
+- dataset_id: jetro_stats
+  title: 日本の貿易動向
+  url: https://www.jetro.go.jp/world/japan/stats/
+  api_id: null
+  update_freq: monthly
+  license: JETRO terms
+  theme_id: trade_invest_stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

@@ -1,0 +1,29 @@
+agency_id: jp_jta
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.mlit.go.jp/kankocho/
+  verified: true
+L1_themes:
+- theme_id: tourism_stats
+  name_ja: 観光統計
+  name_en: Tourism statistics
+  url: https://www.mlit.go.jp/kankocho/tokei/
+L2_datasets:
+- dataset_id: jta_accommodation
+  title: 宿泊旅行統計調査
+  url: https://www.mlit.go.jp/kankocho/tokei/
+  api_id: null
+  update_freq: monthly
+  license: JTA terms
+  theme_id: tourism_stats
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

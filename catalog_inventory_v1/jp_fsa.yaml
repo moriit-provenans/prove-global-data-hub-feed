@@ -1,0 +1,33 @@
+agency_id: jp_fsa
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.fsa.go.jp/
+  verified: true
+L1_themes:
+- theme_id: banking
+  name_ja: 銀行監督統計
+  name_en: Banking statistics
+  url: https://www.fsa.go.jp/status/
+- theme_id: disclosure
+  name_ja: 開示・EDINET
+  name_en: EDINET
+  url: https://disclosure2.edinet-fsa.go.jp/
+L2_datasets:
+- dataset_id: edinet
+  title: EDINET
+  url: https://disclosure2.edinet-fsa.go.jp/
+  api_id: edinet-api
+  update_freq: daily
+  license: FSA terms
+  theme_id: disclosure
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

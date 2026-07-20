@@ -1,0 +1,29 @@
+agency_id: jp_customs
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.customs.go.jp/
+  verified: true
+L1_themes:
+- theme_id: trade
+  name_ja: 貿易統計本表
+  name_en: Trade statistics
+  url: https://www.customs.go.jp/toukei/
+L2_datasets:
+- dataset_id: customs_trade
+  title: 貿易統計
+  url: https://www.customs.go.jp/toukei/
+  api_id: null
+  update_freq: monthly
+  license: Customs terms
+  theme_id: trade
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending

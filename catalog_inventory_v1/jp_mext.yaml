@@ -1,0 +1,33 @@
+agency_id: jp_mext
+iso2: JP
+updated_at: '2026-07-21T04:08:49+09:00'
+L0:
+  portal_url: https://www.mext.go.jp/
+  verified: true
+L1_themes:
+- theme_id: school
+  name_ja: 学校基本調査
+  name_en: School basic survey
+  url: https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/
+- theme_id: science
+  name_ja: 科学技術研究調査
+  name_en: R&D survey
+  url: https://www.mext.go.jp/b_menu/toukei/chousa06/
+L2_datasets:
+- dataset_id: mext_school
+  title: 学校基本調査
+  url: https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/
+  api_id: null
+  update_freq: annual
+  license: MEXT terms
+  theme_id: school
+L3_series: []
+L4_notes: 観測値は既存 nso_pilot / timeseries。本ファイルは棚卸し資産。
+L5_country_unique: []
+coverage:
+  L0: done
+  L1: done
+  L2: partial
+  L3: pending
+  L4: pending
+  L5: pending
