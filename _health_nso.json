@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-07-20T22:58:05+09:00",
-  "wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 7272,
+  "generated_at": "2026-07-20T23:03:00+09:00",
+  "wave": "REQ-SMITH-20260720-041 Wave2a (start)",
+  "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
+  "nso_pilot_rows": 8900,
   "source_tier_counts": {
-    "international_fast": 3010,
-    "nso": 4262
+    "international_fast": 3361,
+    "nso": 5539
   },
   "macro_q_gdp_real_yoy_countries": [
     "BR",
@@ -22,6 +23,7 @@
     "SG",
     "TH",
     "TR",
+    "TW",
     "US",
     "VN"
   ],
@@ -110,16 +112,1566 @@
       "period": "2026-Q1",
       "tier": "nso",
       "value": 2.8
+    },
+    "TW": {
+      "period": "2026-Q1",
+      "tier": "nso",
+      "value": 14.55
     }
   },
-  "wb_fallback_share_note_ja": "本WaveはNSO/OECD追加。年次macro_annualのWB比率是正は段階的（カタログメタで可視化）。",
-  "quarterly_was_empty": true,
-  "quarterly_now_rows": 993,
-  "monthly_nso_rows": 6072,
+  "dual_coverage_matrix": {
+    "schema_version": "1.0-wave2a",
+    "req_id": "REQ-SMITH-20260720-041",
+    "indicators": [
+      "macro_q.gdp_real.yoy_pct",
+      "nso_m.cpi.index",
+      "nso_m.cpi.yoy_pct",
+      "nso_m.unemployment.pct",
+      "nso_m.industrial_production.index",
+      "nso_m.merchandise_exports_usd",
+      "nso_m.merchandise_imports_usd"
+    ],
+    "countries_by_priority": {
+      "P0": [
+        "JP",
+        "US",
+        "MY",
+        "SG",
+        "TH",
+        "PH",
+        "CN"
+      ],
+      "P1": [
+        "VN",
+        "ID",
+        "IN",
+        "KR",
+        "TW",
+        "HK"
+      ],
+      "P2": [
+        "AE",
+        "SA",
+        "TR",
+        "GB",
+        "DE",
+        "FR",
+        "CA",
+        "BR"
+      ]
+    },
+    "cells": [
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast",
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast",
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2025-Q4",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2025-Q4",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok",
+        "wb_annual_latest": "2026",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing",
+        "wb_annual_latest": "2024",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "macro_q.gdp_real.yoy_pct",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": "international_fast",
+        "latest_period": "2026-Q1",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "wb_annual_latest": "2025",
+        "wb_parallel": true
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2024-12",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2023-11",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.index",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2024-12",
+        "tiers_present": [
+          "international_fast",
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2025-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2025-03",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2023-11",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.cpi.yoy_pct",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast",
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2025-12",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": "nso",
+        "latest_period": "2026-05",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.unemployment.pct",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "nso",
+        "latest_period": "2026-06",
+        "tiers_present": [
+          "nso"
+        ],
+        "status": "ok"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.industrial_production.index",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_exports_usd",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "JP",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "US",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "MY",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "SG",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "TH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "PH",
+        "priority": "P0",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "CN",
+        "priority": "P0",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "VN",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "ID",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "IN",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "KR",
+        "priority": "P1",
+        "best_tier": "international_fast",
+        "latest_period": "2026-04",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "TW",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "HK",
+        "priority": "P1",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "AE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "SA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "TR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "GB",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "DE",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "FR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "CA",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      },
+      {
+        "indicator_id": "nso_m.merchandise_imports_usd",
+        "iso2": "BR",
+        "priority": "P2",
+        "best_tier": null,
+        "latest_period": null,
+        "tiers_present": [],
+        "status": "missing"
+      }
+    ],
+    "summary": {
+      "total_cells": 147,
+      "filled": 61,
+      "nso_primary": 30,
+      "international_fast_bridge": 31,
+      "missing": 86,
+      "fill_rate_pct": 41.5,
+      "nso_rate_pct": 20.4,
+      "annual_gdp_wb_only_note_ja": "年次 macro.gdp.* は WB のみ（nso年次=Wave2b）"
+    }
+  },
+  "wb_fallback_share_note_ja": "年次macro_annualはWB併記維持。NSO年次はWave2b。月次/四半期はNSO+bridge二重化を優先。",
+  "quarterly_now_rows": 997,
+  "monthly_nso_rows": 7696,
   "next": [
-    "VN/TH/ID/IN の統計局API直結（OECD橋渡しからの昇格）",
-    "JP CPI e-Stat表の特定",
-    "IMF_API_KEY で QNEA 本命合流",
-    "Smith: source_tier / 鮮度バッジUI"
+    "P0: TH CPI鮮度（MOC 2024-12→2025+）、CN CPI NBS直結、JP IP",
+    "P1: KOSTAT_API_KEY / BPSキーで KR/ID 一次化",
+    "P1: VN CPI bridge、HK quarterly GDP",
+    "年次GDP NSO並列（Wave2b）",
+    "Smith: dual_coverage_matrix UI連動"
   ]
 }

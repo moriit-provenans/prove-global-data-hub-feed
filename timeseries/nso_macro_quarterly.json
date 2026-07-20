@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso",
   "feed_id": "nso_macro_quarterly",
-  "last_updated": "2026-07-20T22:58:05+09:00",
+  "last_updated": "2026-07-20T23:03:00+09:00",
   "frequency": "quarterly",
   "source": {
     "label": "NSO + OECD quarterly pilot (all tiers)",
@@ -35,6 +35,7 @@
       "SG",
       "TH",
       "TR",
+      "TW",
       "US",
       "VN"
     ],
@@ -42,10 +43,10 @@
       "from": "1994-Q1",
       "to": "2026-Q1"
     },
-    "row_count": 1075,
+    "row_count": 1079,
     "source_tier_counts": {
       "international_fast": 503,
-      "nso": 572
+      "nso": 576
     }
   },
   "observations": [
@@ -9353,6 +9354,50 @@
       "source_tier": "international_fast",
       "source_ref": "fred:TURGDPRQPSMEI",
       "as_of_date": "2026-01-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "TW",
+      "period": "2025-Q2",
+      "value": 7.71,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "mol_od:A17030000J-000016-wWs:gdp_growth:202506->2025-Q2",
+      "as_of_date": "2025-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "TW",
+      "period": "2025-Q3",
+      "value": 8.42,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "mol_od:A17030000J-000016-wWs:gdp_growth:202509->2025-Q3",
+      "as_of_date": "2025-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "TW",
+      "period": "2025-Q4",
+      "value": 12.95,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "mol_od:A17030000J-000016-wWs:gdp_growth:202512->2025-Q4",
+      "as_of_date": "2025-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "TW",
+      "period": "2026-Q1",
+      "value": 14.55,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "mol_od:A17030000J-000016-wWs:gdp_growth:202603->2026-Q1",
+      "as_of_date": "2026-03-01",
       "veritas": "✅"
     },
     {

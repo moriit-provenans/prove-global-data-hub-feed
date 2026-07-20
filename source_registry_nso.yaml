@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T22:58:05+09:00'
+updated_at: '2026-07-20T23:03:00+09:00'
 policy:
   priority:
   - nso
@@ -51,7 +51,6 @@ sources:
   iso2:
   - BR
   - CA
-  - CN
   - DE
   - FR
   - GB
@@ -59,7 +58,6 @@ sources:
   - IN
   - JP
   - KR
-  - TH
   - TR
   - US
   - VN
@@ -67,7 +65,117 @@ sources:
   url: https://fred.stlouisfed.org/
   metrics:
   - macro_q.gdp_real.yoy_pct
-  note_ja: TH/VN/MY/PH/SG/CN はMEI ID無し → NSO直結が次
+  note_ja: KR/ID/IN/VN等。MY/PH/SG/TH/CN/TWはNSO直結済または追加中
+- id: my_dosm
+  tier: nso
+  iso2:
+  - MY
+  agency: Department of Statistics Malaysia (DOSM)
+  url: https://www.dosm.gov.my/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+- id: sg_singstat
+  tier: nso
+  iso2:
+  - SG
+  agency: Singapore Department of Statistics (SingStat)
+  url: https://www.singstat.gov.sg/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+- id: th_nesdc_moc
+  tier: nso
+  iso2:
+  - TH
+  agency: NESDC / MOC-TPSO (Thailand)
+  url: https://www.nesdc.go.th/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+- id: ph_psa_openstat
+  tier: nso
+  iso2:
+  - PH
+  agency: Philippine Statistics Authority (OpenSTAT)
+  url: https://openstat.psa.gov.ph/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+- id: cn_nbs
+  tier: nso
+  iso2:
+  - CN
+  agency: National Bureau of Statistics of China (NBS)
+  url: https://www.stats.gov.cn/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+- id: tw_dgbas_open
+  tier: nso
+  iso2:
+  - TW
+  agency: DGBAS (行政院主計總處) via data.gov.tw
+  url: https://www.stat.gov.tw/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+- id: hk_censtatd
+  tier: nso
+  iso2:
+  - HK
+  agency: Census and Statistics Department (C&SD)
+  url: https://www.censtatd.gov.hk/
+  metrics:
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+- id: kr_kostat_bridge
+  tier: international_fast
+  iso2:
+  - KR
+  agency: KOSTAT via OECD MEI (FRED) — bridge until KOSTAT_API_KEY
+  url: https://kosis.kr/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
+  note_ja: KOSTAT/KOSISキー未設定。CPI MEIは更新ラグ大
+- id: id_bps_bridge
+  tier: international_fast
+  iso2:
+  - ID
+  agency: BPS via OECD MEI (FRED) — bridge until BPS API key
+  url: https://www.bps.go.id/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+- id: in_mospi_bridge
+  tier: international_fast
+  iso2:
+  - IN
+  agency: MOSPI via OECD MEI (FRED) — bridge (SSL/API blocked)
+  url: https://mospi.gov.in/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
+  - nso_m.cpi.index
+  - nso_m.cpi.yoy_pct
+- id: vn_gso_bridge
+  tier: international_fast
+  iso2:
+  - VN
+  agency: GSO Vietnam (secondary bridge — NSDP blocked)
+  url: https://www.gso.gov.vn/
+  metrics:
+  - macro_q.gdp_real.yoy_pct
 latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: BR
@@ -134,6 +242,10 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
+  iso2: TW
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
   iso2: US
   source_tier: international_fast
   latest_period: 2026-Q1
@@ -154,6 +266,10 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2025-04
 - metric_id: nso_m.cpi.index
+  iso2: HK
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.cpi.index
   iso2: ID
   source_tier: international_fast
   latest_period: 2025-04
@@ -165,6 +281,10 @@ latest_period_by_key:
   iso2: JP
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.cpi.index
+  iso2: KR
+  source_tier: international_fast
+  latest_period: 2023-11
 - metric_id: nso_m.cpi.index
   iso2: MY
   source_tier: nso
@@ -181,6 +301,10 @@ latest_period_by_key:
   iso2: TH
   source_tier: nso
   latest_period: 2024-12
+- metric_id: nso_m.cpi.index
+  iso2: TW
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.cpi.index
   iso2: US
   source_tier: nso
@@ -190,6 +314,10 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2025-04
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: HK
+  source_tier: nso
+  latest_period: 2026-05
+- metric_id: nso_m.cpi.yoy_pct
   iso2: ID
   source_tier: international_fast
   latest_period: 2025-04
@@ -201,6 +329,10 @@ latest_period_by_key:
   iso2: JP
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: KR
+  source_tier: international_fast
+  latest_period: 2023-11
 - metric_id: nso_m.cpi.yoy_pct
   iso2: MY
   source_tier: nso
@@ -221,6 +353,10 @@ latest_period_by_key:
   iso2: TH
   source_tier: nso
   latest_period: 2024-12
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: TW
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.industrial_production.index
   iso2: US
   source_tier: nso
@@ -286,6 +422,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.unemployment.pct
+  iso2: KR
+  source_tier: international_fast
+  latest_period: 2026-05
+- metric_id: nso_m.unemployment.pct
   iso2: MY
   source_tier: nso
   latest_period: 2026-05
@@ -297,6 +437,10 @@ latest_period_by_key:
   iso2: SG
   source_tier: nso
   latest_period: 2025-12
+- metric_id: nso_m.unemployment.pct
+  iso2: TW
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.unemployment.pct
   iso2: US
   source_tier: nso
