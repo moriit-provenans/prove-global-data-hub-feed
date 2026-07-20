@@ -1,14 +1,15 @@
 {
-  "generated_at": "2026-07-20T21:14:46+09:00",
+  "generated_at": "2026-07-20T21:36:35+09:00",
   "wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 2056,
+  "nso_pilot_rows": 2234,
   "source_tier_counts": {
-    "international_fast": 640,
-    "nso": 1416
+    "international_fast": 648,
+    "nso": 1586
   },
   "macro_q_gdp_real_yoy_countries": [
     "BR",
     "CA",
+    "CN",
     "DE",
     "FR",
     "GB",
@@ -16,6 +17,9 @@
     "IN",
     "JP",
     "KR",
+    "MY",
+    "PH",
+    "SG",
     "TH",
     "TR",
     "US",
@@ -86,11 +90,31 @@
       "period": "2026-Q1",
       "tier": "international_fast",
       "value": 7.83
+    },
+    "MY": {
+      "period": "2026-Q1",
+      "tier": "nso",
+      "value": 5.4
+    },
+    "SG": {
+      "period": "2026-Q1",
+      "tier": "nso",
+      "value": 6.0
+    },
+    "PH": {
+      "period": "2025-Q3",
+      "tier": "international_fast",
+      "value": 3.95
+    },
+    "CN": {
+      "period": "2025-Q4",
+      "tier": "nso",
+      "value": 4.5
     }
   },
   "wb_fallback_share_note_ja": "本WaveはNSO/OECD追加。年次macro_annualのWB比率是正は段階的（カタログメタで可視化）。",
   "quarterly_was_empty": true,
-  "quarterly_now_rows": 766,
+  "quarterly_now_rows": 944,
   "monthly_nso_rows": 1083,
   "next": [
     "VN/TH/ID/IN の統計局API直結（OECD橋渡しからの昇格）",

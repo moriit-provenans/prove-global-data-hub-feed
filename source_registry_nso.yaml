@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-20T21:14:46+09:00'
+updated_at: '2026-07-20T21:36:35+09:00'
 policy:
   priority:
   - nso
@@ -58,6 +58,7 @@ sources:
   - IN
   - JP
   - KR
+  - PH
   - TR
   - US
   - VN
@@ -75,6 +76,10 @@ latest_period_by_key:
   iso2: CA
   source_tier: international_fast
   latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: CN
+  source_tier: nso
+  latest_period: 2025-Q4
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: DE
   source_tier: international_fast
@@ -106,6 +111,18 @@ latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: KR
   source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: MY
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: PH
+  source_tier: international_fast
+  latest_period: 2025-Q3
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: SG
+  source_tier: nso
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: TH
