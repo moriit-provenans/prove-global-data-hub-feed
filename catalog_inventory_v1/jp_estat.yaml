@@ -1,9 +1,9 @@
 agency_id: jp_estat
 iso2: JP
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T04:47:04+09:00'
 source_note_ja: 'L1は e-Stat 分野ナビ（2026-07-21 HEAD/GET検証済）。L2は政府統計コード付き実在カタログURL。 Wave1c:
   L3 series stubs（e-Stat 統計コード＝実在 toukei ID）。観測値は未取得。 Wave1d: L3 deepen（追加 toukei
-  ID）。観測値は未取得。'
+  ID）。観測値は未取得。 Wave2: L3→L4 observation harvest (5/14).'
 L0:
   portal_url: https://www.e-stat.go.jp/
   verified: true
@@ -115,75 +115,98 @@ L2_datasets:
 L3_series:
 - series_id: '00200531'
   title: 労働力調査（統計表一覧）
-  status: stub
+  status: harvested
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200531
   source: e-Stat
+  obs_count: 375
 - series_id: '00200571'
   title: 消費者物価指数（統計表一覧）
-  status: stub
+  status: harvested
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200571
   source: e-Stat
+  obs_count: 271
 - series_id: '00200533'
   title: 家計調査（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200533
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: 00100409
   title: 国民経済計算（データベース）
-  status: stub
+  status: harvested
   url: https://www.e-stat.go.jp/stat-search/database?toukei=00100409
   source: e-Stat
+  obs_count: 131
 - series_id: '00200521'
   title: 人口推計（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200521
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200523'
   title: 人口動態調査（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200523
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200544'
   title: 商業動態統計（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200544
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200553'
   title: 鉱工業指数（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200553
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200524'
   title: 就業構造基本調査（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200524
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200561'
   title: 企業物価指数（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200561
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200502'
   title: 国勢調査（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200502
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200572'
   title: 小売物価統計調査（統計表一覧）
-  status: stub
+  status: blocked
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200572
   source: e-Stat
+  obs_count: 0
+  blocked_reason: statsDataId_not_wired_this_wave
 - series_id: '00200566'
   title: 景気動向指数（統計表一覧）
-  status: stub
+  status: harvested
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00200566
   source: e-Stat
+  obs_count: 274
 - series_id: '00350300'
   title: 貿易統計（財務省／統計表一覧）
-  status: stub
+  status: harvested
   url: https://www.e-stat.go.jp/stat-search/files?toukei=00350300
   source: e-Stat
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+  obs_count: 180
+L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=5/14 series; obs_points~1231.'
 L5_country_unique:
 - title: 労働力調査 詳細集計・長期時系列（総務省統計局）
   url: https://www.stat.go.jp/data/roudou/longtime/03roudou.html

@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "updated_at": "2026-07-21T04:31:01+09:00",
-  "wave": "Wave1d",
-  "note_ja": "Wave1d: blocked recovery（代替公式URL）＋ L3 stubs拡張（Destatis/ONS/StatCan/IBGE＋JP/US/SG deepen）＋ L5 JP≥15 / P0≥10。",
+  "updated_at": "2026-07-21T04:48:04+09:00",
+  "wave": "Wave2",
+  "note_ja": "Wave2: L3→L4 observation harvest（FRED/BLS/e-Stat/ONS/StatCan/SIDRA/SingStat）。Destatis GENESIS・BEA（キー無し）は blocked。VN light retry 未回復。",
   "totals": {
     "countries": 21,
     "agencies": 297,
@@ -14,11 +14,11 @@
     "L2_partial_or_done_agencies": 268,
     "L5_partial_or_done_agencies": 262,
     "inventory_files_count": 300,
-    "P0_agencies": 185,
-    "P0_L1_done": 162,
-    "P0_L2_partial_or_done": 162,
-    "P0_L1_rate": 0.876,
-    "P0_L2_rate": 0.876,
+    "P0_agencies": 101,
+    "P0_L1_done": 90,
+    "P0_L2_partial_or_done": 90,
+    "P0_L1_rate": 0.891,
+    "P0_L2_rate": 0.891,
     "inventories_sample": [
       "ae_bayanat.yaml",
       "ae_cbuae.yaml",
@@ -61,25 +61,104 @@
       "ca_open_data.yaml",
       "ca_osfi.yaml"
     ],
+    "l4_harvest": {
+      "series_harvested": 37,
+      "series_blocked": 46,
+      "observation_points": 10812,
+      "agencies": {
+        "us_fed": {
+          "harvested": 11,
+          "blocked": 0
+        },
+        "us_bls": {
+          "harvested": 9,
+          "blocked": 1
+        },
+        "us_bea": {
+          "harvested": 0,
+          "blocked": 9
+        },
+        "jp_estat": {
+          "harvested": 5,
+          "blocked": 9
+        },
+        "sg_singstat": {
+          "harvested": 2,
+          "blocked": 8
+        },
+        "gb_ons": {
+          "harvested": 3,
+          "blocked": 5
+        },
+        "ca_statcan": {
+          "harvested": 3,
+          "blocked": 4
+        },
+        "br_ibge": {
+          "harvested": 4,
+          "blocked": 3
+        },
+        "de_destatis": {
+          "harvested": 0,
+          "blocked": 7
+        }
+      },
+      "vn_retry": {
+        "vn_data_gov": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_gso": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_mard": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_moh": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_molisa": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_monre": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_mt": {
+          "recovered": false,
+          "reason": "error:URLError"
+        },
+        "vn_ssc": {
+          "recovered": false,
+          "reason": "timeout"
+        }
+      }
+    },
+    "overall_L4_partial_or_done": 9,
+    "overall_L4_rate": 0.03,
     "overall_L1_done": 268,
     "overall_L2_partial_or_done": 268,
     "overall_L1_rate": 0.902,
     "overall_L2_rate": 0.902,
-    "P12_agencies": 112,
-    "P12_L1_done": 106,
-    "P12_L2_partial_or_done": 106,
-    "P12_L1_rate": 0.946,
-    "P12_L2_rate": 0.946,
+    "P12_agencies": 196,
+    "P12_L1_done": 178,
+    "P12_L2_partial_or_done": 178,
+    "P12_L1_rate": 0.908,
+    "P12_L2_rate": 0.908,
     "l3_stub_files": {
-      "jp_estat": 14,
-      "us_bls": 10,
-      "us_bea": 9,
-      "us_fed_fred": 11,
-      "sg_singstat": 10,
+      "br_ibge": 7,
+      "ca_statcan": 7,
       "de_destatis": 7,
       "gb_ons": 8,
-      "ca_statcan": 7,
-      "br_ibge": 7
+      "jp_estat": 14,
+      "sg_singstat": 10,
+      "us_bea": 9,
+      "us_bls": 10,
+      "us_fed": 11
     }
   },
   "by_country": {
@@ -163,14 +242,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 14,
       "L3_partial_or_done": 3,
-      "L4_partial_or_done": 2,
+      "L4_partial_or_done": 3,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 0.933,
         "L2": 0.933,
         "L3": 0.2,
-        "L4": 0.133,
+        "L4": 0.2,
         "L5": 0.933,
         "class_coverage": 1.0
       },
@@ -945,14 +1024,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 14,
       "L3_partial_or_done": 1,
-      "L4_partial_or_done": 0,
+      "L4_partial_or_done": 1,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
         "L3": 0.071,
-        "L4": 0.0,
+        "L4": 0.071,
         "L5": 1.0,
         "class_coverage": 1.0
       },
@@ -1101,14 +1180,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 14,
       "L3_partial_or_done": 1,
-      "L4_partial_or_done": 0,
+      "L4_partial_or_done": 1,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
         "L3": 0.071,
-        "L4": 0.0,
+        "L4": 0.071,
         "L5": 1.0,
         "class_coverage": 1.0
       },
@@ -1153,14 +1232,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 14,
       "L3_partial_or_done": 1,
-      "L4_partial_or_done": 0,
+      "L4_partial_or_done": 1,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
         "L3": 0.071,
-        "L4": 0.0,
+        "L4": 0.071,
         "L5": 1.0,
         "class_coverage": 1.0
       },
@@ -1181,202 +1260,5 @@
         "catalog_inventory_v1/br_turismo_apex.yaml"
       ]
     }
-  },
-  "l5_country_unique_counts": {
-    "JP": 15,
-    "US": 32,
-    "SG": 29,
-    "MY": 21,
-    "TH": 18,
-    "PH": 16,
-    "VN": 10,
-    "ID": 19,
-    "IN": 23,
-    "CN": 18,
-    "KR": 22,
-    "TW": 22,
-    "HK": 23,
-    "AE": 16,
-    "SA": 17,
-    "TR": 16,
-    "GB": 16,
-    "DE": 20,
-    "FR": 16,
-    "CA": 15,
-    "BR": 16
-  },
-  "inventory_l1_blocked": [
-    {
-      "agency_id": "ae_cbuae",
-      "iso2": "AE",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ae_moei_energy",
-      "iso2": "AE",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "cn_data_gov",
-      "iso2": "CN",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "cn_nhc",
-      "iso2": "CN",
-      "reason": "http_412"
-    },
-    {
-      "agency_id": "fr_agriculture",
-      "iso2": "FR",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "fr_dge",
-      "iso2": "FR",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "hk_afcd",
-      "iso2": "HK",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "id_kemdikbud",
-      "iso2": "ID",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "id_kemenparekraf_bkpm",
-      "iso2": "ID",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "kr_molit",
-      "iso2": "KR",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "my_moh",
-      "iso2": "MY",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "my_mohr",
-      "iso2": "MY",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "ph_deped",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ph_doh",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ph_dole",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "ph_psa",
-      "iso2": "PH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "sa_data_gov",
-      "iso2": "SA",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "sa_mot",
-      "iso2": "SA",
-      "reason": "unreachable"
-    },
-    {
-      "agency_id": "th_data_go",
-      "iso2": "TH",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "us_dot",
-      "iso2": "US",
-      "reason": "crawler_403"
-    },
-    {
-      "agency_id": "vn_data_gov",
-      "iso2": "VN",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "vn_gso",
-      "iso2": "VN",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "vn_mard",
-      "iso2": "VN",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "vn_moh",
-      "iso2": "VN",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "vn_molisa",
-      "iso2": "VN",
-      "reason": "timeout"
-    },
-    {
-      "agency_id": "vn_monre",
-      "iso2": "VN",
-      "reason": "dns_or_unreachable"
-    },
-    {
-      "agency_id": "vn_mt",
-      "iso2": "VN",
-      "reason": "ssl_handshake_failed"
-    },
-    {
-      "agency_id": "vn_ssc",
-      "iso2": "VN",
-      "reason": "timeout"
-    }
-  ],
-  "wave1d_recovered": [
-    "ae_bayanat",
-    "ae_dct_invest",
-    "ae_fcsc",
-    "ae_moei",
-    "ae_mohap",
-    "ae_mohre",
-    "ae_mot",
-    "de_bafin",
-    "de_bmbf",
-    "de_bmel",
-    "de_govdata",
-    "de_zoll",
-    "fr_dgfip",
-    "fr_education",
-    "fr_sante",
-    "fr_travail",
-    "id_bps",
-    "id_satudata",
-    "in_agriculture",
-    "ph_dof",
-    "ph_dotr",
-    "ph_sec",
-    "sa_energy",
-    "sa_mci",
-    "sa_mof",
-    "sa_mt_invest",
-    "th_mof",
-    "tr_data_gov",
-    "us_cbp"
-  ],
-  "wave1d_still_blocked_count": 28
+  }
 }

@@ -1,6 +1,7 @@
 iso2: US
 source_note_ja: 'Federal Reserve Board data hub（FREDは本セッションでタイムアウトのため未登録・blocked候補）。
-  Wave1c: FRED series ID stubs 追加。 Wave1d: FRED L3 deepen。'
+  Wave1c: FRED series ID stubs 追加。 Wave1d: FRED L3 deepen。 Wave2: L3→L4 observation
+  harvest (11/11).'
 L0:
   portal_url: https://www.federalreserve.gov/
   verified: true
@@ -31,60 +32,71 @@ L2_datasets:
 L3_series:
 - series_id: GDP
   title: Gross Domestic Product
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/GDP
   source: FRED
+  obs_count: 45
 - series_id: UNRATE
   title: Unemployment Rate
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/UNRATE
   source: FRED
+  obs_count: 137
 - series_id: CPIAUCSL
   title: 'Consumer Price Index for All Urban Consumers: All Items'
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/CPIAUCSL
   source: FRED
+  obs_count: 137
 - series_id: FEDFUNDS
   title: Federal Funds Effective Rate
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/FEDFUNDS
   source: FRED
+  obs_count: 138
 - series_id: DGS10
   title: Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/DGS10
   source: FRED
+  obs_count: 2885
 - series_id: PAYEMS
   title: All Employees, Total Nonfarm
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/PAYEMS
   source: FRED
+  obs_count: 138
 - series_id: INDPRO
   title: 'Industrial Production: Total Index'
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/INDPRO
   source: FRED
+  obs_count: 138
 - series_id: M2SL
   title: M2 Money Stock
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/M2SL
   source: FRED
+  obs_count: 137
 - series_id: DEXUSEU
   title: U.S. / Euro Foreign Exchange Rate
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/DEXUSEU
   source: FRED
+  obs_count: 2879
 - series_id: HOUST
   title: 'Housing Starts: Total New Privately Owned Housing Units Started'
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/HOUST
   source: FRED
+  obs_count: 138
 - series_id: RSAFS
   title: Advance Real Retail and Food Services Sales
-  status: stub
+  status: harvested
   url: https://fred.stlouisfed.org/series/RSAFS
   source: FRED
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+  obs_count: 138
+L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=11/11 series; obs_points~6910.'
 L5_country_unique:
 - title: Federal Reserve Data hub
   url: https://www.federalreserve.gov/data.htm
@@ -103,7 +115,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: partial
+  L4: done
   L5: partial
 agency_id: us_fed
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T04:47:04+09:00'

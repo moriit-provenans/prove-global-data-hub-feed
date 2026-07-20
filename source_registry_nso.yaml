@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-21T03:37:54+09:00'
+updated_at: '2026-07-21T04:47:43+09:00'
 policy:
   priority:
   - nso
@@ -252,8 +252,16 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
+  iso2: BR
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
   iso2: CA
   source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: CA
+  source_tier: nso
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: CN
@@ -270,6 +278,10 @@ latest_period_by_key:
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: GB
   source_tier: international_fast
+  latest_period: 2026-Q1
+- metric_id: macro_q.gdp_real.yoy_pct
+  iso2: GB
+  source_tier: nso
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: HK
@@ -335,6 +347,14 @@ latest_period_by_key:
   iso2: VN
   source_tier: international_fast
   latest_period: 2026-Q1
+- metric_id: nso_m.avg_hourly_earnings.usd
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-12
+- metric_id: nso_m.avg_weekly_hours
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-12
 - metric_id: nso_m.coincident_index
   iso2: JP
   source_tier: nso
@@ -348,9 +368,17 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2025-04
 - metric_id: nso_m.cpi.index
+  iso2: BR
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.cpi.index
   iso2: CA
   source_tier: international_fast
   latest_period: 2025-03
+- metric_id: nso_m.cpi.index
+  iso2: CA
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.cpi.index
   iso2: CN
   source_tier: international_fast
@@ -367,6 +395,10 @@ latest_period_by_key:
   iso2: GB
   source_tier: international_fast
   latest_period: 2025-03
+- metric_id: nso_m.cpi.index
+  iso2: GB
+  source_tier: nso
+  latest_period: 2026-Q1
 - metric_id: nso_m.cpi.index
   iso2: HK
   source_tier: nso
@@ -432,9 +464,17 @@ latest_period_by_key:
   source_tier: international_fast
   latest_period: 2025-04
 - metric_id: nso_m.cpi.yoy_pct
+  iso2: BR
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.cpi.yoy_pct
   iso2: CA
   source_tier: international_fast
   latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: CA
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
   iso2: CN
   source_tier: international_fast
@@ -451,6 +491,10 @@ latest_period_by_key:
   iso2: GB
   source_tier: international_fast
   latest_period: 2025-03
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: GB
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.cpi.yoy_pct
   iso2: HK
   source_tier: nso
@@ -511,6 +555,30 @@ latest_period_by_key:
   iso2: VN
   source_tier: international_fast
   latest_period: 2025-03
+- metric_id: nso_m.cpi_energy.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-12
+- metric_id: nso_m.employment_rate.pct
+  iso2: GB
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_m.fed_funds.pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.fx_usd_eur
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-07
+- metric_id: nso_m.housing_starts.thousands
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.industrial_production.index
+  iso2: BR
+  source_tier: nso
+  latest_period: 2022-01
 - metric_id: nso_m.industrial_production.index
   iso2: DE
   source_tier: international_fast
@@ -531,6 +599,14 @@ latest_period_by_key:
   iso2: JP
   source_tier: nso
   latest_period: 2026-05
+- metric_id: nso_m.lfpr.pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-12
+- metric_id: nso_m.m2.billions
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-05
 - metric_id: nso_m.merchandise_exports_usd
   iso2: BR
   source_tier: international_fast
@@ -567,6 +643,10 @@ latest_period_by_key:
   iso2: JP
   source_tier: international_fast
   latest_period: 2026-04
+- metric_id: nso_m.merchandise_exports_usd
+  iso2: JP
+  source_tier: nso
+  latest_period: 2005-00
 - metric_id: nso_m.merchandise_exports_usd
   iso2: KR
   source_tier: international_fast
@@ -651,9 +731,33 @@ latest_period_by_key:
   iso2: US
   source_tier: international_fast
   latest_period: 2026-04
+- metric_id: nso_m.nonfarm_payrolls.thousands
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.ppi_final_demand.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-12
+- metric_id: nso_m.retail_sales_real.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.treasury_10y.pct
+  iso2: US
+  source_tier: nso
+  latest_period: 2026-07
+- metric_id: nso_m.unemployment.pct
+  iso2: BR
+  source_tier: nso
+  latest_period: 2026-03
 - metric_id: nso_m.unemployment.pct
   iso2: CA
   source_tier: international_fast
+  latest_period: 2026-06
+- metric_id: nso_m.unemployment.pct
+  iso2: CA
+  source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.unemployment.pct
   iso2: DE
@@ -712,6 +816,14 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-Q1
 - metric_id: nso_q.gdp_real.index
+  iso2: CA
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_q.gdp_real.index
+  iso2: GB
+  source_tier: nso
+  latest_period: 2026-Q1
+- metric_id: nso_q.gdp_real.index
   iso2: US
   source_tier: nso
   latest_period: 2026-Q1
@@ -719,3 +831,7 @@ latest_period_by_key:
   iso2: JP
   source_tier: nso
   latest_period: 2026-Q1
+- metric_id: nso_q.labor_productivity.index
+  iso2: US
+  source_tier: nso
+  latest_period: 2024-Q4

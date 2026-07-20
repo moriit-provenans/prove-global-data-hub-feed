@@ -1,5 +1,5 @@
 iso2: VN
-source_note_ja: Wave1d recovery試行後も到達不可（ssl_handshake_failed）。試行URL数=3。
+source_note_ja: Wave2 light retry still blocked (error:URLError).
 L0:
   portal_url: https://mt.gov.vn/
   verified: false
@@ -17,11 +17,11 @@ coverage:
   L4: pending
   L5: pending
 blocked:
-  L1: ssl_handshake_failed
+  L1: error:URLError
   L2: awaiting_L1
   tried_urls:
   - https://mt.gov.vn/
   - https://www.mt.gov.vn/
   - http://mt.gov.vn/
 agency_id: vn_mt
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T04:37:52+09:00'

@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T04:31:01+09:00'
-wave: Wave1
+updated_at: '2026-07-21T04:47:04+09:00'
+wave: Wave2
 policy:
   layers:
   - L0
@@ -302,7 +302,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: partial
+    L4: done
     L5: partial
   portal_url: https://www.federalreserve.gov/
   open_data_url: https://fred.stlouisfed.org/
@@ -357,7 +357,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.bls.gov/
   notes: 2026-07-21 クローラ環境で403。公式ポータルとして登録（人間ブラウザ／別UAで再検証）。
@@ -3082,7 +3082,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.ons.gov.uk/
 - agency_id: gb_boe
@@ -3630,7 +3630,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.statcan.gc.ca/
 - agency_id: ca_boc
@@ -3814,7 +3814,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.ibge.gov.br/
 - agency_id: br_bcb

@@ -1,5 +1,6 @@
 iso2: US
-source_note_ja: 'Wave1d: BLS series ID stubs deepen（CPI/CPS/CES/LPC/PPI/ECI）。観測値は未取得。'
+source_note_ja: 'Wave1d: BLS series ID stubs deepen（CPI/CPS/CES/LPC/PPI/ECI）。観測値は未取得。
+  Wave2: L3→L4 observation harvest (9/10).'
 L0:
   portal_url: https://www.bls.gov/
   verified: true
@@ -52,55 +53,66 @@ L2_datasets:
 L3_series:
 - series_id: CUUR0000SA0
   title: CPI-U All items (U.S. city average)
-  status: stub
+  status: harvested
   url: https://www.bls.gov/cpi/
   source: BLS
+  obs_count: 120
 - series_id: LNS14000000
   title: Unemployment Rate (Seasonally Adjusted)
-  status: stub
+  status: harvested
   url: https://www.bls.gov/cps/
   source: BLS
+  obs_count: 120
 - series_id: CES0000000001
   title: All employees, total nonfarm
-  status: stub
+  status: harvested
   url: https://www.bls.gov/ces/
   source: BLS
+  obs_count: 120
 - series_id: CES0500000003
   title: Average hourly earnings of all employees, total private
-  status: stub
+  status: harvested
   url: https://www.bls.gov/ces/
   source: BLS
+  obs_count: 120
 - series_id: PRS85006092
   title: Labor productivity (output per hour) — nonfarm business
-  status: stub
+  status: harvested
   url: https://www.bls.gov/lpc/
   source: BLS
+  obs_count: 40
 - series_id: WPUFD4
   title: PPI Final demand
-  status: stub
+  status: harvested
   url: https://www.bls.gov/ppi/
   source: BLS
+  obs_count: 120
 - series_id: CUUR0000SA0E
   title: CPI-U Energy
-  status: stub
+  status: harvested
   url: https://www.bls.gov/cpi/
   source: BLS
+  obs_count: 120
 - series_id: LNS11300000
   title: Labor Force Participation Rate
-  status: stub
+  status: harvested
   url: https://www.bls.gov/cps/
   source: BLS
+  obs_count: 120
 - series_id: CES0500000002
   title: Average weekly hours of all employees, total private
-  status: stub
+  status: harvested
   url: https://www.bls.gov/ces/
   source: BLS
+  obs_count: 120
 - series_id: ECI11102I
   title: 'Employment Cost Index: Total compensation for private industry workers'
-  status: stub
+  status: blocked
   url: https://www.bls.gov/eci/
   source: BLS
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+  obs_count: 0
+  blocked_reason: no_data_returned
+L4_notes: 'Wave2 L4 harvest 2026-07-21: harvested=9/10 series; obs_points~1000.'
 L5_country_unique:
 - title: BLS official portal
   url: https://www.bls.gov/
@@ -110,7 +122,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: pending
+  L4: partial
   L5: partial
 agency_id: us_bls
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T04:47:04+09:00'

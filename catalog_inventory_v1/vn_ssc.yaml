@@ -1,5 +1,5 @@
 iso2: VN
-source_note_ja: Wave1d recovery試行後も到達不可（timeout）。試行URL数=3。
+source_note_ja: Wave2 light retry still blocked (timeout).
 L0:
   portal_url: https://ssc.gov.vn/
   verified: false
@@ -24,4 +24,4 @@ blocked:
   - http://ssc.gov.vn/
   - https://www.ssc.gov.vn/
 agency_id: vn_ssc
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T04:37:52+09:00'
