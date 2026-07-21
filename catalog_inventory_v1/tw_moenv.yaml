@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: MOENV / MOEA Energy L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'MOENV / MOEA Energy L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。 Wave2g:
+  環境部公式API一次 L4（公開キー）'
 L0:
   portal_url: https://www.moenv.gov.tw/
   verified: true
@@ -16,8 +17,14 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: moenv
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: aqi_over100_ratio
+  title: AQI>100日数比率・全国（月次）
+  status: harvested
+  url: https://data.moenv.gov.tw/api/v2/stat_p_115
+  source: tw_moenv
+  obs_count: 61
+L4_notes: 'Wave2g 2026-07-21: 環境部公式API一次 L4（公開キー）'
 L5_country_unique:
 - title: 'MOENV / MOEA Energy: MOENV'
   url: https://www.moenv.gov.tw/
@@ -26,8 +33,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tw_moenv
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'

@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2c: L3+L4 (0/1).'
+source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2c: L3+L4 (0/1). Wave2g: CBC公式オープンデータ（重貼現率）一次
+  L4'
 L0:
   portal_url: https://www.cbc.gov.tw/
   verified: true
@@ -24,7 +25,13 @@ L3_series:
   source: tw_cbc
   obs_count: 0
   blocked_reason: dbnomics_error:HTTPError
-L4_notes: 'Wave2c L4 2026-07-21: harvested=0/1; IMF IFS policy via db.nomics'
+- series_id: cbc_rediscount_rate
+  title: 重貼現率（rate-change events）
+  status: harvested
+  url: https://www.cbc.gov.tw/Public/Data/opendata/webF1.csv
+  source: tw_cbc
+  obs_count: 52
+L4_notes: 'Wave2g 2026-07-21: CBC公式オープンデータ（重貼現率）一次 L4'
 L5_country_unique:
 - title: CBC Taiwan
   url: https://www.cbc.gov.tw/
@@ -39,8 +46,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: tw_cbc
-updated_at: '2026-07-21T08:24:49+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'

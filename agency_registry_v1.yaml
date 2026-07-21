@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T13:44:27+09:00'
-wave: Wave2f
+updated_at: '2026-07-21T14:01:32+09:00'
+wave: Wave2g
 policy:
   layers:
   - L0
@@ -2169,8 +2169,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cbc.gov.tw/
 - agency_id: tw_mof
@@ -2195,8 +2195,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.fsc.gov.tw/
 - agency_id: tw_moea
@@ -2234,8 +2234,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.edu.tw/
 - agency_id: tw_motc
@@ -2247,8 +2247,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.motc.gov.tw/
 - agency_id: tw_mohw
@@ -2260,8 +2260,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.mohw.gov.tw/
 - agency_id: tw_moa
@@ -2273,8 +2273,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.moa.gov.tw/
 - agency_id: tw_moenv
@@ -2286,8 +2286,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.moenv.gov.tw/
 - agency_id: tw_tourism_invest
@@ -2299,8 +2299,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: done
     L5: partial
   portal_url: https://www.taiwan.net.tw/
   notes: 投資 https://investtaiwan.nat.gov.tw/
@@ -2538,8 +2538,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.centralbank.ae/
 - agency_id: ae_mof

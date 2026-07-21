@@ -1,5 +1,6 @@
 iso2: AE
-source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。 Wave2c: L3+L4 (0/1).'
+source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。 Wave2c: L3+L4 (0/1).
+  Wave2g: CBUAE公式EIBORワークブック一次 L4'
 L0:
   portal_url: https://www.centralbank.ae/
   verified: false
@@ -14,7 +15,13 @@ L3_series:
   source: ae_cbuae
   obs_count: 0
   blocked_reason: dbnomics_error:HTTPError
-L4_notes: 'Wave2c L4 2026-07-21: harvested=0/1; IMF IFS policy via db.nomics'
+- series_id: eibor_3m_monthly
+  title: EIBOR 3M（月次平均）
+  status: harvested
+  url: https://www.centralbank.ae/en/forex-eibor/eibor-rates/
+  source: ae_cbuae
+  obs_count: 18
+L4_notes: 'Wave2g 2026-07-21: CBUAE公式EIBORワークブック一次 L4'
 L5_country_unique:
 - title: ae_cbuae portal
   url: https://www.centralbank.ae/
@@ -23,8 +30,8 @@ coverage:
   L0: done
   L1: done
   L2: blocked
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 blocked:
   L1: crawler_403
@@ -34,4 +41,4 @@ blocked:
   - https://www.centralbank.ae/en
   - https://www.centralbank.ae/en/statistics
 agency_id: ae_cbuae
-updated_at: '2026-07-21T08:24:49+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'

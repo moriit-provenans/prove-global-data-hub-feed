@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: Ministry of Health and Welfare L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Ministry of Health and Welfare L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+  Wave2g: 衛福部/健保署公式API一次 L4'
 L0:
   portal_url: https://www.mohw.gov.tw/
   verified: true
@@ -16,8 +17,14 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: mohw
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: nhi_insured_persons
+  title: 健保保險對象人數（月次）
+  status: harvested
+  url: https://info.nhi.gov.tw/api/iode0000s01/Dataset?rId=A21030000I-L03001-003
+  source: tw_mohw
+  obs_count: 136
+L4_notes: 'Wave2g 2026-07-21: 衛福部/健保署公式API一次 L4'
 L5_country_unique:
 - title: 'Ministry of Health and Welfare: MOHW'
   url: https://www.mohw.gov.tw/
@@ -26,8 +33,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tw_mohw
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'

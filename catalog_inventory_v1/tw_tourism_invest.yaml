@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: Tourism Administration / Invest Taiwan L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Tourism Administration / Invest Taiwan L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+  Wave2g: 観光署公式オープンデータ一次 L4'
 L0:
   portal_url: https://www.taiwan.net.tw/
   verified: true
@@ -16,8 +17,14 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: tourism
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: visitor_arrivals
+  title: 來台旅客（年次）
+  status: harvested
+  url: https://stat.taiwan.net.tw/data/opendata/7
+  source: tw_tourism_invest
+  obs_count: 24
+L4_notes: 'Wave2g 2026-07-21: 観光署公式オープンデータ一次 L4'
 L5_country_unique:
 - title: 'Tourism Administration / Invest Taiwan: Tourism'
   url: https://www.taiwan.net.tw/
@@ -26,8 +33,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tw_tourism_invest
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'

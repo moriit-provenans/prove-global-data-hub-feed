@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: Ministry of Agriculture L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Ministry of Agriculture L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+  Wave2g: 農業部公式オープンデータ一次 L4'
 L0:
   portal_url: https://www.moa.gov.tw/
   verified: true
@@ -16,8 +17,14 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: moa
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: crop_production_index
+  title: 農業生產指數（分類指數・年次）
+  status: harvested
+  url: https://data.moa.gov.tw/service/opendata/agrstatUnit.aspx?item_code=222101010103&FOTT=CSV&IsTransData=1&UnitId=563
+  source: tw_moa
+  obs_count: 25
+L4_notes: 'Wave2g 2026-07-21: 農業部公式オープンデータ一次 L4'
 L5_country_unique:
 - title: 'Ministry of Agriculture: MOA'
   url: https://www.moa.gov.tw/
@@ -26,8 +33,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: done
   L5: partial
 agency_id: tw_moa
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T14:01:32+09:00'
