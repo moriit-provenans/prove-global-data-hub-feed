@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: Ministry of Labor L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Ministry of Labor L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。 Wave2f:
+  MOL OdService 公式オープンデータ（最低賃金・平均賃金）L4 partial'
 L0:
   portal_url: https://www.mol.gov.tw/
   verified: true
@@ -16,8 +17,20 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: mol
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: mol_min_wage
+  title: 基本工資（月薪）
+  status: harvested
+  url: https://apiservice.mol.gov.tw/OdService/download/A17030000J-000016-wWs
+  source: tw_mol
+  obs_count: 13
+- series_id: mol_avg_wage
+  title: 工業及服務業平均月薪資
+  status: harvested
+  url: https://apiservice.mol.gov.tw/OdService/download/A17030000J-000016-wWs
+  source: tw_mol
+  obs_count: 12
+L4_notes: 'Wave2f 2026-07-21: MOL OdService 公式オープンデータ（最低賃金・平均賃金）L4 partial'
 L5_country_unique:
 - title: 'Ministry of Labor: MOL'
   url: https://www.mol.gov.tw/
@@ -26,8 +39,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: partial
   L5: partial
 agency_id: tw_mol
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T13:44:27+09:00'

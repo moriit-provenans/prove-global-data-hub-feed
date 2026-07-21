@@ -1,5 +1,6 @@
 iso2: TW
-source_note_ja: Customs Administration, MOF L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Customs Administration, MOF L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+  Wave2f: IMF IFS貿易bridge（international_fast）。関務署一次はpending。'
 L0:
   portal_url: https://web.customs.gov.tw/
   verified: true
@@ -16,8 +17,20 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: customs
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: goods_exports_usd
+  title: Goods exports value TW (IMF IFS via FRED)
+  status: harvested
+  url: https://fred.stlouisfed.org/series/VALEXPTWM052N
+  source: tw_customs
+  obs_count: 245
+- series_id: goods_imports_usd
+  title: Goods imports value TW (IMF IFS via FRED)
+  status: harvested
+  url: https://fred.stlouisfed.org/series/VALIMPTWM052N
+  source: tw_customs
+  obs_count: 245
+L4_notes: 'Wave2f 2026-07-21: IMF IFS貿易bridge（international_fast）。関務署一次はpending。'
 L5_country_unique:
 - title: 'Customs Administration, MOF: Customs'
   url: https://web.customs.gov.tw/
@@ -26,8 +39,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: partial
   L5: partial
 agency_id: tw_customs
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T13:44:27+09:00'

@@ -1,6 +1,7 @@
 iso2: TH
 agency_id: th_nesdc
-source_note_ja: 'Wave2c L1 recovery 2026-07-21: portal themes from verified L0 URL'
+source_note_ja: 'Wave2c L1 recovery 2026-07-21: portal themes from verified L0 URL
+  Wave2f: NESDC=GDP公表機関としてのクレジット（観測はWave2c収穫済・重複計上なし）'
 L0:
   portal_url: https://www.nesdc.go.th/
   verified: true
@@ -17,8 +18,15 @@ L2_datasets:
   update_freq: n/a
   license: official terms
   theme_id: portal
-L3_series: []
-L4_notes: ''
+L3_series:
+- series_id: nesdc_gdp_yoy
+  title: NESDC CVM GDP YoY (publisher credit; obs stored under TH macro_q)
+  status: harvested
+  url: https://www.nesdc.go.th/wordpress/wp-content/uploads/2026/03/ChainVolumeMeasures.xlsx
+  source: th_nesdc
+  obs_count: 128
+  note: Observations harvested Wave2c under th_nso pipeline; NESDC is the publisher.
+L4_notes: 'Wave2f 2026-07-21: NESDC=GDP公表機関としてのクレジット（観測はWave2c収穫済・重複計上なし）'
 L5_country_unique:
 - title: th_nesdc portal
   url: https://www.nesdc.go.th/
@@ -27,7 +35,7 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: done
+  L4: partial
   L5: partial
-updated_at: '2026-07-21T08:11:03+09:00'
+updated_at: '2026-07-21T13:44:27+09:00'

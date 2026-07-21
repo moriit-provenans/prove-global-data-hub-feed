@@ -1,6 +1,7 @@
 iso2: JP
 source_note_ja: '財務省ポータル＋予算・国債・税政（2026-07-21 HEAD検証）。貿易統計は関税局と分担。 Wave2e: WB公式指標bridge
-  L4 partial (0)。一次APIは pending。'
+  L4 partial (0)。一次APIは pending。 Wave2f: IMF WEO一般政府債務bridge（international_fast）。一次MOF
+  APIはpending。'
 L0:
   portal_url: https://www.mof.go.jp/
   verified: true
@@ -58,8 +59,13 @@ L3_series:
   source: jp_mof
   obs_count: 0
   blocked_reason: wb_empty
-L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=0 series (international_fast; primary
-  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
+- series_id: gov_gross_debt_pct_gdp
+  title: General government gross debt (IMF WEO via FRED)
+  status: harvested
+  url: https://fred.stlouisfed.org/series/GGGDTAJPA188N
+  source: jp_mof
+  obs_count: 24
+L4_notes: 'Wave2f 2026-07-21: IMF WEO一般政府債務bridge（international_fast）。一次MOF APIはpending。'
 L5_country_unique:
 - title: 国債発行計画・残高関連（財務省 JGBS）
   url: https://www.mof.go.jp/jgbs/
@@ -69,7 +75,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: pending
+  L4: partial
   L5: partial
 agency_id: jp_mof
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T13:44:27+09:00'

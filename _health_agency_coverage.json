@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "req_id": "REQ-SMITH-20260721-042",
-  "updated_at": "2026-07-21T08:38:33+09:00",
-  "wave": "Wave2e",
-  "note_ja": "Wave2e: 省庁クラスL4 WB公式bridge（partial止まり・一次API pending）。L4=259/297（0.872）; na_catalog=21; series_new=327",
+  "updated_at": "2026-07-21T13:44:27+09:00",
+  "wave": "Wave2f",
+  "note_ja": "Wave2f: JP/VN/HK財務・TW mof/customs/moea/mol・th_nesdc credit。L4=267/297（0.899）; na_catalog=21",
   "totals": {
     "countries": 21,
     "agencies": 297,
@@ -61,17 +61,16 @@
       "ca_open_data.yaml",
       "ca_osfi.yaml"
     ],
-    "overall_L3_partial_or_done": 261,
-    "overall_L3_rate": 0.879,
-    "overall_L4_partial_or_done": 259,
-    "overall_L4_rate": 0.872,
+    "overall_L3_partial_or_done": 266,
+    "overall_L3_rate": 0.896,
+    "overall_L4_partial_or_done": 267,
+    "overall_L4_rate": 0.899,
     "L4_na_catalog": 21,
-    "overall_L4_rate_excl_na": 0.938,
-    "l4_harvest_wave2e": {
-      "series_harvested_new": 327,
-      "observation_rows_added": 7723,
-      "agencies_bridged": 216,
-      "blocked": 22
+    "overall_L4_rate_excl_na": 0.967,
+    "l4_harvest_wave2f": {
+      "series_harvested_new": 12,
+      "observation_rows_added": 623,
+      "blocked": 0
     }
   },
   "by_country": {
@@ -99,14 +98,14 @@
       "L1_done": 15,
       "L2_partial_or_done": 15,
       "L3_partial_or_done": 14,
-      "L4_partial_or_done": 13,
+      "L4_partial_or_done": 14,
       "L5_partial_or_done": 9,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
         "L3": 0.933,
-        "L4": 0.867,
+        "L4": 0.933,
         "L5": 0.6,
         "class_coverage": 1.0
       },
@@ -312,15 +311,15 @@
       "L0_blocked": 0,
       "L1_done": 15,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 13,
-      "L4_partial_or_done": 13,
+      "L3_partial_or_done": 14,
+      "L4_partial_or_done": 14,
       "L5_partial_or_done": 15,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 0.933,
-        "L3": 0.867,
-        "L4": 0.867,
+        "L3": 0.933,
+        "L4": 0.933,
         "L5": 1.0,
         "class_coverage": 1.0
       },
@@ -418,14 +417,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 13,
       "L3_partial_or_done": 13,
-      "L4_partial_or_done": 12,
+      "L4_partial_or_done": 13,
       "L5_partial_or_done": 13,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 0.929,
         "L3": 0.929,
-        "L4": 0.857,
+        "L4": 0.929,
         "L5": 0.929,
         "class_coverage": 1.0
       },
@@ -677,15 +676,15 @@
       "L0_blocked": 0,
       "L1_done": 14,
       "L2_partial_or_done": 14,
-      "L3_partial_or_done": 1,
-      "L4_partial_or_done": 1,
+      "L3_partial_or_done": 5,
+      "L4_partial_or_done": 5,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 1.0,
-        "L3": 0.071,
-        "L4": 0.071,
+        "L3": 0.357,
+        "L4": 0.357,
         "L5": 1.0,
         "class_coverage": 1.0
       },
@@ -730,14 +729,14 @@
       "L1_done": 14,
       "L2_partial_or_done": 13,
       "L3_partial_or_done": 13,
-      "L4_partial_or_done": 12,
+      "L4_partial_or_done": 13,
       "L5_partial_or_done": 14,
       "rates": {
         "L0": 1.0,
         "L1": 1.0,
         "L2": 0.929,
         "L3": 0.929,
-        "L4": 0.857,
+        "L4": 0.929,
         "L5": 1.0,
         "class_coverage": 1.0
       },

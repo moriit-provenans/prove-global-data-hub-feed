@@ -1,6 +1,6 @@
 iso2: HK
 source_note_ja: 'Wave1 L0–L2 start（検証済ポータル）。 Wave2e: WB公式指標bridge L4 partial (0)。一次APIは
-  pending。'
+  pending。 Wave2f: IMF政府債務bridge（international_fast）。一次はpending。'
 L0:
   portal_url: https://www.fstb.gov.hk/
   verified: true
@@ -32,8 +32,13 @@ L3_series:
   source: hk_fstb
   obs_count: 0
   blocked_reason: wb_empty
-L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=0 series (international_fast; primary
-  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
+- series_id: gov_gross_debt_pct_gdp
+  title: General government gross debt position (IMF via FRED)
+  status: harvested
+  url: https://fred.stlouisfed.org/series/HKGGGXWDGG01GDPPT
+  source: hk_fstb
+  obs_count: 9
+L4_notes: 'Wave2f 2026-07-21: IMF政府債務bridge（international_fast）。一次はpending。'
 L5_country_unique:
 - title: FSTB portal
   url: https://www.fstb.gov.hk/
@@ -49,7 +54,7 @@ coverage:
   L1: done
   L2: partial
   L3: partial
-  L4: pending
+  L4: partial
   L5: partial
 agency_id: hk_fstb
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T13:44:27+09:00'

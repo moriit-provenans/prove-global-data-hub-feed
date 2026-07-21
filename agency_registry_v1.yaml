@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T08:38:33+09:00'
-wave: Wave2e
+updated_at: '2026-07-21T13:44:27+09:00'
+wave: Wave2f
 policy:
   layers:
   - L0
@@ -106,7 +106,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.mof.go.jp/
   notes: 予算・決算・財政統計。貿易統計は関税局と分担。
@@ -502,7 +502,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.vn/
 - agency_id: vn_ssc
@@ -674,8 +674,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: partial
     L5: partial
   portal_url: https://www.nesdc.go.th/
 - agency_id: th_bot
@@ -2182,8 +2182,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.tw/
 - agency_id: tw_fsc
@@ -2208,8 +2208,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: partial
     L5: partial
   portal_url: https://www.moea.gov.tw/
 - agency_id: tw_mol
@@ -2221,8 +2221,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: partial
     L5: partial
   portal_url: https://www.mol.gov.tw/
 - agency_id: tw_moe
@@ -2313,8 +2313,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: done
+    L4: partial
     L5: partial
   portal_url: https://web.customs.gov.tw/
 - agency_id: tw_data_gov
@@ -2366,7 +2366,7 @@ agencies:
     L1: done
     L2: partial
     L3: partial
-    L4: pending
+    L4: partial
     L5: partial
   portal_url: https://www.fstb.gov.hk/
 - agency_id: hk_sfc
