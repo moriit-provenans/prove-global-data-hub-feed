@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-21T08:25:30+09:00",
+  "generated_at": "2026-07-21T21:33:04+09:00",
   "wave": "REQ-SMITH-20260720-041 Wave2b (gaps closed as far as reachable)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
-  "nso_pilot_rows": 28967,
+  "nso_pilot_rows": 29106,
   "source_tier_counts": {
-    "international_fast": 13702,
+    "international_fast": 13841,
     "nso": 15265
   },
   "macro_q_gdp_real_yoy_countries": [
@@ -123,7 +123,7 @@
     "US": {
       "period": "2026-Q1",
       "tier": "nso",
-      "value": 2.1
+      "value": 6.0702
     },
     "VN": {
       "period": "2026-Q1",
@@ -381,7 +381,7 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "FRED/OECD MEI・db.nomicsにUAE四半期GDP系列なし（年次WBのみ）",
+        "blocked_reason": "FRED/OECD MEI・db.nomicsにUAE四半期GDP系列なし（年次WBのみ）／FCSC Cloudflare不通",
         "wb_annual_latest": "2024",
         "wb_parallel": true
       },
@@ -1082,17 +1082,19 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "NBS都市失業はUUID/Playwright要"
+        "blocked_reason": "NBS都市失業はUUID/Playwright要（IMF IFSは2020止まりで不採用）"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "VN",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "GSO一次不通"
+        "best_tier": "international_fast",
+        "latest_period": "2024-Q4",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1110,11 +1112,13 @@
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "IN",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "MOSPI SSL障害"
+        "best_tier": "international_fast",
+        "latest_period": "2024-Q4",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1144,11 +1148,13 @@
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "HK",
         "priority": "P1",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "C&SD失業表ID未特定（別波）"
+        "best_tier": "international_fast",
+        "latest_period": "2023-Q4",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1158,17 +1164,19 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "公開APIで月次失業系列未確認"
+        "blocked_reason": "公開APIで失業系列未確認（IMF IFSにも系列なし・2026-07-21再確認）"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
         "iso2": "SA",
         "priority": "P2",
-        "best_tier": null,
-        "latest_period": null,
-        "tiers_present": [],
-        "status": "blocked",
-        "blocked_reason": "FRED/OECD MEIにサウジ月次失業系列なし"
+        "best_tier": "international_fast",
+        "latest_period": "2024-Q4",
+        "tiers_present": [
+          "international_fast"
+        ],
+        "status": "bridge",
+        "blocked_reason": null
       },
       {
         "indicator_id": "nso_m.unemployment.pct",
@@ -1951,16 +1959,16 @@
     ],
     "summary": {
       "total_cells": 147,
-      "filled": 112,
+      "filled": 116,
       "nso_primary": 58,
-      "international_fast_bridge": 54,
+      "international_fast_bridge": 58,
       "missing": 0,
-      "blocked": 7,
+      "blocked": 3,
       "na_optional": 28,
-      "fill_rate_pct": 76.2,
+      "fill_rate_pct": 78.9,
       "nso_rate_pct": 39.5,
       "wave2b_denominator": 119,
-      "wave2b_fill_rate_pct": 94.1,
+      "wave2b_fill_rate_pct": 97.5,
       "nso_annual_growth_countries": [
         "HK",
         "MY",
@@ -1972,7 +1980,7 @@
     }
   },
   "wb_fallback_share_note_ja": "年次macro_annualはWB維持＋NSO年次(US/HK/MY/PH/SG)を並列。月次/四半期はNSO+bridge。",
-  "quarterly_now_rows": 2296,
+  "quarterly_now_rows": 2435,
   "monthly_nso_rows": 18905,
   "next": [
     "AE四半期GDP一次（FCSC/Bayanat経路）",

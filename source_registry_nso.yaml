@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-21T08:25:30+09:00'
+updated_at: '2026-07-21T21:33:04+09:00'
 policy:
   priority:
   - nso
@@ -227,6 +227,18 @@ sources:
   - nso_m.cpi.index
   - nso_m.cpi.yoy_pct
   note_ja: AE=FCSC Cloudflare不通 / VN=NSDP不通の正直bridge
+- id: ifs_unemployment_bridge
+  tier: international_fast
+  iso2:
+  - VN
+  - IN
+  - SA
+  - HK
+  agency: IMF IFS unemployment rate (LUR_PT) via db.nomics
+  url: https://db.nomics.world/
+  metrics:
+  - nso_m.unemployment.pct
+  note_ja: 一次不通（GSO/MOSPI/GASTAT/C&SDパラメータ）の正直bridge。VN/IN/SA=2024-Q4・HK=2023-Q4ラグ
 - id: th_bot_unemployment
   tier: international_fast
   iso2:
@@ -941,9 +953,17 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-Q1
 - metric_id: nso_m.unemployment.pct
+  iso2: HK
+  source_tier: international_fast
+  latest_period: 2023-Q4
+- metric_id: nso_m.unemployment.pct
   iso2: ID
   source_tier: international_fast
   latest_period: 2015-Q3
+- metric_id: nso_m.unemployment.pct
+  iso2: IN
+  source_tier: international_fast
+  latest_period: 2024-Q4
 - metric_id: nso_m.unemployment.pct
   iso2: JP
   source_tier: international_fast
@@ -965,6 +985,10 @@ latest_period_by_key:
   source_tier: nso
   latest_period: 2026-05
 - metric_id: nso_m.unemployment.pct
+  iso2: SA
+  source_tier: international_fast
+  latest_period: 2024-Q4
+- metric_id: nso_m.unemployment.pct
   iso2: SG
   source_tier: nso
   latest_period: 2025-12
@@ -984,6 +1008,10 @@ latest_period_by_key:
   iso2: US
   source_tier: nso
   latest_period: 2026-06
+- metric_id: nso_m.unemployment.pct
+  iso2: VN
+  source_tier: international_fast
+  latest_period: 2024-Q4
 - metric_id: nso_q.current_account.million_gbp
   iso2: GB
   source_tier: nso
