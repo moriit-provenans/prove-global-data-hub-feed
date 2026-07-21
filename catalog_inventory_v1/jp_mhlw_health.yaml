@@ -1,5 +1,6 @@
 iso2: JP
-source_note_ja: 厚労省保健・人口動態（2026-07-21検証）。
+source_note_ja: '厚労省保健・人口動態（2026-07-21検証）。 Wave2e: WB公式指標bridge L4 partial (2)。一次APIは
+  pending。'
 L0:
   portal_url: https://www.mhlw.go.jp/
   verified: true
@@ -31,15 +32,30 @@ L2_datasets:
   update_freq: triennial
   license: MHLW terms
   theme_id: patient
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_sh_xpd_chex_gd_zs
+  title: Current health expenditure (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS
+  source: jp_mhlw_health
+  obs_count: 24
+  bridge: wb_wdi_international_fast
+- series_id: wb_sp_dyn_le00_in
+  title: Life expectancy at birth (years)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SP.DYN.LE00.IN
+  source: jp_mhlw_health
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique: []
 coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: pending
 agency_id: jp_mhlw_health
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

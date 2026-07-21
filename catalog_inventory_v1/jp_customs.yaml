@@ -1,5 +1,6 @@
 iso2: JP
-source_note_ja: 税関貿易統計本表・解説（2026-07-21検証）。
+source_note_ja: '税関貿易統計本表・解説（2026-07-21検証）。 Wave2e: WB公式指標bridge L4 partial (2)。一次APIは
+  pending。'
 L0:
   portal_url: https://www.customs.go.jp/
   verified: true
@@ -27,15 +28,30 @@ L2_datasets:
   update_freq: n/a
   license: Customs/MOF terms
   theme_id: trade_info
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_tx_val_mrch_cd_wt
+  title: Merchandise exports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TX.VAL.MRCH.CD.WT
+  source: jp_customs
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+- series_id: wb_tm_val_mrch_cd_wt
+  title: Merchandise imports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TM.VAL.MRCH.CD.WT
+  source: jp_customs
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique: []
 coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: pending
 agency_id: jp_customs
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

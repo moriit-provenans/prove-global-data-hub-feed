@@ -1,6 +1,7 @@
 iso2: VN
 source_note_ja: 'Wave2 light retry still blocked (error:URLError). Wave2d L1 soft-recovery
-  2026-07-21: L0 portal reused (live HEAD blocked this wave).'
+  2026-07-21: L0 portal reused (live HEAD blocked this wave). Wave2e: WB公式指標bridge
+  L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: https://monre.gov.vn/
   verified: false
@@ -17,8 +18,23 @@ L2_datasets:
   update_freq: n/a
   license: official terms
   theme_id: portal
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L3_series:
+- series_id: wb_en_ghg_co2_pc_ce_ar5
+  title: CO2 emissions per capita (AR5)
+  status: harvested
+  url: https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5
+  source: vn_monre
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+- series_id: wb_eg_elc_accs_zs
+  title: Access to electricity (% of population)
+  status: harvested
+  url: https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS
+  source: vn_monre
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 人間ブラウザでL1再検証が必要'
 L5_country_unique:
 - title: vn_monre portal
   url: https://monre.gov.vn/
@@ -27,8 +43,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 blocked:
   L1: error:URLError
@@ -38,4 +54,4 @@ blocked:
   - https://monre.gov.vn/
   - http://www.monre.gov.vn/
 agency_id: vn_monre
-updated_at: '2026-07-21T08:24:49+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

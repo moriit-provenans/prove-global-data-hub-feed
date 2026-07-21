@@ -1,5 +1,6 @@
 iso2: SA
-source_note_ja: Zakat, Tax and Customs Authority L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Zakat, Tax and Customs Authority L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+  Wave2e: WB公式指標bridge L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: https://zatca.gov.sa/
   verified: true
@@ -16,8 +17,23 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: zatca
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_tx_val_mrch_cd_wt
+  title: Merchandise exports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TX.VAL.MRCH.CD.WT
+  source: sa_zatca
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+- series_id: wb_tm_val_mrch_cd_wt
+  title: Merchandise imports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TM.VAL.MRCH.CD.WT
+  source: sa_zatca
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: 'Zakat, Tax and Customs Authority: ZATCA'
   url: https://zatca.gov.sa/
@@ -26,8 +42,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: sa_zatca
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

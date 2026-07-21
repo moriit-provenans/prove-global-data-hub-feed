@@ -1,5 +1,6 @@
 iso2: VN
-source_note_ja: Ministry of Industry and Trade L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+source_note_ja: 'Ministry of Industry and Trade L1–L2（2026-07-21 Wave1b HEAD/GET検証済URLのみ）。
+  Wave2e: WB公式指標bridge L4 partial (1)。一次APIは pending。'
 L0:
   portal_url: https://moit.gov.vn/
   verified: true
@@ -16,8 +17,16 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: moit
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_nv_ind_manf_zs
+  title: Manufacturing value added (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/NV.IND.MANF.ZS
+  source: vn_moit
+  obs_count: 21
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=1 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: 'Ministry of Industry and Trade: MOIT'
   url: https://moit.gov.vn/
@@ -26,8 +35,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: vn_moit
-updated_at: '2026-07-21T04:20:35+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

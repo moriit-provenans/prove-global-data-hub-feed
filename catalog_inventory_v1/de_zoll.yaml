@@ -1,5 +1,6 @@
 iso2: DE
-source_note_ja: de_zoll L1–L2（Wave1d recovery 検証済代替URLのみ）。
+source_note_ja: 'de_zoll L1–L2（Wave1d recovery 検証済代替URLのみ）。 Wave2e: WB公式指標bridge L4
+  partial (2)。一次APIは pending。'
 L0:
   portal_url: https://www.zoll.de/EN/Home/home_node.html
   verified: true
@@ -27,8 +28,23 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: destatis_trade
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_tx_val_mrch_cd_wt
+  title: Merchandise exports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TX.VAL.MRCH.CD.WT
+  source: de_zoll
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+- series_id: wb_tm_val_mrch_cd_wt
+  title: Merchandise imports (current US$)
+  status: harvested
+  url: https://data.worldbank.org/indicator/TM.VAL.MRCH.CD.WT
+  source: de_zoll
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: 'de_zoll: Zoll EN'
   url: https://www.zoll.de/EN/Home/home_node.html
@@ -40,8 +56,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: de_zoll
-updated_at: '2026-07-21T04:31:01+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

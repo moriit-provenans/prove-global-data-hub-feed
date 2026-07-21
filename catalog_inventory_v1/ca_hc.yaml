@@ -1,5 +1,6 @@
 iso2: CA
-source_note_ja: Health Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。
+source_note_ja: 'Health Canada L1–L2（2026-07-21 Wave1c HEAD/GET検証済URLのみ）。 Wave2e:
+  WB公式指標bridge L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: https://www.canada.ca/en/health-canada.html
   verified: true
@@ -16,8 +17,23 @@ L2_datasets:
   update_freq: varies
   license: official terms
   theme_id: hc
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_sh_xpd_chex_gd_zs
+  title: Current health expenditure (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS
+  source: ca_hc
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+- series_id: wb_sp_dyn_le00_in
+  title: Life expectancy at birth (years)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SP.DYN.LE00.IN
+  source: ca_hc
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: 'Health Canada: HC'
   url: https://www.canada.ca/en/health-canada.html
@@ -26,8 +42,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: ca_hc
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

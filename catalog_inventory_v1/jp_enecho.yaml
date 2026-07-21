@@ -1,5 +1,6 @@
 iso2: JP
-source_note_ja: 資源エネルギー庁統計ポータル（2026-07-21検証）。環境省は jp_env。
+source_note_ja: '資源エネルギー庁統計ポータル（2026-07-21検証）。環境省は jp_env。 Wave2e: WB公式指標bridge L4
+  partial (2)。一次APIは pending。'
 L0:
   portal_url: https://www.enecho.meti.go.jp/statistics/
   verified: true
@@ -16,15 +17,30 @@ L2_datasets:
   update_freq: varies
   license: ANRE/METI terms
   theme_id: enecho_stats
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_en_ghg_co2_pc_ce_ar5
+  title: CO2 emissions per capita (AR5)
+  status: harvested
+  url: https://data.worldbank.org/indicator/EN.GHG.CO2.PC.CE.AR5
+  source: jp_enecho
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+- series_id: wb_eg_elc_accs_zs
+  title: Access to electricity (% of population)
+  status: harvested
+  url: https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS
+  source: jp_enecho
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique: []
 coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: pending
 agency_id: jp_enecho
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

@@ -1,5 +1,6 @@
 iso2: JP
-source_note_ja: 観光庁ポータル＋統計資料（宿泊旅行統計はMLIT inventoryにも重複登録可）。
+source_note_ja: '観光庁ポータル＋統計資料（宿泊旅行統計はMLIT inventoryにも重複登録可）。 Wave2e: WB公式指標bridge
+  L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: https://www.mlit.go.jp/kankocho/
   verified: true
@@ -27,15 +28,30 @@ L2_datasets:
   update_freq: monthly
   license: JTA terms
   theme_id: jta_stats
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_bx_klt_dinv_wd_gd_zs
+  title: FDI net inflows (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS
+  source: jp_jta
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+- series_id: wb_st_int_arvl
+  title: International tourism, number of arrivals
+  status: harvested
+  url: https://data.worldbank.org/indicator/ST.INT.ARVL
+  source: jp_jta
+  obs_count: 21
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique: []
 coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: pending
 agency_id: jp_jta
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

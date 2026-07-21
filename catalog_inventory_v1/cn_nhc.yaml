@@ -1,13 +1,29 @@
 iso2: CN
-source_note_ja: Wave1d recovery試行後も到達不可（http_412）。試行URL数=3。
+source_note_ja: 'Wave1d recovery試行後も到達不可（http_412）。試行URL数=3。 Wave2e: WB公式指標bridge
+  L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: http://www.nhc.gov.cn/
   verified: false
   blocked_reason: http_412
 L1_themes: []
 L2_datasets: []
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L3_series:
+- series_id: wb_sh_xpd_chex_gd_zs
+  title: Current health expenditure (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS
+  source: cn_nhc
+  obs_count: 24
+  bridge: wb_wdi_international_fast
+- series_id: wb_sp_dyn_le00_in
+  title: Life expectancy at birth (years)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SP.DYN.LE00.IN
+  source: cn_nhc
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 人間ブラウザでL1再検証が必要'
 L5_country_unique:
 - title: cn_nhc portal
   url: http://www.nhc.gov.cn/
@@ -16,8 +32,8 @@ coverage:
   L0: done
   L1: done
   L2: blocked
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 blocked:
   L1: http_412
@@ -27,4 +43,4 @@ blocked:
   - https://www.nhc.gov.cn/
   - http://www.nhc.gov.cn/wjw/index.shtml
 agency_id: cn_nhc
-updated_at: '2026-07-21T08:11:03+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

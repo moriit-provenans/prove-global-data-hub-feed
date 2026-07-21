@@ -1,13 +1,29 @@
 iso2: PH
-source_note_ja: Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。
+source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。 Wave2e: WB公式指標bridge
+  L4 partial (2)。一次APIは pending。'
 L0:
   portal_url: https://www.dole.gov.ph/
   verified: false
   blocked_reason: crawler_403
 L1_themes: []
 L2_datasets: []
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L3_series:
+- series_id: wb_sl_uem_totl_zs
+  title: Unemployment total (% of labor force, ILO modeled)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS
+  source: ph_dole
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+- series_id: wb_sl_tlf_cact_zs
+  title: Labor force participation rate (%)
+  status: harvested
+  url: https://data.worldbank.org/indicator/SL.TLF.CACT.ZS
+  source: ph_dole
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 人間ブラウザでL1再検証が必要'
 L5_country_unique:
 - title: ph_dole portal
   url: https://www.dole.gov.ph/
@@ -16,8 +32,8 @@ coverage:
   L0: done
   L1: done
   L2: blocked
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 blocked:
   L1: crawler_403
@@ -27,4 +43,4 @@ blocked:
   - https://ble.dole.gov.ph/
   - https://openstat.psa.gov.ph/
 agency_id: ph_dole
-updated_at: '2026-07-21T08:11:03+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

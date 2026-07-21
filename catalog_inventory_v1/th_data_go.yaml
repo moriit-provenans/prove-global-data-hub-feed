@@ -7,7 +7,7 @@ L0:
 L1_themes: []
 L2_datasets: []
 L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L4_notes: 'Wave2e 2026-07-21: open data portal = カタログ機能。個別系列は各省庁inventoryでL4管理。'
 L5_country_unique:
 - title: th_data_go portal
   url: https://data.go.th/
@@ -17,7 +17,7 @@ coverage:
   L1: done
   L2: blocked
   L3: pending
-  L4: pending
+  L4: na_catalog
   L5: partial
 blocked:
   L1: crawler_403
@@ -27,4 +27,4 @@ blocked:
   - https://www.data.go.th/
   - https://opendata.data.go.th/
 agency_id: th_data_go
-updated_at: '2026-07-21T08:11:03+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

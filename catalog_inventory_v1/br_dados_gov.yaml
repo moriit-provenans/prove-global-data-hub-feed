@@ -17,7 +17,7 @@ L2_datasets:
   license: official terms
   theme_id: od
 L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L4_notes: 'Wave2e 2026-07-21: open data portal = カタログ機能。個別系列は各省庁inventoryでL4管理。'
 L5_country_unique:
 - title: 'dados.gov.br: Open data'
   url: https://dados.gov.br/
@@ -27,7 +27,7 @@ coverage:
   L1: done
   L2: partial
   L3: pending
-  L4: pending
+  L4: na_catalog
   L5: partial
 agency_id: br_dados_gov
-updated_at: '2026-07-21T04:26:59+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

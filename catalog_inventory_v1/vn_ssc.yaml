@@ -1,6 +1,7 @@
 iso2: VN
 source_note_ja: 'Wave2 light retry still blocked (timeout). Wave2d L1 soft-recovery
-  2026-07-21: L0 portal reused (live HEAD blocked this wave).'
+  2026-07-21: L0 portal reused (live HEAD blocked this wave). Wave2e: WB公式指標bridge
+  L4 partial (1)。一次APIは pending。'
 L0:
   portal_url: https://ssc.gov.vn/
   verified: false
@@ -17,8 +18,16 @@ L2_datasets:
   update_freq: n/a
   license: official terms
   theme_id: portal
-L3_series: []
-L4_notes: 人間ブラウザでL1再検証が必要
+L3_series:
+- series_id: wb_fs_ast_prvt_gd_zs
+  title: Domestic credit to private sector (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS
+  source: vn_ssc
+  obs_count: 23
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=1 series (international_fast; primary
+  ministry API pending). 人間ブラウザでL1再検証が必要'
 L5_country_unique:
 - title: vn_ssc portal
   url: https://ssc.gov.vn/
@@ -27,8 +36,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 blocked:
   L1: timeout
@@ -38,4 +47,4 @@ blocked:
   - http://ssc.gov.vn/
   - https://www.ssc.gov.vn/
 agency_id: vn_ssc
-updated_at: '2026-07-21T08:24:49+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

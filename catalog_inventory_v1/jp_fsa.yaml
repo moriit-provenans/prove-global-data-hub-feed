@@ -1,5 +1,6 @@
 iso2: JP
-source_note_ja: 金融庁ステータス統計＋EDINET（2026-07-21検証）。
+source_note_ja: '金融庁ステータス統計＋EDINET（2026-07-21検証）。 Wave2e: WB公式指標bridge L4 partial
+  (1)。一次APIは pending。'
 L0:
   portal_url: https://www.fsa.go.jp/
   verified: true
@@ -31,8 +32,16 @@ L2_datasets:
   update_freq: daily
   license: FSA terms
   theme_id: edinet
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_fs_ast_prvt_gd_zs
+  title: Domestic credit to private sector (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS
+  source: jp_fsa
+  obs_count: 26
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=1 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: EDINET 有価証券報告書XBRL開示
   url: https://disclosure2.edinet-fsa.go.jp/
@@ -41,8 +50,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: jp_fsa
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

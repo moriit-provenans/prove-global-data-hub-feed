@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T08:24:49+09:00'
-wave: Wave2d
+updated_at: '2026-07-21T08:38:33+09:00'
+wave: Wave2e
 policy:
   layers:
   - L0
@@ -105,7 +105,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.mof.go.jp/
@@ -119,8 +119,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.fsa.go.jp/
 - agency_id: jp_meti
@@ -132,8 +132,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.meti.go.jp/
   open_data_url: https://www.meti.go.jp/statistics/index.html
@@ -146,8 +146,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mhlw.go.jp/
   open_data_url: https://www.mhlw.go.jp/toukei/index.html
@@ -161,8 +161,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: pending
   portal_url: https://www.mext.go.jp/
 - agency_id: jp_mlit
@@ -174,8 +174,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mlit.go.jp/
 - agency_id: jp_mhlw_health
@@ -187,8 +187,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: pending
   portal_url: https://www.mhlw.go.jp/
   open_data_url: https://www.mhlw.go.jp/toukei/list/114-1.html
@@ -202,8 +202,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.maff.go.jp/
 - agency_id: jp_enecho
@@ -215,8 +215,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: pending
   portal_url: https://www.enecho.meti.go.jp/statistics/
   notes: エネルギー統計は資源エネルギー庁。環境は https://www.env.go.jp/ も併記。
@@ -229,8 +229,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: pending
   portal_url: https://www.mlit.go.jp/kankocho/
   open_data_url: https://www.jetro.go.jp/world/japan/stats/
@@ -244,8 +244,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: pending
   portal_url: https://www.customs.go.jp/
   open_data_url: https://www.customs.go.jp/toukei/info/index.htm
@@ -259,7 +259,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: pending
   portal_url: https://www.data.go.jp/
   open_data_url: https://www.data.go.jp/data/dataset
@@ -315,8 +315,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://home.treasury.gov/
   open_data_url: https://fiscaldata.treasury.gov/
@@ -330,8 +330,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sec.gov/
 - agency_id: us_commerce
@@ -343,8 +343,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.commerce.gov/
 - agency_id: us_bls
@@ -370,8 +370,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ed.gov/
 - agency_id: us_dot
@@ -383,8 +383,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.transportation.gov/
 - agency_id: us_cdc
@@ -396,8 +396,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cdc.gov/
 - agency_id: us_usda
@@ -409,8 +409,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.usda.gov/
   open_data_url: https://www.ers.usda.gov/
@@ -423,8 +423,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.eia.gov/
 - agency_id: us_selectusa
@@ -436,8 +436,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.trade.gov/selectusa
 - agency_id: us_cbp
@@ -449,8 +449,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cbp.gov/
 - agency_id: us_data_gov
@@ -463,7 +463,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.gov/
 - agency_id: vn_gso
@@ -501,7 +501,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.mof.gov.vn/
@@ -514,8 +514,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://ssc.gov.vn/
 - agency_id: vn_moit
@@ -527,8 +527,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://moit.gov.vn/
 - agency_id: vn_molisa
@@ -540,8 +540,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.molisa.gov.vn/
 - agency_id: vn_moet
@@ -553,8 +553,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://moet.gov.vn/
 - agency_id: vn_mt
@@ -566,8 +566,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mt.gov.vn/
 - agency_id: vn_moh
@@ -579,8 +579,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://moh.gov.vn/
 - agency_id: vn_mard
@@ -592,8 +592,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mard.gov.vn/
 - agency_id: vn_monre
@@ -605,8 +605,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://monre.gov.vn/
 - agency_id: vn_vietnam_tourism_mpi
@@ -618,8 +618,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.vietnamtourism.gov.vn/
   notes: 投資誘致 MPI https://www.mpi.gov.vn/
@@ -632,8 +632,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.gov.vn/
 - agency_id: vn_data_gov
@@ -646,7 +646,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.vn/
   open_data_url: https://open.data.gov.vn/
@@ -700,8 +700,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mof.go.th/
 - agency_id: th_sec
@@ -713,8 +713,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sec.or.th/
 - agency_id: th_moc
@@ -726,8 +726,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moc.go.th/
 - agency_id: th_mol
@@ -739,8 +739,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mol.go.th/
 - agency_id: th_moe
@@ -752,8 +752,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moe.go.th/
 - agency_id: th_mot
@@ -765,8 +765,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mot.go.th/
 - agency_id: th_moph
@@ -778,8 +778,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moph.go.th/
 - agency_id: th_moac
@@ -791,8 +791,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moac.go.th/
 - agency_id: th_mnre
@@ -804,8 +804,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mnre.go.th/
 - agency_id: th_mots_boi
@@ -817,8 +817,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mots.go.th/
   notes: 投資誘致 https://www.boi.go.th/
@@ -831,8 +831,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.go.th/
 - agency_id: th_data_go
@@ -845,7 +845,7 @@ agencies:
     L1: done
     L2: pending
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.go.th/
 - agency_id: id_bps
@@ -883,8 +883,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.kemenkeu.go.id/
 - agency_id: id_ojk
@@ -896,8 +896,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ojk.go.id/
 - agency_id: id_kemenperin
@@ -909,8 +909,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://kemenperin.go.id/
   notes: 貿易省 https://www.kemendag.go.id/
@@ -923,8 +923,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://kemnaker.go.id/
 - agency_id: id_kemdikbud
@@ -936,8 +936,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.kemdikbud.go.id/
 - agency_id: id_kemenhub
@@ -949,8 +949,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://dephub.go.id/
 - agency_id: id_kemkes
@@ -962,8 +962,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.kemkes.go.id/
 - agency_id: id_kementan
@@ -975,8 +975,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.pertanian.go.id/
 - agency_id: id_esdm
@@ -988,8 +988,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.esdm.go.id/
 - agency_id: id_kemenparekraf_bkpm
@@ -1001,8 +1001,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.kemenparekraf.go.id/
   notes: 投資誘致 BKPM/Invest Indonesia。
@@ -1015,8 +1015,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.beacukai.go.id/
 - agency_id: id_satudata
@@ -1029,7 +1029,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://satudata.go.id/
   open_data_url: https://satudata.go.id/
@@ -1071,8 +1071,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://dea.gov.in/
 - agency_id: in_sebi
@@ -1084,8 +1084,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sebi.gov.in/
 - agency_id: in_dpiit
@@ -1097,8 +1097,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://dpiit.gov.in/
 - agency_id: in_labour
@@ -1110,8 +1110,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://labour.gov.in/
 - agency_id: in_education
@@ -1123,8 +1123,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.education.gov.in/
 - agency_id: in_morth
@@ -1136,8 +1136,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://morth.nic.in/
 - agency_id: in_mohfw
@@ -1149,8 +1149,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mohfw.gov.in/
 - agency_id: in_agriculture
@@ -1162,8 +1162,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://agriculture.gov.in/
 - agency_id: in_mnre
@@ -1175,8 +1175,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mnre.gov.in/
 - agency_id: in_tourism_invest
@@ -1188,8 +1188,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://tourism.gov.in/
   notes: 投資誘致 https://www.investindia.gov.in/
@@ -1202,8 +1202,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cbic.gov.in/
 - agency_id: in_data_gov
@@ -1216,7 +1216,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.gov.in/
 - agency_id: ph_psa
@@ -1255,8 +1255,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.dof.gov.ph/
 - agency_id: ph_sec
@@ -1268,8 +1268,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sec.gov.ph/
 - agency_id: ph_dti
@@ -1281,8 +1281,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.dti.gov.ph/
 - agency_id: ph_dole
@@ -1294,8 +1294,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.dole.gov.ph/
 - agency_id: ph_deped
@@ -1307,8 +1307,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.deped.gov.ph/
 - agency_id: ph_dotr
@@ -1320,8 +1320,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://dotr.gov.ph/
 - agency_id: ph_doh
@@ -1333,8 +1333,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://doh.gov.ph/
 - agency_id: ph_da
@@ -1346,8 +1346,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.da.gov.ph/
 - agency_id: ph_doe
@@ -1359,8 +1359,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.doe.gov.ph/
 - agency_id: ph_dot_boa
@@ -1372,8 +1372,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.tourism.gov.ph/
   notes: 投資誘致 BOI under DTI。
@@ -1386,8 +1386,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://customs.gov.ph/
 - agency_id: ph_data_gov
@@ -1400,7 +1400,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.ph/
   notes: ポータル稼働状況はWave1で再確認。
@@ -1440,8 +1440,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.my/
 - agency_id: my_sc
@@ -1453,8 +1453,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sc.com.my/
 - agency_id: my_miti
@@ -1466,8 +1466,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.miti.gov.my/
 - agency_id: my_mohr
@@ -1479,8 +1479,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mohr.gov.my/
 - agency_id: my_moe
@@ -1492,8 +1492,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moe.gov.my/
 - agency_id: my_mot
@@ -1505,8 +1505,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mot.gov.my/
 - agency_id: my_moh
@@ -1518,8 +1518,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moh.gov.my/
 - agency_id: my_mafi
@@ -1531,8 +1531,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mafi.gov.my/
 - agency_id: my_nrecc
@@ -1544,8 +1544,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.nrecc.gov.my/
 - agency_id: my_mota_mida
@@ -1557,8 +1557,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.motac.gov.my/
   notes: 投資誘致 https://www.mida.gov.my/
@@ -1571,8 +1571,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.gov.my/
 - agency_id: my_data_gov
@@ -1585,7 +1585,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.gov.my/
   open_data_url: https://www.data.gov.my/
@@ -1625,8 +1625,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.sg/
 - agency_id: sg_mas_reg
@@ -1638,8 +1638,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mas.gov.sg/
   notes: 中央銀行と監督が同一機関。
@@ -1652,8 +1652,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mti.gov.sg/
 - agency_id: sg_mom
@@ -1665,8 +1665,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mom.gov.sg/
 - agency_id: sg_moe
@@ -1678,8 +1678,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moe.gov.sg/
 - agency_id: sg_mot
@@ -1691,8 +1691,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mot.gov.sg/
 - agency_id: sg_moh
@@ -1704,8 +1704,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moh.gov.sg/
 - agency_id: sg_sfa
@@ -1717,8 +1717,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sfa.gov.sg/
   notes: 農業省は無く食品庁が相当。
@@ -1731,8 +1731,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ema.gov.sg/
 - agency_id: sg_stb_edb
@@ -1744,8 +1744,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.stb.gov.sg/
   notes: 投資誘致は https://www.edb.gov.sg/
@@ -1758,8 +1758,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.gov.sg/
 - agency_id: sg_data_gov
@@ -1772,7 +1772,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.sg/
 - agency_id: cn_nbs
@@ -1811,8 +1811,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.cn/
 - agency_id: cn_csrc
@@ -1824,8 +1824,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.csrc.gov.cn/
   notes: 銀行保険監督はNFRA。Wave1でURL再確認。
@@ -1838,8 +1838,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mofcom.gov.cn/
 - agency_id: cn_mohrss
@@ -1851,8 +1851,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.mohrss.gov.cn/
 - agency_id: cn_moe
@@ -1864,8 +1864,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.moe.gov.cn/
 - agency_id: cn_mot
@@ -1877,8 +1877,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mot.gov.cn/
 - agency_id: cn_nhc
@@ -1890,8 +1890,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.nhc.gov.cn/
 - agency_id: cn_mara
@@ -1903,8 +1903,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.moa.gov.cn/
 - agency_id: cn_neea
@@ -1916,8 +1916,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.nea.gov.cn/
 - agency_id: cn_cta_mofcom
@@ -1929,8 +1929,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mct.gov.cn/
 - agency_id: cn_customs
@@ -1942,8 +1942,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: http://www.customs.gov.cn/
 - agency_id: cn_data_gov
@@ -1956,7 +1956,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.cn/
   open_data_url: https://data.gov.cn/
@@ -1998,8 +1998,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moef.go.kr/
 - agency_id: kr_fss
@@ -2011,8 +2011,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.fsc.go.kr/
 - agency_id: kr_motie
@@ -2024,8 +2024,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.motie.go.kr/
 - agency_id: kr_moel
@@ -2037,8 +2037,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moel.go.kr/
 - agency_id: kr_moe
@@ -2050,8 +2050,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moe.go.kr/
 - agency_id: kr_molit
@@ -2063,8 +2063,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.molit.go.kr/
 - agency_id: kr_mohw
@@ -2076,8 +2076,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mohw.go.kr/
 - agency_id: kr_mafra
@@ -2089,8 +2089,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mafra.go.kr/
 - agency_id: kr_motie_env
@@ -2102,8 +2102,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.me.go.kr/
 - agency_id: kr_mcst_invest
@@ -2115,8 +2115,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mcst.go.kr/
   notes: Invest Korea https://www.investkorea.org/
@@ -2129,8 +2129,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.go.kr/
 - agency_id: kr_data_go
@@ -2143,7 +2143,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.go.kr/
 - agency_id: tw_dgbas
@@ -2327,7 +2327,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.tw/
 - agency_id: hk_censtatd
@@ -2365,7 +2365,7 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
+    L3: partial
     L4: pending
     L5: partial
   portal_url: https://www.fstb.gov.hk/
@@ -2378,8 +2378,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sfc.hk/
 - agency_id: hk_cedb
@@ -2391,8 +2391,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cedb.gov.hk/
 - agency_id: hk_labour
@@ -2404,8 +2404,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.labour.gov.hk/
 - agency_id: hk_edb
@@ -2417,8 +2417,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.edb.gov.hk/
 - agency_id: hk_thb
@@ -2430,8 +2430,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.tlb.gov.hk/
 - agency_id: hk_hhb
@@ -2443,8 +2443,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.healthbureau.gov.hk/
 - agency_id: hk_afcd
@@ -2456,8 +2456,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.afcd.gov.hk/
   notes: 食料は食環署 FEHD も関連。
@@ -2470,8 +2470,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.eeb.gov.hk/
 - agency_id: hk_tourism_invest
@@ -2483,8 +2483,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.tourism.gov.hk/
   notes: InvestHK https://www.investhk.gov.hk/
@@ -2497,8 +2497,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.customs.gov.hk/
 - agency_id: hk_data_gov
@@ -2511,7 +2511,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.hk/
 - agency_id: ae_fcsc
@@ -2551,8 +2551,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mof.gov.ae/
 - agency_id: ae_sca
@@ -2564,8 +2564,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.sca.gov.ae/
 - agency_id: ae_moei
@@ -2577,8 +2577,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moec.gov.ae/
 - agency_id: ae_mohre
@@ -2590,8 +2590,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mohre.gov.ae/
 - agency_id: ae_moe
@@ -2603,8 +2603,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moe.gov.ae/
 - agency_id: ae_mot
@@ -2616,8 +2616,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moei.gov.ae/
   notes: 交通・インフラ所管は省再編に注意。
@@ -2630,8 +2630,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mohap.gov.ae/
 - agency_id: ae_moccae
@@ -2643,8 +2643,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moccae.gov.ae/
 - agency_id: ae_moei_energy
@@ -2656,8 +2656,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moei.gov.ae/
 - agency_id: ae_dct_invest
@@ -2669,8 +2669,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moec.gov.ae/
   notes: 観光は首長国別当局が強い（DTCM等）。
@@ -2683,8 +2683,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.icp.gov.ae/
   notes: 関税機能はICP配下。Wave1で税関専用URL確認。
@@ -2698,7 +2698,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://bayanat.ae/en
   open_data_url: https://bayanat.ae/en
@@ -2737,8 +2737,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mof.gov.sa/
 - agency_id: sa_cma
@@ -2750,8 +2750,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://cma.org.sa/
 - agency_id: sa_mci
@@ -2763,8 +2763,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mc.gov.sa/
 - agency_id: sa_hrsd
@@ -2776,8 +2776,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.hrsd.gov.sa/
 - agency_id: sa_moe
@@ -2789,8 +2789,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://moe.gov.sa/
 - agency_id: sa_mot
@@ -2802,8 +2802,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mot.gov.sa/
 - agency_id: sa_moh
@@ -2815,8 +2815,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moh.gov.sa/
 - agency_id: sa_mewa
@@ -2828,8 +2828,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.mewa.gov.sa/
 - agency_id: sa_energy
@@ -2841,8 +2841,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.moenergy.gov.sa/
 - agency_id: sa_mt_invest
@@ -2854,8 +2854,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://mt.gov.sa/
   notes: 投資誘致 https://misa.gov.sa/
@@ -2868,8 +2868,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://zatca.gov.sa/
 - agency_id: sa_data_gov
@@ -2882,7 +2882,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.sa/en
   notes: data.gov.sa 直下はタイムアウト／遷移あり。Open Data は od.data.gov.sa をL0とする。
@@ -2922,8 +2922,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.hmb.gov.tr/
 - agency_id: tr_spk
@@ -2935,8 +2935,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.spk.gov.tr/
 - agency_id: tr_ticaret
@@ -2948,8 +2948,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ticaret.gov.tr/
 - agency_id: tr_csgb
@@ -2961,8 +2961,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.csgb.gov.tr/
 - agency_id: tr_meb
@@ -2974,8 +2974,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.meb.gov.tr/
 - agency_id: tr_uab
@@ -2987,8 +2987,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.uab.gov.tr/
 - agency_id: tr_saglik
@@ -3000,8 +3000,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.saglik.gov.tr/
 - agency_id: tr_tarim
@@ -3013,8 +3013,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.tarimorman.gov.tr/
 - agency_id: tr_enerji
@@ -3026,8 +3026,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://enerji.gov.tr/
 - agency_id: tr_kultur_invest
@@ -3039,8 +3039,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ktb.gov.tr/
   notes: Invest https://www.invest.gov.tr/
@@ -3053,8 +3053,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ticaret.gov.tr/
   notes: 関税機能は貿易省配下。
@@ -3068,7 +3068,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://data.gov.tr/
   open_data_url: https://data.gov.tr/
@@ -3107,8 +3107,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/hm-treasury
 - agency_id: gb_fca
@@ -3120,8 +3120,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.fca.org.uk/
 - agency_id: gb_beis_dbt
@@ -3133,8 +3133,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-business-and-trade
 - agency_id: gb_dwp
@@ -3146,8 +3146,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-work-pensions
 - agency_id: gb_dfe
@@ -3159,8 +3159,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-education
 - agency_id: gb_dft
@@ -3172,8 +3172,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-transport
 - agency_id: gb_dhsc
@@ -3185,8 +3185,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-of-health-and-social-care
 - agency_id: gb_defra
@@ -3198,8 +3198,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs
 - agency_id: gb_desnz
@@ -3211,8 +3211,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero
 - agency_id: gb_dcms_invest
@@ -3224,8 +3224,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/department-for-culture-media-and-sport
   notes: VisitBritain / DBT investment promotion。
@@ -3238,8 +3238,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.uk/government/organisations/hm-revenue-customs
 - agency_id: gb_data_gov
@@ -3252,7 +3252,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.gov.uk/
 - agency_id: de_destatis
@@ -3290,8 +3290,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bundesfinanzministerium.de/
 - agency_id: de_bafin
@@ -3303,8 +3303,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bafin.de/
 - agency_id: de_bmwk
@@ -3316,8 +3316,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmwk.de/
 - agency_id: de_bmas
@@ -3329,8 +3329,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmas.de/
 - agency_id: de_bmbf
@@ -3342,8 +3342,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmbf.de/
 - agency_id: de_bmdv
@@ -3355,8 +3355,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmdv.bund.de/
 - agency_id: de_bmg
@@ -3368,8 +3368,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bundesgesundheitsministerium.de/
 - agency_id: de_bmel
@@ -3381,8 +3381,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmel.de/
 - agency_id: de_bmuv
@@ -3394,8 +3394,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.bmuv.de/
   notes: エネルギーはBMWKと分担。
@@ -3408,8 +3408,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gtai.de/
 - agency_id: de_zoll
@@ -3421,8 +3421,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.zoll.de/
 - agency_id: de_govdata
@@ -3435,7 +3435,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.govdata.de/
 - agency_id: fr_insee
@@ -3473,8 +3473,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.economie.gouv.fr/
 - agency_id: fr_amf
@@ -3486,8 +3486,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.amf-france.org/
 - agency_id: fr_dge
@@ -3499,8 +3499,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.entreprises.gouv.fr/
 - agency_id: fr_travail
@@ -3512,8 +3512,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://travail-emploi.gouv.fr/
 - agency_id: fr_education
@@ -3525,8 +3525,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.education.gouv.fr/
 - agency_id: fr_ecologie
@@ -3538,8 +3538,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ecologie.gouv.fr/
 - agency_id: fr_sante
@@ -3551,8 +3551,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://sante.gouv.fr/
 - agency_id: fr_agriculture
@@ -3564,8 +3564,8 @@ agencies:
     L0: done
     L1: done
     L2: pending
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://agriculture.gouv.fr/
 - agency_id: fr_energie
@@ -3577,8 +3577,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.ecologie.gouv.fr/
 - agency_id: fr_diplomatie_invest
@@ -3590,8 +3590,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.businessfrance.fr/
 - agency_id: fr_douane
@@ -3603,8 +3603,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.douane.gouv.fr/
 - agency_id: fr_data_gouv
@@ -3617,7 +3617,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://www.data.gouv.fr/
 - agency_id: ca_statcan
@@ -3655,8 +3655,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.canada.ca/en/department-finance.html
 - agency_id: ca_osfi
@@ -3668,8 +3668,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.osfi-bsif.gc.ca/
 - agency_id: ca_isd
@@ -3681,8 +3681,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://ised-isde.canada.ca/
 - agency_id: ca_esdc
@@ -3694,8 +3694,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.canada.ca/en/employment-social-development.html
 - agency_id: ca_education
@@ -3707,8 +3707,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.canada.ca/en/services/culture/education.html
   notes: 初等中等教育は州管轄。連邦は科学・高等教育関連。
@@ -3721,8 +3721,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://tc.canada.ca/
 - agency_id: ca_hc
@@ -3734,8 +3734,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.canada.ca/en/health-canada.html
 - agency_id: ca_aafc
@@ -3747,8 +3747,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://agriculture.canada.ca/
 - agency_id: ca_nrcan
@@ -3760,8 +3760,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://natural-resources.canada.ca/
 - agency_id: ca_destination_invest
@@ -3773,8 +3773,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.destinationcanada.com/
   notes: Invest https://www.investcanada.ca/
@@ -3787,8 +3787,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.cbsa-asfc.gc.ca/
 - agency_id: ca_open_data
@@ -3801,7 +3801,7 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://open.canada.ca/
 - agency_id: br_ibge
@@ -3839,8 +3839,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/fazenda/
 - agency_id: br_cvm
@@ -3852,8 +3852,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/cvm/
 - agency_id: br_mdic
@@ -3865,8 +3865,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/mdic/
 - agency_id: br_mte
@@ -3878,8 +3878,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/trabalho-e-emprego/
 - agency_id: br_mec
@@ -3891,8 +3891,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/mec/
 - agency_id: br_infra
@@ -3904,8 +3904,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/transportes/
 - agency_id: br_saude
@@ -3917,8 +3917,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/saude/
 - agency_id: br_mapa
@@ -3930,8 +3930,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/agricultura/
 - agency_id: br_mme
@@ -3943,8 +3943,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/mme/
 - agency_id: br_turismo_apex
@@ -3956,8 +3956,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/turismo/
   notes: 投資誘致 ApexBrasil。
@@ -3970,8 +3970,8 @@ agencies:
     L0: done
     L1: done
     L2: partial
-    L3: pending
-    L4: pending
+    L3: partial
+    L4: partial
     L5: partial
   portal_url: https://www.gov.br/receitafederal/
 - agency_id: br_dados_gov
@@ -3984,6 +3984,6 @@ agencies:
     L1: done
     L2: partial
     L3: pending
-    L4: pending
+    L4: na_catalog
     L5: partial
   portal_url: https://dados.gov.br/

@@ -1,5 +1,6 @@
 iso2: US
-source_note_ja: U.S. Treasury + Fiscal Data。
+source_note_ja: 'U.S. Treasury + Fiscal Data。 Wave2e: WB公式指標bridge L4 partial (2)。一次APIは
+  pending。'
 L0:
   portal_url: https://home.treasury.gov/
   verified: true
@@ -27,8 +28,23 @@ L2_datasets:
   update_freq: continuous
   license: Treasury terms
   theme_id: fiscaldata
-L3_series: []
-L4_notes: 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。
+L3_series:
+- series_id: wb_gc_dod_totl_gd_zs
+  title: Central government debt (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS
+  source: us_treasury
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+- series_id: wb_gc_tax_totl_gd_zs
+  title: Tax revenue (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS
+  source: us_treasury
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
+  ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
 L5_country_unique:
 - title: Fiscal Data datasets
   url: https://fiscaldata.treasury.gov/
@@ -43,8 +59,8 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
 agency_id: us_treasury
-updated_at: '2026-07-21T04:15:44+09:00'
+updated_at: '2026-07-21T08:38:33+09:00'

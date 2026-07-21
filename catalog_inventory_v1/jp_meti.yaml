@@ -1,7 +1,8 @@
 agency_id: jp_meti
 iso2: JP
-updated_at: '2026-07-21T04:15:44+09:00'
-source_note_ja: 経産省統計トップ＋鉱工業指数・商業動態を実URL登録（2026-07-21検証）。
+updated_at: '2026-07-21T08:38:33+09:00'
+source_note_ja: '経産省統計トップ＋鉱工業指数・商業動態を実URL登録（2026-07-21検証）。 Wave2e: WB公式指標bridge L4
+  partial (1)。一次APIは pending。'
 L0:
   portal_url: https://www.meti.go.jp/
   verified: true
@@ -44,8 +45,16 @@ L2_datasets:
   update_freq: varies
   license: ANRE/METI terms
   theme_id: enecho_stats
-L3_series: []
-L4_notes: ''
+L3_series:
+- series_id: wb_nv_ind_manf_zs
+  title: Manufacturing value added (% of GDP)
+  status: harvested
+  url: https://data.worldbank.org/indicator/NV.IND.MANF.ZS
+  source: jp_meti
+  obs_count: 25
+  bridge: wb_wdi_international_fast
+L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=1 series (international_fast; primary
+  ministry API pending). '
 L5_country_unique:
 - title: 鉱工業指数（IIP）
   url: https://www.meti.go.jp/statistics/tyo/iip/index.html
@@ -54,6 +63,6 @@ coverage:
   L0: done
   L1: done
   L2: partial
-  L3: pending
-  L4: pending
+  L3: partial
+  L4: partial
   L5: partial
