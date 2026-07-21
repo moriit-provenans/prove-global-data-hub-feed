@@ -1,6 +1,6 @@
 iso2: JP
 source_note_ja: '文科省統計トップ＋統計メニュー（個別調査深URLはクローラ403のためL1は検証済入口のみ）。 Wave2e: WB公式指標bridge
-  L4 partial (1)。一次APIは pending。'
+  L4 partial (1)。一次APIは pending。 Wave2h 2026-07-21: L5国固有スタブ3件追加'
 L0:
   portal_url: https://www.mext.go.jp/
   verified: true
@@ -38,13 +38,22 @@ L3_series:
   bridge: wb_wdi_international_fast
 L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=1 series (international_fast; primary
   ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
-L5_country_unique: []
+L5_country_unique:
+- title: 学校基本調査
+  url: https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/1267995.htm
+  why_unique_ja: 学校段階×設置者別の在学者・教員・卒業後進路の詳細は国際比較コアにない日本固有の教育基幹統計
+- title: 学校保健統計調査
+  url: https://www.mext.go.jp/b_menu/toukei/chousa05/hoken/1268826.htm
+  why_unique_ja: 児童生徒の発育・健康状態の長期時系列は日本固有の系列
+- title: 社会教育調査
+  url: https://www.mext.go.jp/b_menu/toukei/chousa02/shakai/index.htm
+  why_unique_ja: 公民館・図書館・博物館等の社会教育施設統計は国固有領域
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: partial
   L4: partial
-  L5: pending
+  L5: partial
 agency_id: jp_mext
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

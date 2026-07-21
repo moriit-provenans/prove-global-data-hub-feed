@@ -1,5 +1,6 @@
 iso2: VN
-source_note_ja: 'Wave2 light retry still blocked (error:URLError). Wave2c: L3+L4 (2/2).'
+source_note_ja: 'Wave2 light retry still blocked (error:URLError). Wave2c: L3+L4 (2/2).
+  Wave2h 2026-07-21: L5国固有スタブ3件追加'
 L0:
   portal_url: https://www.gso.gov.vn/
   verified: false
@@ -20,14 +21,23 @@ L3_series:
   source: vn_gso
   obs_count: 123
 L4_notes: 'Wave2c L4 2026-07-21: harvested=2/2; IMF CPI via db.nomics (international_fast)'
-L5_country_unique: []
+L5_country_unique:
+- title: 月次社会経済報告（GSO Monthly Socio-Economic Report）
+  url: https://www.gso.gov.vn/en/data-and-statistics/
+  why_unique_ja: IIP・小売・FDI実行額等の月次速報はベトナム固有の先行系列（国際機関より数か月早い）
+- title: 人口・住宅センサス
+  url: https://www.gso.gov.vn/en/population/
+  why_unique_ja: 省別人口・都市化の詳細は国際比較カタログにない粒度
+- title: GSO統計年鑑（Statistical Yearbook）
+  url: https://www.gso.gov.vn/en/statistical-yearbook/
+  why_unique_ja: 省別・産業別の年次詳細統計はベトナム固有の蓄積
 coverage:
   L0: done
   L1: done
   L2: blocked
   L3: done
   L4: done
-  L5: pending
+  L5: partial
 blocked:
   L1: error:URLError
   L2: awaiting_L1
@@ -37,4 +47,4 @@ blocked:
   - https://www.gso.gov.vn/en/
   - http://www.gso.gov.vn/en/
 agency_id: vn_gso
-updated_at: '2026-07-21T08:16:52+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

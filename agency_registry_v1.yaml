@@ -1,7 +1,7 @@
 schema_version: '1.0'
 req_id: REQ-SMITH-20260721-042
-updated_at: '2026-07-21T14:01:32+09:00'
-wave: Wave2g
+updated_at: '2026-07-21T19:46:30+09:00'
+wave: Wave2h
 policy:
   layers:
   - L0
@@ -163,7 +163,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.mext.go.jp/
 - agency_id: jp_mlit
   iso2: JP
@@ -189,7 +189,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.mhlw.go.jp/
   open_data_url: https://www.mhlw.go.jp/toukei/list/114-1.html
   notes: 同一省庁・保健福祉クラス。人口動態調査等。
@@ -217,7 +217,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.enecho.meti.go.jp/statistics/
   notes: エネルギー統計は資源エネルギー庁。環境は https://www.env.go.jp/ も併記。
 - agency_id: jp_jta
@@ -231,7 +231,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.mlit.go.jp/kankocho/
   open_data_url: https://www.jetro.go.jp/world/japan/stats/
   notes: 観光庁ポータル＋JETRO貿易投資統計。
@@ -246,7 +246,7 @@ agencies:
     L2: partial
     L3: partial
     L4: partial
-    L5: pending
+    L5: partial
   portal_url: https://www.customs.go.jp/
   open_data_url: https://www.customs.go.jp/toukei/info/index.htm
 - agency_id: jp_data_go_jp
@@ -260,7 +260,7 @@ agencies:
     L2: partial
     L3: pending
     L4: na_catalog
-    L5: pending
+    L5: partial
   portal_url: https://www.data.go.jp/
   open_data_url: https://www.data.go.jp/data/dataset
 - agency_id: us_census
@@ -382,7 +382,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: partial
     L4: partial
     L5: partial
@@ -477,7 +477,7 @@ agencies:
     L2: pending
     L3: done
     L4: done
-    L5: pending
+    L5: partial
   portal_url: https://www.gso.gov.vn/
 - agency_id: vn_sbv
   iso2: VN
@@ -1227,7 +1227,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: done
     L4: done
     L5: partial
@@ -1517,7 +1517,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: partial
     L4: partial
     L5: partial
@@ -2537,7 +2537,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: partial
     L4: partial
     L5: partial
@@ -3498,7 +3498,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: partial
     L4: partial
     L5: partial
@@ -3563,7 +3563,7 @@ agencies:
   layer_status:
     L0: done
     L1: done
-    L2: pending
+    L2: partial
     L3: partial
     L4: partial
     L5: partial

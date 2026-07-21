@@ -1,6 +1,6 @@
 iso2: JP
 source_note_ja: '資源エネルギー庁統計ポータル（2026-07-21検証）。環境省は jp_env。 Wave2e: WB公式指標bridge L4
-  partial (2)。一次APIは pending。'
+  partial (2)。一次APIは pending。 Wave2h 2026-07-21: L5国固有スタブ3件追加'
 L0:
   portal_url: https://www.enecho.meti.go.jp/statistics/
   verified: true
@@ -34,13 +34,22 @@ L3_series:
   bridge: wb_wdi_international_fast
 L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
   ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
-L5_country_unique: []
+L5_country_unique:
+- title: 総合エネルギー統計
+  url: https://www.enecho.meti.go.jp/statistics/total_energy/
+  why_unique_ja: エネルギーバランス表の国内詳細（部門×エネルギー源）は国際機関集計より細かい
+- title: 電力調査統計
+  url: https://www.enecho.meti.go.jp/statistics/electric_power/ep002/
+  why_unique_ja: 発電方式別・電力会社別の月次電力需給は日本固有系列
+- title: 石油統計（資源・エネルギー統計）
+  url: https://www.meti.go.jp/statistics/tyo/sekiyuka/index.html
+  why_unique_ja: 油種別の生産・輸入・在庫月次は国固有のエネルギー安全保障系列
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: partial
   L4: partial
-  L5: pending
+  L5: partial
 agency_id: jp_enecho
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

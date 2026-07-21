@@ -1,6 +1,6 @@
 iso2: JP
 source_note_ja: '厚労省保健・人口動態（2026-07-21検証）。 Wave2e: WB公式指標bridge L4 partial (2)。一次APIは
-  pending。'
+  pending。 Wave2h 2026-07-21: L5国固有スタブ3件追加'
 L0:
   portal_url: https://www.mhlw.go.jp/
   verified: true
@@ -49,13 +49,22 @@ L3_series:
   bridge: wb_wdi_international_fast
 L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
   ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
-L5_country_unique: []
+L5_country_unique:
+- title: 人口動態統計（出生・死亡・婚姻・離婚）
+  url: https://www.mhlw.go.jp/toukei/list/81-1.html
+  why_unique_ja: 死因別・都道府県別の月次人口動態は国際比較カタログより粒度が細かい基幹統計
+- title: 患者調査
+  url: https://www.mhlw.go.jp/toukei/list/10-20.html
+  why_unique_ja: 傷病分類別の受療率・推計患者数は日本固有の医療需要系列
+- title: 国民健康・栄養調査
+  url: https://www.mhlw.go.jp/bunya/kenkou/kenkou_eiyou_chousa.html
+  why_unique_ja: 栄養摂取・生活習慣の長期時系列は国固有の健康統計
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: partial
   L4: partial
-  L5: pending
+  L5: partial
 agency_id: jp_mhlw_health
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

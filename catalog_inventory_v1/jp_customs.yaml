@@ -1,6 +1,6 @@
 iso2: JP
 source_note_ja: '税関貿易統計本表・解説（2026-07-21検証）。 Wave2e: WB公式指標bridge L4 partial (2)。一次APIは
-  pending。'
+  pending。 Wave2h 2026-07-21: L5国固有スタブ2件追加'
 L0:
   portal_url: https://www.customs.go.jp/
   verified: true
@@ -45,13 +45,19 @@ L3_series:
   bridge: wb_wdi_international_fast
 L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
   ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
-L5_country_unique: []
+L5_country_unique:
+- title: 普通貿易統計（品目別・国別月次）
+  url: https://www.customs.go.jp/toukei/info/
+  why_unique_ja: HS9桁の品目粒度×相手国×税関別は国際比較カタログにない日本固有粒度
+- title: 港別貿易統計
+  url: https://www.customs.go.jp/toukei/suii/html/time.htm
+  why_unique_ja: 港・空港別の輸出入額時系列は国固有のロジスティクス系列
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: partial
   L4: partial
-  L5: pending
+  L5: partial
 agency_id: jp_customs
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

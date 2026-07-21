@@ -1,12 +1,16 @@
 iso2: AE
 source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=3。 Wave2c: L3+L4 (0/1).
-  Wave2g: CBUAE公式EIBORワークブック一次 L4'
+  Wave2g: CBUAE公式EIBORワークブック一次 L4 Wave2h L2 2026-07-21: 検証済カタログ1件でL2回復'
 L0:
   portal_url: https://www.centralbank.ae/
   verified: false
   blocked_reason: crawler_403
 L1_themes: []
-L2_datasets: []
+L2_datasets:
+- name: EIBOR yearly workbooks (2009–2026)
+  url: https://www.centralbank.ae/en/forex-eibor/eibor-rates/
+  format: xlsx
+  note_ja: 年次EIBORワークブック群（media直URLはダウンロード200確認・一覧ページはブラウザUA必須）
 L3_series:
 - series_id: cbuae_policy_rate
   title: Policy rate IMF IFS (IMF/IFS/M.AE.FIDR_PA)
@@ -29,7 +33,7 @@ L5_country_unique:
 coverage:
   L0: done
   L1: done
-  L2: blocked
+  L2: partial
   L3: partial
   L4: partial
   L5: partial
@@ -41,4 +45,4 @@ blocked:
   - https://www.centralbank.ae/en
   - https://www.centralbank.ae/en/statistics
 agency_id: ae_cbuae
-updated_at: '2026-07-21T14:01:32+09:00'
+updated_at: '2026-07-21T19:46:30+09:00'

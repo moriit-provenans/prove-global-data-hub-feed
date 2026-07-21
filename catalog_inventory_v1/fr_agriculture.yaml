@@ -1,12 +1,16 @@
 iso2: FR
 source_note_ja: 'Wave1d recovery試行後も到達不可（ssl_handshake_failed）。試行URL数=3。 Wave2e: WB公式指標bridge
-  L4 partial (1)。一次APIは pending。'
+  L4 partial (1)。一次APIは pending。 Wave2h L2 2026-07-21: 検証済カタログ1件でL2回復'
 L0:
   portal_url: https://agriculture.gouv.fr/
   verified: false
   blocked_reason: ssl_handshake_failed
 L1_themes: []
-L2_datasets: []
+L2_datasets:
+- name: data.gouv.fr datasets (Agreste)
+  url: https://www.data.gouv.fr/api/1/datasets/?q=agreste
+  format: json
+  note_ja: 農業統計Agresteのデータセット一覧（data.gouv.fr API・200確認）
 L3_series:
 - series_id: wb_nv_agr_totl_zs
   title: Agriculture, forestry, fishing value added (% of GDP)
@@ -24,7 +28,7 @@ L5_country_unique:
 coverage:
   L0: done
   L1: done
-  L2: blocked
+  L2: partial
   L3: partial
   L4: partial
   L5: partial
@@ -36,4 +40,4 @@ blocked:
   - https://agreste.agriculture.gouv.fr/
   - https://www.data.gouv.fr/fr/organizations/ministere-de-l-agriculture-et-de-la-souverainete-alimentaire/
 agency_id: fr_agriculture
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:46:30+09:00'

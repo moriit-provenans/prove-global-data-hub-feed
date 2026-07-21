@@ -1,6 +1,6 @@
 iso2: JP
 source_note_ja: '観光庁ポータル＋統計資料（宿泊旅行統計はMLIT inventoryにも重複登録可）。 Wave2e: WB公式指標bridge
-  L4 partial (2)。一次APIは pending。'
+  L4 partial (2)。一次APIは pending。 Wave2h 2026-07-21: L5国固有スタブ3件追加'
 L0:
   portal_url: https://www.mlit.go.jp/kankocho/
   verified: true
@@ -45,13 +45,22 @@ L3_series:
   bridge: wb_wdi_international_fast
 L4_notes: 'Wave2e 2026-07-21: WB bridge harvested=2 series (international_fast; primary
   ministry API pending). 観測値は既存 nso_pilot / timeseries へ。本ファイルはカタログ棚卸し資産。'
-L5_country_unique: []
+L5_country_unique:
+- title: 訪日外国人消費動向調査
+  url: https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html
+  why_unique_ja: 国籍×費目別のインバウンド消費単価は日本固有の観光基幹統計
+- title: 旅行・観光消費動向調査
+  url: https://www.mlit.go.jp/kankocho/tokei_hakusyo/shohidoko.html
+  why_unique_ja: 日本人国内旅行消費の四半期系列は国固有
+- title: 主要旅行業者の旅行取扱状況
+  url: https://www.mlit.go.jp/kankocho/tokei_hakusyo/ryokogyosha.html
+  why_unique_ja: 旅行業者取扱額の月次は日本の観光流通固有の指標
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: partial
   L4: partial
-  L5: pending
+  L5: partial
 agency_id: jp_jta
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'

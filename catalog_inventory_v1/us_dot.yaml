@@ -1,12 +1,16 @@
 iso2: US
 source_note_ja: 'Wave1d recovery試行後も到達不可（crawler_403）。試行URL数=4。 Wave2e: WB公式指標bridge
-  L4 partial (1)。一次APIは pending。'
+  L4 partial (1)。一次APIは pending。 Wave2h L2 2026-07-21: 検証済カタログ1件でL2回復'
 L0:
   portal_url: https://www.transportation.gov/
   verified: false
   blocked_reason: crawler_403
 L1_themes: []
-L2_datasets: []
+L2_datasets:
+- name: data.transportation.gov DCAT catalog (data.json)
+  url: https://data.transportation.gov/data.json
+  format: dcat_json
+  note_ja: DOT公式Socrataの全データセットDCATカタログ（200・2.8MB確認）
 L3_series:
 - series_id: wb_is_air_psgr
   title: Air transport, passengers carried
@@ -24,7 +28,7 @@ L5_country_unique:
 coverage:
   L0: done
   L1: done
-  L2: blocked
+  L2: partial
   L3: partial
   L4: partial
   L5: partial
@@ -37,4 +41,4 @@ blocked:
   - https://www.nhtsa.gov/data
   - https://www.fhwa.dot.gov/
 agency_id: us_dot
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:46:30+09:00'

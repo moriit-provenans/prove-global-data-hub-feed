@@ -1,5 +1,5 @@
 iso2: JP
-source_note_ja: 政府オープンデータカタログ data.go.jp（CKAN）。
+source_note_ja: '政府オープンデータカタログ data.go.jp（CKAN）。 Wave2h 2026-07-21: L5国固有スタブ2件追加'
 L0:
   portal_url: https://www.data.go.jp/
   verified: true
@@ -18,13 +18,19 @@ L2_datasets:
   theme_id: catalog
 L3_series: []
 L4_notes: 'Wave2e 2026-07-21: open data portal = カタログ機能。個別系列は各省庁inventoryでL4管理。'
-L5_country_unique: []
+L5_country_unique:
+- title: data.go.jp カタログ
+  url: https://www.data.go.jp/
+  why_unique_ja: 日本の府省横断オープンデータカタログ
+- title: ベース・レジストリ（デジタル庁）
+  url: https://www.digital.go.jp/policies/base_registry
+  why_unique_ja: 住所・法人・支援制度等の公的基盤データは国固有
 coverage:
   L0: done
   L1: done
   L2: partial
   L3: pending
   L4: na_catalog
-  L5: pending
+  L5: partial
 agency_id: jp_data_go_jp
-updated_at: '2026-07-21T08:38:33+09:00'
+updated_at: '2026-07-21T19:41:54+09:00'
