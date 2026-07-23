@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-23T11:55:52+09:00'
+updated_at: '2026-07-23T14:51:17+09:00'
 policy:
   priority:
   - nso
@@ -121,9 +121,11 @@ sources:
   iso2:
   - CN
   agency: National Bureau of Statistics of China (NBS)
-  url: https://www.stats.gov.cn/
+  url: https://data.stats.gov.cn/
   metrics:
   - macro_q.gdp_real.yoy_pct
+  - nso_m.unemployment.pct
+  note_ja: 失業は stream/esData（全国城镇调查失业率）一次。GDPは既存経路。
 - id: tw_dgbas_open
   tier: nso
   iso2:
@@ -939,6 +941,10 @@ latest_period_by_key:
   latest_period: 2026-06
 - metric_id: nso_m.unemployment.pct
   iso2: CA
+  source_tier: nso
+  latest_period: 2026-06
+- metric_id: nso_m.unemployment.pct
+  iso2: CN
   source_tier: nso
   latest_period: 2026-06
 - metric_id: nso_m.unemployment.pct

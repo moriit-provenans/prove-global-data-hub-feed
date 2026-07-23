@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso",
   "feed_id": "macro_quarterly",
-  "last_updated": "2026-07-23T11:55:51+09:00",
+  "last_updated": "2026-07-23T14:51:16+09:00",
   "frequency": "quarterly",
   "source": {
     "label": "NSO primary + OECD QNA bridge (+ IMF when keyed)",
