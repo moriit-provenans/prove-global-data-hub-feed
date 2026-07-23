@@ -1,5 +1,5 @@
 schema_version: '1.0'
-updated_at: '2026-07-21T21:33:04+09:00'
+updated_at: '2026-07-23T11:55:52+09:00'
 policy:
   priority:
   - nso
@@ -56,7 +56,6 @@ sources:
   - DE
   - FR
   - GB
-  - ID
   - IN
   - JP
   - KR
@@ -143,8 +142,10 @@ sources:
   agency: Census and Statistics Department (C&SD)
   url: https://www.censtatd.gov.hk/
   metrics:
+  - macro_q.gdp_real.yoy_pct
   - nso_m.cpi.index
   - nso_m.cpi.yoy_pct
+  - nso_m.unemployment.pct
 - id: kr_kostat_bridge
   tier: international_fast
   iso2:
@@ -310,7 +311,7 @@ latest_period_by_key:
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: ID
-  source_tier: international_fast
+  source_tier: nso
   latest_period: 2026-Q1
 - metric_id: macro_q.gdp_real.yoy_pct
   iso2: IN
@@ -455,7 +456,11 @@ latest_period_by_key:
 - metric_id: nso_m.cpi.index
   iso2: ID
   source_tier: international_fast
-  latest_period: 2025-04
+  latest_period: 2023-12
+- metric_id: nso_m.cpi.index
+  iso2: ID
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.cpi.index
   iso2: IN
   source_tier: international_fast
@@ -559,7 +564,11 @@ latest_period_by_key:
 - metric_id: nso_m.cpi.yoy_pct
   iso2: ID
   source_tier: international_fast
-  latest_period: 2025-04
+  latest_period: 2023-12
+- metric_id: nso_m.cpi.yoy_pct
+  iso2: ID
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.cpi.yoy_pct
   iso2: IN
   source_tier: international_fast
@@ -954,12 +963,12 @@ latest_period_by_key:
   latest_period: 2026-Q1
 - metric_id: nso_m.unemployment.pct
   iso2: HK
-  source_tier: international_fast
-  latest_period: 2023-Q4
+  source_tier: nso
+  latest_period: 2026-06
 - metric_id: nso_m.unemployment.pct
   iso2: ID
-  source_tier: international_fast
-  latest_period: 2015-Q3
+  source_tier: nso
+  latest_period: 2026-02
 - metric_id: nso_m.unemployment.pct
   iso2: IN
   source_tier: international_fast

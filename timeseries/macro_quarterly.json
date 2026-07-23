@@ -1,7 +1,7 @@
 {
   "schema_version": "0.3-nso",
   "feed_id": "macro_quarterly",
-  "last_updated": "2026-07-21T21:33:03+09:00",
+  "last_updated": "2026-07-23T11:55:51+09:00",
   "frequency": "quarterly",
   "source": {
     "label": "NSO primary + OECD QNA bridge (+ IMF when keyed)",
@@ -62,10 +62,10 @@
       "from": "1974-Q1",
       "to": "2026-Q2"
     },
-    "row_count": 2435,
+    "row_count": 2455,
     "source_tier_counts": {
-      "nso": 2003,
-      "international_fast": 432
+      "nso": 2068,
+      "international_fast": 387
     }
   },
   "observations": [
@@ -5946,497 +5946,717 @@
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
-      "period": "2015-Q1",
-      "value": 4.8585121453,
+      "period": "2010-Q1",
+      "value": 6.08,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2010-Q1",
+      "as_of_date": "2010-03-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2010-Q2",
+      "value": 6.76,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2010-Q2",
+      "as_of_date": "2010-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2010-Q3",
+      "value": 6.18,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2010-Q3",
+      "as_of_date": "2010-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2010-Q4",
+      "value": 6.49,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2010-Q4",
+      "as_of_date": "2010-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2011-Q1",
+      "value": 6.48,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2011-Q1",
+      "as_of_date": "2011-03-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2011-Q2",
+      "value": 6.27,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2011-Q2",
+      "as_of_date": "2011-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2011-Q3",
+      "value": 6.01,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2011-Q3",
+      "as_of_date": "2011-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2011-Q4",
+      "value": 5.94,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2011-Q4",
+      "as_of_date": "2011-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2012-Q1",
+      "value": 6.11,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2012-Q1",
+      "as_of_date": "2012-03-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2012-Q2",
+      "value": 6.21,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2012-Q2",
+      "as_of_date": "2012-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2012-Q3",
+      "value": 5.94,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2012-Q3",
+      "as_of_date": "2012-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2012-Q4",
+      "value": 5.87,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2012-Q4",
+      "as_of_date": "2012-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2013-Q1",
+      "value": 5.54,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2013-Q1",
+      "as_of_date": "2013-03-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2013-Q2",
+      "value": 5.59,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2013-Q2",
+      "as_of_date": "2013-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2013-Q3",
+      "value": 5.52,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2013-Q3",
+      "as_of_date": "2013-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2013-Q4",
+      "value": 5.58,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2013-Q4",
+      "as_of_date": "2013-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2014-Q1",
+      "value": 5.12,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2014-Q1",
+      "as_of_date": "2014-03-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2014-Q2",
+      "value": 4.94,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2014-Q2",
+      "as_of_date": "2014-06-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2014-Q3",
+      "value": 4.93,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2014-Q3",
+      "as_of_date": "2014-09-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2014-Q4",
+      "value": 5.05,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2014-Q4",
+      "as_of_date": "2014-12-01",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "macro_q.gdp_real.yoy_pct",
+      "iso2": "ID",
+      "period": "2015-Q1",
+      "value": 4.83,
+      "unit": "%",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2015-Q1",
       "as_of_date": "2015-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2015-Q2",
-      "value": 4.7904777209,
+      "value": 4.74,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2015-Q2",
       "as_of_date": "2015-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2015-Q3",
-      "value": 4.8540984501,
+      "value": 4.78,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2015-Q3",
       "as_of_date": "2015-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2015-Q4",
-      "value": 4.9993783483,
+      "value": 5.15,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2015-Q4",
       "as_of_date": "2015-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2016-Q1",
-      "value": 4.9600180262,
+      "value": 4.94,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2016-Q1",
       "as_of_date": "2016-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2016-Q2",
-      "value": 5.0949884268,
+      "value": 5.21,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2016-Q2",
       "as_of_date": "2016-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2016-Q3",
-      "value": 5.0766245469,
+      "value": 5.03,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2016-Q3",
       "as_of_date": "2016-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2016-Q4",
-      "value": 5.0001059294,
+      "value": 4.94,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2016-Q4",
       "as_of_date": "2016-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2017-Q1",
-      "value": 5.0800406989,
+      "value": 5.01,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2017-Q1",
       "as_of_date": "2017-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2017-Q2",
-      "value": 5.0067092604,
+      "value": 5.01,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2017-Q2",
       "as_of_date": "2017-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2017-Q3",
-      "value": 5.0608123137,
+      "value": 5.06,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2017-Q3",
       "as_of_date": "2017-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2017-Q4",
-      "value": 5.1303421506,
+      "value": 5.19,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2017-Q4",
       "as_of_date": "2017-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2018-Q1",
-      "value": 5.1247778462,
+      "value": 5.07,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2018-Q1",
       "as_of_date": "2018-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2018-Q2",
-      "value": 5.1916410722,
+      "value": 5.27,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2018-Q2",
       "as_of_date": "2018-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2018-Q3",
-      "value": 5.1895573705,
+      "value": 5.17,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2018-Q3",
       "as_of_date": "2018-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2018-Q4",
-      "value": 5.1899974516,
+      "value": 5.18,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2018-Q4",
       "as_of_date": "2018-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2019-Q1",
-      "value": 5.1741841548,
+      "value": 5.06,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2019-Q1",
       "as_of_date": "2019-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2019-Q2",
-      "value": 5.1262756754,
+      "value": 5.05,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2019-Q2",
       "as_of_date": "2019-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2019-Q3",
-      "value": 5.007566168,
+      "value": 5.01,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2019-Q3",
       "as_of_date": "2019-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2019-Q4",
-      "value": 4.7774296262,
+      "value": 4.96,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2019-Q4",
       "as_of_date": "2019-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2020-Q1",
-      "value": 2.8404722718,
+      "value": 2.97,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2020-Q1",
       "as_of_date": "2020-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2020-Q2",
-      "value": -5.3419519105,
+      "value": -5.32,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2020-Q2",
       "as_of_date": "2020-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2020-Q3",
-      "value": -3.3969410579,
+      "value": -3.49,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2020-Q3",
       "as_of_date": "2020-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2020-Q4",
-      "value": -2.2835023312,
+      "value": -2.17,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2020-Q4",
       "as_of_date": "2020-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2021-Q1",
-      "value": -0.6645217154,
+      "value": -0.69,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2021-Q1",
       "as_of_date": "2021-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2021-Q2",
-      "value": 7.1617219586,
+      "value": 7.08,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2021-Q2",
       "as_of_date": "2021-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2021-Q3",
-      "value": 4.0424525401,
+      "value": 3.53,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2021-Q3",
       "as_of_date": "2021-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2021-Q4",
-      "value": 4.534560825,
+      "value": 5.03,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2021-Q4",
       "as_of_date": "2021-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2022-Q1",
-      "value": 4.6914371606,
+      "value": 5.02,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2022-Q1",
       "as_of_date": "2022-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2022-Q2",
-      "value": 5.3676184204,
+      "value": 5.46,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2022-Q2",
       "as_of_date": "2022-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2022-Q3",
-      "value": 6.3280199624,
+      "value": 5.73,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2022-Q3",
       "as_of_date": "2022-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2022-Q4",
-      "value": 4.8496138904,
+      "value": 5.01,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2022-Q4",
       "as_of_date": "2022-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2023-Q1",
-      "value": 4.8880186107,
+      "value": 5.04,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2023-Q1",
       "as_of_date": "2023-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2023-Q2",
-      "value": 5.0380753948,
+      "value": 5.17,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2023-Q2",
       "as_of_date": "2023-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2023-Q3",
-      "value": 5.1542234332,
+      "value": 4.94,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2023-Q3",
       "as_of_date": "2023-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2023-Q4",
-      "value": 5.1104427181,
+      "value": 5.04,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2023-Q4",
       "as_of_date": "2023-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2024-Q1",
-      "value": 5.176708975,
+      "value": 5.11,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2024-Q1",
       "as_of_date": "2024-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2024-Q2",
-      "value": 4.998625855,
+      "value": 5.05,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2024-Q2",
       "as_of_date": "2024-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2024-Q3",
-      "value": 4.9891096658,
+      "value": 4.95,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2024-Q3",
       "as_of_date": "2024-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2024-Q4",
-      "value": 4.969842102,
+      "value": 5.02,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2024-Q4",
       "as_of_date": "2024-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2025-Q1",
-      "value": 4.8980886645,
+      "value": 4.87,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2025-Q1",
       "as_of_date": "2025-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2025-Q2",
-      "value": 5.0946469759,
+      "value": 5.12,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2025-Q2",
       "as_of_date": "2025-06-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2025-Q3",
-      "value": 5.1358036179,
+      "value": 5.04,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2025-Q3",
       "as_of_date": "2025-09-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2025-Q4",
-      "value": 5.2964358095,
+      "value": 5.39,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2025-Q4",
       "as_of_date": "2025-12-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
       "iso2": "ID",
       "period": "2026-Q1",
-      "value": 5.4625100904,
+      "value": 5.61,
       "unit": "%",
-      "source_tier": "international_fast",
-      "source_ref": "fred:IDNGDPRQPSMEI|id_bps:bps_gdp_yoy",
+      "source_tier": "nso",
+      "source_ref": "bps:108:800:5:2026-Q1",
       "as_of_date": "2026-03-01",
-      "veritas": "⚠️"
+      "veritas": "✅"
     },
     {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
