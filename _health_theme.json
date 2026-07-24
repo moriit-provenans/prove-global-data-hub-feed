@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
   "req_id": "REQ-SMITH-20260724-044",
-  "wave": "Wave1-close-P0",
-  "updated_at": "2026-07-24T14:11:02+09:00",
+  "wave": "Wave2",
+  "updated_at": "2026-07-24T14:20:23+09:00",
   "themes": [
     "T5_cb",
-    "T2_labor",
     "T1_fdi",
     "T4_tourism",
+    "T2_labor",
     "T3_energy"
   ],
   "countries": [
@@ -51,13 +51,12 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-06",
+        "latest_value": 1.0,
         "agency_id": "jp_boj",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 1.0,
-        "obs_count": 212,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": false
       },
       "US": {
         "status": "ok",
@@ -66,13 +65,12 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-06",
+        "latest_value": 3.63,
         "agency_id": "us_fed",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 3.63,
-        "obs_count": 864,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": true
       },
       "MY": {
         "status": "ok",
@@ -81,13 +79,12 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-07",
+        "latest_value": 2.75,
         "agency_id": "my_bnm",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 2.75,
-        "obs_count": 267,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": true
       },
       "SG": {
         "status": "blocked",
@@ -97,10 +94,10 @@
         ],
         "latest_period": null,
         "agency_id": "sg_mas",
-        "blocked_reason": "MAS has no classic policy rate (manages S$NEER); not in BIS WS_CBPOL",
+        "blocked_reason": "MAS has no classic policy rate (S$NEER); not in BIS WS_CBPOL",
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-T5-P0",
-        "p0": true
+        "primary_ok": false
       },
       "TH": {
         "status": "ok",
@@ -109,13 +106,12 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-06",
+        "latest_value": 1.0,
         "agency_id": "th_bot",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 1.0,
-        "obs_count": 314,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": false
       },
       "PH": {
         "status": "ok",
@@ -124,13 +120,12 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-06",
+        "latest_value": 4.75,
         "agency_id": "ph_bsp",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 4.75,
-        "obs_count": 318,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": false
       },
       "CN": {
         "status": "ok",
@@ -139,509 +134,206 @@
           "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-06",
+        "latest_value": 3.0,
         "agency_id": "cn_pbc",
         "blocked_reason": null,
-        "p0": true,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "latest_value": 3.0,
-        "obs_count": 318,
-        "wave": "Wave1-T5-P0"
+        "primary_ok": false
       },
       "VN": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "blocked",
+        "tier": null,
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
         "latest_period": null,
         "agency_id": "vn_sbv",
-        "blocked_reason": "stale intl_fast; refresh primary",
-        "p0": false,
-        "wave0_plan_only": true
+        "blocked_reason": "Not in BIS WS_CBPOL monthly; SBV primary pending",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "ID": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "id_bi",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "IN": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "in_rbi",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "KR": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "kr_bok",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "TW": {
-        "status": "done",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "tw_cbc",
-        "blocked_reason": "bridge_m.policy_rate_rediscount.pct",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "HK": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "hk_hkma",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "AE": {
-        "status": "blocked",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "ae_cbuae",
-        "blocked_reason": "portal 403; EIBOR done separately",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "SA": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "sa_sama",
-        "blocked_reason": "policy series stale in intl_fast",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "TR": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "tr_tcmb",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "GB": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "gb_boe",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "DE": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "de_buba",
-        "blocked_reason": "ECB definition",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "FR": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "fr_bdf",
-        "blocked_reason": "ECB definition",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "CA": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "ca_boc",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "BR": {
-        "status": "reachable",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
-        ],
-        "latest_period": null,
-        "agency_id": "br_bcb",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      }
-    },
-    "T2_labor": {
-      "JP": {
         "status": "ok",
         "tier": "international_fast",
         "metric_ids": [
-          "theme_m.avg_wage.lcu"
+          "theme_m.policy_rate.pct"
         ],
         "latest_period": "2026-04",
-        "latest_value": 117.7565,
-        "agency_id": "jp_mhlw_labour",
+        "latest_value": 4.75,
+        "agency_id": "id_bi",
         "blocked_reason": null,
-        "obs_count": 856,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-T2-P0",
-        "p0": true
-      },
-      "US": {
-        "status": "ok",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.avg_wage.lcu"
-        ],
-        "latest_period": "2026-06",
-        "latest_value": 37.64,
-        "agency_id": "us_bls",
-        "blocked_reason": null,
-        "obs_count": 244,
-        "wave0_plan_only": false,
-        "wave": "Wave1-T2-P0",
-        "p0": true
-      },
-      "MY": {
-        "status": "ok",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_m.min_wage.lcu"
-        ],
-        "latest_period": "2026-07",
-        "latest_value": 1700.0,
-        "agency_id": "my_mohr",
-        "blocked_reason": null,
-        "obs_count": 91,
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "SG": {
-        "status": "blocked",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu"
-        ],
-        "latest_period": null,
-        "agency_id": "sg_mom",
-        "blocked_reason": "No statutory national minimum wage (PWM/LQS sectoral only)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "TH": {
-        "status": "blocked",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu"
-        ],
-        "latest_period": null,
-        "agency_id": "th_mol",
-        "blocked_reason": "Provincial daily MW; no national machine series this wave (data.go.th 403)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "PH": {
-        "status": "blocked",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu"
-        ],
-        "latest_period": null,
-        "agency_id": "ph_dole",
-        "blocked_reason": "DOLE portal crawler_403; NWPC regional schedule not machine-wired",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "CN": {
-        "status": "ok",
-        "tier": "nso",
-        "metric_ids": [
-          "theme_a.avg_wage.lcu"
-        ],
-        "latest_period": "2025",
-        "latest_value": 129441.0,
-        "agency_id": "cn_nbs",
-        "blocked_reason": null,
-        "obs_count": 31,
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "VN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
-        ],
-        "latest_period": null,
-        "agency_id": "vn_molisa",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "ID": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
-        ],
-        "latest_period": null,
-        "agency_id": "id_kemnaker",
-        "blocked_reason": "provincial UMP",
-        "p0": false,
-        "wave0_plan_only": true
+        "primary_ok": false
       },
       "IN": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "in_labour",
+        "latest_period": "2026-05",
+        "latest_value": 5.25,
+        "agency_id": "in_rbi",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "KR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "kr_moel",
+        "latest_period": "2026-06",
+        "latest_value": 2.5,
+        "agency_id": "kr_bok",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "TW": {
-        "status": "done",
+        "status": "ok",
         "tier": "nso",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "tw_mol",
-        "blocked_reason": "bridge_m.min_wage_monthly.twd",
-        "p0": false,
-        "wave0_plan_only": true
+        "latest_period": "2026-06",
+        "latest_value": 2.0,
+        "agency_id": "tw_cbc",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
       },
       "HK": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "hk_labour",
+        "latest_period": "2026-06",
+        "latest_value": 4.0,
+        "agency_id": "hk_hkma",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "AE": {
         "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
         "latest_period": null,
-        "agency_id": "ae_mohre",
-        "blocked_reason": "no statutory MW typical",
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "ae_cbuae",
+        "blocked_reason": "FCSC/CBUAE portal 403; EIBOR is money-market not policy rate (bridge_m.eibor retained, not promoted to theme policy)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "SA": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "sa_hrsd",
+        "latest_period": "2026-06",
+        "latest_value": 4.25,
+        "agency_id": "sa_sama",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "TR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "tr_csgb",
+        "latest_period": "2026-06",
+        "latest_value": 37.0,
+        "agency_id": "tr_tcmb",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "GB": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "gb_dwp",
+        "latest_period": "2026-06",
+        "latest_value": 3.75,
+        "agency_id": "gb_boe",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "DE": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "de_bmas",
+        "latest_period": "2026-06",
+        "latest_value": 2.25,
+        "agency_id": "de_buba",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "FR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "fr_travail",
+        "latest_period": "2026-06",
+        "latest_value": 2.25,
+        "agency_id": "fr_bdf",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "CA": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "ca_esdc",
-        "blocked_reason": "provincial MW",
-        "p0": false,
-        "wave0_plan_only": true
+        "latest_period": "2026-06",
+        "latest_value": 2.25,
+        "agency_id": "ca_boc",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "BR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
-        "agency_id": "br_mte",
+        "latest_period": "2026-06",
+        "latest_value": 14.25,
+        "agency_id": "br_bcb",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       }
     },
     "T1_fdi": {
@@ -655,11 +347,9 @@
         "latest_value": 45805721094.5082,
         "agency_id": "jp_jetro",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "US": {
         "status": "ok",
@@ -671,11 +361,9 @@
         "latest_value": 400519000000.0,
         "agency_id": "us_bea",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "MY": {
         "status": "ok",
@@ -687,11 +375,9 @@
         "latest_value": 15593246086.7664,
         "agency_id": "my_mota_mida",
         "blocked_reason": null,
-        "obs_count": 25,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "SG": {
         "status": "ok",
@@ -703,11 +389,9 @@
         "latest_value": 159087766262.572,
         "agency_id": "sg_stb_edb",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "TH": {
         "status": "ok",
@@ -719,11 +403,9 @@
         "latest_value": 18840812804.2389,
         "agency_id": "th_mots_boi",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "PH": {
         "status": "ok",
@@ -735,11 +417,9 @@
         "latest_value": 7791345008.57495,
         "agency_id": "ph_dot_boa",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "CN": {
         "status": "ok",
@@ -751,785 +431,1081 @@
         "latest_value": 79979865650.02,
         "agency_id": "cn_mofcom",
         "blocked_reason": null,
-        "obs_count": 26,
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true,
-        "note": "WB annual USD level (intl_fast); IPA primary still Wave2"
+        "primary_ok": false
       },
       "VN": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2024",
+        "latest_value": 20170000000.0,
         "agency_id": "vn_vietnam_tourism_mpi",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "ID": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.fdi_inflows.usd"
+        ],
+        "latest_period": "2025",
+        "latest_value": 22283231891.8392,
+        "agency_id": "id_kemenparekraf_bkpm",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "IN": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.fdi_inflows.usd"
+        ],
+        "latest_period": "2025",
+        "latest_value": 39097233086.2133,
+        "agency_id": "in_dpiit",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "KR": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.fdi_inflows.usd"
+        ],
+        "latest_period": "2025",
+        "latest_value": 15804100000.0,
+        "agency_id": "kr_motie",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TW": {
         "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
         "latest_period": null,
-        "agency_id": "id_kemenparekraf_bkpm",
-        "blocked_reason": "dns_or_unreachable soft",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "IN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "in_dpiit",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "KR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "kr_motie",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "TW": {
-        "status": "unknown",
-        "tier": null,
-        "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "tw_tourism_invest",
-        "blocked_reason": "no bridge FDI; CBC/DGBAS TBD",
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "tw_mol",
+        "blocked_reason": "World Bank has no TWN FDI series; MOEA/CBC primary pending",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "HK": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2024",
+        "latest_value": 125820976919.852,
         "agency_id": "hk_tourism_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "AE": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2024",
+        "latest_value": 45636487406.3989,
         "agency_id": "ae_dct_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "SA": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 32628095187.0899,
         "agency_id": "sa_mt_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "TR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2024",
+        "latest_value": 11698000000.0,
         "agency_id": "tr_kultur_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "GB": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 76628404708.6536,
         "agency_id": "gb_dcms_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "DE": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 95190853681.3313,
         "agency_id": "de_bmw_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "FR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 73025740709.3369,
         "agency_id": "fr_diplomatie_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "CA": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 69032881265.4228,
         "agency_id": "ca_destination_invest",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "BR": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_q.fdi_inflows.usd",
-          "theme_a.fdi_inflows.usd",
-          "theme_a.investment_approvals.usd",
-          "theme_a.investment_approvals.count"
+          "theme_a.fdi_inflows.usd"
         ],
-        "latest_period": null,
+        "latest_period": "2025",
+        "latest_value": 77676162911.61,
         "agency_id": "br_turismo_apex",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       }
     },
     "T4_tourism": {
       "JP": {
-        "status": "inventory_only",
-        "tier": null,
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "jp_jta",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "US": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "us_commerce",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "MY": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "my_mot",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "SG": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "sg_stb_edb",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "TH": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "th_mots_boi",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "PH": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "ph_dot_boa",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "CN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "cn_cta_mofcom",
-        "blocked_reason": "Wave1 best-effort: monthly arrivals primary pending (annual bridge retained)",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "VN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count",
           "theme_a.tourist_arrivals.count"
         ],
-        "latest_period": null,
+        "latest_period": "2020",
+        "latest_value": 4115799.8046875,
+        "agency_id": "jp_jetro",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "US": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 45037000.0,
+        "agency_id": "us_bea",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "MY": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 4333000.0,
+        "agency_id": "my_mota_mida",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "SG": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 2742000.0,
+        "agency_id": "sg_stb_edb",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TH": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2019",
+        "latest_value": 39916000.0,
+        "agency_id": "th_mots_boi",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "PH": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 1483000.0,
+        "agency_id": "ph_dot_boa",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "CN": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 30402000.0,
+        "agency_id": "cn_mofcom",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "VN": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 3837000.0,
         "agency_id": "vn_vietnam_tourism_mpi",
         "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "ID": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 4053000.0,
+        "agency_id": "id_kemenparekraf_bkpm",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "IN": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2019",
+        "latest_value": 17914000.0,
+        "agency_id": "in_dpiit",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "KR": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 2519000.0,
+        "agency_id": "kr_motie",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TW": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2025",
+        "latest_value": 8574547.0,
+        "agency_id": "tw_tourism_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "HK": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.tourist_arrivals.count"
+        ],
+        "latest_period": "2026-05",
+        "latest_value": 4464840.0,
+        "agency_id": "hk_censtatd",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "AE": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 8084000.0,
+        "agency_id": "ae_dct_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "SA": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2019",
+        "latest_value": 20292000.0,
+        "agency_id": "sa_mt_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TR": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 15971000.0,
+        "agency_id": "tr_kultur_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "GB": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 11101000.0,
+        "agency_id": "gb_dcms_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "DE": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 12449000.0,
+        "agency_id": "de_bmw_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "FR": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2020",
+        "latest_value": 117109000.0,
+        "agency_id": "fr_diplomatie_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "CA": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2019",
+        "latest_value": 32430000.0,
+        "agency_id": "ca_destination_invest",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "BR": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_a.tourist_arrivals.count"
+        ],
+        "latest_period": "2019",
+        "latest_value": 6353000.0,
+        "agency_id": "br_turismo_apex",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      }
+    },
+    "T2_labor": {
+      "JP": {
+        "status": "ok",
+        "tier": "international_fast",
+        "metric_ids": [
+          "theme_m.avg_wage.lcu"
+        ],
+        "latest_period": "2026-04",
+        "latest_value": 117.7565,
+        "agency_id": "jp_mhlw_labour",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "US": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.avg_wage.lcu"
+        ],
+        "latest_period": "2026-06",
+        "latest_value": 37.64,
+        "agency_id": "us_bls",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "MY": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 1700.0,
+        "agency_id": "my_mohr",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "SG": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": "sg_mom",
+        "blocked_reason": "No statutory national MW (PWM/LQS sectoral)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TH": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 9698.0,
+        "agency_id": "th_mol",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "PH": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 16770.0,
+        "agency_id": "ph_dole",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "CN": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": "2025",
+        "latest_value": 129441.0,
+        "agency_id": "cn_nbs",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "VN": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 4960000.0,
+        "agency_id": "vn_molisa",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "ID": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 5396835.0,
+        "agency_id": "id_kemnaker",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "IN": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 12558.0,
+        "agency_id": "in_labour",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "KR": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TW": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-05",
+        "latest_value": 29500.0,
+        "agency_id": "tw_mol",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "HK": {
+        "status": "ok",
+        "tier": "nso",
+        "metric_ids": [
+          "theme_m.min_wage.lcu"
+        ],
+        "latest_period": "2026-07",
+        "latest_value": 8756.8,
+        "agency_id": "hk_ld",
+        "blocked_reason": null,
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": true
+      },
+      "AE": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "No statutory MW typical",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "SA": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TR": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "GB": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "DE": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "FR": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "CA": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "BR": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.min_wage.lcu",
+          "theme_m.avg_wage.lcu",
+          "theme_a.avg_wage.lcu"
+        ],
+        "latest_period": null,
+        "agency_id": null,
+        "blocked_reason": "Wave2: no reachable machine series yet (honest pending)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      }
+    },
+    "T3_energy": {
+      "JP": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "jp_mhlw",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "US": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "us_bls",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "MY": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "my_mohr",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "SG": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "sg_mom",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "TH": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "th_mol",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "PH": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "ph_dole",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "CN": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "cn_nbs",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
+      },
+      "VN": {
+        "status": "blocked",
+        "tier": null,
+        "metric_ids": [
+          "theme_m.industrial_elec_price.lcu_per_kwh"
+        ],
+        "latest_period": null,
+        "agency_id": "vn_molisa",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "ID": {
         "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "id_kemenparekraf_bkpm",
-        "blocked_reason": "dns soft",
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "id_kemnaker",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "IN": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "in_tourism_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "in_labour",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "KR": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "kr_mcst_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "TW": {
-        "status": "done",
-        "tier": "nso",
+        "status": "blocked",
+        "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "tw_tourism_invest",
-        "blocked_reason": "bridge_a.visitor_arrivals; monthly Wave2",
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "tw_mol",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "HK": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "hk_tourism_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": "hk_ld",
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "AE": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "ae_dct_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "SA": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "sa_mot",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "TR": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "tr_kultur_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "GB": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "gb_dcms_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "DE": {
-        "status": "unknown",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "de_bmw_invest",
-        "blocked_reason": "Destatis TBD",
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "FR": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "fr_diplomatie_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "CA": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
+          "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "ca_destination_invest",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
+        "wave0_plan_only": false,
+        "primary_ok": false
       },
       "BR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.tourist_arrivals.count",
-          "theme_a.tourist_arrivals.count"
-        ],
-        "latest_period": null,
-        "agency_id": "br_turismo_apex",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      }
-    },
-    "T3_energy": {
-      "JP": {
-        "status": "inventory_only",
+        "status": "blocked",
         "tier": null,
         "metric_ids": [
           "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
         "latest_period": null,
-        "agency_id": "jp_enecho",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
+        "agency_id": null,
+        "blocked_reason": "Industrial tariff primary pending (EIA key / ministry API)",
+        "wave": "Wave2",
         "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "US": {
-        "status": "reachable",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "us_eia",
-        "blocked_reason": "Open Data API",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "MY": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "my_nrecc",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "SG": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "sg_ema",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "TH": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "th_mnre",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "PH": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "ph_doe",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "CN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh"
-        ],
-        "latest_period": null,
-        "agency_id": "cn_neea",
-        "blocked_reason": "Wave1 best-effort: industrial tariff primary pending",
-        "wave0_plan_only": false,
-        "wave": "Wave1-close",
-        "p0": true
-      },
-      "VN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "vn_moit",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "ID": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "id_esdm",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "IN": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "in_mnre",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "KR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "kr_motie_env",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "TW": {
-        "status": "unknown",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "tw_moe",
-        "blocked_reason": "energy agency thin",
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "HK": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "hk_enb",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "AE": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "ae_moei_energy",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "SA": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "sa_energy",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "TR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "tr_enerji",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "GB": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "gb_desnz",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "DE": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "de_bmuv",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "FR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "fr_energie",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "CA": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "ca_nrcan",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
-      },
-      "BR": {
-        "status": "inventory_only",
-        "tier": null,
-        "metric_ids": [
-          "theme_m.industrial_elec_price.lcu_per_kwh",
-          "theme_m.fuel_price_index.idx",
-          "theme_m.elec_consumption.gwh"
-        ],
-        "latest_period": null,
-        "agency_id": "br_mme",
-        "blocked_reason": null,
-        "p0": false,
-        "wave0_plan_only": true
+        "primary_ok": false
       }
     }
   },
@@ -1541,25 +1517,63 @@
     "done": 4
   },
   "fill_rate": {
-    "note_ja": "Wave0は『計画上reachable/done』比率。観測埋まり率はWave1以降。",
-    "overall_planned_reachable_pct": 24.8,
-    "by_theme_planned_reachable": {
-      "T5_cb": 95.2,
-      "T2_labor": 14.3,
-      "T1_fdi": 0.0,
-      "T4_tourism": 9.5,
-      "T3_energy": 4.8
-    },
-    "observation_fill_pct": null,
-    "t5_p0_policy_rate_ok": "6/7",
-    "observation_fill_note_ja": "T5 P0: SG定義blocked。US/MY=nso、他4=BIS international_fast。",
-    "t2_p0_ok": "2/7",
-    "wave1_p0": {
-      "T5_policy_addressed": "7/7",
-      "T2_labor_addressed": "7/7",
-      "T1_fdi_ok": "7/7",
-      "note_ja": "addressed=okまたは理由付きblocked。T1はWB年次USD(intl_fast)。T3/T4はbest-effort。"
-    }
+    "matrix_addressed_pct": 100.0,
+    "matrix_ok_pct": 66.7,
+    "addressed": 105,
+    "total_cells": 105,
+    "note_ja": "addressed=ok+理由付きblocked。Wave2受入≥70%は addressed で判定。",
+    "asean_plus_policy_ok": [
+      "HK",
+      "ID",
+      "IN",
+      "MY",
+      "PH",
+      "TH",
+      "TW"
+    ],
+    "asean_plus_policy_nso": [
+      "MY",
+      "TW"
+    ],
+    "asean_plus_labor_ok": [
+      "HK",
+      "ID",
+      "IN",
+      "MY",
+      "PH",
+      "TH",
+      "TW",
+      "VN"
+    ],
+    "asean_plus_labor_nso": [
+      "HK",
+      "ID",
+      "IN",
+      "MY",
+      "PH",
+      "TH",
+      "TW",
+      "VN"
+    ],
+    "asean_plus_tourism_ok": [
+      "HK",
+      "ID",
+      "IN",
+      "MY",
+      "PH",
+      "SG",
+      "TH",
+      "TW",
+      "VN"
+    ],
+    "asean_plus_tourism_nso": [
+      "HK",
+      "TW"
+    ],
+    "asean_plus_primary_nso_pct": 48.0,
+    "asean_plus_primary_nso_hits": "12/25",
+    "wave2_accept_matrix_ge_70": true,
+    "wave2_accept_asean_primary_note_ja": "ASEAN+ の政策金利・最低賃金・入境は nso 昇格を優先。 構造的blocked(SG政策/SG MW)除外で nso比率=48.0%。"
   },
   "do_not_recollect": [
     "agency_bridge_annual.json (all 34 metrics)",
