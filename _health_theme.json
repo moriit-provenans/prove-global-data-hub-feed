@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "req_id": "REQ-SMITH-20260724-044",
-  "wave": "Wave1-T5-P0",
-  "updated_at": "2026-07-24T13:33:27+09:00",
+  "wave": "Wave1-T5+T2-P0",
+  "updated_at": "2026-07-24T13:36:07+09:00",
   "themes": [
     "T5_cb",
     "T2_labor",
@@ -346,102 +346,104 @@
     },
     "T2_labor": {
       "JP": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.avg_wage.lcu"
         ],
-        "latest_period": null,
+        "latest_period": "2026-04",
+        "latest_value": 117.7565,
         "agency_id": "jp_mhlw_labour",
         "blocked_reason": null,
-        "p0": true,
-        "wave0_plan_only": true
+        "obs_count": 856,
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "US": {
-        "status": "reachable",
+        "status": "ok",
         "tier": "nso",
         "metric_ids": [
-          "theme_m.min_wage.lcu",
-          "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.avg_wage.lcu"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
+        "latest_value": 37.64,
         "agency_id": "us_bls",
-        "blocked_reason": "federal MW vs CES earnings",
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": null,
+        "obs_count": 244,
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "MY": {
         "status": "inventory_only",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
           "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.min_wage.lcu"
         ],
         "latest_period": null,
         "agency_id": "my_mohr",
-        "blocked_reason": null,
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "Wave1: primary MW/avg not yet wired",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "SG": {
         "status": "inventory_only",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
           "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.min_wage.lcu"
         ],
         "latest_period": null,
         "agency_id": "sg_mom",
-        "blocked_reason": null,
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "Wave1: Progressive Wage / stats pending",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "TH": {
         "status": "inventory_only",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
           "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.min_wage.lcu"
         ],
         "latest_period": null,
         "agency_id": "th_mol",
-        "blocked_reason": null,
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "Wave1: provincial MW pending",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "PH": {
         "status": "blocked",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
           "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.min_wage.lcu"
         ],
         "latest_period": null,
         "agency_id": "ph_dole",
-        "blocked_reason": "crawler_403; try PSA OpenSTAT",
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "crawler_403; PSA path pending",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "CN": {
         "status": "inventory_only",
         "tier": null,
         "metric_ids": [
-          "theme_m.min_wage.lcu",
           "theme_m.avg_wage.lcu",
-          "theme_q.wage_growth.yoy_pct"
+          "theme_m.min_wage.lcu"
         ],
         "latest_period": null,
         "agency_id": "cn_mohrss",
-        "blocked_reason": "city gazette MW",
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "city gazette MW pending",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T2-P0",
+        "p0": true
       },
       "VN": {
         "status": "inventory_only",
@@ -1548,7 +1550,8 @@
     },
     "observation_fill_pct": null,
     "t5_p0_policy_rate_ok": "6/7",
-    "observation_fill_note_ja": "T5 P0: SG定義blocked。US/MY=nso、他4=BIS international_fast。"
+    "observation_fill_note_ja": "T5 P0: SG定義blocked。US/MY=nso、他4=BIS international_fast。",
+    "t2_p0_ok": "2/7"
   },
   "do_not_recollect": [
     "agency_bridge_annual.json (all 34 metrics)",
