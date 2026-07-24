@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "feed": "theme_monthly",
+  "req_id": "REQ-SMITH-20260724-044",
+  "frequency": "monthly",
+  "last_updated": "2026-07-24T13:14:11+09:00",
+  "notes_ja": "Wave0骨格。観測値はWave1以降。bridge_*と並列・非置換。",
+  "observations": [],
+  "meta": {
+    "row_count": 0,
+    "wave": "Wave0"
+  }
+}
