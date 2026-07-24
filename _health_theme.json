@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "req_id": "REQ-SMITH-20260724-044",
-  "wave": "Wave0",
-  "updated_at": "2026-07-24T13:14:11+09:00",
+  "wave": "Wave1-T5-P0",
+  "updated_at": "2026-07-24T13:33:27+09:00",
   "themes": [
     "T5_cb",
     "T2_labor",
@@ -45,102 +45,107 @@
   "matrix": {
     "T5_cb": {
       "JP": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
         "agency_id": "jp_boj",
         "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 1.0,
+        "obs_count": 212,
+        "wave": "Wave1-T5-P0"
       },
       "US": {
-        "status": "done",
+        "status": "ok",
         "tier": "nso",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
         "agency_id": "us_fed",
-        "blocked_reason": "nso_m.fed_funds already; do not recollect",
+        "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 3.63,
+        "obs_count": 864,
+        "wave": "Wave1-T5-P0"
       },
       "MY": {
-        "status": "reachable",
+        "status": "ok",
         "tier": "nso",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-07",
         "agency_id": "my_bnm",
         "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 2.75,
+        "obs_count": 267,
+        "wave": "Wave1-T5-P0"
       },
       "SG": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "blocked",
+        "tier": null,
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
         "latest_period": null,
         "agency_id": "sg_mas",
-        "blocked_reason": "No classic policy rate; document S$NEER",
-        "p0": true,
-        "wave0_plan_only": true
+        "blocked_reason": "MAS has no classic policy rate (manages S$NEER); not in BIS WS_CBPOL",
+        "wave0_plan_only": false,
+        "wave": "Wave1-T5-P0",
+        "p0": true
       },
       "TH": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
         "agency_id": "th_bot",
         "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 1.0,
+        "obs_count": 314,
+        "wave": "Wave1-T5-P0"
       },
       "PH": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
         "agency_id": "ph_bsp",
         "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 4.75,
+        "obs_count": 318,
+        "wave": "Wave1-T5-P0"
       },
       "CN": {
-        "status": "reachable",
-        "tier": "nso",
+        "status": "ok",
+        "tier": "international_fast",
         "metric_ids": [
-          "theme_m.policy_rate.pct",
-          "theme_m.fx_rate.lcu_per_usd",
-          "theme_m.reserves.usd"
+          "theme_m.policy_rate.pct"
         ],
-        "latest_period": null,
+        "latest_period": "2026-06",
         "agency_id": "cn_pbc",
         "blocked_reason": null,
         "p0": true,
-        "wave0_plan_only": true
+        "wave0_plan_only": false,
+        "latest_value": 3.0,
+        "obs_count": 318,
+        "wave": "Wave1-T5-P0"
       },
       "VN": {
         "status": "reachable",
@@ -1541,7 +1546,9 @@
       "T4_tourism": 9.5,
       "T3_energy": 4.8
     },
-    "observation_fill_pct": 0.0
+    "observation_fill_pct": null,
+    "t5_p0_policy_rate_ok": "6/7",
+    "observation_fill_note_ja": "T5 P0: SG定義blocked。US/MY=nso、他4=BIS international_fast。"
   },
   "do_not_recollect": [
     "agency_bridge_annual.json (all 34 metrics)",
