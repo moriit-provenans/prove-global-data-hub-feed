@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "req_id": "REQ-SMITH-20260724-044",
-  "wave": "Wave7",
-  "updated_at": "2026-07-30T13:09:55+09:00",
+  "wave": "Wave8",
+  "updated_at": "2026-07-30T16:11:21+09:00",
   "themes": [
     "T5_cb",
     "T1_fdi",
@@ -54,7 +54,7 @@
         "latest_value": 1.0,
         "agency_id": "jp_boj",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -68,7 +68,7 @@
         "latest_value": 3.63,
         "agency_id": "us_fed",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -82,7 +82,7 @@
         "latest_value": 2.75,
         "agency_id": "my_bnm",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -95,7 +95,7 @@
         "latest_period": null,
         "agency_id": "sg_mas",
         "blocked_reason": "MAS has no classic policy rate (S$NEER); not in BIS WS_CBPOL",
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -109,7 +109,7 @@
         "latest_value": 1.0,
         "agency_id": "th_bot",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -123,7 +123,7 @@
         "latest_value": 4.75,
         "agency_id": "ph_bsp",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -137,7 +137,7 @@
         "latest_value": 3.0,
         "agency_id": "cn_pbc",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -151,7 +151,7 @@
         "latest_value": 4.5,
         "agency_id": "vn_sbv",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -165,7 +165,7 @@
         "latest_value": 4.75,
         "agency_id": "id_bi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -179,7 +179,7 @@
         "latest_value": 5.25,
         "agency_id": "in_rbi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -193,7 +193,7 @@
         "latest_value": 2.5,
         "agency_id": "kr_bok",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -207,7 +207,7 @@
         "latest_value": 2.0,
         "agency_id": "tw_cbc",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -221,7 +221,7 @@
         "latest_value": 4.0,
         "agency_id": "hk_hkma",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -234,7 +234,7 @@
         "latest_period": null,
         "agency_id": "ae_cbuae",
         "blocked_reason": "FCSC/CBUAE portal 403; EIBOR is money-market not policy rate",
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -248,7 +248,7 @@
         "latest_value": 4.25,
         "agency_id": "sa_sama",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -262,7 +262,7 @@
         "latest_value": 37.0,
         "agency_id": "tr_tcmb",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -276,7 +276,7 @@
         "latest_value": 3.75,
         "agency_id": "gb_boe",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -290,7 +290,7 @@
         "latest_value": 2.25,
         "agency_id": "de_buba",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -304,7 +304,7 @@
         "latest_value": 2.25,
         "agency_id": "fr_bdf",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -318,7 +318,7 @@
         "latest_value": 2.25,
         "agency_id": "ca_boc",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -332,7 +332,7 @@
         "latest_value": 14.25,
         "agency_id": "br_bcb",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       }
@@ -348,7 +348,7 @@
         "latest_value": 45805721094.5082,
         "agency_id": "jp_jetro",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -362,7 +362,7 @@
         "latest_value": 400519000000.0,
         "agency_id": "us_bea",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -376,7 +376,7 @@
         "latest_value": 15593246086.7664,
         "agency_id": "my_mota_mida",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -390,7 +390,7 @@
         "latest_value": 159087766262.572,
         "agency_id": "sg_stb_edb",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -404,7 +404,7 @@
         "latest_value": 18840812804.2389,
         "agency_id": "th_mots_boi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -418,7 +418,7 @@
         "latest_value": 7791345008.57495,
         "agency_id": "ph_dot_boa",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -432,7 +432,7 @@
         "latest_value": 79979865650.02,
         "agency_id": "cn_mofcom",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -446,7 +446,7 @@
         "latest_value": 20170000000.0,
         "agency_id": "vn_vietnam_tourism_mpi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -460,7 +460,7 @@
         "latest_value": 22283231891.8392,
         "agency_id": "id_kemenparekraf_bkpm",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -474,7 +474,7 @@
         "latest_value": 39097233086.2133,
         "agency_id": "in_dpiit",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -488,7 +488,7 @@
         "latest_value": 15804100000.0,
         "agency_id": "kr_motie",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -502,7 +502,7 @@
         "latest_value": 5704000000.0,
         "agency_id": "tw_tourism_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -516,7 +516,7 @@
         "latest_value": 125820976919.852,
         "agency_id": "hk_tourism_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -530,7 +530,7 @@
         "latest_value": 45636487406.3989,
         "agency_id": "ae_dct_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -544,7 +544,7 @@
         "latest_value": 32628095187.0899,
         "agency_id": "sa_mt_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -558,7 +558,7 @@
         "latest_value": 11698000000.0,
         "agency_id": "tr_kultur_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -572,7 +572,7 @@
         "latest_value": 76628404708.6536,
         "agency_id": "gb_dcms_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -586,7 +586,7 @@
         "latest_value": 95190853681.3313,
         "agency_id": "de_bmw_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -600,7 +600,7 @@
         "latest_value": 73025740709.3369,
         "agency_id": "fr_diplomatie_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -614,7 +614,7 @@
         "latest_value": 69032881265.4228,
         "agency_id": "ca_destination_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -628,7 +628,7 @@
         "latest_value": 77676162911.61,
         "agency_id": "br_turismo_apex",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       }
@@ -644,7 +644,7 @@
         "latest_value": 3559900.0,
         "agency_id": "jp_jta",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -658,7 +658,7 @@
         "latest_value": 68287793.0,
         "agency_id": "us_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -672,7 +672,7 @@
         "latest_value": 4333000.0,
         "agency_id": "my_mota_mida",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -686,7 +686,7 @@
         "latest_value": 1241167.0,
         "agency_id": "sg_stb_edb",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -700,7 +700,7 @@
         "latest_value": 14032649.0,
         "agency_id": "th_mots_boi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -714,7 +714,7 @@
         "latest_value": 1483000.0,
         "agency_id": "ph_dot_boa",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -728,7 +728,7 @@
         "latest_value": 30402000.0,
         "agency_id": "cn_mofcom",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -742,7 +742,7 @@
         "latest_value": 3837000.0,
         "agency_id": "vn_vietnam_tourism_mpi",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -756,7 +756,7 @@
         "latest_value": 13886678.0,
         "agency_id": "id_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -770,7 +770,7 @@
         "latest_value": 17914000.0,
         "agency_id": "in_dpiit",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -784,7 +784,7 @@
         "latest_value": 18936562.0,
         "agency_id": "kr_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -798,7 +798,7 @@
         "latest_value": 8574547.0,
         "agency_id": "tw_tourism_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -812,7 +812,7 @@
         "latest_value": 4464840.0,
         "agency_id": "hk_censtatd",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -826,7 +826,7 @@
         "latest_value": 8084000.0,
         "agency_id": "ae_dct_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -840,7 +840,7 @@
         "latest_value": 20292000.0,
         "agency_id": "sa_mt_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -854,7 +854,7 @@
         "latest_value": 15971000.0,
         "agency_id": "tr_kultur_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -868,7 +868,7 @@
         "latest_value": 39031000.0,
         "agency_id": "gb_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -882,7 +882,7 @@
         "latest_value": 12449000.0,
         "agency_id": "de_bmw_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -896,7 +896,7 @@
         "latest_value": 117109000.0,
         "agency_id": "fr_diplomatie_invest",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -910,7 +910,7 @@
         "latest_value": 29818152.0,
         "agency_id": "ca_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -924,7 +924,7 @@
         "latest_value": 8400000.0,
         "agency_id": "br_tourism",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       }
@@ -940,7 +940,7 @@
         "latest_value": 117.7565,
         "agency_id": "jp_mhlw_labour",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -954,7 +954,7 @@
         "latest_value": 37.64,
         "agency_id": "us_bls",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -968,7 +968,7 @@
         "latest_value": 1700.0,
         "agency_id": "my_mohr",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -983,7 +983,7 @@
         "latest_period": null,
         "agency_id": null,
         "blocked_reason": "No statutory national MW (PWM/LQS sectoral)",
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -997,7 +997,7 @@
         "latest_value": 9698.0,
         "agency_id": "th_mol",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1011,7 +1011,7 @@
         "latest_value": 16770.0,
         "agency_id": "ph_dole",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1025,7 +1025,7 @@
         "latest_value": 129441.0,
         "agency_id": "cn_nbs",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1039,7 +1039,7 @@
         "latest_value": 4960000.0,
         "agency_id": "vn_molisa",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1053,7 +1053,7 @@
         "latest_value": 5396835.0,
         "agency_id": "id_kemnaker",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1067,7 +1067,7 @@
         "latest_value": 12558.0,
         "agency_id": "in_labour",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1081,7 +1081,7 @@
         "latest_value": 2156880.0,
         "agency_id": "kr_mol",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1095,7 +1095,7 @@
         "latest_value": 29500.0,
         "agency_id": "tw_mol",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1109,7 +1109,7 @@
         "latest_value": 8756.8,
         "agency_id": "hk_ld",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1124,7 +1124,7 @@
         "latest_period": null,
         "agency_id": null,
         "blocked_reason": "No statutory MW typical",
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1139,7 +1139,7 @@
         "latest_period": null,
         "agency_id": null,
         "blocked_reason": "No general private-sector national MW typical",
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1153,7 +1153,7 @@
         "latest_value": 26005.0,
         "agency_id": "tr_csgb",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1167,7 +1167,7 @@
         "latest_value": 2539.68,
         "agency_id": "gb_beis",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1181,7 +1181,7 @@
         "latest_value": 2666.56,
         "agency_id": "de_bmas",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1195,7 +1195,7 @@
         "latest_value": 2471.04,
         "agency_id": "fr_travail",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1209,7 +1209,7 @@
         "latest_value": 3660.8,
         "agency_id": "ca_ontario_mol",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1223,7 +1223,7 @@
         "latest_value": 1518.0,
         "agency_id": "br_trabalho",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       }
@@ -1239,7 +1239,7 @@
         "latest_value": 21.37,
         "agency_id": "jp_meti_enecho",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1253,7 +1253,7 @@
         "latest_value": 0.198,
         "agency_id": "us_bls",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1267,7 +1267,7 @@
         "latest_value": 0.37929999999999997,
         "agency_id": "my_st",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1281,7 +1281,7 @@
         "latest_value": 0.247,
         "agency_id": "sg_ema",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1295,22 +1295,23 @@
         "latest_value": 4.2597000000000005,
         "agency_id": "th_erc_mea",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
       "PH": {
-        "status": "blocked",
-        "tier": null,
+        "status": "ok",
+        "tier": "nso",
         "metric_ids": [
           "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
-        "latest_period": null,
-        "agency_id": null,
-        "blocked_reason": "DOE/ERC rates are PDF-centric; no stable machine series yet",
-        "wave": "Wave7",
+        "latest_period": "2026-07",
+        "latest_value": 13.9961,
+        "agency_id": "ph_meralco",
+        "blocked_reason": null,
+        "wave": "Wave8",
         "wave0_plan_only": false,
-        "primary_ok": false
+        "primary_ok": true
       },
       "CN": {
         "status": "blocked",
@@ -1320,8 +1321,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "Provincial NDRC tariffs; national industrial ASP machine path pending",
-        "wave": "Wave7",
+        "blocked_reason": "NBS easyquery 403; provincial NDRC tariffs — no national industrial ASP API",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1333,23 +1334,24 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "EVN tariff schedules PDF/HTML; no stable machine ASP series yet",
-        "wave": "Wave7",
+        "blocked_reason": "EVN retail schedule HTML only; no stable machine ASP series",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
       "ID": {
-        "status": "blocked",
-        "tier": null,
+        "status": "ok",
+        "tier": "nso",
         "metric_ids": [
           "theme_m.industrial_elec_price.lcu_per_kwh"
         ],
-        "latest_period": null,
-        "agency_id": null,
-        "blocked_reason": "PLN tariff table PDF/HTML; quarterly ESDM announcements not yet automated",
-        "wave": "Wave7",
+        "latest_period": "2026-07",
+        "latest_value": 1035.78,
+        "agency_id": "id_esdm_pln",
+        "blocked_reason": null,
+        "wave": "Wave8",
         "wave0_plan_only": false,
-        "primary_ok": false
+        "primary_ok": true
       },
       "IN": {
         "status": "blocked",
@@ -1359,8 +1361,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "CEA average rate reports not machine-stable from this host (403)",
-        "wave": "Wave7",
+        "blocked_reason": "CEA portal reachable but average-rate machine series not automated (reports/403 paths)",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1374,7 +1376,7 @@
         "latest_value": 168.17,
         "agency_id": "kr_kepco",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1388,7 +1390,7 @@
         "latest_value": 4.2289,
         "agency_id": "tw_taipower",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": true
       },
@@ -1400,8 +1402,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "CLP/HEC tariff tables PDF; open-data ASP series not available",
-        "wave": "Wave7",
+        "blocked_reason": "CLP open-data 403; C&SD tariff table API not machine-CSV from this host",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1413,8 +1415,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "No national industrial ASP machine series (emirate utilities)",
-        "wave": "Wave7",
+        "blocked_reason": "No national industrial ASP (emirate utilities); EIA key would not fix emirate split",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1426,8 +1428,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "SEC tariff schedule; machine ASP series pending",
-        "wave": "Wave7",
+        "blocked_reason": "SEC portal timeout from this host; tariff schedule machine path pending",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1441,7 +1443,7 @@
         "latest_value": 0.0815,
         "agency_id": "tr_epdk",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1455,7 +1457,7 @@
         "latest_value": 0.1521,
         "agency_id": "gb_ofgem",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1469,7 +1471,7 @@
         "latest_value": 0.1922,
         "agency_id": "de_bnetza",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1483,7 +1485,7 @@
         "latest_value": 0.1212,
         "agency_id": "fr_cre",
         "blocked_reason": null,
-        "wave": "Wave7",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1495,8 +1497,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "StatsCan EPSPI is index (2014=100), not CAD/kWh absolute",
-        "wave": "Wave7",
+        "blocked_reason": "StatsCan EPSPI is index (2014=100), not CAD/kWh; Hydro-Quebec comparison PDF blocked/HTML stub",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       },
@@ -1508,8 +1510,8 @@
         ],
         "latest_period": null,
         "agency_id": null,
-        "blocked_reason": "ANEEL open data reachable intermittently; national industrial ASP aggregator pending",
-        "wave": "Wave7",
+        "blocked_reason": "ANEEL open data ConnectTimeout from this host; national industrial ASP aggregator pending",
+        "wave": "Wave8",
         "wave0_plan_only": false,
         "primary_ok": false
       }
@@ -1524,10 +1526,10 @@
   },
   "fill_rate": {
     "matrix_addressed_pct": 100.0,
-    "matrix_ok_pct": 85.7,
+    "matrix_ok_pct": 87.6,
     "addressed": 105,
     "total_cells": 105,
-    "note_ja": "Wave7: MY TNB産業ASP（ST Handbook PDF機械抽出）＋TH Type4.2.1 TOU OnPeak+MEA Ft。残T3はPDF/指数/ポータル未達。",
+    "note_ja": "Wave8: ID Permen I-3 LWBP＋PH Meralco GS-A OVER400。HK/CN/VN/IN/AE/SA/CA/BRは到達不能理由を更新。EIAキー未設定。",
     "asean_plus_policy_ok": [
       "HK",
       "ID",
@@ -1590,9 +1592,11 @@
       "DE",
       "FR",
       "GB",
+      "ID",
       "JP",
       "KR",
       "MY",
+      "PH",
       "SG",
       "TH",
       "TR",
@@ -1625,10 +1629,8 @@
       "T2_labor/SG",
       "T2_labor/AE",
       "T2_labor/SA",
-      "T3_energy/PH",
       "T3_energy/CN",
       "T3_energy/VN",
-      "T3_energy/ID",
       "T3_energy/IN",
       "T3_energy/HK",
       "T3_energy/AE",
@@ -1639,7 +1641,9 @@
     "wave2_accept_matrix_ge_70": true,
     "wave5_jp_elec_added": true,
     "wave6_tw_kr_elec_added": true,
-    "wave7_my_th_elec_added": true
+    "wave7_my_th_elec_added": true,
+    "wave8_id_ph_elec_added": true,
+    "eia_api_key_present": false
   },
   "do_not_recollect": [
     "agency_bridge_annual.json (all 34 metrics)",
@@ -1681,8 +1685,8 @@
     ]
   },
   "next": [
-    "ID PLN I-3/I-4 quarterly tariff automation / PH ERC / HK CLP ASP",
-    "EIA API key (optional) for remaining T3 + US industrial department",
+    "OWNER optional: EIA API key registration (~10 min) for remaining intl automation",
+    "AE GDP/unemp still blocked (Bayanat/FCSC) — REQ-041 residual",
     "Structural blocked remain: T5 SG/AE, T2 SG/AE/SA"
   ]
 }
