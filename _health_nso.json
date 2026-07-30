@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-23T14:51:17+09:00",
-  "wave": "REQ-SMITH-20260720-041 Wave2e (CN unemployment NBS surveyed urban primary)",
+  "generated_at": "2026-07-30T16:20:00+09:00",
+  "wave": "REQ-SMITH-20260720-041 + Wave8 AE reprobe (Bayanat/FCSC still blocked)",
   "parent_wave": "REQ-POLARIS-20260720-001 Wave1",
   "nso_pilot_rows": 29623,
   "source_tier_counts": {
@@ -381,9 +381,10 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "FRED/OECD MEI・db.nomicsにUAE四半期GDP系列なし（年次WBのみ）／FCSC Cloudflare不通",
+        "blocked_reason": "2026-07-30 Wave8再プローブ: Bayanat package_searchはHTML/WAF（CKAN JSON不可）／FCSC 403／FRED・OECD MEI・db.nomicsにUAE四半期GDPなし（年次WBのみ）",
         "wb_annual_latest": "2024",
-        "wb_parallel": true
+        "wb_parallel": true,
+        "last_reprobe": "2026-07-30"
       },
       {
         "indicator_id": "macro_q.gdp_real.yoy_pct",
@@ -1166,7 +1167,8 @@
         "latest_period": null,
         "tiers_present": [],
         "status": "blocked",
-        "blocked_reason": "公開APIで失業系列未確認（IMF IFSにも系列なし・2026-07-21再確認）"
+        "blocked_reason": "2026-07-30 Wave8再プローブ: Bayanat unemployment検索もHTML/WAF／FCSC 403／IMF IFS・公開APIに機械系列なし（2026-07-21以降変化なし）",
+        "last_reprobe": "2026-07-30"
       },
       {
         "indicator_id": "nso_m.unemployment.pct",

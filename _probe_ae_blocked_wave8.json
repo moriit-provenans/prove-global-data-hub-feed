@@ -1,0 +1,30 @@
+{
+  "probed_at": "2026-07-30T16:11:21+09:00",
+  "endpoints": [
+    {
+      "name": "bayanat_gdp",
+      "url": "https://bayanat.ae/api/3/action/package_search?q=GDP&rows=3",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "json_api": false,
+      "bytes": 257128
+    },
+    {
+      "name": "bayanat_unemp",
+      "url": "https://bayanat.ae/api/3/action/package_search?q=unemployment&rows=3",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "json_api": false,
+      "bytes": 257128
+    },
+    {
+      "name": "fcsc",
+      "url": "https://fcsc.gov.ae/en-us",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "json_api": false,
+      "bytes": 5523
+    }
+  ],
+  "conclusion": "AE quarterly GDP / unemployment remain blocked: Bayanat returns HTML/WAF not CKAN JSON; FCSC portal not machine-usable from this host"
+}
