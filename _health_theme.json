@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "req_id": "REQ-SMITH-20260724-044",
-  "wave": "Wave8",
-  "updated_at": "2026-07-30T16:11:21+09:00",
+  "wave": "Wave8+A28+B35",
+  "updated_at": "2026-08-09T21:30:00+09:00",
   "themes": [
     "T5_cb",
     "T1_fdi",
@@ -31,7 +31,21 @@
     "DE",
     "FR",
     "CA",
-    "BR"
+    "BR",
+    "AU",
+    "MX",
+    "ES",
+    "IT",
+    "NL",
+    "PL",
+    "ZA",
+    "NZ",
+    "CL",
+    "KE",
+    "EG",
+    "IE",
+    "SE",
+    "CZ"
   ],
   "p0": [
     "CN",
@@ -1688,5 +1702,8 @@
     "OWNER optional: EIA API key registration (~10 min) for remaining intl automation",
     "AE GDP/unemp still blocked (Bayanat/FCSC) — REQ-041 residual",
     "Structural blocked remain: T5 SG/AE, T2 SG/AE/SA"
-  ]
+  ],
+  "note_wave_a": "2026-08-09 countries list 21->28 (AU/MX/ES/IT/NL/PL/ZA). Theme cells for new countries still pending primary fill.",
+  "note_wave_b": "2026-08-12 Wave B B1 NZ/CL/KE/EG/IE/SE/CZ (28->35). cell primary later.",
+  "updated": "2026-08-12"
 }
