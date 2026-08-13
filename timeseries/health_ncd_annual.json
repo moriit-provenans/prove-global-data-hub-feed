@@ -1,18 +1,19 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "health_ncd_annual",
-  "last_updated": "2026-08-13T14:14:24+09:00",
+  "last_updated": "2026-08-13T15:32:14+09:00",
   "frequency": "annual",
   "source": {
-    "label": "WHO GHO + FAOSTAT Food Balance Sheets",
+    "label": "WHO GHO + FAOSTAT Food Balance Sheets + Powles 2013 (salt)",
     "url": "https://www.who.int/data/gho",
-    "license": "CC BY-NC-SA 3.0 IGO / FAOSTAT terms",
-    "disclaimer_ja": "肥満・高血圧は WHO GHO の年齢調整推計。砂糖は FAOSTAT の Sugar (Raw Equivalent) 供給量（kg/人/年）を g/日に換算した年次系列と、WHO GHO 精糖供給（主に2019年スナップショット）を別指標として収録。摂取量そのものではない。FAOSTAT の 2010年以降は現行 FBS、2000–2009 は旧手法 FBSH（veritas⚠️）。塩分摂取量 g/day は未収録。"
+    "license": "CC BY-NC-SA 3.0 IGO / FAOSTAT terms / BMJ Open CC BY",
+    "disclaimer_ja": "肥満・高血圧は WHO GHO の年齢調整推計。砂糖は FAOSTAT の Sugar (Raw Equivalent) 供給量（kg/人/年）を g/日に換算した年次系列と、WHO GHO 精糖供給（主に2019年スナップショット）を別指標として収録。摂取量そのものではない。FAOSTAT の 2010年以降は現行 FBS、2000–2009 は旧手法 FBSH（veritas⚠️）。塩分は Powles 2013（ナトリウム g/day×2.54）の 1990/2010 のみ。IHME GBD2021 塩分時系列は GHDx ログインが必要で未収録。出典を WHO と誤表示しないこと。"
   },
   "meta": {
     "indicator_ids": [
       "health.hypertension.adult_3079_pct",
       "health.obesity.adult_bmi30_pct",
+      "health.salt.intake_g_day",
       "health.sugar.availability_g_day",
       "health.sugar.who_refined_g_day"
     ],
@@ -54,11 +55,18 @@
       "ZA"
     ],
     "year_range": {
-      "from": 2000,
+      "from": 1990,
       "to": 2024
     },
-    "row_count": 2265,
-    "note_ja": "ニプロ依頼。砂糖は FAOSTAT 年次（既定）と WHO GHO 精糖を別指標で収録。"
+    "row_count": 2333,
+    "note_ja": "ニプロ依頼。塩分=Powles2013（REQ-074）。砂糖は FAOSTAT 年次と WHO GHO 精糖を別指標。",
+    "higher_is_better": {
+      "health.obesity.adult_bmi30_pct": false,
+      "health.hypertension.adult_3079_pct": false,
+      "health.sugar.availability_g_day": false,
+      "health.sugar.who_refined_g_day": false,
+      "health.salt.intake_g_day": false
+    }
   },
   "observations": [
     {
@@ -14910,6 +14918,686 @@
       "unit": "%",
       "source_ref": "WHO GHO NCD_BMI_30A",
       "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "AE",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.636,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "AE",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.3218,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "AU",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.5852,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "AU",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.6868,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "BR",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.8806,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "BR",
+      "year": 2010,
+      "period": "2010",
+      "value": 10.4394,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CA",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.017,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CA",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.4234,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CL",
+      "year": 1990,
+      "period": "1990",
+      "value": 7.0866,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CL",
+      "year": 2010,
+      "period": "2010",
+      "value": 7.112,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CN",
+      "year": 1990,
+      "period": "1990",
+      "value": 11.2268,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CN",
+      "year": 2010,
+      "period": "2010",
+      "value": 12.2682,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CZ",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.4996,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "CZ",
+      "year": 2010,
+      "period": "2010",
+      "value": 10.1092,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "DE",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.763,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "DE",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.9916,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "EG",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.2202,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "EG",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.3472,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ES",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.4488,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ES",
+      "year": 2010,
+      "period": "2010",
+      "value": 10.2108,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "FR",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.398,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "FR",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.5758,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "GB",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.8392,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "GB",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.1694,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ID",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.7122,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ID",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.5344,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IE",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.1694,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IE",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.4996,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IN",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.6012,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IN",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.4488,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IT",
+      "year": 1990,
+      "period": "1990",
+      "value": 10.9474,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "IT",
+      "year": 2010,
+      "period": "2010",
+      "value": 11.2268,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "JP",
+      "year": 1990,
+      "period": "1990",
+      "value": 11.9634,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "JP",
+      "year": 2010,
+      "period": "2010",
+      "value": 12.4206,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "KE",
+      "year": 1990,
+      "period": "1990",
+      "value": 3.6322,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "KE",
+      "year": 2010,
+      "period": "2010",
+      "value": 3.7592,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "KR",
+      "year": 1990,
+      "period": "1990",
+      "value": 12.4968,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "KR",
+      "year": 2010,
+      "period": "2010",
+      "value": 13.2334,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "MX",
+      "year": 1990,
+      "period": "1990",
+      "value": 6.8834,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "MX",
+      "year": 2010,
+      "period": "2010",
+      "value": 7.0104,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "MY",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.6868,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "MY",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.0678,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "NL",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.7376,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "NL",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.4328,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "NZ",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.3058,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "NZ",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.8138,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "PH",
+      "year": 1990,
+      "period": "1990",
+      "value": 10.7188,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "PH",
+      "year": 2010,
+      "period": "2010",
+      "value": 10.8966,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "PL",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.7028,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "PL",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.7536,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SA",
+      "year": 1990,
+      "period": "1990",
+      "value": 7.5692,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SA",
+      "year": 2010,
+      "period": "2010",
+      "value": 8.128,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SE",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.89,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SE",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.271,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SG",
+      "year": 1990,
+      "period": "1990",
+      "value": 12.7762,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "SG",
+      "year": 2010,
+      "period": "2010",
+      "value": 13.0556,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TH",
+      "year": 1990,
+      "period": "1990",
+      "value": 13.2842,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TH",
+      "year": 2010,
+      "period": "2010",
+      "value": 13.4874,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TR",
+      "year": 1990,
+      "period": "1990",
+      "value": 9.5504,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TR",
+      "year": 2010,
+      "period": "2010",
+      "value": 10.414,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TW",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.636,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "TW",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.9568,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "US",
+      "year": 1990,
+      "period": "1990",
+      "value": 8.7376,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "US",
+      "year": 2010,
+      "period": "2010",
+      "value": 9.144,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "VN",
+      "year": 1990,
+      "period": "1990",
+      "value": 11.3792,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "VN",
+      "year": 2010,
+      "period": "2010",
+      "value": 11.6586,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ZA",
+      "year": 1990,
+      "period": "1990",
+      "value": 6.1214,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
+    },
+    {
+      "indicator_id": "health.salt.intake_g_day",
+      "iso2": "ZA",
+      "year": 2010,
+      "period": "2010",
+      "value": 6.2992,
+      "unit": "g/day",
+      "source_ref": "Powles et al. BMJ Open 2013;3:e003733 Table2 age-std sodium g/day ×2.54 → salt equivalent; persons 20+",
+      "veritas": "⚠️"
     },
     {
       "indicator_id": "health.sugar.availability_g_day",
