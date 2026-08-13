@@ -1,19 +1,20 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "health_ncd_annual",
-  "last_updated": "2026-08-13T14:02:37+09:00",
+  "last_updated": "2026-08-13T14:14:24+09:00",
   "frequency": "annual",
   "source": {
     "label": "WHO GHO + FAOSTAT Food Balance Sheets",
     "url": "https://www.who.int/data/gho",
     "license": "CC BY-NC-SA 3.0 IGO / FAOSTAT terms",
-    "disclaimer_ja": "肥満・高血圧は WHO GHO の年齢調整推計。砂糖は FAOSTAT の Sugar (Raw Equivalent) 供給量（kg/人/年）を g/日に換算。摂取量そのものではない。2010年以降は現行 FBS、2000–2009 は旧手法 FBSH（veritas⚠️）。塩分摂取量 g/day は未収録。"
+    "disclaimer_ja": "肥満・高血圧は WHO GHO の年齢調整推計。砂糖は FAOSTAT の Sugar (Raw Equivalent) 供給量（kg/人/年）を g/日に換算した年次系列と、WHO GHO 精糖供給（主に2019年スナップショット）を別指標として収録。摂取量そのものではない。FAOSTAT の 2010年以降は現行 FBS、2000–2009 は旧手法 FBSH（veritas⚠️）。塩分摂取量 g/day は未収録。"
   },
   "meta": {
     "indicator_ids": [
       "health.hypertension.adult_3079_pct",
       "health.obesity.adult_bmi30_pct",
-      "health.sugar.availability_g_day"
+      "health.sugar.availability_g_day",
+      "health.sugar.who_refined_g_day"
     ],
     "iso2_list": [
       "AE",
@@ -56,8 +57,8 @@
       "from": 2000,
       "to": 2024
     },
-    "row_count": 2233,
-    "note_ja": "ニプロ依頼。砂糖は WHO 2019スナップショットから FAOSTAT 年次へ置換。"
+    "row_count": 2265,
+    "note_ja": "ニプロ依頼。砂糖は FAOSTAT 年次（既定）と WHO GHO 精糖を別指標で収録。"
   },
   "observations": [
     {
@@ -22388,6 +22389,326 @@
       "value": 76.8515,
       "unit": "g/day",
       "source_ref": "FAOSTAT FBS 645/2542 28.07 kg/capita/yr",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "AE",
+      "year": 2019,
+      "period": "2019",
+      "value": 94.35616,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "AU",
+      "year": 2019,
+      "period": "2019",
+      "value": 100.65753,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "BR",
+      "year": 2019,
+      "period": "2019",
+      "value": 107.75342,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "CA",
+      "year": 2019,
+      "period": "2019",
+      "value": 94.52055,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "CL",
+      "year": 2019,
+      "period": "2019",
+      "value": 117.06849,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "CN",
+      "year": 2019,
+      "period": "2019",
+      "value": 19.09589,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "CZ",
+      "year": 2019,
+      "period": "2019",
+      "value": 80.82192,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "DE",
+      "year": 2019,
+      "period": "2019",
+      "value": 100.60274,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "EG",
+      "year": 2019,
+      "period": "2019",
+      "value": 70.93151,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "ES",
+      "year": 2019,
+      "period": "2019",
+      "value": 89.42466,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "FR",
+      "year": 2019,
+      "period": "2019",
+      "value": 97.50685,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "GB",
+      "year": 2019,
+      "period": "2019",
+      "value": 81.67123,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "ID",
+      "year": 2019,
+      "period": "2019",
+      "value": 66.10959,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "IE",
+      "year": 2019,
+      "period": "2019",
+      "value": 100.27397,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "IN",
+      "year": 2019,
+      "period": "2019",
+      "value": 53.80822,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "IT",
+      "year": 2019,
+      "period": "2019",
+      "value": 87.45205,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "JP",
+      "year": 2019,
+      "period": "2019",
+      "value": 44.16438,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "KE",
+      "year": 2019,
+      "period": "2019",
+      "value": 47.34247,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "KR",
+      "year": 2019,
+      "period": "2019",
+      "value": 77.36986,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "MX",
+      "year": 2019,
+      "period": "2019",
+      "value": 93.89041,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "MY",
+      "year": 2019,
+      "period": "2019",
+      "value": 116.13699,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "NL",
+      "year": 2019,
+      "period": "2019",
+      "value": 98.38356,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "NZ",
+      "year": 2019,
+      "period": "2019",
+      "value": 131.69863,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "PH",
+      "year": 2019,
+      "period": "2019",
+      "value": 57.78082,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "PL",
+      "year": 2019,
+      "period": "2019",
+      "value": 120.19178,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "SA",
+      "year": 2019,
+      "period": "2019",
+      "value": 82.93151,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "SE",
+      "year": 2019,
+      "period": "2019",
+      "value": 92.35616,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "TH",
+      "year": 2019,
+      "period": "2019",
+      "value": 117.34247,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "TR",
+      "year": 2019,
+      "period": "2019",
+      "value": 83.80822,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "US",
+      "year": 2019,
+      "period": "2019",
+      "value": 90.65753,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "VN",
+      "year": 2019,
+      "period": "2019",
+      "value": 27.56164,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
+      "veritas": "✅"
+    },
+    {
+      "indicator_id": "health.sugar.who_refined_g_day",
+      "iso2": "ZA",
+      "year": 2019,
+      "period": "2019",
+      "value": 82.13699,
+      "unit": "g/day",
+      "source_ref": "WHO GHO ORALHEALTH_SUGAR_AVAILABILITY",
       "veritas": "✅"
     }
   ]
