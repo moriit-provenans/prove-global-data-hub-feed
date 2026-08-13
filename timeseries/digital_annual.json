@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "digital_annual",
-  "last_updated": "2026-08-13T16:15:35+09:00",
+  "last_updated": "2026-08-13T16:35:19+09:00",
   "frequency": "annual",
   "source": {
     "label": "WB / OWID-ITU / Eurostat (REQ-076)",
@@ -18,6 +18,7 @@
       "digital.genai.usage_pct",
       "digital.mobile_cellular.per_100",
       "digital.mobile_phone.ownership_pct",
+      "digital.smartphone.ownership_pct",
       "digital.sns.usage_pct"
     ],
     "iso2_list": [
@@ -61,7 +62,7 @@
       "from": 2000,
       "to": 2025
     },
-    "row_count": 2976,
+    "row_count": 2995,
     "indicator_meta": {
       "digital.mobile_cellular.per_100": {
         "unit": "per_100",
@@ -73,7 +74,13 @@
         "unit": "%",
         "higher_is_better": true,
         "name_ja": "携帯電話所有率（個人）",
-        "note_ja": "ITU HH18／OWID。個人の携帯電話所有率。スマホ専用指標ではない（ITU DataHubのスマホ細目はAPI 403で未取得）。"
+        "note_ja": "ITU HH18／OWID。個人の携帯電話所有率。スマホ専用指標ではない。"
+      },
+      "digital.smartphone.ownership_pct": {
+        "unit": "%",
+        "higher_is_better": true,
+        "name_ja": "スマホ所有率（成人）",
+        "note_ja": "Pew公開topline。携帯所有率×所有者のうちスマホ比率。取れる国のみ（欠測埋めなし）。ITU DataHubの国別時系列ではない。"
       },
       "digital.sns.usage_pct": {
         "unit": "%",
@@ -31248,6 +31255,215 @@
       "value": 89.4,
       "unit": "%",
       "source_ref": "OWID share-population-mobile-phone (ITU proportion of individuals who own a mobile telephone; NOT smartphone-specific)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "BR",
+      "year": 2023,
+      "period": "2023",
+      "value": 85.5,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=91% × smartphone_among_owners=94% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "CA",
+      "year": 2022,
+      "period": "2022",
+      "value": 83.7,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=89% × smartphone_among_owners=94% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "DE",
+      "year": 2022,
+      "period": "2022",
+      "value": 85.4,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=97% × smartphone_among_owners=88% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "ES",
+      "year": 2022,
+      "period": "2022",
+      "value": 84.3,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=98% × smartphone_among_owners=86% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "FR",
+      "year": 2022,
+      "period": "2022",
+      "value": 84.4,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=97% × smartphone_among_owners=87% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "GB",
+      "year": 2022,
+      "period": "2022",
+      "value": 86.4,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=96% × smartphone_among_owners=90% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "ID",
+      "year": 2023,
+      "period": "2023",
+      "value": 75.7,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=86% × smartphone_among_owners=88% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "IN",
+      "year": 2023,
+      "period": "2023",
+      "value": 46.9,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=70% × smartphone_among_owners=67% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "IT",
+      "year": 2022,
+      "period": "2022",
+      "value": 87.1,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=99% × smartphone_among_owners=88% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "JP",
+      "year": 2022,
+      "period": "2022",
+      "value": 83.7,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=94% × smartphone_among_owners=89% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "KE",
+      "year": 2023,
+      "period": "2023",
+      "value": 55.3,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=85% × smartphone_among_owners=65% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "KR",
+      "year": 2022,
+      "period": "2022",
+      "value": 98.0,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=100% × smartphone_among_owners=98% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "MX",
+      "year": 2023,
+      "period": "2023",
+      "value": 68.0,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=85% × smartphone_among_owners=80% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "MY",
+      "year": 2022,
+      "period": "2022",
+      "value": 87.2,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=98% × smartphone_among_owners=89% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "NL",
+      "year": 2022,
+      "period": "2022",
+      "value": 90.2,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=98% × smartphone_among_owners=92% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "PL",
+      "year": 2022,
+      "period": "2022",
+      "value": 80.0,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=93% × smartphone_among_owners=86% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "SE",
+      "year": 2022,
+      "period": "2022",
+      "value": 91.1,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=98% × smartphone_among_owners=93% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "SG",
+      "year": 2022,
+      "period": "2022",
+      "value": 93.1,
+      "unit": "%",
+      "source_ref": "Pew Spring 2022 topline: mobile_yes=99% × smartphone_among_owners=94% → all-adult smartphone ownership (not ITU HH; survey adults)",
+      "veritas": "✅",
+      "retrieved_at": "2026-08-13"
+    },
+    {
+      "indicator_id": "digital.smartphone.ownership_pct",
+      "iso2": "ZA",
+      "year": 2023,
+      "period": "2023",
+      "value": 71.0,
+      "unit": "%",
+      "source_ref": "Pew Spring 2023 topline: mobile_yes=91% × smartphone_among_owners=78% → all-adult smartphone ownership (not ITU HH; survey adults)",
       "veritas": "✅",
       "retrieved_at": "2026-08-13"
     },
