@@ -1,9 +1,6 @@
-# PROVE Global Data Hub Phase 1 — 対象国（比較コア）
+# PROVE Global Data Hub Phase 1 — 対象20ヶ国（確定）
 # World Bank コレクター GEOS と同一。台湾は WB 非収録のため除外。
 # iso3 = World Bank / σ層 geo コード、iso2 = 公開フィード用
-#
-# 2026-08-09：森さん A 選択 — AU/MX/ES/IT/NL/PL/ZA を追加（21→28）
-# 2026-08-12：森さん Wave B GO（B1）— NZ/CL/KE/EG/IE/SE/CZ を追加（28→35）
 
 countries:
   - { iso2: VN, iso3: VNM, name_ja: ベトナム, name_en: Vietnam, region: southeast_asia, currency: VND }
@@ -28,26 +25,8 @@ countries:
   - { iso2: JP, iso3: JPN, name_ja: 日本, name_en: Japan, region: east_asia, currency: JPY }
   # 台湾は World Bank 非収録。macro_annual は IMF WEO で補完（REQ-SMITH-20260712-002）
   - { iso2: TW, iso3: TWN, name_ja: 台湾, name_en: Taiwan, region: east_asia, currency: TWD, source_note: imf_weo }
-  # 2026-08-09 Wave A（DataLake重なり優先）
-  - { iso2: AU, iso3: AUS, name_ja: オーストラリア, name_en: Australia, region: oceania, currency: AUD }
-  - { iso2: MX, iso3: MEX, name_ja: メキシコ, name_en: Mexico, region: latin_america, currency: MXN }
-  - { iso2: ES, iso3: ESP, name_ja: スペイン, name_en: Spain, region: europe, currency: EUR }
-  - { iso2: IT, iso3: ITA, name_ja: イタリア, name_en: Italy, region: europe, currency: EUR }
-  - { iso2: NL, iso3: NLD, name_ja: オランダ, name_en: Netherlands, region: europe, currency: EUR }
-  - { iso2: PL, iso3: POL, name_ja: ポーランド, name_en: Poland, region: europe, currency: PLN }
-  - { iso2: ZA, iso3: ZAF, name_ja: 南アフリカ, name_en: South Africa, region: africa, currency: ZAR }
-  # 2026-08-12 Wave B（B1・DataLake重なり優先）
-  - { iso2: NZ, iso3: NZL, name_ja: ニュージーランド, name_en: New Zealand, region: oceania, currency: NZD }
-  - { iso2: CL, iso3: CHL, name_ja: チリ, name_en: Chile, region: latin_america, currency: CLP }
-  - { iso2: KE, iso3: KEN, name_ja: ケニア, name_en: Kenya, region: africa, currency: KES }
-  - { iso2: EG, iso3: EGY, name_ja: エジプト, name_en: Egypt, Arab Rep., region: africa, currency: EGP }
-  - { iso2: IE, iso3: IRL, name_ja: アイルランド, name_en: Ireland, region: europe, currency: EUR }
-  - { iso2: SE, iso3: SWE, name_ja: スウェーデン, name_en: Sweden, region: europe, currency: SEK }
-  - { iso2: CZ, iso3: CZE, name_ja: チェコ, name_en: Czechia, region: europe, currency: CZK }
 
 notes:
   - "コレクター Atlas/tools/collectors/collect_worldbank.py の GEOS と同期必須（TW除く）"
   - "台湾（TW/TWN）は World Bank 非収録 → IMF WEO（imf_weo.csv）で macro_annual にマージ"
   - "確定日: 2026-07-12（Smith Phase 0 合意）／TW追加: 2026-07-12 REQ-002追伸"
-  - "Wave A 追加: 2026-08-09 森さんGO（AU/MX/ES/IT/NL/PL/ZA）— DataLake重なり優先。UI/LPはSmith反映待ち"
-  - "Wave B 追加: 2026-08-12 森さんGO B1（NZ/CL/KE/EG/IE/SE/CZ）— 公開 push は別途"
