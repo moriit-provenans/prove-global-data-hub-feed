@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-08-25T17:30:54+09:00",
+  "last_updated": "2026-09-02T08:50:46+09:00",
   "hub_name": "PROVE Global Data Hub",
   "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
   "indicators": [

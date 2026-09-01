@@ -1,8 +1,8 @@
 {
   "ok": true,
   "lane": "prove_global_data_hub",
-  "last_success_jst": "2026-08-25T17:31:01+09:00",
+  "last_success_jst": "2026-09-02T08:50:53+09:00",
   "workflow": "public_feed_monthly",
-  "run_url": "https://github.com/moriit-provenans/global-research/actions/runs/32826758677",
+  "run_url": "https://github.com/moriit-provenans/global-research/actions/runs/33572309409",
   "pc_independent": true
 }
