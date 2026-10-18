@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "last_updated": "2026-09-02T08:50:46+09:00",
+  "last_updated": "2026-10-18T22:03:05+09:00",
   "hub_name": "PROVE Global Data Hub",
-  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。 industry_gva_annual v0.2（UNIDO実測+SNA式合成・品質ゲート付き）を追加。",
+  "notes_ja": "REQ-004：indicator_master.yaml 駆動。World Bank年次＋台湾IMF WEO補完＋TI CPI＋派生（エネルギー自給率代理）。industry_gva_annual / tariff_hs6_annual / macro_quarterly は別フィード。公開Repo既定ブランチは master。／2026-07-20 NSO Wave1: source_tier・四半期NSO合流",
   "indicators": [
     {
       "indicator_id": "macro.gdp.current_usd",
@@ -20,26 +20,40 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "TW",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -67,26 +81,40 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "TW",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -114,26 +142,40 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "TW",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -161,26 +203,40 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "TW",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -208,25 +264,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -254,25 +324,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -300,26 +384,40 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "TW",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -347,25 +445,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -393,25 +505,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -439,25 +565,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -485,25 +625,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -531,25 +685,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -577,25 +745,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -623,25 +805,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -669,25 +865,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -715,25 +925,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -761,25 +985,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -807,25 +1045,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -853,25 +1105,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -899,25 +1165,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -945,25 +1225,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -991,25 +1285,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1037,25 +1345,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1083,25 +1405,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1129,18 +1465,23 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "ES",
         "GB",
         "ID",
         "IN",
         "KR",
+        "MX",
         "MY",
+        "NZ",
         "PH",
         "SG",
         "TH",
         "TR",
-        "US"
+        "US",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1168,25 +1509,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1214,25 +1569,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1260,25 +1629,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1306,25 +1689,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1352,25 +1749,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1398,25 +1809,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1444,25 +1869,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1490,25 +1929,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1536,25 +1989,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1582,25 +2049,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1628,25 +2109,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1674,25 +2169,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1720,25 +2229,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1766,25 +2289,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1812,25 +2349,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1858,25 +2409,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1903,21 +2468,31 @@
       "phase": "4a",
       "priority": "must",
       "available_iso2": [
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
+        "EG",
         "GB",
         "HK",
         "ID",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
         "SG",
         "TH",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1944,21 +2519,31 @@
       "phase": "4a",
       "priority": "must",
       "available_iso2": [
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
+        "EG",
         "GB",
         "HK",
         "ID",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
         "SG",
         "TH",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -1986,23 +2571,33 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
+        "EG",
         "GB",
         "HK",
         "ID",
         "IN",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2029,20 +2624,32 @@
       "phase": "4a",
       "priority": "must",
       "available_iso2": [
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "ES",
         "FR",
         "GB",
         "HK",
+        "IE",
+        "IT",
         "JP",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
-        "US"
+        "US",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2070,25 +2677,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2116,25 +2737,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2162,25 +2797,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2208,25 +2857,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2255,12 +2918,16 @@
       "available_iso2": [
         "BR",
         "CN",
+        "EG",
         "ID",
         "IN",
+        "KE",
+        "MX",
         "PH",
         "TH",
         "TR",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2288,25 +2955,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2334,25 +3015,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2380,25 +3075,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2426,25 +3135,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2472,25 +3195,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2518,22 +3255,36 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
-        "US"
+        "US",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2586,25 +3337,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2632,24 +3397,38 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2677,25 +3456,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2723,25 +3516,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2769,25 +3576,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2815,25 +3636,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2861,23 +3696,37 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2001,
@@ -2905,25 +3754,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2951,25 +3814,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -2997,25 +3874,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3043,25 +3934,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3089,25 +3994,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3135,25 +4054,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3181,25 +4114,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3252,25 +4199,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3298,24 +4259,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3345,19 +4320,31 @@
         "AE",
         "BR",
         "CA",
+        "CL",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
+        "SE",
         "SG",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3385,25 +4372,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3431,24 +4432,38 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3476,25 +4491,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3522,24 +4551,38 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3567,24 +4610,38 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3612,24 +4669,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3657,24 +4728,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3702,25 +4787,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2007,
@@ -3748,25 +4847,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2010,
@@ -3821,22 +4933,32 @@
         "AE",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
         "KR",
         "MY",
+        "NL",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3889,25 +5011,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3935,25 +5071,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -3981,25 +5131,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2010,
@@ -4028,17 +5192,23 @@
       "available_iso2": [
         "AE",
         "BR",
+        "CL",
         "CN",
+        "EG",
+        "ES",
         "ID",
         "IN",
+        "IT",
         "KR",
+        "MX",
         "MY",
         "PH",
         "SA",
         "SG",
         "TH",
         "TR",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -4066,25 +5236,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -4112,25 +5296,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -4158,25 +5355,39 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -4204,24 +5415,38 @@
       "priority": "should",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -4250,6 +5475,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4281,6 +5508,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4312,6 +5541,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4343,6 +5574,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4374,6 +5607,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4405,6 +5640,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4436,6 +5673,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4467,6 +5706,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4498,6 +5739,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4529,6 +5772,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4560,6 +5805,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4591,6 +5838,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4622,6 +5871,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4653,6 +5904,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4684,6 +5937,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4715,6 +5970,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4746,6 +6003,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4777,6 +6036,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4808,6 +6069,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4839,6 +6102,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4870,6 +6135,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4901,6 +6168,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4932,6 +6201,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4963,6 +6234,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -4994,6 +6267,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5025,6 +6300,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5056,6 +6333,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5087,6 +6366,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5118,6 +6399,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5149,6 +6432,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5180,6 +6465,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5211,6 +6498,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5242,6 +6531,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5273,6 +6564,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5304,6 +6597,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5335,6 +6630,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5366,6 +6663,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5397,6 +6696,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5428,6 +6729,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5459,6 +6762,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5490,6 +6795,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5521,6 +6828,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5552,6 +6861,8 @@
       "available_iso2": [
         "HK",
         "ID",
+        "MX",
+        "NZ",
         "PH",
         "SG",
         "VN"
@@ -5629,25 +6940,39 @@
       "priority": "must",
       "available_iso2": [
         "AE",
+        "AU",
         "BR",
         "CA",
+        "CL",
         "CN",
+        "CZ",
         "DE",
+        "EG",
+        "ES",
         "FR",
         "GB",
         "HK",
         "ID",
+        "IE",
         "IN",
+        "IT",
         "JP",
+        "KE",
         "KR",
+        "MX",
         "MY",
+        "NL",
+        "NZ",
         "PH",
+        "PL",
         "SA",
+        "SE",
         "SG",
         "TH",
         "TR",
         "US",
-        "VN"
+        "VN",
+        "ZA"
       ],
       "year_range": {
         "from": 2000,
@@ -5661,323 +6986,7 @@
       }
     },
     {
-      "indicator_id": "industry.unido.value_added.usd",
-      "name_ja": "製造業付加価値（UNIDO・ISIC2桁・実測）",
-      "name_en": "Manufacturing value added (UNIDO INDSTAT, ISIC 2-digit, reported)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "isic2_manufacturing",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "業種別市場規模のコア。ISIC Rev.4 2桁×国×年。国によりUSD換算不可（現地通貨）行あり＝veritas⚠️。",
-      "phase": "2a",
-      "source": {
-        "label": "UNIDO INDSTAT Rev.4",
-        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2010,
-        "to": 2024
-      }
-    },
-    {
-      "indicator_id": "industry.unido.employees",
-      "name_ja": "製造業雇用者数（UNIDO・ISIC2桁・実測）",
-      "name_en": "Manufacturing employees (UNIDO INDSTAT, ISIC 2-digit, reported)",
-      "unit": "persons",
-      "category": "産業",
-      "granularity": "isic2_manufacturing",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "業種別雇用規模。市場ポテンシャルと労働需給の補助。",
-      "phase": "2a",
-      "source": {
-        "label": "UNIDO INDSTAT Rev.4",
-        "url": "https://stat.unido.org/portal/dataset/getDataset/INDSTAT/4"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2010,
-        "to": 2024
-      }
-    },
-    {
-      "indicator_id": "industry.sna.agriculture_va.usd",
-      "name_ja": "農林水産業付加価値（合成・SNA式）",
-      "name_en": "Agriculture, forestry & fishing value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "WB対GDP%×WB名目GDPの合成推計。全21か国・欠損なし。一次統計ではないためveritas⚠️固定。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.industry_va.usd",
-      "name_ja": "産業（建設含む）付加価値（合成・SNA式）",
-      "name_en": "Industry incl. construction value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "UNIDO製造業とは粒度が異なる広義区分（建設・鉱業含む）。産業全体感の把握用。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.manufacturing_va.usd",
-      "name_ja": "製造業付加価値（合成・SNA式）",
-      "name_en": "Manufacturing value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "UNIDO実測が欠損する国・年のフォールバック推計として使用。UNIDO値と併記し差分を可視化。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.IND.MANF.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "industry.sna.services_va.usd",
-      "name_ja": "サービス業付加価値（合成・SNA式）",
-      "name_en": "Services value added (synthetic, SNA-style)",
-      "unit": "USD",
-      "category": "産業",
-      "granularity": "sna_sector_synthetic",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": true,
-      "description_ja": "非製造業（サービス）需要規模の第一近似。BtoBサービス業進出の市場規模目安。",
-      "phase": "2b",
-      "source": {
-        "label": "PROVE Global Data Hub 合成（World Bank由来）",
-        "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.ZS"
-      },
-      "wb_code": null,
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2000,
-        "to": 2025
-      }
-    },
-    {
-      "indicator_id": "trade.tariff.mfn_simple_avg.pct",
-      "wb_code": null,
-      "name_ja": "MFN関税率（HS6品目別・単純平均）",
-      "name_en": "MFN tariff rate by HS6 product (simple average)",
-      "unit": "%",
-      "category": "貿易",
-      "frequencies": [
-        "annual"
-      ],
-      "higher_is_better": false,
-      "description_ja": "UNCTAD TRAINS由来のMFN/World基準関税（品目別）。市場参入時の関税負担を業種の代表HS6品目で確認する用途。DEU/FRA/GBRはEU共通対外関税の代理値（veritas⚠️）。",
-      "phase": "2c",
-      "source": {
-        "label": "UNCTAD TRAINS (via WITS SDMX API)",
-        "url": "https://wits.worldbank.org/witsapiintro.aspx"
-      },
-      "available_iso2": [
-        "AE",
-        "BR",
-        "CA",
-        "CN",
-        "DE",
-        "FR",
-        "GB",
-        "HK",
-        "ID",
-        "IN",
-        "JP",
-        "KR",
-        "MY",
-        "PH",
-        "SA",
-        "SG",
-        "TH",
-        "TR",
-        "US",
-        "VN"
-      ],
-      "year_range": {
-        "from": 2018,
-        "to": 2023
-      },
-      "note_ja": "品目別詳細は timeseries/tariff_hs6_annual.json を参照（本indicator_idの国レベル集計とは別系統）。"
-    },
-    {
       "indicator_id": "macro_q.gdp_real.yoy_pct",
-      "wb_code": null,
       "name_ja": "実質GDP成長率（四半期・前年同期比）",
       "name_en": "Real GDP growth, quarterly (YoY %)",
       "unit": "%",
@@ -5985,99 +6994,1944 @@
       "frequencies": [
         "quarterly"
       ],
-      "higher_is_better": true,
-      "description_ja": "景気の勢いを最速で捉える指標。四半期発表で年次GDPより数か月早く動向を確認できる。",
-      "phase": "2b",
-      "available_iso2": [],
-      "period_range": {
-        "from": null,
-        "to": null
-      },
-      "source": {
-        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
-        "license": "IMF Data Terms",
-        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
-      },
-      "feed": "timeseries/macro_quarterly.json"
-    },
-    {
-      "indicator_id": "macro_q.gdp_real.qoq_pct",
-      "wb_code": null,
-      "name_ja": "実質GDP成長率（四半期・前期比・季節調整済）",
-      "name_en": "Real GDP growth, quarterly (QoQ %, SA)",
-      "unit": "%",
-      "category": "マクロ（四半期）",
-      "frequencies": [
-        "quarterly"
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
       ],
-      "higher_is_better": true,
-      "description_ja": "直近四半期の変化速度（季節調整済）。YoYより短期の転換点検知に有用。",
-      "phase": "2b",
-      "available_iso2": [],
-      "period_range": {
-        "from": null,
-        "to": null
-      },
-      "source": {
-        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
-        "license": "IMF Data Terms",
-        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
-      },
-      "feed": "timeseries/macro_quarterly.json"
-    },
-    {
-      "indicator_id": "macro_q.gdp_nominal.usd",
-      "wb_code": null,
-      "name_ja": "名目GDP（四半期・USD）",
-      "name_en": "Nominal GDP, quarterly (USD)",
-      "unit": "USD",
-      "category": "マクロ（四半期）",
-      "frequencies": [
-        "quarterly"
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
       ],
-      "higher_is_better": true,
-      "description_ja": "四半期ベースの経済規模（USD）。年次macro.gdp.current_usdの四半期内訳。",
-      "phase": "2b",
-      "available_iso2": [],
-      "period_range": {
-        "from": null,
-        "to": null
-      },
-      "source": {
-        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
-        "license": "IMF Data Terms",
-        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
-      },
-      "feed": "timeseries/macro_quarterly.json"
-    },
-    {
-      "indicator_id": "macro_q.manufacturing_gva_real.yoy_pct",
-      "wb_code": null,
-      "name_ja": "製造業GVA成長率（四半期・前年同期比・実質）",
-      "name_en": "Manufacturing GVA growth, quarterly (YoY %, real)",
-      "unit": "%",
-      "category": "マクロ（四半期）",
-      "frequencies": [
-        "quarterly"
-      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
       "higher_is_better": null,
-      "description_ja": "鉱工業生産指数の代替（QNEAに鉱工業生産指数が無いため）。製造業の実勢を四半期で捉える。",
-      "phase": "2b",
-      "available_iso2": [],
-      "period_range": {
-        "from": null,
-        "to": null
-      },
+      "wb_code": null,
+      "year_range": null,
       "source": {
-        "label": "IMF QNEA (National Economic Accounts, Quarterly)",
-        "url": "https://data.imf.org/en/datasets/IMF.STA:QNEA",
-        "license": "IMF Data Terms",
-        "disclaimer_ja": "IMF SDMX 3.0 API（サブスクリプションキー要）。未取得時はobservationsが空。"
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
       },
-      "feed": "timeseries/macro_quarterly.json"
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ]
+    },
+    {
+      "indicator_id": "nso_a.fdi_income.million_sgd",
+      "name_ja": "nso_a.fdi_income.million_sgd",
+      "name_en": "nso_a.fdi_income.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024",
+      "available_iso2_nso": [
+        "SG"
+      ]
+    },
+    {
+      "indicator_id": "nso_a.fdi_stock.million_sgd",
+      "name_ja": "nso_a.fdi_stock.million_sgd",
+      "name_en": "nso_a.fdi_stock.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024",
+      "available_iso2_nso": [
+        "SG"
+      ]
+    },
+    {
+      "indicator_id": "nso_a.population",
+      "name_ja": "nso_a.population",
+      "name_en": "nso_a.population",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "DE"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2025",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2025",
+      "available_iso2_nso": [
+        "BR",
+        "DE"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.avg_hourly_earnings.usd",
+      "name_ja": "nso_m.avg_hourly_earnings.usd",
+      "name_en": "nso_m.avg_hourly_earnings.usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.avg_weekly_earnings.gbp",
+      "name_ja": "nso_m.avg_weekly_earnings.gbp",
+      "name_en": "nso_m.avg_weekly_earnings.gbp",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.avg_weekly_hours",
+      "name_ja": "nso_m.avg_weekly_hours",
+      "name_en": "nso_m.avg_weekly_hours",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.cgpi.index",
+      "name_ja": "nso_m.cgpi.index",
+      "name_en": "nso_m.cgpi.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.coincident_index",
+      "name_ja": "景気動向指数・一致（月次）",
+      "name_en": "Coincident CI, monthly",
+      "unit": "index",
+      "category": "景気（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.cpi.index",
+      "name_ja": "消費者物価指数（月次）",
+      "name_en": "CPI index, monthly",
+      "unit": "index",
+      "category": "物価（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.cpi.yoy_pct",
+      "name_ja": "消費者物価上昇率（前年同月比・月次）",
+      "name_en": "CPI YoY %, monthly",
+      "unit": "%",
+      "category": "物価（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "AE",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.cpi_energy.index",
+      "name_ja": "nso_m.cpi_energy.index",
+      "name_en": "nso_m.cpi_energy.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.cpi_hicp.index",
+      "name_ja": "nso_m.cpi_hicp.index",
+      "name_en": "nso_m.cpi_hicp.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "DE"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2025-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
+        ]
+      },
+      "latest_period_nso": "2025-12",
+      "available_iso2_nso": [
+        "DE"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.employment_rate.pct",
+      "name_ja": "nso_m.employment_rate.pct",
+      "name_en": "nso_m.employment_rate.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.fed_funds.pct",
+      "name_ja": "nso_m.fed_funds.pct",
+      "name_en": "nso_m.fed_funds.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.fx_usd_eur",
+      "name_ja": "nso_m.fx_usd_eur",
+      "name_en": "nso_m.fx_usd_eur",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-07",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-07",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.housing_starts.thousands",
+      "name_ja": "nso_m.housing_starts.thousands",
+      "name_en": "nso_m.housing_starts.thousands",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.housing_starts.units",
+      "name_ja": "nso_m.housing_starts.units",
+      "name_en": "nso_m.housing_starts.units",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CA"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2025-01",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2025-01",
+      "available_iso2_nso": [
+        "CA"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.industrial_production.index",
+      "name_ja": "鉱工業生産指数（月次）",
+      "name_en": "Industrial production index, monthly",
+      "unit": "index",
+      "category": "産業（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "DE",
+        "GB",
+        "JP",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "BR",
+        "DE",
+        "GB",
+        "JP",
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.leading_index",
+      "name_ja": "景気動向指数・先行（月次）",
+      "name_en": "Leading CI, monthly",
+      "unit": "index",
+      "category": "景気（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.lfpr.pct",
+      "name_ja": "nso_m.lfpr.pct",
+      "name_en": "nso_m.lfpr.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.m2.billions",
+      "name_ja": "nso_m.m2.billions",
+      "name_en": "nso_m.m2.billions",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.manufacturing_sales.thousands_cad",
+      "name_ja": "nso_m.manufacturing_sales.thousands_cad",
+      "name_en": "nso_m.manufacturing_sales.thousands_cad",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "CA"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "CA"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.merchandise_exports_usd",
+      "name_ja": "財輸出額（月次・USD）",
+      "name_en": "Merchandise exports, monthly (USD)",
+      "unit": "USD",
+      "category": "貿易（月次）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TR",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TR",
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.merchandise_imports_usd",
+      "name_ja": "財輸入額（月次・USD）",
+      "name_en": "Merchandise imports, monthly (USD)",
+      "unit": "USD",
+      "category": "貿易（月次）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TR",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SG",
+        "TR",
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.nonfarm_payrolls.thousands",
+      "name_ja": "nso_m.nonfarm_payrolls.thousands",
+      "name_en": "nso_m.nonfarm_payrolls.thousands",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.policy_rate.pct",
+      "name_ja": "nso_m.policy_rate.pct",
+      "name_en": "nso_m.policy_rate.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ],
+      "source_tier_primary": "international_fast",
+      "source_tiers": [
+        "international_fast"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "VN"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.population",
+      "name_ja": "nso_m.population",
+      "name_en": "nso_m.population",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "1980-00",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "1980-00",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.ppi.index",
+      "name_ja": "nso_m.ppi.index",
+      "name_en": "nso_m.ppi.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "DE"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2022-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2022-12",
+      "available_iso2_nso": [
+        "DE"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.ppi_final_demand.index",
+      "name_ja": "nso_m.ppi_final_demand.index",
+      "name_en": "nso_m.ppi_final_demand.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-12",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-12",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.psnd_gdp.pct",
+      "name_ja": "nso_m.psnd_gdp.pct",
+      "name_en": "nso_m.psnd_gdp.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.retail_sales.index",
+      "name_ja": "nso_m.retail_sales.index",
+      "name_en": "nso_m.retail_sales.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "GB",
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB",
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.retail_sales_real.index",
+      "name_ja": "nso_m.retail_sales_real.index",
+      "name_en": "nso_m.retail_sales_real.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-06",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-06",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.trade_balance_goods_services.million_usd",
+      "name_ja": "nso_m.trade_balance_goods_services.million_usd",
+      "name_en": "nso_m.trade_balance_goods_services.million_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-05",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-05",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.treasury_10y.pct",
+      "name_ja": "nso_m.treasury_10y.pct",
+      "name_en": "nso_m.treasury_10y.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-07",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-07",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_m.unemployment.pct",
+      "name_ja": "失業率（月次）",
+      "name_en": "Unemployment rate, monthly",
+      "unit": "%",
+      "category": "労働（月次・NSO）",
+      "frequencies": [
+        "monthly"
+      ],
+      "available_iso2": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "international_fast",
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "international_fast",
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "FR",
+        "GB",
+        "HK",
+        "ID",
+        "IN",
+        "JP",
+        "KR",
+        "MY",
+        "PH",
+        "SA",
+        "SG",
+        "TH",
+        "TR",
+        "TW",
+        "US",
+        "VN"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.current_account.million_gbp",
+      "name_ja": "nso_q.current_account.million_gbp",
+      "name_en": "nso_q.current_account.million_gbp",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "GB"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "GB"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gdp_all_industry.million_usd",
+      "name_ja": "nso_q.gdp_all_industry.million_usd",
+      "name_en": "nso_q.gdp_all_industry.million_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gdp_nominal.level_jpy",
+      "name_ja": "名目GDP（四半期・季節調整・億円）",
+      "name_en": "Nominal GDP level, quarterly SA (JPY)",
+      "unit": "billion_JPY",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.index",
+      "name_ja": "実質GDP指数（四半期）",
+      "name_en": "Real GDP index, quarterly",
+      "unit": "index",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "CA",
+        "DE",
+        "GB",
+        "SG",
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "CA",
+        "DE",
+        "GB",
+        "SG",
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.level",
+      "name_ja": "nso_q.gdp_real.level",
+      "name_en": "nso_q.gdp_real.level",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "MY"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "MY"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gdp_real.level_jpy",
+      "name_ja": "実質GDP（四半期・季節調整・億円相当）",
+      "name_en": "Real GDP level, quarterly SA (JPY)",
+      "unit": "billion_JPY_2020chain",
+      "category": "マクロ（四半期・NSO）",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "JP"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "JP"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.gross_saving.billion_usd",
+      "name_ja": "nso_q.gross_saving.billion_usd",
+      "name_en": "nso_q.gross_saving.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.household_net_worth.million_sgd",
+      "name_ja": "nso_q.household_net_worth.million_sgd",
+      "name_en": "nso_q.household_net_worth.million_sgd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "SG"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.labor_productivity.index",
+      "name_ja": "nso_q.labor_productivity.index",
+      "name_en": "nso_q.labor_productivity.index",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2024-Q4",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2024-Q4",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.pce.billion_usd",
+      "name_ja": "nso_q.pce.billion_usd",
+      "name_en": "nso_q.pce.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.personal_income.billion_usd",
+      "name_ja": "nso_q.personal_income.billion_usd",
+      "name_en": "nso_q.personal_income.billion_usd",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q2",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q2",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.va_manufacturing_share_gdp.pct",
+      "name_ja": "nso_q.va_manufacturing_share_gdp.pct",
+      "name_en": "nso_q.va_manufacturing_share_gdp.pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "US"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "US"
+      ]
+    },
+    {
+      "indicator_id": "nso_q.va_per_worker.yoy_pct",
+      "name_ja": "nso_q.va_per_worker.yoy_pct",
+      "name_en": "nso_q.va_per_worker.yoy_pct",
+      "unit": "",
+      "category": "NSOパイロット",
+      "frequencies": [
+        "quarterly"
+      ],
+      "available_iso2": [
+        "SG"
+      ],
+      "source_tier_primary": "nso",
+      "source_tiers": [
+        "nso"
+      ],
+      "latest_period": "2026-Q1",
+      "phase": "nso_wave1",
+      "priority": "P0",
+      "description_ja": "Polaris NSO-first Wave1。WB年次の代替ではなく足元系列。",
+      "higher_is_better": null,
+      "wb_code": null,
+      "year_range": null,
+      "source": {
+        "label": "NSO / OECD QNA (see source_registry_nso.yaml)",
+        "tiers": [
+          "nso"
+        ]
+      },
+      "latest_period_nso": "2026-Q1",
+      "available_iso2_nso": [
+        "SG"
+      ]
     }
   ],
   "countries": [
@@ -6227,6 +9081,104 @@
       "name_ja": "台湾",
       "name_en": "Taiwan",
       "region": "east_asia"
+    },
+    {
+      "iso2": "AU",
+      "iso3": "AUS",
+      "name_ja": "オーストラリア",
+      "name_en": "Australia",
+      "region": "oceania"
+    },
+    {
+      "iso2": "MX",
+      "iso3": "MEX",
+      "name_ja": "メキシコ",
+      "name_en": "Mexico",
+      "region": "latin_america"
+    },
+    {
+      "iso2": "ES",
+      "iso3": "ESP",
+      "name_ja": "スペイン",
+      "name_en": "Spain",
+      "region": "europe"
+    },
+    {
+      "iso2": "IT",
+      "iso3": "ITA",
+      "name_ja": "イタリア",
+      "name_en": "Italy",
+      "region": "europe"
+    },
+    {
+      "iso2": "NL",
+      "iso3": "NLD",
+      "name_ja": "オランダ",
+      "name_en": "Netherlands",
+      "region": "europe"
+    },
+    {
+      "iso2": "PL",
+      "iso3": "POL",
+      "name_ja": "ポーランド",
+      "name_en": "Poland",
+      "region": "europe"
+    },
+    {
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "name_ja": "南アフリカ",
+      "name_en": "South Africa",
+      "region": "africa"
+    },
+    {
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "name_ja": "ニュージーランド",
+      "name_en": "New Zealand",
+      "region": "oceania"
+    },
+    {
+      "iso2": "CL",
+      "iso3": "CHL",
+      "name_ja": "チリ",
+      "name_en": "Chile",
+      "region": "latin_america"
+    },
+    {
+      "iso2": "KE",
+      "iso3": "KEN",
+      "name_ja": "ケニア",
+      "name_en": "Kenya",
+      "region": "africa"
+    },
+    {
+      "iso2": "EG",
+      "iso3": "EGY",
+      "name_ja": "エジプト",
+      "name_en": "Egypt",
+      "region": "africa"
+    },
+    {
+      "iso2": "IE",
+      "iso3": "IRL",
+      "name_ja": "アイルランド",
+      "name_en": "Ireland",
+      "region": "europe"
+    },
+    {
+      "iso2": "SE",
+      "iso3": "SWE",
+      "name_ja": "スウェーデン",
+      "name_en": "Sweden",
+      "region": "europe"
+    },
+    {
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "name_ja": "チェコ",
+      "name_en": "Czechia",
+      "region": "europe"
     }
   ]
 }

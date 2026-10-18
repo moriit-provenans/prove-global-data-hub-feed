@@ -1825,3 +1825,44 @@ indicators:
   frequencies:
   - annual
   veritas_default: ⚠️
+- indicator_id: health.obesity.adult_bmi30_pct
+  wb_code: null
+  gho_code: NCD_BMI_30A
+  source: who_gho
+  name_ja: 成人肥満率（BMI≥30・年齢調整）
+  name_en: Obesity among adults, BMI ≥ 30 (age-standardized %)
+  unit: '%'
+  category: 保健・NCD
+  priority: must
+  phase: nipro-202608
+  description_ja: 成人のBMI≥30の年齢調整推計。ニプロ依頼。国比較は年齢調整値を使う。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: health.hypertension.adult_3079_pct
+  wb_code: null
+  gho_code: NCD_HYP_PREVALENCE_A
+  source: who_gho
+  name_ja: 高血圧症罹患率（30–79歳・年齢調整）
+  name_en: Hypertension prevalence, adults 30-79 (age-standardized %)
+  unit: '%'
+  category: 保健・NCD
+  priority: must
+  phase: nipro-202608
+  description_ja: 30–79歳の高血圧罹患率（年齢調整）。ニプロ依頼。
+  higher_is_better: false
+  frequencies:
+  - annual
+- indicator_id: health.sugar.availability_g_day
+  wb_code: null
+  source: faostat
+  name_ja: 砂糖供給量（1人1日あたり・粗糖換算）
+  name_en: Sugar supply, raw equivalent (g/day)
+  unit: g/day
+  category: 保健・NCD
+  priority: must
+  phase: nipro-202608
+  description_ja: FAOSTAT の Sugar (Raw Equivalent) 供給量（kg/人/年）を g/日換算。摂取量の代理。2010年以降は現行FBS、2000–2009は旧手法FBSH。ニプロ依頼。
+  higher_is_better: false
+  frequencies:
+  - annual

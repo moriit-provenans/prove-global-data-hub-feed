@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "trade_flows",
-  "last_updated": "2026-09-02T08:50:45+09:00",
+  "last_updated": "2026-10-18T22:02:56+09:00",
   "source": {
     "label": "UN Comtrade",
     "url": "https://comtradeplus.un.org/",
@@ -114,6 +114,76 @@
         "iso2": "TW",
         "name_ja": "台湾",
         "name_en": "Taiwan"
+      },
+      {
+        "iso2": "AU",
+        "name_ja": "オーストラリア",
+        "name_en": "Australia"
+      },
+      {
+        "iso2": "MX",
+        "name_ja": "メキシコ",
+        "name_en": "Mexico"
+      },
+      {
+        "iso2": "ES",
+        "name_ja": "スペイン",
+        "name_en": "Spain"
+      },
+      {
+        "iso2": "IT",
+        "name_ja": "イタリア",
+        "name_en": "Italy"
+      },
+      {
+        "iso2": "NL",
+        "name_ja": "オランダ",
+        "name_en": "Netherlands"
+      },
+      {
+        "iso2": "PL",
+        "name_ja": "ポーランド",
+        "name_en": "Poland"
+      },
+      {
+        "iso2": "ZA",
+        "name_ja": "南アフリカ",
+        "name_en": "South Africa"
+      },
+      {
+        "iso2": "NZ",
+        "name_ja": "ニュージーランド",
+        "name_en": "New Zealand"
+      },
+      {
+        "iso2": "CL",
+        "name_ja": "チリ",
+        "name_en": "Chile"
+      },
+      {
+        "iso2": "KE",
+        "name_ja": "ケニア",
+        "name_en": "Kenya"
+      },
+      {
+        "iso2": "EG",
+        "name_ja": "エジプト",
+        "name_en": "Egypt"
+      },
+      {
+        "iso2": "IE",
+        "name_ja": "アイルランド",
+        "name_en": "Ireland"
+      },
+      {
+        "iso2": "SE",
+        "name_ja": "スウェーデン",
+        "name_en": "Sweden"
+      },
+      {
+        "iso2": "CZ",
+        "name_ja": "チェコ",
+        "name_en": "Czechia"
       }
     ],
     "hs_codes": [
@@ -148,7 +218,7 @@
       "module_id": "E3",
       "title_ja": "日本の品目別・相手国別 貿易フロー",
       "title_en": "Japan trade flows by HS and partner",
-      "last_updated": "2026-09-02T08:50:45+09:00",
+      "last_updated": "2026-10-18T22:02:56+09:00",
       "source": {
         "label": "UN Comtrade API",
         "url": "https://comtradedeveloper.un.org/"
@@ -755,7 +825,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 17735570.36,
+          "value_usd": 17411195.74,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -766,7 +836,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 14514259.5,
+          "value_usd": 14486309.38,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -777,7 +847,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1484860123.68,
+          "value_usd": 1487369508.37,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -788,7 +858,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1487740.66,
+          "value_usd": 1479657.78,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -799,7 +869,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2097500.89,
+          "value_usd": 2092991.26,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -810,7 +880,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 923007638.38,
+          "value_usd": 925656214.21,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -821,7 +891,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 17673864.92,
+          "value_usd": 17738319.27,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -832,7 +902,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 21771565.91,
+          "value_usd": 21775772.99,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -843,7 +913,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1006910019.59,
+          "value_usd": 1006732348.05,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -854,7 +924,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 337671310.85,
+          "value_usd": 335473293.41,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -865,7 +935,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2242820035.81,
+          "value_usd": 2233648213.76,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -876,7 +946,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 29356521837.98,
+          "value_usd": 29441135422.54,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -887,7 +957,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 6404795.79,
+          "value_usd": 6436577.88,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -898,7 +968,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 47549650.97,
+          "value_usd": 47403187.44,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -909,7 +979,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 3388522567.22,
+          "value_usd": 3386082640.09,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -920,7 +990,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 18424935.9,
+          "value_usd": 18466122.5,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -931,7 +1001,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 10011510.47,
+          "value_usd": 9982506.39,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -942,7 +1012,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2218793521.38,
+          "value_usd": 2224918461.37,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -953,7 +1023,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 118231477.56,
+          "value_usd": 118449388.46,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -964,7 +1034,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 625439234.58,
+          "value_usd": 618743051.29,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -975,7 +1045,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1266259903.68,
+          "value_usd": 1267901522.72,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -986,7 +1056,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2872673.52,
+          "value_usd": 2895703.06,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -997,7 +1067,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 27898529.84,
+          "value_usd": 28016110.92,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1008,7 +1078,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 3264266858.6,
+          "value_usd": 3259432108.6,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1019,7 +1089,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 5677906.37,
+          "value_usd": 5591173.04,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1030,7 +1100,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 11977440.3,
+          "value_usd": 11895856.6,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1041,7 +1111,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2893744790.64,
+          "value_usd": 2891492377.92,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1052,7 +1122,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 107163306.09,
+          "value_usd": 108439378.57,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1063,7 +1133,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 290313630.21,
+          "value_usd": 289259724.37,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1074,7 +1144,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 8124065445.12,
+          "value_usd": 8081225011.56,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1085,7 +1155,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 11340799.3,
+          "value_usd": 11396935.92,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1096,7 +1166,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 39167445.69,
+          "value_usd": 39234950.36,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1107,7 +1177,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1781043873.11,
+          "value_usd": 1782516502.46,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1118,7 +1188,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 4890114.53,
+          "value_usd": 4926647.76,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1129,7 +1199,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 15071488.68,
+          "value_usd": 15082937.2,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1140,7 +1210,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1444844881.76,
+          "value_usd": 1440990740.45,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1151,7 +1221,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 254586.04,
+          "value_usd": 254599.45,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1162,7 +1232,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 1131548.37,
+          "value_usd": 1148199.46,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1173,7 +1243,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 654852351.34,
+          "value_usd": 655693560.77,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1184,7 +1254,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 63042325.89,
+          "value_usd": 62662512.82,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1195,7 +1265,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 508008987.16,
+          "value_usd": 499374324.57,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1206,7 +1276,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2249419134.28,
+          "value_usd": 2240582146.39,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1217,7 +1287,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 13109490.38,
+          "value_usd": 13086791.81,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1228,7 +1298,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 97530338.3,
+          "value_usd": 97544039.66,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1239,7 +1309,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 5155292845.34,
+          "value_usd": 5145366681.19,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1250,7 +1320,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 374309.67,
+          "value_usd": 368990.9,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1261,7 +1331,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 3237843.17,
+          "value_usd": 3184197.85,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1272,7 +1342,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 972266999.77,
+          "value_usd": 973198762.63,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1283,7 +1353,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 235319059.43,
+          "value_usd": 234169005.87,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1294,7 +1364,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 178685886.29,
+          "value_usd": 179086629.53,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1305,7 +1375,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 33434795514.0,
+          "value_usd": 33470437019.1,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1316,7 +1386,7 @@
           "hs_name_ja": "飲料・アルコール・酢",
           "flow": "X",
           "year": 2023,
-          "value_usd": 46756920.75,
+          "value_usd": 47007141.48,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1327,7 +1397,7 @@
           "hs_name_ja": "精油・香料・化粧品",
           "flow": "X",
           "year": 2023,
-          "value_usd": 76119287.47,
+          "value_usd": 76091454.01,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
@@ -1338,7 +1408,7 @@
           "hs_name_ja": "機械類",
           "flow": "X",
           "year": 2023,
-          "value_usd": 2093481410.03,
+          "value_usd": 2092181907.58,
           "metric_id": "trade.export.value_usd",
           "veritas": "✅"
         },
