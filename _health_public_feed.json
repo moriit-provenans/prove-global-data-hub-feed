@@ -1,8 +1,8 @@
 {
   "ok": true,
   "lane": "prove_global_data_hub",
-  "last_success_jst": "2026-10-18T22:04:16+09:00",
+  "last_success_jst": "2026-10-29T13:46:32+09:00",
   "workflow": "public_feed_monthly",
-  "run_url": "local://Atlas/C1018-102 (C1018-102 manual monthly (森さん選択肢A))",
+  "run_url": "https://github.com/moriit-provenans/global-research/actions/runs/40818581331",
   "pc_independent": true
 }

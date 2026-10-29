@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_id": "jp_affiliates",
-  "last_updated": "2026-10-18T22:02:56+09:00",
+  "last_updated": "2026-10-29T13:46:23+09:00",
   "source": {
     "label": "経産省 海外事業活動基本調査（e-Stat・Excel参考表）",
     "url": "https://www.e-stat.go.jp/stat-search/files?toukei=00550120",
@@ -109,76 +109,6 @@
         "iso2": "TW",
         "name_ja": "台湾",
         "name_en": "Taiwan"
-      },
-      {
-        "iso2": "AU",
-        "name_ja": "オーストラリア",
-        "name_en": "Australia"
-      },
-      {
-        "iso2": "MX",
-        "name_ja": "メキシコ",
-        "name_en": "Mexico"
-      },
-      {
-        "iso2": "ES",
-        "name_ja": "スペイン",
-        "name_en": "Spain"
-      },
-      {
-        "iso2": "IT",
-        "name_ja": "イタリア",
-        "name_en": "Italy"
-      },
-      {
-        "iso2": "NL",
-        "name_ja": "オランダ",
-        "name_en": "Netherlands"
-      },
-      {
-        "iso2": "PL",
-        "name_ja": "ポーランド",
-        "name_en": "Poland"
-      },
-      {
-        "iso2": "ZA",
-        "name_ja": "南アフリカ",
-        "name_en": "South Africa"
-      },
-      {
-        "iso2": "NZ",
-        "name_ja": "ニュージーランド",
-        "name_en": "New Zealand"
-      },
-      {
-        "iso2": "CL",
-        "name_ja": "チリ",
-        "name_en": "Chile"
-      },
-      {
-        "iso2": "KE",
-        "name_ja": "ケニア",
-        "name_en": "Kenya"
-      },
-      {
-        "iso2": "EG",
-        "name_ja": "エジプト",
-        "name_en": "Egypt"
-      },
-      {
-        "iso2": "IE",
-        "name_ja": "アイルランド",
-        "name_en": "Ireland"
-      },
-      {
-        "iso2": "SE",
-        "name_ja": "スウェーデン",
-        "name_en": "Sweden"
-      },
-      {
-        "iso2": "CZ",
-        "name_ja": "チェコ",
-        "name_en": "Czechia"
       }
     ],
     "year_coverage": {
@@ -200,7 +130,7 @@
       "module_id": "C1",
       "title_ja": "日系海外現地法人（国別）",
       "title_en": "Japanese overseas affiliates by country",
-      "last_updated": "2026-10-18T22:02:56+09:00",
+      "last_updated": "2026-10-29T13:46:23+09:00",
       "source": {
         "label": "METI 海外事業活動基本調査（第54回・2023年度実績）",
         "url": "https://www.meti.go.jp/statistics/tyo/kaigaizi/index.html"
@@ -545,76 +475,6 @@
               "veritas": "✅"
             }
           ]
-        },
-        {
-          "iso2": "AU",
-          "name_ja": "オーストラリア",
-          "observations": []
-        },
-        {
-          "iso2": "MX",
-          "name_ja": "メキシコ",
-          "observations": []
-        },
-        {
-          "iso2": "ES",
-          "name_ja": "スペイン",
-          "observations": []
-        },
-        {
-          "iso2": "IT",
-          "name_ja": "イタリア",
-          "observations": []
-        },
-        {
-          "iso2": "NL",
-          "name_ja": "オランダ",
-          "observations": []
-        },
-        {
-          "iso2": "PL",
-          "name_ja": "ポーランド",
-          "observations": []
-        },
-        {
-          "iso2": "ZA",
-          "name_ja": "南アフリカ",
-          "observations": []
-        },
-        {
-          "iso2": "NZ",
-          "name_ja": "ニュージーランド",
-          "observations": []
-        },
-        {
-          "iso2": "CL",
-          "name_ja": "チリ",
-          "observations": []
-        },
-        {
-          "iso2": "KE",
-          "name_ja": "ケニア",
-          "observations": []
-        },
-        {
-          "iso2": "EG",
-          "name_ja": "エジプト",
-          "observations": []
-        },
-        {
-          "iso2": "IE",
-          "name_ja": "アイルランド",
-          "observations": []
-        },
-        {
-          "iso2": "SE",
-          "name_ja": "スウェーデン",
-          "observations": []
-        },
-        {
-          "iso2": "CZ",
-          "name_ja": "チェコ",
-          "observations": []
         }
       ]
     }
